@@ -14,6 +14,8 @@ interface NavSection {
   id: string;
   label: string;
   href: string;
+  title?: string;
+  subtitle?: string;
   items?: NavItem[];
 }
 
@@ -29,25 +31,31 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         id: "loan",
         label: "Kredit beantragen",
         href: "/kredit-beantragen",
+        title: "Kredit beantragen",
+        subtitle: "Beantragen Sie ihren Wunschkredit",
         items: [
-          { label: "Privatkredit", href: "/kredit-beantragen/privatkredit", description: "Persönlicher Kredit bis CHF 250'000", icon: "user" },
-          { label: "KMU Kredit", href: "/kredit-beantragen/kmu-kredit", description: "Geschäftskredit für Unternehmen", icon: "briefcase" },
-          { label: "Hypothek", href: "/kredit-beantragen/hypotheken", description: "Immobilienfinanzierung", icon: "home" },
+          { label: "Privatkredit", href: "/kredit-beantragen/privatkredit", description: "Ihr cleverer Kredit", icon: "user" },
+          { label: "KMU Kredit", href: "/kredit-beantragen/kmu-kredit", description: "Die smarte Finanzierung für Unternehmen", icon: "building" },
+          { label: "Hypothek", href: "/kredit-beantragen/hypotheken", description: "Optimale Immobilienfinanzierung", icon: "home" },
         ],
       },
       {
         id: "invest",
-        label: "Investieren",
+        label: "Anlegen",
         href: "/investieren",
+        title: "Investieren",
+        subtitle: "Geld anlegen für die Zukunft",
         items: [
-          { label: "Private Anleger", href: "/investieren/privatinvestoren", description: "Investieren ab CHF 100", icon: "user" },
-          { label: "Institutionelle Anleger", href: "/investieren/institutionelle-investoren", description: "Grosse Portfolios verwalten", icon: "building" },
+          { label: "Private Anleger", href: "/investieren/privatinvestoren", description: "Attraktive Rendite mit Krediten", icon: "leaf" },
+          { label: "Institutionelle Anleger", href: "/investieren/institutionelle-investoren", description: "Das Anlageportfolio mit Private Debt erweitern", icon: "building" },
         ],
       },
       {
         id: "about",
         label: "Über uns",
         href: "/ueber-uns",
+        title: "Über uns",
+        subtitle: "Erfahren Sie mehr über Cashare",
         items: [
           { label: "Wer sind wir", href: "/ueber-uns/wer-sind-wir", description: "Unsere Vision und Mission", icon: "users" },
           { label: "Partner", href: "/ueber-uns/partner", description: "Starke Zusammenarbeit und Vertrauen", icon: "handshake" },
@@ -66,8 +74,10 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
     sections: [
       {
         id: "loan",
-        label: "Apply for Loan",
+        label: "Loan",
         href: "/en/apply-for-loan",
+        title: "Apply for Loan",
+        subtitle: "Quick and easy financing",
         items: [
           { label: "Private Loan", href: "/en/apply-for-loan/private", description: "Personal loans up to CHF 250,000", icon: "user" },
           { label: "SME Loan", href: "/en/apply-for-loan/sme", description: "Business loans for companies", icon: "briefcase" },
@@ -78,15 +88,19 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         id: "invest",
         label: "Invest",
         href: "/en/invest",
+        title: "Investing",
+        subtitle: "Invest money for the future",
         items: [
-          { label: "Private Investors", href: "/en/invest/private", description: "Invest from CHF 100", icon: "user" },
-          { label: "Institutional Investors", href: "/en/invest/institutional", description: "Manage large portfolios", icon: "building" },
+          { label: "Private Investors", href: "/en/invest/private", description: "Attractive returns with loans", icon: "leaf" },
+          { label: "Institutional Investors", href: "/en/invest/institutional", description: "Expand your portfolio with Private Debt", icon: "building" },
         ],
       },
       {
         id: "about",
         label: "About Us",
         href: "/en/about-us",
+        title: "About Us",
+        subtitle: "Learn more about Cashare",
         items: [
           { label: "Who We Are", href: "/en/about-us/who-we-are", description: "Our vision and mission", icon: "users" },
           { label: "Partners", href: "/en/about-us/partners", description: "Strong collaboration and trust", icon: "handshake" },
@@ -105,8 +119,10 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
     sections: [
       {
         id: "loan",
-        label: "Demander un crédit",
+        label: "Crédit",
         href: "/fr/demander-credit",
+        title: "Demander un crédit",
+        subtitle: "Financement rapide et simple",
         items: [
           { label: "Crédit privé", href: "/fr/demander-credit/prive", description: "Prêt personnel jusqu'à CHF 250'000", icon: "user" },
           { label: "Crédit PME", href: "/fr/demander-credit/pme", description: "Crédit commercial pour entreprises", icon: "briefcase" },
@@ -117,15 +133,19 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         id: "invest",
         label: "Investir",
         href: "/fr/investir",
+        title: "Investir",
+        subtitle: "Investir pour l'avenir",
         items: [
-          { label: "Investisseurs privés", href: "/fr/investir/prives", description: "Investir à partir de CHF 100", icon: "user" },
-          { label: "Investisseurs institutionnels", href: "/fr/investir/institutionnels", description: "Gérer de grands portefeuilles", icon: "building" },
+          { label: "Investisseurs privés", href: "/fr/investir/prives", description: "Rendements attractifs avec les crédits", icon: "leaf" },
+          { label: "Investisseurs institutionnels", href: "/fr/investir/institutionnels", description: "Élargir le portefeuille avec Private Debt", icon: "building" },
         ],
       },
       {
         id: "about",
         label: "À propos",
         href: "/fr/a-propos",
+        title: "À propos",
+        subtitle: "En savoir plus sur Cashare",
         items: [
           { label: "Qui sommes-nous", href: "/fr/a-propos/qui-sommes-nous", description: "Notre vision et mission", icon: "users" },
           { label: "Partenaires", href: "/fr/a-propos/partenaires", description: "Collaboration et confiance", icon: "handshake" },
@@ -226,6 +246,12 @@ const icons: Record<string, string> = {
     <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="#007399" stroke-width="2"/>
     <rect x="3" y="11" width="18" height="4" fill="#007399"/>
     <rect x="10" y="10" width="4" height="4" rx="1" fill="white"/>
+  </svg>`,
+  leaf: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12 3c-4.5 0-8 4-8 9 0 3 1.5 5.5 4 7" stroke="#00b5ce" stroke-width="2" stroke-linecap="round"/>
+    <path d="M12 3c4.5 0 8 4 8 9 0 3-1.5 5.5-4 7" stroke="#00d924" stroke-width="2" stroke-linecap="round"/>
+    <path d="M12 21V9" stroke="#00b5ce" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="12" cy="6" r="3" fill="#00d924"/>
   </svg>`,
 };
 
@@ -388,6 +414,15 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
                 key={section.id}
                 class={`stripe-nav__panel ${activeSection.value === section.id ? "stripe-nav__panel--active" : ""} ${section.id === "about" ? "stripe-nav__panel--about" : ""}`}
               >
+                {/* Header with title and subtitle */}
+                {section.title && (
+                  <a href={section.href} class="stripe-nav__panel-header">
+                    <span class="stripe-nav__panel-title">{section.title}</span>
+                    {section.subtitle && (
+                      <span class="stripe-nav__panel-subtitle">{section.subtitle}</span>
+                    )}
+                  </a>
+                )}
                 <div class="stripe-nav__panel-inner">
                   {section.items?.map((item, index) => (
                     <a

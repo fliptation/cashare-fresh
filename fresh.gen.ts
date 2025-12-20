@@ -4,23 +4,35 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $agb from "./routes/agb.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $api_statistics from "./routes/api/statistics.ts";
+import * as $cookies from "./routes/cookies.tsx";
+import * as $datenschutzerklaerung from "./routes/datenschutzerklaerung.tsx";
 import * as $en_about from "./routes/en/about.tsx";
 import * as $en_apply_for_credit from "./routes/en/apply-for-credit.tsx";
 import * as $en_apply_for_credit_mortgage from "./routes/en/apply-for-credit/mortgage.tsx";
 import * as $en_apply_for_credit_personal_loan from "./routes/en/apply-for-credit/personal-loan.tsx";
 import * as $en_apply_for_credit_sme_loan from "./routes/en/apply-for-credit/sme-loan.tsx";
+import * as $en_cookies from "./routes/en/cookies.tsx";
+import * as $en_imprint from "./routes/en/imprint.tsx";
 import * as $en_index from "./routes/en/index.tsx";
 import * as $en_invest from "./routes/en/invest.tsx";
+import * as $en_privacy from "./routes/en/privacy.tsx";
+import * as $en_terms from "./routes/en/terms.tsx";
 import * as $fr_a_propos from "./routes/fr/a-propos.tsx";
+import * as $fr_cgv from "./routes/fr/cgv.tsx";
+import * as $fr_confidentialite from "./routes/fr/confidentialite.tsx";
+import * as $fr_cookies from "./routes/fr/cookies.tsx";
 import * as $fr_demander_un_credit from "./routes/fr/demander-un-credit.tsx";
 import * as $fr_demander_un_credit_credit_pme from "./routes/fr/demander-un-credit/credit-pme.tsx";
 import * as $fr_demander_un_credit_credit_prive from "./routes/fr/demander-un-credit/credit-prive.tsx";
 import * as $fr_demander_un_credit_hypotheque from "./routes/fr/demander-un-credit/hypotheque.tsx";
 import * as $fr_index from "./routes/fr/index.tsx";
 import * as $fr_investir from "./routes/fr/investir.tsx";
+import * as $fr_mentions_legales from "./routes/fr/mentions-legales.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $impressum from "./routes/impressum.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $investieren from "./routes/investieren.tsx";
 import * as $kredit_beantragen from "./routes/kredit-beantragen.tsx";
@@ -52,17 +64,27 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/agb.tsx": $agb,
     "./routes/api/joke.ts": $api_joke,
     "./routes/api/statistics.ts": $api_statistics,
+    "./routes/cookies.tsx": $cookies,
+    "./routes/datenschutzerklaerung.tsx": $datenschutzerklaerung,
     "./routes/en/about.tsx": $en_about,
     "./routes/en/apply-for-credit.tsx": $en_apply_for_credit,
     "./routes/en/apply-for-credit/mortgage.tsx": $en_apply_for_credit_mortgage,
     "./routes/en/apply-for-credit/personal-loan.tsx":
       $en_apply_for_credit_personal_loan,
     "./routes/en/apply-for-credit/sme-loan.tsx": $en_apply_for_credit_sme_loan,
+    "./routes/en/cookies.tsx": $en_cookies,
+    "./routes/en/imprint.tsx": $en_imprint,
     "./routes/en/index.tsx": $en_index,
     "./routes/en/invest.tsx": $en_invest,
+    "./routes/en/privacy.tsx": $en_privacy,
+    "./routes/en/terms.tsx": $en_terms,
     "./routes/fr/a-propos.tsx": $fr_a_propos,
+    "./routes/fr/cgv.tsx": $fr_cgv,
+    "./routes/fr/confidentialite.tsx": $fr_confidentialite,
+    "./routes/fr/cookies.tsx": $fr_cookies,
     "./routes/fr/demander-un-credit.tsx": $fr_demander_un_credit,
     "./routes/fr/demander-un-credit/credit-pme.tsx":
       $fr_demander_un_credit_credit_pme,
@@ -72,7 +94,9 @@ const manifest = {
       $fr_demander_un_credit_hypotheque,
     "./routes/fr/index.tsx": $fr_index,
     "./routes/fr/investir.tsx": $fr_investir,
+    "./routes/fr/mentions-legales.tsx": $fr_mentions_legales,
     "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/impressum.tsx": $impressum,
     "./routes/index.tsx": $index,
     "./routes/investieren.tsx": $investieren,
     "./routes/kredit-beantragen.tsx": $kredit_beantragen,

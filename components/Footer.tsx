@@ -328,25 +328,21 @@ export function Footer({ locale }: FooterProps) {
         <div class="footer__partners-wrapper">
           <span class="footer__partners-label">Member of</span>
           <div class="footer__partners">
-            <div class="footer__partner">
-              <span class="footer__partner-name">DEUTSCHE BÖRSE<br/>VENTURE NETWORK</span>
-            </div>
-
-            <div class="footer__partner">
-              <div class="footer__partner-icon">+</div>
-              <div class="footer__partner-text">
-                <span class="footer__partner-text-main">SWISS FINANCE</span>
-                <span class="footer__partner-text-sub">Startups</span>
-              </div>
-            </div>
-
-            <div class="footer__partner">
-              <div class="footer__partner-icon footer__partner-icon--gray">+</div>
-              <div class="footer__partner-text">
-                <span class="footer__partner-text-main">swiss made</span>
-                <span class="footer__partner-text-sub">software</span>
-              </div>
-            </div>
+            <img
+              src="/images/members/deutsche-boerse.png"
+              alt="Deutsche Börse Venture Network"
+              class="footer__partner-logo"
+            />
+            <img
+              src="/images/members/Swiss-Finance-Logo.png"
+              alt="Swiss Finance Startups"
+              class="footer__partner-logo"
+            />
+            <img
+              src="/images/members/Swiss-Made-Software-Logo.png"
+              alt="Swiss Made Software"
+              class="footer__partner-logo"
+            />
           </div>
         </div>
 
@@ -491,13 +487,39 @@ export function Footer({ locale }: FooterProps) {
           <div class="footer__bottom-right">
             {/* Legal Links */}
             <div class="footer__legal">
-              <a href="/agb" class="footer__legal-link">AGB</a>
-              <span class="footer__legal-separator">·</span>
-              <a href="/datenschutzerklaerung" class="footer__legal-link">Datenschutz</a>
-              <span class="footer__legal-separator">·</span>
-              <a href="/impressum" class="footer__legal-link">Impressum</a>
-              <span class="footer__legal-separator">·</span>
-              <a href="/cookies" class="footer__legal-link">Cookies</a>
+              {locale === "de" && (
+                <>
+                  <a href="/agb" class="footer__legal-link">AGB</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/datenschutzerklaerung" class="footer__legal-link">Datenschutz</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/impressum" class="footer__legal-link">Impressum</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/cookies" class="footer__legal-link">Cookies</a>
+                </>
+              )}
+              {locale === "en" && (
+                <>
+                  <a href="/en/terms" class="footer__legal-link">Terms</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/en/privacy" class="footer__legal-link">Privacy</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/en/imprint" class="footer__legal-link">Imprint</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/en/cookies" class="footer__legal-link">Cookies</a>
+                </>
+              )}
+              {locale === "fr" && (
+                <>
+                  <a href="/fr/cgv" class="footer__legal-link">CGV</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/fr/confidentialite" class="footer__legal-link">Confidentialité</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/fr/mentions-legales" class="footer__legal-link">Mentions légales</a>
+                  <span class="footer__legal-separator">·</span>
+                  <a href="/fr/cookies" class="footer__legal-link">Cookies</a>
+                </>
+              )}
             </div>
           </div>
         </div>

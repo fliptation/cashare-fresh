@@ -27,17 +27,17 @@
 }
 
 .product-hero__title {
-  font-size: var(--text-5xl);
-  font-weight: 800;
+  font-size: var(--text-lg);
+  font-weight: 700;
   color: var(--color-text);
-  margin-bottom: var(--space-6);
-  line-height: 1.1;
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
 }
 
 .product-hero__subtitle {
-  font-size: var(--text-xl);
+  font-size: var(--text-md);
   color: var(--color-gray);
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-6);
   line-height: 1.6;
 }
 
@@ -110,7 +110,11 @@
   width: 72px;
   height: 72px;
   margin: 0 auto var(--space-6);
-  background: linear-gradient(135deg, rgba(0, 181, 206, 0.1) 0%, rgba(0, 115, 153, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 181, 206, 0.1) 0%,
+    rgba(0, 115, 153, 0.1) 100%
+  );
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -335,7 +339,11 @@
   width: 56px;
   height: 56px;
   margin: 0 auto var(--space-4);
-  background: linear-gradient(135deg, rgba(0, 181, 206, 0.1) 0%, rgba(0, 115, 153, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 181, 206, 0.1) 0%,
+    rgba(0, 115, 153, 0.1) 100%
+  );
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -446,7 +454,11 @@
 .mortgage-card__icon {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, rgba(0, 181, 206, 0.1) 0%, rgba(0, 115, 153, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 181, 206, 0.1) 0%,
+    rgba(0, 115, 153, 0.1) 100%
+  );
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -553,7 +565,11 @@
   width: 64px;
   height: 64px;
   margin: 0 auto var(--space-5);
-  background: linear-gradient(135deg, rgba(0, 181, 206, 0.15) 0%, rgba(0, 115, 153, 0.15) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 181, 206, 0.15) 0%,
+    rgba(0, 115, 153, 0.15) 100%
+  );
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -586,11 +602,11 @@
   }
 
   .product-hero__title {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
   }
 
   .product-hero__subtitle {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
   }
 
   .steps {
