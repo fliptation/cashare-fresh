@@ -12,37 +12,34 @@ const content = {
     privatkredit: {
       title: "Privatkredit",
       tagline: "Ihr cleverer Kredit",
-      description: "Für private Anschaffungen, Umschuldungen oder unerwartete Ausgaben.",
       href: "/kredit-beantragen/privatkredit",
       cta: "Mehr erfahren",
     },
     kmuKredit: {
       title: "KMU-Kredit",
       tagline: "Die smarte Finanzierung für Unternehmen",
-      description: "Flexible Finanzierungslösungen für kleine und mittlere Unternehmen.",
       href: "/kredit-beantragen/kmu-kredit",
       cta: "Mehr erfahren",
     },
     hypothek: {
       title: "Hypothek",
       tagline: "Optimale Immobilienfinanzierung",
-      description: "Attraktive Konditionen für Ihre Immobilienfinanzierung.",
       href: "/kredit-beantragen/hypotheken",
       cta: "Mehr erfahren",
     },
     howItWorks: "So funktioniert's",
     steps: [
       {
-        title: "Antrag stellen",
-        description: "Füllen Sie den Online-Antrag aus und laden Sie Ihre Dokumente hoch.",
+        title: "Kreditantrag ausfüllen",
+        description: "Den Kreditantrag ausfüllen und online die benötigten Dokumente einreichen. Einfacher geht's nicht.",
       },
       {
-        title: "Schnelle Prüfung",
-        description: "Wir prüfen Ihren Antrag und listen ihn auf unserer Plattform für Investoren.",
+        title: "Schnelle Überprüfung",
+        description: "Wir prüfen Ihren Antrag schnell und sicher. Nach Aufschaltung Ihres Kredites auf unserer Plattform haben Cashare Anleger die Möglichkeit, Ihr Darlehen zu finanzieren.",
       },
       {
-        title: "Auszahlung",
-        description: "Nach Vertragsunterzeichnung wird das Geld auf Ihr Konto überwiesen.",
+        title: "Kreditauszahlung",
+        description: "Nach Unterschrift aller Verträge wird der Darlehensbetrag auf Ihr Konto ausbezahlt.",
       },
     ],
     benefits: {
@@ -50,30 +47,60 @@ const content = {
       items: [
         {
           title: "Effiziente Prozesse",
-          description: "Der Kreditantrag ist online in wenigen Minuten abgeschlossen. Die Kreditprüfung erfolgt schnell und unkompliziert.",
+          description: "Der Kreditantrag ist online schnell ausgefüllt. Die Kreditprüfung erfolgt in kürzester Zeit und Sie erhalten Ihre persönliche Offerte.",
         },
         {
           title: "Attraktive Konditionen",
-          description: "Unser direkter Marktplatz verbindet Kreditnehmer mit Investoren – für faire Zinsen ohne Bankmargen.",
+          description: "Wir verbinden Kreditnehmer und Anleger direkt über unseren Kreditmarktplatz. So profitieren alle von attraktiven Zinsen und transparenten Gebühren, ganz ohne Bank.",
         },
         {
           title: "Flexible Laufzeiten",
-          description: "Wählen Sie die Laufzeit, die zu Ihnen passt. Vorzeitige Rückzahlung jederzeit möglich.",
+          description: "Sie bestimmen die gewünschte Laufzeit nach Ihren Bedürfnissen. Eine vorzeitige Rückzahlung ist jederzeit problemlos möglich.",
         },
         {
           title: "Sichere Prozesse",
-          description: "Höchste Datenschutzstandards und sichere Abwicklung aller Transaktionen.",
+          description: "Volle Kostenkontrolle und strenge Sicherheitsmassnahmen schützen Sie und Ihre Daten.",
         },
       ],
     },
     stats: {
       title: "Seit 2008 Ihr Partner",
-      subtitle: "Als erste Crowdlending-Plattform der Schweiz haben wir uns das Vertrauen tausender Kunden erarbeitet.",
+      subtitle: "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet. Mit über 60'000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge haben wir uns das Vertrauen tausender Kunden erarbeitet.",
       items: [
         { value: "60'000+", label: "Kunden" },
         { value: "CHF 2.5 Mrd.", label: "Geprüfte Kreditanträge" },
         { value: "Seit 2008", label: "FinTech-Pionier" },
       ],
+    },
+    requirements: {
+      title: "Voraussetzungen",
+      privatkredit: {
+        title: "Privatkredit",
+        items: [
+          "Volljährig (mindestens 18 Jahre alt)",
+          "CH/LI-Staatsbürger oder gültige Aufenthaltsbewilligung",
+          "Schweizer Bankkonto",
+          "Feste Anstellung oder regelmässiges, nachweisbares Einkommen",
+          "Keine offenen Betreibungsverfahren und/oder Verlustscheine",
+        ],
+      },
+      kmuKredit: {
+        title: "KMU-Kredit",
+        items: [
+          "Im Handelsregister eingetragene Schweizer oder Liechtensteiner Firma",
+          "Existiert seit mindestens 2 Jahren",
+          "Jährlicher Mindestumsatz von CHF 100'000",
+          "Positiver Cash Flow oder kurzfristig in Aussicht",
+        ],
+      },
+      hypothek: {
+        title: "Immobilienkredit",
+        items: [
+          "Maximale Beleihungsquote von 80% des Marktwerts",
+          "Finanzielle Belastung max. 40% des Bruttoeinkommens",
+          "Mindesthypothekenbetrag von CHF 250'000",
+        ],
+      },
     },
   },
   en: {
@@ -83,21 +110,18 @@ const content = {
     privatkredit: {
       title: "Personal Loan",
       tagline: "Your smart credit solution",
-      description: "For private purchases, debt consolidation or unexpected expenses.",
       href: "/en/apply-for-credit/personal-loan",
       cta: "Learn More",
     },
     kmuKredit: {
       title: "SME Loan",
       tagline: "Smart financing for businesses",
-      description: "Flexible financing solutions for small and medium enterprises.",
       href: "/en/apply-for-credit/sme-loan",
       cta: "Learn More",
     },
     hypothek: {
       title: "Mortgage",
       tagline: "Optimal real estate financing",
-      description: "Attractive conditions for your real estate financing.",
       href: "/en/apply-for-credit/mortgage",
       cta: "Learn More",
     },
@@ -146,6 +170,36 @@ const content = {
         { value: "Since 2008", label: "FinTech Pioneer" },
       ],
     },
+    requirements: {
+      title: "Requirements",
+      privatkredit: {
+        title: "Personal Loan",
+        items: [
+          "Minimum age 18 years",
+          "CH/LI citizenship or valid residence permit",
+          "Swiss bank account",
+          "Stable employment or regular income",
+          "No active debt collection or loss records",
+        ],
+      },
+      kmuKredit: {
+        title: "SME Loan",
+        items: [
+          "Company registered in Switzerland/Liechtenstein",
+          "Operating for at least 2 years",
+          "Minimum annual revenue CHF 100,000",
+          "Positive cash flow (current or projected)",
+        ],
+      },
+      hypothek: {
+        title: "Mortgage",
+        items: [
+          "Maximum 80% loan-to-value ratio",
+          "Financial burden max. 40% of gross income",
+          "Minimum amount CHF 250,000",
+        ],
+      },
+    },
   },
   fr: {
     title: "Demander un crédit",
@@ -154,21 +208,18 @@ const content = {
     privatkredit: {
       title: "Crédit privé",
       tagline: "Votre crédit intelligent",
-      description: "Pour des achats privés, le regroupement de dettes ou des dépenses imprévues.",
       href: "/fr/demander-un-credit/credit-prive",
       cta: "En savoir plus",
     },
     kmuKredit: {
       title: "Crédit PME",
       tagline: "Le financement intelligent pour les entreprises",
-      description: "Solutions de financement flexibles pour les petites et moyennes entreprises.",
       href: "/fr/demander-un-credit/credit-pme",
       cta: "En savoir plus",
     },
     hypothek: {
       title: "Hypothèque",
       tagline: "Financement immobilier optimal",
-      description: "Conditions attractives pour votre financement immobilier.",
       href: "/fr/demander-un-credit/hypotheque",
       cta: "En savoir plus",
     },
@@ -217,6 +268,36 @@ const content = {
         { value: "Depuis 2008", label: "Pionnier FinTech" },
       ],
     },
+    requirements: {
+      title: "Conditions",
+      privatkredit: {
+        title: "Crédit privé",
+        items: [
+          "Âge minimum 18 ans",
+          "Nationalité CH/LI ou permis de séjour valide",
+          "Compte bancaire suisse",
+          "Emploi stable ou revenu régulier",
+          "Pas de poursuites actives ou d'actes de défaut de biens",
+        ],
+      },
+      kmuKredit: {
+        title: "Crédit PME",
+        items: [
+          "Entreprise enregistrée en Suisse/Liechtenstein",
+          "En activité depuis au moins 2 ans",
+          "Chiffre d'affaires minimum CHF 100'000 par an",
+          "Cash-flow positif (actuel ou projeté)",
+        ],
+      },
+      hypothek: {
+        title: "Hypothèque",
+        items: [
+          "Taux d'avance maximum 80%",
+          "Charge financière max. 40% du revenu brut",
+          "Montant minimum CHF 250'000",
+        ],
+      },
+    },
   },
 };
 
@@ -261,7 +342,6 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
               </div>
               <span class="solution-card__tagline">{t.privatkredit.tagline}</span>
               <h3 class="solution-card__title">{t.privatkredit.title}</h3>
-              <p class="solution-card__desc">{t.privatkredit.description}</p>
               <span class="solution-card__link">
                 {t.privatkredit.cta} →
               </span>
@@ -287,7 +367,6 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
               </div>
               <span class="solution-card__tagline">{t.kmuKredit.tagline}</span>
               <h3 class="solution-card__title">{t.kmuKredit.title}</h3>
-              <p class="solution-card__desc">{t.kmuKredit.description}</p>
               <span class="solution-card__link">
                 {t.kmuKredit.cta} →
               </span>
@@ -313,7 +392,6 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
               </div>
               <span class="solution-card__tagline">{t.hypothek.tagline}</span>
               <h3 class="solution-card__title">{t.hypothek.title}</h3>
-              <p class="solution-card__desc">{t.hypothek.description}</p>
               <span class="solution-card__link">
                 {t.hypothek.cta} →
               </span>
@@ -322,8 +400,43 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* Requirements Section */}
       <section class="subpage-section subpage-section--gray">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.requirements.title}</h2>
+          </div>
+          <div class="requirements-grid">
+            <div class="requirements-card">
+              <h3 class="requirements-card__title">{t.requirements.privatkredit.title}</h3>
+              <ul class="requirements-card__list">
+                {t.requirements.privatkredit.items.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div class="requirements-card">
+              <h3 class="requirements-card__title">{t.requirements.kmuKredit.title}</h3>
+              <ul class="requirements-card__list">
+                {t.requirements.kmuKredit.items.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div class="requirements-card">
+              <h3 class="requirements-card__title">{t.requirements.hypothek.title}</h3>
+              <ul class="requirements-card__list">
+                {t.requirements.hypothek.items.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section class="subpage-section subpage-section--white">
         <div class="subpage-section__container subpage-section__container--wide">
           <div class="subpage-section__header">
             <h2 class="subpage-section__title">{t.howItWorks}</h2>

@@ -1,5 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { blogPosts } from "../lib/blog/posts.ts";
+import MigrationCheckbox from "../islands/MigrationCheckbox.tsx";
 
 // Helper to count words in a string
 function countWords(text: string): number {
@@ -300,6 +301,7 @@ export default function MigrationPage() {
                   <span>Alt (WordPress)</span>
                   <span>Neu (Fresh)</span>
                   <span>Status</span>
+                  <span>OK?</span>
                 </div>
                 {section.items.map((item) => (
                   <div key={item.name} class="migration__table-row">
@@ -333,6 +335,9 @@ export default function MigrationPage() {
                       class={`migration__status ${statusConfig[item.status].class}`}
                     >
                       {statusConfig[item.status].label}
+                    </span>
+                    <span class="migration__item-check">
+                      <MigrationCheckbox pageId={`page-${item.name.toLowerCase().replace(/\s+/g, '-')}`} label="" />
                     </span>
                   </div>
                 ))}
@@ -392,6 +397,7 @@ export default function MigrationPage() {
                       <span class={`migration__status ${statusConfig[article.status].class}`}>
                         {statusConfig[article.status].label}
                       </span>
+                      <MigrationCheckbox pageId={`blog-${article.slug}`} label="OK" />
                     </div>
                   </div>
                 </div>

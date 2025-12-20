@@ -1474,11 +1474,37 @@
   margin-bottom: 12px;
 }
 
+.solution-card__icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: var(--color-white);
+}
+
 .solution-card__desc {
   font-size: var(--text-base);
   color: var(--color-text-light);
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+.solution-card__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.solution-card:hover .solution-card__link {
+  color: var(--color-secondary);
 }
 
 /* Compliance Badges */
@@ -1632,5 +1658,63 @@
   .contact-section__buttons {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* ==========================================================================
+   Requirements Grid
+   ========================================================================== */
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.requirements-card {
+  background: var(--color-white);
+  padding: 28px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.requirements-card__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.requirements-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.requirements-card__list li {
+  position: relative;
+  padding-left: 24px;
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+.requirements-card__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .requirements-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
