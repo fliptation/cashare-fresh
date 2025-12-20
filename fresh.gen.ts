@@ -13,12 +13,21 @@ import * as $en_about from "./routes/en/about.tsx";
 import * as $en_about_blog_slug_ from "./routes/en/about/blog/[slug].tsx";
 import * as $en_about_blog_index from "./routes/en/about/blog/index.tsx";
 import * as $en_about_crowdlending from "./routes/en/about/crowdlending.tsx";
+import * as $en_about_jobs from "./routes/en/about/jobs.tsx";
+import * as $en_about_partners from "./routes/en/about/partners.tsx";
+import * as $en_about_press from "./routes/en/about/press.tsx";
+import * as $en_about_rating from "./routes/en/about/rating.tsx";
 import * as $en_about_statistics from "./routes/en/about/statistics.tsx";
+import * as $en_about_who_we_are from "./routes/en/about/who-we-are.tsx";
 import * as $en_apply_for_credit from "./routes/en/apply-for-credit.tsx";
 import * as $en_apply_for_credit_mortgage from "./routes/en/apply-for-credit/mortgage.tsx";
 import * as $en_apply_for_credit_personal_loan from "./routes/en/apply-for-credit/personal-loan.tsx";
 import * as $en_apply_for_credit_sme_loan from "./routes/en/apply-for-credit/sme-loan.tsx";
 import * as $en_cookies from "./routes/en/cookies.tsx";
+import * as $en_how_it_works from "./routes/en/how-it-works.tsx";
+import * as $en_how_it_works_mortgage from "./routes/en/how-it-works/mortgage.tsx";
+import * as $en_how_it_works_private_loans from "./routes/en/how-it-works/private-loans.tsx";
+import * as $en_how_it_works_sme from "./routes/en/how-it-works/sme.tsx";
 import * as $en_imprint from "./routes/en/imprint.tsx";
 import * as $en_index from "./routes/en/index.tsx";
 import * as $en_invest from "./routes/en/invest.tsx";
@@ -26,13 +35,23 @@ import * as $en_invest_institutional from "./routes/en/invest/institutional.tsx"
 import * as $en_invest_private_investors from "./routes/en/invest/private-investors.tsx";
 import * as $en_login from "./routes/en/login.tsx";
 import * as $en_privacy from "./routes/en/privacy.tsx";
+import * as $en_security from "./routes/en/security.tsx";
 import * as $en_terms from "./routes/en/terms.tsx";
 import * as $fr_a_propos from "./routes/fr/a-propos.tsx";
 import * as $fr_a_propos_blog_slug_ from "./routes/fr/a-propos/blog/[slug].tsx";
 import * as $fr_a_propos_blog_index from "./routes/fr/a-propos/blog/index.tsx";
 import * as $fr_a_propos_crowdlending from "./routes/fr/a-propos/crowdlending.tsx";
+import * as $fr_a_propos_emplois from "./routes/fr/a-propos/emplois.tsx";
+import * as $fr_a_propos_partenaires from "./routes/fr/a-propos/partenaires.tsx";
+import * as $fr_a_propos_presse from "./routes/fr/a-propos/presse.tsx";
+import * as $fr_a_propos_qui_sommes_nous from "./routes/fr/a-propos/qui-sommes-nous.tsx";
+import * as $fr_a_propos_rating from "./routes/fr/a-propos/rating.tsx";
 import * as $fr_a_propos_statistiques from "./routes/fr/a-propos/statistiques.tsx";
 import * as $fr_cgv from "./routes/fr/cgv.tsx";
+import * as $fr_comment_ca_marche from "./routes/fr/comment-ca-marche.tsx";
+import * as $fr_comment_ca_marche_credit_prive from "./routes/fr/comment-ca-marche/credit-prive.tsx";
+import * as $fr_comment_ca_marche_hypotheque from "./routes/fr/comment-ca-marche/hypotheque.tsx";
+import * as $fr_comment_ca_marche_pme from "./routes/fr/comment-ca-marche/pme.tsx";
 import * as $fr_confidentialite from "./routes/fr/confidentialite.tsx";
 import * as $fr_cookies from "./routes/fr/cookies.tsx";
 import * as $fr_demander_un_credit from "./routes/fr/demander-un-credit.tsx";
@@ -45,6 +64,7 @@ import * as $fr_investir_institutionnels from "./routes/fr/investir/institutionn
 import * as $fr_investir_investisseurs_prives from "./routes/fr/investir/investisseurs-prives.tsx";
 import * as $fr_login from "./routes/fr/login.tsx";
 import * as $fr_mentions_legales from "./routes/fr/mentions-legales.tsx";
+import * as $fr_securite from "./routes/fr/securite.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $impressum from "./routes/impressum.tsx";
 import * as $index from "./routes/index.tsx";
@@ -56,14 +76,25 @@ import * as $kredit_beantragen_hypotheken from "./routes/kredit-beantragen/hypot
 import * as $kredit_beantragen_kmu_kredit from "./routes/kredit-beantragen/kmu-kredit.tsx";
 import * as $kredit_beantragen_privatkredit from "./routes/kredit-beantragen/privatkredit.tsx";
 import * as $login from "./routes/login.tsx";
+import * as $sicherheit from "./routes/sicherheit.tsx";
+import * as $so_funktionierts from "./routes/so-funktionierts.tsx";
+import * as $so_funktionierts_hypothek from "./routes/so-funktionierts/hypothek.tsx";
+import * as $so_funktionierts_kmu from "./routes/so-funktionierts/kmu.tsx";
+import * as $so_funktionierts_privatkredit from "./routes/so-funktionierts/privatkredit.tsx";
 import * as $styleguide from "./routes/styleguide.tsx";
 import * as $styleguide_buttons from "./routes/styleguide/buttons.tsx";
 import * as $ueber_uns from "./routes/ueber-uns.tsx";
 import * as $ueber_uns_blog_slug_ from "./routes/ueber-uns/blog/[slug].tsx";
 import * as $ueber_uns_blog_index from "./routes/ueber-uns/blog/index.tsx";
 import * as $ueber_uns_crowdlending from "./routes/ueber-uns/crowdlending.tsx";
+import * as $ueber_uns_jobs from "./routes/ueber-uns/jobs.tsx";
+import * as $ueber_uns_partner from "./routes/ueber-uns/partner.tsx";
+import * as $ueber_uns_presse from "./routes/ueber-uns/presse.tsx";
+import * as $ueber_uns_rating from "./routes/ueber-uns/rating.tsx";
 import * as $ueber_uns_statistik from "./routes/ueber-uns/statistik.tsx";
+import * as $ueber_uns_wer_sind_wir from "./routes/ueber-uns/wer-sind-wir.tsx";
 import * as $AnimatedCounter from "./islands/AnimatedCounter.tsx";
+import * as $BlogIsland from "./islands/BlogIsland.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $LoanCalculator from "./islands/LoanCalculator.tsx";
@@ -94,13 +125,23 @@ const manifest = {
     "./routes/en/about/blog/[slug].tsx": $en_about_blog_slug_,
     "./routes/en/about/blog/index.tsx": $en_about_blog_index,
     "./routes/en/about/crowdlending.tsx": $en_about_crowdlending,
+    "./routes/en/about/jobs.tsx": $en_about_jobs,
+    "./routes/en/about/partners.tsx": $en_about_partners,
+    "./routes/en/about/press.tsx": $en_about_press,
+    "./routes/en/about/rating.tsx": $en_about_rating,
     "./routes/en/about/statistics.tsx": $en_about_statistics,
+    "./routes/en/about/who-we-are.tsx": $en_about_who_we_are,
     "./routes/en/apply-for-credit.tsx": $en_apply_for_credit,
     "./routes/en/apply-for-credit/mortgage.tsx": $en_apply_for_credit_mortgage,
     "./routes/en/apply-for-credit/personal-loan.tsx":
       $en_apply_for_credit_personal_loan,
     "./routes/en/apply-for-credit/sme-loan.tsx": $en_apply_for_credit_sme_loan,
     "./routes/en/cookies.tsx": $en_cookies,
+    "./routes/en/how-it-works.tsx": $en_how_it_works,
+    "./routes/en/how-it-works/mortgage.tsx": $en_how_it_works_mortgage,
+    "./routes/en/how-it-works/private-loans.tsx":
+      $en_how_it_works_private_loans,
+    "./routes/en/how-it-works/sme.tsx": $en_how_it_works_sme,
     "./routes/en/imprint.tsx": $en_imprint,
     "./routes/en/index.tsx": $en_index,
     "./routes/en/invest.tsx": $en_invest,
@@ -108,13 +149,25 @@ const manifest = {
     "./routes/en/invest/private-investors.tsx": $en_invest_private_investors,
     "./routes/en/login.tsx": $en_login,
     "./routes/en/privacy.tsx": $en_privacy,
+    "./routes/en/security.tsx": $en_security,
     "./routes/en/terms.tsx": $en_terms,
     "./routes/fr/a-propos.tsx": $fr_a_propos,
     "./routes/fr/a-propos/blog/[slug].tsx": $fr_a_propos_blog_slug_,
     "./routes/fr/a-propos/blog/index.tsx": $fr_a_propos_blog_index,
     "./routes/fr/a-propos/crowdlending.tsx": $fr_a_propos_crowdlending,
+    "./routes/fr/a-propos/emplois.tsx": $fr_a_propos_emplois,
+    "./routes/fr/a-propos/partenaires.tsx": $fr_a_propos_partenaires,
+    "./routes/fr/a-propos/presse.tsx": $fr_a_propos_presse,
+    "./routes/fr/a-propos/qui-sommes-nous.tsx": $fr_a_propos_qui_sommes_nous,
+    "./routes/fr/a-propos/rating.tsx": $fr_a_propos_rating,
     "./routes/fr/a-propos/statistiques.tsx": $fr_a_propos_statistiques,
     "./routes/fr/cgv.tsx": $fr_cgv,
+    "./routes/fr/comment-ca-marche.tsx": $fr_comment_ca_marche,
+    "./routes/fr/comment-ca-marche/credit-prive.tsx":
+      $fr_comment_ca_marche_credit_prive,
+    "./routes/fr/comment-ca-marche/hypotheque.tsx":
+      $fr_comment_ca_marche_hypotheque,
+    "./routes/fr/comment-ca-marche/pme.tsx": $fr_comment_ca_marche_pme,
     "./routes/fr/confidentialite.tsx": $fr_confidentialite,
     "./routes/fr/cookies.tsx": $fr_cookies,
     "./routes/fr/demander-un-credit.tsx": $fr_demander_un_credit,
@@ -131,6 +184,7 @@ const manifest = {
       $fr_investir_investisseurs_prives,
     "./routes/fr/login.tsx": $fr_login,
     "./routes/fr/mentions-legales.tsx": $fr_mentions_legales,
+    "./routes/fr/securite.tsx": $fr_securite,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/impressum.tsx": $impressum,
     "./routes/index.tsx": $index,
@@ -143,16 +197,28 @@ const manifest = {
     "./routes/kredit-beantragen/privatkredit.tsx":
       $kredit_beantragen_privatkredit,
     "./routes/login.tsx": $login,
+    "./routes/sicherheit.tsx": $sicherheit,
+    "./routes/so-funktionierts.tsx": $so_funktionierts,
+    "./routes/so-funktionierts/hypothek.tsx": $so_funktionierts_hypothek,
+    "./routes/so-funktionierts/kmu.tsx": $so_funktionierts_kmu,
+    "./routes/so-funktionierts/privatkredit.tsx":
+      $so_funktionierts_privatkredit,
     "./routes/styleguide.tsx": $styleguide,
     "./routes/styleguide/buttons.tsx": $styleguide_buttons,
     "./routes/ueber-uns.tsx": $ueber_uns,
     "./routes/ueber-uns/blog/[slug].tsx": $ueber_uns_blog_slug_,
     "./routes/ueber-uns/blog/index.tsx": $ueber_uns_blog_index,
     "./routes/ueber-uns/crowdlending.tsx": $ueber_uns_crowdlending,
+    "./routes/ueber-uns/jobs.tsx": $ueber_uns_jobs,
+    "./routes/ueber-uns/partner.tsx": $ueber_uns_partner,
+    "./routes/ueber-uns/presse.tsx": $ueber_uns_presse,
+    "./routes/ueber-uns/rating.tsx": $ueber_uns_rating,
     "./routes/ueber-uns/statistik.tsx": $ueber_uns_statistik,
+    "./routes/ueber-uns/wer-sind-wir.tsx": $ueber_uns_wer_sind_wir,
   },
   islands: {
     "./islands/AnimatedCounter.tsx": $AnimatedCounter,
+    "./islands/BlogIsland.tsx": $BlogIsland,
     "./islands/Counter.tsx": $Counter,
     "./islands/Header.tsx": $Header,
     "./islands/LoanCalculator.tsx": $LoanCalculator,

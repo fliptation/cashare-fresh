@@ -30,7 +30,101 @@ const routeMap: Record<string, Record<Locale, string>> = {
     en: "/en/apply-for-credit",
     fr: "/fr/demander-un-credit",
   },
-  // Add more routes as needed
+  "/kredit-beantragen/privatkredit": {
+    de: "/kredit-beantragen/privatkredit",
+    en: "/en/apply-for-credit/personal-loan",
+    fr: "/fr/demander-un-credit/credit-prive",
+  },
+  "/kredit-beantragen/kmu-kredit": {
+    de: "/kredit-beantragen/kmu-kredit",
+    en: "/en/apply-for-credit/sme-loan",
+    fr: "/fr/demander-un-credit/credit-pme",
+  },
+  "/kredit-beantragen/hypotheken": {
+    de: "/kredit-beantragen/hypotheken",
+    en: "/en/apply-for-credit/mortgage",
+    fr: "/fr/demander-un-credit/hypotheque",
+  },
+  "/investieren/privatinvestoren": {
+    de: "/investieren/privatinvestoren",
+    en: "/en/invest/private-investors",
+    fr: "/fr/investir/investisseurs-prives",
+  },
+  "/investieren/institutionelle": {
+    de: "/investieren/institutionelle",
+    en: "/en/invest/institutional",
+    fr: "/fr/investir/institutionnels",
+  },
+  "/ueber-uns/wer-sind-wir": {
+    de: "/ueber-uns/wer-sind-wir",
+    en: "/en/about/who-we-are",
+    fr: "/fr/a-propos/qui-sommes-nous",
+  },
+  "/ueber-uns/partner": {
+    de: "/ueber-uns/partner",
+    en: "/en/about/partners",
+    fr: "/fr/a-propos/partenaires",
+  },
+  "/ueber-uns/crowdlending": {
+    de: "/ueber-uns/crowdlending",
+    en: "/en/about/crowdlending",
+    fr: "/fr/a-propos/crowdlending",
+  },
+  "/ueber-uns/presse": {
+    de: "/ueber-uns/presse",
+    en: "/en/about/press",
+    fr: "/fr/a-propos/presse",
+  },
+  "/ueber-uns/statistik": {
+    de: "/ueber-uns/statistik",
+    en: "/en/about/statistics",
+    fr: "/fr/a-propos/statistiques",
+  },
+  "/ueber-uns/blog": {
+    de: "/ueber-uns/blog",
+    en: "/en/about/blog",
+    fr: "/fr/a-propos/blog",
+  },
+  "/ueber-uns/jobs": {
+    de: "/ueber-uns/jobs",
+    en: "/en/about/jobs",
+    fr: "/fr/a-propos/emplois",
+  },
+  "/login": {
+    de: "/login",
+    en: "/en/login",
+    fr: "/fr/login",
+  },
+  "/sicherheit": {
+    de: "/sicherheit",
+    en: "/en/security",
+    fr: "/fr/securite",
+  },
+  "/so-funktionierts": {
+    de: "/so-funktionierts",
+    en: "/en/how-it-works",
+    fr: "/fr/comment-ca-marche",
+  },
+  "/so-funktionierts/privatkredit": {
+    de: "/so-funktionierts/privatkredit",
+    en: "/en/how-it-works/private-loans",
+    fr: "/fr/comment-ca-marche/credit-prive",
+  },
+  "/so-funktionierts/kmu": {
+    de: "/so-funktionierts/kmu",
+    en: "/en/how-it-works/sme",
+    fr: "/fr/comment-ca-marche/pme",
+  },
+  "/so-funktionierts/hypothek": {
+    de: "/so-funktionierts/hypothek",
+    en: "/en/how-it-works/mortgage",
+    fr: "/fr/comment-ca-marche/hypotheque",
+  },
+  "/ueber-uns/rating": {
+    de: "/ueber-uns/rating",
+    en: "/en/about/rating",
+    fr: "/fr/a-propos/rating",
+  },
 };
 
 /**

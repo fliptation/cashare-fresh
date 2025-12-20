@@ -47,7 +47,7 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         subtitle: "Geld anlegen für die Zukunft",
         items: [
           { label: "Private Anleger", href: "/investieren/privatinvestoren", description: "Attraktive Rendite mit Krediten", icon: "leaf" },
-          { label: "Institutionelle Anleger", href: "/investieren/institutionelle-investoren", description: "Das Anlageportfolio mit Private Debt erweitern", icon: "building" },
+          { label: "Institutionelle Anleger", href: "/investieren/institutionelle", description: "Das Anlageportfolio mit Private Debt erweitern", icon: "building" },
         ],
       },
       {
@@ -75,13 +75,13 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
       {
         id: "loan",
         label: "Loan",
-        href: "/en/apply-for-loan",
+        href: "/en/apply-for-credit",
         title: "Apply for Loan",
         subtitle: "Quick and easy financing",
         items: [
-          { label: "Private Loan", href: "/en/apply-for-loan/private", description: "Personal loans up to CHF 250,000", icon: "user" },
-          { label: "SME Loan", href: "/en/apply-for-loan/sme", description: "Business loans for companies", icon: "briefcase" },
-          { label: "Mortgage", href: "/en/apply-for-loan/mortgage", description: "Real estate financing", icon: "home" },
+          { label: "Private Loan", href: "/en/apply-for-credit/personal-loan", description: "Personal loans up to CHF 250,000", icon: "user" },
+          { label: "SME Loan", href: "/en/apply-for-credit/sme-loan", description: "Business loans for companies", icon: "briefcase" },
+          { label: "Mortgage", href: "/en/apply-for-credit/mortgage", description: "Real estate financing", icon: "home" },
         ],
       },
       {
@@ -91,24 +91,24 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Investing",
         subtitle: "Invest money for the future",
         items: [
-          { label: "Private Investors", href: "/en/invest/private", description: "Attractive returns with loans", icon: "leaf" },
+          { label: "Private Investors", href: "/en/invest/private-investors", description: "Attractive returns with loans", icon: "leaf" },
           { label: "Institutional Investors", href: "/en/invest/institutional", description: "Expand your portfolio with Private Debt", icon: "building" },
         ],
       },
       {
         id: "about",
         label: "About Us",
-        href: "/en/about-us",
+        href: "/en/about",
         title: "About Us",
         subtitle: "Learn more about Cashare",
         items: [
-          { label: "Who We Are", href: "/en/about-us/who-we-are", description: "Our vision and mission", icon: "users" },
-          { label: "Partners", href: "/en/about-us/partners", description: "Strong collaboration and trust", icon: "handshake" },
-          { label: "Crowdlending", href: "/en/about-us/crowdlending", description: "The Swiss FinTech pioneer", icon: "diamond" },
-          { label: "Press", href: "/en/about-us/press", description: "Media center", icon: "press" },
-          { label: "Statistics", href: "/en/about-us/statistics", description: "Our track record", icon: "chart" },
-          { label: "Blog", href: "/en/about-us/blog", description: "Insights & stories", icon: "newspaper" },
-          { label: "Jobs", href: "/en/about-us/jobs", description: "Career and pioneering with Cashare", icon: "jobs" },
+          { label: "Who We Are", href: "/en/about/who-we-are", description: "Our vision and mission", icon: "users" },
+          { label: "Partners", href: "/en/about/partners", description: "Strong collaboration and trust", icon: "handshake" },
+          { label: "Crowdlending", href: "/en/about/crowdlending", description: "The Swiss FinTech pioneer", icon: "diamond" },
+          { label: "Press", href: "/en/about/press", description: "Media center", icon: "press" },
+          { label: "Statistics", href: "/en/about/statistics", description: "Our track record", icon: "chart" },
+          { label: "Blog", href: "/en/about/blog", description: "Insights & stories", icon: "newspaper" },
+          { label: "Jobs", href: "/en/about/jobs", description: "Career and pioneering with Cashare", icon: "jobs" },
         ],
       },
     ],
@@ -120,13 +120,13 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
       {
         id: "loan",
         label: "Crédit",
-        href: "/fr/demander-credit",
+        href: "/fr/demander-un-credit",
         title: "Demander un crédit",
         subtitle: "Financement rapide et simple",
         items: [
-          { label: "Crédit privé", href: "/fr/demander-credit/prive", description: "Prêt personnel jusqu'à CHF 250'000", icon: "user" },
-          { label: "Crédit PME", href: "/fr/demander-credit/pme", description: "Crédit commercial pour entreprises", icon: "briefcase" },
-          { label: "Hypothèque", href: "/fr/demander-credit/hypotheque", description: "Financement immobilier", icon: "home" },
+          { label: "Crédit privé", href: "/fr/demander-un-credit/credit-prive", description: "Prêt personnel jusqu'à CHF 250'000", icon: "user" },
+          { label: "Crédit PME", href: "/fr/demander-un-credit/credit-pme", description: "Crédit commercial pour entreprises", icon: "briefcase" },
+          { label: "Hypothèque", href: "/fr/demander-un-credit/hypotheque", description: "Financement immobilier", icon: "home" },
         ],
       },
       {
@@ -136,7 +136,7 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Investir",
         subtitle: "Investir pour l'avenir",
         items: [
-          { label: "Investisseurs privés", href: "/fr/investir/prives", description: "Rendements attractifs avec les crédits", icon: "leaf" },
+          { label: "Investisseurs privés", href: "/fr/investir/investisseurs-prives", description: "Rendements attractifs avec les crédits", icon: "leaf" },
           { label: "Investisseurs institutionnels", href: "/fr/investir/institutionnels", description: "Élargir le portefeuille avec Private Debt", icon: "building" },
         ],
       },
