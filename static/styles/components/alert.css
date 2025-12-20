@@ -168,7 +168,7 @@
   transform: translateY(100%);
   opacity: 0;
   transition: transform var(--duration-normal) var(--ease-out),
-              opacity var(--duration-normal) var(--ease-out);
+    opacity var(--duration-normal) var(--ease-out);
 }
 
 .toast--visible {
@@ -177,19 +177,19 @@
 }
 
 .toast--success {
-  border-left: 4px solid var(--color-success);
+  border: 1.5px solid var(--color-success);
 }
 
 .toast--warning {
-  border-left: 4px solid var(--color-warning);
+  border: 1.5px solid var(--color-warning);
 }
 
 .toast--error {
-  border-left: 4px solid var(--color-error);
+  border: 1.5px solid var(--color-error);
 }
 
 .toast--info {
-  border-left: 4px solid var(--color-primary);
+  border: 1.5px solid var(--color-primary);
 }
 
 .toast__header {

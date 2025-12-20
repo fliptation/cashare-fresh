@@ -872,6 +872,22 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Rundi Chnöpf</h3>
+                <div class="styleguide__demo">
+                  <div class="styleguide__button-row">
+                    <button class="btn btn--primary btn--round">Primary Round</button>
+                    <button class="btn btn--secondary btn--round">Secondary Round</button>
+                    <button class="btn btn--outline btn--round">Outline Round</button>
+                  </div>
+                  <div class="styleguide__button-row" style="margin-top: 1rem;">
+                    <button class="btn btn--primary btn--round btn--sm">Chli</button>
+                    <button class="btn btn--primary btn--round">Normal</button>
+                    <button class="btn btn--primary btn--round btn--lg">Gross</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Zuständ</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__states-grid">

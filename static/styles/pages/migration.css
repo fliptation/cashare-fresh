@@ -370,6 +370,38 @@
   color: #db2777;
 }
 
+.migration__blog-words {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.6875rem;
+  margin-top: 4px;
+}
+
+.migration__word-count {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.migration__word-count--fresh {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.migration__word-status {
+  font-weight: 600;
+}
+
+.migration__word-status--ok {
+  color: #16a34a;
+}
+
+.migration__word-status--missing {
+  color: #dc2626;
+}
+
 .migration__blog-links {
   display: flex;
   gap: 8px;

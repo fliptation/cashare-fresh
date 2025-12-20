@@ -1,4 +1,16 @@
 import { Head } from "$fresh/runtime.ts";
+import { blogPosts } from "../lib/blog/posts.ts";
+
+// Helper to count words in a string
+function countWords(text: string): number {
+  return text.trim().split(/\s+/).filter(word => word.length > 0).length;
+}
+
+// Create a map of Fresh word counts from actual blog posts
+const freshWordCounts: Record<string, number> = {};
+for (const post of blogPosts) {
+  freshWordCounts[post.slug] = countWords(post.content.de);
+}
 
 // Migration status types
 type Status = "done" | "in-progress" | "todo" | "not-needed";
@@ -21,7 +33,7 @@ const migrationData: MigrationSection[] = [
     title: "Hauptseiten",
     items: [
       { name: "Homepage", oldUrl: "/", newUrl: "/", status: "done" },
-      { name: "Kredit beantragen", oldUrl: "/kredit-beantragen/", newUrl: "/kredit-beantragen", status: "done" },
+      { name: "Kredit beantragen", oldUrl: "/kredit-beantragen/", newUrl: "/kredit-beantragen", status: "done", notes: "Taglines, Stats, Benefits aktualisiert" },
       { name: "Privatkredit", oldUrl: "/kredit-beantragen/privatkredit/", newUrl: "/kredit-beantragen/privatkredit", status: "done" },
       { name: "KMU Kredit", oldUrl: "/kredit-beantragen/kmu-kredit/", newUrl: "/kredit-beantragen/kmu-kredit", status: "done" },
       { name: "Hypothek", oldUrl: "/hypothek/", newUrl: "/kredit-beantragen/hypotheken", status: "done" },
@@ -160,6 +172,36 @@ const blogArticles = [
   { slug: "ausweitung-bonitaetspruefung", wpSlug: "ausweitung-der-bonitaetspruefung", title: "Ausweitung der Bonitätsprüfung", image: "/images/blog/Blog_Titel_12_Geburtstag.jpg", date: "2010-07-23", category: "Blog", status: "done" as Status },
   { slug: "bericht-eco-sf1", wpSlug: "bericht-im-eco-auf-sf1", title: "Bericht im ECO auf SF1", image: "/images/blog/Blog_Titel_12_Geburtstag.jpg", date: "2010-07-01", category: "News", status: "done" as Status },
   { slug: "cashare-neuer-look", wpSlug: "cashare-im-neuen-look", title: "Cashare im neuen Look", image: "/images/blog/Blog_Titel_12_Geburtstag.jpg", date: "2010-03-13", category: "Blog", status: "done" as Status },
+  // Additional posts from sitemap (2011-2017)
+  { slug: "verbesserte-zahlungshistory", wpSlug: "verbesserte-zahlungshistory", title: "Verbesserte Zahlungshistory", image: "", date: "2011-10-18", category: "News", status: "todo" as Status },
+  { slug: "neues-zahlungssystem-esr", wpSlug: "neues-zahlungssystem-mit-esr", title: "Neues Zahlungssystem mit ESR", image: "", date: "2012-01-27", category: "News", status: "todo" as Status },
+  { slug: "banking-it-innovation-awards-2013", wpSlug: "teilnahme-am-banking-it-innovation-awards-2013", title: "Teilnahme am Banking IT-Innovation Awards 2013", image: "", date: "2013-10-14", category: "News", status: "todo" as Status },
+  { slug: "dokumente-steuern-2013", wpSlug: "dokumente-fuer-steuern-2013", title: "Dokumente für Steuern 2013", image: "", date: "2014-01-20", category: "News", status: "todo" as Status },
+  { slug: "wettbewerb-rechnung", wpSlug: "wettbewerb-cashare-bezahlt-ihre-rechnung", title: "Wettbewerb: Cashare bezahlt Ihre Rechnung!", image: "", date: "2014-03-24", category: "News", status: "todo" as Status },
+  { slug: "weiterer-datenlieferant", wpSlug: "weiterer-datenlieferant-2", title: "Weiterer Datenlieferant", image: "", date: "2014-04-29", category: "News", status: "todo" as Status },
+  { slug: "rollout-neues-system", wpSlug: "rollout-termin-fuer-neues-system-steht-2", title: "Rollout-Termin für neues System steht", image: "", date: "2014-11-24", category: "News", status: "todo" as Status },
+  { slug: "neuer-auftritt-cashare", wpSlug: "neuer-auftritt-von-cashare", title: "Neuer Auftritt von Cashare", image: "", date: "2014-12-01", category: "News", status: "todo" as Status },
+  { slug: "highlights-h1-2015", wpSlug: "highlights-1-halbjahr-2015", title: "Highlights 1. Halbjahr 2015", image: "", date: "2015-07-21", category: "News", status: "todo" as Status },
+  { slug: "neue-produkte-neues-kleid", wpSlug: "neue-produkte-und-neues-kleid", title: "Neues Produkt in neuem Gewand", image: "", date: "2015-09-30", category: "News", status: "todo" as Status },
+  { slug: "cashare-rating-system", wpSlug: "cashare-erweitert-rating-system", title: "Cashare erweitert Rating-System", image: "", date: "2015-10-10", category: "News", status: "todo" as Status },
+  { slug: "deutsche-boerse-venture-network", wpSlug: "cashare-wird-teil-des-deutsche-boerse-venture-network", title: "Cashare wird Teil des Deutsche Börse Venture Network", image: "", date: "2016-02-19", category: "News", status: "todo" as Status },
+  { slug: "schallmauer-crowdlending", wpSlug: "cashare-durchbricht-schallmauer-im-crowdlending", title: "Cashare durchbricht Schallmauer im Crowdlending", image: "", date: "2016-04-05", category: "News", status: "todo" as Status },
+  { slug: "mehr-sicherheiten-ueberblick", wpSlug: "noch-mehr-sicherheiten-und-besserer-ueberblick", title: "Noch mehr Sicherheiten und besserer Überblick", image: "", date: "2016-05-11", category: "News", status: "todo" as Status },
+  { slug: "mehr-kredit-ausbildung", wpSlug: "mehr-kredit-fuer-ausbildung", title: "Mehr Kredit für Ausbildung", image: "", date: "2016-07-18", category: "News", status: "todo" as Status },
+  { slug: "schweizer-rekord-200-mio", wpSlug: "schweizer-rekord-mit-ueber-chf-200-mio-verarbeiteter-kreditantraege", title: "Schweizer Crowdlending Rekord: > CHF 200 Mio. verarbeitete Kreditanträge", image: "", date: "2016-07-19", category: "News", status: "todo" as Status },
+  { slug: "dokumentarfilm-fintech-switzerland", wpSlug: "cashare-im-dokumentarfilm-fintech-made-in-switzerland", title: "Cashare im Dokumentarfilm FinTech Made in Switzerland", image: "", date: "2016-07-25", category: "News", status: "todo" as Status },
+  { slug: "ausbildungsdarlehen", wpSlug: "ausbildungsdarlehen", title: "Neues Cashare Produkt: Ausbildungsdarlehen", image: "", date: "2016-08-10", category: "News", status: "todo" as Status },
+  { slug: "10vor10-crowdlending", wpSlug: "bericht-im-10vor10-ueber-crowdlending", title: "Bericht im 10vor10 über Crowdlending", image: "", date: "2016-08-13", category: "News", status: "todo" as Status },
+  { slug: "cleantech-fintech-energie", wpSlug: "cleantech-meets-fintech-finanzierung-von-nachhaltiger-energie", title: "Cleantech meets Fintech – Finanzierung von nachhaltiger Energie", image: "", date: "2016-11-24", category: "News", status: "todo" as Status },
+  { slug: "frohes-neues-jahr-2017", wpSlug: "cashare-wuenscht-ein-frohes-neues-jahr", title: "Cashare wünscht ein frohes neues Jahr!", image: "", date: "2016-12-31", category: "News", status: "todo" as Status },
+  { slug: "advisory-board-kapitalrunde-2017", wpSlug: "crowdlending-pionier-erweitert-advisory-board-und-schliesst-kapitalrunde-ab", title: "Crowdlending Pionier erweitert Advisory Board und schliesst Kapitalrunde ab", image: "", date: "2017-05-02", category: "News", status: "todo" as Status },
+  { slug: "1500-kredite-neues-kleid", wpSlug: "ueber-1500-kredite-finanziert-und-ein-neues-kleid", title: "Über 1'500 Kredite finanziert und ein neues Kleid", image: "", date: "2017-05-12", category: "News", status: "todo" as Status },
+  { slug: "alles-neu-mai", wpSlug: "alles-neu-macht-der-mai", title: "Alles neu macht der Mai", image: "", date: "2017-05-19", category: "News", status: "todo" as Status },
+  { slug: "neues-dashboard", wpSlug: "das-neue-cashare-dashboard", title: "Das neue Cashare Dashboard", image: "", date: "2017-06-06", category: "News", status: "todo" as Status },
+  { slug: "kaffeehaus-st-gallen", wpSlug: "das-kaffeehaus-in-st-gallen-auf-expansionskurs", title: "Das Kaffeehaus in St. Gallen auf Expansionskurs", image: "", date: "2017-06-21", category: "Blog", status: "todo" as Status },
+  { slug: "weitere-huerde-gefallen", wpSlug: "eine-weitere-huerde-ist-gefallen", title: "Eine weitere Hürde ist gefallen!", image: "", date: "2017-07-20", category: "News", status: "todo" as Status },
+  { slug: "neuer-rekord-2017", wpSlug: "neuer-rekord-bei-schweizer-crowdlending-pionier-cashare", title: "Neuer Rekord bei Schweizer Crowdlending-Pionier Cashare!", image: "", date: "2017-07-26", category: "News", status: "todo" as Status },
+  { slug: "siam-thai-kredit", wpSlug: "siam-thai-entscheidet-sich-fuer-den-cleveren-kredit", title: "Siam Thai entscheidet sich für den cleveren Kredit!", image: "", date: "2017-08-08", category: "Blog", status: "todo" as Status },
 ];
 
 const statusConfig: Record<Status, { label: string; class: string }> = {
@@ -302,6 +344,16 @@ export default function MigrationPage() {
                       <span class={`migration__blog-category migration__blog-category--${article.category.toLowerCase()}`}>
                         {article.category}
                       </span>
+                    </div>
+                    <div class="migration__blog-words">
+                      <span class="migration__word-count migration__word-count--fresh">
+                        {freshWordCounts[article.slug] || 0} Wörter
+                      </span>
+                      {freshWordCounts[article.slug] ? (
+                        <span class="migration__word-status migration__word-status--ok">✓</span>
+                      ) : (
+                        <span class="migration__word-status migration__word-status--missing">✗ fehlt</span>
+                      )}
                     </div>
                     <div class="migration__blog-links">
                       <a

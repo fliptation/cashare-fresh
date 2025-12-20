@@ -345,6 +345,10 @@
   gap: 24px;
 }
 
+.stats-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .stats-grid__item {
   text-align: center;
   padding: 24px;
@@ -1451,6 +1455,16 @@
 .solution-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.solution-card__tagline {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
 }
 
 .solution-card__title {

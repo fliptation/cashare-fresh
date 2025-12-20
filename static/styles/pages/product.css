@@ -27,7 +27,7 @@
 }
 
 .product-hero__title {
-  font-size: var(--text-lg);
+  font-size: var(--text-5xl);
   font-weight: 700;
   color: var(--color-text);
   margin-bottom: var(--space-4);
@@ -305,7 +305,6 @@
   padding: var(--space-10);
   box-shadow: var(--shadow-card);
   text-align: center;
-  border-top: 4px solid var(--color-primary);
 }
 
 .loan-type-card__title {

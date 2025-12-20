@@ -138,6 +138,11 @@
   width: 100%;
 }
 
+/* Shapes */
+.btn--round {
+  border-radius: var(--radius-full);
+}
+
 /* Icon */
 .btn__icon {
   width: 1.25em;
