@@ -48,10 +48,24 @@ const migrationData: MigrationSection[] = [
       { name: "Über uns", oldUrl: "/ueber-uns/", newUrl: "/ueber-uns", status: "done" },
       { name: "Crowdlending", oldUrl: "/ueber-uns/crowdlending/", newUrl: "/ueber-uns/crowdlending", status: "done" },
       { name: "Statistik", oldUrl: "/ueber-uns/statistik/", newUrl: "/ueber-uns/statistik", status: "done" },
+      { name: "Rating", oldUrl: "/ueber-uns/rating/", newUrl: "/ueber-uns/rating", status: "todo" },
       { name: "Jobs", oldUrl: "/ueber-uns/jobs/", newUrl: "/ueber-uns/jobs", status: "done" },
       { name: "Partner", oldUrl: "/ueber-uns/partner/", newUrl: "/ueber-uns/partner", status: "done" },
       { name: "Presse", oldUrl: "/ueber-uns/presse/", newUrl: "/ueber-uns/presse", status: "done" },
+      { name: "Sicherheit", oldUrl: "/sicherheit/", newUrl: "/sicherheit", status: "todo" },
       { name: "Blog", oldUrl: "/category/blog/", newUrl: "/ueber-uns/blog", status: "done" },
+    ],
+  },
+  {
+    title: "Wie es funktioniert (Legacy)",
+    items: [
+      { name: "How it Works", oldUrl: "/how-it-works/", newUrl: "/kredit-beantragen", status: "not-needed", notes: "Redirect zu Kredit beantragen" },
+      { name: "Private Loans", oldUrl: "/how-it-works/private-loans/", newUrl: "/kredit-beantragen/privatkredit", status: "not-needed", notes: "Redirect" },
+      { name: "SME", oldUrl: "/how-it-works/sme/", newUrl: "/kredit-beantragen/kmu-kredit", status: "not-needed", notes: "Redirect" },
+      { name: "Hypo", oldUrl: "/how-it-works/hypo/", newUrl: "/kredit-beantragen/hypotheken", status: "not-needed", notes: "Redirect" },
+      { name: "Who We Are", oldUrl: "/who-we-are/", newUrl: "/ueber-uns", status: "not-needed", notes: "Redirect zu Über uns" },
+      { name: "Private Calculator", oldUrl: "/home/private-calculator/", newUrl: "/", status: "not-needed", notes: "Integriert in Homepage" },
+      { name: "SME Calculator", oldUrl: "/home/sme-calculator/", newUrl: "/", status: "not-needed", notes: "Integriert in Homepage" },
     ],
   },
   {
@@ -86,6 +100,7 @@ const migrationData: MigrationSection[] = [
     items: [
       { name: "Kreditrechner", status: "done", notes: "Island component" },
       { name: "Newsletter Formular", status: "done", notes: "In Footer" },
+      { name: "404 Seite", status: "done", notes: "Neu hinzugefügt (WordPress hatte keine)" },
       { name: "Kontaktformular", status: "not-needed", notes: "Extern: support.cashare.ch" },
       { name: "Login", status: "not-needed", notes: "Extern: app.cashare.ch" },
     ],
@@ -212,14 +227,18 @@ const statusConfig: Record<Status, { label: string; class: string }> = {
 };
 
 export default function MigrationPage() {
-  // Calculate stats
-  const allItems = migrationData.flatMap((s) => s.items);
+  // Calculate stats (including blog articles)
+  const pageItems = migrationData.flatMap((s) => s.items);
+  const allStatuses = [
+    ...pageItems.map((i) => i.status),
+    ...blogArticles.map((a) => a.status),
+  ];
   const stats = {
-    total: allItems.length,
-    done: allItems.filter((i) => i.status === "done").length,
-    inProgress: allItems.filter((i) => i.status === "in-progress").length,
-    todo: allItems.filter((i) => i.status === "todo").length,
-    notNeeded: allItems.filter((i) => i.status === "not-needed").length,
+    total: allStatuses.length,
+    done: allStatuses.filter((s) => s === "done").length,
+    inProgress: allStatuses.filter((s) => s === "in-progress").length,
+    todo: allStatuses.filter((s) => s === "todo").length,
+    notNeeded: allStatuses.filter((s) => s === "not-needed").length,
   };
   const progress = Math.round((stats.done / (stats.total - stats.notNeeded)) * 100);
 
