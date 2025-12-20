@@ -59,5 +59,12 @@
     "Please enter a runtime less than or equal to": "Geben Sie bitte eine Laufzeit kleiner oder gleich ",
     "Please enter a term": "Geben Sie bitte eine Laufzeit ein.",
     "not more than 1": "Sie können nicht mehr als einen Darlehensantrag erfassen."
+  },
+  "error": {
+    "pageTitle": "404 - Seite nicht gefunden | Cashare",
+    "title": "Seite nicht gefunden",
+    "description": "Ups! Diese Seite ist uns leider entwischt. Aber keine Sorge, Ihr Geld ist bei uns sicher.",
+    "backHome": "Zur Startseite",
+    "contact": "Kontakt"
   }
 }

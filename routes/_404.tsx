@@ -1,16 +1,31 @@
 import { Head } from "$fresh/runtime.ts";
+import { PageProps } from "$fresh/server.ts";
 import { Layout } from "../components/Layout.tsx";
+import { t, type Locale } from "../lib/i18n/index.ts";
 
 const financeEmojis = ["💰", "💵", "💶", "💷", "💴", "💳", "📈", "🏦", "💎", "🤑", "💸", "📊"];
 
-export default function Error404() {
+/**
+ * Detect locale from URL path
+ */
+function detectLocaleFromPath(url: URL): Locale {
+  const path = url.pathname;
+  if (path.startsWith("/en/") || path === "/en") return "en";
+  if (path.startsWith("/fr/") || path === "/fr") return "fr";
+  return "de";
+}
+
+export default function Error404(props: PageProps) {
+  const locale = detectLocaleFromPath(props.url);
+  const localePath = locale === "de" ? "" : `/${locale}`;
+
   return (
     <>
       <Head>
-        <title>404 - Seite nicht gefunden | Cashare</title>
+        <title>{t(locale, "error", "pageTitle")}</title>
         <link rel="stylesheet" href="/styles/global.css" />
       </Head>
-      <Layout locale="de" currentPath="/404">
+      <Layout locale={locale} currentPath="/404">
         <section class="error-page error-page--animated">
           <div class="error-page__emoji-vortex">
             {/* Multiple rings of emojis spiraling inward */}
@@ -34,17 +49,16 @@ export default function Error404() {
                 <span class="error-page__code error-page__code--emoji">🪙</span>
                 <span class="error-page__code error-page__code--animated">4</span>
               </div>
-              <h1 class="error-page__title">Seite nicht gefunden</h1>
+              <h1 class="error-page__title">{t(locale, "error", "title")}</h1>
               <p class="error-page__description">
-                Ups! Diese Seite ist uns leider entwischt. Aber keine Sorge,
-                Ihr Geld ist bei uns sicher.
+                {t(locale, "error", "description")}
               </p>
               <div class="error-page__actions">
-                <a href="/" class="btn btn--primary">
-                  Zur Startseite
+                <a href={localePath || "/"} class="btn btn--primary">
+                  {t(locale, "error", "backHome")}
                 </a>
-                <a href="/kontakt" class="btn btn--outline">
-                  Kontakt
+                <a href={`${localePath}/kontakt`} class="btn btn--outline">
+                  {t(locale, "error", "contact")}
                 </a>
               </div>
             </div>

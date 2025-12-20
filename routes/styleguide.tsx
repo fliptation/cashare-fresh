@@ -334,6 +334,19 @@ export default function Styleguide() {
         <link rel="stylesheet" href="/styles/global.css" />
       </Head>
 
+      {/* Top Bar */}
+      <div class="top-bar top-bar--styleguide">
+        <div class="top-bar__container">
+          <a href="/" class="top-bar__back">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12L6 8l4-4" />
+            </svg>
+            Back to Site
+          </a>
+          <span class="top-bar__title">Design System</span>
+        </div>
+      </div>
+
       <div class="styleguide-layout">
         {/* Sidebar Navigation */}
         <aside class="styleguide-nav">
@@ -1664,27 +1677,29 @@ export default function Styleguide() {
                         </span>
                       ))}
                     </div>
-                    <div class="error-page__content error-page__content--centered">
-                      <div class="error-page__code-wrapper">
-                        <span class="error-page__code error-page__code--animated error-page__code--preview">
-                          4
-                        </span>
-                        <span class="error-page__code error-page__code--emoji error-page__code--preview">
-                          🪙
-                        </span>
-                        <span class="error-page__code error-page__code--animated error-page__code--preview">
-                          4
-                        </span>
-                      </div>
-                      <h3 class="error-page__title">Seite nicht gefunden</h3>
-                      <p class="error-page__description">
-                        Ups! Diese Seite ist uns leider entwischt.
-                      </p>
-                      <div class="error-page__actions">
-                        <button class="btn btn--primary btn--sm">
-                          Zur Startseite
-                        </button>
-                        <button class="btn btn--outline btn--sm">Kontakt</button>
+                    <div class="error-page__container error-page__container--centered">
+                      <div class="error-page__content error-page__content--centered">
+                        <div class="error-page__code-wrapper">
+                          <span class="error-page__code error-page__code--animated error-page__code--preview">
+                            4
+                          </span>
+                          <span class="error-page__code error-page__code--emoji error-page__code--preview">
+                            🪙
+                          </span>
+                          <span class="error-page__code error-page__code--animated error-page__code--preview">
+                            4
+                          </span>
+                        </div>
+                        <h3 class="error-page__title">Seite nicht gefunden</h3>
+                        <p class="error-page__description">
+                          Ups! Diese Seite ist uns leider entwischt.
+                        </p>
+                        <div class="error-page__actions">
+                          <button class="btn btn--primary btn--sm">
+                            Zur Startseite
+                          </button>
+                          <button class="btn btn--outline btn--sm">Kontakt</button>
+                        </div>
                       </div>
                     </div>
                   </div>

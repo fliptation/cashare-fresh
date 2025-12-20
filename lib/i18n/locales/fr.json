@@ -59,5 +59,12 @@
     "Please enter a runtime less than or equal to": "Veuillez saisir un temps d'exécution inférieur ou égal à ",
     "Please enter a term": "Veuillez entrer un terme.",
     "not more than 1": "Vous ne pouvez pas créer plus d'une demande d'emprunt."
+  },
+  "error": {
+    "pageTitle": "404 - Page non trouvée | Cashare",
+    "title": "Page non trouvée",
+    "description": "Oups ! Cette page semble nous avoir échappé. Mais ne vous inquiétez pas, votre argent est en sécurité chez nous.",
+    "backHome": "Retour à l'accueil",
+    "contact": "Contact"
   }
 }

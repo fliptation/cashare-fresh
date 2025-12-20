@@ -1,6 +1,10 @@
 {
   "lock": false,
   "tasks": {
+    "translate": "deno run --allow-read --allow-write --allow-env --allow-net lib/i18n/translate.ts",
+    "translate:all": "deno run --allow-read --allow-write --allow-env --allow-net lib/i18n/translate.ts --all",
+    "translate:dry": "deno run --allow-read --allow-write --allow-env --allow-net lib/i18n/translate.ts --dry-run",
+    "translate:watch": "deno run --allow-read --allow-write --allow-env --allow-net --allow-run lib/i18n/translate-watch.ts",
     "i18n:types": "deno run --allow-read --allow-write lib/i18n/generate-types.ts",
     "i18n:check": "deno run --allow-read lib/i18n/generate-types.ts --check",
     "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",

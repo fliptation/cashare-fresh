@@ -59,5 +59,12 @@
     "Please enter a runtime less than or equal to": "Please enter a duration of at most ",
     "Please enter a term": "Please enter a duration.",
     "not more than 1": "You cannot submit more than one loan application."
+  },
+  "error": {
+    "pageTitle": "404 - Page Not Found | Cashare",
+    "title": "Page not found",
+    "description": "Oops! This page seems to have slipped away. But don't worry, your money is safe with us.",
+    "backHome": "Back to Home",
+    "contact": "Contact"
   }
 }

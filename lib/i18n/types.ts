@@ -11,6 +11,7 @@ export type TranslationNamespace =
   | "auth"
   | "calculator"
   | "common"
+  | "error"
   | "validation";
 
 export interface AuthTranslations {
@@ -67,6 +68,14 @@ export interface CommonTranslations {
   or: string;
 }
 
+export interface ErrorTranslations {
+  backHome: string;
+  contact: string;
+  description: string;
+  pageTitle: string;
+  title: string;
+}
+
 export interface ValidationTranslations {
   "Please enter a runtime greater than or equal to 1": string;
   "Please enter a runtime less than or equal to": string;
@@ -82,6 +91,7 @@ export interface Translations {
   auth: AuthTranslations;
   calculator: CalculatorTranslations;
   common: CommonTranslations;
+  error: ErrorTranslations;
   validation: ValidationTranslations;
 }
 
@@ -92,6 +102,8 @@ export type TranslationKey<N extends TranslationNamespace> =
     ? keyof CalculatorTranslations
   : N extends "common"
     ? keyof CommonTranslations
+  : N extends "error"
+    ? keyof ErrorTranslations
   : N extends "validation"
     ? keyof ValidationTranslations
     : never;

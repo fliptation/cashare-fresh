@@ -33,6 +33,7 @@
 @import url("components/spinner.css");
 @import url("components/skeleton.css");
 @import url("components/progress.css");
+@import url("components/top-bar.css");
 
 /* Pages */
 @import url("pages/styleguide.css");

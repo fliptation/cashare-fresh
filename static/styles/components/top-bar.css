@@ -1,0 +1,78 @@
+/* Top Bar - Subtle notification bar */
+.top-bar {
+  position: relative;
+  z-index: 1001;
+  height: 32px;
+}
+
+.top-bar__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-bar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-gray);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s ease;
+}
+
+.top-bar__link:hover {
+  color: var(--color-primary);
+}
+
+.top-bar__icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+}
+
+.top-bar__link:hover .top-bar__icon {
+  opacity: 1;
+}
+
+/* Styleguide page specific - with back link */
+.top-bar--styleguide .top-bar__container {
+  justify-content: space-between;
+}
+
+.top-bar__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-gray);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s ease;
+}
+
+.top-bar__back:hover {
+  color: var(--color-primary);
+}
+
+.top-bar__back svg {
+  width: 12px;
+  height: 12px;
+}
+
+.top-bar__title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-gray);
+  text-transform: uppercase;
+}

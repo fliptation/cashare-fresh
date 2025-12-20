@@ -1,6 +1,7 @@
 import { signal, computed } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
 import type { Locale } from "../lib/i18n/index.ts";
+import { getAlternateUrls } from "../lib/i18n/routes.ts";
 
 interface NavItem {
   label: string;
@@ -209,6 +210,7 @@ const icons: Record<string, string> = {
 export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) {
   const nav = navigation[locale];
   const localePath = locale === "de" ? "" : `/${locale}`;
+  const alternateUrls = getAlternateUrls(currentPath || "/", locale);
   const navRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -398,9 +400,9 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
         <div class="stripe-nav__actions">
           {/* Language Switcher */}
           <div class="stripe-nav__lang">
-            <a href="/" class={`stripe-nav__lang-item ${locale === "de" ? "stripe-nav__lang-item--active" : ""}`}>DE</a>
-            <a href="/en" class={`stripe-nav__lang-item ${locale === "en" ? "stripe-nav__lang-item--active" : ""}`}>EN</a>
-            <a href="/fr" class={`stripe-nav__lang-item ${locale === "fr" ? "stripe-nav__lang-item--active" : ""}`}>FR</a>
+            <a href={alternateUrls.de} class={`stripe-nav__lang-item ${locale === "de" ? "stripe-nav__lang-item--active" : ""}`}>DE</a>
+            <a href={alternateUrls.en} class={`stripe-nav__lang-item ${locale === "en" ? "stripe-nav__lang-item--active" : ""}`}>EN</a>
+            <a href={alternateUrls.fr} class={`stripe-nav__lang-item ${locale === "fr" ? "stripe-nav__lang-item--active" : ""}`}>FR</a>
           </div>
 
           <a href={`${localePath}/login`} class="stripe-nav__login">
@@ -494,9 +496,9 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
         </nav>
 
         <div class="stripe-nav__mobile-lang">
-          <a href="/" class={`stripe-nav__lang-item ${locale === "de" ? "stripe-nav__lang-item--active" : ""}`}>Deutsch</a>
-          <a href="/en" class={`stripe-nav__lang-item ${locale === "en" ? "stripe-nav__lang-item--active" : ""}`}>English</a>
-          <a href="/fr" class={`stripe-nav__lang-item ${locale === "fr" ? "stripe-nav__lang-item--active" : ""}`}>Français</a>
+          <a href={alternateUrls.de} class={`stripe-nav__lang-item ${locale === "de" ? "stripe-nav__lang-item--active" : ""}`}>Deutsch</a>
+          <a href={alternateUrls.en} class={`stripe-nav__lang-item ${locale === "en" ? "stripe-nav__lang-item--active" : ""}`}>English</a>
+          <a href={alternateUrls.fr} class={`stripe-nav__lang-item ${locale === "fr" ? "stripe-nav__lang-item--active" : ""}`}>Français</a>
         </div>
       </div>
     </header>
