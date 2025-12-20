@@ -106,12 +106,21 @@ export default function BlogIsland({ locale, posts, translations: t }: BlogIslan
             <div class="blog-featured__card">
               <div class="blog-featured__inner">
                 <div class="blog-featured__image-wrapper">
-                  <img
-                    src={featuredPost.image}
-                    alt={featuredPost.title[locale]}
-                    class="blog-featured__image"
-                    loading="lazy"
-                  />
+                  {featuredPost.image ? (
+                    <img
+                      src={featuredPost.image}
+                      alt={featuredPost.title[locale]}
+                      class="blog-featured__image"
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        target.style.display = 'none';
+                        target.parentElement?.classList.add('blog-featured__image-placeholder');
+                      }}
+                    />
+                  ) : (
+                    <div class="blog-featured__image-placeholder" />
+                  )}
                 </div>
                 <div class="blog-featured__content">
                   <div class="blog-featured__meta">
@@ -155,12 +164,21 @@ export default function BlogIsland({ locale, posts, translations: t }: BlogIslan
             <a key={post.slug} href={getBlogUrl(post.slug, locale)} class="blog-card">
               <article class="blog-card__inner">
                 <div class="blog-card__image-wrapper">
-                  <img
-                    src={post.image}
-                    alt={post.title[locale]}
-                    class="blog-card__image"
-                    loading="lazy"
-                  />
+                  {post.image ? (
+                    <img
+                      src={post.image}
+                      alt={post.title[locale]}
+                      class="blog-card__image"
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        target.style.display = 'none';
+                        target.parentElement?.classList.add('blog-card__image-placeholder');
+                      }}
+                    />
+                  ) : (
+                    <div class="blog-card__image-placeholder" />
+                  )}
                 </div>
                 <div class="blog-card__content">
                   <div class="blog-card__meta">

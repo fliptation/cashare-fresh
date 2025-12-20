@@ -36,62 +36,215 @@ export const blogPosts: BlogPost[] = [
       fr: "Les crises de vie comme la maladie, les accidents ou la perte d'emploi peuvent rapidement destabiliser les finances du menage. Decouvrez comment l'assurance vous protege.",
     },
     content: {
-      de: `Lebenskrisen – Krankheit, Unfalle oder Jobverlust – konnen die Haushaltsfinanzen schnell destabilisieren. Fur Schweizer Einwohner mit Kreditverpflichtungen kann ein einziges unerwartetes Ereignis ernsthafte Zahlungsschwierigkeiten auslosen, die zu Betreibungsverfahren, negativen Eintragen bei der Kreditauskunft und beschadigter Kreditwurdigkeit fuhren.
+      de: `Das Leben verandert sich unerwartet – Krankheit, Unfalle oder Jobverlust konnen die Haushaltsfinanzen schnell belasten. Fur viele Schweizer Einwohner fuhrt eine einzige Krise zu ernsthaften Zahlungsschwierigkeiten. Wenn monatliche Kreditraten nicht bezahlt werden konnen, sind die Folgen Betreibungsverfahren, negative Eintrage bei der Kreditauskunft und eine beschadigte Kreditwurdigkeit, die zukunftige Finanzierungen erschwert.
 
-## Die Cashare Protect Losung
+Eine Schweizer Restschuld- oder Ratenversicherung adressiert dieses Problem. Sie deckt Kreditzahlungen in schwierigen Zeiten, schutzt vor Schuldenfallen und verhindert, dass personliche Krisen zu finanziellen Katastrophen werden.
 
-Cashare bietet die **Cashare Protect Restschuldversicherung** an, um Kreditnehmer zu schutzen, wenn sich die Umstande unerwartet andern. Die Versicherung schutzt nicht nur Kreditnehmer, sondern auch ihre Familien und die investierende Crowd durch verantwortungsvolle Kreditvergabe.
+## Sicherheit, wenn es darauf ankommt – mit Cashare Protect
 
-## Wie die Ratenversicherung funktioniert
+Die **Cashare Protect Restschuldversicherung** aktiviert sich, wenn das Leben unerwartete Wendungen nimmt. Sie schutzt Kreditnehmer, ihre Familien und die investierende Community. Verantwortungsvolle Finanzierung bedeutet faire Konditionen plus Sicherheit und Vertrauen.
 
-Die Versicherung deckt drei primare Risikoszenarien ab:
+## Wie funktioniert die Restschuldversicherung?
 
-1. **Tod:** Bis zu CHF 100'000 des verbleibenden Kreditsaldos werden ohne Selbstbehalt oder Wartezeiten gedeckt
-2. **Vollstandige Arbeitsunfahigkeit:** Monatliche Raten (bis CHF 2'000) werden fur maximal 12 Monate gedeckt, mit 30 Tagen Wartezeit
-3. **Unfreiwillige Arbeitslosigkeit:** Monatliche Zahlungen (bis CHF 2'000) werden fur bis zu 12 Monate gedeckt, mit 90 Tagen Wartezeit
+Die Versicherung deckt drei zentrale Risikoszenarien ab:
 
-Die Todesversicherung ist obligatorisch; die Deckung fur Invaliditat und Arbeitslosigkeit ist optional.
+**Im Todesfall:** Der offene Kreditsaldo bis zu CHF 100'000 wird ohne Selbstbehalt oder Wartezeit ubernommen und schutzt so die Erben vor finanzieller Belastung.
 
-## Berechtigung
+**Bei vollstandiger Arbeitsunfahigkeit:** Aufgrund von Krankheit oder Unfall werden monatliche Raten (bis CHF 2'000) fur maximal zwolf Monate pro Schadensfall ubernommen, mit 30 Tagen Wartezeit.
 
-Antragsteller mussen 18-65 Jahre alt sein, in der Schweiz wohnen und mindestens 15 Wochenstunden in einem laufenden Arbeitsverhaltnis arbeiten.`,
-      en: `Life crises—illness, accidents, or job loss—can quickly destabilize household finances. For Swiss residents carrying credit obligations, a single unexpected event can trigger serious payment difficulties, leading to enforcement proceedings, negative credit bureau entries, and damaged creditworthiness.
+**Bei unverschuldeter Arbeitslosigkeit:** Monatliche Zahlungen (bis CHF 2'000) werden fur maximal zwolf Monate ubernommen, mit 90 Tagen Wartezeit.
 
-## The Cashare Protect Solution
+Die Todesfalldeckung ist fur alle Kreditnehmer obligatorisch. Die Deckung bei Arbeitsunfahigkeit und Arbeitslosigkeit ist optional.
 
-Cashare offers **Cashare Protect payment protection insurance** to protect borrowers when circumstances change unexpectedly. The insurance safeguards not only borrowers but also their families and the investing crowd through responsible lending practices.
+## Warum diese Kreditabsicherung in der Schweiz so wichtig ist
 
-## How Payment Protection Insurance Works
+Eine Versicherung ist nicht nur Vorsorge – sie ist oft entscheidend, um eine Uberschuldung zu verhindern. Hohe Kreditbetrage oder lange Laufzeiten bedeuten, dass ein kurzer Einkommensverlust schwerwiegende Folgen hat. Die Deckung stabilisiert die Finanzen, schutzt die Kreditwurdigkeit, verhindert Eintrage bei der Kreditauskunft und vermeidet Betreibungsverfahren und Strafen.
 
-The insurance covers three primary risk scenarios:
+Auch Familien profitieren: Partner stehen nicht plotzlich vor offenen Zahlungen. Investoren gewinnen gleichzeitig Sicherheit durch die fortgesetzte Kreditbedienung.
 
-1. **Death:** Up to CHF 100,000 of remaining credit balance is covered without deductibles or waiting periods
-2. **Complete Work Disability:** Monthly installments (up to CHF 2,000) are covered for maximum 12 months, with a 30-day waiting period
-3. **Involuntary Unemployment:** Monthly payments (up to CHF 2,000) are covered for up to 12 months, with a 90-day waiting period
+## Zwei kurze Geschichten
 
-Death coverage is mandatory; disability and unemployment coverage are optional.
+**Aline, 39, Projektkoordinatorin:** Ein Skiunfall und die Genesungszeit reduzierten ihr Einkommen. Ihre Versicherung deckte die Raten wahrend der Rehabilitation, sodass sie sich auf die Genesung konzentrieren konnte statt auf Mahnungen.
 
-## Eligibility Requirements
+**Marco, 45, Teamleiter:** Eine Umstrukturierung eliminierte seine Position. Nach der Wartezeit deckte die Versicherung die monatlichen Zahlungen, bis er eine neue Anstellung fand – ohne Kreditschaden.
 
-Applicants must be 18-65 years old, reside in Switzerland, and maintain at least 15 weekly work hours in an ongoing employment relationship.`,
-      fr: `Les crises de vie - maladie, accidents ou perte d'emploi - peuvent rapidement destabiliser les finances du menage. Pour les residents suisses ayant des obligations de credit, un seul evenement inattendu peut declencher de graves difficultes de paiement.
+## Wer kann sich mit Cashare Protect versichern?
 
-## La solution Cashare Protect
+Standardbedingungen erfordern:
+- Alter zwischen 18 und 65 Jahren
+- Wohnsitz in der Schweiz
+- Mindestens 15 wochentliche Arbeitsstunden in einem festen Arbeitsverhaltnis
+- Keine Kenntnis einer bevorstehenden Kundigung oder Arbeitsunfahigkeit
 
-Cashare propose l'**assurance solde restant du Cashare Protect** pour proteger les emprunteurs lorsque les circonstances changent de maniere inattendue.
+Ausschlusse umfassen typischerweise freiwillige Arbeitslosigkeit, Kundigungen wahrend der Probezeit, bekannte Vorerkrankungen und bestimmte unbehandelte psychische Erkrankungen.
 
-## Comment fonctionne l'assurance
+## Lohnt sich das? Ein kurzer Entscheidungsrahmen
 
-L'assurance couvre trois scenarios de risque principaux:
+Funf Bewertungsfaktoren:
+1. **Kreditprofil:** Hohere Betrage und langere Laufzeiten erhohen das Risiko
+2. **Einkommensstabilitat:** Berucksichtigen Sie Branchenvolatilitat und Beschaftigungsart
+3. **Notreserven:** Konnen Sie 6-12 Monate aus Ersparnissen decken?
+4. **Policenpassung:** Prufen Sie Limits, Wartezeiten, Dauer und Ausschlusse
+5. **Umfassender Schutz:** Wie erganzt dies bestehende Kranken- und Invaliditatsversicherungen?
 
-1. **Deces:** Jusqu'a CHF 100'000 du solde de credit restant sont couverts
-2. **Incapacite de travail complete:** Les mensualites (jusqu'a CHF 2'000) sont couvertes pendant 12 mois maximum
-3. **Chomage involontaire:** Les paiements mensuels (jusqu'a CHF 2'000) sont couverts pendant 12 mois maximum`,
+Wenn mehrere Risikofaktoren zutreffen, wird dieser Schutz zur "klugsten Entscheidung des Jahres".
+
+## Fazit: Restschuldversicherung – ein finanzieller Rettungsschirm fur Krisenzeiten
+
+Eine Schweizer Restschuldversicherung ist nicht obligatorisch (ausser Todesfalldeckung), aber eine kluge Entscheidung zur Absicherung langfristiger Raten. Sie eignet sich fur Personen mit hohen Krediten, langen Laufzeiten oder unregelmassigem Einkommen.
+
+So wird sichergestellt, dass personliche Krisen nicht automatisch zu finanziellen Katastrophen werden. Die richtige Deckung schutzt Sie selbst, Ihre Familie, Ihre Kreditwurdigkeit und Ihre Zukunftsperspektiven.
+
+## FAQs zur Ratenversicherung
+
+**Sofortige Deckung?** Normalerweise nicht. Eine Warte- oder Karenzzeit gilt, bevor Leistungen beginnen.
+
+**Teilweise Arbeitsunfahigkeit?** Die meisten Produkte erfordern vollstandige Arbeitsunfahigkeit fur Anspruche.
+
+**Selbststandige?** Die Arbeitslosigkeitsdeckung kann eingeschrankt sein; Krankheits-/Unfalldeckung bleibt relevant.
+
+**Auswirkungen auf den Zinssatz?** Kredit und Versicherung sind getrennt. Das Ziel ist die Stabilisierung von Ruckzahlungsplanen bei Ausnahmesituationen.`,
+      en: `Life changes unexpectedly—illness, accidents, or job loss can quickly strain household finances. For many Swiss residents, a single crisis creates serious payment difficulties. When monthly credit installments cannot be paid, the consequences include legal enforcement proceedings, negative credit registry entries, and damaged creditworthiness that complicates future financing.
+
+A Swiss residual debt or installment insurance addresses this problem. It covers credit payments during difficult times, protects against debt traps, and prevents personal crises from becoming financial disasters.
+
+## Security When It Matters – with Cashare Protect
+
+The **Cashare Protect residual debt insurance** activates when life takes unexpected turns. It protects borrowers, their families, and the investing community. Responsible financing means fair conditions plus security and trust.
+
+## How Does Payment Protection Insurance Work?
+
+The insurance covers three central risk scenarios:
+
+**In case of death:** The outstanding credit balance up to CHF 100,000 is covered without deductible or waiting period, protecting heirs from financial burden.
+
+**In case of complete work incapacity:** Due to illness or accident, monthly payments (up to CHF 2,000) are covered for maximum twelve months per claim, with a 30-day waiting period.
+
+**In case of involuntary unemployment:** Monthly payments (up to CHF 2,000) are covered for maximum twelve months, with a 90-day waiting period.
+
+Death coverage is mandatory for all borrowers. Work incapacity and unemployment coverage are optional.
+
+## Why This Credit Protection Is So Important in Switzerland
+
+Insurance isn't merely precautionary—it's often decisive in preventing insolvency. High credit amounts or long terms mean brief income loss creates serious consequences. Coverage stabilizes finances, protects creditworthiness, prevents credit registry entries, and avoids enforcement proceedings and penalties.
+
+Families also benefit: Partners won't suddenly face outstanding payments. Investors simultaneously gain security through continued loan servicing.
+
+## Two Brief Stories
+
+**Aline, 39, Project Coordinator:** A skiing accident and recovery period reduced income. Her insurance covered installments during rehabilitation, allowing focus on recovery rather than collection notices.
+
+**Marco, 45, Team Leader:** Restructuring eliminated his position. After the waiting period, insurance covered monthly payments until he secured new employment without credit damage.
+
+## Who Can Get Cashare Protect Insurance?
+
+Standard conditions require:
+- Age between 18 and 65
+- Swiss residence
+- Minimum 15 weekly work hours in permanent employment
+- No knowledge of impending termination or work incapacity
+
+Exclusions typically include voluntary unemployment, probationary period terminations, known pre-existing conditions, and certain untreated mental health conditions.
+
+## Is It Worth It? A Brief Decision Framework
+
+Five assessment factors:
+1. **Credit Profile:** Higher amounts and longer terms increase risk
+2. **Income Stability:** Consider industry volatility and employment type
+3. **Emergency Reserves:** Can you cover 6-12 months from savings?
+4. **Policy Fit:** Check limits, waiting periods, duration, and exclusions
+5. **Comprehensive Protection:** How does this complement existing health and disability coverage?
+
+When multiple risk factors apply, this protection becomes "the wisest decision of the year."
+
+## Conclusion: Payment Protection Insurance – A Financial Safety Net for Crisis Times
+
+Swiss residual debt insurance isn't mandatory (except death coverage), but represents wise decision-making for securing long-term installments. It suits those with high credits, extended terms, or irregular income.
+
+This ensures personal crises don't automatically become financial disasters. Proper coverage protects yourself, family, creditworthiness, and future prospects.
+
+## FAQs About Payment Protection Insurance
+
+**Immediate Coverage?** Usually not. A waiting or qualifying period applies before benefits commence.
+
+**Partial Incapacity?** Most products require full work incapacity for claims.
+
+**Self-Employed Persons?** Unemployment coverage may be limited; illness/accident coverage remains relevant.
+
+**Interest Rate Impact?** Credit and insurance are separate. The goal is stabilizing repayment schedules during exceptions.`,
+      fr: `La vie change de maniere inattendue – maladie, accidents ou perte d'emploi peuvent rapidement mettre a rude epreuve les finances du menage. Pour de nombreux residents suisses, une seule crise cree de graves difficultes de paiement. Lorsque les mensualites de credit ne peuvent pas etre payees, les consequences comprennent des procedures d'execution legales, des inscriptions negatives au registre de credit et une solvabilite endommagee qui complique les financements futurs.
+
+Une assurance suisse de solde restant du ou de versements repond a ce probleme. Elle couvre les paiements de credit pendant les periodes difficiles, protege contre les pieges de la dette et empeche les crises personnelles de devenir des catastrophes financieres.
+
+## Securite quand ca compte – avec Cashare Protect
+
+L'**assurance solde restant du Cashare Protect** s'active lorsque la vie prend des tournants inattendus. Elle protege les emprunteurs, leurs familles et la communaute des investisseurs. Un financement responsable signifie des conditions equitables plus securite et confiance.
+
+## Comment fonctionne l'assurance solde restant du?
+
+L'assurance couvre trois scenarios de risque centraux:
+
+**En cas de deces:** Le solde de credit restant jusqu'a CHF 100'000 est couvert sans franchise ni delai d'attente, protegeant les heritiers de la charge financiere.
+
+**En cas d'incapacite de travail complete:** En raison de maladie ou d'accident, les paiements mensuels (jusqu'a CHF 2'000) sont couverts pendant douze mois maximum par sinistre, avec un delai d'attente de 30 jours.
+
+**En cas de chomage involontaire:** Les paiements mensuels (jusqu'a CHF 2'000) sont couverts pendant douze mois maximum, avec un delai d'attente de 90 jours.
+
+La couverture deces est obligatoire pour tous les emprunteurs. Les couvertures incapacite de travail et chomage sont optionnelles.
+
+## Pourquoi cette protection de credit est si importante en Suisse
+
+L'assurance n'est pas seulement une precaution – elle est souvent decisive pour prevenir l'insolvabilite. Des montants de credit eleves ou des durees longues signifient qu'une breve perte de revenu cree des consequences graves. La couverture stabilise les finances, protege la solvabilite, previent les inscriptions au registre de credit et evite les procedures d'execution et les penalites.
+
+Les familles en beneficient aussi: Les partenaires ne font pas soudainement face a des paiements en suspens. Les investisseurs gagnent simultanement en securite grace au service continu du pret.
+
+## Deux breves histoires
+
+**Aline, 39 ans, coordinatrice de projet:** Un accident de ski et une periode de recuperation ont reduit ses revenus. Son assurance a couvert les versements pendant la rehabilitation, lui permettant de se concentrer sur sa guerison plutot que sur les avis de recouvrement.
+
+**Marco, 45 ans, chef d'equipe:** Une restructuration a elimine son poste. Apres le delai d'attente, l'assurance a couvert les paiements mensuels jusqu'a ce qu'il trouve un nouvel emploi – sans dommage a son credit.
+
+## Qui peut souscrire a Cashare Protect?
+
+Les conditions standard exigent:
+- Age entre 18 et 65 ans
+- Residence en Suisse
+- Minimum 15 heures de travail hebdomadaires en emploi permanent
+- Aucune connaissance d'un licenciement imminent ou d'une incapacite de travail
+
+Les exclusions comprennent typiquement le chomage volontaire, les licenciements pendant la periode d'essai, les conditions preexistantes connues et certaines conditions de sante mentale non traitees.
+
+## Est-ce que ca vaut le coup? Un bref cadre de decision
+
+Cinq facteurs d'evaluation:
+1. **Profil de credit:** Des montants plus eleves et des durees plus longues augmentent le risque
+2. **Stabilite des revenus:** Considerez la volatilite du secteur et le type d'emploi
+3. **Reserves d'urgence:** Pouvez-vous couvrir 6-12 mois avec vos economies?
+4. **Adequation de la police:** Verifiez les limites, delais d'attente, duree et exclusions
+5. **Protection complete:** Comment cela complete-t-il les couvertures sante et invalidite existantes?
+
+Lorsque plusieurs facteurs de risque s'appliquent, cette protection devient "la decision la plus sage de l'annee".
+
+## Conclusion: Assurance solde restant du – un filet de securite financier pour les temps de crise
+
+L'assurance suisse de solde restant du n'est pas obligatoire (sauf couverture deces), mais represente une decision sage pour securiser les versements a long terme. Elle convient a ceux qui ont des credits eleves, des durees prolongees ou des revenus irreguliers.
+
+Cela garantit que les crises personnelles ne deviennent pas automatiquement des catastrophes financieres. Une couverture appropriee vous protege vous-meme, votre famille, votre solvabilite et vos perspectives d'avenir.
+
+## FAQs sur l'assurance de versements
+
+**Couverture immediate?** Generalement non. Un delai d'attente ou de carence s'applique avant que les prestations ne commencent.
+
+**Incapacite partielle?** La plupart des produits exigent une incapacite de travail complete pour les reclamations.
+
+**Independants?** La couverture chomage peut etre limitee; la couverture maladie/accident reste pertinente.
+
+**Impact sur le taux d'interet?** Credit et assurance sont separes. L'objectif est de stabiliser les echeanciers de remboursement lors d'exceptions.`,
     },
     author: "Sajmir",
     date: "2025-10-17",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2025/09/Restschuld-_Ratenversicherung-Dein-Schutzschild-vor-der-Schuldenfalle.png",
+    image: "/images/blog/Restschuld-_Ratenversicherung-Dein-Schutzschild-vor-der-Schuldenfalle.png",
     readTime: 8,
   },
   {
@@ -155,7 +308,7 @@ Les paiements d'interets reguliers assurent un rendement constant pour les inves
     author: "Roger",
     date: "2024-12-06",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2025/02/imgonline-com-ua-TextureSeamless-siEsPd2uBQEE-towfiqu-barbhuiya-joqWSI9u_XM-unsplash-2-scaled-1.jpg",
+    image: "/images/blog/imgonline-com-ua-TextureSeamless-siEsPd2uBQEE-towfiqu-barbhuiya-joqWSI9u_XM-unsplash-2-scaled-1.jpg",
     readTime: 4,
   },
   {
@@ -210,7 +363,7 @@ The current environment creates fertile ground for crowdfunding development in S
     author: "Sajmir",
     date: "2024-09-04",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2024/09/blog-crowdfunding.png",
+    image: "/images/blog/blog-crowdfunding.png",
     readTime: 5,
   },
   {
@@ -273,7 +426,7 @@ L'article anticipe trois baisses de taux tout au long de 2024.`,
     author: "Sajmir",
     date: "2024-08-12",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2024/08/2.png",
+    image: "/images/blog/2.png",
     readTime: 6,
   },
   {
@@ -342,7 +495,7 @@ Le secteur suisse du crowdlending a connu une contraction significative en 2023,
     author: "Sajmir",
     date: "2024-05-17",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2024/05/Titelbild-Crowdfunding-Monitor-Artikel-Blog.png",
+    image: "/images/blog/Titelbild-Crowdfunding-Monitor-Artikel-Blog.png",
     readTime: 7,
   },
   {
@@ -419,7 +572,7 @@ La numerisation permet des formes d'investissement innovantes comme le crowdlend
     author: "Sajmir",
     date: "2024-04-24",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2024/04/Digitalisierung_Blog.png",
+    image: "/images/blog/Digitalisierung_Blog.png",
     readTime: 6,
   },
   {
@@ -474,7 +627,7 @@ Le pret P2P permet un financement direct entre particuliers et entreprises, sans
     author: "Sajmir",
     date: "2023-09-26",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/09/abrakadabra-bank.jpg",
+    image: "/images/blog/abrakadabra-bank.jpg",
     readTime: 5,
   },
   {
@@ -539,7 +692,7 @@ L'article presente le crowdlending comme solution offrant des taux d'interet jus
     author: "Sajmir",
     date: "2023-09-18",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/09/banken-millionen.jpg",
+    image: "/images/blog/banken-millionen.jpg",
     readTime: 5,
   },
   {
@@ -596,7 +749,7 @@ Le volume de crowdfunding en Suisse a diminue de 16,3% pour atteindre 662,4 mill
     author: "Sajmir",
     date: "2023-06-02",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/06/crowdfunding-monitor-2023.jpg",
+    image: "/images/blog/crowdfunding-monitor-2023.jpg",
     readTime: 6,
   },
   {
@@ -645,7 +798,7 @@ Renewal applies exclusively to investors already invested in specific projects. 
     author: "Sajmir",
     date: "2023-08-22",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/08/kreditverlaengerungen.jpg",
+    image: "/images/blog/kreditverlaengerungen.jpg",
     readTime: 4,
   },
   {
@@ -692,7 +845,7 @@ The company emphasizes that their support team and credit advisors remain availa
     author: "Sajmir",
     date: "2023-06-20",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/06/chatbot-cashy.jpg",
+    image: "/images/blog/chatbot-cashy.jpg",
     readTime: 3,
   },
   {
@@ -748,7 +901,7 @@ The article presents a case study of a 72-year-old woman from Zurich suffering f
     author: "Sajmir",
     date: "2023-08-03",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/08/vorsorgeauftrag.jpg",
+    image: "/images/blog/vorsorgeauftrag.jpg",
     readTime: 7,
   },
   {
@@ -787,7 +940,7 @@ The credit goes directly to the university, which then transfers student payment
     author: "Sajmir",
     date: "2023-03-08",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/03/american-institute.jpg",
+    image: "/images/blog/american-institute.jpg",
     readTime: 4,
   },
   {
@@ -830,7 +983,7 @@ The platform successfully repaid a three-year bond on schedule, demonstrating po
     author: "Sajmir",
     date: "2023-01-04",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/01/jahresrueckblick-2022.jpg",
+    image: "/images/blog/jahresrueckblick-2022.jpg",
     readTime: 5,
   },
   {
@@ -869,7 +1022,7 @@ With this new CSV download, users can monitor investment performance using exter
     author: "Sajmir",
     date: "2023-01-24",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/01/csv-export.jpg",
+    image: "/images/blog/csv-export.jpg",
     readTime: 3,
   },
   {
@@ -914,7 +1067,7 @@ The system requires only a Swiss bank account in CHF and is completely free with
     author: "Sajmir",
     date: "2022-11-03",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/lsv.jpg",
+    image: "/images/blog/lsv.jpg",
     readTime: 3,
   },
   {
@@ -957,7 +1110,7 @@ The system requires only a Swiss bank account in CHF and is completely free with
     author: "Roger",
     date: "2022-06-14",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/06/inflation.jpg",
+    image: "/images/blog/inflation.jpg",
     readTime: 5,
   },
   {
@@ -996,7 +1149,7 @@ Since Cashare's founding 14 years prior, approximately CHF 3 billion has been me
     author: "Sajmir",
     date: "2022-06-09",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/06/crowdfunding-monitor-2022.jpg",
+    image: "/images/blog/crowdfunding-monitor-2022.jpg",
     readTime: 5,
   },
   {
@@ -1047,7 +1200,7 @@ Sophie proposes two implementations: website chatbots answering newcomer questio
     author: "Sajmir",
     date: "2022-01-27",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/01/sophie-chatbots.jpg",
+    image: "/images/blog/sophie-chatbots.jpg",
     readTime: 6,
   },
   {
@@ -1094,7 +1247,7 @@ Visit wertundvoll.ch and use code "cashare" for 10% discount.`,
     author: "Sajmir",
     date: "2023-01-12",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2023/01/Mika_Stappen_Besuch_Blog.jpg",
+    image: "/images/blog/Mika_Stappen_Besuch_Blog.jpg",
     readTime: 4,
   },
   {
@@ -1125,7 +1278,7 @@ We welcome her expertise to enhance the company's advisory capabilities.`,
     author: "Sajmir",
     date: "2022-10-11",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Tina-Stormer-Kopie.jpg",
+    image: "/images/blog/Tina-Stormer-Kopie.jpg",
     readTime: 3,
   },
   {
@@ -1156,7 +1309,7 @@ After three years, the bond matured successfully, with both annual coupon paymen
     author: "Sajmir",
     date: "2022-12-13",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/12/Blog_Success_Anleihe.jpg",
+    image: "/images/blog/Blog_Success_Anleihe.jpg",
     readTime: 4,
   },
   {
@@ -1195,7 +1348,7 @@ Her contributions include:
     author: "Sajmir",
     date: "2022-01-20",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Sophie_Blog_Titel_Advisory.png",
+    image: "/images/blog/Sophie_Blog_Titel_Advisory.png",
     readTime: 4,
   },
   {
@@ -1230,7 +1383,7 @@ A key highlight was a successful crowdinvesting campaign in November, enabling e
     author: "Sajmir",
     date: "2021-12-29",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Ruckblick-2021.jpg",
+    image: "/images/blog/Ruckblick-2021.jpg",
     readTime: 5,
   },
   {
@@ -1265,7 +1418,7 @@ The initiative reflects the company's philosophy: "Without you - our crowd - we 
     author: "Sajmir",
     date: "2021-11-15",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Crowdinvesting.jpg",
+    image: "/images/blog/Blog_Crowdinvesting.jpg",
     readTime: 5,
   },
   {
@@ -1306,7 +1459,7 @@ Key features:
     author: "Sajmir",
     date: "2021-07-17",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel-Kinatsic.png",
+    image: "/images/blog/Titel-Kinatsic.png",
     readTime: 6,
   },
   {
@@ -1351,7 +1504,7 @@ Key features:
     author: "Sajmir",
     date: "2021-06-25",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Crowdlending-Alternative_Titel.png",
+    image: "/images/blog/Blog_Crowdlending-Alternative_Titel.png",
     readTime: 4,
   },
   {
@@ -1396,7 +1549,7 @@ Investors can begin with a CHF 100 minimum deposit. Crowdlending offers attracti
     author: "Sajmir",
     date: "2021-06-04",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_Anlegerblog.jpg",
+    image: "/images/blog/Titel_Anlegerblog.jpg",
     readTime: 4,
   },
   {
@@ -1443,7 +1596,7 @@ The author emphasizes two key concepts: "Pain" (suffering that motivates change)
     author: "Sajmir",
     date: "2021-05-19",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Postcorona.jpg",
+    image: "/images/blog/Blog_Postcorona.jpg",
     readTime: 5,
   },
   {
@@ -1480,7 +1633,7 @@ The author emphasizes two key concepts: "Pain" (suffering that motivates change)
     author: "Sajmir",
     date: "2021-04-30",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_Burgschaft.jpg",
+    image: "/images/blog/Titel_Burgschaft.jpg",
     readTime: 4,
   },
   {
@@ -1531,7 +1684,7 @@ The author emphasizes two key concepts: "Pain" (suffering that motivates change)
     author: "Sajmir",
     date: "2021-04-07",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Leasing_Titel_Blog.jpg",
+    image: "/images/blog/Leasing_Titel_Blog.jpg",
     readTime: 4,
   },
   {
@@ -1566,7 +1719,7 @@ The author emphasizes two key concepts: "Pain" (suffering that motivates change)
     author: "Sajmir",
     date: "2021-03-30",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/5-Tipps_Titel_Blog-1.jpg",
+    image: "/images/blog/5-Tipps_Titel_Blog-1.jpg",
     readTime: 4,
   },
   {
@@ -1605,7 +1758,7 @@ Crowdlending offers an alternative, providing attractive yields with diverse mat
     author: "Sajmir",
     date: "2021-03-10",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Anleihe_Blog.jpg",
+    image: "/images/blog/Anleihe_Blog.jpg",
     readTime: 5,
   },
   {
@@ -1644,7 +1797,7 @@ Crowdlending offers an alternative, providing attractive yields with diverse mat
     author: "Sajmir",
     date: "2021-03-02",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Kredit-janein_Blog_Titel.jpg",
+    image: "/images/blog/Kredit-janein_Blog_Titel.jpg",
     readTime: 4,
   },
   {
@@ -1675,7 +1828,7 @@ The sector experienced robust expansion, particularly in real estate crowdlendin
     author: "Sajmir",
     date: "2021-02-25",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/2021-02-23_Blog_Crowdlending-Survey_2020.jpg",
+    image: "/images/blog/2021-02-23_Blog_Crowdlending-Survey_2020.jpg",
     readTime: 5,
   },
   {
@@ -1706,7 +1859,7 @@ Friedli discovered Cashare's crowdlending platform and praised the professional 
     author: "Sajmir",
     date: "2021-02-17",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Fridli_Titelbild.jpg",
+    image: "/images/blog/Fridli_Titelbild.jpg",
     readTime: 5,
   },
   {
@@ -1741,7 +1894,7 @@ Friedli discovered Cashare's crowdlending platform and praised the professional 
     author: "Sajmir",
     date: "2021-02-01",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_Blog_Top-5.jpg",
+    image: "/images/blog/Titel_Blog_Top-5.jpg",
     readTime: 4,
   },
   {
@@ -1772,7 +1925,7 @@ No traditional bank would finance a vegan restaurant. Crowdfunding and crowdlend
     author: "Sajmir",
     date: "2021-01-25",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Vegan_Blog_1.jpg",
+    image: "/images/blog/Vegan_Blog_1.jpg",
     readTime: 4,
   },
   {
@@ -1807,7 +1960,7 @@ No traditional bank would finance a vegan restaurant. Crowdfunding and crowdlend
     author: "Sajmir",
     date: "2021-01-13",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Mehrfamilienhaus_Blog.jpg",
+    image: "/images/blog/Mehrfamilienhaus_Blog.jpg",
     readTime: 5,
   },
   {
@@ -1844,7 +1997,7 @@ No traditional bank would finance a vegan restaurant. Crowdfunding and crowdlend
     author: "Sajmir",
     date: "2020-12-31",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/2020_Blog.jpg",
+    image: "/images/blog/2020_Blog.jpg",
     readTime: 6,
   },
   {
@@ -1875,7 +2028,7 @@ Club Deals target a limited investor circle, typically requiring investments exc
     author: "Sajmir",
     date: "2020-12-15",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Clubdeal.jpg",
+    image: "/images/blog/Clubdeal.jpg",
     readTime: 5,
   },
   {
@@ -1906,7 +2059,7 @@ Other crowdlending platforms rejected his application because he hadn't been ope
     author: "Sajmir",
     date: "2020-12-01",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Mika_Blog_Titel-1.jpg",
+    image: "/images/blog/Mika_Blog_Titel-1.jpg",
     readTime: 5,
   },
   {
@@ -1937,7 +2090,7 @@ The bond holds credits extended to private individuals and SMEs in Switzerland, 
     author: "Sajmir",
     date: "2020-11-25",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Anleihe_Stand.jpg",
+    image: "/images/blog/Anleihe_Stand.jpg",
     readTime: 4,
   },
   {
@@ -1968,7 +2121,7 @@ In contrast, Cashare's crowdlending platform empowers individual investors to se
     author: "Sajmir",
     date: "2020-11-13",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Qual-der-Wahl.jpg",
+    image: "/images/blog/Qual-der-Wahl.jpg",
     readTime: 4,
   },
   {
@@ -1995,7 +2148,7 @@ In September 2020, "Crazy Country USA" was published, co-authored with his wife 
     author: "Sajmir",
     date: "2020-10-23",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/mettler-buch_blog.jpg",
+    image: "/images/blog/mettler-buch_blog.jpg",
     readTime: 4,
   },
   {
@@ -2026,7 +2179,7 @@ He has invested in over 700 projects on the platform and praises the reliable mo
     author: "Sajmir",
     date: "2020-10-14",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_Harry-Schnabel_Kampagne.jpg",
+    image: "/images/blog/Titel_Harry-Schnabel_Kampagne.jpg",
     readTime: 5,
   },
   {
@@ -2065,7 +2218,7 @@ Key investor advantages:
     author: "Sajmir",
     date: "2020-10-05",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_1x1_Blog.jpg",
+    image: "/images/blog/Titel_1x1_Blog.jpg",
     readTime: 4,
   },
   {
@@ -2096,7 +2249,7 @@ Recommended strategy: Establish a personal cash reserve for immediate needs and 
     author: "Sajmir",
     date: "2020-08-03",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Crowdlending_kontoersatz.jpg",
+    image: "/images/blog/Crowdlending_kontoersatz.jpg",
     readTime: 4,
   },
   {
@@ -2127,7 +2280,7 @@ Property valuations employ Swiss standard methods, with maximum lending capped a
     author: "Sajmir",
     date: "2020-07-23",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/408443-blank-754.png",
+    image: "/images/blog/408443-blank-754.png",
     readTime: 5,
   },
   {
@@ -2158,7 +2311,7 @@ The team plans to incorporate user suggestions in upcoming platform updates.`,
     author: "Sajmir",
     date: "2020-04-23",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_Blog_Sekundarmarkt.png",
+    image: "/images/blog/Titel_Blog_Sekundarmarkt.png",
     readTime: 4,
   },
   {
@@ -2189,7 +2342,7 @@ The verification uses Veriff as the partner service. Users provide a selfie and 
     author: "Sajmir",
     date: "2020-04-15",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Onboarding_Titel.jpg",
+    image: "/images/blog/Onboarding_Titel.jpg",
     readTime: 4,
   },
   {
@@ -2224,7 +2377,7 @@ These require more thorough bank review, carry a 0.5% interest rate, and feature
     author: "Sajmir",
     date: "2020-04-06",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_Blog_Bundmassnahmen.jpg",
+    image: "/images/blog/Titel_Blog_Bundmassnahmen.jpg",
     readTime: 5,
   },
   {
@@ -2255,7 +2408,7 @@ Cashare's IT team rapidly created a free voucher platform at www.einherzfuerkmu.
     author: "Sajmir",
     date: "2020-03-30",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Ein-Herz-fur-KMU.jpg",
+    image: "/images/blog/Blog_Ein-Herz-fur-KMU.jpg",
     readTime: 4,
   },
   {
@@ -2286,7 +2439,7 @@ The suspension was enacted to protect businesses facing liquidity shortages due 
     author: "Sajmir",
     date: "2020-03-25",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_Betreibungen.jpg",
+    image: "/images/blog/Titel_Betreibungen.jpg",
     readTime: 4,
   },
   {
@@ -2317,7 +2470,7 @@ Key measures included: mandatory home office for all staff, strict social distan
     author: "Sajmir",
     date: "2020-03-16",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Titel_Home-office_Corona.jpg",
+    image: "/images/blog/Titel_Home-office_Corona.jpg",
     readTime: 4,
   },
   {
@@ -2348,7 +2501,7 @@ Students benefit from accessible financing, investors gain exposure to education
     author: "Sajmir",
     date: "2020-02-05",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Benedict_next-round.jpg",
+    image: "/images/blog/Benedict_next-round.jpg",
     readTime: 4,
   },
   {
@@ -2379,7 +2532,7 @@ The company celebrates significant achievements: over 36,000 users, more than 2,
     author: "Sajmir",
     date: "2020-01-23",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 4,
   },
   {
@@ -2410,7 +2563,7 @@ Using the Cashare loan, DS-Logistik purchased additional trucks, expanded their 
     author: "Sajmir",
     date: "2020-01-16",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_DS-Logistik_Titel.jpg",
+    image: "/images/blog/Blog_DS-Logistik_Titel.jpg",
     readTime: 5,
   },
   {
@@ -2441,7 +2594,7 @@ Notable 2019 product developments: lowering investment minimums to CHF 100 for p
     author: "Sajmir",
     date: "2019-12-31",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Feuerwerk_600x600@2x.jpg",
+    image: "/images/blog/Feuerwerk_600x600@2x.jpg",
     readTime: 6,
   },
   {
@@ -2472,7 +2625,7 @@ The feature applies to both private and SME loans. Borrowers in arrears cannot b
     author: "Sajmir",
     date: "2019-12-28",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Sekundarmarkt.-Titel.png",
+    image: "/images/blog/Sekundarmarkt.-Titel.png",
     readTime: 4,
   },
   {
@@ -2499,7 +2652,7 @@ A significant milestone was reached: an inquired and processed credit volume of 
     author: "Sajmir",
     date: "2019-12-04",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Q3_Blog_Titel.jpg",
+    image: "/images/blog/Q3_Blog_Titel.jpg",
     readTime: 5,
   },
   {
@@ -2526,7 +2679,7 @@ The article showcases how Cortesi financed a real estate property through Cashar
     author: "Sajmir",
     date: "2019-11-25",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Aussenansicht-mit-Balkon_Blog.jpg",
+    image: "/images/blog/Aussenansicht-mit-Balkon_Blog.jpg",
     readTime: 5,
   },
   {
@@ -2557,7 +2710,7 @@ Cashare presented key concerns: electronic identification, increasing maximum le
     author: "Sajmir",
     date: "2019-11-14",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Bundeshaus_Blog.jpg",
+    image: "/images/blog/Bundeshaus_Blog.jpg",
     readTime: 6,
   },
   {
@@ -2588,7 +2741,7 @@ Cashare provided interactive activities including a prize wheel for children and
     author: "Sajmir",
     date: "2019-10-30",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Messe.jpg",
+    image: "/images/blog/Blog_Messe.jpg",
     readTime: 4,
   },
   {
@@ -2619,7 +2772,7 @@ Through this collaboration, Cashare will finance educational programs for learne
     author: "Sajmir",
     date: "2019-10-17",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Partnerschaft_Benedict_Blog-5.jpg",
+    image: "/images/blog/Partnerschaft_Benedict_Blog-5.jpg",
     readTime: 4,
   },
   {
@@ -2650,7 +2803,7 @@ For Cashare users, it advises verifying sender addresses contain "@cashare.ch" a
     author: "Sajmir",
     date: "2019-09-03",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Phishing_Blog.jpg",
+    image: "/images/blog/Phishing_Blog.jpg",
     readTime: 5,
   },
   {
@@ -2681,7 +2834,7 @@ The article positions crowdlending through Cashare as an alternative offering "a
     author: "Sajmir",
     date: "2019-08-26",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Geiselhaft.jpg",
+    image: "/images/blog/Blog_Geiselhaft.jpg",
     readTime: 5,
   },
   {
@@ -2712,7 +2865,7 @@ After five months, his company strengthened its working capital and plans future
     author: "Sajmir",
     date: "2019-08-14",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/1Fb.jpg",
+    image: "/images/blog/1Fb.jpg",
     readTime: 5,
   },
   {
@@ -2749,7 +2902,7 @@ The article illustrates compound interest power: CHF 10,000 over 30 years grows 
     author: "Sajmir",
     date: "2019-08-05",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Anlegen_Erfolg_Blog_Titelbild.jpg",
+    image: "/images/blog/Anlegen_Erfolg_Blog_Titelbild.jpg",
     readTime: 5,
   },
   {
@@ -2776,7 +2929,7 @@ Key topics: understanding different investment types, recognizing individual ris
     author: "Sajmir",
     date: "2019-06-19",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Anlegen_Erfolg_Blog_Titelbild.jpg",
+    image: "/images/blog/Anlegen_Erfolg_Blog_Titelbild.jpg",
     readTime: 6,
   },
   {
@@ -2803,7 +2956,7 @@ The update introduced organizational improvements: a consolidated "All Contracts
     author: "Sajmir",
     date: "2011-07-07",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 3,
   },
   {
@@ -2830,7 +2983,7 @@ Key improvements involved enhanced contract access through the user dashboard an
     author: "Sajmir",
     date: "2011-06-14",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 3,
   },
   {
@@ -2857,7 +3010,7 @@ While Ex Libris won first place, Cashare celebrated being recognized alongside r
     author: "Sajmir",
     date: "2011-05-13",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 3,
   },
   {
@@ -2884,7 +3037,7 @@ Users can now download their settlement documents anytime from their personal ac
     author: "Sajmir",
     date: "2011-02-07",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 2,
   },
   {
@@ -2911,7 +3064,7 @@ The company credited this contribution to the active support of its Facebook com
     author: "Sajmir",
     date: "2010-12-15",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 2,
   },
   {
@@ -2938,7 +3091,7 @@ The company assigns ratings (A through E) to loan applications, with only A-C ra
     author: "Sajmir",
     date: "2010-07-23",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 3,
   },
   {
@@ -2965,7 +3118,7 @@ The segment discusses private credit services and shows how fintech platforms li
     author: "Sajmir",
     date: "2010-07-01",
     category: "News",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 2,
   },
   {
@@ -2992,7 +3145,7 @@ Key additions: rating visibility in overviews, improved credit information displ
     author: "Sajmir",
     date: "2010-03-13",
     category: "Blog",
-    image: "https://www.cashare.ch/wp-content/uploads/2022/11/Blog_Titel_12_Geburtstag.jpg",
+    image: "/images/blog/Blog_Titel_12_Geburtstag.jpg",
     readTime: 3,
   },
 ];
