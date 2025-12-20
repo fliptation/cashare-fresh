@@ -2,17 +2,13 @@
 .top-bar {
   position: relative;
   z-index: 1001;
-  height: 32px;
 }
 
 .top-bar__container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 var(--space-6);
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 3px 9px;
 }
 
 .top-bar__link {
@@ -22,7 +18,7 @@
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: var(--color-gray);
+  color: var(--color-dark);
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.15s ease;
