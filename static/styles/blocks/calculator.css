@@ -675,7 +675,7 @@
     rgba(255, 255, 255, 0.4),
     transparent
   );
-  animation: shimmer 3s ease-in-out infinite;
+  animation: shimmer 20s ease-in-out infinite;
 }
 
 .loan-calculator__results-header {
@@ -915,6 +915,11 @@
 .hero__right .loan-calculator .loan-calculator__tabs {
   background: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Hide tab indicator on frosty glass - cleaner look */
+.hero__right .loan-calculator .loan-calculator__tab-indicator {
+  display: none;
 }
 
 /* Frosty results section */

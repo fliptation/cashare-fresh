@@ -54,10 +54,11 @@ export function Hero({
 
   return (
     <section class="hero gradient-hero">
-      {/* Animated background orbs */}
+      {/* Animated background orbs - flowing gradient clouds */}
       <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
       <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
       <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--4" aria-hidden="true"></div>
 
       {/* Animated background effects */}
       <div class="hero__grid-lines" aria-hidden="true"></div>

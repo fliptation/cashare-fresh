@@ -15,7 +15,7 @@ export function Layout({ children, locale, currentPath }: LayoutProps) {
     <div class="min-h-screen flex flex-col">
       <TopBar />
       <StripeNav locale={locale} currentPath={currentPath} />
-      <main class="flex-1" style="padding-top: 72px;">
+      <main class="flex-1">
         {children}
       </main>
       <Footer locale={locale} />
