@@ -88,9 +88,9 @@ const footerContent = {
       products: {
         title: "Products",
         links: [
-          { label: "Private Loan", href: "/en/apply-for-loan/private" },
-          { label: "SME Loan", href: "/en/apply-for-loan/sme" },
-          { label: "Mortgage", href: "/en/apply-for-loan/mortgage" },
+          { label: "Personal Loan", href: "/en/apply-for-credit/personal-loan" },
+          { label: "SME Loan", href: "/en/apply-for-credit/sme-loan" },
+          { label: "Mortgage", href: "/en/apply-for-credit/mortgage" },
           { label: "Invest", href: "/en/invest" },
         ],
       },
@@ -154,9 +154,9 @@ const footerContent = {
       products: {
         title: "Produits",
         links: [
-          { label: "Crédit privé", href: "/fr/demander-credit/prive" },
-          { label: "Crédit PME", href: "/fr/demander-credit/pme" },
-          { label: "Hypothèque", href: "/fr/demander-credit/hypotheque" },
+          { label: "Crédit privé", href: "/fr/demander-un-credit/credit-prive" },
+          { label: "Crédit PME", href: "/fr/demander-un-credit/credit-pme" },
+          { label: "Hypothèque", href: "/fr/demander-un-credit/hypotheque" },
           { label: "Investir", href: "/fr/investir" },
         ],
       },
@@ -478,11 +478,13 @@ export function Footer({ locale }: FooterProps) {
                 <line x1="2" y1="12" x2="22" y2="12"/>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
               </svg>
-              <select class="footer__language-select">
-                <option value="de" selected={locale === "de"}>{content.languages.de}</option>
-                <option value="en" selected={locale === "en"}>{content.languages.en}</option>
-                <option value="fr" selected={locale === "fr"}>{content.languages.fr}</option>
-              </select>
+              <div class="footer__language-links">
+                <a href="/" class={`footer__language-link ${locale === "de" ? "footer__language-link--active" : ""}`}>DE</a>
+                <span class="footer__language-separator">|</span>
+                <a href="/en" class={`footer__language-link ${locale === "en" ? "footer__language-link--active" : ""}`}>EN</a>
+                <span class="footer__language-separator">|</span>
+                <a href="/fr" class={`footer__language-link ${locale === "fr" ? "footer__language-link--active" : ""}`}>FR</a>
+              </div>
             </div>
           </div>
 

@@ -8,16 +8,25 @@ import * as $api_joke from "./routes/api/joke.ts";
 import * as $api_statistics from "./routes/api/statistics.ts";
 import * as $en_about from "./routes/en/about.tsx";
 import * as $en_apply_for_credit from "./routes/en/apply-for-credit.tsx";
+import * as $en_apply_for_credit_mortgage from "./routes/en/apply-for-credit/mortgage.tsx";
+import * as $en_apply_for_credit_personal_loan from "./routes/en/apply-for-credit/personal-loan.tsx";
+import * as $en_apply_for_credit_sme_loan from "./routes/en/apply-for-credit/sme-loan.tsx";
 import * as $en_index from "./routes/en/index.tsx";
 import * as $en_invest from "./routes/en/invest.tsx";
 import * as $fr_a_propos from "./routes/fr/a-propos.tsx";
 import * as $fr_demander_un_credit from "./routes/fr/demander-un-credit.tsx";
+import * as $fr_demander_un_credit_credit_pme from "./routes/fr/demander-un-credit/credit-pme.tsx";
+import * as $fr_demander_un_credit_credit_prive from "./routes/fr/demander-un-credit/credit-prive.tsx";
+import * as $fr_demander_un_credit_hypotheque from "./routes/fr/demander-un-credit/hypotheque.tsx";
 import * as $fr_index from "./routes/fr/index.tsx";
 import * as $fr_investir from "./routes/fr/investir.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $investieren from "./routes/investieren.tsx";
 import * as $kredit_beantragen from "./routes/kredit-beantragen.tsx";
+import * as $kredit_beantragen_hypotheken from "./routes/kredit-beantragen/hypotheken.tsx";
+import * as $kredit_beantragen_kmu_kredit from "./routes/kredit-beantragen/kmu-kredit.tsx";
+import * as $kredit_beantragen_privatkredit from "./routes/kredit-beantragen/privatkredit.tsx";
 import * as $styleguide from "./routes/styleguide.tsx";
 import * as $styleguide_buttons from "./routes/styleguide/buttons.tsx";
 import * as $ueber_uns from "./routes/ueber-uns.tsx";
@@ -47,16 +56,30 @@ const manifest = {
     "./routes/api/statistics.ts": $api_statistics,
     "./routes/en/about.tsx": $en_about,
     "./routes/en/apply-for-credit.tsx": $en_apply_for_credit,
+    "./routes/en/apply-for-credit/mortgage.tsx": $en_apply_for_credit_mortgage,
+    "./routes/en/apply-for-credit/personal-loan.tsx":
+      $en_apply_for_credit_personal_loan,
+    "./routes/en/apply-for-credit/sme-loan.tsx": $en_apply_for_credit_sme_loan,
     "./routes/en/index.tsx": $en_index,
     "./routes/en/invest.tsx": $en_invest,
     "./routes/fr/a-propos.tsx": $fr_a_propos,
     "./routes/fr/demander-un-credit.tsx": $fr_demander_un_credit,
+    "./routes/fr/demander-un-credit/credit-pme.tsx":
+      $fr_demander_un_credit_credit_pme,
+    "./routes/fr/demander-un-credit/credit-prive.tsx":
+      $fr_demander_un_credit_credit_prive,
+    "./routes/fr/demander-un-credit/hypotheque.tsx":
+      $fr_demander_un_credit_hypotheque,
     "./routes/fr/index.tsx": $fr_index,
     "./routes/fr/investir.tsx": $fr_investir,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/investieren.tsx": $investieren,
     "./routes/kredit-beantragen.tsx": $kredit_beantragen,
+    "./routes/kredit-beantragen/hypotheken.tsx": $kredit_beantragen_hypotheken,
+    "./routes/kredit-beantragen/kmu-kredit.tsx": $kredit_beantragen_kmu_kredit,
+    "./routes/kredit-beantragen/privatkredit.tsx":
+      $kredit_beantragen_privatkredit,
     "./routes/styleguide.tsx": $styleguide,
     "./routes/styleguide/buttons.tsx": $styleguide_buttons,
     "./routes/ueber-uns.tsx": $ueber_uns,

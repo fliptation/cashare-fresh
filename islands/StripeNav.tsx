@@ -49,12 +49,13 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         label: "Über uns",
         href: "/ueber-uns",
         items: [
-          { label: "Wer sind wir", href: "/ueber-uns/wer-sind-wir", description: "Unsere Geschichte & Mission", icon: "users" },
-          { label: "Crowdlending", href: "/ueber-uns/crowdlending", description: "So funktioniert P2P Lending", icon: "info" },
-          { label: "Statistik", href: "/ueber-uns/statistik", description: "Zahlen & Performance", icon: "chart" },
-          { label: "Jobs", href: "/ueber-uns/jobs", description: "Karriere bei Cashare", icon: "briefcase" },
-          { label: "Partner", href: "/ueber-uns/partner", description: "Unsere Kooperationen", icon: "handshake" },
-          { label: "Blog", href: "/ueber-uns/blog", description: "News & Insights", icon: "newspaper" },
+          { label: "Wer sind wir", href: "/ueber-uns/wer-sind-wir", description: "Unsere Vision und Mission", icon: "users" },
+          { label: "Partner", href: "/ueber-uns/partner", description: "Starke Zusammenarbeit und Vertrauen", icon: "handshake" },
+          { label: "Crowdlending", href: "/ueber-uns/crowdlending", description: "Der Schweizer FinTech Pionier", icon: "diamond" },
+          { label: "Presse", href: "/ueber-uns/presse", description: "Medienzentrum", icon: "press" },
+          { label: "Statistik", href: "/ueber-uns/statistik", description: "Unser Leistungsausweis", icon: "chart" },
+          { label: "Blog", href: "/ueber-uns/blog", description: "Einblicke & Geschichten", icon: "newspaper" },
+          { label: "Jobs", href: "/ueber-uns/jobs", description: "Karriere und Pionierarbeit mit Cashare", icon: "jobs" },
         ],
       },
     ],
@@ -87,12 +88,13 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         label: "About Us",
         href: "/en/about-us",
         items: [
-          { label: "Who We Are", href: "/en/about-us/who-we-are", description: "Our story & mission", icon: "users" },
-          { label: "Crowdlending", href: "/en/about-us/crowdlending", description: "How P2P lending works", icon: "info" },
-          { label: "Statistics", href: "/en/about-us/statistics", description: "Numbers & performance", icon: "chart" },
-          { label: "Jobs", href: "/en/about-us/jobs", description: "Careers at Cashare", icon: "briefcase" },
-          { label: "Partners", href: "/en/about-us/partners", description: "Our partnerships", icon: "handshake" },
-          { label: "Blog", href: "/en/about-us/blog", description: "News & insights", icon: "newspaper" },
+          { label: "Who We Are", href: "/en/about-us/who-we-are", description: "Our vision and mission", icon: "users" },
+          { label: "Partners", href: "/en/about-us/partners", description: "Strong collaboration and trust", icon: "handshake" },
+          { label: "Crowdlending", href: "/en/about-us/crowdlending", description: "The Swiss FinTech pioneer", icon: "diamond" },
+          { label: "Press", href: "/en/about-us/press", description: "Media center", icon: "press" },
+          { label: "Statistics", href: "/en/about-us/statistics", description: "Our track record", icon: "chart" },
+          { label: "Blog", href: "/en/about-us/blog", description: "Insights & stories", icon: "newspaper" },
+          { label: "Jobs", href: "/en/about-us/jobs", description: "Career and pioneering with Cashare", icon: "jobs" },
         ],
       },
     ],
@@ -125,12 +127,13 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         label: "À propos",
         href: "/fr/a-propos",
         items: [
-          { label: "Qui sommes-nous", href: "/fr/a-propos/qui-sommes-nous", description: "Notre histoire & mission", icon: "users" },
-          { label: "Crowdlending", href: "/fr/a-propos/crowdlending", description: "Comment fonctionne le P2P", icon: "info" },
-          { label: "Statistiques", href: "/fr/a-propos/statistiques", description: "Chiffres & performance", icon: "chart" },
-          { label: "Emplois", href: "/fr/a-propos/emplois", description: "Carrières chez Cashare", icon: "briefcase" },
-          { label: "Partenaires", href: "/fr/a-propos/partenaires", description: "Nos partenariats", icon: "handshake" },
-          { label: "Blog", href: "/fr/a-propos/blog", description: "News & insights", icon: "newspaper" },
+          { label: "Qui sommes-nous", href: "/fr/a-propos/qui-sommes-nous", description: "Notre vision et mission", icon: "users" },
+          { label: "Partenaires", href: "/fr/a-propos/partenaires", description: "Collaboration et confiance", icon: "handshake" },
+          { label: "Crowdlending", href: "/fr/a-propos/crowdlending", description: "Le pionnier FinTech suisse", icon: "diamond" },
+          { label: "Presse", href: "/fr/a-propos/presse", description: "Centre médias", icon: "press" },
+          { label: "Statistiques", href: "/fr/a-propos/statistiques", description: "Notre bilan", icon: "chart" },
+          { label: "Blog", href: "/fr/a-propos/blog", description: "Aperçus & histoires", icon: "newspaper" },
+          { label: "Emplois", href: "/fr/a-propos/emplois", description: "Carrière et innovation avec Cashare", icon: "jobs" },
         ],
       },
     ],
@@ -205,6 +208,25 @@ const icons: Record<string, string> = {
     <rect x="8" y="16" width="6" height="2" rx="0.5" fill="white" fill-opacity="0.7"/>
     <path d="M3 6v13a2 2 0 0 0 2 2" stroke="#007399" stroke-width="2" stroke-linecap="round"/>
   </svg>`,
+  diamond: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12 2L2 9l10 13 10-13L12 2z" fill="#00b5ce"/>
+    <path d="M12 2L2 9h20L12 2z" fill="#007399"/>
+    <path d="M7 9l5 13 5-13H7z" fill="#00d4a8" fill-opacity="0.5"/>
+  </svg>`,
+  press: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <rect x="3" y="4" width="18" height="16" rx="2" fill="#00b5ce"/>
+    <rect x="5" y="6" width="6" height="5" rx="1" fill="white"/>
+    <rect x="13" y="6" width="6" height="2" rx="0.5" fill="white" fill-opacity="0.7"/>
+    <rect x="13" y="9" width="4" height="2" rx="0.5" fill="white" fill-opacity="0.7"/>
+    <rect x="5" y="13" width="14" height="2" rx="0.5" fill="white" fill-opacity="0.7"/>
+    <rect x="5" y="17" width="10" height="2" rx="0.5" fill="white" fill-opacity="0.7"/>
+  </svg>`,
+  jobs: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <rect x="3" y="7" width="18" height="14" rx="2" fill="#00b5ce"/>
+    <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="#007399" stroke-width="2"/>
+    <rect x="3" y="11" width="18" height="4" fill="#007399"/>
+    <rect x="10" y="10" width="4" height="4" rx="1" fill="white"/>
+  </svg>`,
 };
 
 export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) {
@@ -264,9 +286,8 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
       const itemRect = itemEl.getBoundingClientRect();
 
       // Calculate dropdown width based on section
-      const section = nav.sections.find(s => s.id === sectionId);
-      const itemCount = section?.items?.length || 0;
-      const width = Math.max(320, itemCount > 3 ? 400 : 320);
+      // "about" section uses two-column grid and needs more width
+      const width = sectionId === "about" ? 580 : 320;
 
       backdropStyle.value = {
         left: itemRect.left - navRect.left + (itemRect.width / 2) - (width / 2),
@@ -365,7 +386,7 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
             {nav.sections.map((section) => (
               <div
                 key={section.id}
-                class={`stripe-nav__panel ${activeSection.value === section.id ? "stripe-nav__panel--active" : ""}`}
+                class={`stripe-nav__panel ${activeSection.value === section.id ? "stripe-nav__panel--active" : ""} ${section.id === "about" ? "stripe-nav__panel--about" : ""}`}
               >
                 <div class="stripe-nav__panel-inner">
                   {section.items?.map((item, index) => (

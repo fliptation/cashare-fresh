@@ -39,6 +39,7 @@
 /* Pages */
 @import url("pages/styleguide.css");
 @import url("pages/error.css");
+@import url("pages/product.css");
 
 /* Blocks */
 @import url("blocks/hero.css");
