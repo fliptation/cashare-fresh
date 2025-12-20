@@ -381,6 +381,19 @@
     font-size: 2.5rem;
   }
 
+  /* Calculator - left align on tablets */
+  .hero__right .loan-calculator {
+    text-align: left;
+  }
+
+  .hero__right .loan-calculator .loan-calculator__promo,
+  .hero__right .loan-calculator .loan-calculator__results-header,
+  .hero__right .loan-calculator .loan-calculator__results-col,
+  .hero__right .loan-calculator .loan-calculator__results-subtext,
+  .hero__right .loan-calculator .form-group__checkbox span {
+    text-align: left;
+  }
+
   .hero__shape--1 {
     width: 300px;
     height: 300px;
@@ -425,6 +438,19 @@
   .hero__actions .btn {
     width: 100%;
     max-width: 320px;
+  }
+
+  /* Calculator - override centered text from container */
+  .hero__right .loan-calculator {
+    text-align: left;
+  }
+
+  .hero__right .loan-calculator .loan-calculator__promo,
+  .hero__right .loan-calculator .loan-calculator__results-header,
+  .hero__right .loan-calculator .loan-calculator__results-col,
+  .hero__right .loan-calculator .loan-calculator__results-subtext,
+  .hero__right .loan-calculator .form-group__checkbox span {
+    text-align: left;
   }
 
   .hero__fade {
