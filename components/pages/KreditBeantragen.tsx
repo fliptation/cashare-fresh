@@ -202,98 +202,115 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
   return (
     <>
       {/* Hero Section */}
-      <section class="py-20 md:py-32 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-          <div class="absolute -top-40 -right-40 w-80 h-80 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full blur-3xl"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div class="text-center">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              {t.title}
-            </h1>
-            <p class="text-xl md:text-2xl text-blue-100 mb-4 max-w-3xl mx-auto">
-              {t.subtitle}
-            </p>
-            <p class="text-lg text-blue-100 max-w-2xl mx-auto">
-              {t.heroText}
-            </p>
-          </div>
+      <section class="subpage-hero">
+        <div class="subpage-hero__container">
+          <h1 class="subpage-hero__title">{t.title}</h1>
+          <p class="subpage-hero__subtitle">
+            {t.subtitle}
+            <br />
+            {t.heroText}
+          </p>
         </div>
       </section>
 
       {/* Loan Types */}
-      <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid md:grid-cols-3 gap-8">
+      <section class="subpage-section subpage-section--white">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="solution-grid">
             {/* Privatkredit */}
-            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all">
-              <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            <a href={t.privatkredit.href} class="solution-card">
+              <div class="solution-card__icon">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  />
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-3">{t.privatkredit.title}</h3>
-              <p class="text-gray-600 mb-6">{t.privatkredit.description}</p>
-              <a
-                href={t.privatkredit.href}
-                class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                {t.privatkredit.cta}
-              </a>
-            </div>
+              <h3 class="solution-card__title">{t.privatkredit.title}</h3>
+              <p class="solution-card__desc">{t.privatkredit.description}</p>
+              <span class="solution-card__link">
+                {t.privatkredit.cta} →
+              </span>
+            </a>
 
             {/* KMU-Kredit */}
-            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all">
-              <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            <a href={t.kmuKredit.href} class="solution-card">
+              <div class="solution-card__icon">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  />
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-3">{t.kmuKredit.title}</h3>
-              <p class="text-gray-600 mb-6">{t.kmuKredit.description}</p>
-              <a
-                href={t.kmuKredit.href}
-                class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                {t.kmuKredit.cta}
-              </a>
-            </div>
+              <h3 class="solution-card__title">{t.kmuKredit.title}</h3>
+              <p class="solution-card__desc">{t.kmuKredit.description}</p>
+              <span class="solution-card__link">
+                {t.kmuKredit.cta} →
+              </span>
+            </a>
 
             {/* Hypothek */}
-            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all">
-              <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            <a href={t.hypothek.href} class="solution-card">
+              <div class="solution-card__icon">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  />
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-3">{t.hypothek.title}</h3>
-              <p class="text-gray-600 mb-6">{t.hypothek.description}</p>
-              <a
-                href={t.hypothek.href}
-                class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                {t.hypothek.cta}
-              </a>
-            </div>
+              <h3 class="solution-card__title">{t.hypothek.title}</h3>
+              <p class="solution-card__desc">{t.hypothek.description}</p>
+              <span class="solution-card__link">
+                {t.hypothek.cta} →
+              </span>
+            </a>
           </div>
         </div>
       </section>
 
       {/* How It Works */}
-      <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
-            {t.howItWorks}
-          </h2>
-          <div class="grid md:grid-cols-4 gap-8">
+      <section class="subpage-section subpage-section--gray">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.howItWorks}</h2>
+          </div>
+          <div class="stats-grid">
             {t.steps.map((step, index) => (
-              <div key={index} class="text-center">
-                <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                  {index + 1}
+              <div key={index} class="stats-grid__item">
+                <div class="stats-grid__icon">
+                  <span style="font-size: 1.25rem; font-weight: 700;">{index + 1}</span>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
-                <p class="text-gray-600">{step.description}</p>
+                <div class="stats-grid__value" style="font-size: 1.25rem; color: var(--color-text);">
+                  {step.title}
+                </div>
+                <div class="stats-grid__label">{step.description}</div>
               </div>
             ))}
           </div>
@@ -301,23 +318,56 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
       </section>
 
       {/* Benefits */}
-      <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
-            {t.benefits.title}
-          </h2>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <section class="subpage-section subpage-section--white">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.benefits.title}</h2>
+          </div>
+          <div class="benefits-grid">
             {t.benefits.items.map((benefit, index) => (
-              <div key={index} class="text-center p-6">
-                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              <div key={index} class="benefits-grid__item">
+                <div class="benefits-grid__icon">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    width="28"
+                    height="28"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">{benefit.title}</h3>
-                <p class="text-gray-600 text-sm">{benefit.description}</p>
+                <h3 class="benefits-grid__title">{benefit.title}</h3>
+                <p class="benefits-grid__desc">{benefit.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section class="subpage-cta">
+        <div class="subpage-cta__container">
+          <h2 class="subpage-cta__title">
+            {locale === "de"
+              ? "Bereit für Ihren Kredit?"
+              : locale === "en"
+              ? "Ready for your loan?"
+              : "Prêt pour votre crédit?"}
+          </h2>
+          <div class="subpage-cta__buttons">
+            <a href="/loslegen" class="subpage-cta__btn subpage-cta__btn--primary">
+              {locale === "de"
+                ? "Jetzt starten"
+                : locale === "en"
+                ? "Get Started"
+                : "Commencer"}
+            </a>
           </div>
         </div>
       </section>
