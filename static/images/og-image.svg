@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Base gradient -->
+    <linearGradient id="baseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f3ff"/>
+      <stop offset="50%" style="stop-color:#ecfeff"/>
+      <stop offset="100%" style="stop-color:#fdf4ff"/>
+    </linearGradient>
+
+    <!-- Purple orb -->
+    <radialGradient id="purpleOrb" cx="25%" cy="25%" r="50%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Cyan orb -->
+    <radialGradient id="cyanOrb" cx="75%" cy="60%" r="50%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Pink orb -->
+    <radialGradient id="pinkOrb" cx="60%" cy="30%" r="40%">
+      <stop offset="0%" style="stop-color:#f472b6;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#f472b6;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Blue orb -->
+    <radialGradient id="blueOrb" cx="40%" cy="80%" r="45%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#baseGradient)"/>
+
+  <!-- Gradient orbs -->
+  <ellipse cx="200" cy="150" rx="400" ry="350" fill="url(#purpleOrb)"/>
+  <ellipse cx="900" cy="400" rx="450" ry="400" fill="url(#cyanOrb)"/>
+  <ellipse cx="700" cy="180" rx="350" ry="300" fill="url(#pinkOrb)"/>
+  <ellipse cx="400" cy="500" rx="380" ry="320" fill="url(#blueOrb)"/>
+
+  <!-- Dark logomark centered -->
+  <g transform="translate(528, 189) scale(4)">
+    <path d="M15.5225 0.56594C18.6209 0.0796782 21.8389 0.428455 24.771 1.53268C24.4428 2.73965 24.1437 3.95241 23.8316 5.16227C19.3167 3.24472 13.8201 3.85834 9.88582 6.79038C5.90779 9.62836 3.64671 14.6386 4.15728 19.4723C4.49279 22.9427 6.19808 26.2481 8.80488 28.5781C11.2775 30.7735 14.5349 32.1006 17.8594 32.1788C18.4196 32.1889 19.0264 32.2439 19.4626 32.6361C20.3014 33.2728 20.348 34.6361 19.5851 35.351C18.9272 36.0688 17.8579 35.8937 16.9885 35.8489C11.0601 35.4914 5.46433 31.9269 2.62704 26.7575C1.1216 24.1135 0.364508 21.0816 0.351379 18.0497V17.8311C0.438905 15.3738 0.958223 12.9222 2.00853 10.6892C4.44028 5.36488 9.68743 1.41256 15.5225 0.56594Z" fill="#424748"/>
+    <path d="M16.5638 18.8737C15.9978 17.8419 16.7097 16.4091 17.884 16.2442C18.9955 16.1371 20.11 16.3122 21.2114 16.4395C23.6154 16.8896 25.9611 17.742 28.0019 19.0923C30.9719 20.9953 33.3483 23.8015 34.7326 27.0288C36.0411 30.0505 36.4904 33.4384 35.9755 36.6903C35.2986 41.2649 32.6889 45.5082 28.9355 48.239C24.1347 51.9034 17.3836 52.7616 11.7659 50.5546C12.0942 49.3577 12.418 48.158 12.7229 46.9554C14.6251 47.7079 16.6703 48.1334 18.7242 48.0408C21.9904 47.9424 25.1967 46.6659 27.6401 44.5154C30.0909 42.3764 31.7465 39.3677 32.2469 36.1693C32.775 32.9667 32.1098 29.5975 30.438 26.8117C28.0311 22.7132 23.3981 19.9968 18.6104 19.936C17.8037 19.9707 16.9168 19.6465 16.5638 18.8737Z" fill="#424748"/>
+  </g>
+</svg>

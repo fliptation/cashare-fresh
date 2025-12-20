@@ -1,9 +1,22 @@
 import { Head } from "$fresh/runtime.ts";
 import { PageProps } from "$fresh/server.ts";
 import { Layout } from "../components/Layout.tsx";
-import { t, type Locale } from "../lib/i18n/index.ts";
+import { type Locale, t } from "../lib/i18n/index.ts";
 
-const financeEmojis = ["💰", "💵", "💶", "💷", "💴", "💳", "📈", "🏦", "💎", "🤑", "💸", "📊"];
+const financeEmojis = [
+  "💰",
+  "💵",
+  "💶",
+  "💷",
+  "💴",
+  "💳",
+  "📈",
+  "🏦",
+  "💎",
+  "🤑",
+  "💸",
+  "📊",
+];
 
 /**
  * Detect locale from URL path
@@ -33,8 +46,12 @@ export default function Error404(props: PageProps) {
               financeEmojis.map((emoji, i) => (
                 <span
                   key={`${ringIndex}-${i}`}
-                  class={`error-page__emoji error-page__emoji--ring-${ringIndex + 1}`}
-                  style={`--i: ${i}; --total: ${financeEmojis.length}; --delay: ${(i * 0.15) + (ringIndex * 0.5)}s;`}
+                  class={`error-page__emoji error-page__emoji--ring-${
+                    ringIndex + 1
+                  }`}
+                  style={`--i: ${i}; --total: ${financeEmojis.length}; --delay: ${
+                    (i * 0.15) + (ringIndex * 0.5)
+                  }s;`}
                 >
                   {emoji}
                 </span>
@@ -45,9 +62,13 @@ export default function Error404(props: PageProps) {
           <div class="error-page__container error-page__container--centered">
             <div class="error-page__content error-page__content--centered">
               <div class="error-page__code-wrapper">
-                <span class="error-page__code error-page__code--animated">4</span>
-                <span class="error-page__code error-page__code--emoji">🪙</span>
-                <span class="error-page__code error-page__code--animated">4</span>
+                <span class="error-page__code error-page__code--animated">
+                  4
+                </span>
+                <span class="error-page__code error-page__code--emoji">🌑</span>
+                <span class="error-page__code error-page__code--animated">
+                  4
+                </span>
               </div>
               <h1 class="error-page__title">{t(locale, "error", "title")}</h1>
               <p class="error-page__description">

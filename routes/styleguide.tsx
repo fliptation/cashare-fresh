@@ -7,6 +7,7 @@ import CollapsibleSection from "../islands/styleguide/CollapsibleSection.tsx";
 const sections = [
   { id: "changelog", label: "Changelog", icon: "changelog" },
   { id: "logo", label: "Logo", icon: "logo" },
+  { id: "og-image", label: "OG Image", icon: "share" },
   { id: "colors", label: "Farben", icon: "palette" },
   { id: "typography", label: "Typografie", icon: "type" },
   { id: "spacing", label: "Abstände", icon: "spacing" },
@@ -380,34 +381,33 @@ export default function Styleguide() {
               <span class="styleguide__label">Design System</span>
               <h1 class="styleguide__title">Cashare Styleguide</h1>
               <p class="styleguide__subtitle">
-                Komponenten, Farben und Typografie für die Cashare Plattform
+                Alli Komponentä, Farbä und Schriftä wo mir z'Zug so bruuchid. Eifach schön, oder?
               </p>
             </header>
 
             {/* 1. Changelog Section */}
             <section id="changelog" class="styleguide__section">
-              <h2 class="styleguide__section-title">Changelog</h2>
-              <CollapsibleSection title="Version History" defaultOpen={true}>
+              <h2 class="styleguide__section-title">Was isch neu?</h2>
+              <CollapsibleSection title="Versione-Gschicht" defaultOpen={true}>
                 <div class="styleguide__changelog">
                   <div class="styleguide__changelog-entry">
                     <span class="styleguide__changelog-version">v1.0</span>
                     <span class="styleguide__changelog-date">
-                      20. Dezember 2024
+                      20. Dezämber 2024
                     </span>
                     <p>
-                      Initiales Release des Cashare Design Systems mit allen
-                      Basis-Komponenten, Farben, Typografie und interaktiven
-                      Elementen.
+                      Erscht richtigi Version! Alli Komponentä, Farbä und Schriftä sind jetzt parat.
+                      Mir händ mega büezt - jetzt chamer loslege! 🎉
                     </p>
                   </div>
                   <div class="styleguide__changelog-entry">
                     <span class="styleguide__changelog-version">v0.9</span>
                     <span class="styleguide__changelog-date">
-                      15. Dezember 2024
+                      15. Dezämber 2024
                     </span>
                     <p>
-                      Beta-Version mit Buttons, Cards, Forms und grundlegenden
-                      Design Tokens.
+                      Beta-Version mit Chnöpf, Chärtli und Formular. Isch nonig perfekt gsi,
+                      aber mir händ dra gschaffet wie d'Zuger am Chriesitopf.
                     </p>
                   </div>
                 </div>
@@ -416,13 +416,13 @@ export default function Styleguide() {
 
             {/* 2. Logo Section */}
             <section id="logo" class="styleguide__section">
-              <h2 class="styleguide__section-title">Logo</h2>
+              <h2 class="styleguide__section-title">S'Logo</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Logo Varianten</h3>
+                <h3 class="styleguide__group-title">Logo Variantä</h3>
                 <p class="styleguide__description">
-                  Das Cashare Logo in verschiedenen Farbvarianten für
-                  unterschiedliche Hintergründe.
+                  S'Cashare Logo in verschidene Farbä - je noch Hintergrund.
+                  Bitte nöd verdrehe oder komisch skaliere, susch git's Ärger! 😤
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__logo-grid">
@@ -433,7 +433,7 @@ export default function Styleguide() {
                         class="styleguide__logo-image"
                       />
                       <span class="styleguide__logo-label">
-                        Für helle Hintergründe
+                        Für helli Hintergründ
                       </span>
                     </div>
                     <div class="styleguide__logo-item styleguide__logo-item--dark">
@@ -443,7 +443,7 @@ export default function Styleguide() {
                         class="styleguide__logo-image"
                       />
                       <span class="styleguide__logo-label">
-                        Für dunkle Hintergründe
+                        Für dunkli Hintergründ
                       </span>
                     </div>
                   </div>
@@ -451,10 +451,10 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Logomark</h3>
+                <h3 class="styleguide__group-title">S'Logomark</h3>
                 <p class="styleguide__description">
-                  Das Cashare Logomark für kompakte Darstellungen wie Favicons,
-                  App-Icons oder kleine Platzverhältnisse.
+                  S'chlii Bildli für Favicons, App-Icons oder wenn's eng wird.
+                  Praktisch wie es Sackmesser! 🔪
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__logo-grid">
@@ -475,8 +475,8 @@ export default function Styleguide() {
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Mindestabstand</h3>
                 <p class="styleguide__description">
-                  Das Logo benötigt einen Mindestabstand von der Höhe des "C"
-                  auf allen Seiten.
+                  S'Logo bruucht Platz zum Schnuufe! Mindestens d'Höchi vom "C"
+                  uf allne Sitä. Nöd azwänge wie Sardine i de Büchse! 🐟
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__logo-clearspace">
@@ -490,14 +490,73 @@ export default function Styleguide() {
               </div>
             </section>
 
-            {/* 3. Colors Section */}
-            <section id="colors" class="styleguide__section">
-              <h2 class="styleguide__section-title">Farben</h2>
+            {/* 3. OG Image Section */}
+            <section id="og-image" class="styleguide__section">
+              <h2 class="styleguide__section-title">OG Image 📱</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Primärfarben</h3>
+                <h3 class="styleguide__group-title">Vorschau</h3>
                 <p class="styleguide__description">
-                  Die Hauptfarben der Cashare Marke
+                  Das Bildli wo erschint wenn öpper üsi Syte teilt uf WhatsApp, Facebook und so.
+                  Sieht schön us, oder? 😎
+                </p>
+                <div class="styleguide__demo">
+                  <div class="styleguide__og-image-wrapper">
+                    <img
+                      src="/images/og-image.svg"
+                      alt="Cashare OG Image"
+                      class="styleguide__og-image"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Export Aleitig</h3>
+                <div class="alert alert--info">
+                  <span
+                    class="alert__icon"
+                    dangerouslySetInnerHTML={{ __html: icons.info }}
+                  />
+                  <div class="alert__content">
+                    <p class="alert__title">PNG Export bruucht's! 🖼️</p>
+                    <p class="alert__message">
+                      Social Media checkt SVG nöd. So gaht's:
+                      <br />1. Mach <code>/images/og-image.svg</code> im Browser uf
+                      <br />2. Screenshot mache (1200x630px)
+                      <br />3. Als <code>og-image.png</code> i <code>/static/images/</code> speichere
+                      <br />Eifach, gäll? 👍
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Meta Tags</h3>
+                <div class="styleguide__demo">
+                  <div class="styleguide__code-block">
+                    <code>&lt;meta property="og:image" content="https://cashare.ch/images/og-image.png" /&gt;</code>
+                    <br />
+                    <code>&lt;meta property="og:image:width" content="1200" /&gt;</code>
+                    <br />
+                    <code>&lt;meta property="og:image:height" content="630" /&gt;</code>
+                    <br />
+                    <code>&lt;meta name="twitter:card" content="summary_large_image" /&gt;</code>
+                    <br />
+                    <code>&lt;meta name="twitter:image" content="https://cashare.ch/images/og-image.png" /&gt;</code>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* 4. Colors Section */}
+            <section id="colors" class="styleguide__section">
+              <h2 class="styleguide__section-title">Farbä</h2>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Hauptfarbä</h3>
+                <p class="styleguide__description">
+                  D'Farbä vo Cashare - schöner als de Zugersee im Summer! 💙
                 </p>
                 <div class="styleguide__color-grid">
                   {primaryColors.map((color) => (
@@ -517,7 +576,7 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Neutralfarben</h3>
+                <h3 class="styleguide__group-title">Neutrali Farbä</h3>
                 <div class="styleguide__color-grid">
                   {neutralColors.map((color) => (
                     <div class="styleguide__color-card" key={color.variable}>
@@ -536,7 +595,7 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Status-Farben</h3>
+                <h3 class="styleguide__group-title">Status-Farbä</h3>
                 <div class="styleguide__color-grid">
                   {statusColors.map((color) => (
                     <div class="styleguide__color-card" key={color.variable}>
@@ -555,7 +614,7 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Service-Farben</h3>
+                <h3 class="styleguide__group-title">Service-Farbä</h3>
                 <div class="styleguide__color-grid">
                   {serviceColors.map((color) => (
                     <div class="styleguide__color-card" key={color.variable}>
@@ -578,7 +637,7 @@ export default function Styleguide() {
                 <div class="styleguide__demo">
                   <div class="styleguide__gradient-preview gradient-hero"></div>
                   <p class="styleguide__gradient-label">
-                    Hero Gradient - wird für den Hero-Bereich verwendet
+                    De Hero Gradient - so schön wie en Sunneuntergang überm Rigi! 🌅
                   </p>
                 </div>
               </div>
@@ -586,12 +645,12 @@ export default function Styleguide() {
 
             {/* 4. Typography Section */}
             <section id="typography" class="styleguide__section">
-              <h2 class="styleguide__section-title">Typografie</h2>
+              <h2 class="styleguide__section-title">Typografi</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Font Family</h3>
+                <h3 class="styleguide__group-title">D'Schrift</h3>
                 <p class="styleguide__description">
-                  Plus Jakarta Sans ist die primäre Schriftart
+                  Plus Jakarta Sans - die schönschti Schrift sit em Gutenberg! 📜
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__font-samples">
@@ -608,7 +667,7 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Font Sizes</h3>
+                <h3 class="styleguide__group-title">Schriftgrössä</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__type-scale">
                     {fontSizes.map((size) => (
@@ -631,12 +690,12 @@ export default function Styleguide() {
 
             {/* 5. Spacing Section */}
             <section id="spacing" class="styleguide__section">
-              <h2 class="styleguide__section-title">Abstände</h2>
+              <h2 class="styleguide__section-title">Abständ</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Spacing Scale</h3>
+                <h3 class="styleguide__group-title">Abstands-Skala</h3>
                 <p class="styleguide__description">
-                  Konsistente Abstände basierend auf 4px Einheiten
+                  Konsistenti Abständ basierend uf 4px - so ordentlich wie d'Schwiizer Pünktlichkeit! 🕐
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__spacing-scale">
@@ -685,7 +744,7 @@ export default function Styleguide() {
 
             {/* 7. Shadows Section */}
             <section id="shadows" class="styleguide__section">
-              <h2 class="styleguide__section-title">Schatten</h2>
+              <h2 class="styleguide__section-title">Schattä</h2>
 
               <div class="styleguide__group">
                 <div class="styleguide__demo">
@@ -714,9 +773,9 @@ export default function Styleguide() {
               <h2 class="styleguide__section-title">Icons</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Icon Library</h3>
+                <h3 class="styleguide__group-title">Icon Sammlig</h3>
                 <p class="styleguide__description">
-                  Klicken Sie auf ein Icon um den Namen zu kopieren
+                  Klick uf es Icon zum de Name kopiere. Eifacher als Chriesichueche bache! 🍒
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__icons-grid">
@@ -738,7 +797,7 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Icon Grössen</h3>
+                <h3 class="styleguide__group-title">Icon Grössä</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__icon-sizes">
                     {[16, 20, 24, 32, 48].map((size) => (
@@ -759,10 +818,10 @@ export default function Styleguide() {
 
             {/* 9. Buttons Section */}
             <section id="buttons" class="styleguide__section">
-              <h2 class="styleguide__section-title">Buttons</h2>
+              <h2 class="styleguide__section-title">Chnöpf</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Varianten</h3>
+                <h3 class="styleguide__group-title">Variantä</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__button-row">
                     <button class="btn btn--primary">Primary</button>
@@ -774,18 +833,18 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Grössen</h3>
+                <h3 class="styleguide__group-title">Grössä</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__button-row">
-                    <button class="btn btn--primary btn--sm">Small</button>
-                    <button class="btn btn--primary">Default</button>
-                    <button class="btn btn--primary btn--lg">Large</button>
+                    <button class="btn btn--primary btn--sm">Chli</button>
+                    <button class="btn btn--primary">Normal</button>
+                    <button class="btn btn--primary btn--lg">Gross</button>
                   </div>
                 </div>
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Zustände</h3>
+                <h3 class="styleguide__group-title">Zuständ</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__states-grid">
                     <div class="styleguide__state-item">
@@ -827,7 +886,7 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Auf dunklem Hintergrund</h3>
+                <h3 class="styleguide__group-title">Uf dunklem Hintergrund</h3>
                 <div class="styleguide__demo styleguide__demo--dark">
                   <div class="styleguide__button-row">
                     <button class="btn btn--white">White</button>
@@ -839,10 +898,10 @@ export default function Styleguide() {
 
             {/* 10. Alerts Section */}
             <section id="alerts" class="styleguide__section">
-              <h2 class="styleguide__section-title">Alerts & Notifications</h2>
+              <h2 class="styleguide__section-title">Mäldigä & Notifications</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Alert Varianten</h3>
+                <h3 class="styleguide__group-title">Alert Variantä</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__form-stack">
                     <div class="alert alert--info">
@@ -851,9 +910,9 @@ export default function Styleguide() {
                         dangerouslySetInnerHTML={{ __html: icons.info }}
                       />
                       <div class="alert__content">
-                        <p class="alert__title">Information</p>
+                        <p class="alert__title">Info</p>
                         <p class="alert__message">
-                          Dies ist eine informative Nachricht für den Benutzer.
+                          Das isch eifach e Information. Nüt Wildes! 🧘
                         </p>
                       </div>
                     </div>
@@ -865,7 +924,7 @@ export default function Styleguide() {
                       <div class="alert__content">
                         <p class="alert__title">Erfolg</p>
                         <p class="alert__message">
-                          Die Aktion wurde erfolgreich durchgeführt.
+                          Alles im grüene Bereich! Hät klappt wie am Schnürli. 🎯
                         </p>
                       </div>
                     </div>
@@ -875,9 +934,9 @@ export default function Styleguide() {
                         dangerouslySetInnerHTML={{ __html: icons.warning }}
                       />
                       <div class="alert__content">
-                        <p class="alert__title">Warnung</p>
+                        <p class="alert__title">Obacht!</p>
                         <p class="alert__message">
-                          Bitte beachten Sie diese wichtige Warnung.
+                          Pass uf, da stimmt öppis nöd ganz. Lueg mol gnauer ane! ⚠️
                         </p>
                       </div>
                     </div>
@@ -887,10 +946,9 @@ export default function Styleguide() {
                         dangerouslySetInnerHTML={{ __html: icons.close }}
                       />
                       <div class="alert__content">
-                        <p class="alert__title">Fehler</p>
+                        <p class="alert__title">Hoppla!</p>
                         <p class="alert__message">
-                          Es ist ein Fehler aufgetreten. Bitte versuchen Sie es
-                          erneut.
+                          Da isch öppis schiefgloffe. Probier's nomal oder rüef üs aa! 📞
                         </p>
                       </div>
                     </div>
@@ -904,8 +962,8 @@ export default function Styleguide() {
                   <div class="styleguide__form-stack">
                     <div class="banner banner--info">
                       <span dangerouslySetInnerHTML={{ __html: icons.info }} />
-                      Neue Funktionen verfügbar!{" "}
-                      <a href="#" class="banner__link">Mehr erfahren</a>
+                      Neui Funktionä verfüegbar!{" "}
+                      <a href="#" class="banner__link">Meh erfahre</a>
                     </div>
                   </div>
                 </div>
@@ -914,7 +972,7 @@ export default function Styleguide() {
 
             {/* 11. Loading States Section */}
             <section id="loading" class="styleguide__section">
-              <h2 class="styleguide__section-title">Loading States</h2>
+              <h2 class="styleguide__section-title">Lade-Animationä ⏳</h2>
 
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Spinner</h3>
@@ -1016,12 +1074,12 @@ export default function Styleguide() {
 
             {/* 12. Modals Section */}
             <section id="modals" class="styleguide__section">
-              <h2 class="styleguide__section-title">Modals & Dialogs</h2>
+              <h2 class="styleguide__section-title">Modals & Dialogs 🪟</h2>
 
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Standard Modal</h3>
                 <p class="styleguide__description">
-                  Beispiel eines modalen Dialogs mit Overlay
+                  Es Fänschter wo ufpoppt - nöd erschrecke! 😱
                 </p>
                 <div class="styleguide__modal-demo">
                   <div class="styleguide__modal-preview">
@@ -1054,10 +1112,10 @@ export default function Styleguide() {
 
             {/* 13. Cards Section */}
             <section id="cards" class="styleguide__section">
-              <h2 class="styleguide__section-title">Karten</h2>
+              <h2 class="styleguide__section-title">Chärtli 🃏</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Standard Karte</h3>
+                <h3 class="styleguide__group-title">Standard Charte</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__cards-row">
                     <div class="card styleguide__card-preview">
@@ -1080,8 +1138,8 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Interaktive Karte</h3>
-                <p class="styleguide__description">Hover für Lift-Effekt</p>
+                <h3 class="styleguide__group-title">Interaktivi Charte</h3>
+                <p class="styleguide__description">Fahre drüber für de Lift-Effekt - wie im Lift uf de Rigi! 🚡</p>
                 <div class="styleguide__demo">
                   <div class="styleguide__cards-row">
                     <div class="card card--interactive styleguide__card-preview">
@@ -1138,10 +1196,10 @@ export default function Styleguide() {
 
             {/* 14. Forms Section */}
             <section id="forms" class="styleguide__section">
-              <h2 class="styleguide__section-title">Formulare</h2>
+              <h2 class="styleguide__section-title">Formular 📝</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Text Inputs</h3>
+                <h3 class="styleguide__group-title">Text-Fälder</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__form-grid">
                     <div class="form-group">
@@ -1293,14 +1351,13 @@ export default function Styleguide() {
 
             {/* 15. Accordion Section */}
             <section id="accordion" class="styleguide__section">
-              <h2 class="styleguide__section-title">Accordion</h2>
+              <h2 class="styleguide__section-title">Accordion 🪗</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">FAQ Accordion</h3>
+                <h3 class="styleguide__group-title">FAQ Akkordeon</h3>
                 <p class="styleguide__description">
-                  Verwendet <code>.faq__*</code> Klassen aus{" "}
-                  <code>faq.css</code>. Alternating gradients mit
-                  Slide-Animation.
+                  Klappsch uf und zue - wie es Schwyzerörgeli! 🎵
+                  Verwendet <code>.faq__*</code> Klasse.
                 </p>
                 <div class="faq__list">
                   <details class="faq__item" open>
@@ -1393,13 +1450,12 @@ export default function Styleguide() {
 
             {/* 16. Timeline Section */}
             <section id="timeline" class="styleguide__section">
-              <h2 class="styleguide__section-title">Timeline</h2>
+              <h2 class="styleguide__section-title">Timeline 📅</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Requirements Timeline</h3>
+                <h3 class="styleguide__group-title">Vorussetzig Timeline</h3>
                 <p class="styleguide__description">
-                  Voraussetzungen als visuelle Timeline mit abwechselnd
-                  links/rechts positionierten Karten.
+                  Schritt für Schritt - wie bim Wandere uf de Zugerberg! 🥾
                 </p>
                 <div class="styleguide__demo styleguide__demo--dark">
                   <div class="requirements__timeline requirements__timeline--preview">
@@ -1506,12 +1562,12 @@ export default function Styleguide() {
 
             {/* 17. Animations Section */}
             <section id="animations" class="styleguide__section">
-              <h2 class="styleguide__section-title">Animationen</h2>
+              <h2 class="styleguide__section-title">Animationä ✨</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Hover Effekte</h3>
+                <h3 class="styleguide__group-title">Hover Effäkt</h3>
                 <p class="styleguide__description">
-                  Bewegen Sie die Maus über die Elemente
+                  Beweg d'Muus drüber - aber nöd erschrecke! 🐭
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__animations-grid">
@@ -1540,7 +1596,7 @@ export default function Styleguide() {
 
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">
-                  Kontinuierliche Animationen
+                  Duuri Animationä 🔄
                 </h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__animations-grid">
@@ -1566,17 +1622,18 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Barrierefreiheit</h3>
+                <h3 class="styleguide__group-title">Barrierefreiheit ♿</h3>
                 <div class="alert alert--info">
                   <span
                     class="alert__icon"
                     dangerouslySetInnerHTML={{ __html: icons.info }}
                   />
                   <div class="alert__content">
-                    <p class="alert__title">Reduzierte Bewegung</p>
+                    <p class="alert__title">Weniäger Bewegi</p>
                     <p class="alert__message">
-                      Alle Animationen werden deaktiviert wenn{" "}
-                      <code>prefers-reduced-motion: reduce</code> aktiv ist.
+                      Alli Animationä werded abgschaltet wenn{" "}
+                      <code>prefers-reduced-motion: reduce</code> aktiv isch.
+                      Mir dänked au a die wo's gschwind wird! 🤗
                     </p>
                   </div>
                 </div>
@@ -1585,10 +1642,10 @@ export default function Styleguide() {
 
             {/* 17. Layout Section */}
             <section id="layout" class="styleguide__section">
-              <h2 class="styleguide__section-title">Layout & Breakpoints</h2>
+              <h2 class="styleguide__section-title">Layout & Breakpoints 📐</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Responsive Breakpoints</h3>
+                <h3 class="styleguide__group-title">Responsivi Breakpoints</h3>
                 <div class="styleguide__demo">
                   <table class="styleguide__breakpoints-table">
                     <thead>
@@ -1656,13 +1713,13 @@ export default function Styleguide() {
 
             {/* 18. Error Pages Section */}
             <section id="error-pages" class="styleguide__section">
-              <h2 class="styleguide__section-title">Error Pages</h2>
+              <h2 class="styleguide__section-title">Fähler-Sitä 💥</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">404 - Seite nicht gefunden</h3>
+                <h3 class="styleguide__group-title">404 - Syte nöd gfunde</h3>
                 <p class="styleguide__description">
-                  Animierte Fehlerseite mit Finanz-Emojis die spiralförmig zum
-                  Zentrum wirbeln. Die "0" wird durch ein 🪙 Coin-Emoji ersetzt.
+                  Wenns mol schiefgaht - aber stylisch! Finanz-Emojis wirbled
+                  ums Zäntrum wie s'Gäld ufem Bankkonto. D'"0" isch es 🪙 Münzli!
                 </p>
                 <div class="styleguide__demo">
                   <div class="error-page error-page--animated error-page--preview">
@@ -1752,12 +1809,12 @@ export default function Styleguide() {
 
             {/* 19. Interactive Components Section */}
             <section id="components" class="styleguide__section">
-              <h2 class="styleguide__section-title">Interaktive Komponenten</h2>
+              <h2 class="styleguide__section-title">Interaktivi Komponentä 🎮</h2>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Kreditrechner</h3>
+                <h3 class="styleguide__group-title">Krediträchner</h3>
                 <p class="styleguide__description">
-                  Der interaktive Kreditrechner wird auf der Homepage verwendet.
+                  De interaktivi Krediträchner - rächnet schneller als mer "Zuger Chriesi" säge cha! 🍒
                 </p>
                 <div class="styleguide__component-preview">
                   <span class="styleguide__component-label">
@@ -1810,9 +1867,9 @@ export default function Styleguide() {
 
             {/* Footer */}
             <footer class="styleguide__footer">
-              <p>Cashare Design System &bull; Version 1.0</p>
+              <p>Cashare Design System &bull; Version 1.0 &bull; Made with ❤️ z'Zug</p>
               <a href="/" class="styleguide__footer-link">
-                &larr; Zurück zur Homepage
+                &larr; Zrugg zur Homepage
               </a>
             </footer>
           </div>
