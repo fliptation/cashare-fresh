@@ -58,6 +58,7 @@
 @import url("blocks/benefits.css");
 @import url("blocks/requirements.css");
 @import url("blocks/faq.css");
+@import url("blocks/blog.css");
 
 /* Responsive */
 @import url("responsive.css");
