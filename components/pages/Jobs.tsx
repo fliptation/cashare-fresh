@@ -8,115 +8,127 @@ const content = {
   de: {
     backLink: { label: "Zuruck zu Uber uns", href: "/ueber-uns" },
     title: "Jobs",
-    subtitle: "Gestalten Sie die Zukunft der Finanzwelt mit uns",
-    why: {
-      title: "Warum Cashare?",
-      items: [
-        { title: "Innovation", desc: "Arbeiten Sie mit modernster Technologie und gestalten Sie die Zukunft des Finanzwesens." },
-        { title: "Impact", desc: "Ihre Arbeit macht einen echten Unterschied fur Tausende von Kreditnehmern und Anlegern." },
-        { title: "Wachstum", desc: "Kontinuierliche Weiterentwicklung und Karrieremoglichkeiten in einem wachsenden Unternehmen." },
-        { title: "Team", desc: "Ein motiviertes Team mit flachen Hierarchien und offener Kommunikation." },
-      ],
-    },
-    benefits: {
-      title: "Unsere Benefits",
-      items: [
-        "Flexibles Arbeiten und Home-Office-Moglichkeiten",
-        "Moderne Buros im Herzen von Zurich",
-        "Wettbewerbsfahiges Gehalt und Bonusprogramm",
-        "Weiterbildungsbudget",
-        "Betriebliche Altersvorsorge",
-        "Team-Events und gemeinsame Aktivitaten",
-      ],
+    subtitle: "Werden Sie Teil unseres Teams",
+    intro: {
+      title: "Arbeiten bei Cashare",
+      text: "Als Schweizer FinTech-Pionier im Bereich Crowdlending suchen wir leidenschaftliche und kreative Kopfe, die die digitale Medien- und Kreditbranche neu gestalten wollen. Wir bauen ein Team von zuverlassigen, innovativen Teamplayern auf, die neue Ideen annehmen, Anpassungsfahigkeit zeigen und sich der Gestaltung der Zukunft des Finanzsektors verschrieben haben.",
     },
     openings: {
       title: "Offene Stellen",
+      jobs: [
+        {
+          title: "Betriebsleiter",
+          location: "Zurich, Schweiz",
+          type: "Vollzeit",
+          salary: "60'000 - 70'000 CHF",
+        },
+      ],
+      applyBtn: "Jetzt bewerben",
+    },
+    culture: {
+      title: "Unsere Kultur",
       items: [
-        { title: "Senior Software Engineer", department: "Engineering", type: "Vollzeit", location: "Zurich" },
-        { title: "Risk Analyst", department: "Risk Management", type: "Vollzeit", location: "Zurich" },
-        { title: "Customer Success Manager", department: "Operations", type: "Vollzeit", location: "Zurich" },
+        { title: "Innovation", desc: "Wir gestalten die Zukunft des Crowdlendings aktiv mit." },
+        { title: "Teamarbeit", desc: "Wir arbeiten als zuverlassige, innovative Teamplayer zusammen." },
+        { title: "Flexibilitat", desc: "Wir schatzen Anpassungsfahigkeit und neue Ideen." },
+        { title: "Wachstum", desc: "Wir fordern die personliche und berufliche Entwicklung." },
       ],
     },
-    apply: {
+    spontaneous: {
       title: "Initiativbewerbung",
-      text: "Keine passende Stelle gefunden? Wir freuen uns uber Ihre Initiativbewerbung und melden uns, sobald eine passende Position frei wird.",
-      cta: { label: "Jetzt bewerben", href: "mailto:jobs@cashare.ch" },
+      text: "Keine passende Stelle gefunden? Wir freuen uns uber Ihre Initiativbewerbung (Blindbewerbung). Senden Sie uns Ihre vollstandigen Bewerbungsunterlagen.",
+      email: "jobs@cashare.ch",
+      emailLabel: "Bewerbung senden",
+    },
+    contact: {
+      title: "Kontakt",
+      address: "Bosch 73, 6331 Hunenberg, Schweiz",
+      phone: "+41 41 558 48 88",
+      email: "jobs@cashare.ch",
     },
   },
   en: {
     backLink: { label: "Back to About Us", href: "/en/about" },
     title: "Jobs",
-    subtitle: "Shape the future of finance with us",
-    why: {
-      title: "Why Cashare?",
-      items: [
-        { title: "Innovation", desc: "Work with cutting-edge technology and shape the future of finance." },
-        { title: "Impact", desc: "Your work makes a real difference for thousands of borrowers and investors." },
-        { title: "Growth", desc: "Continuous development and career opportunities in a growing company." },
-        { title: "Team", desc: "A motivated team with flat hierarchies and open communication." },
-      ],
-    },
-    benefits: {
-      title: "Our Benefits",
-      items: [
-        "Flexible working and home office options",
-        "Modern offices in the heart of Zurich",
-        "Competitive salary and bonus program",
-        "Training budget",
-        "Company pension plan",
-        "Team events and joint activities",
-      ],
+    subtitle: "Join our team",
+    intro: {
+      title: "Working at Cashare",
+      text: "As a Swiss FinTech pioneer in crowdlending, we are looking for passionate and creative minds who want to reshape the digital media and credit industry. We are building a team of reliable, innovative team players who embrace new ideas, demonstrate adaptability, and are committed to shaping the future of the financial sector.",
     },
     openings: {
       title: "Open Positions",
+      jobs: [
+        {
+          title: "Operations Manager",
+          location: "Zurich, Switzerland",
+          type: "Full-time",
+          salary: "CHF 60,000 - 70,000",
+        },
+      ],
+      applyBtn: "Apply now",
+    },
+    culture: {
+      title: "Our Culture",
       items: [
-        { title: "Senior Software Engineer", department: "Engineering", type: "Full-time", location: "Zurich" },
-        { title: "Risk Analyst", department: "Risk Management", type: "Full-time", location: "Zurich" },
-        { title: "Customer Success Manager", department: "Operations", type: "Full-time", location: "Zurich" },
+        { title: "Innovation", desc: "We actively shape the future of crowdlending." },
+        { title: "Teamwork", desc: "We work together as reliable, innovative team players." },
+        { title: "Flexibility", desc: "We value adaptability and new ideas." },
+        { title: "Growth", desc: "We promote personal and professional development." },
       ],
     },
-    apply: {
+    spontaneous: {
       title: "Spontaneous Application",
-      text: "No suitable position found? We welcome your spontaneous application and will get back to you as soon as a suitable position becomes available.",
-      cta: { label: "Apply Now", href: "mailto:jobs@cashare.ch" },
+      text: "No suitable position found? We welcome your spontaneous application. Send us your complete application documents.",
+      email: "jobs@cashare.ch",
+      emailLabel: "Send application",
+    },
+    contact: {
+      title: "Contact",
+      address: "Bosch 73, 6331 Hunenberg, Switzerland",
+      phone: "+41 41 558 48 88",
+      email: "jobs@cashare.ch",
     },
   },
   fr: {
     backLink: { label: "Retour a A propos", href: "/fr/a-propos" },
     title: "Emplois",
-    subtitle: "Faconnez l'avenir de la finance avec nous",
-    why: {
-      title: "Pourquoi Cashare?",
-      items: [
-        { title: "Innovation", desc: "Travaillez avec une technologie de pointe et faconnez l'avenir de la finance." },
-        { title: "Impact", desc: "Votre travail fait une vraie difference pour des milliers d'emprunteurs et d'investisseurs." },
-        { title: "Croissance", desc: "Developpement continu et opportunites de carriere dans une entreprise en croissance." },
-        { title: "Equipe", desc: "Une equipe motivee avec des hierarchies plates et une communication ouverte." },
-      ],
-    },
-    benefits: {
-      title: "Nos avantages",
-      items: [
-        "Travail flexible et options de teletravail",
-        "Bureaux modernes au coeur de Zurich",
-        "Salaire competitif et programme de bonus",
-        "Budget formation",
-        "Plan de retraite d'entreprise",
-        "Evenements d'equipe et activites communes",
-      ],
+    subtitle: "Rejoignez notre equipe",
+    intro: {
+      title: "Travailler chez Cashare",
+      text: "En tant que pionnier suisse de la FinTech dans le crowdlending, nous recherchons des esprits passionnes et creatifs qui veulent remodeler l'industrie des medias numeriques et du credit. Nous construisons une equipe de coequipiers fiables et innovants qui adoptent de nouvelles idees, font preuve d'adaptabilite et s'engagent a faconner l'avenir du secteur financier.",
     },
     openings: {
       title: "Postes ouverts",
+      jobs: [
+        {
+          title: "Directeur des operations",
+          location: "Zurich, Suisse",
+          type: "Temps plein",
+          salary: "CHF 60'000 - 70'000",
+        },
+      ],
+      applyBtn: "Postuler maintenant",
+    },
+    culture: {
+      title: "Notre culture",
       items: [
-        { title: "Ingenieur logiciel senior", department: "Ingenierie", type: "Temps plein", location: "Zurich" },
-        { title: "Analyste des risques", department: "Gestion des risques", type: "Temps plein", location: "Zurich" },
-        { title: "Responsable succes client", department: "Operations", type: "Temps plein", location: "Zurich" },
+        { title: "Innovation", desc: "Nous faconnons activement l'avenir du crowdlending." },
+        { title: "Travail d'equipe", desc: "Nous travaillons ensemble en tant que coequipiers fiables et innovants." },
+        { title: "Flexibilite", desc: "Nous valorisons l'adaptabilite et les nouvelles idees." },
+        { title: "Croissance", desc: "Nous promouvons le developpement personnel et professionnel." },
       ],
     },
-    apply: {
+    spontaneous: {
       title: "Candidature spontanee",
-      text: "Aucun poste correspondant trouve? Nous accueillons votre candidature spontanee et vous contacterons des qu'un poste adapte sera disponible.",
-      cta: { label: "Postuler maintenant", href: "mailto:jobs@cashare.ch" },
+      text: "Aucun poste correspondant trouve? Nous accueillons votre candidature spontanee. Envoyez-nous vos documents de candidature complets.",
+      email: "jobs@cashare.ch",
+      emailLabel: "Envoyer la candidature",
+    },
+    contact: {
+      title: "Contact",
+      address: "Bosch 73, 6331 Hunenberg, Suisse",
+      phone: "+41 41 558 48 88",
+      email: "jobs@cashare.ch",
     },
   },
 };
@@ -140,22 +152,10 @@ export function Jobs({ locale }: JobsProps) {
       </section>
 
       <section class="subpage-section subpage-section--white">
-        <div class="subpage-section__container subpage-section__container--wide">
-          <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.why.title}</h2>
-          </div>
-          <div class="benefits-grid">
-            {t.why.items.map((item, i) => (
-              <div key={i} class="benefits-grid__item">
-                <div class="benefits-grid__icon">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                  </svg>
-                </div>
-                <h3 class="benefits-grid__title">{item.title}</h3>
-                <p class="benefits-grid__desc">{item.desc}</p>
-              </div>
-            ))}
+        <div class="subpage-section__container">
+          <div class="content-block">
+            <h2 class="content-block__title">{t.intro.title}</h2>
+            <p class="content-block__text">{t.intro.text}</p>
           </div>
         </div>
       </section>
@@ -163,40 +163,10 @@ export function Jobs({ locale }: JobsProps) {
       <section class="subpage-section subpage-section--gray">
         <div class="subpage-section__container">
           <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.benefits.title}</h2>
-          </div>
-          <div class="two-col">
-            <div class="check-list">
-              {t.benefits.items.slice(0, 3).map((benefit, i) => (
-                <div key={i} class="check-list__item">
-                  <svg class="check-list__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="check-list__text">{benefit}</span>
-                </div>
-              ))}
-            </div>
-            <div class="check-list">
-              {t.benefits.items.slice(3).map((benefit, i) => (
-                <div key={i} class="check-list__item">
-                  <svg class="check-list__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="check-list__text">{benefit}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="subpage-section subpage-section--white">
-        <div class="subpage-section__container">
-          <div class="subpage-section__header">
             <h2 class="subpage-section__title">{t.openings.title}</h2>
           </div>
           <div class="job-list">
-            {t.openings.items.map((job, i) => (
+            {t.openings.jobs.map((job, i) => (
               <div key={i} class="job-list__item">
                 <div class="job-list__header">
                   <div>
@@ -204,9 +174,10 @@ export function Jobs({ locale }: JobsProps) {
                     <div class="job-list__meta">
                       <span class="job-list__tag">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        {job.department}
+                        {job.location}
                       </span>
                       <span class="job-list__tag">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -216,16 +187,15 @@ export function Jobs({ locale }: JobsProps) {
                       </span>
                       <span class="job-list__tag">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        {job.location}
+                        {job.salary}
                       </span>
                     </div>
                   </div>
-                  <svg class="job-list__arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
+                  <a href={`mailto:${t.spontaneous.email}?subject=${encodeURIComponent(job.title)}`} class="subpage-cta__button">
+                    {t.openings.applyBtn}
+                  </a>
                 </div>
               </div>
             ))}
@@ -233,13 +203,57 @@ export function Jobs({ locale }: JobsProps) {
         </div>
       </section>
 
-      <section class="subpage-cta">
-        <div class="subpage-cta__container">
-          <h2 class="subpage-cta__title">{t.apply.title}</h2>
-          <p class="subpage-cta__text">{t.apply.text}</p>
-          <a href={t.apply.cta.href} class="subpage-cta__button">
-            {t.apply.cta.label}
-          </a>
+      <section class="subpage-section subpage-section--white">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.culture.title}</h2>
+          </div>
+          <div class="values-grid">
+            {t.culture.items.map((item, i) => (
+              <div key={i} class="values-grid__item">
+                <h3 class="values-grid__title">{item.title}</h3>
+                <p class="values-grid__desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="subpage-section subpage-section--gray">
+        <div class="subpage-section__container">
+          <div class="two-col">
+            <div class="two-col__item">
+              <h2 class="content-block__title">{t.spontaneous.title}</h2>
+              <p class="content-block__text">{t.spontaneous.text}</p>
+              <a href={`mailto:${t.spontaneous.email}`} class="subpage-cta__button" style="margin-top: 24px;">
+                {t.spontaneous.emailLabel}
+              </a>
+            </div>
+            <div class="two-col__item">
+              <h2 class="content-block__title">{t.contact.title}</h2>
+              <div class="contact-links">
+                <div class="contact-links__item">
+                  <svg class="contact-links__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  {t.contact.address}
+                </div>
+                <a href={`tel:${t.contact.phone}`} class="contact-links__item">
+                  <svg class="contact-links__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  {t.contact.phone}
+                </a>
+                <a href={`mailto:${t.contact.email}`} class="contact-links__item">
+                  <svg class="contact-links__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  {t.contact.email}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

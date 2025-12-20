@@ -1,0 +1,363 @@
+/* ==========================================================================
+   Login Page Styles
+   ========================================================================== */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ==========================================================================
+   Left Panel - Form
+   ========================================================================== */
+
+.login-form-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px;
+  background: var(--color-bg-section);
+}
+
+.login-form-panel__inner {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.login-form-panel__logo {
+  display: block;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.login-form-panel__logo-text {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.login-form-panel__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-form-panel__title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.login-form-panel__subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+}
+
+/* ==========================================================================
+   Login Type Cards
+   ========================================================================== */
+
+.login-types {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.login-type-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  background: var(--color-white);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.login-type-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.login-type-card--investor:hover {
+  border-color: var(--color-success);
+}
+
+.login-type-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.login-type-card__icon--borrower {
+  background: rgba(0, 115, 153, 0.1);
+  color: var(--color-primary);
+}
+
+.login-type-card__icon--investor {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--color-success);
+}
+
+.login-type-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.login-type-card__title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.login-type-card__desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+/* ==========================================================================
+   Divider
+   ========================================================================== */
+
+.login-divider {
+  position: relative;
+  margin: 32px 0;
+}
+
+.login-divider__line {
+  height: 1px;
+  background: var(--color-border);
+}
+
+.login-divider__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-bg-section);
+  padding: 0 16px;
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+/* ==========================================================================
+   Login Form
+   ========================================================================== */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-form__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.login-form__checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+}
+
+.login-form__checkbox-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+.login-form__link {
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-form__link:hover {
+  text-decoration: underline;
+}
+
+.login-form__footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+.login-form__footer a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-form__footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Right Panel - Info
+   ========================================================================== */
+
+.login-info-panel {
+  flex: 1;
+  display: none;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-info-panel__orb {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.login-info-panel__orb--1 {
+  width: 400px;
+  height: 400px;
+  background: var(--color-white);
+  top: -100px;
+  right: -100px;
+}
+
+.login-info-panel__orb--2 {
+  width: 300px;
+  height: 300px;
+  background: var(--color-white);
+  bottom: -100px;
+  left: -100px;
+}
+
+.login-info-panel__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 48px;
+}
+
+.login-info-panel__title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 32px;
+}
+
+.login-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.login-benefits__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.login-benefits__icon {
+  width: 24px;
+  height: 24px;
+  color: #4ade80;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.login-benefits__text {
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+/* Support Section */
+.login-support {
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-support__title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 8px;
+}
+
+.login-support__text {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+}
+
+.login-support__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-support__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color 0.2s ease;
+}
+
+.login-support__link:hover {
+  color: var(--color-white);
+}
+
+.login-support__link svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+  .login-info-panel {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .login-form-panel {
+    padding: 24px;
+  }
+
+  .login-types {
+    grid-template-columns: 1fr;
+  }
+
+  .login-form__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
