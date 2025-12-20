@@ -23,6 +23,7 @@ const sections = [
   { id: "timeline", label: "Timeline", icon: "timeline" },
   { id: "animations", label: "Animationen", icon: "animation" },
   { id: "layout", label: "Layout", icon: "layout" },
+  { id: "error-pages", label: "Error Pages", icon: "warning" },
   { id: "components", label: "Komponenten", icon: "components" },
 ];
 
@@ -1640,7 +1641,101 @@ export default function Styleguide() {
               </div>
             </section>
 
-            {/* 18. Interactive Components Section */}
+            {/* 18. Error Pages Section */}
+            <section id="error-pages" class="styleguide__section">
+              <h2 class="styleguide__section-title">Error Pages</h2>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">404 - Seite nicht gefunden</h3>
+                <p class="styleguide__description">
+                  Animierte Fehlerseite mit Finanz-Emojis die spiralförmig zum
+                  Zentrum wirbeln. Die "0" wird durch ein 🪙 Coin-Emoji ersetzt.
+                </p>
+                <div class="styleguide__demo">
+                  <div class="error-page error-page--animated error-page--preview">
+                    <div class="error-page__emoji-vortex">
+                      {["💰", "💵", "💳", "📈", "💎", "🏦"].map((emoji, i) => (
+                        <span
+                          key={i}
+                          class="error-page__emoji error-page__emoji--ring-2"
+                          style={`--i: ${i}; --total: 6; --delay: ${i * 0.3}s;`}
+                        >
+                          {emoji}
+                        </span>
+                      ))}
+                    </div>
+                    <div class="error-page__content error-page__content--centered">
+                      <div class="error-page__code-wrapper">
+                        <span class="error-page__code error-page__code--animated error-page__code--preview">
+                          4
+                        </span>
+                        <span class="error-page__code error-page__code--emoji error-page__code--preview">
+                          🪙
+                        </span>
+                        <span class="error-page__code error-page__code--animated error-page__code--preview">
+                          4
+                        </span>
+                      </div>
+                      <h3 class="error-page__title">Seite nicht gefunden</h3>
+                      <p class="error-page__description">
+                        Ups! Diese Seite ist uns leider entwischt.
+                      </p>
+                      <div class="error-page__actions">
+                        <button class="btn btn--primary btn--sm">
+                          Zur Startseite
+                        </button>
+                        <button class="btn btn--outline btn--sm">Kontakt</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">CSS Klassen</h3>
+                <div class="styleguide__demo">
+                  <div class="styleguide__code-block">
+                    <code>.error-page</code> - Hauptcontainer
+                    <br />
+                    <code>.error-page--animated</code> - Aktiviert
+                    Emoji-Animationen
+                    <br />
+                    <code>.error-page__emoji-vortex</code> - Container für
+                    wirbelnde Emojis
+                    <br />
+                    <code>.error-page__emoji--ring-1/2/3</code> - Verschiedene
+                    Orbit-Ringe
+                    <br />
+                    <code>.error-page__code-wrapper</code> - Flex-Container für
+                    4🪙4
+                    <br />
+                    <code>.error-page__code--emoji</code> - Coin-Emoji mit
+                    Spin-Animation
+                    <br />
+                    <code>.error-page__code--animated</code> - Float-Animation
+                    für Zahlen
+                  </div>
+                </div>
+              </div>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Live-Ansicht</h3>
+                <div class="styleguide__component-preview">
+                  <span class="styleguide__component-label">
+                    404 Error Page
+                  </span>
+                  <p class="styleguide__card-body-text">
+                    Die vollständige 404-Seite mit Header, Footer und
+                    Illustration.
+                  </p>
+                  <a href="/nicht-vorhanden" class="btn btn--outline">
+                    404 Seite testen
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            {/* 19. Interactive Components Section */}
             <section id="components" class="styleguide__section">
               <h2 class="styleguide__section-title">Interaktive Komponenten</h2>
 

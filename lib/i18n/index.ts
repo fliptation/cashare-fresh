@@ -55,15 +55,13 @@ export function t<N extends TranslationNamespace>(
 ): string {
   const localeTranslations = translations[locale] ?? translations[DEFAULT_LOCALE];
   const namespaceTranslations = localeTranslations[namespace];
-
-  // @ts-ignore - TypeScript can't fully infer the key type
-  const value = namespaceTranslations?.[key];
+  const keyStr = key as string;
+  const value = (namespaceTranslations as unknown as Record<string, string>)[keyStr];
 
   if (value === undefined) {
-    console.warn(`Missing translation: ${locale}.${namespace}.${key}`);
-    // Fallback to German
-    // @ts-ignore
-    return translations[DEFAULT_LOCALE][namespace]?.[key] ?? String(key);
+    console.warn(`Missing translation: ${locale}.${namespace}.${keyStr}`);
+    const fallback = translations[DEFAULT_LOCALE][namespace];
+    return (fallback as unknown as Record<string, string>)[keyStr] ?? keyStr;
   }
 
   return value;

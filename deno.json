@@ -1,6 +1,8 @@
 {
   "lock": false,
   "tasks": {
+    "i18n:types": "deno run --allow-read --allow-write lib/i18n/generate-types.ts",
+    "i18n:check": "deno run --allow-read lib/i18n/generate-types.ts --check",
     "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -",
     "manifest": "deno task cli manifest $(pwd)",
