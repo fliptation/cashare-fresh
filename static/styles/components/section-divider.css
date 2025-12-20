@@ -1,0 +1,134 @@
+/* Section Divider Component */
+
+.section-divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+/* Direction positioning */
+.section-divider--down {
+  bottom: -1px; /* Prevent sub-pixel gaps */
+}
+
+.section-divider--up {
+  top: -1px; /* Prevent sub-pixel gaps */
+}
+
+/* SVG fills entire container */
+.section-divider__svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Type variations - can be extended with custom animations */
+.section-divider--angle {
+  /* Minimal height for sharp angles */
+  height: 80px;
+}
+
+.section-divider--curve {
+  /* Medium height for gentle curves */
+  height: 100px;
+}
+
+.section-divider--wave {
+  /* Taller for wave patterns */
+  height: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-divider {
+    height: 60px;
+  }
+
+  .section-divider--angle {
+    height: 50px;
+  }
+
+  .section-divider--curve {
+    height: 60px;
+  }
+
+  .section-divider--wave {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-divider {
+    height: 40px;
+  }
+
+  .section-divider--angle {
+    height: 30px;
+  }
+
+  .section-divider--curve {
+    height: 40px;
+  }
+
+  .section-divider--wave {
+    height: 50px;
+  }
+}
+
+/* Parent section setup - applies to sections using dividers */
+.section {
+  position: relative;
+}
+
+/* Color inheritance from parent section */
+.section--primary .section-divider__svg path {
+  fill: var(--color-primary, currentColor);
+}
+
+.section--secondary .section-divider__svg path {
+  fill: var(--color-secondary, currentColor);
+}
+
+.section--light .section-divider__svg path {
+  fill: var(--color-background-light, #f8f9fa);
+}
+
+.section--dark .section-divider__svg path {
+  fill: var(--color-background-dark, #1a1a1a);
+}
+
+/* Utility classes for custom colors */
+.section-divider--white path {
+  fill: #ffffff;
+}
+
+.section-divider--transparent path {
+  fill: transparent;
+}
+
+/* Optional: Animated wave effect */
+@keyframes wave-flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.section-divider--wave.section-divider--animated .section-divider__svg {
+  animation: wave-flow 20s linear infinite;
+}
+
+/* Ensure proper stacking context */
+.section-divider + .section,
+.section .section-divider ~ * {
+  position: relative;
+  z-index: 2;
+}

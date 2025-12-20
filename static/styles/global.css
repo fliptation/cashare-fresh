@@ -1,0 +1,58 @@
+/* Cashare Global Styles - BEM */
+
+/* Google Fonts - Plus Jakarta Sans */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Foundation */
+@import url("variables.css");
+@import url("reset.css");
+@import url("typography.css");
+
+/* Animations & Effects (Stripe-inspired) */
+@import url("animations.css");
+
+/* Utilities */
+@import url("utilities/display.css");
+@import url("utilities/flex.css");
+@import url("utilities/spacing.css");
+@import url("utilities/sizing.css");
+@import url("utilities/text.css");
+@import url("utilities/colors.css");
+
+/* Components */
+@import url("components/button.css");
+@import url("components/form.css");
+@import url("components/slider.css");
+@import url("components/modal.css");
+@import url("components/tooltip.css");
+@import url("components/card.css");
+@import url("components/chart.css");
+@import url("components/feature-card.css");
+@import url("components/section-divider.css");
+@import url("components/alert.css");
+@import url("components/spinner.css");
+@import url("components/skeleton.css");
+@import url("components/progress.css");
+
+/* Pages */
+@import url("pages/styleguide.css");
+
+/* Blocks */
+@import url("blocks/hero.css");
+@import url("blocks/calculator.css");
+@import url("blocks/charts.css");
+@import url("blocks/stats.css");
+@import url("blocks/header.css");
+@import url("blocks/stripe-nav.css");
+@import url("blocks/footer.css");
+@import url("blocks/section.css");
+@import url("blocks/logo-bar.css");
+@import url("blocks/borrowers.css");
+@import url("blocks/investors.css");
+@import url("blocks/projects.css");
+@import url("blocks/benefits.css");
+@import url("blocks/requirements.css");
+@import url("blocks/faq.css");
+
+/* Responsive */
+@import url("responsive.css");

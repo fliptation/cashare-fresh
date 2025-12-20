@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Color Utilities
+   ========================================================================== */
+
+/* Text Colors */
+.u-color--primary { color: var(--color-primary); }
+.u-color--secondary { color: var(--color-secondary); }
+.u-color--text { color: var(--color-text); }
+.u-color--text-light { color: var(--color-text-light); }
+.u-color--white { color: var(--color-white); }
+.u-color--gray { color: var(--color-gray); }
+.u-color--gray-light { color: var(--color-gray-light); }
+.u-color--gray-dark { color: var(--color-gray-dark); }
+.u-color--error { color: var(--color-error); }
+.u-color--success { color: var(--color-success); }
+.u-color--warning { color: var(--color-warning); }
+
+/* Background Colors */
+.u-bg--primary { background-color: var(--color-primary); }
+.u-bg--secondary { background-color: var(--color-secondary); }
+.u-bg--white { background-color: var(--color-white); }
+.u-bg--light { background-color: var(--color-bg-light); }
+.u-bg--section { background-color: var(--color-bg-section); }
+.u-bg--transparent { background-color: transparent; }
+.u-bg--text { background-color: var(--color-text); }
+
+/* Border Colors */
+.u-border--primary { border-color: var(--color-primary); }
+.u-border--secondary { border-color: var(--color-secondary); }
+.u-border--default { border-color: var(--color-border); }
+.u-border--error { border-color: var(--color-error); }
+
+/* Borders */
+.u-border { border: 1px solid var(--color-border); }
+.u-border--bottom { border-bottom: 1px solid var(--color-border); }
+.u-border--top { border-top: 1px solid var(--color-border); }
+.u-border--none { border: none; }
+
+/* Border Radius */
+.u-rounded--none { border-radius: 0; }
+.u-rounded--sm { border-radius: var(--radius-sm); }
+.u-rounded--md { border-radius: var(--radius-md); }
+.u-rounded--lg { border-radius: var(--radius-lg); }
+.u-rounded--xl { border-radius: var(--radius-xl); }
+.u-rounded--full { border-radius: var(--radius-full); }

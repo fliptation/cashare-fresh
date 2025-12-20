@@ -1,0 +1,63 @@
+{
+  "common": {
+    "CHF": "CHF",
+    "months": "mois",
+    "month": "mois",
+    "Continue": "Continuer",
+    "Register": "S'inscrire",
+    "or": "ou"
+  },
+  "calculator": {
+    "Loan": "Emprunter",
+    "Duration": "Durée",
+    "interest": "Intérêt",
+    "from": "dès",
+    "Fees": "Frais",
+    "With insurance": "Avec assurance",
+    "Monthly instalment": "Mensualité",
+    "of which insurance": "dont assurance",
+    "Apply": "Demander",
+    "Invest": "Investir",
+    "amountError": "Veuillez saisir un montant compris entre 1'000 et 1'000'000.",
+    "monthError1": "Veuillez saisir une valeur comprise entre ",
+    "monthError2": " et ",
+    "monthError3": " mois.",
+    "duration": "Durée"
+  },
+  "auth": {
+    "Choose your role": "Sélectionnez votre rôle",
+    "How would you like to use Cashare": "Comment souhaitez-vous utiliser Cashare",
+    "Apply for a loan": "Demander un prêt",
+    "Please enter your email address": "Veuillez saisir votre adresse e-mail.",
+    "Please enter your password": "Veuillez entrer votre mot de passe.",
+    "Error logging in": "Erreur de connexion.",
+    "Email exists": "Un compte avec cette adresse e-mail existe déjà. Veuillez vous connecter pour soumettre une nouvelle demande ou poursuivre une demande existante.",
+    "Verify that": "Contrôlez si",
+    "is a valid email address": "est une adresse e-mail valide.",
+    "Email validation": "Validation de l'e-mail",
+    "Receive email": "Nous vous avons envoyé un e-mail avec lequel vous pouvez conclure l'inscription. Prière de lire attentivement cet e-mail.",
+    "We have": "Cet e-mail a été envoyé à ",
+    "Sent": "",
+    "Not received": "Si vous n'avez pas reçu cet e-mail ou si l'adresse e-mail n'est pas correct, vous pouvez la corriger ice et vous le laisser envoyer une nouvelle fois.",
+    "Resend": "Renvoyer l'e-mail",
+    "Send validation email": "E-mail de validation envoyé",
+    "The email was": "L'e-mail pour la validation a été envoyé à ",
+    "Resent": ".",
+    "Should Receive": "Vous devriez recevoir l'e-mail dans quelques minutes",
+    "Two-Factor Authentication": "Authentification à deux facteurs",
+    "Enter auth code": "Pour plus de sécurité, veuillez entrer le code d'authentification de votre application 2FA.",
+    "Lost your device": "Vous avez perdu votre appareil ?",
+    "Check TFA": "Consultez le guide d'authentification à deux facteurs",
+    "request": "demandez une réinitialisation."
+  },
+  "validation": {
+    "Please enter an amount": "Veuillez saisir un montant.",
+    "Please enter an amount greater than or equal to 1'000": "Veuillez entrer un montant supérieur ou égal à 1'000.",
+    "Please enter an amount less than or equal to": "Veuillez entrer un montant inférieur ou égal à ",
+    "ein": "",
+    "Please enter a runtime greater than or equal to 1": "Veuillez saisir un temps d'exécution supérieur ou égal à 1.",
+    "Please enter a runtime less than or equal to": "Veuillez saisir un temps d'exécution inférieur ou égal à ",
+    "Please enter a term": "Veuillez entrer un terme.",
+    "not more than 1": "Vous ne pouvez pas créer plus d'une demande d'emprunt."
+  }
+}

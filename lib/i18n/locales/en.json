@@ -1,0 +1,63 @@
+{
+  "common": {
+    "CHF": "CHF",
+    "months": "months",
+    "month": "month",
+    "Continue": "Continue",
+    "Register": "Register",
+    "or": "or"
+  },
+  "calculator": {
+    "Loan": "Loan",
+    "Duration": "Duration",
+    "interest": "Interest",
+    "from": "from",
+    "Fees": "Fees",
+    "With insurance": "With insurance",
+    "Monthly instalment": "Monthly instalment",
+    "of which insurance": "of which insurance",
+    "Apply": "Apply",
+    "Invest": "Invest",
+    "amountError": "Please enter an amount between 1'000 and 1'000'000.",
+    "monthError1": "Please enter a value between ",
+    "monthError2": " and ",
+    "monthError3": " months.",
+    "duration": "Duration"
+  },
+  "auth": {
+    "Choose your role": "Choose your role",
+    "How would you like to use Cashare": "How would you like to use Cashare",
+    "Apply for a loan": "Apply for a loan",
+    "Please enter your email address": "Please enter your email address.",
+    "Please enter your password": "Please enter your password.",
+    "Error logging in": "Error logging in.",
+    "Email exists": "An account with this email address already exists. Please log in to submit a new application or continue an existing one.",
+    "Verify that": "Verify that",
+    "is a valid email address": "is a valid email address.",
+    "Email validation": "Email validation",
+    "Receive email": "You have received an email from us which you can use to complete the registration. Look now in your mailbox and carefully read the email.",
+    "We have": "We sent this email to the following address: ",
+    "Sent": "",
+    "Not received": "If you have not received the email, or the email address is not correct, you can correct in the field and have the email sent again.",
+    "Resend": "Re-send",
+    "Send validation email": "Sent Validation Email",
+    "The email was": "The email for the validation was sent to ",
+    "Resent": ".",
+    "Should Receive": "You should receive the email one minute at most.",
+    "Two-Factor Authentication": "Two-Factor Authentication",
+    "Enter auth code": "For added security, please enter the authentication code from your 2FA app.",
+    "Lost your device": "Lost your device?",
+    "Check TFA": "Check Two-Factor Authentication Guide",
+    "request": "request a reset."
+  },
+  "validation": {
+    "Please enter an amount": "Please enter an amount.",
+    "Please enter an amount greater than or equal to 1'000": "Please enter an amount greater than or equal to 1'000.",
+    "Please enter an amount less than or equal to": "Please enter an amount less than or equal to ",
+    "ein": "",
+    "Please enter a runtime greater than or equal to 1": "Please enter a runtime greater than or equal to 1.",
+    "Please enter a runtime less than or equal to": "Please enter a runtime less than or equal to ",
+    "Please enter a term": "Please enter a term.",
+    "not more than 1": "You can capture no more than one loan application."
+  }
+}

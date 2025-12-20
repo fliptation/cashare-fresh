@@ -1,0 +1,225 @@
+/* ==========================================================================
+   Requirements Section - Voraussetzungen
+   ========================================================================== */
+
+.requirements {
+  position: relative;
+  padding: 100px 40px 120px;
+  background: var(--color-white);
+}
+
+.requirements__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section */
+.requirements__section {
+  margin-bottom: 100px;
+}
+
+.requirements__section:last-child {
+  margin-bottom: 0;
+}
+
+/* Title */
+.requirements__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-gray-dark);
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: -0.02em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Timeline */
+.requirements__timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Timeline center line */
+.requirements__timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-border) 0%, var(--color-secondary) 50%, var(--color-border) 100%);
+  transform: translateX(-50%);
+}
+
+/* Item */
+.requirements__item {
+  position: relative;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.requirements__item--right {
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+/* Connector dot */
+.requirements__item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  width: 12px;
+  height: 12px;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.requirements__item--right::before {
+  right: auto;
+  left: -6px;
+}
+
+/* Connector line */
+.requirements__item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  width: 34px;
+  height: 2px;
+  background: var(--color-border);
+  transform: translateY(-50%);
+}
+
+.requirements__item--right::after {
+  right: auto;
+  left: 6px;
+}
+
+/* Item Content */
+.requirements__item-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--color-white);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.requirements__item-content:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 181, 206, 0.3);
+}
+
+.requirements__item--right .requirements__item-content {
+  flex-direction: row;
+}
+
+/* Icon */
+.requirements__icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+/* Text */
+.requirements__item-text {
+  font-size: 0.9375rem;
+  color: var(--color-gray-dark);
+  line-height: 1.5;
+}
+
+/* CTA */
+.requirements__cta-wrapper {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.requirements__cta {
+  display: inline-block;
+  padding: 14px 40px;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.requirements__cta:hover {
+  background: #00a3b8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 181, 206, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .requirements {
+    padding: 60px 20px 80px;
+  }
+
+  .requirements__section {
+    margin-bottom: 80px;
+  }
+
+  .requirements__title {
+    font-size: 1.75rem;
+    margin-bottom: 40px;
+  }
+
+  /* Stack items vertically on mobile */
+  .requirements__timeline::before {
+    left: 20px;
+  }
+
+  .requirements__item,
+  .requirements__item--right {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 56px;
+    margin-left: 0;
+  }
+
+  .requirements__item::before,
+  .requirements__item--right::before {
+    left: 14px;
+    right: auto;
+  }
+
+  .requirements__item::after,
+  .requirements__item--right::after {
+    left: 26px;
+    right: auto;
+    width: 30px;
+  }
+
+  .requirements__item-content {
+    padding: 16px 20px;
+  }
+
+  .requirements__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .requirements__item-text {
+    font-size: 0.875rem;
+  }
+
+  .requirements__cta {
+    padding: 12px 32px;
+    font-size: 0.9375rem;
+  }
+}

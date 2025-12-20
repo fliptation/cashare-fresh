@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Investors Section - Für Anleger
+   ========================================================================== */
+
+.investors {
+  position: relative;
+  padding: 100px 40px 120px;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+/* Subtle gradient accent - contained within section */
+.investors__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 70% 50%, rgba(34, 197, 94, 0.15) 0%, transparent 60%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.investors__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.investors__header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.investors__label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #22c55e;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.investors__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-gray-dark);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.investors__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-gray);
+  max-width: 700px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.investors__cta {
+  background: #22c55e;
+  color: var(--color-white);
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.investors__cta:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+}
+
+/* Product Cards - 2 columns */
+.investors__products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.investors__card {
+  background: transparent;
+  padding: 40px 32px;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Divider between cards */
+.investors__card:first-child::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 10%;
+  bottom: 10%;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--color-border), transparent);
+}
+
+.investors__card:hover {
+  transform: translateY(-4px);
+}
+
+.investors__icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 24px;
+}
+
+.investors__card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gray-dark);
+  margin-bottom: 16px;
+}
+
+.investors__card-description {
+  font-size: 1rem;
+  color: var(--color-gray);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.investors__card-description strong {
+  color: var(--color-gray-dark);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .investors {
+    padding: 80px 30px 100px;
+  }
+
+  .investors__title {
+    font-size: 2.5rem;
+  }
+
+  .investors__header {
+    margin-bottom: 60px;
+  }
+
+  .investors__products {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .investors {
+    padding: 60px 20px 80px;
+  }
+
+  .investors__header {
+    margin-bottom: 40px;
+  }
+
+  .investors__title {
+    font-size: 2rem;
+  }
+
+  .investors__subtitle {
+    font-size: 1rem;
+  }
+
+  .investors__products {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .investors__card:first-child::after {
+    display: none;
+  }
+
+  .investors__card {
+    padding: 32px 24px;
+  }
+
+  .investors__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .investors__card-title {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   CSS Custom Properties (Design Tokens)
+   ========================================================================== */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #007399;
+  --color-secondary: #00B5CE;
+  --color-text: #1D2129;
+  --color-accent: #00D924;
+
+  /* Neutral Colors */
+  --color-text-light: #3F4E53;
+  --color-gray-dark: #424748;
+  --color-gray: #929292;
+  --color-gray-light: #8E8F8F;
+  --color-silver: #C4C4C4;
+  --color-white: #fff;
+  --color-border: #E5E5E5;
+  --color-bg-light: #F5F5F5;
+  --color-bg-section: #F9FAFB;
+
+  /* Service Colors */
+  --color-borrowing: #21CFE0;
+  --color-investing: #23C343;
+
+  /* Container theming */
+  --container-primary-color: var(--color-primary);
+  --container-secondary-color: var(--color-secondary);
+
+  /* Slider track */
+  --track-color: #4FB0C6;
+  --track-color-bg: #DFF6F9;
+
+  /* Status */
+  --color-error: #dc2626;
+  --color-success: #16a34a;
+  --color-warning: #ca8a04;
+
+  /* Transitions */
+  --transition: all 0.3s ease-in-out;
+  --transition-fast: all 0.15s ease-in-out;
+
+  /* Shadows */
+  --shadow-card: 3.26px 8.16px 24.48px 0 rgba(0, 0, 0, 0.06);
+  --shadow-tooltip: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-modal: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+
+  /* Font */
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  /* Font Sizes */
+  --text-2xs: 0.75rem;
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.125rem;
+  --text-5xl: 3.5rem;
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Z-index Scale */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+}

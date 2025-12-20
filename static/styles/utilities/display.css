@@ -1,0 +1,10 @@
+/* ==========================================================================
+   Display Utilities
+   ========================================================================== */
+
+.u-block { display: block; }
+.u-inline { display: inline; }
+.u-inline-block { display: inline-block; }
+.u-hidden { display: none; }
+.u-visible { visibility: visible; }
+.u-invisible { visibility: hidden; }

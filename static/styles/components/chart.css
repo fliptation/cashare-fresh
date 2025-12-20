@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Chart Component
+   ========================================================================== */
+
+.chart {
+  width: 100%;
+}
+
+.chart__header {
+  margin-bottom: var(--space-4);
+}
+
+.chart__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin: 0;
+}
+
+.chart__subtitle {
+  font-size: var(--text-xs);
+  color: var(--color-gray);
+  margin-top: var(--space-1);
+}
+
+/* Chart Container (for SVG) */
+.chart__container {
+  position: relative;
+  width: 100%;
+}
+
+.chart__svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Legend */
+.chart__legend {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.chart__legend--horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.chart__legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.chart__legend-item:hover {
+  opacity: 0.8;
+}
+
+.chart__legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.chart__legend-label {
+  font-size: var(--text-xs);
+  color: var(--color-text);
+}
+
+.chart__legend-value {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  margin-left: auto;
+}
+
+/* Progress Bar Legend */
+.chart__legend-progress {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.chart__legend-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--color-bg-light);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.chart__legend-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+/* Donut Chart specific */
+.chart--donut {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-8);
+}
+
+.chart--donut .chart__container {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.chart--donut .chart__legend {
+  flex: 1;
+  margin-top: 0;
+}
+
+/* Bar Chart specific */
+.chart--bar .chart__container {
+  min-height: 300px;
+}
+
+/* Loading state */
+.chart--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: var(--color-gray);
+}

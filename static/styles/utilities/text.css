@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Text Utilities
+   ========================================================================== */
+
+/* Text Alignment */
+.u-text--left { text-align: left; }
+.u-text--center { text-align: center; }
+.u-text--right { text-align: right; }
+.u-text--justify { text-align: justify; }
+
+/* Font Size */
+.u-text--2xs { font-size: var(--text-2xs); line-height: var(--leading-none); }
+.u-text--xs { font-size: var(--text-xs); line-height: var(--leading-tight); }
+.u-text--sm { font-size: var(--text-sm); line-height: var(--leading-normal); }
+.u-text--base { font-size: var(--text-base); line-height: var(--leading-normal); }
+.u-text--lg { font-size: var(--text-lg); line-height: var(--leading-tight); }
+.u-text--xl { font-size: var(--text-xl); line-height: var(--leading-tight); }
+.u-text--2xl { font-size: var(--text-2xl); line-height: var(--leading-tight); }
+.u-text--3xl { font-size: var(--text-3xl); line-height: var(--leading-tight); }
+.u-text--5xl { font-size: var(--text-5xl); line-height: var(--leading-none); }
+
+/* Font Weight */
+.u-font--normal { font-weight: 400; }
+.u-font--medium { font-weight: 500; }
+.u-font--semibold { font-weight: 600; }
+.u-font--bold { font-weight: 700; }
+.u-font--extrabold { font-weight: 800; }
+
+/* White Space */
+.u-text--nowrap { white-space: nowrap; }
+.u-text--wrap { white-space: normal; }
+.u-text--truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Text Transform */
+.u-text--uppercase { text-transform: uppercase; }
+.u-text--lowercase { text-transform: lowercase; }
+.u-text--capitalize { text-transform: capitalize; }
+
+/* Text Decoration */
+.u-underline { text-decoration: underline; }
+.u-no-underline { text-decoration: none; }
+.u-line-through { text-decoration: line-through; }
+
+/* Line Height */
+.u-leading--none { line-height: var(--leading-none); }
+.u-leading--tight { line-height: var(--leading-tight); }
+.u-leading--normal { line-height: var(--leading-normal); }
+.u-leading--relaxed { line-height: var(--leading-relaxed); }

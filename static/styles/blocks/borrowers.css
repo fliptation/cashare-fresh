@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Borrowers Section - Für Kreditnehmer
+   ========================================================================== */
+
+.borrowers {
+  position: relative;
+  padding: 100px 40px 120px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #fff 0%, #f8fdfe 100%);
+}
+
+/* Subtle gradient accent - contained within section */
+.borrowers__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(34, 211, 238, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(34, 211, 238, 0.1) 0%, transparent 45%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.borrowers__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.borrowers__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.borrowers__label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.borrowers__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-gray-dark);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.borrowers__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-gray);
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.borrowers__cta {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.borrowers__cta:hover {
+  background: #00a3b8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 181, 206, 0.4);
+}
+
+/* Product Cards */
+.borrowers__products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.borrowers__card {
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.borrowers__card::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--color-border);
+  transform: translateX(-50%);
+  display: none;
+}
+
+/* Dividers between cards */
+.borrowers__card:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 20%;
+  bottom: 20%;
+  width: 1px;
+  background: var(--color-border);
+}
+
+.borrowers__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 181, 206, 0.2);
+}
+
+.borrowers__icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+.borrowers__card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gray-dark);
+  margin-bottom: 12px;
+}
+
+.borrowers__card-description {
+  font-size: 1rem;
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .borrowers {
+    padding: 80px 30px 100px;
+  }
+
+  .borrowers__title {
+    font-size: 2.5rem;
+  }
+
+  .borrowers__products {
+    gap: 20px;
+  }
+
+  .borrowers__card {
+    padding: 32px 24px;
+  }
+
+  .borrowers__card:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .borrowers {
+    padding: 60px 20px 80px;
+  }
+
+  .borrowers__header {
+    margin-bottom: 40px;
+  }
+
+  .borrowers__title {
+    font-size: 2rem;
+  }
+
+  .borrowers__subtitle {
+    font-size: 1rem;
+  }
+
+  .borrowers__products {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .borrowers__card {
+    padding: 32px 24px;
+  }
+
+  .borrowers__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .borrowers__card-title {
+    font-size: 1.25rem;
+  }
+}

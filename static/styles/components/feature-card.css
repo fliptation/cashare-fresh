@@ -1,0 +1,385 @@
+/* ==========================================================================
+   Feature Card Component
+   Stripe-inspired card with sophisticated hover effects
+   ========================================================================== */
+
+/* Base Card Styles
+   ========================================================================== */
+
+.feature-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+}
+
+.feature-card:active {
+  transform: translateY(-2px);
+}
+
+/* Glow Effect (hidden by default, shown on hover)
+   ========================================================================== */
+
+.feature-card__glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(59, 130, 246, 0.15),
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.feature-card:hover .feature-card__glow {
+  opacity: 1;
+}
+
+/* Icon Styles
+   ========================================================================== */
+
+.feature-card__icon-wrapper {
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.feature-card:hover .feature-card__icon {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35);
+}
+
+.feature-card__icon-text {
+  display: block;
+  line-height: 1;
+}
+
+/* Content Styles
+   ========================================================================== */
+
+.feature-card__content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card__title {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-card__title {
+  color: var(--color-primary);
+}
+
+.feature-card__description {
+  margin: 0;
+  font-size: 0.938rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+/* Arrow Indicator (for links)
+   ========================================================================== */
+
+.feature-card__arrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--color-background);
+  color: var(--color-text-secondary);
+  opacity: 0;
+  transform: translate(4px, -4px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.feature-card:hover .feature-card__arrow {
+  opacity: 1;
+  transform: translate(0, 0);
+  color: var(--color-primary);
+}
+
+/* Shadow Effects
+   ========================================================================== */
+
+.feature-card {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.08),
+    0 6px 12px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+/* Variant: Glass
+   ========================================================================== */
+
+.feature-card--glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-card--glass:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.feature-card--glass .feature-card__icon {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 4px 12px rgba(59, 130, 246, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.feature-card--glass:hover .feature-card__icon {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 8px 24px rgba(59, 130, 246, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.feature-card--glass .feature-card__title {
+  color: var(--color-text);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card--glass .feature-card__arrow {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Variant: Outlined
+   ========================================================================== */
+
+.feature-card--outlined {
+  background: transparent;
+  border: 2px solid var(--color-border);
+}
+
+.feature-card--outlined:hover {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.08),
+    0 6px 12px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+.feature-card--outlined .feature-card__icon {
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: none;
+}
+
+.feature-card--outlined:hover .feature-card__icon {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35);
+}
+
+/* 3D Tilt Effect
+   ========================================================================== */
+
+.feature-card[data-tilt="true"] {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.feature-card[data-tilt="true"]:hover {
+  transform: translateY(-4px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+}
+
+.feature-card[data-tilt="true"] .feature-card__icon,
+.feature-card[data-tilt="true"] .feature-card__content,
+.feature-card[data-tilt="true"] .feature-card__arrow {
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+}
+
+/* Responsive Adjustments
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-card__icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .feature-card__title {
+    font-size: 1.125rem;
+  }
+
+  .feature-card__description {
+    font-size: 0.875rem;
+  }
+
+  .feature-card__arrow {
+    top: 1rem;
+    right: 1rem;
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Reduce hover effects on mobile */
+  .feature-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .feature-card[data-tilt="true"]:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+    padding: 1.25rem;
+  }
+
+  .feature-card__icon-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .feature-card__title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Focus States (Accessibility)
+   ========================================================================== */
+
+.feature-card:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Dark Mode Support
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  .feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .feature-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .feature-card__glow {
+    background: radial-gradient(
+      circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(59, 130, 246, 0.2),
+      transparent 50%
+    );
+  }
+
+  .feature-card--glass {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .feature-card--glass:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .feature-card--outlined {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .feature-card__arrow {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Animation Performance Optimizations
+   ========================================================================== */
+
+.feature-card,
+.feature-card__icon,
+.feature-card__glow,
+.feature-card__arrow,
+.feature-card__title {
+  will-change: transform, opacity, box-shadow;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-card,
+  .feature-card__icon,
+  .feature-card__glow,
+  .feature-card__arrow,
+  .feature-card__title {
+    transition: none;
+    animation: none;
+  }
+
+  .feature-card:hover {
+    transform: none;
+  }
+
+  .feature-card__icon:hover {
+    transform: none;
+  }
+}

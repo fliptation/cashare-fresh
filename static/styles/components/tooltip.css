@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Tooltip Component
+   ========================================================================== */
+
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  box-shadow: var(--shadow-tooltip);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: #373F52;
+  min-width: 140px;
+  margin-bottom: var(--space-4);
+  z-index: var(--z-tooltip);
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-white);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip__value {
+  font-weight: 700;
+}
+
+/* Position Variants */
+.tooltip--top::before {
+  bottom: auto;
+  top: -0.5rem;
+  box-shadow: -4px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip--left::before {
+  bottom: auto;
+  left: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip--right::before {
+  bottom: auto;
+  left: auto;
+  right: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  box-shadow: 4px -4px 6px rgba(0, 0, 0, 0.1);
+}

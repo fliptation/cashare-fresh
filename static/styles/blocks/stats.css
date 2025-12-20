@@ -1,0 +1,246 @@
+/* Stats Component */
+
+.stats {
+  padding: 4rem 0;
+}
+
+.stats__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stats__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text-primary, #1a1a1a);
+}
+
+.stats__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Layout: Row (default) */
+.stats--row .stats__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stats--row .stats__item {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+.stats--row .stats__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background: var(--color-border, #e0e0e0);
+}
+
+/* Layout: Grid */
+.stats--grid .stats__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem 2rem;
+}
+
+/* Layout: Centered */
+.stats--centered .stats__list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.stats--centered .stats__item {
+  min-width: 200px;
+  max-width: 300px;
+}
+
+/* Stat Item */
+.stats__item {
+  text-align: center;
+  opacity: 0;
+  animation: statsItemFadeIn 0.6s ease-out forwards;
+}
+
+@keyframes statsItemFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stats__value-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.stats__value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-primary, #0066cc);
+  font-variant-numeric: tabular-nums;
+}
+
+.stats__prefix,
+.stats__suffix {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary, #0066cc);
+  opacity: 0.8;
+}
+
+.stats__label {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary, #666);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive Behavior */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .stats {
+    padding: 3rem 0;
+  }
+
+  .stats__title {
+    font-size: 2rem;
+  }
+
+  .stats__header {
+    margin-bottom: 2rem;
+  }
+
+  /* Row layout becomes stacked on tablet */
+  .stats--row .stats__list {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .stats--row .stats__item {
+    min-width: auto;
+  }
+
+  .stats--row .stats__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: -1.25rem;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+  }
+
+  /* Grid becomes 2 columns */
+  .stats--grid .stats__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1.5rem;
+  }
+
+  /* Centered becomes stacked */
+  .stats--centered .stats__list {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .stats__value {
+    font-size: 2.75rem;
+  }
+
+  .stats__prefix,
+  .stats__suffix {
+    font-size: 1.5rem;
+  }
+
+  .stats__label {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .stats {
+    padding: 2rem 0;
+  }
+
+  .stats__title {
+    font-size: 1.75rem;
+  }
+
+  .stats__container {
+    padding: 0 0.75rem;
+  }
+
+  /* All layouts become single column */
+  .stats--grid .stats__list {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .stats--row .stats__list,
+  .stats--centered .stats__list {
+    gap: 2rem;
+  }
+
+  .stats__value {
+    font-size: 2.25rem;
+  }
+
+  .stats__prefix,
+  .stats__suffix {
+    font-size: 1.25rem;
+  }
+
+  .stats__label {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Animation Variants */
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .stats__item {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+  .stats__value,
+  .stats__prefix,
+  .stats__suffix {
+    color: currentColor;
+  }
+
+  .stats--row .stats__item:not(:last-child)::after {
+    background: currentColor;
+  }
+}

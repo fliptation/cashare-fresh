@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .yield-calculator {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .yield-calculator__panel {
+    max-width: 100%;
+  }
+}
+
+/* Mobile landscape / small tablet */
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.5rem;
+    --text-3xl: 1.75rem;
+    --text-2xl: 1.5rem;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-toggle {
+    display: flex;
+  }
+
+  .header__mobile-menu {
+    display: block;
+  }
+
+  .calculator {
+    padding: 1.25rem;
+  }
+
+  .calculator__title {
+    font-size: 1.5rem;
+  }
+
+  .calculator__results-header,
+  .calculator__results-row {
+    flex-wrap: wrap;
+  }
+
+  .u-w--1\/5,
+  .u-w--2\/5 {
+    width: 50%;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .calculator__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .calculator__input-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .calculator__input-group {
+    width: 100%;
+  }
+
+  .u-w--1\/5,
+  .u-w--2\/5,
+  .u-w--1\/3 {
+    width: 100%;
+  }
+
+  .calculator__results {
+    overflow-x: auto;
+  }
+
+  .calculator__results-header,
+  .calculator__results-row {
+    min-width: 400px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yield-calculator__glass {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 375px) {
+  .u-hide--xs {
+    display: none !important;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .header__actions {
+    gap: var(--space-2);
+  }
+
+  .header__lang {
+    padding: var(--space-1);
+    font-size: 0.7rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header,
+  .footer,
+  .btn,
+  .modal {
+    display: none !important;
+  }
+
+  .section {
+    padding: 1rem 0;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+}

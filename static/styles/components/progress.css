@@ -1,0 +1,287 @@
+/* ==========================================================================
+   Progress Bar Component
+   BEM: .progress, .progress__element, .progress--modifier
+   ========================================================================== */
+
+/* Base Progress Bar */
+.progress {
+  width: 100%;
+  height: 8px;
+  background: var(--color-bg-light);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress__bar {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: inherit;
+  transition: width var(--duration-normal) var(--ease-out);
+}
+
+/* ==========================================================================
+   Progress Sizes
+   ========================================================================== */
+
+.progress--xs {
+  height: 4px;
+}
+
+.progress--sm {
+  height: 6px;
+}
+
+.progress--lg {
+  height: 12px;
+}
+
+.progress--xl {
+  height: 16px;
+}
+
+/* ==========================================================================
+   Progress Colors
+   ========================================================================== */
+
+.progress--primary .progress__bar {
+  background: var(--color-primary);
+}
+
+.progress--secondary .progress__bar {
+  background: var(--color-secondary);
+}
+
+.progress--success .progress__bar {
+  background: var(--color-success);
+}
+
+.progress--warning .progress__bar {
+  background: var(--color-warning);
+}
+
+.progress--error .progress__bar {
+  background: var(--color-error);
+}
+
+/* Gradient */
+.progress--gradient .progress__bar {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+}
+
+/* ==========================================================================
+   Progress with Label
+   ========================================================================== */
+
+.progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.progress-wrapper__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.progress-wrapper__label {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-gray-dark);
+}
+
+.progress-wrapper__value {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* ==========================================================================
+   Progress Striped
+   ========================================================================== */
+
+.progress--striped .progress__bar {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
+
+/* ==========================================================================
+   Progress Animated
+   ========================================================================== */
+
+.progress--animated .progress__bar {
+  animation: progress-stripes 1s linear infinite;
+}
+
+@keyframes progress-stripes {
+  0% {
+    background-position: 1rem 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* ==========================================================================
+   Progress Indeterminate
+   ========================================================================== */
+
+.progress--indeterminate .progress__bar {
+  width: 30% !important;
+  animation: progress-indeterminate 1.5s ease-in-out infinite;
+}
+
+@keyframes progress-indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+/* ==========================================================================
+   Circular Progress
+   ========================================================================== */
+
+.progress-circle {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.progress-circle__svg {
+  transform: rotate(-90deg);
+}
+
+.progress-circle__track {
+  fill: none;
+  stroke: var(--color-bg-light);
+  stroke-width: 4;
+}
+
+.progress-circle__bar {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: stroke-dashoffset var(--duration-normal) var(--ease-out);
+}
+
+.progress-circle__value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* Circle Sizes */
+.progress-circle--sm {
+  width: 48px;
+  height: 48px;
+}
+
+.progress-circle--sm .progress-circle__value {
+  font-size: var(--text-xs);
+}
+
+.progress-circle--lg {
+  width: 96px;
+  height: 96px;
+}
+
+.progress-circle--lg .progress-circle__value {
+  font-size: var(--text-lg);
+}
+
+/* ==========================================================================
+   Steps Progress
+   ========================================================================== */
+
+.progress-steps {
+  display: flex;
+  align-items: center;
+}
+
+.progress-steps__step {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.progress-steps__step:last-child {
+  flex: 0;
+}
+
+.progress-steps__indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-bg-light);
+  border: 2px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-gray);
+  transition: var(--transition);
+}
+
+.progress-steps__line {
+  flex: 1;
+  height: 2px;
+  background: var(--color-border);
+  margin: 0 var(--space-2);
+}
+
+/* Step States */
+.progress-steps__step--active .progress-steps__indicator {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.progress-steps__step--completed .progress-steps__indicator {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.progress-steps__step--completed .progress-steps__line {
+  background: var(--color-success);
+}
+
+/* ==========================================================================
+   Reduced Motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .progress--animated .progress__bar {
+    animation: none;
+  }
+
+  .progress--indeterminate .progress__bar {
+    animation: none;
+    width: 100% !important;
+    transform: none;
+  }
+}

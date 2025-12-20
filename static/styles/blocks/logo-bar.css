@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Logo Bar - Press/Partner Logos
+   ========================================================================== */
+
+.logo-bar {
+  padding: 80px 40px;
+  background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+}
+
+.logo-bar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.logo-bar__item {
+  flex: 1;
+  min-width: 120px;
+  max-width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.logo-bar__item:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.logo-bar__item svg {
+  width: 100%;
+  height: 100%;
+  color: var(--color-gray-dark);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .logo-bar {
+    padding: 40px 30px;
+  }
+
+  .logo-bar__container {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .logo-bar__item {
+    min-width: 100px;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-bar {
+    padding: 30px 20px;
+  }
+
+  .logo-bar__container {
+    gap: 20px;
+  }
+
+  .logo-bar__item {
+    min-width: 80px;
+    max-width: 120px;
+    height: 30px;
+  }
+}
