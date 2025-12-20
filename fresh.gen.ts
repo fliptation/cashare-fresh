@@ -10,6 +10,8 @@ import * as $api_statistics from "./routes/api/statistics.ts";
 import * as $cookies from "./routes/cookies.tsx";
 import * as $datenschutzerklaerung from "./routes/datenschutzerklaerung.tsx";
 import * as $en_about from "./routes/en/about.tsx";
+import * as $en_about_blog_slug_ from "./routes/en/about/blog/[slug].tsx";
+import * as $en_about_blog_index from "./routes/en/about/blog/index.tsx";
 import * as $en_about_crowdlending from "./routes/en/about/crowdlending.tsx";
 import * as $en_about_statistics from "./routes/en/about/statistics.tsx";
 import * as $en_apply_for_credit from "./routes/en/apply-for-credit.tsx";
@@ -26,6 +28,8 @@ import * as $en_login from "./routes/en/login.tsx";
 import * as $en_privacy from "./routes/en/privacy.tsx";
 import * as $en_terms from "./routes/en/terms.tsx";
 import * as $fr_a_propos from "./routes/fr/a-propos.tsx";
+import * as $fr_a_propos_blog_slug_ from "./routes/fr/a-propos/blog/[slug].tsx";
+import * as $fr_a_propos_blog_index from "./routes/fr/a-propos/blog/index.tsx";
 import * as $fr_a_propos_crowdlending from "./routes/fr/a-propos/crowdlending.tsx";
 import * as $fr_a_propos_statistiques from "./routes/fr/a-propos/statistiques.tsx";
 import * as $fr_cgv from "./routes/fr/cgv.tsx";
@@ -55,6 +59,8 @@ import * as $login from "./routes/login.tsx";
 import * as $styleguide from "./routes/styleguide.tsx";
 import * as $styleguide_buttons from "./routes/styleguide/buttons.tsx";
 import * as $ueber_uns from "./routes/ueber-uns.tsx";
+import * as $ueber_uns_blog_slug_ from "./routes/ueber-uns/blog/[slug].tsx";
+import * as $ueber_uns_blog_index from "./routes/ueber-uns/blog/index.tsx";
 import * as $ueber_uns_crowdlending from "./routes/ueber-uns/crowdlending.tsx";
 import * as $ueber_uns_statistik from "./routes/ueber-uns/statistik.tsx";
 import * as $AnimatedCounter from "./islands/AnimatedCounter.tsx";
@@ -85,6 +91,8 @@ const manifest = {
     "./routes/cookies.tsx": $cookies,
     "./routes/datenschutzerklaerung.tsx": $datenschutzerklaerung,
     "./routes/en/about.tsx": $en_about,
+    "./routes/en/about/blog/[slug].tsx": $en_about_blog_slug_,
+    "./routes/en/about/blog/index.tsx": $en_about_blog_index,
     "./routes/en/about/crowdlending.tsx": $en_about_crowdlending,
     "./routes/en/about/statistics.tsx": $en_about_statistics,
     "./routes/en/apply-for-credit.tsx": $en_apply_for_credit,
@@ -102,6 +110,8 @@ const manifest = {
     "./routes/en/privacy.tsx": $en_privacy,
     "./routes/en/terms.tsx": $en_terms,
     "./routes/fr/a-propos.tsx": $fr_a_propos,
+    "./routes/fr/a-propos/blog/[slug].tsx": $fr_a_propos_blog_slug_,
+    "./routes/fr/a-propos/blog/index.tsx": $fr_a_propos_blog_index,
     "./routes/fr/a-propos/crowdlending.tsx": $fr_a_propos_crowdlending,
     "./routes/fr/a-propos/statistiques.tsx": $fr_a_propos_statistiques,
     "./routes/fr/cgv.tsx": $fr_cgv,
@@ -136,6 +146,8 @@ const manifest = {
     "./routes/styleguide.tsx": $styleguide,
     "./routes/styleguide/buttons.tsx": $styleguide_buttons,
     "./routes/ueber-uns.tsx": $ueber_uns,
+    "./routes/ueber-uns/blog/[slug].tsx": $ueber_uns_blog_slug_,
+    "./routes/ueber-uns/blog/index.tsx": $ueber_uns_blog_index,
     "./routes/ueber-uns/crowdlending.tsx": $ueber_uns_crowdlending,
     "./routes/ueber-uns/statistik.tsx": $ueber_uns_statistik,
   },

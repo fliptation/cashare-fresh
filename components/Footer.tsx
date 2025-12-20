@@ -31,11 +31,11 @@ const footerContent = {
       company: {
         title: "Unternehmen",
         links: [
-          { label: "Über uns", href: "/ueber-uns/wer-sind-wir" },
+          { label: "Über uns", href: "/ueber-uns" },
           { label: "Crowdlending", href: "/ueber-uns/crowdlending" },
           { label: "Statistik", href: "/ueber-uns/statistik" },
-          { label: "Jobs", href: "/ueber-uns/jobs" },
-          { label: "Partner", href: "/ueber-uns/partner" },
+          { label: "Jobs", href: "/jobs" },
+          { label: "Partner", href: "/partner" },
           { label: "Blog", href: "/ueber-uns/blog" },
           { label: "Presse", href: "/presse" },
         ],
@@ -97,12 +97,12 @@ const footerContent = {
       company: {
         title: "Company",
         links: [
-          { label: "About Us", href: "/en/about-us/who-we-are" },
-          { label: "Crowdlending", href: "/en/about-us/crowdlending" },
-          { label: "Statistics", href: "/en/about-us/statistics" },
-          { label: "Jobs", href: "/en/about-us/jobs" },
-          { label: "Partners", href: "/en/about-us/partners" },
-          { label: "Blog", href: "/en/about-us/blog" },
+          { label: "About Us", href: "/en/about" },
+          { label: "Crowdlending", href: "/en/about/crowdlending" },
+          { label: "Statistics", href: "/en/about/statistics" },
+          { label: "Jobs", href: "/en/jobs" },
+          { label: "Partners", href: "/en/partners" },
+          { label: "Blog", href: "/en/about/blog" },
           { label: "Press", href: "/en/press" },
         ],
       },
@@ -163,11 +163,11 @@ const footerContent = {
       company: {
         title: "Entreprise",
         links: [
-          { label: "À propos", href: "/fr/a-propos/qui-sommes-nous" },
+          { label: "À propos", href: "/fr/a-propos" },
           { label: "Crowdlending", href: "/fr/a-propos/crowdlending" },
           { label: "Statistiques", href: "/fr/a-propos/statistiques" },
-          { label: "Emplois", href: "/fr/a-propos/emplois" },
-          { label: "Partenaires", href: "/fr/a-propos/partenaires" },
+          { label: "Emplois", href: "/fr/emplois" },
+          { label: "Partenaires", href: "/fr/partenaires" },
           { label: "Blog", href: "/fr/a-propos/blog" },
           { label: "Presse", href: "/fr/presse" },
         ],
