@@ -11,6 +11,12 @@ export function TopBar() {
           </svg>
           Styleguide
         </a>
+        <a href="/migration" class="top-bar__link">
+          <svg class="top-bar__icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 8h12M10 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          Migration
+        </a>
       </div>
     </div>
   );

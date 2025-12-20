@@ -78,6 +78,7 @@ import * as $kredit_beantragen_hypotheken from "./routes/kredit-beantragen/hypot
 import * as $kredit_beantragen_kmu_kredit from "./routes/kredit-beantragen/kmu-kredit.tsx";
 import * as $kredit_beantragen_privatkredit from "./routes/kredit-beantragen/privatkredit.tsx";
 import * as $login from "./routes/login.tsx";
+import * as $migration from "./routes/migration.tsx";
 import * as $passwort_zuruecksetzen from "./routes/passwort-zuruecksetzen.tsx";
 import * as $sicherheit from "./routes/sicherheit.tsx";
 import * as $so_funktionierts from "./routes/so-funktionierts.tsx";
@@ -203,6 +204,7 @@ const manifest = {
     "./routes/kredit-beantragen/privatkredit.tsx":
       $kredit_beantragen_privatkredit,
     "./routes/login.tsx": $login,
+    "./routes/migration.tsx": $migration,
     "./routes/passwort-zuruecksetzen.tsx": $passwort_zuruecksetzen,
     "./routes/sicherheit.tsx": $sicherheit,
     "./routes/so-funktionierts.tsx": $so_funktionierts,
