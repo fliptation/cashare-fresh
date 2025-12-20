@@ -34,12 +34,12 @@ const content = {
         "Seit 2008 der Schweizer Pionier im Crowdlending",
         "FINMA-reguliert und sicher",
         "Uber CHF 2.5 Mrd. finanziertes Volumen",
-        "Attraktive Renditen fur Anleger",
+        "Attraktive Renditen für Anleger",
       ],
     },
     support: {
       title: "Brauchen Sie Hilfe?",
-      text: "Unser Support-Team ist fur Sie da.",
+      text: "Unser Support-Team ist für Sie da.",
       email: "support@cashare.ch",
       phone: "+41 41 544 61 70",
     },
@@ -98,7 +98,7 @@ const content = {
     orContinueWith: "Ou continuer avec",
     borrowerLogin: {
       title: "Emprunteur",
-      description: "Gerez votre credit et vos paiements",
+      description: "Gerez votre crédit et vos paiements",
       href: "https://app.cashare.ch/borrower/login",
     },
     investorLogin: {
@@ -216,7 +216,16 @@ export function Login({ locale }: LoginProps) {
                 <input type="checkbox" id="remember" name="remember" />
                 <span class="login-form__checkbox-label">{t.rememberMe}</span>
               </label>
-              <a href="#" class="login-form__link">
+              <a
+                href={
+                  locale === "de"
+                    ? "/passwort-zuruecksetzen"
+                    : locale === "en"
+                    ? "/en/reset-password"
+                    : "/fr/reinitialiser-mot-de-passe"
+                }
+                class="login-form__link"
+              >
                 {t.forgotPassword}
               </a>
             </div>

@@ -17,9 +17,9 @@ const content = {
         items: [
           "Personliche Identifikation aller Parteien",
           "Bonitatsprufung der Kreditnehmer",
-          "Kreditwurdigkeitsprufung uber renommierte Datenbanken",
+          "Kreditwurdigkeitsprufung über renommierte Datenbanken",
           "Nur Kredite mit Rating bis 'C' werden gelistet",
-          "Portfolio-Diversifikation uber mehrere Kreditnehmer",
+          "Portfolio-Diversifikation über mehrere Kreditnehmer",
           "Zahlungsabwicklung und Inkasso durch die Plattform",
         ],
       },
@@ -38,7 +38,7 @@ const content = {
         title: "Datenschutz",
         icon: "lock",
         items: [
-          "Anonymitat wahrend Auktionen fur alle Parteien",
+          "Anonymitat wahrend Auktionen für alle Parteien",
           "Personliche Daten werden nicht an Dritte weitergegeben",
           "Passworter sind Cashare-Mitarbeitern unbekannt",
           "Daten sind vor unbefugtem Zugriff geschutzt",
@@ -77,7 +77,7 @@ const content = {
         items: [
           "Personal identification of all parties",
           "Creditworthiness assessment of borrowers",
-          "Credit rating checks using reputable databases",
+          "Crédit rating checks using reputable databases",
           "Only loans rated up to 'C' are listed",
           "Portfolio diversification across multiple borrowers",
           "Payment processing and collection handled by platform",
@@ -115,19 +115,19 @@ const content = {
       },
     ],
     regulation: {
-      title: "Regulation & Compliance",
+      title: "Régulation & Compliance",
       items: [
         { label: "Data Protection", value: "Registered with Swiss Federal Data Protection Commissioner" },
-        { label: "Self-Regulation", value: "Member of SRO Polyreg" },
-        { label: "Consumer Credit", value: "Licensed consumer credit provider" },
+        { label: "Self-Régulation", value: "Member of SRO Polyreg" },
+        { label: "Consumer Credit", value: "Licensed consumer crédit provider" },
         { label: "Anti-Money Laundering", value: "Licensed under Swiss Money Laundering Act" },
         { label: "Cantonal License", value: "Licensed by Canton Zug's Economic Affairs Directorate" },
       ],
     },
   },
   fr: {
-    title: "Securite",
-    subtitle: "Votre securite est notre priorite absolue!",
+    title: "Sécurité",
+    subtitle: "Votre sécurité est notre priorite absolue!",
     heroText: "Chaque emprunteur et investisseur est personnellement identifie pour prevenir les abus.",
     backLink: { label: "Vers l'accueil", href: "/fr" },
     sections: [
@@ -137,7 +137,7 @@ const content = {
         items: [
           "Identification personnelle de toutes les parties",
           "Evaluation de la solvabilite des emprunteurs",
-          "Verification du credit via des bases de donnees reputees",
+          "Verification du crédit via des bases de donnees reputees",
           "Seuls les prets notes jusqu'a 'C' sont listes",
           "Diversification du portefeuille sur plusieurs emprunteurs",
           "Traitement des paiements et recouvrement par la plateforme",
@@ -165,7 +165,7 @@ const content = {
         ],
       },
       {
-        title: "Securite de la plateforme",
+        title: "Sécurité de la plateforme",
         icon: "server",
         items: [
           "Cryptage SSL 256 bits",
@@ -175,11 +175,11 @@ const content = {
       },
     ],
     regulation: {
-      title: "Regulation & Conformite",
+      title: "Régulation & Conformite",
       items: [
         { label: "Protection des donnees", value: "Enregistre aupres du PFPDT" },
         { label: "Autoregulation", value: "Membre de SRO Polyreg" },
-        { label: "Credit a la consommation", value: "Fournisseur agree de credit a la consommation" },
+        { label: "Crédit a la consommation", value: "Fournisseur agree de crédit a la consommation" },
         { label: "Anti-blanchiment", value: "Licence selon la loi suisse sur le blanchiment" },
         { label: "Licence cantonale", value: "Licence du canton de Zoug" },
       ],
@@ -254,7 +254,7 @@ export function Security({ locale }: SecurityProps) {
         </div>
       </section>
 
-      {/* Regulation Section */}
+      {/* Régulation Section */}
       <section class="py-20 bg-green-900">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">{t.regulation.title}</h2>

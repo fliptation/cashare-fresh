@@ -6,7 +6,7 @@ interface CrowdlendingProps {
 
 const content = {
   de: {
-    backLink: { label: "Zuruck zu Uber uns", href: "/ueber-uns" },
+    backLink: { label: "Zurück zu Über uns", href: "/ueber-uns" },
     title: "Was ist Crowdlending?",
     subtitle: "Die Zukunft von Krediten und Investitionen - direkt, transparent und ohne Banken als Vermittler.",
     definition: {
@@ -16,19 +16,19 @@ const content = {
     howItWorks: {
       title: "Wie funktioniert Crowdlending?",
       forBorrowers: {
-        title: "Fur Kreditnehmer",
+        title: "Für Kreditnehmer",
         steps: [
           { title: "Antrag stellen", desc: "Gewunschte Kreditsumme, Laufzeit und maximalen Zinssatz angeben." },
           { title: "Bonitatsprufung", desc: "Die Plattform pruft die Kreditwurdigkeit innerhalb von 24 Stunden." },
-          { title: "Kampagne starten", desc: "Bei positivem Entscheid wird das Projekt fur die Crowd freigeschaltet." },
+          { title: "Kampagne starten", desc: "Bei positivem Entscheid wird das Projekt für die Crowd freigeschaltet." },
           { title: "Finanzierung", desc: "Anleger investieren, bis die gewunschte Summe erreicht ist." },
           { title: "Auszahlung", desc: "Die Plattform wickelt alle Zahlungen an die Darlehensgeber ab." },
         ],
       },
       forInvestors: {
-        title: "Fur Anleger",
+        title: "Für Anleger",
         steps: [
-          { title: "Projekte durchsuchen", desc: "Verfugbare Kreditprojekte auf der Plattform durchsuchen." },
+          { title: "Projekte durchsuchen", desc: "Verfügbare Kreditprojekte auf der Plattform durchsuchen." },
           { title: "Investieren", desc: "Attraktive Projekte auswahlen und investieren." },
           { title: "Zinsen erhalten", desc: "Monatlich Zinszahlungen aus Kreditruckzahlungen erhalten." },
         ],
@@ -37,19 +37,19 @@ const content = {
     benefits: {
       title: "Vorteile von Crowdlending",
       borrowers: {
-        title: "Fur Kreditnehmer",
+        title: "Für Kreditnehmer",
         items: [
           "Schnelle Online-Bearbeitung ohne Banktermine",
           "Transparente Preisgestaltung - alle Kosten im Voraus bekannt",
           "Faire Zinsen - Kreditnehmer legen Maximalzins fest",
-          "Flexible Ruckzahlung ohne Strafgebuhren moglich",
+          "Flexible Rückzahlung ohne Strafgebuhren moglich",
         ],
       },
       investors: {
-        title: "Fur Anleger",
+        title: "Für Anleger",
         items: [
           "Attraktive Renditen aus Schweizer Privat- und Firmenkrediten",
-          "Direkte Kontrolle uber Investitionen",
+          "Direkte Kontrolle über Investitionen",
           "Klare, einfache Konditionen ohne Uberraschungen",
           "Diversifikation ab CHF 100 mit Auto-Invest",
         ],
@@ -59,20 +59,20 @@ const content = {
       title: "Crowdlending vs. Bankkredit",
       headers: ["Aspekt", "Crowdlending", "Bank"],
       rows: [
-        ["Vermittler", "Direkt uber Plattform", "Bank als Vermittler"],
+        ["Vermittler", "Direkt über Plattform", "Bank als Vermittler"],
         ["Geldgeber", "Viele Privatanleger/Institutionen", "Die Bank selbst"],
         ["Entscheidung", "Schnell (Tage)", "Langsamer (Wochen)"],
-        ["Transparenz", "Hohe Transparenz", "Begrenzte Einsicht"],
+        ["Transparenz", "Höhe Transparenz", "Begrenzte Einsicht"],
         ["Konditionen", "Marktbasiert, oft gunstiger", "Feste Bankkonditionen"],
       ],
     },
     risks: {
       title: "Risiken verstehen",
-      text: "Wie bei jeder Geldanlage gibt es auch beim Crowdlending Risiken. Das Hauptrisiko ist der mogliche Ausfall von Kreditnehmern. Seriose Plattformen minimieren dieses Risiko durch sorgfaltige Bonitatsprufung und empfehlen Diversifikation uber mindestens 10 Projekte.",
+      text: "Wie bei jeder Geldanlage gibt es auch beim Crowdlending Risiken. Das Hauptrisiko ist der mogliche Ausfall von Kreditnehmern. Seriose Plattformen minimieren dieses Risiko durch sorgfaltige Bonitatsprufung und empfehlen Diversifikation über mindestens 10 Projekte.",
     },
     regulation: {
       title: "Regulierung in der Schweiz",
-      text: "Cashare ist FINMA-reguliert und unterliegt den strengen Schweizer Finanzmarktgesetzen. Als eine der ersten Crowdlending-Plattformen der Schweiz erfullen wir alle gesetzlichen Anforderungen zum Schutz von Anlegern und Kreditnehmern.",
+      text: "Cashare ist FINMA-reguliert und unterliegt den strengen Schweizer Finanzmarktgesetzen. Als eine der ersten Crowdlending-Plattformen der Schweiz erfüllen wir alle gesetzlichen Anforderungen zum Schutz von Anlegern und Kreditnehmern.",
     },
     history: {
       title: "Geschichte des Crowdlending",
@@ -103,7 +103,7 @@ const content = {
         title: "For Borrowers",
         steps: [
           { title: "Submit application", desc: "Specify desired loan amount, duration, and maximum interest rate." },
-          { title: "Credit check", desc: "The platform checks creditworthiness within 24 hours." },
+          { title: "Crédit check", desc: "The platform checks creditworthiness within 24 hours." },
           { title: "Start campaign", desc: "If approved, the project is released for the crowd." },
           { title: "Funding", desc: "Investors invest until the desired amount is reached." },
           { title: "Disbursement", desc: "The platform handles all payments to lenders." },
@@ -152,10 +152,10 @@ const content = {
     },
     risks: {
       title: "Understanding Risks",
-      text: "As with any investment, crowdlending carries risks. The main risk is the potential default of borrowers. Reputable platforms minimize this risk through careful credit checks and recommend diversification across at least 10 projects.",
+      text: "As with any investment, crowdlending carries risks. The main risk is the potential default of borrowers. Reputable platforms minimize this risk through careful crédit checks and recommend diversification across at least 10 projects.",
     },
     regulation: {
-      title: "Regulation in Switzerland",
+      title: "Régulation in Switzerland",
       text: "Cashare is FINMA-regulated and subject to strict Swiss financial market laws. As one of Switzerland's first crowdlending platforms, we meet all legal requirements to protect investors and borrowers.",
     },
     history: {
@@ -174,7 +174,7 @@ const content = {
     },
   },
   fr: {
-    backLink: { label: "Retour a A propos", href: "/fr/a-propos" },
+    backLink: { label: "Retour à À propos", href: "/fr/a-propos" },
     title: "Qu'est-ce que le Crowdlending?",
     subtitle: "L'avenir des credits et des investissements - direct, transparent et sans banques comme intermediaires.",
     definition: {
@@ -196,7 +196,7 @@ const content = {
       forInvestors: {
         title: "Pour les investisseurs",
         steps: [
-          { title: "Parcourir les projets", desc: "Parcourir les projets de credit disponibles sur la plateforme." },
+          { title: "Parcourir les projets", desc: "Parcourir les projets de crédit disponibles sur la plateforme." },
           { title: "Investir", desc: "Selectionner des projets attractifs et investir." },
           { title: "Recevoir des interets", desc: "Recevoir des paiements d'interets mensuels." },
         ],
@@ -216,7 +216,7 @@ const content = {
       investors: {
         title: "Pour les investisseurs",
         items: [
-          "Rendements attractifs sur les prets suisses prives et professionnels",
+          "Rendements attractifs sur les prets suisses privés et professionnels",
           "Controle direct sur les investissements",
           "Conditions claires et simples sans surprises",
           "Diversification des CHF 100 avec Auto-Invest",
@@ -228,7 +228,7 @@ const content = {
       headers: ["Aspect", "Crowdlending", "Banque"],
       rows: [
         ["Intermediaire", "Direct via la plateforme", "Banque comme intermediaire"],
-        ["Preteur", "Nombreux investisseurs prives/institutionnels", "La banque elle-meme"],
+        ["Preteur", "Nombreux investisseurs privés/institutionnels", "La banque elle-meme"],
         ["Decision", "Rapide (jours)", "Plus lent (semaines)"],
         ["Transparence", "Haute transparence", "Apercu limite"],
         ["Conditions", "Basees sur le marche, souvent moins cheres", "Conditions bancaires fixes"],
@@ -236,10 +236,10 @@ const content = {
     },
     risks: {
       title: "Comprendre les risques",
-      text: "Comme pour tout investissement, le crowdlending comporte des risques. Le risque principal est le defaut potentiel des emprunteurs. Les plateformes reputees minimisent ce risque par des verifications de credit rigoureuses et recommandent la diversification sur au moins 10 projets.",
+      text: "Comme pour tout investissement, le crowdlending comporte des risques. Le risque principal est le defaut potentiel des emprunteurs. Les plateformes reputees minimisent ce risque par des verifications de crédit rigoureuses et recommandent la diversification sur au moins 10 projets.",
     },
     regulation: {
-      title: "Regulation en Suisse",
+      title: "Régulation en Suisse",
       text: "Cashare est regulee par la FINMA et soumise aux strictes lois suisses sur les marches financiers. En tant que l'une des premieres plateformes de crowdlending en Suisse, nous repondons a toutes les exigences legales pour proteger les investisseurs et les emprunteurs.",
     },
     history: {
@@ -402,7 +402,7 @@ export function Crowdlending({ locale }: CrowdlendingProps) {
         </div>
       </section>
 
-      {/* Regulation */}
+      {/* Régulation */}
       <section class="subpage-section subpage-section--primary">
         <div class="subpage-section__container">
           <div class="subpage-section__header">

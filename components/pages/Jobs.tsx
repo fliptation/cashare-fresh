@@ -6,7 +6,7 @@ interface JobsProps {
 
 const content = {
   de: {
-    backLink: { label: "Zuruck zu Uber uns", href: "/ueber-uns" },
+    backLink: { label: "Zurück zu Über uns", href: "/ueber-uns" },
     title: "Jobs",
     subtitle: "Werden Sie Teil unseres Teams",
     intro: {
@@ -15,14 +15,8 @@ const content = {
     },
     openings: {
       title: "Offene Stellen",
-      jobs: [
-        {
-          title: "Betriebsleiter",
-          location: "Zurich, Schweiz",
-          type: "Vollzeit",
-          salary: "60'000 - 70'000 CHF",
-        },
-      ],
+      jobs: [],
+      noOpenings: "Zurzeit sind keine offenen Stellen verfügbar. Wir freuen uns jedoch über Ihre Initiativbewerbung.",
       applyBtn: "Jetzt bewerben",
     },
     culture: {
@@ -36,7 +30,7 @@ const content = {
     },
     spontaneous: {
       title: "Initiativbewerbung",
-      text: "Keine passende Stelle gefunden? Wir freuen uns uber Ihre Initiativbewerbung (Blindbewerbung). Senden Sie uns Ihre vollstandigen Bewerbungsunterlagen.",
+      text: "Keine passende Stelle gefunden? Wir freuen uns über Ihre Initiativbewerbung (Blindbewerbung). Senden Sie uns Ihre vollstandigen Bewerbungsunterlagen.",
       email: "jobs@cashare.ch",
       emailLabel: "Bewerbung senden",
     },
@@ -53,18 +47,12 @@ const content = {
     subtitle: "Join our team",
     intro: {
       title: "Working at Cashare",
-      text: "As a Swiss FinTech pioneer in crowdlending, we are looking for passionate and creative minds who want to reshape the digital media and credit industry. We are building a team of reliable, innovative team players who embrace new ideas, demonstrate adaptability, and are committed to shaping the future of the financial sector.",
+      text: "As a Swiss FinTech pioneer in crowdlending, we are looking for passionate and creative minds who want to reshape the digital media and crédit industry. We are building a team of reliable, innovative team players who embrace new ideas, demonstrate adaptability, and are committed to shaping the future of the financial sector.",
     },
     openings: {
       title: "Open Positions",
-      jobs: [
-        {
-          title: "Operations Manager",
-          location: "Zurich, Switzerland",
-          type: "Full-time",
-          salary: "CHF 60,000 - 70,000",
-        },
-      ],
+      jobs: [],
+      noOpenings: "There are currently no open positions available. However, we welcome your spontaneous application.",
       applyBtn: "Apply now",
     },
     culture: {
@@ -90,23 +78,17 @@ const content = {
     },
   },
   fr: {
-    backLink: { label: "Retour a A propos", href: "/fr/a-propos" },
+    backLink: { label: "Retour à À propos", href: "/fr/a-propos" },
     title: "Emplois",
     subtitle: "Rejoignez notre equipe",
     intro: {
       title: "Travailler chez Cashare",
-      text: "En tant que pionnier suisse de la FinTech dans le crowdlending, nous recherchons des esprits passionnes et creatifs qui veulent remodeler l'industrie des medias numeriques et du credit. Nous construisons une equipe de coequipiers fiables et innovants qui adoptent de nouvelles idees, font preuve d'adaptabilite et s'engagent a faconner l'avenir du secteur financier.",
+      text: "En tant que pionnier suisse de la FinTech dans le crowdlending, nous recherchons des esprits passionnes et creatifs qui veulent remodeler l'industrie des médias numeriques et du credit. Nous construisons une equipe de coequipiers fiables et innovants qui adoptent de nouvelles idees, font preuve d'adaptabilite et s'engagent a faconner l'avenir du secteur financier.",
     },
     openings: {
       title: "Postes ouverts",
-      jobs: [
-        {
-          title: "Directeur des operations",
-          location: "Zurich, Suisse",
-          type: "Temps plein",
-          salary: "CHF 60'000 - 70'000",
-        },
-      ],
+      jobs: [],
+      noOpenings: "Aucun poste n'est actuellement disponible. Cependant, nous accueillons volontiers votre candidature spontanee.",
       applyBtn: "Postuler maintenant",
     },
     culture: {
@@ -166,39 +148,45 @@ export function Jobs({ locale }: JobsProps) {
             <h2 class="subpage-section__title">{t.openings.title}</h2>
           </div>
           <div class="job-list">
-            {t.openings.jobs.map((job, i) => (
-              <div key={i} class="job-list__item">
-                <div class="job-list__header">
-                  <div>
-                    <h3 class="job-list__title">{job.title}</h3>
-                    <div class="job-list__meta">
-                      <span class="job-list__tag">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        {job.location}
-                      </span>
-                      <span class="job-list__tag">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        {job.type}
-                      </span>
-                      <span class="job-list__tag">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        {job.salary}
-                      </span>
-                    </div>
-                  </div>
-                  <a href={`mailto:${t.spontaneous.email}?subject=${encodeURIComponent(job.title)}`} class="subpage-cta__button">
-                    {t.openings.applyBtn}
-                  </a>
-                </div>
+            {t.openings.jobs.length === 0 ? (
+              <div class="job-list__empty">
+                <p class="content-block__text">{t.openings.noOpenings}</p>
               </div>
-            ))}
+            ) : (
+              t.openings.jobs.map((job, i) => (
+                <div key={i} class="job-list__item">
+                  <div class="job-list__header">
+                    <div>
+                      <h3 class="job-list__title">{job.title}</h3>
+                      <div class="job-list__meta">
+                        <span class="job-list__tag">
+                          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                          {job.location}
+                        </span>
+                        <span class="job-list__tag">
+                          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          {job.type}
+                        </span>
+                        <span class="job-list__tag">
+                          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          {job.salary}
+                        </span>
+                      </div>
+                    </div>
+                    <a href={`mailto:${t.spontaneous.email}?subject=${encodeURIComponent(job.title)}`} class="subpage-cta__button">
+                      {t.openings.applyBtn}
+                    </a>
+                  </div>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </section>

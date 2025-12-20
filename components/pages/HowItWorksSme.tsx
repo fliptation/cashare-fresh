@@ -8,8 +8,8 @@ const content = {
   de: {
     title: "KMU-Kredit",
     subtitle: "So funktioniert Ihre Unternehmensfinanzierung",
-    heroText: "Massgeschneiderte P2P-Geschaftskredite fur Unternehmer und KMU - Entscheidung in 48 Stunden.",
-    backLink: { label: "Zuruck zu So funktioniert's", href: "/so-funktionierts" },
+    heroText: "Massgeschneiderte P2P-Geschaftskredite für Unternehmer und KMU - Entscheidung in 48 Stunden.",
+    backLink: { label: "Zurück zu So funktioniert's", href: "/so-funktionierts" },
     advantages: [
       { title: "Schnell", description: "Schnelle Antragsprufung mit raschem Geldtransfer nach Finanzierung" },
       { title: "Tiefe Zinsen", description: "Ab 3.9% - wettbewerbsfahige Crowdlending-Konditionen ohne Bank" },
@@ -41,7 +41,7 @@ const content = {
         "Positiver Cashflow nachweisbar",
       ],
     },
-    stats: "Uber 60'000 Privatpersonen und Unternehmen unterstutzt",
+    stats: "Uber 60'000 Privatpersonen und Unternehmen unterstützt",
     cta: {
       title: "Jetzt KMU-Kredit beantragen",
       button: { label: "Kredit beantragen", href: "/kredit-beantragen/kmu-kredit" },
@@ -90,7 +90,7 @@ const content = {
     },
   },
   fr: {
-    title: "Credit PME",
+    title: "Crédit PME",
     subtitle: "Comment fonctionne votre financement d'entreprise",
     heroText: "Credits P2P sur mesure pour entrepreneurs et PME - decision en 48 heures.",
     backLink: { label: "Retour a Comment ca marche", href: "/fr/comment-ca-marche" },
@@ -100,17 +100,17 @@ const content = {
       { title: "Transparent", description: "Divulgation complete des frais - pas de couts caches" },
     ],
     loanTypes: {
-      title: "Nos types de credit PME",
+      title: "Nos types de crédit PME",
       items: [
-        { title: "Credit PME en blanc", description: "Financement d'entreprise non garanti" },
-        { title: "Credit garanti", description: "Prets adosses a des garanties deposees" },
-        { title: "Credit a court terme", description: "Financement jusqu'a 12 mois" },
+        { title: "Crédit PME en blanc", description: "Financement d'entreprise non garanti" },
+        { title: "Crédit garanti", description: "Prets adosses a des garanties deposees" },
+        { title: "Crédit a court terme", description: "Financement jusqu'a 12 mois" },
       ],
     },
     process: {
       title: "Le processus en 3 etapes",
       steps: [
-        { step: "1", title: "Demande & Examen", description: "Soumettez votre demande de credit pour evaluation." },
+        { step: "1", title: "Demande & Examen", description: "Soumettez votre demande de crédit pour evaluation." },
         { step: "2", title: "Financement & Approbation", description: "La communaute d'investisseurs examine et finance les demandes approuvees." },
         { step: "3", title: "Versement", description: "L'argent est transfere electroniquement sur votre compte professionnel." },
       ],
@@ -127,7 +127,7 @@ const content = {
     },
     stats: "Plus de 60'000 particuliers et entreprises soutenus",
     cta: {
-      title: "Demandez un credit PME maintenant",
+      title: "Demandez un crédit PME maintenant",
       button: { label: "Demander un credit", href: "/fr/demander-un-credit/credit-pme" },
     },
   },

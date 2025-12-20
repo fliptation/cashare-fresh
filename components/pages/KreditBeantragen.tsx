@@ -136,13 +136,13 @@ const content = {
     subtitle: "Des credits flexibles et securises, adaptes a vos besoins",
     heroText: "Faites confiance au pionnier FinTech. Des prets flexibles et securises, adaptes a vos besoins.",
     privatkredit: {
-      title: "Credit prive",
-      description: "Pour des achats prives, le regroupement de dettes ou des depenses imprevues.",
-      href: "/fr/demander-un-credit/credit-prive",
+      title: "Crédit privé",
+      description: "Pour des achats privés, le regroupement de dettes ou des depenses imprevues.",
+      href: "/fr/demander-un-credit/credit-privé",
       cta: "En savoir plus",
     },
     kmuKredit: {
-      title: "Credit PME",
+      title: "Crédit PME",
       description: "Solutions de financement flexibles pour les petites et moyennes entreprises.",
       href: "/fr/demander-un-credit/credit-pme",
       cta: "En savoir plus",
@@ -177,7 +177,7 @@ const content = {
       items: [
         {
           title: "Processus efficaces",
-          description: "Completez votre demande de credit en ligne en quelques minutes.",
+          description: "Completez votre demande de crédit en ligne en quelques minutes.",
         },
         {
           title: "Taux d'interet equitables",

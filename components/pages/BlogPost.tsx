@@ -8,14 +8,14 @@ interface BlogPostProps {
 
 const content = {
   de: {
-    backLink: { label: "Zuruck zum Blog", href: "/ueber-uns/blog" },
+    backLink: { label: "Zurück zum Blog", href: "/ueber-uns/blog" },
     minRead: "Min. Lesezeit",
     share: "Teilen",
     relatedPosts: "Weitere Artikel",
     notFound: {
       title: "Artikel nicht gefunden",
       text: "Der gesuchte Artikel existiert nicht.",
-      backLink: "Zuruck zum Blog",
+      backLink: "Zurück zum Blog",
     },
   },
   en: {

@@ -6,7 +6,7 @@ interface WhoWeAreProps {
 
 const content = {
   de: {
-    backLink: { label: "Zuruck zu Uber uns", href: "/ueber-uns" },
+    backLink: { label: "Zurück zu Über uns", href: "/ueber-uns" },
     title: "Wer sind wir",
     subtitle: "Seit 2008 verbinden wir Menschen mit gemeinsamen finanziellen Zielen",
     mission: {
@@ -15,13 +15,13 @@ const content = {
     },
     vision: {
       title: "Unsere Vision",
-      text: "Eine Finanzwelt, in der jeder Mensch Zugang zu fairen Finanzierungslosungen hat und sein Geld gewinnbringend anlegen kann. Wir glauben an die Kraft der Gemeinschaft und die Vorteile direkter Verbindungen.",
+      text: "Eine Finanzwelt, in der jeder Mensch Zugang zu fairen Finanzierungslösungen hat und sein Geld gewinnbringend anlegen kann. Wir glauben an die Kraft der Gemeinschaft und die Vorteile direkter Verbindungen.",
     },
     values: {
       title: "Unsere Werte",
       items: [
         { title: "Transparenz", desc: "Klare Konditionen und offene Kommunikation in allem, was wir tun." },
-        { title: "Fairness", desc: "Faire Zinsen fur beide Seiten - Kreditnehmer und Anleger." },
+        { title: "Fairness", desc: "Faire Zinsen für beide Seiten - Kreditnehmer und Anleger." },
         { title: "Innovation", desc: "Kontinuierliche Weiterentwicklung unserer Technologie und Services." },
         { title: "Vertrauen", desc: "FINMA-reguliert und mit hochsten Sicherheitsstandards." },
       ],
@@ -33,7 +33,7 @@ const content = {
     history: {
       title: "Unsere Geschichte",
       items: [
-        { year: "2008", event: "Grundung von Cashare als erste Crowdlending-Plattform der Schweiz" },
+        { year: "2008", event: "Gründung von Cashare als erste Crowdlending-Plattform der Schweiz" },
         { year: "2013", event: "Erhalt der FINMA-Lizenz als regulierte Plattform" },
         { year: "2016", event: "Launch der KMU-Kredit-Plattform" },
         { year: "2020", event: "Uber 100 Millionen CHF vermittelte Kredite" },
@@ -88,7 +88,7 @@ const content = {
     },
   },
   fr: {
-    backLink: { label: "Retour a A propos", href: "/fr/a-propos" },
+    backLink: { label: "Retour à À propos", href: "/fr/a-propos" },
     title: "Qui sommes-nous",
     subtitle: "Depuis 2008, nous connectons les personnes partageant des objectifs financiers communs",
     mission: {
@@ -105,7 +105,7 @@ const content = {
         { title: "Transparence", desc: "Des conditions claires et une communication ouverte dans tout ce que nous faisons." },
         { title: "Equite", desc: "Des taux d'interet equitables pour les deux parties - emprunteurs et investisseurs." },
         { title: "Innovation", desc: "Developpement continu de notre technologie et de nos services." },
-        { title: "Confiance", desc: "Regulee par la FINMA et avec les normes de securite les plus elevees." },
+        { title: "Confiance", desc: "Regulee par la FINMA et avec les normes de sécurité les plus elevees." },
       ],
     },
     team: {
@@ -117,9 +117,9 @@ const content = {
       items: [
         { year: "2008", event: "Fondation de Cashare, premiere plateforme de crowdlending en Suisse" },
         { year: "2013", event: "Obtention de la licence FINMA en tant que plateforme regulee" },
-        { year: "2016", event: "Lancement de la plateforme de credit PME" },
-        { year: "2020", event: "Plus de 100 millions CHF de credits accordes" },
-        { year: "2023", event: "Plus de 250 millions CHF de credits accordes" },
+        { year: "2016", event: "Lancement de la plateforme de crédit PME" },
+        { year: "2020", event: "Plus de 100 millions CHF de crédits accordés" },
+        { year: "2023", event: "Plus de 250 millions CHF de crédits accordés" },
       ],
     },
     cta: {

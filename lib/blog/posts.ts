@@ -31,12 +31,12 @@ export const blogPosts: BlogPost[] = [
       fr: "Assurance solde restant du: Votre protection contre le surendettement en Suisse",
     },
     excerpt: {
-      de: "Lebenskrisen wie Krankheit, Unfalle oder Jobverlust konnen die Haushaltsfinanzen schnell destabilisieren. Erfahren Sie, wie eine Restschuldversicherung Sie schutzt.",
+      de: "Lebenskrisen wie Krankheit, Unfalle oder Jobverlust können die Haushaltsfinanzen schnell destabilisieren. Erfahren Sie, wie eine Restschuldversicherung Sie schutzt.",
       en: "Life crises like illness, accidents, or job loss can quickly destabilize household finances. Learn how payment protection insurance protects you.",
       fr: "Les crises de vie comme la maladie, les accidents ou la perte d'emploi peuvent rapidement destabiliser les finances du menage. Decouvrez comment l'assurance vous protege.",
     },
     content: {
-      de: `Das Leben verandert sich unerwartet – Krankheit, Unfalle oder Jobverlust konnen die Haushaltsfinanzen schnell belasten. Fur viele Schweizer Einwohner fuhrt eine einzige Krise zu ernsthaften Zahlungsschwierigkeiten. Wenn monatliche Kreditraten nicht bezahlt werden konnen, sind die Folgen Betreibungsverfahren, negative Eintrage bei der Kreditauskunft und eine beschadigte Kreditwurdigkeit, die zukunftige Finanzierungen erschwert.
+      de: `Das Leben verandert sich unerwartet – Krankheit, Unfalle oder Jobverlust können die Haushaltsfinanzen schnell belasten. Für viele Schweizer Einwohner fuhrt eine einzige Krise zu ernsthaften Zahlungsschwierigkeiten. Wenn monatliche Kreditraten nicht bezahlt werden können, sind die Folgen Betreibungsverfahren, negative Eintrage bei der Kreditauskunft und eine beschadigte Kreditwurdigkeit, die zukunftige Finanzierungen erschwert.
 
 Eine Schweizer Restschuld- oder Ratenversicherung adressiert dieses Problem. Sie deckt Kreditzahlungen in schwierigen Zeiten, schutzt vor Schuldenfallen und verhindert, dass personliche Krisen zu finanziellen Katastrophen werden.
 
@@ -50,15 +50,15 @@ Die Versicherung deckt drei zentrale Risikoszenarien ab:
 
 **Im Todesfall:** Der offene Kreditsaldo bis zu CHF 100'000 wird ohne Selbstbehalt oder Wartezeit ubernommen und schutzt so die Erben vor finanzieller Belastung.
 
-**Bei vollstandiger Arbeitsunfahigkeit:** Aufgrund von Krankheit oder Unfall werden monatliche Raten (bis CHF 2'000) fur maximal zwolf Monate pro Schadensfall ubernommen, mit 30 Tagen Wartezeit.
+**Bei vollstandiger Arbeitsunfahigkeit:** Aufgrund von Krankheit oder Unfall werden monatliche Raten (bis CHF 2'000) für maximal zwolf Monate pro Schadensfall ubernommen, mit 30 Tagen Wartezeit.
 
-**Bei unverschuldeter Arbeitslosigkeit:** Monatliche Zahlungen (bis CHF 2'000) werden fur maximal zwolf Monate ubernommen, mit 90 Tagen Wartezeit.
+**Bei unverschuldeter Arbeitslosigkeit:** Monatliche Zahlungen (bis CHF 2'000) werden für maximal zwolf Monate ubernommen, mit 90 Tagen Wartezeit.
 
-Die Todesfalldeckung ist fur alle Kreditnehmer obligatorisch. Die Deckung bei Arbeitsunfahigkeit und Arbeitslosigkeit ist optional.
+Die Todesfalldeckung ist für alle Kreditnehmer obligatorisch. Die Deckung bei Arbeitsunfahigkeit und Arbeitslosigkeit ist optional.
 
 ## Warum diese Kreditabsicherung in der Schweiz so wichtig ist
 
-Eine Versicherung ist nicht nur Vorsorge – sie ist oft entscheidend, um eine Uberschuldung zu verhindern. Hohe Kreditbetrage oder lange Laufzeiten bedeuten, dass ein kurzer Einkommensverlust schwerwiegende Folgen hat. Die Deckung stabilisiert die Finanzen, schutzt die Kreditwurdigkeit, verhindert Eintrage bei der Kreditauskunft und vermeidet Betreibungsverfahren und Strafen.
+Eine Versicherung ist nicht nur Vorsorge – sie ist oft entscheidend, um eine Uberschuldung zu verhindern. Hohe Kreditbeträge oder lange Laufzeiten bedeuten, dass ein kurzer Einkommensverlust schwerwiegende Folgen hat. Die Deckung stabilisiert die Finanzen, schutzt die Kreditwurdigkeit, verhindert Eintrage bei der Kreditauskunft und vermeidet Betreibungsverfahren und Strafen.
 
 Auch Familien profitieren: Partner stehen nicht plotzlich vor offenen Zahlungen. Investoren gewinnen gleichzeitig Sicherheit durch die fortgesetzte Kreditbedienung.
 
@@ -89,9 +89,9 @@ Funf Bewertungsfaktoren:
 
 Wenn mehrere Risikofaktoren zutreffen, wird dieser Schutz zur "klugsten Entscheidung des Jahres".
 
-## Fazit: Restschuldversicherung – ein finanzieller Rettungsschirm fur Krisenzeiten
+## Fazit: Restschuldversicherung – ein finanzieller Rettungsschirm für Krisenzeiten
 
-Eine Schweizer Restschuldversicherung ist nicht obligatorisch (ausser Todesfalldeckung), aber eine kluge Entscheidung zur Absicherung langfristiger Raten. Sie eignet sich fur Personen mit hohen Krediten, langen Laufzeiten oder unregelmassigem Einkommen.
+Eine Schweizer Restschuldversicherung ist nicht obligatorisch (ausser Todesfalldeckung), aber eine kluge Entscheidung zur Absicherung langfristiger Raten. Sie eignet sich für Personen mit hohen Krediten, langen Laufzeiten oder unregelmassigem Einkommen.
 
 So wird sichergestellt, dass personliche Krisen nicht automatisch zu finanziellen Katastrophen werden. Die richtige Deckung schutzt Sie selbst, Ihre Familie, Ihre Kreditwurdigkeit und Ihre Zukunftsperspektiven.
 
@@ -99,7 +99,7 @@ So wird sichergestellt, dass personliche Krisen nicht automatisch zu finanzielle
 
 **Sofortige Deckung?** Normalerweise nicht. Eine Warte- oder Karenzzeit gilt, bevor Leistungen beginnen.
 
-**Teilweise Arbeitsunfahigkeit?** Die meisten Produkte erfordern vollstandige Arbeitsunfahigkeit fur Anspruche.
+**Teilweise Arbeitsunfahigkeit?** Die meisten Produkte erfordern vollstandige Arbeitsunfahigkeit für Anspruche.
 
 **Selbststandige?** Die Arbeitslosigkeitsdeckung kann eingeschrankt sein; Krankheits-/Unfalldeckung bleibt relevant.
 
@@ -250,12 +250,12 @@ Cela garantit que les crises personnelles ne deviennent pas automatiquement des 
   {
     slug: "flexiblere-zinszahlungen-endfaellige-darlehen",
     title: {
-      de: "Flexiblere Zinszahlungen fur endfällige Darlehen",
+      de: "Flexiblere Zinszahlungen für endfällige Darlehen",
       en: "More Flexible Interest Payments for Bullet Loans",
       fr: "Paiements d'interets plus flexibles pour les prets in fine",
     },
     excerpt: {
-      de: "Cashare erweitert die Moglichkeiten fur Kreditnehmer, Zinszahlungen bei endfälligen Darlehen flexibler zu gestalten.",
+      de: "Cashare erweitert die Möglichkeiten für Kreditnehmer, Zinszahlungen bei endfälligen Darlehen flexibler zu gestalten.",
       en: "Cashare expands options for borrowers to structure interest payments more flexibly on bullet loans.",
       fr: "Cashare etend les options pour les emprunteurs afin de structurer les paiements d'interets de maniere plus flexible.",
     },
@@ -271,11 +271,11 @@ Die Plattform bietet jetzt drei Zinszahlungsintervalle:
 
 ## Hauptvorteile
 
-Regelmassige Zinszahlungen sorgen fur eine konstante Rendite fur Investoren und bieten gleichzeitig Kreditnehmern Flexibilitat. Zusatzliche Vorteile sind erhohte Sicherheit durch prompte rechtliche Handlungsmoglichkeiten bei ausbleibenden Zahlungen sowie langere Kreditlaufzeiten mit reduzierter Belastung am Laufzeitende.
+Regelmassige Zinszahlungen sorgen für eine konstante Rendite für Investoren und bieten gleichzeitig Kreditnehmern Flexibilitat. Zusatzliche Vorteile sind erhohte Sicherheit durch prompte rechtliche Handlungsmoglichkeiten bei ausbleibenden Zahlungen sowie langere Kreditlaufzeiten mit reduzierter Belastung am Laufzeitende.
 
 ## Beispiel
 
-Bei einem Kredit von CHF 1 Million mit 12% Jahreszins uber 12 Monate mit vierteljährlichen Zahlungen erhalten Investoren alle drei Monate CHF 30'000 anteilig.`,
+Bei einem Kredit von CHF 1 Million mit 12% Jahreszins über 12 Monate mit vierteljährlichen Zahlungen erhalten Investoren alle drei Monate CHF 30'000 anteilig.`,
       en: `Cashare announced a significant expansion allowing borrowers to structure interest payments flexibly on bullet loans. Previously, interest was due only at maturity alongside principal repayment.
 
 ## New Payment Options
@@ -319,7 +319,7 @@ Les paiements d'interets reguliers assurent un rendement constant pour les inves
       fr: "La croissance limitee du credit traditionnel favorise le crowdfunding en Suisse",
     },
     excerpt: {
-      de: "Das begrenzte Wachstum des traditionellen Kredits schafft fruchtbaren Boden fur die Crowdfunding-Entwicklung in der Schweiz.",
+      de: "Das begrenzte Wachstum des traditionellen Kredits schafft fruchtbaren Boden für die Crowdfunding-Entwicklung in der Schweiz.",
       en: "Limited traditional credit growth creates fertile ground for crowdfunding development in Switzerland.",
       fr: "La croissance limitee du credit traditionnel cree un terrain fertile pour le developpement du crowdfunding en Suisse.",
     },
@@ -328,15 +328,15 @@ Les paiements d'interets reguliers assurent un rendement constant pour les inves
 
 ## Hauptargumente
 
-1. **Eingeschrankte traditionelle Kreditvergabe:** Die begrenzte Hypothekenkreditverfugbarkeit schafft Moglichkeiten fur Crowdfunding-Plattformen, Immobilienentwickler und Privatpersonen zu bedienen.
+1. **Eingeschrankte traditionelle Kreditvergabe:** Die begrenzte Hypothekenkreditverfügbarkeit schafft Möglichkeiten für Crowdfunding-Plattformen, Immobilienentwickler und Privatpersonen zu bedienen.
 
-2. **Finanzierungsdiversifizierung:** Nicht-Bank-Kreditgeber bieten zunehmend Unternehmenskredite an und eroffnen Raum fur Crowdfunding-Plattformen.
+2. **Finanzierungsdiversifizierung:** Nicht-Bank-Kreditgeber bieten zunehmend Unternehmenskredite an und eroffnen Raum für Crowdfunding-Plattformen.
 
 3. **Geschwindigkeit und Flexibilität:** Crowdfunding-Plattformen zeichnen sich durch Agilität und reduzierte Burokratie im Vergleich zu regulierten Banken aus.
 
 ## Fazit
 
-Das aktuelle Umfeld schafft fruchtbaren Boden fur die Crowdfunding-Entwicklung in der Schweiz als Antwort auf die Herausforderungen des traditionellen Kreditmarktes.`,
+Das aktuelle Umfeld schafft fruchtbaren Boden für die Crowdfunding-Entwicklung in der Schweiz als Antwort auf die Herausforderungen des traditionellen Kreditmarktes.`,
       en: `The piece examines how Switzerland's limited traditional credit growth is driving crowdfunding adoption. According to the Swiss Bankers Association's 2024 Banking Barometer, while banks showed positive overall development in 2023, expert forecasts suggest subdued credit growth in 2024.
 
 ## Main Arguments
@@ -374,7 +374,7 @@ The current environment creates fertile ground for crowdfunding development in S
       fr: "Evolution des taux d'interet 2024 – Ou vont les taux?",
     },
     excerpt: {
-      de: "Eine Analyse der Schweizer Zinslandschaft 2024 nach den Inflationsdrucken und was dies fur Kreditnehmer bedeutet.",
+      de: "Eine Analyse der Schweizer Zinslandschaft 2024 nach den Inflationsdrucken und was dies für Kreditnehmer bedeutet.",
       en: "An analysis of Switzerland's interest rate landscape in 2024 following inflationary pressures and what it means for borrowers.",
       fr: "Une analyse du paysage des taux d'interet suisses en 2024 apres les pressions inflationnistes.",
     },
@@ -437,22 +437,22 @@ L'article anticipe trois baisses de taux tout au long de 2024.`,
       fr: "Le Crowdfunding Monitor 2024 – Comment evolue le crowdlending?",
     },
     excerpt: {
-      de: "Die Hochschule Luzern veroffentlichte ihren jahrlichen Crowdfunding Monitor 2024 mit aktuellen Statistiken zur Schweizer Crowdfunding-Landschaft.",
+      de: "Die Hochschule Luzern veroffentlichte ihren jährlichen Crowdfunding Monitor 2024 mit aktuellen Statistiken zur Schweizer Crowdfunding-Landschaft.",
       en: "The Lucerne University of Applied Sciences released its annual Crowdfunding Monitor 2024 with updated statistics on Switzerland's crowdfunding landscape.",
       fr: "La Haute ecole de Lucerne a publie son Crowdfunding Monitor 2024 annuel.",
     },
     content: {
-      de: `Die Hochschule Luzern (HSLU) veroffentlichte ihren jahrlichen Crowdfunding Monitor 2024 mit aktuellen Statistiken zur Schweizer Crowdfunding-Landschaft.
+      de: `Die Hochschule Luzern (HSLU) veroffentlichte ihren jährlichen Crowdfunding Monitor 2024 mit aktuellen Statistiken zur Schweizer Crowdfunding-Landschaft.
 
 ## Marktentwicklung im Überblick
 
-Der Schweizer Crowdlending-Sektor verzeichnete 2023 einen deutlichen Ruckgang von 20% im Jahresvergleich. Das Volumen sank von CHF 497,5 Mio. auf CHF 398,1 Mio. Trotz der allgemeinen Marktschwache wuchs Cashare 2023 um 7% und ubertraf damit den Gesamtmarkt um uber 27%.
+Der Schweizer Crowdlending-Sektor verzeichnete 2023 einen deutlichen Rückgang von 20% im Jahresvergleich. Das Volumen sank von CHF 497,5 Mio. auf CHF 398,1 Mio. Trotz der allgemeinen Marktschwache wuchs Cashare 2023 um 7% und ubertraf damit den Gesamtmarkt um über 27%.
 
 ## Segmentleistung
 
-- **Business Crowdlending (KMU-Kredite):** Ruckgang um 6,4% auf CHF 132,8 Mio.
-- **Consumer Crowdlending (Privatkredite):** Ruckgang um 15,8% auf CHF 61,4 Mio.
-- **Immobilien Crowdlending:** Starkster Ruckgang mit 27,9% auf CHF 203,9 Mio.
+- **Business Crowdlending (KMU-Kredite):** Rückgang um 6,4% auf CHF 132,8 Mio.
+- **Consumer Crowdlending (Privatkredite):** Rückgang um 15,8% auf CHF 61,4 Mio.
+- **Immobilien Crowdlending:** Starkster Rückgang mit 27,9% auf CHF 203,9 Mio.
 
 ## Marktkontext
 
@@ -460,7 +460,7 @@ Die Immobilienfinanzierung erlebte seit Anfang 2023 aufgrund wirtschaftlicher Un
 
 ## Fazit
 
-Trotz sektoraler Herausforderungen bleibt Crowdlending fur Schweizer KMU, Privatpersonen und Immobilienentwickler von entscheidender Bedeutung. Cashare, als Branchenpionier seit 2008, gehort weiterhin zu den grossten Plattformen der Schweiz.`,
+Trotz sektoraler Herausforderungen bleibt Crowdlending für Schweizer KMU, Privatpersonen und Immobilienentwickler von entscheidender Bedeutung. Cashare, als Branchenpionier seit 2008, gehort weiterhin zu den grossten Plattformen der Schweiz.`,
       en: `The Hochschule Luzern (HSLU) released its annual Crowdfunding Monitor 2024, providing updated statistics on Switzerland's crowdfunding landscape.
 
 ## Market Development Overview
@@ -506,7 +506,7 @@ Le secteur suisse du crowdlending a connu une contraction significative en 2023,
       fr: "Numerisation des marches financiers – Opportunites et risques",
     },
     excerpt: {
-      de: "Die digitale Transformation verandert die Finanzmarkte grundlegend. Erfahren Sie mehr uber Chancen und Risiken.",
+      de: "Die digitale Transformation verandert die Finanzmarkte grundlegend. Erfahren Sie mehr über Chancen und Risiken.",
       en: "Digital transformation is fundamentally reshaping financial markets. Learn about opportunities and risks.",
       fr: "La transformation numerique remodele fondamentalement les marches financiers. Decouvrez les opportunites et les risques.",
     },
@@ -528,7 +528,7 @@ Die Digitalisierung ermoglicht innovative Anlageformen wie Crowdlending. Cashare
 **Hauptvorteile:**
 - Direkte und transparente Investition
 - Attraktive Renditen durch reduzierte Vermittlerkosten
-- Risikodiversifizierung uber mehrere Kreditprojekte
+- Risikodiversifizierung über mehrere Kreditprojekte
 
 ## Fazit
 
@@ -583,12 +583,12 @@ La numerisation permet des formes d'investissement innovantes comme le crowdlend
       fr: "Abracadabra, devenez votre propre banque!",
     },
     excerpt: {
-      de: "Neue Moglichkeiten wie P2P-Lending verandern die Finanzlandschaft. Erfahren Sie, wie Sie Ihre eigene Bank werden konnen.",
+      de: "Neue Möglichkeiten wie P2P-Lending verandern die Finanzlandschaft. Erfahren Sie, wie Sie Ihre eigene Bank werden können.",
       en: "New opportunities like P2P lending are changing the financial landscape. Learn how to become your own bank.",
       fr: "De nouvelles opportunites comme le pret P2P changent le paysage financier. Decouvrez comment devenir votre propre banque.",
     },
     content: {
-      de: `In der Vergangenheit waren Banken traditionell die zentralen Anlaufstellen fur Menschen, die nach Anlagemoglichkeiten suchten. Doch neue Moglichkeiten wie P2P-Lending (Crowdlending) verandern die Finanzlandschaft.
+      de: `In der Vergangenheit waren Banken traditionell die zentralen Anlaufstellen für Menschen, die nach Anlagemoglichkeiten suchten. Doch neue Möglichkeiten wie P2P-Lending (Crowdlending) verandern die Finanzlandschaft.
 
 ## Was ist Crowdlending?
 
@@ -596,9 +596,9 @@ P2P-Lending ermoglicht die direkte Finanzierung zwischen Privatpersonen und Unte
 
 ## Hauptvorteile von Cashare
 
-**Flexibilitat und Portfoliokontrolle:** Nutzer konnen ihr Investment-Portfolio selbst zusammenstellen, anstatt auf bankausgewahlte Produkte beschrankt zu sein. Potenzielle Renditen erreichen bis zu 10% jahrlich.
+**Flexibilitat und Portfoliokontrolle:** Nutzer können ihr Investment-Portfolio selbst zusammenstellen, anstatt auf bankausgewahlte Produkte beschrankt zu sein. Potenzielle Renditen erreichen bis zu 10% jährlich.
 
-**Transparenz:** Investoren erhalten umfassende Projektinformationen einschliesslich Kreditnehmerdetails, Kreditbetragen, Laufzeiten und Zinssatzen.
+**Transparenz:** Investoren erhalten umfassende Projektinformationen einschliesslich Kreditnehmerdetails, Kreditbeträgen, Laufzeiten und Zinssätzen.
 
 **Selbstbestimmung:** Investoren sind bei uns der Herr ihrer eigenen Anlage-Strategie.
 
@@ -633,7 +633,7 @@ Le pret P2P permet un financement direct entre particuliers et entreprises, sans
   {
     slug: "banken-millionen-kunden-draufzahlen",
     title: {
-      de: "Unrecht? Banken scheffeln Millionen, aber Kunden mussen draufzahlen!",
+      de: "Unrecht? Banken scheffeln Millionen, aber Kunden müssen draufzahlen!",
       en: "Injustice? Banks Rake in Millions While Customers Pay the Price!",
       fr: "Injustice? Les banques empochent des millions pendant que les clients paient!",
     },
@@ -645,9 +645,9 @@ Le pret P2P permet un financement direct entre particuliers et entreprises, sans
     content: {
       de: `Schweizer Banken verdienten im Jahr 2022 CHF 6,52 Milliarden trotz schwankender Gewinne seit 2019. Der Haupttreiber sind Zinserhohungen der Schweizerischen Nationalbank (SNB), die die Inflation erfolgreich auf 2,1% im Inland kontrollierte.
 
-## Aktuelle Zinssatze
+## Aktuelle Zinssätze
 
-Die meisten Schweizer Banken bieten immer noch sehr niedrige Zinssatze: derzeit durchschnittlich etwa 0,5% jahrlich.
+Die meisten Schweizer Banken bieten immer noch sehr niedrige Zinssätze: derzeit durchschnittlich etwa 0,5% jährlich.
 
 ## Bankgewinnstruktur
 
@@ -656,11 +656,11 @@ Inlandische Banken generieren 75% der Gewinne aus dem Zinsgeschaft, was es ihnen
 ## Crowdlending als Alternative
 
 Der Artikel prasentiert Crowdlending als Losung mit:
-- Zinssatzen bis zu 10% jahrlich fur Peer-to-Peer-Kredite
+- Zinssätzen bis zu 10% jährlich für Peer-to-Peer-Kredite
 - Direkter Anlegerbeteiligung ohne Bankvermittler
 - Grosserer Flexibilitat und Transparenz
 
-Cashare ist als fuhrende Schweizer Crowdlending-Plattform seit 2008 etabliert mit uber 50.000 Mitgliedern und etwa 4.000 finanzierten Kreditprojekten.`,
+Cashare ist als führende Schweizer Crowdlending-Plattform seit 2008 etabliert mit über 50.000 Mitgliedern und etwa 4.000 finanzierten Kreditprojekten.`,
       en: `Swiss banks earned CHF 6.52 billion in 2022 despite fluctuating profits since 2019. The primary driver is interest rate increases from the Swiss National Bank (SNB), which successfully controlled inflation to 2.1% domestically.
 
 ## Current Interest Rates
@@ -698,12 +698,12 @@ L'article presente le crowdlending comme solution offrant des taux d'interet jus
   {
     slug: "crowdfunding-rueckgang-hohem-niveau",
     title: {
-      de: "Crowdfunding: Ein Ruckgang auf hohem Niveau",
+      de: "Crowdfunding: Ein Rückgang auf hohem Niveau",
       en: "Crowdfunding: A Decline at a High Level",
       fr: "Crowdfunding: Un recul a un niveau eleve",
     },
     excerpt: {
-      de: "Der Crowdfunding Monitor 2023 zeigt einen Ruckgang des Schweizer Crowdfunding-Volumens, aber der Markt bleibt robust.",
+      de: "Der Crowdfunding Monitor 2023 zeigt einen Rückgang des Schweizer Crowdfunding-Volumens, aber der Markt bleibt robust.",
       en: "The Crowdfunding Monitor 2023 shows a decline in Swiss crowdfunding volume, but the market remains robust.",
       fr: "Le Crowdfunding Monitor 2023 montre une baisse du volume de crowdfunding suisse, mais le marche reste robuste.",
     },
@@ -712,19 +712,19 @@ L'article presente le crowdlending comme solution offrant des taux d'interet jus
 
 ## Wichtige Finanzkennzahlen
 
-Das Crowdfunding-Volumen in der Schweiz sank deutlich im Jahr 2022. Der Markt schrumpfte von 791,8 Millionen Schweizer Franken im Jahr 2021 auf 662,4 Millionen Franken – ein Ruckgang von 16,3%.
+Das Crowdfunding-Volumen in der Schweiz sank deutlich im Jahr 2022. Der Markt schrumpfte von 791,8 Millionen Schweizer Franken im Jahr 2021 auf 662,4 Millionen Franken – ein Rückgang von 16,3%.
 
 ## Segmentleistung
 
-**Crowdlending-Dominanz:** Dieser Sektor fuhrt weiterhin den Markt mit 497,5 Millionen Franken, obwohl er um 18% gegenuber dem Vorjahr schrumpfte.
+**Crowdlending-Dominanz:** Dieser Sektor fuhrt weiterhin den Markt mit 497,5 Millionen Franken, obwohl er um 18% gegenüber dem Vorjahr schrumpfte.
 
-**Immobilien-Ruckgang:** Dieses Untersegment fiel um 32,4% auf 282,7 Millionen Franken.
+**Immobilien-Rückgang:** Dieses Untersegment fiel um 32,4% auf 282,7 Millionen Franken.
 
 **KMU-Wachstum:** Das KMU-Crowdlending-Segment erholte sich stark auf 141,9 Millionen Franken nach pandemiebedingten Storungen.
 
 ## Historischer Kontext
 
-Seit Cashares Grundung vor funfzehn Jahren hat der Schweizer digitale Kreditsektor uber drei Milliarden Franken an Finanzierung vermittelt.`,
+Seit Cashares Gründung vor funfzehn Jahren hat der Schweizer digitale Kreditsektor über drei Milliarden Franken an Finanzierung vermittelt.`,
       en: `The latest Crowdfunding Monitor 2023 from Lucerne University of Applied Sciences reveals significant market shifts in Switzerland's crowdfunding landscape.
 
 ## Key Financial Metrics
@@ -760,12 +760,12 @@ Le volume de crowdfunding en Suisse a diminue de 16,3% pour atteindre 662,4 mill
       fr: "Plus d'efficacite et d'experience utilisateur pour les prolongations de credit",
     },
     excerpt: {
-      de: "Cashare vereinfacht den Kreditverlangerungsprozess fur Anleger mit neuen Funktionen.",
+      de: "Cashare vereinfacht den Kreditverlangerungsprozess für Anleger mit neuen Funktionen.",
       en: "Cashare simplifies the loan extension process for investors with new features.",
       fr: "Cashare simplifie le processus de prolongation de credit pour les investisseurs.",
     },
     content: {
-      de: `Cashare kundigt eine Systemverbesserung an, die den Kreditverlangerungsprozess fur Investoren vereinfacht. Die Plattform ermoglicht es Anlegern nun, in bestehenden Kurzkrediten investiert zu bleiben, ohne zusatzliche Kapitaleinlagen zu benotigen.
+      de: `Cashare kundigt eine Systemverbesserung an, die den Kreditverlangerungsprozess für Investoren vereinfacht. Die Plattform ermoglicht es Anlegern nun, in bestehenden Kurzkrediten investiert zu bleiben, ohne zusatzliche Kapitaleinlagen zu benötigen.
 
 ## Was ist neu?
 
@@ -778,7 +778,7 @@ Die Plattform bietet jetzt eine vereinfachte Verlangerungsaktivierung durch eine
 
 ## Wichtige Details
 
-Die Verlangerung gilt ausschliesslich fur Anleger, die bereits in bestimmte Projekte investiert sind. Weitermachende Anleger erhalten eine Verlangerungszusammenfassung mit Nettozinszahlungen (nach Gebuhren).`,
+Die Verlangerung gilt ausschliesslich für Anleger, die bereits in bestimmte Projekte investiert sind. Weitermachende Anleger erhalten eine Verlangerungszusammenfassung mit Nettozinszahlungen (nach Gebühren).`,
       en: `Cashare announces a system improvement designed to streamline the loan renewal process for investors. The platform now enables investors to remain invested in existing short-term loans without requiring additional capital contributions.
 
 ## What's New?
@@ -814,19 +814,19 @@ Renewal applies exclusively to investors already invested in specific projects. 
       fr: "Cashare lance le nouveau chatbot Cashy alimente par l'IA, offrant un support client 24h/24.",
     },
     content: {
-      de: `Cashare kundigt den Start unseres neuen KI-gesteuerten Chatbots Cashy an, der jetzt rund um die Uhr auf unserer Website verfugbar ist.
+      de: `Cashare kundigt den Start unseres neuen KI-gesteuerten Chatbots Cashy an, der jetzt rund um die Uhr auf unserer Website verfügbar ist.
 
 ## Wichtige Highlights
 
 **Zweck & Funktionen:**
-Der Chatbot stellt kunstliche Intelligenz dar, die uber verschiedene Kanale mit Benutzern interagiert. Er ermoglicht es Kunden, Termine mit Support-Teams auch an Wochenenden fur die kommende Woche zu vereinbaren.
+Der Chatbot stellt kunstliche Intelligenz dar, die über verschiedene Kanale mit Benutzern interagiert. Er ermoglicht es Kunden, Termine mit Support-Teams auch an Wochenenden für die kommende Woche zu vereinbaren.
 
 **Entwicklungspartnerschaft:**
 Cashare hat sich mit Sophie Hundertmark, einer Vorstandsberaterin und Chatbot-Spezialistin, zusammengeschlossen, um den Bot zu erstellen und zu trainieren.
 
 ## Bestehender Support
 
-Das Unternehmen betont, dass unser Support-Team und unsere Kreditberater weiterhin fur personliche Unterstutzung bei Privatkrediten, KMU-Finanzierungen und Immobiliendienstleistungen zur Verfugung stehen.`,
+Das Unternehmen betont, dass unser Support-Team und unsere Kreditberater weiterhin für personliche Unterstutzung bei Privatkrediten, KMU-Finanzierungen und Immobiliendienstleistungen zur Verfugung stehen.`,
       en: `Cashare announced the launch of their new AI-powered chatbot, Cashy, which is now available 24/7 on their website.
 
 ## Key Highlights
@@ -865,7 +865,7 @@ The company emphasizes that their support team and credit advisors remain availa
 
 ## Hauptthema: Vollmacht, Patientenverfugung und Vorsorgeplanung
 
-Der Artikel prasentiert eine Fallstudie einer 72-jahrigen Frau aus Zurich, die an Demenz leidet. Ihre Tochter steht vor Herausforderungen bei der Verwaltung der Angelegenheiten ihrer Mutter ohne rechtliche Dokumentation.
+Der Artikel prasentiert eine Fallstudie einer 72-jahrigen Frau aus Zürich, die an Demenz leidet. Ihre Tochter steht vor Herausforderungen bei der Verwaltung der Angelegenheiten ihrer Mutter ohne rechtliche Dokumentation.
 
 ## Drei wesentliche Dokumente
 
@@ -884,7 +884,7 @@ Der Artikel prasentiert eine Fallstudie einer 72-jahrigen Frau aus Zurich, die a
 
 ## Main Topic: Power of Attorney, Patient Directives, and Care Planning
 
-The article presents a case study of a 72-year-old woman from Zurich suffering from dementia. Her daughter faces challenges managing her mother's affairs without legal documentation.
+The article presents a case study of a 72-year-old woman from Zürich suffering from dementia. Her daughter faces challenges managing her mother's affairs without legal documentation.
 
 ## Three Essential Documents
 
@@ -925,7 +925,7 @@ AUS ist eine privat akkreditierte Hochschule, die Bachelor- und Master-Programme
 
 ## Finanzierungsstruktur
 
-Der Kredit geht direkt an die Universitat, die dann die Zahlungsvertrage der Studenten an Cashare ubertragt. Die Universitat tragt das Ausfallrisiko. Das erste Projekt umfasste CHF 232k zu 7,9% uber 24 Monate und wurde schnell finanziert. Zehn Studenten wahlten monatliche Raten.`,
+Der Kredit geht direkt an die Universitat, die dann die Zahlungsvertrage der Studenten an Cashare ubertragt. Die Universitat tragt das Ausfallrisiko. Das erste Projekt umfasste CHF 232k zu 7,9% über 24 Monate und wurde schnell finanziert. Zehn Studenten wahlten monatliche Raten.`,
       en: `Cashare announces a partnership with American Institute of Applied Sciences (AUS) in Switzerland, marking their second education-sector collaboration following Benedict School.
 
 ## About AUS
@@ -951,12 +951,12 @@ The credit goes directly to the university, which then transfers student payment
       fr: "Retrospective 2022",
     },
     excerpt: {
-      de: "Ein Ruckblick auf ein turbulentes Jahr 2022 mit geopolitischen und wirtschaftlichen Herausforderungen fur Cashare.",
+      de: "Ein Rückblick auf ein turbulentes Jahr 2022 mit geopolitischen und wirtschaftlichen Herausforderungen für Cashare.",
       en: "A look back at a turbulent 2022 with geopolitical and economic challenges for Cashare.",
       fr: "Un regard sur une annee 2022 turbulente avec des defis geopolitiques et economiques.",
     },
     content: {
-      de: `Der Jahresruckblick 2022 von Cashare reflektiert uber eine turbulente Periode, die von geopolitischen und wirtschaftlichen Herausforderungen gepragt war.
+      de: `Der Jahresruckblick 2022 von Cashare reflektiert über eine turbulente Periode, die von geopolitischen und wirtschaftlichen Herausforderungen gepragt war.
 
 ## Marktbedingungen
 
@@ -964,7 +964,7 @@ Die Plattform erlebte erheblichen Gegenwind durch den Ukraine-Konflikt, Inflatio
 
 ## Organisationsentwicklung
 
-Das Unternehmen restrukturierte seinen Betrieb und implementierte neue Technologien und Data-Science-Fahigkeiten. Das Management betonte, dass Teammoral und Motivation fur 2023 sehr stark sind. Zwei neue Advisory-Board-Mitglieder wurden ernannt.
+Das Unternehmen restrukturierte seinen Betrieb und implementierte neue Technologien und Data-Science-Fahigkeiten. Das Management betonte, dass Teammoral und Motivation für 2023 sehr stark sind. Zwei neue Advisory-Board-Mitglieder wurden ernannt.
 
 Die Plattform zahlte erfolgreich eine dreijahrige Anleihe planmassig zuruck, was die Portfolio-Stabilitat inmitten breiterer Marktturbulenzen demonstriert.`,
       en: `Cashare's 2022 year-end review reflects on a turbulent period marked by geopolitical and economic challenges.
@@ -989,21 +989,21 @@ The platform successfully repaid a three-year bond on schedule, demonstrating po
   {
     slug: "neues-feature-anleger-csv",
     title: {
-      de: "Neues Feature fur Anleger",
+      de: "Neues Feature für Anleger",
       en: "New Feature for Investors",
       fr: "Nouvelle fonctionnalite pour les investisseurs",
     },
     excerpt: {
-      de: "Cashare fuhrt eine neue CSV-Export-Funktion ein, mit der Anleger ihre Portfolios in externen Tools verfolgen konnen.",
+      de: "Cashare fuhrt eine neue CSV-Export-Funktion ein, mit der Anleger ihre Portfolios in externen Tools verfolgen können.",
       en: "Cashare introduces a new CSV export feature allowing investors to track their portfolios in external tools.",
       fr: "Cashare introduit une nouvelle fonction d'export CSV.",
     },
     content: {
-      de: `Cashare kundigte eine neue CSV-Export-Funktion an, die es Anlegern ermoglicht, ihre kompletten Investitionsportfolios und Cashflows als Datei fur externe Portfolio-Tracking-Tools herunterzuladen.
+      de: `Cashare kundigte eine neue CSV-Export-Funktion an, die es Anlegern ermoglicht, ihre kompletten Investitionsportfolios und Cashflows als Datei für externe Portfolio-Tracking-Tools herunterzuladen.
 
 ## Zugriffsanleitung
 
-Benutzer mussen sich in ihr MeinCashare-Konto einloggen, zum Dashboard navigieren, auf ihren Benutzernamen in der oberen rechten Ecke klicken, "Dokumente" auswahlen und dann "Investoren CSV-Export" unter dem Abschnitt allgemeine Dokumente finden.
+Benutzer müssen sich in ihr MeinCashare-Konto einloggen, zum Dashboard navigieren, auf ihren Benutzernamen in der oberen rechten Ecke klicken, "Dokumente" auswahlen und dann "Investoren CSV-Export" unter dem Abschnitt allgemeine Dokumente finden.
 
 ## Funktionalitat
 
@@ -1033,12 +1033,12 @@ With this new CSV download, users can monitor investment performance using exter
       fr: "Nous vous facilitons encore plus la vie avec le LSV",
     },
     excerpt: {
-      de: "Cashare fuhrt das Lastschriftverfahren (LSV) ein fur automatische Zahlungsabwicklung.",
+      de: "Cashare fuhrt das Lastschriftverfahren (LSV) ein für automatische Zahlungsabwicklung.",
       en: "Cashare introduces direct debit (LSV) for automatic payment processing.",
       fr: "Cashare introduit le prelevement automatique (LSV).",
     },
     content: {
-      de: `Cashare kundigte die Einfuhrung von LSV (Lastschriftverfahren) an, einem Einzugsermachtigungssystem. Dieser Service ermoglicht automatische Zahlungsabwicklung direkt von Kundenbankkonten, wodurch die Notwendigkeit manueller Uberweisungen fur jede Rechnung entfallt.
+      de: `Cashare kundigte die Einfuhrung von LSV (Lastschriftverfahren) an, einem Einzugsermachtigungssystem. Dieser Service ermoglicht automatische Zahlungsabwicklung direkt von Kundenbankkonten, wodurch die Notwendigkeit manueller Uberweisungen für jede Rechnung entfallt.
 
 ## Hauptmerkmale
 
@@ -1049,7 +1049,7 @@ Das System erfordert nur ein Schweizer Bankkonto in CHF und ist vollig kostenlos
 
 1. Laden Sie das LSV-Formular herunter und fullen Sie es mit personlichen Informationen aus
 2. Senden Sie das unterschriebene Formular per Post an Ihre Bank
-3. Nach Bankgenehmigung ubernimmt Cashare alle notwendigen Einrichtungen fur automatische Rechnungsabzuge`,
+3. Nach Bankgenehmigung ubernimmt Cashare alle notwendigen Einrichtungen für automatische Rechnungsabzuge`,
       en: `Cashare announced the introduction of LSV (Lastschriftverfahren), a direct debit authorization system. This service allows automatic payment processing directly from customer bank accounts, eliminating the need for manual transfers for each invoice.
 
 ## Key Features
@@ -1083,7 +1083,7 @@ The system requires only a Swiss bank account in CHF and is completely free with
       fr: "Une analyse des tendances de l'inflation en Suisse et dans le monde.",
     },
     content: {
-      de: `Der Artikel untersucht Inflationstrends weltweit und in der Schweiz und erklart, dass die jahrliche Inflation den Preisanstieg eines bestimmten Warenkorbs innerhalb eines Jahres beschreibt.
+      de: `Der Artikel untersucht Inflationstrends weltweit und in der Schweiz und erklart, dass die jährliche Inflation den Preisanstieg eines bestimmten Warenkorbs innerhalb eines Jahres beschreibt.
 
 ## Wichtige Punkte
 
@@ -1091,9 +1091,9 @@ The system requires only a Swiss bank account in CHF and is completely free with
 
 **Globaler Kontext:** Die Turkei erlebte schwere Inflation, die im Januar 2022 35% im Jahresvergleich erreichte.
 
-**Europaische Trends:** Bis Marz 2022 erreichte die EU-Inflation 7,8% jahrlich, wahrend die Schweiz etwa 2,4% erreichte.
+**Europaische Trends:** Bis Marz 2022 erreichte die EU-Inflation 7,8% jährlich, wahrend die Schweiz etwa 2,4% erreichte.
 
-**Zukunftsimplikationen:** Zinsen konnen nicht mehr beliebig niedrig bleiben, um die Wirtschaft zu unterstutzen.`,
+**Zukunftsimplikationen:** Zinsen können nicht mehr beliebig niedrig bleiben, um die Wirtschaft zu unterstutzen.`,
       en: `The article examines inflation trends globally and in Switzerland, explaining that annual inflation describes the price increase of a specific basket of products within one year.
 
 ## Key Points
@@ -1134,7 +1134,7 @@ Der Schweizer Crowdfunding-Markt erlebte 2021 signifikantes Wachstum und expandi
 
 Crowdlending zeigte die starkste Expansion mit einem Anstieg von 35% auf CHF 607,0 Millionen. Immobilien-Crowdlending stieg besonders dramatisch um 40,9% auf CHF 418,0 Millionen.
 
-Seit Cashares Grundung vor 14 Jahren wurden etwa CHF 3 Milliarden uber digitale Kanale in der Schweiz vermittelt. Trotz jahrlichen Wachstums reprasentiert Crowdlending nur 2% des Schweizer Konsumkreditmarktes.`,
+Seit Cashares Gründung vor 14 Jahren wurden etwa CHF 3 Milliarden über digitale Kanale in der Schweiz vermittelt. Trotz jährlichen Wachstums reprasentiert Crowdlending nur 2% des Schweizer Konsumkreditmarktes.`,
       en: `This article discusses the latest Crowdfunding Monitor 2022 from Lucerne University of Applied Sciences, detailing developments across crowdsupporting, crowdinvesting, and crowdlending sectors.
 
 The Swiss crowdfunding market experienced significant growth in 2021, expanding from CHF 606.6 million to CHF 791.8 million—a 31% increase. Following pandemic-related disruptions, robust growth has resumed.
@@ -1160,12 +1160,12 @@ Since Cashare's founding 14 years prior, approximately CHF 3 billion has been me
       fr: "Interview avec Sophie Hundertmark sur les chatbots",
     },
     excerpt: {
-      de: "Sophie Hundertmark erklart, was Chatbots sind und wie sie bei Cashare eingesetzt werden konnen.",
+      de: "Sophie Hundertmark erklart, was Chatbots sind und wie sie bei Cashare eingesetzt werden können.",
       en: "Sophie Hundertmark explains what chatbots are and how they can be used at Cashare.",
       fr: "Sophie Hundertmark explique ce que sont les chatbots et comment ils peuvent etre utilises.",
     },
     content: {
-      de: `Sophie Hundertmark definiert Chatbots als Softwaresysteme, die naturliche Sprachkonversation mit Benutzern ermoglichen. Sie betont, dass sie sich konversationell anfuhlen sollten, aber transparent bleiben mussen: Der Chatbot soll sich unbedingt als Roboter oder digitaler Assistent outen.
+      de: `Sophie Hundertmark definiert Chatbots als Softwaresysteme, die natürliche Sprachkonversation mit Benutzern ermoglichen. Sie betont, dass sie sich konversationell anfuhlen sollten, aber transparent bleiben müssen: Der Chatbot soll sich unbedingt als Roboter oder digitaler Assistent outen.
 
 ## Zwei Arten von Chatbots
 
@@ -1179,7 +1179,7 @@ Chatbots behandeln hauptsachlich vorhersehbare, haufig gestellte Kundendienstfra
 
 ## Potenzielle Anwendungen bei Cashare
 
-Sophie schlagt zwei Implementierungen vor: Website-Chatbots, die Neulingsfragen zum Crowdlending beantworten, und Plattform-Chatbots, die Funktionen wie Primar- vs. Sekundarmarkte fur bestehende Benutzer klaren.`,
+Sophie schlagt zwei Implementierungen vor: Website-Chatbots, die Neulingsfragen zum Crowdlending beantworten, und Plattform-Chatbots, die Funktionen wie Primar- vs. Sekundarmarkte für bestehende Benutzer klaren.`,
       en: `Sophie Hundertmark defines chatbots as software systems enabling natural language conversation with users. She emphasizes they should feel conversational yet maintain transparency: bots must clearly identify themselves.
 
 ## Two Types of Chatbots
@@ -1222,13 +1222,13 @@ Sophie proposes two implementations: website chatbots answering newcomer questio
 
 Das vorgestellte Unternehmen ist wert&voll, ein Online-Shop, der sich auf plastikfreie Produkte und Lunchboxen spezialisiert hat und von Unternehmer Mika Stappen betrieben wird.
 
-Stappen startete sein Geschaft mit dem Ziel, nachhaltiges Denken durch seine Produktangebote zu fordern. Vor Jahren suchte er bei Cashare eine Finanzierung fur den Kauf einer Lasergravurmaschine.
+Stappen startete sein Geschaft mit dem Ziel, nachhaltiges Denken durch seine Produktangebote zu fordern. Vor Jahren suchte er bei Cashare eine Finanzierung für den Kauf einer Lasergravurmaschine.
 
 ## Aussergewohnliche Finanzierung
 
-Der Finanzierungsantrag erzielte aussergewohnliche Ergebnisse innerhalb von acht Stunden und erhielt den besten verfugbaren Zinssatz. Trotz des starken Wirtschaftswachstums des Unternehmens wickelt Stappen weiterhin alle Vorgange personlich ab.
+Der Finanzierungsantrag erzielte aussergewohnliche Ergebnisse innerhalb von acht Stunden und erhielt den besten verfügbaren Zinssatz. Trotz des starken Wirtschaftswachstums des Unternehmens wickelt Stappen weiterhin alle Vorgange personlich ab.
 
-Besuchen Sie wertundvoll.ch und nutzen Sie den Code "cashare" fur 10% Rabatt.`,
+Besuchen Sie wertundvoll.ch und nutzen Sie den Code "cashare" für 10% Rabatt.`,
       en: `Cashare recently visited one of their clients to personally collect Christmas gifts: sustainable, reusable drinking straws engraved with the Cashare logo.
 
 ## wert&voll - Sustainable Online Shop
@@ -1298,7 +1298,7 @@ We welcome her expertise to enhance the company's advisory capabilities.`,
 
 Professionelle Vermogensverwalter standen jedoch vor Herausforderungen bei der direkten Anlageauswahl. Um dies zu adressieren, lancierte Cashare vor drei Jahren eine 4%-Anleihe, die es Vermogensverwaltern ermoglichte, ihren Kunden ein Wertpapier anzubieten, das in einen breiten Korb von Krediten investiert ist.
 
-Nach drei Jahren wurde die Anleihe erfolgreich zuruckgezahlt, mit sowohl jahrlichen Couponzahlungen als auch vollstandiger Kapitalruckzahlung planmassig.`,
+Nach drei Jahren wurde die Anleihe erfolgreich zuruckgezahlt, mit sowohl jährlichen Couponzahlungen als auch vollstandiger Kapitalruckzahlung planmassig.`,
       en: `Crowdlending has made it possible for a broad circle of investors to invest in Swiss credits. For nearly 15 years, individuals and institutional investors have used Cashare's platform for this purpose.
 
 However, professional asset managers faced challenges with direct investment selection. To address this, Cashare launched a 4% bond three years ago that allowed wealth managers to offer clients a security invested in a broad basket of credits.
@@ -1327,13 +1327,13 @@ After three years, the bond matured successfully, with both annual coupon paymen
     content: {
       de: `Cashare gibt die Aufnahme von Sophie Hundertmark in das Advisory Board bekannt. Sie bringt umfangreiche Expertise in Chatbot-Technologie und Conversational Banking mit.
 
-Hundertmark ist derzeit wissenschaftliche Mitarbeiterin am Institut fur Finanzdienstleistungen der Hochschule Luzern (IFZ), wo sie sich auf Versicherungsinnovation und Conversational Banking konzentriert.
+Hundertmark ist derzeit wissenschaftliche Mitarbeiterin am Institut für Finanzdienstleistungen der Hochschule Luzern (IFZ), wo sie sich auf Versicherungsinnovation und Conversational Banking konzentriert.
 
 Ihre Beitrage umfassen:
-- Beratung fur grosse Schweizer Organisationen wie Raiffeisen, Helvetia und WIR Bank
+- Beratung für grosse Schweizer Organisationen wie Raiffeisen, Helvetia und WIR Bank
 - Hosting von "Sophies Chatbot Talk", einem 2020 gestarteten Podcast
 - Veroffentlichung des Buchs "Digitale Freunde"
-- Betrieb der AI-Zurich Community-Plattform seit 2018`,
+- Betrieb der AI-Zürich Community-Plattform seit 2018`,
       en: `Cashare announced the addition of Sophie Hundertmark to its advisory board. She brings extensive expertise in chatbot technology and conversational banking.
 
 Hundertmark currently serves as a research associate at the Institute for Financial Services at Lucerne University, focusing on insurance innovation and conversational banking.
@@ -1342,7 +1342,7 @@ Her contributions include:
 - Consulting for major Swiss organizations including Raiffeisen, Helvetia, and WIR Bank
 - Hosting "Sophies Chatbot Talk," a podcast launched in 2020
 - Publishing a book titled "Digitale Freunde"
-- Running the AI-Zurich community platform since 2018`,
+- Running the AI-Zürich community platform since 2018`,
       fr: `Cashare annonce l'ajout de Sophie Hundertmark a son conseil consultatif avec son expertise en chatbots.`,
     },
     author: "Sajmir",
@@ -1359,18 +1359,18 @@ Her contributions include:
       fr: "Retrospective Cashare 2021",
     },
     excerpt: {
-      de: "Ein Ruckblick auf ein weiteres herausforderndes Pandemiejahr mit 50% Wachstum.",
+      de: "Ein Rückblick auf ein weiteres herausforderndes Pandemiejahr mit 50% Wachstum.",
       en: "A look back at another challenging pandemic year with 50% growth.",
       fr: "Un regard sur une autre annee de pandemie difficile avec une croissance de 50%.",
     },
     content: {
-      de: `2021 war ein weiteres herausforderndes Pandemiejahr fur die Crowdlending-Plattform. Trotz der anhaltenden COVID-19-Einschrankungen erreichte Cashare ein Wachstum von 50% im Jahr 2021, gegenuber 45% im Jahr 2020.
+      de: `2021 war ein weiteres herausforderndes Pandemiejahr für die Crowdlending-Plattform. Trotz der anhaltenden COVID-19-Einschrankungen erreichte Cashare ein Wachstum von 50% im Jahr 2021, gegenüber 45% im Jahr 2020.
 
 Das Unternehmen verstarkte sein Team mit IT-Spezialisten und Business-Analysten, um die zukunftige Entwicklung zu unterstutzen.
 
 ## Crowdinvesting-Kampagne
 
-Ein Highlight war eine erfolgreiche Crowdinvesting-Kampagne im November, die bestehenden Kunden ermoglichte, Partizipationsscheine ab CHF 350 zu erwerben. Diese Initiative zog uber 200 neue Stakeholder an und machte Cashare zur einzigen Crowdlending-Plattform, die Kunden eine direkte Beteiligung am Unternehmenserfolg ermoglicht.`,
+Ein Highlight war eine erfolgreiche Crowdinvesting-Kampagne im November, die bestehenden Kunden ermoglichte, Partizipationsscheine ab CHF 350 zu erwerben. Diese Initiative zog über 200 neue Stakeholder an und machte Cashare zur einzigen Crowdlending-Plattform, die Kunden eine direkte Beteiligung am Unternehmenserfolg ermoglicht.`,
       en: `2021 was another challenging pandemic year for the crowdlending platform. Despite ongoing COVID-19 constraints, Cashare achieved 50% growth in 2021, up from 45% in 2020.
 
 The company strengthened its team with IT specialists and business analysts to support future development.
@@ -1383,7 +1383,7 @@ A key highlight was a successful crowdinvesting campaign in November, enabling e
     author: "Sajmir",
     date: "2021-12-29",
     category: "Blog",
-    image: "/images/blog/Ruckblick-2021.jpg",
+    image: "/images/blog/Rückblick-2021.jpg",
     readTime: 5,
   },
   {
@@ -1394,16 +1394,16 @@ A key highlight was a successful crowdinvesting campaign in November, enabling e
       fr: "Crowdinvesting - Ensemble nous sommes forts!",
     },
     excerpt: {
-      de: "Cashare ladt Kunden ein, uber Partizipationsscheine am Unternehmenserfolg teilzuhaben.",
+      de: "Cashare ladt Kunden ein, über Partizipationsscheine am Unternehmenserfolg teilzuhaben.",
       en: "Cashare invites customers to participate in company success through participation certificates.",
       fr: "Cashare invite les clients a participer au succes de l'entreprise.",
     },
     content: {
-      de: `Cashare, 2008 gegrundet, fuhrte Crowdlending in die Schweiz ein und half, die disruptive Fintech-Landschaft zu praegen. Die Plattform zahlt nun uber 45'000 registrierte Nutzer, hat mehr als 3'000 Kredite vermittelt und ein angefragtes Kreditvolumen von uber eineinhalb Milliarden CHF verarbeitet.
+      de: `Cashare, 2008 gegrundet, fuhrte Crowdlending in die Schweiz ein und half, die disruptive Fintech-Landschaft zu praegen. Die Plattform zahlt nun über 45'000 registrierte Nutzer, hat mehr als 3'000 Kredite vermittelt und ein angefragtes Kreditvolumen von über eineinhalb Milliarden CHF verarbeitet.
 
 ## Exklusive Crowdinvesting-Moglichkeit
 
-Das Unternehmen ladt Kunden ein, an einer exklusiven Crowdinvesting-Moglichkeit bis 30. November 2021 teilzunehmen. Registrierte Nutzer konnen Partizipationsscheine (stimmrechtslose Aktien) ab CHF 350 bis maximal CHF 100'000 pro Investition erwerben.
+Das Unternehmen ladt Kunden ein, an einer exklusiven Crowdinvesting-Moglichkeit bis 30. November 2021 teilzunehmen. Registrierte Nutzer können Partizipationsscheine (stimmrechtslose Aktien) ab CHF 350 bis maximal CHF 100'000 pro Investition erwerben.
 
 Die Initiative spiegelt die Philosophie des Unternehmens wider: "Ohne Sie - unsere Crowd - waren wir nicht da, wo wir heute sind."`,
       en: `Cashare, established in 2008, introduced crowdlending to Switzerland and helped pioneer the disruptive fintech landscape. The platform now hosts over 45,000 registered users, has facilitated more than 3,000 loans.
@@ -1429,12 +1429,12 @@ The initiative reflects the company's philosophy: "Without you - our crowd - we 
       fr: "Prets convertibles chez Cashare",
     },
     excerpt: {
-      de: "Cashare erweitert sein Finanzierungsangebot um Wandeldarlehen fur wachstumsstarke Unternehmen.",
+      de: "Cashare erweitert sein Finanzierungsangebot um Wandeldarlehen für wachstumsstarke Unternehmen.",
       en: "Cashare expands its financing offerings with convertible loans for high-growth companies.",
       fr: "Cashare elargit ses offres de financement avec des prets convertibles.",
     },
     content: {
-      de: `Cashare hat sein Finanzierungsangebot durch Partnerschaften mit Konsento AG und BV4 AG erweitert, um Wandeldarlehen anzubieten. Diese Instrumente eignen sich besonders fur junge, schnell wachsende Unternehmen, die Alternativen zur Eigenkapitalfinanzierung suchen.
+      de: `Cashare hat sein Finanzierungsangebot durch Partnerschaften mit Konsento AG und BV4 AG erweitert, um Wandeldarlehen anzubieten. Diese Instrumente eignen sich besonders für junge, schnell wachsende Unternehmen, die Alternativen zur Eigenkapitalfinanzierung suchen.
 
 ## Was sind Wandeldarlehen?
 
@@ -1443,7 +1443,7 @@ Wandeldarlehen sind Darlehen, die mit der Moglichkeit verbunden sind, die Darleh
 Hauptmerkmale:
 - Mindestinvestition: Ab CHF 10'000
 - Zinsen laufen auf statt ausgeschuttet zu werden
-- Anleger konnen bei Falligkeit zwischen Barruckzahlung oder Aktienumwandlung wahlen`,
+- Anleger können bei Falligkeit zwischen Barruckzahlung oder Aktienumwandlung wahlen`,
       en: `Cashare has expanded its financing offerings through partnerships with Konsento AG and BV4 AG to provide convertible loan investments. These instruments are particularly suited for young, rapidly growing companies seeking equity financing alternatives.
 
 ## What Are Convertible Loans?
@@ -1477,13 +1477,13 @@ Key features:
     content: {
       de: `Crowdlending dient als praktikable Alternative zu traditionellen Bankkrediten.
 
-## Fur Kreditnehmer:
+## Für Kreditnehmer:
 - Schnelle Online-Kreditantrage ohne traditionelle Bankvermittler
-- Wettbewerbsfahige Zinssatze basierend auf individueller Bonitat
+- Wettbewerbsfahige Zinssätze basierend auf individueller Bonitat
 - Vollstandige Kostentransparenz bei der Antragstellung
-- Keine Strafgebuhren fur vorzeitige Ruckzahlung
+- Keine Strafgebühren für vorzeitige Ruckzahlung
 
-## Fur Anleger:
+## Für Anleger:
 - Attraktive Renditen durch Kredite an Schweizer KMU und Privatpersonen
 - Personliche Kontrolle daruber, welche Projekte finanziert werden
 - Klare, unkomplizierte Betriebsmechanik mit transparenten Kosten`,
@@ -1526,12 +1526,12 @@ Key features:
 
 - Durchschnittsalter der Anleger: 42 Jahre
 - Durchschnittliche Aktivitat: 4 Jahre auf der Plattform
-- Uber 10% der Anleger vertrauen Cashare seit uber einem Jahrzehnt
+- Uber 10% der Anleger vertrauen Cashare seit über einem Jahrzehnt
 - Aktive Anlegerzahl stieg im letzten Jahr um 15%
 
 ## Einstieg leicht gemacht
 
-Anleger konnen mit einer Mindesteinlage von CHF 100 beginnen. Da Investitionen ab CHF 100 in zahlreiche Privat-, KMU- und Immobilienkredite getatigt werden konnen, bietet Crowdlending attraktive Moglichkeiten fur kleine und professionelle Anleger.`,
+Anleger können mit einer Mindesteinlage von CHF 100 beginnen. Da Investitionen ab CHF 100 in zahlreiche Privat-, KMU- und Immobilienkredite getatigt werden können, bietet Crowdlending attraktive Möglichkeiten für kleine und professionelle Anleger.`,
       en: `Crowdlending is enabled by numerous investment-willing investors who receive attractive interest rates between 3.9 and 9.9% p.a.
 
 ## Investor Statistics
@@ -1607,17 +1607,17 @@ The author emphasizes two key concepts: "Pain" (suffering that motivates change)
       fr: "Une garantie comme surete",
     },
     excerpt: {
-      de: "Erfahren Sie, wie Burgschaften als Sicherheitsmechanismus fur Kredite funktionieren.",
+      de: "Erfahren Sie, wie Burgschaften als Sicherheitsmechanismus für Kredite funktionieren.",
       en: "Learn how guarantees work as a security mechanism for loans.",
       fr: "Decouvrez comment les garanties fonctionnent comme mecanisme de surete.",
     },
     content: {
-      de: `Der Artikel erklart Burgschaften als Sicherheitsmechanismus fur Kredite.
+      de: `Der Artikel erklart Burgschaften als Sicherheitsmechanismus für Kredite.
 
 ## Wichtige Punkte:
-- Viele KMU-Kreditnehmer bieten zusatzliche Sicherheiten an, um ihre Kredite fur Anleger attraktiver zu machen
+- Viele KMU-Kreditnehmer bieten zusatzliche Sicherheiten an, um ihre Kredite für Anleger attraktiver zu machen
 - Eine Burgschaft beinhaltet, dass ein Burge sich verpflichtet, die Schulden zu zahlen, falls der Kreditnehmer dies nicht kann
-- Fur KMU-Kredite bei Cashare wird oft eine Solidarburgschaft eines Hauptaktionars/Mitinhabers verlangt
+- Für KMU-Kredite bei Cashare wird oft eine Solidarburgschaft eines Hauptaktionars/Mitinhabers verlangt
 - Der Burgschaftsvertrag erfordert eine offentliche Beurkundung durch einen Notar
 - Wichtig: Die Burgschaft erlischt erst, wenn die Schuld vom Hauptschuldner beglichen ist`,
       en: `The article explains guarantees as a security mechanism for loans.
@@ -1644,18 +1644,18 @@ The author emphasizes two key concepts: "Pain" (suffering that motivates change)
       fr: "Pret personnel vs. leasing automobile",
     },
     excerpt: {
-      de: "Ein Vergleich zwischen Autoleasing und Privatkredit fur die Fahrzeugfinanzierung.",
+      de: "Ein Vergleich zwischen Autoleasing und Privatkredit für die Fahrzeugfinanzierung.",
       en: "A comparison between car leasing and personal loans for vehicle financing.",
       fr: "Une comparaison entre le leasing automobile et les prets personnels.",
     },
     content: {
-      de: `Der Artikel vergleicht Autoleasing mit Privatkrediten fur die Fahrzeugfinanzierung.
+      de: `Der Artikel vergleicht Autoleasing mit Privatkrediten für die Fahrzeugfinanzierung.
 
 ## Nachteile des Leasings:
 - Das Fahrzeug bleibt Eigentum des Leasinggebers
 - Vollkaskoversicherung ist obligatorisch
 - Finanzielle Flexibilitat ist eingeschrankt
-- Kilometerlimits mit Uberschreitungsgebuhren
+- Kilometerlimits mit Uberschreitungsgebühren
 - Service muss bei autorisierten Handlern erfolgen
 
 ## Vorteile des Privatkredits:
@@ -1690,17 +1690,17 @@ The author emphasizes two key concepts: "Pain" (suffering that motivates change)
   {
     slug: "5-tipps-kreditaufnahme",
     title: {
-      de: "5 Tipps fur die Kreditaufnahme",
+      de: "5 Tipps für die Kreditaufnahme",
       en: "5 Tips for Taking Out a Loan",
       fr: "5 conseils pour contracter un pret",
     },
     excerpt: {
-      de: "Funf Empfehlungen fur Kreditnehmer auf der Crowdlending-Plattform.",
+      de: "Funf Empfehlungen für Kreditnehmer auf der Crowdlending-Plattform.",
       en: "Five recommendations for borrowers on the crowdlending platform.",
       fr: "Cinq recommandations pour les emprunteurs sur la plateforme.",
     },
     content: {
-      de: `Funf Empfehlungen fur Kreditnehmer:
+      de: `Funf Empfehlungen für Kreditnehmer:
 
 1. **Transparenz** - Anleger schatzen es zu verstehen, wohin ihr Geld fliesst
 2. **Qualitative Online-Beschreibung** - Beschreibungen sollten ausfuhrlich und ehrlich sein
@@ -1739,11 +1739,11 @@ The author emphasizes two key concepts: "Pain" (suffering that motivates change)
 
 ## Aktuelle Herausforderungen
 
-Derzeit bieten hochwertige Anleihen angesichts der vorherrschenden Zinssatze minimale Renditen. Trotz niedriger Renditen bleiben Qualitatsanleihen beliebt, da ihre Werte nur minimal schwanken.
+Derzeit bieten hochwertige Anleihen angesichts der vorherrschenden Zinssätze minimale Renditen. Trotz niedriger Renditen bleiben Qualitatsanleihen beliebt, da ihre Werte nur minimal schwanken.
 
 ## Crowdlending als Alternative
 
-Crowdlending bietet eine Alternative mit attraktiven Renditen und verschiedenen Laufzeiten und Risikoprofilen. Da Mindestanlagebetragetyppischerweise bei 5'000 Franken beginnen, stellt der Aufbau eines diversifizierten Portfolios fur kleinere Anleger eine Herausforderung dar.`,
+Crowdlending bietet eine Alternative mit attraktiven Renditen und verschiedenen Laufzeiten und Risikoprofilen. Da Mindestanlagebetragetyppischerweise bei 5'000 Franken beginnen, stellt der Aufbau eines diversifizierten Portfolios für kleinere Anleger eine Herausforderung dar.`,
       en: `Bonds represent the primary interest-bearing investment class. Companies and public entities raise capital by selling bonds to investors.
 
 ## Current Challenges
@@ -1782,7 +1782,7 @@ Crowdlending offers an alternative, providing attractive yields with diverse mat
 - **Bildungsfinanzierung:** In die Zukunft durch Aus- oder Weiterbildung investieren
 - **Refinanzierung:** Niedrigere Zinsen nutzen, um bestehende Schulden zu ersetzen
 - **Immobilien:** Eigentum oder Anlageimmobilien finanzieren
-- **Investitionsmoglichkeiten:** Kapital fur potenziell profitable Unternehmungen sichern`,
+- **Investitionsmoglichkeiten:** Kapital für potenziell profitable Unternehmungen sichern`,
       en: `The article discusses when consumer loans make financial sense.
 
 ## Five Scenarios Where Borrowing Makes Sense:
@@ -1813,12 +1813,12 @@ Crowdlending offers an alternative, providing attractive yields with diverse mat
       fr: "L'IFZ a publie une etude complete sur le marche suisse du crowdlending.",
     },
     content: {
-      de: `Das Institut fur Finanzdienstleistungen Zug (IFZ) der Hochschule Luzern veroffentlichte eine umfassende Studie zum Schweizer Crowdlending-Markt.
+      de: `Das Institut für Finanzdienstleistungen Zug (IFZ) der Hochschule Luzern veroffentlichte eine umfassende Studie zum Schweizer Crowdlending-Markt.
 
-2019 vermittelten elf Plattformen uber 418.4 Millionen Schweizer Franken Kreditvolumen, ein Anstieg von 59.8% gegenuber 261.9 Millionen Franken im Jahr 2018.
+2019 vermittelten elf Plattformen über 418.4 Millionen Schweizer Franken Kreditvolumen, ein Anstieg von 59.8% gegenüber 261.9 Millionen Franken im Jahr 2018.
 
 Der Sektor verzeichnete ein robustes Wachstum, insbesondere im Immobilien-Crowdlending mit hypothekarisch gesicherten Krediten.`,
-      en: `The Institut fur Finanzdienstleistungen Zug (IFZ) at Hochschule Luzern released a comprehensive study on Switzerland's crowdlending market.
+      en: `The Institut für Finanzdienstleistungen Zug (IFZ) at Hochschule Luzern released a comprehensive study on Switzerland's crowdlending market.
 
 In 2019, eleven platforms facilitated over 418.4 million Swiss francs in credit volume, representing a 59.8% increase from 2018's 261.9 million francs.
 
@@ -1844,7 +1844,7 @@ The sector experienced robust expansion, particularly in real estate crowdlendin
       fr: "Michel Friedli et son epouse gerent un foyer residentielprive dans le canton de Berne.",
     },
     content: {
-      de: `Michel Friedli und seine Frau betreiben ein privates Wohnheim im Kanton Bern, das strukturierte Tagesunterstutzung fur drei Erwachsene mit sozialen und emotionalen Herausforderungen bietet.
+      de: `Michel Friedli und seine Frau betreiben ein privates Wohnheim im Kanton Bern, das strukturierte Tagesunterstutzung für drei Erwachsene mit sozialen und emotionalen Herausforderungen bietet.
 
 Als unabhangige Unternehmer hatten sie Schwierigkeiten, traditionelle Bankfinanzierung zu erhalten, obwohl sie langjahrige Kunden waren. Banken forderten Sicherheiten in Hohe des Kreditbetrags.
 
@@ -1945,9 +1945,9 @@ No traditional bank would finance a vegan restaurant. Crowdfunding and crowdlend
 
 ## Wichtige Punkte:
 - Finanzierungsstruktur erfordert mindestens 20% Eigenkapital
-- Gelder aus der zweiten Saule und Saule 3a konnen nicht fur Anlageimmobilien verwendet werden
-- Hypothekenbedingungen, Zinssatze und Strukturen variieren erheblich
-- Professionelle Beratung ist fur die Auswahl geeigneter Finanzierungsstrategien unerlasslich`,
+- Gelder aus der zweiten Saule und Saule 3a können nicht für Anlageimmobilien verwendet werden
+- Hypothekenbedingungen, Zinssätze und Strukturen variieren erheblich
+- Professionelle Beratung ist für die Auswahl geeigneter Finanzierungsstrategien unerlasslich`,
       en: `The article discusses private investment opportunities in multi-family residential buildings during a period of historically low interest rates.
 
 ## Key Points:
@@ -1966,7 +1966,7 @@ No traditional bank would finance a vegan restaurant. Crowdfunding and crowdlend
   {
     slug: "rueckblick-2020",
     title: {
-      de: "Ruckblick 2020",
+      de: "Rückblick 2020",
       en: "2020 Year in Review",
       fr: "Retrospective 2020",
     },
@@ -1981,7 +1981,7 @@ No traditional bank would finance a vegan restaurant. Crowdfunding and crowdlend
 ## Highlights:
 - **Buroerweiterung:** Das Unternehmen verdoppelte die Buroflache von 210m2 auf 420m2
 - **COVID-19-Reaktion:** Fruhzeitige Implementierung von Notfallprotokollen und Home-Office
-- **Ein Herz fur KMU:** Schnelle Entwicklung eines Gutscheinsystems fur kleine Unternehmen
+- **Ein Herz für KMU:** Schnelle Entwicklung eines Gutscheinsystems für kleine Unternehmen
 - **Wachstum:** Trotz Herausforderungen zweistelliges prozentuales Wachstum
 - **Team:** Vier neue Mitarbeiter, das Team uberschritt erstmals 20 Mitglieder`,
       en: `A comprehensive year-end review of Cashare's experiences during the COVID-19 pandemic.
@@ -1989,7 +1989,7 @@ No traditional bank would finance a vegan restaurant. Crowdfunding and crowdlend
 ## Highlights:
 - **Office Expansion:** The company doubled office space from 210m2 to 420m2
 - **COVID-19 Response:** Early implementation of emergency protocols and home office
-- **Ein Herz fur KMU:** Rapid development of a voucher system for small businesses
+- **Ein Herz für KMU:** Rapid development of a voucher system for small businesses
 - **Growth:** Double-digit percentage growth despite challenges
 - **Team:** Four new employees, team exceeded 20 members for the first time`,
       fr: `Une retrospective complete de l'annee 2020 pendant la pandemie.`,
@@ -2013,11 +2013,11 @@ No traditional bank would finance a vegan restaurant. Crowdfunding and crowdlend
       fr: "Cashare presente des projets de credit interessants hors du profil habituel.",
     },
     content: {
-      de: `Neben Standard-Crowdlending-Angeboten erhalt Cashare Anfragen fur attraktive Finanzierungen, die nicht in das typische Profil passen.
+      de: `Neben Standard-Crowdlending-Angeboten erhalt Cashare Anfragen für attraktive Finanzierungen, die nicht in das typische Profil passen.
 
 Diese alternativen Deals uberschreiten haufig CHF 1 Million, fallen ausserhalb der Fintech-Regulierungen oder haben komplexe Strukturen.
 
-Club Deals richten sich an einen begrenzten Anlegerkreis und erfordern typischerweise Investitionen uber CHF 100'000 pro Projekt. Cashare hat bereits mehrere komplexe Finanzierungen erfolgreich platziert.`,
+Club Deals richten sich an einen begrenzten Anlegerkreis und erfordern typischerweise Investitionen über CHF 100'000 pro Projekt. Cashare hat bereits mehrere komplexe Finanzierungen erfolgreich platziert.`,
       en: `Beyond standard crowdlending offerings, Cashare receives requests for attractive financing that doesn't fit the typical profile.
 
 These alternative deals frequently exceed CHF 1 million, fall outside fintech regulations, or feature complex structures.
@@ -2048,7 +2048,7 @@ Club Deals target a limited investor circle, typically requiring investments exc
 
 Um seine Angebote durch Personalisierung zu verbessern, benotigte Mika eine Lasergravurmaschine. Nach der Recherche von Finanzierungsmoglichkeiten entdeckte er Crowdlending und Cashare.
 
-Andere Crowdlending-Plattformen lehnten seinen Antrag ab, weil er noch keine zwei Jahre tatig war. Cashare genehmigte seinen Antrag innerhalb von 7-10 Tagen. Sein Projekt erreichte optimale Zinssatze innerhalb von nur acht Stunden nach Veroffentlichung.`,
+Andere Crowdlending-Plattformen lehnten seinen Antrag ab, weil er noch keine zwei Jahre tatig war. Cashare genehmigte seinen Antrag innerhalb von 7-10 Tagen. Sein Projekt erreichte optimale Zinssätze innerhalb von nur acht Stunden nach Veroffentlichung.`,
       en: `Mika, an online shop operator from Germany, shares how he launched his sustainable business www.wertundvoll.ch, selling plastic-free products and lunch boxes.
 
 To enhance his offerings through personalization, Mika needed a laser engraving machine. After researching financing options, he discovered crowdlending and Cashare.
@@ -2077,7 +2077,7 @@ Other crowdlending platforms rejected his application because he hadn't been ope
     content: {
       de: `Der Artikel feiert das erste Jubilaum der 4% CHF-Anleihe von Cashare, die am 22. November 2019 ausgegeben wurde.
 
-Dieses Anleiheprodukt ist exklusiv fur Vermogensverwalter und qualifizierte Anleger konzipiert und ermoglicht Investitionen in Crowdlending-Kredite innerhalb eines strukturierten Portfoliovehikels.
+Dieses Anleiheprodukt ist exklusiv für Vermogensverwalter und qualifizierte Anleger konzipiert und ermoglicht Investitionen in Crowdlending-Kredite innerhalb eines strukturierten Portfoliovehikels.
 
 Die Anleihe halt Kredite an Privatpersonen und KMU in der Schweiz, wobei etwa zwei Drittel durch Hypothekensicherheiten gedeckt sind.`,
       en: `The article celebrates the first anniversary of Cashare's 4% CHF bond, issued on November 22, 2019.
@@ -2132,14 +2132,14 @@ In contrast, Cashare's crowdlending platform empowers individual investors to se
       fr: "Crazy Country USA et notre membre du conseil Alfred Mettler",
     },
     excerpt: {
-      de: "Alfred Mettler, langjahriges Beiratsmitglied, veroffentlichte ein Buch uber seine Erfahrungen als amerikanisch-schweizerischer Doppelburger.",
+      de: "Alfred Mettler, langjahriges Beiratsmitglied, veroffentlichte ein Buch über seine Erfahrungen als amerikanisch-schweizerischer Doppelburger.",
       en: "Alfred Mettler, a long-standing advisory board member, published a book about his experiences as an American-Swiss dual citizen.",
       fr: "Alfred Mettler a publie un livre sur ses experiences en tant que double citoyen americano-suisse.",
     },
     content: {
       de: `Alfred Mettler ist Wirtschaftsprofessor an der University of Miami und Adjunct Professor am Swiss Finance Institute, mit Expertise in internationalem Bankwesen, Fintech-Entwicklungen und Finanzrisikomanagement.
 
-Im September 2020 erschien "Crazy Country USA", gemeinsam verfasst mit seiner Frau Adriana. Das Werk basiert auf uber 20 Jahren Erfahrung als amerikanisch-schweizerische Doppelburger und prasentiert Beobachtungen uber die Vereinigten Staaten durch uber sechzig blog-ahnliche Eintrage.`,
+Im September 2020 erschien "Crazy Country USA", gemeinsam verfasst mit seiner Frau Adriana. Das Werk basiert auf über 20 Jahren Erfahrung als amerikanisch-schweizerische Doppelburger und prasentiert Beobachtungen über die Vereinigten Staaten durch über sechzig blog-ahnliche Eintrage.`,
       en: `Alfred Mettler is an economics professor at the University of Miami and adjunct professor at the Swiss Finance Institute, with expertise in international banking, fintech developments, and financial risk management.
 
 In September 2020, "Crazy Country USA" was published, co-authored with his wife Adriana. The work draws from over 20 years of experience as American-Swiss dual citizens, presenting observations about the United States through over sixty blog-like entries.`,
@@ -2154,7 +2154,7 @@ In September 2020, "Crazy Country USA" was published, co-authored with his wife 
   {
     slug: "harry-schnabel-investition-cashare",
     title: {
-      de: "So profitiert Harry Schnabel durch eine Investition uber Cashare",
+      de: "So profitiert Harry Schnabel durch eine Investition über Cashare",
       en: "How Harry Schnabel Benefits from Investing Through Cashare",
       fr: "Comment Harry Schnabel profite d'un investissement via Cashare",
     },
@@ -2164,11 +2164,11 @@ In September 2020, "Crazy Country USA" was published, co-authored with his wife 
       fr: "Harry Schnabel, professionnel de la finance depuis plus de 30 ans, partage son experience.",
     },
     content: {
-      de: `Harry Schnabel, ein uber 30-jahriger Finanzprofi und ehemaliger CEO seiner eigenen Maklerfirma und der Berner Borse, teilt seine Crowdlending-Investitionserfahrung mit Cashare.
+      de: `Harry Schnabel, ein über 30-jahriger Finanzprofi und ehemaliger CEO seiner eigenen Maklerfirma und der Berner Borse, teilt seine Crowdlending-Investitionserfahrung mit Cashare.
 
-Schnabel begann vor uber 25 Jahren, alternative Anlagen mit regelmasigen Auszahlungen zu suchen. Als traditionelle Anleihen keine sinnvollen Renditen mehr boten, entdeckte er 2015 Crowdlending.
+Schnabel begann vor über 25 Jahren, alternative Anlagen mit regelmasigen Auszahlungen zu suchen. Als traditionelle Anleihen keine sinnvollen Renditen mehr boten, entdeckte er 2015 Crowdlending.
 
-Er hat in uber 700 Projekte auf der Plattform investiert und lobt die zuverlassigen monatlichen Ausschuttungen von Zins- und Tilgungszahlungen.`,
+Er hat in über 700 Projekte auf der Plattform investiert und lobt die zuverlassigen monatlichen Ausschuttungen von Zins- und Tilgungszahlungen.`,
       en: `Harry Schnabel, a 30+ year finance professional and former CEO of his own brokerage firm and the Bern Stock Exchange, shares his crowdlending investment experience with Cashare.
 
 Schnabel began seeking alternative investments with regular payouts over 25 years ago. When traditional bonds stopped offering meaningful returns, he discovered crowdlending in 2015.
@@ -2190,16 +2190,16 @@ He has invested in over 700 projects on the platform and praises the reliable mo
       fr: "Le petit guide de l'investisseur",
     },
     excerpt: {
-      de: "Anlegergrundlagen fur diejenigen, die Renditen jenseits traditioneller Bankgeschafte suchen.",
+      de: "Anlegergrundlagen für diejenigen, die Renditen jenseits traditioneller Bankgeschafte suchen.",
       en: "Investment basics for those seeking returns beyond traditional banking.",
       fr: "Les bases de l'investissement pour ceux qui cherchent des rendements alternatifs.",
     },
     content: {
-      de: `Der Artikel fuhrt in Anlegergrundlagen fur diejenigen ein, die Renditen jenseits traditioneller Bankgeschafte suchen.
+      de: `Der Artikel fuhrt in Anlegergrundlagen für diejenigen ein, die Renditen jenseits traditioneller Bankgeschafte suchen.
 
 Die Registrierung umfasst drei Schritte: Anmeldung, Abschluss der personlichen Identifizierung und Beginn der Gebotsabgabe auf Kreditprojekte.
 
-Hauptvorteile fur Anleger:
+Hauptvorteile für Anleger:
 - Zugang zu attraktiven Renditen ausserhalb der Aktienmarkte
 - Anpassung von Portfolios nach Risikopraferenz
 - Unabhangigkeit von Marktschwankungen
@@ -2229,16 +2229,16 @@ Key investor advantages:
       fr: "Le crowdlending comme remplacement de compte?",
     },
     excerpt: {
-      de: "Kann Crowdlending als Ersatz fur traditionelle Bankkonten dienen?",
+      de: "Kann Crowdlending als Ersatz für traditionelle Bankkonten dienen?",
       en: "Can crowdlending serve as a substitute for traditional bank accounts?",
       fr: "Le crowdlending peut-il remplacer les comptes bancaires traditionnels?",
     },
     content: {
-      de: `Der Artikel untersucht, ob Crowdlending-Investitionen als traditioneller Bankkonto-Ersatz dienen konnen.
+      de: `Der Artikel untersucht, ob Crowdlending-Investitionen als traditioneller Bankkonto-Ersatz dienen können.
 
-Einschrankungen: Crowdlending fehlt tagliche Liquiditat und Fintech-Plattformen konnen nicht an Bankeinlagensicherungen teilnehmen.
+Einschrankungen: Crowdlending fehlt tagliche Liquiditat und Fintech-Plattformen können nicht an Bankeinlagensicherungen teilnehmen.
 
-Empfohlene Strategie: Eine personliche Barreserve fur unmittelbare Bedurfnisse und Notfalle aufbauen, dann uberschussige Mittel in Crowdlending-Investitionen einsetzen.`,
+Empfohlene Strategie: Eine personliche Barreserve für unmittelbare Bedurfnisse und Notfalle aufbauen, dann uberschussige Mittel in Crowdlending-Investitionen einsetzen.`,
       en: `The article explores whether crowdlending investments can serve as a traditional bank account substitute.
 
 Limitations: Crowdlending lacks daily liquidity and fintech platforms cannot participate in banking deposit insurance protections.
@@ -2291,14 +2291,14 @@ Property valuations employ Swiss standard methods, with maximum lending capped a
       fr: "Le marche secondaire Cashare comme place de marche vivante",
     },
     excerpt: {
-      de: "Der Sekundarmarkt ist seit uber drei Monaten in Betrieb.",
+      de: "Der Sekundarmarkt ist seit über drei Monaten in Betrieb.",
       en: "The secondary market has been operational for over three months.",
       fr: "Le marche secondaire est operationnel depuis plus de trois mois.",
     },
     content: {
-      de: `Der Artikel diskutiert Cashares Sekundarmarkt, der seit uber drei Monaten in Betrieb ist. Auf dieser Plattform konnen Anleger bestehende Kredite weiterverkaufen oder Kredite von anderen Anlegern kaufen.
+      de: `Der Artikel diskutiert Cashares Sekundarmarkt, der seit über drei Monaten in Betrieb ist. Auf dieser Plattform können Anleger bestehende Kredite weiterverkaufen oder Kredite von anderen Anlegern kaufen.
 
-Alle Cashare-Kredite (sowohl KMU- als auch Privatkredite) konnen fur 14 Tage zum Verkauf angeboten werden, mit der Option, Rabatte oder Aufschlage hinzuzufugen.
+Alle Cashare-Kredite (sowohl KMU- als auch Privatkredite) können für 14 Tage zum Verkauf angeboten werden, mit der Option, Rabatte oder Aufschlage hinzuzufugen.
 
 Das Team plant, Benutzervorschlage in kommende Plattform-Updates einzubauen.`,
       en: `The article discusses Cashare's secondary market, which has been operational for over three months. On this platform, investors can resell existing loans or purchase loans from other investors.
@@ -2383,19 +2383,19 @@ These require more thorough bank review, carry a 0.5% interest rate, and feature
   {
     slug: "herz-fuer-kmu",
     title: {
-      de: "Ein Herz fur KMU!",
+      de: "Ein Herz für KMU!",
       en: "A Heart for SMEs!",
       fr: "Un coeur pour les PME!",
     },
     excerpt: {
-      de: "Cashare entwickelte eine kostenlose Gutscheinplattform fur kleine Unternehmen wahrend der Krise.",
+      de: "Cashare entwickelte eine kostenlose Gutscheinplattform für kleine Unternehmen wahrend der Krise.",
       en: "Cashare developed a free voucher platform for small businesses during the crisis.",
       fr: "Cashare a developpe une plateforme de bons gratuite pour les petites entreprises.",
     },
     content: {
       de: `Als Fintech-Unternehmen entwickelte Cashare eine Losung, um Selbstandigen und KMU wahrend der Krise zu helfen.
 
-Die Plattform ermoglicht Unternehmen, Gutscheine anzubieten, die Kunden uber mehrere Jahre einlosen konnen, sodass Unternehmen trotz Schliessungen Einnahmen generieren konnen.
+Die Plattform ermoglicht Unternehmen, Gutscheine anzubieten, die Kunden über mehrere Jahre einlosen können, sodass Unternehmen trotz Schliessungen Einnahmen generieren können.
 
 Cashares IT-Team erstellte schnell eine kostenlose Gutscheinplattform unter www.einherzfuerkmu.ch.`,
       en: `As a fintech company, Cashare developed a solution to help self-employed individuals and SMEs during the crisis.
@@ -2414,7 +2414,7 @@ Cashare's IT team rapidly created a free voucher platform at www.einherzfuerkmu.
   {
     slug: "rechtsstillstand-betreibungen",
     title: {
-      de: "Rechtsstillstand fur Betreibungen! Was bedeutet das?",
+      de: "Rechtsstillstand für Betreibungen! Was bedeutet das?",
       en: "Suspension of Enforcement Proceedings! What Does That Mean?",
       fr: "Suspension des poursuites! Qu'est-ce que cela signifie?",
     },
@@ -2455,11 +2455,11 @@ The suspension was enacted to protect businesses facing liquidity shortages due 
       fr: "Cashare a annonce le passage au teletravail pendant la pandemie COVID-19.",
     },
     content: {
-      de: `Das Unternehmen kundigte an, dass alle Mitarbeiter gesund blieben. Trotz der Verdoppelung der Buroflache fur Social Distancing entschied die Fuhrung, auf Remote-Arbeit umzustellen.
+      de: `Das Unternehmen kundigte an, dass alle Mitarbeiter gesund blieben. Trotz der Verdoppelung der Buroflache für Social Distancing entschied die Fuhrung, auf Remote-Arbeit umzustellen.
 
 Die Organisation hatte zuvor einen Krisenplan vorbereitet und Remote-Arbeitsubungen durchgefuhrt. Mitarbeiter hatten das Arbeiten von zu Hause mit ihren Laptops geprobt.
 
-Wichtige Massnahmen umfassten: obligatorisches Homeoffice fur alle Mitarbeiter, strenge Social-Distancing-Regeln in Buros und Verbot von physischen Geschaftskontakten.`,
+Wichtige Massnahmen umfassten: obligatorisches Homeoffice für alle Mitarbeiter, strenge Social-Distancing-Regeln in Buros und Verbot von physischen Geschaftskontakten.`,
       en: `The company announced that all employees remained healthy. Despite doubling office space for social distancing, leadership decided to transition to remote work.
 
 The organization had prepared a crisis plan and conducted remote work drills beforehand. Staff had practiced accessing systems from home with their laptops.
@@ -2486,9 +2486,9 @@ Key measures included: mandatory home office for all staff, strict social distan
       fr: "Cashare a elargi son partenariat avec Benedict Education Group.",
     },
     content: {
-      de: `Cashare erweiterte seine Partnerschaft mit der Benedict Education Group nach einer erfolgreichen Pilotphase. Das Fintech-Unternehmen finanziert nun die Ausbildung von Studenten uber faire Ratenzahlungsplane.
+      de: `Cashare erweiterte seine Partnerschaft mit der Benedict Education Group nach einer erfolgreichen Pilotphase. Das Fintech-Unternehmen finanziert nun die Ausbildung von Studenten über faire Ratenzahlungsplane.
 
-Die Plattform strukturiert bestehende Zahlungsvertrage in diversifizierte Kreditportfolios fur Anleger und reduziert so das individuelle Risiko durch Portfolio-Streuung.
+Die Plattform strukturiert bestehende Zahlungsvertrage in diversifizierte Kreditportfolios für Anleger und reduziert so das individuelle Risiko durch Portfolio-Streuung.
 
 Studenten profitieren von zuganglicher Finanzierung, Anleger erhalten Zugang zu bildungsorientierten Krediten mit attraktiven Renditen. Die Partnerschaft wurde um drei Jahre verlangert.`,
       en: `Cashare expanded its partnership with Benedict Education Group following a successful pilot phase. The fintech company now finances students' education through fair installment plans.
@@ -2521,7 +2521,7 @@ Students benefit from accessible financing, investors gain exposure to education
 
 Die Grunder erinnern sich an die fruhe Skepsis traditioneller Banken und Regulatoren und daran, wie sie alternative Kredite pionierten, als Online-Kredittransaktionen noch als undenkbar galten.
 
-Das Unternehmen feiert bedeutende Erfolge: uber 36'000 Nutzer, mehr als 2'400 finanzierte Kreditprojekte und uber eine Milliarde Schweizer Franken an angefragtem Kreditvolumen.`,
+Das Unternehmen feiert bedeutende Erfolge: über 36'000 Nutzer, mehr als 2'400 finanzierte Kreditprojekte und über eine Milliarde Schweizer Franken an angefragtem Kreditvolumen.`,
       en: `The crowdlending platform Cashare celebrates its 12-year milestone since launching in 2007 as Continental Europe's first peer-to-peer platform.
 
 The founders recount early skepticism from traditional banks and regulators, noting how they pioneered alternative lending when online credit transactions were considered implausible.
@@ -2543,14 +2543,14 @@ The company celebrates significant achievements: over 36,000 users, more than 2,
       fr: "Comment Cashare a agrandi une flotte",
     },
     excerpt: {
-      de: "DS-Logistik GmbH berichtet uber ihre Erfahrungen mit der Finanzierung uber Cashare.",
+      de: "DS-Logistik GmbH berichtet über ihre Erfahrungen mit der Finanzierung über Cashare.",
       en: "DS-Logistik GmbH shares their experience obtaining financing through Cashare.",
       fr: "DS-Logistik GmbH partage son experience de financement via Cashare.",
     },
     content: {
-      de: `Das Interview mit DS-Logistik GmbH zeigt ihre Erfahrungen mit der Finanzierung uber Cashares Crowdlending-Plattform. Das Unternehmen bietet Transport- und Umzugsdienstleistungen fur Mobelhandler in der ganzen Schweiz an.
+      de: `Das Interview mit DS-Logistik GmbH zeigt ihre Erfahrungen mit der Finanzierung über Cashares Crowdlending-Plattform. Das Unternehmen bietet Transport- und Umzugsdienstleistungen für Mobelhandler in der ganzen Schweiz an.
 
-Sie suchten nach Moglichkeiten, in die Ostschweiz zu expandieren und zusatzliche Lieferfahrzeuge zu erwerben. Der Interviepartner lobte Cashares Prozess als "schnell, unkompliziert und transparent" im Vergleich zum traditionellen Banking.
+Sie suchten nach Möglichkeiten, in die Ostschweiz zu expandieren und zusatzliche Lieferfahrzeuge zu erwerben. Der Interviepartner lobte Cashares Prozess als "schnell, unkompliziert und transparent" im Vergleich zum traditionellen Banking.
 
 Mit dem Cashare-Darlehen kaufte DS-Logistik zusatzliche Lastwagen, erweiterte ihre Flotte und gewann neue Firmenkunden.`,
       en: `The interview with DS-Logistik GmbH features their experience obtaining financing through Cashare's crowdlending platform. The company provides transportation and relocation services to furniture retailers across Switzerland.
@@ -2579,11 +2579,11 @@ Using the Cashare loan, DS-Logistik purchased additional trucks, expanded their 
       fr: "Le bilan annuel couvre les performances 2019 de Cashare.",
     },
     content: {
-      de: `Der Jahresruckblick behandelt Cashares Leistung 2019 und reflektiert die Fintech-Dekade. Das Unternehmen hebt hervor, die grosste Crowdlending-Plattform der Schweiz zu sein mit uber 35'000 Nutzern und uber einer Milliarde Franken angefragtem Kreditvolumen.
+      de: `Der Jahresruckblick behandelt Cashares Leistung 2019 und reflektiert die Fintech-Dekade. Das Unternehmen hebt hervor, die grosste Crowdlending-Plattform der Schweiz zu sein mit über 35'000 Nutzern und über einer Milliarde Franken angefragtem Kreditvolumen.
 
-Wichtige Erfolge umfassen die erfolgreiche Finanzierung von uber 2'400 Kreditprojekten und deutliche Verbesserungen bei EBIT und Umsatz.
+Wichtige Erfolge umfassen die erfolgreiche Finanzierung von über 2'400 Kreditprojekten und deutliche Verbesserungen bei EBIT und Umsatz.
 
-Wichtige Produktentwicklungen 2019: Senkung des Mindestinvestments auf CHF 100 fur Privatkredite, Einfuhrung des KMU-Kurzkredit-Produkts und Start des Cashare-Sekundarmarkts.`,
+Wichtige Produktentwicklungen 2019: Senkung des Mindestinvestments auf CHF 100 für Privatkredite, Einfuhrung des KMU-Kurzkredit-Produkts und Start des Cashare-Sekundarmarkts.`,
       en: `The annual review covers Cashare's 2019 performance and reflects on the fintech decade. The company highlights being Switzerland's largest crowdlending platform with over 35,000 users and surpassing CHF 1 billion in requested credit volume.
 
 Key achievements include successfully financing over 2,400 credit projects and significantly improving EBIT and revenues.
@@ -2614,7 +2614,7 @@ Notable 2019 product developments: lowering investment minimums to CHF 100 for p
 
 Listings bleiben 14 Tage aktiv; unverkaufte Kredite kehren ins Portfolio des Anlegers zuruck.
 
-Die Funktion gilt fur Privat- und KMU-Kredite. Kreditnehmer im Zahlungsruckstand konnen nicht verkauft werden.`,
+Die Funktion gilt für Privat- und KMU-Kredite. Kreditnehmer im Zahlungsruckstand können nicht verkauft werden.`,
       en: `Cashare introduced a secondary marketplace allowing investors to sell their loan investments before maturity. The platform enables users to liquidate positions.
 
 Listings remain active for 14 days; unsold loans return to the investor's portfolio.
@@ -2631,19 +2631,19 @@ The feature applies to both private and SME loans. Borrowers in arrears cannot b
   {
     slug: "rueckblick-q3-2019",
     title: {
-      de: "Ruckblick auf das 3. Quartal 2019",
+      de: "Rückblick auf das 3. Quartal 2019",
       en: "Q3 2019 Review",
       fr: "Bilan du 3e trimestre 2019",
     },
     excerpt: {
-      de: "Cashare berichtet uber eine starke Q3-2019-Leistung und das Erreichen von uber CHF 1 Milliarde Kreditvolumen.",
+      de: "Cashare berichtet über eine starke Q3-2019-Leistung und das Erreichen von über CHF 1 Milliarde Kreditvolumen.",
       en: "Cashare reports strong Q3 2019 performance and reaching over CHF 1 billion in credit volume.",
       fr: "Cashare rapporte une forte performance au T3 2019.",
     },
     content: {
-      de: `Cashare berichtet uber eine starke Q3-2019-Leistung und begrusst neu die Praktikanten Dennis und Drilon im Team. Das Unternehmen lancierte erfolgreich sein KMU-Kurzkredit-Produkt mit hoher Anlegernachfrage.
+      de: `Cashare berichtet über eine starke Q3-2019-Leistung und begrusst neu die Praktikanten Dennis und Drilon im Team. Das Unternehmen lancierte erfolgreich sein KMU-Kurzkredit-Produkt mit hoher Anlegernachfrage.
 
-Ein wichtiger Meilenstein wurde erreicht: ein angefragtes und verarbeitetes Kreditvolumen von uber CHF 1 Milliarde, was die wachsende Akzeptanz von Crowdlending bei Kreditnehmern demonstriert.`,
+Ein wichtiger Meilenstein wurde erreicht: ein angefragtes und verarbeitetes Kreditvolumen von über CHF 1 Milliarde, was die wachsende Akzeptanz von Crowdlending bei Kreditnehmern demonstriert.`,
       en: `Cashare reports strong Q3 2019 performance, welcoming new interns Dennis and Drilon to the team. The company launched its KMU-Kurzkredit product successfully with investor demand.
 
 A significant milestone was reached: an inquired and processed credit volume of over CHF 1 billion, demonstrating growing acceptance of crowdlending among borrowers.`,
@@ -2663,14 +2663,14 @@ A significant milestone was reached: an inquired and processed credit volume of 
       fr: "MCI Real Estate AG - Une histoire a succes",
     },
     excerpt: {
-      de: "Interview mit Mario Cortesi, Grunder von MCI Real Estate AG, uber die Finanzierung uber Cashare.",
+      de: "Interview mit Mario Cortesi, Grunder von MCI Real Estate AG, über die Finanzierung über Cashare.",
       en: "Interview with Mario Cortesi, founder of MCI Real Estate AG, about financing through Cashare.",
       fr: "Entretien avec Mario Cortesi sur le financement via Cashare.",
     },
     content: {
-      de: `Diese Fallstudie zeigt ein Interview mit Mario Cortesi, Grunder von MCI Real Estate AG. Das Unternehmen entwickelte sich von acht Jahren im Baugewerbe zur Grundung von Loco's Immobilien AG 2014.
+      de: `Diese Fallstudie zeigt ein Interview mit Mario Cortesi, Grunder von MCI Real Estate AG. Das Unternehmen entwickelte sich von acht Jahren im Baugewerbe zur Gründung von Loco's Immobilien AG 2014.
 
-Der Artikel zeigt, wie Cortesi eine Immobilie uber Cashares Crowdlending-Plattform finanzierte. Er lobte den Prozess als "schnell, unkompliziert und transparent".`,
+Der Artikel zeigt, wie Cortesi eine Immobilie über Cashares Crowdlending-Plattform finanzierte. Er lobte den Prozess als "schnell, unkompliziert und transparent".`,
       en: `This case study features an interview with Mario Cortesi, founder of MCI Real Estate AG. The company evolved from eight years in construction to founding Loco's Immobilien AG in 2014.
 
 The article showcases how Cortesi financed a real estate property through Cashare's crowdlending platform. He praised the process as "fast, uncomplicated, and transparent."`,
@@ -2685,7 +2685,7 @@ The article showcases how Cortesi financed a real estate property through Cashar
   {
     slug: "fintech-roundtable-efd",
     title: {
-      de: "Ruckblick auf den 4. Fintech-Roundtable des EFD",
+      de: "Rückblick auf den 4. Fintech-Roundtable des EFD",
       en: "Review of the 4th Fintech Roundtable",
       fr: "Bilan du 4e Fintech Roundtable du DFF",
     },
@@ -2695,7 +2695,7 @@ The article showcases how Cortesi financed a real estate property through Cashar
       fr: "Participation de Cashare au quatrieme Fintech Roundtable.",
     },
     content: {
-      de: `Sajmir berichtet uber Cashares Teilnahme am vierten Fintech-Roundtable des Eidgenossischen Finanzdepartements am 23. Oktober 2019, an dem Bundesrat Ueli Maurer teilnahm.
+      de: `Sajmir berichtet über Cashares Teilnahme am vierten Fintech-Roundtable des Eidgenossischen Finanzdepartements am 23. Oktober 2019, an dem Bundesrat Ueli Maurer teilnahm.
 
 Die Diskussion umfasste Regierungsvertreter, Parlamentarier, Verbande, Universitaten, Banken und sechs Fintech-Unternehmen.
 
@@ -2716,7 +2716,7 @@ Cashare presented key concerns: electronic identification, increasing maximum le
   {
     slug: "zuger-messe-2019",
     title: {
-      de: "Zuger Messe 2019 - Ein Ruckblick!",
+      de: "Zuger Messe 2019 - Ein Rückblick!",
       en: "Zuger Messe 2019 - A Review!",
       fr: "Foire de Zoug 2019 - Un bilan!",
     },
@@ -2730,7 +2730,7 @@ Cashare presented key concerns: electronic identification, increasing maximum le
 
 Viele Besucher waren mit dem Konzept nicht vertraut und zeigten unterschiedliche Reaktionen von Skepsis bis echtem Interesse.
 
-Cashare bot interaktive Aktivitaten an, darunter ein Glucksrad fur Kinder und ein Gewinnspiel fur Erwachsene.`,
+Cashare bot interaktive Aktivitaten an, darunter ein Glucksrad für Kinder und ein Gewinnspiel für Erwachsene.`,
       en: `Cashare participated in the Zuger Messe trade fair for nine days with an on-site booth. The team engaged directly with visitors to explain their crowdlending platform.
 
 Many attendees were unfamiliar with the concept, showing varied reactions from skepticism to genuine interest.
@@ -2761,7 +2761,7 @@ Cashare provided interactive activities including a prize wheel for children and
 
 Benedict betreibt Sprachschulen, Business-Programme und technische Ausbildungen in vier Schweizer Stadten.
 
-Durch diese Zusammenarbeit wird Cashare Bildungsprogramme fur Lernende finanzieren und finanzielle Hurden fur die berufliche Entwicklung beseitigen.`,
+Durch diese Zusammenarbeit wird Cashare Bildungsprogramme für Lernende finanzieren und finanzielle Hurden für die berufliche Entwicklung beseitigen.`,
       en: `Cashare, a Swiss fintech pioneer, has partnered with Benedict schools to support education financing.
 
 Benedict operates language schools, business programs, and technical training across four Swiss cities.
@@ -2783,7 +2783,7 @@ Through this collaboration, Cashare will finance educational programs for learne
       fr: "Les dangers des arnaques par phishing",
     },
     excerpt: {
-      de: "Ein Aufklarungsartikel uber Phishing-Betrug und wie man sich davor schutzen kann.",
+      de: "Ein Aufklarungsartikel über Phishing-Betrug und wie man sich davor schutzen kann.",
       en: "An educational article explaining phishing scams and how to protect yourself.",
       fr: "Un article educatif sur les arnaques par phishing et comment se proteger.",
     },
@@ -2792,7 +2792,7 @@ Through this collaboration, Cashare will finance educational programs for learne
 
 Der Inhalt bietet praktische Tipps zum Erkennen verdachtiger E-Mails, einschliesslich Warnungen vor unerwarteten Anhangen und unbekannten Links.
 
-Fur Cashare-Nutzer wird empfohlen, zu uberprufen, dass Absenderadressen "@cashare.ch" enthalten und die Zwei-Faktor-Authentifizierung zu aktivieren.`,
+Für Cashare-Nutzer wird empfohlen, zu uberprufen, dass Absenderadressen "@cashare.ch" enthalten und die Zwei-Faktor-Authentifizierung zu aktivieren.`,
       en: `This educational piece explains phishing as a cybercrime tactic where fraudsters impersonate legitimate entities to steal sensitive information.
 
 The content provides practical guidance for recognizing suspicious emails, including warnings about unexpected attachments and unfamiliar links.
@@ -2823,7 +2823,7 @@ For Cashare users, it advises verifying sender addresses contain "@cashare.ch" a
 
 Die Schweiz steht vor besonderen Herausforderungen aufgrund des Safe-Haven-Status des Schweizer Frankens.
 
-Der Artikel positioniert Crowdlending uber Cashare als Alternative mit "attraktiven Zinssatzen mit unterschiedlichen Risiko-/Rendite-Profilen".`,
+Der Artikel positioniert Crowdlending über Cashare als Alternative mit "attraktiven Zinssätzen mit unterschiedlichen Risiko-/Rendite-Profilen".`,
       en: `The article examines the global low-interest environment resulting from central bank policies since the 2008 financial crisis. The author argues that emergency measures have become "a collective hostage situation."
 
 Switzerland faces particular challenges due to the Swiss franc's safe-haven status.
@@ -2845,16 +2845,16 @@ The article positions crowdlending through Cashare as an alternative offering "a
       fr: "L'immobilier et le crowdlending font une bonne equipe!",
     },
     excerpt: {
-      de: "Interview mit David Boissenin von Hestia GmbH uber Immobilienfinanzierung via Cashare.",
+      de: "Interview mit David Boissenin von Hestia GmbH über Immobilienfinanzierung via Cashare.",
       en: "Interview with David Boissenin from Hestia GmbH about real estate financing via Cashare.",
       fr: "Entretien avec David Boissenin de Hestia GmbH.",
     },
     content: {
       de: `Der Artikel hebt die wachsende Zahl von Immobilienprojekten auf Cashares Crowdlending-Plattform hervor. Er zeigt ein Interview mit David Boissenin von Hestia GmbH.
 
-Boissenin erklart, wie sein Unternehmen altere Immobilien erwirbt, sie renoviert und Mehrwert schafft. Er beschreibt die Wahl von Cashare gegenuber traditionellem Banking aufgrund schnellerer Abwicklung.
+Boissenin erklart, wie sein Unternehmen altere Immobilien erwirbt, sie renoviert und Mehrwert schafft. Er beschreibt die Wahl von Cashare gegenüber traditionellem Banking aufgrund schnellerer Abwicklung.
 
-Nach funf Monaten starkte sein Unternehmen sein Betriebskapital und plant zukunftige Finanzierungen uber die Plattform.`,
+Nach funf Monaten starkte sein Unternehmen sein Betriebskapital und plant zukunftige Finanzierungen über die Plattform.`,
       en: `The article highlights the growing number of real estate projects on Cashare's crowdlending platform. It features an interview with David Boissenin from Hestia GmbH.
 
 Boissenin explains how his firm acquires aging properties, renovates them, and creates added value. He describes choosing Cashare over traditional banking due to faster processing.
@@ -2884,11 +2884,11 @@ After five months, his company strengthened its working capital and plans future
       de: `Der Artikel diskutiert realistische Anlagestrategien in Zeiten von Negativzinsen und volatilen Finanzmarkten.
 
 Wichtige Empfehlungen:
-- Investitionsgebuhren minimieren und Steuersituation optimieren
+- Investitionsgebühren minimieren und Steuersituation optimieren
 - Uber mehrere Anlageklassen diversifizieren
-- Regelmassige Sparlplane mit reinvestierten Ertragen
+- Regelmassige Sparlplane mit reinvestierten Erträgen
 
-Der Artikel illustriert die Kraft des Zinseszinses: CHF 10'000 uber 30 Jahre wachsen auf CHF 13'478 bei 1% vs. CHF 57'434 bei 6%.`,
+Der Artikel illustriert die Kraft des Zinseszinses: CHF 10'000 über 30 Jahre wachsen auf CHF 13'478 bei 1% vs. CHF 57'434 bei 6%.`,
       en: `The article discusses realistic investment strategies during times of negative interest rates and volatile financial markets.
 
 Key recommendations:
@@ -2920,7 +2920,7 @@ The article illustrates compound interest power: CHF 10,000 over 30 years grows 
     content: {
       de: `Der Artikel befasst sich mit haufigen Bedenken bei der Entwicklung einer personlichen Anlagestrategie, indem er sie in handhabbare Schritte aufteilt.
 
-Wichtige Themen: Verstandnis verschiedener Anlagetypen, Erkennen der individuellen Risikobereitschaft, Bewertung der objektiven Risikokapazitat und Portfolio-Diversifikation uber mindestens 10-20 Positionen.`,
+Wichtige Themen: Verstandnis verschiedener Anlagetypen, Erkennen der individuellen Risikobereitschaft, Bewertung der objektiven Risikokapazitat und Portfolio-Diversifikation über mindestens 10-20 Positionen.`,
       en: `The article addresses common concerns about developing a personal investment strategy by breaking it into manageable steps.
 
 Key topics: understanding different investment types, recognizing individual risk appetite, evaluating objective risk capacity, and portfolio diversification across minimum 10-20 positions.`,
@@ -2947,7 +2947,7 @@ Key topics: understanding different investment types, recognizing individual ris
     content: {
       de: `Cashare kundigte eine Umbenennung des Vertragsmanagement-Bereichs von "Laufende Vertrage" zu "Meine Vertrage" an.
 
-Das Update fuhrte organisatorische Verbesserungen ein: eine konsolidierte "Alle Vertrage"-Ansicht, neue Filterkategorien und Farbcodierung fur bessere Ubersicht.`,
+Das Update fuhrte organisatorische Verbesserungen ein: eine konsolidierte "Alle Vertrage"-Ansicht, neue Filterkategorien und Farbcodierung für bessere Übersicht.`,
       en: `Cashare announced a renaming of their contract management section from "Laufende Vertrage" to "Meine Vertrage".
 
 The update introduced organizational improvements: a consolidated "All Contracts" view, new filtering categories, and color-coding for better overview.`,
@@ -2974,7 +2974,7 @@ The update introduced organizational improvements: a consolidated "All Contracts
     content: {
       de: `Cashare kundigte eine umfassende Systemuberholung nach dem ersten Start im Marz 2010 an. Die neu gestaltete Plattform adressierte mehrere technische Probleme.
 
-Wichtige Verbesserungen betrafen einen verbesserten Vertragszugang uber das Benutzer-Dashboard und eine bessere Sichtbarkeit von erwarteten vs. tatsachlichen Geldtransfers.`,
+Wichtige Verbesserungen betrafen einen verbesserten Vertragszugang über das Benutzer-Dashboard und eine bessere Sichtbarkeit von erwarteten vs. tatsachlichen Geldtransfers.`,
       en: `Cashare announced a comprehensive system overhaul following initial launch in March 2010. The redesigned platform addressed multiple technical issues.
 
 Key improvements involved enhanced contract access through the user dashboard and better visibility of expected versus actual fund transfers.`,
@@ -3028,7 +3028,7 @@ While Ex Libris won first place, Cashare celebrated being recognized alongside r
     content: {
       de: `Cashare kundigte die Verfugbarkeit ihrer Jahresabrechnung 2010 an.
 
-Benutzer konnen ihre Abrechnungsdokumente jederzeit von ihrem personlichen Konto unter "Mein Cashare" > "Personliche Daten" > "Dokumente" als PDF-Dateien herunterladen.`,
+Benutzer können ihre Abrechnungsdokumente jederzeit von ihrem personlichen Konto unter "Mein Cashare" > "Personliche Daten" > "Dokumente" als PDF-Dateien herunterladen.`,
       en: `Cashare announced the availability of their 2010 annual settlement statement.
 
 Users can now download their settlement documents anytime from their personal account under "Mein Cashare" > "Personal Data" > "Documents" as PDF files.`,
@@ -3043,7 +3043,7 @@ Users can now download their settlement documents anytime from their personal ac
   {
     slug: "jeder-rappen-zaehlt",
     title: {
-      de: "CHF 500.00 fur Jeder Rappen zahlt!",
+      de: "CHF 500.00 für Jeder Rappen zahlt!",
       en: "CHF 500.00 for Every Franc Counts!",
       fr: "CHF 500.00 pour Chaque franc compte!",
     },
@@ -3082,7 +3082,7 @@ The company credited this contribution to the active support of its Facebook com
     content: {
       de: `Cashare erweiterte seinen Bonitatsprufungsprozess durch Einbindung von Deltavista AG als zusatzlichen Datenanbieter.
 
-Das Unternehmen vergibt Ratings (A bis E) an Kreditanfragen, wobei nur A-C bewertete Anfragen fur aktives Bieten verfugbar gemacht werden.`,
+Das Unternehmen vergibt Ratings (A bis E) an Kreditanfragen, wobei nur A-C bewertete Anfragen für aktives Bieten verfügbar gemacht werden.`,
       en: `Cashare expanded its creditworthiness assessment process by incorporating Deltavista AG as an additional data provider.
 
 The company assigns ratings (A through E) to loan applications, with only A-C rated requests made available for active bidding.`,
@@ -3136,7 +3136,7 @@ The segment discusses private credit services and shows how fintech platforms li
     content: {
       de: `Cashare kundigte nach zwei Jahren eine umfassende Neugestaltung und Plattform-Upgrade an. Das Update fuhrte vereinfachte Navigation, verbesserte Benutzeroberflache mit grosseren Schriften und zahlreiche funktionale Verbesserungen ein.
 
-Wichtige Erganzungen: Rating-Sichtbarkeit in Ubersichten, verbesserte Kreditinformationsanzeigen, automatische Zahlungserinnerungen und erweiterte Vertragsverwaltungsfunktionen.`,
+Wichtige Erganzungen: Rating-Sichtbarkeit in Übersichten, verbesserte Kreditinformationsanzeigen, automatische Zahlungserinnerungen und erweiterte Vertragsverwaltungsfunktionen.`,
       en: `Cashare announced a comprehensive redesign and platform upgrade after two years. The update introduced simplified navigation, enhanced user interface with larger fonts, and numerous functional improvements.
 
 Key additions: rating visibility in overviews, improved credit information displays, automated payment reminders, and expanded contract management features.`,

@@ -165,7 +165,7 @@ const content = {
           icon: "renovation",
           title: "Renovation Loan",
           description:
-            "Special credit for property renovations and remodeling; flexible and quickly available to increase property value.",
+            "Special crédit for property renovations and remodeling; flexible and quickly available to increase property value.",
           features: ["Quickly available", "Flexible", "Value increase"],
         },
         {
@@ -295,9 +295,9 @@ const content = {
         },
         {
           icon: "renovation",
-          title: "Credit renovation",
+          title: "Crédit renovation",
           description:
-            "Credit special pour renovations et transformations; flexible et rapidement disponible pour augmenter la valeur du bien.",
+            "Crédit special pour renovations et transformations; flexible et rapidement disponible pour augmenter la valeur du bien.",
           features: ["Rapidement disponible", "Flexible", "Plus-value"],
         },
         {
@@ -391,7 +391,7 @@ const content = {
       stats: [
         { value: "2008", label: "Fondee" },
         { value: "60'000+", label: "Clients" },
-        { value: "CHF 2.5 Mrd", label: "Demandes de credit verifiees" },
+        { value: "CHF 2.5 Mrd", label: "Demandes de crédit verifiees" },
       ],
     },
     cta: {

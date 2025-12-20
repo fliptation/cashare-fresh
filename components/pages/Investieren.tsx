@@ -8,7 +8,7 @@ const content = {
   de: {
     title: "Investieren",
     subtitle: "Entfalten Sie Ihr finanzielles Potenzial",
-    heroText: "Bei Cashare bieten wir Ihnen massgeschneiderte Moglichkeiten, um in Kredite (Private Debt) investieren zu konnen.",
+    heroText: "Bei Cashare bieten wir Ihnen massgeschneiderte Möglichkeiten, um in Kredite (Private Debt) investieren zu können.",
     cta: "Jetzt investieren",
     ctaHref: "/registrieren",
     investorTypes: [
@@ -20,18 +20,18 @@ const content = {
       },
       {
         title: "Institutionelle Investoren",
-        desc: "Professionelle Losungen fur Banken, Pensionskassen und Vermogensverwalter mit massgeschneiderten Anlagestrategien.",
+        desc: "Professionelle Lösungen für Banken, Pensionskassen und Vermogensverwalter mit massgeschneiderten Anlagestrategien.",
         href: "/investieren/institutionelle",
         cta: "Mehr erfahren",
       },
     ],
     benefits: {
       title: "Ihre Investition, Ihr Weg",
-      subtitle: "Ubernehmen Sie die Kontrolle uber Ihre finanzielle Zukunft mit flexiblen, renditestarken Investitionsmoglichkeiten.",
+      subtitle: "Ubernehmen Sie die Kontrolle über Ihre finanzielle Zukunft mit flexiblen, renditestarken Investitionsmoglichkeiten.",
       items: [
         { title: "Attraktive Renditen", desc: "Erzielen Sie durchschnittlich 5-8% Rendite pro Jahr auf Ihre Investitionen." },
-        { title: "Diversifikation", desc: "Streuen Sie Ihr Risiko uber verschiedene Kreditnehmer und Laufzeiten." },
-        { title: "Transparenz", desc: "Volle Transparenz uber alle Kreditprojekte und deren Performance." },
+        { title: "Diversifikation", desc: "Streuen Sie Ihr Risiko über verschiedene Kreditnehmer und Laufzeiten." },
+        { title: "Transparenz", desc: "Volle Transparenz über alle Kreditprojekte und deren Performance." },
         { title: "Flexibilitat", desc: "Wahlen Sie selbst, in welche Projekte Sie investieren mochten." },
       ],
     },
@@ -111,9 +111,9 @@ const content = {
     ctaHref: "/fr/inscription",
     investorTypes: [
       {
-        title: "Investisseurs prives",
+        title: "Investisseurs privés",
         desc: "Investissez directement dans des credits et obtenez des rendements attractifs. Diversifiez votre portefeuille avec le Private Debt.",
-        href: "/fr/investir/investisseurs-prives",
+        href: "/fr/investir/investisseurs-privés",
         cta: "En savoir plus",
       },
       {
@@ -129,7 +129,7 @@ const content = {
       items: [
         { title: "Rendements attractifs", desc: "Obtenez des rendements moyens de 5 a 8% par an sur vos investissements." },
         { title: "Diversification", desc: "Repartissez vos risques sur differents emprunteurs et echeances." },
-        { title: "Transparence", desc: "Transparence totale sur tous les projets de credit et leurs performances." },
+        { title: "Transparence", desc: "Transparence totale sur tous les projets de crédit et leurs performances." },
         { title: "Flexibilite", desc: "Choisissez dans quels projets vous souhaitez investir." },
       ],
     },
@@ -138,7 +138,7 @@ const content = {
       steps: [
         { title: "S'inscrire", desc: "Creez un compte gratuit et verifiez votre identite." },
         { title: "Deposer", desc: "Transferez votre capital d'investissement sur votre compte Cashare." },
-        { title: "Investir", desc: "Selectionnez des projets de credit ou utilisez notre Auto-Invest." },
+        { title: "Investir", desc: "Selectionnez des projets de crédit ou utilisez notre Auto-Invest." },
         { title: "Recevoir des rendements", desc: "Recevez des paiements mensuels d'interets et de capital." },
       ],
     },

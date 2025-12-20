@@ -9,11 +9,11 @@ const content = {
     title: "Privatkredit",
     subtitle: "So funktioniert Ihr personlicher Kredit",
     heroText: "Personliche Kredite bis CHF 250'000 - direkt von Anlegern finanziert, ohne Bank.",
-    backLink: { label: "Zuruck zu So funktioniert's", href: "/so-funktionierts" },
+    backLink: { label: "Zurück zu So funktioniert's", href: "/so-funktionierts" },
     advantages: [
       { title: "Tiefe Zinsen", description: "Ab 3.9% dank direktem Peer-to-Peer-Lending ohne Bankmarge" },
       { title: "Pionier-Status", description: "Erste innovative Crowdlending-Plattform der Schweiz" },
-      { title: "Schnelle Abwicklung", description: "Vollautomatisierte Prozesse fur schnelle Auszahlung" },
+      { title: "Schnelle Abwicklung", description: "Vollautomatisierte Prozesse für schnelle Auszahlung" },
     ],
     loanTypes: {
       title: "Unsere Kreditarten",
@@ -108,8 +108,8 @@ const content = {
     },
   },
   fr: {
-    title: "Credit prive",
-    subtitle: "Comment fonctionne votre credit personnel",
+    title: "Crédit privé",
+    subtitle: "Comment fonctionne votre crédit personnel",
     heroText: "Credits personnels jusqu'a CHF 250'000 - finances directement par des investisseurs, sans banque.",
     backLink: { label: "Retour a Comment ca marche", href: "/fr/comment-ca-marche" },
     advantages: [
@@ -120,17 +120,17 @@ const content = {
     loanTypes: {
       title: "Nos types de credit",
       items: [
-        { title: "Credit en blanc", description: "Credit personnel sans garantie" },
-        { title: "Credit hypothecaire", description: "Credit avec bien immobilier en garantie" },
-        { title: "Credit avec caution", description: "Credit avec garantie personnelle" },
+        { title: "Crédit en blanc", description: "Crédit personnel sans garantie" },
+        { title: "Crédit hypothecaire", description: "Crédit avec bien immobilier en garantie" },
+        { title: "Crédit avec caution", description: "Crédit avec garantie personnelle" },
       ],
     },
     process: {
       title: "Le processus en 3 etapes",
       steps: [
-        { step: "1", title: "Demande & Verification", description: "Soumettez votre demande de credit en ligne. La plateforme effectue des verifications automatisees." },
+        { step: "1", title: "Demande & Verification", description: "Soumettez votre demande de crédit en ligne. La plateforme effectue des verifications automatisees." },
         { step: "2", title: "Examen des investisseurs & Financement", description: "Les demandes approuvees sont presentees a la communaute d'investisseurs pour financement." },
-        { step: "3", title: "Versement du credit", description: "Le montant du credit est transfere electroniquement sur votre compte bancaire." },
+        { step: "3", title: "Versement du credit", description: "Le montant du crédit est transfere electroniquement sur votre compte bancaire." },
       ],
       timeline: "Env. 10 jours de la demande au versement",
     },
@@ -154,8 +154,8 @@ const content = {
     },
     stats: "Plus de 60'000 particuliers et entreprises servis",
     cta: {
-      title: "Demandez un credit prive maintenant",
-      button: { label: "Demander un credit", href: "/fr/demander-un-credit/credit-prive" },
+      title: "Demandez un crédit privé maintenant",
+      button: { label: "Demander un credit", href: "/fr/demander-un-credit/credit-privé" },
     },
   },
 };

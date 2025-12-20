@@ -6,7 +6,7 @@ interface StatisticsProps {
 
 const content = {
   de: {
-    backLink: { label: "Zuruck zu Uber uns", href: "/ueber-uns" },
+    backLink: { label: "Zurück zu Über uns", href: "/ueber-uns" },
     title: "Statistik",
     subtitle: "Unser Leistungsausweis - Transparenz ist einer unserer Kernwerte.",
     updated: "Stand: Dezember 2024",
@@ -28,8 +28,8 @@ const content = {
       distribution: {
         title: "Kreditverteilung",
         items: [
-          { type: "Privatdarlehen", desc: "Kredite fur Privatpersonen" },
-          { type: "KMU-Kredite", desc: "Finanzierung fur Unternehmen" },
+          { type: "Privatdarlehen", desc: "Kredite für Privatpersonen" },
+          { type: "KMU-Kredite", desc: "Finanzierung für Unternehmen" },
         ],
       },
       ratings: {
@@ -45,7 +45,7 @@ const content = {
         ],
       },
     },
-    disclaimer: "Vergangene Renditen sind keine Garantie fur zukunftige Ergebnisse. Investitionen in Kredite sind mit Risiken verbunden.",
+    disclaimer: "Vergangene Renditen sind keine Garantie für zukünftige Ergebnisse. Investitionen in Kredite sind mit Risiken verbunden.",
   },
   en: {
     backLink: { label: "Back to About Us", href: "/en/about" },
@@ -55,7 +55,7 @@ const content = {
     stats: [
       { value: "67,665", label: "Registered Members" },
       { value: "4,764", label: "Funded Projects" },
-      { value: "CHF 2.5B", label: "Requested Credit Volume" },
+      { value: "CHF 2.5B", label: "Requested Crédit Volume" },
       { value: "CHF 1M", label: "Largest Loan" },
     ],
     sections: {
@@ -90,14 +90,14 @@ const content = {
     disclaimer: "Past returns are not a guarantee of future results. Investments in loans carry risks.",
   },
   fr: {
-    backLink: { label: "Retour a A propos", href: "/fr/a-propos" },
+    backLink: { label: "Retour à À propos", href: "/fr/a-propos" },
     title: "Statistiques",
     subtitle: "Notre bilan - La transparence est l'une de nos valeurs fondamentales.",
     updated: "Mise a jour: Decembre 2024",
     stats: [
       { value: "67'665", label: "Membres inscrits" },
       { value: "4'764", label: "Projets finances" },
-      { value: "CHF 2.5 Mrd", label: "Volume de credit demande" },
+      { value: "CHF 2.5 Mrd", label: "Volume de crédit demande" },
       { value: "CHF 1 Mio", label: "Plus gros pret" },
     ],
     sections: {
@@ -106,13 +106,13 @@ const content = {
         items: [
           { label: "Plus de 60'000 clients servis", desc: "Particuliers et entreprises" },
           { label: "Premiere plateforme de crowdlending en Suisse", desc: "Fondee en 2008" },
-          { label: "Des milliers d'investisseurs actifs", desc: "Prives et institutionnels" },
+          { label: "Des milliers d'investisseurs actifs", desc: "Privés et institutionnels" },
         ],
       },
       distribution: {
         title: "Distribution des prets",
         items: [
-          { type: "Prets prives", desc: "Prets aux particuliers" },
+          { type: "Prets privés", desc: "Prets aux particuliers" },
           { type: "Prets PME", desc: "Financement pour entreprises" },
         ],
       },

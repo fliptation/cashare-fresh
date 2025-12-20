@@ -6,12 +6,12 @@ interface RatingProps {
 
 const content = {
   de: {
-    backLink: { label: "Zuruck zu Uber uns", href: "/ueber-uns" },
+    backLink: { label: "Zurück zu Über uns", href: "/ueber-uns" },
     title: "Rating",
     subtitle: "Cashare verwendet Big Data, kunstliche Intelligenz und Machine Learning, um die Kreditwurdigkeit zu bewerten.",
     intro: {
       title: "Das Cashare Rating-System",
-      text: "Jeder Kreditantrag wird anhand von Hunderten von Datenpunkten aus unserer historischen Datenbank und externen Quellen uber API-Verbindungen zu Zahlungs- und Behordendatenbanken bewertet.",
+      text: "Jeder Kreditantrag wird anhand von Hunderten von Datenpunkten aus unserer historischen Datenbank und externen Quellen über API-Verbindungen zu Zahlungs- und Behordendatenbanken bewertet.",
     },
     scale: {
       title: "Rating-Skala",
@@ -32,7 +32,7 @@ const content = {
     },
     collateral: {
       title: "Sicherheiten",
-      text: "Kredite konnen mit folgenden Sicherheiten abgesichert werden:",
+      text: "Kredite können mit folgenden Sicherheiten abgesichert werden:",
       items: ["Hypotheken (Grundpfand)", "Personliche Burgschaften"],
       note: "Sicherheiten werden bei der Endbewertung berucksichtigt.",
     },
@@ -40,7 +40,7 @@ const content = {
       title: "Zusatzliche Sicherheitsmassnahmen",
       items: [
         "Mindestzinssatz verhindert Unterpreisbildung",
-        "Nur Ratings C und besser qualifizieren fur Investitionen",
+        "Nur Ratings C und besser qualifizieren für Investitionen",
         "Sorgfaltige Bonitatsprufung aller Antrage",
         "Kontinuierliche Uberwachung der Kreditperformance",
       ],
@@ -96,12 +96,12 @@ const content = {
     },
   },
   fr: {
-    backLink: { label: "Retour a A propos", href: "/fr/a-propos" },
+    backLink: { label: "Retour à À propos", href: "/fr/a-propos" },
     title: "Rating",
     subtitle: "Cashare utilise le big data, l'intelligence artificielle et les algorithmes de machine learning pour evaluer la solvabilite.",
     intro: {
       title: "Le systeme de notation Cashare",
-      text: "Chaque demande de credit est evaluee selon des centaines de points de donnees provenant de notre base historique et de sources externes via des connexions API aux bases de donnees de paiement et gouvernementales.",
+      text: "Chaque demande de crédit est evaluee selon des centaines de points de donnees provenant de notre base historique et de sources externes via des connexions API aux bases de donnees de paiement et gouvernementales.",
     },
     scale: {
       title: "Echelle de notation",
@@ -127,7 +127,7 @@ const content = {
       note: "Les garanties sont prises en compte dans la notation finale.",
     },
     safeguards: {
-      title: "Mesures de securite supplementaires",
+      title: "Mesures de sécurité supplementaires",
       items: [
         "Un taux d'interet plancher empeche la sous-tarification",
         "Seules les notes C et superieures sont eligibles a l'investissement",

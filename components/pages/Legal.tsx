@@ -152,7 +152,7 @@ const content = {
         {
           title: "7. Datensicherheit",
           content: `
-            <p>Alle Datenübertragungen sind durch 256-Bit SSL-Verschlüsselung geschützt. Wir setzen technische und organisatorische Massnahmen ein, um Ihre Daten vor unbefugtem Zugriff zu schützen.</p>
+            <p>Alle Datenübertragungen sind durch 256-Bit SSL-Verschlüsselung geschützt. Wir setzen technische und organisatorische Maßnahmen ein, um Ihre Daten vor unbefugtem Zugriff zu schützen.</p>
           `,
         },
         {
@@ -304,7 +304,7 @@ const content = {
           `,
         },
         {
-          title: "II. Credit Platform",
+          title: "II. Crédit Platform",
           content: `
             <h4>1. Risk Warnings</h4>
             <p><strong>Important:</strong> Lending carries risks, including potential total loss of the entire loan amount. Only invest money you can afford to lose.</p>
@@ -312,7 +312,7 @@ const content = {
             <h4>2. Loan Application</h4>
             <p>Borrowers submit detailed financial information. Cashare performs a creditworthiness assessment. If approved, the loan request is published on the platform.</p>
 
-            <h4>3. Credit Assessment</h4>
+            <h4>3. Crédit Assessment</h4>
             <p>Cashare obtains data from third parties (ZEK, IKO, Bisnode, CRIF). Ratings are purely indicative and do not constitute binding recommendations.</p>
 
             <h4>4. Funding Phase</h4>
@@ -330,7 +330,7 @@ const content = {
           content: `
             <p>Cashare is not liable for:</p>
             <ul>
-              <li>The accuracy of credit assessments</li>
+              <li>The accuracy of crédit assessments</li>
               <li>Borrowers' ability to pay</li>
               <li>Investor losses</li>
               <li>Third-party actions</li>
@@ -360,8 +360,8 @@ const content = {
         {
           title: "1. Introduction",
           content: `
-            <p>Cashare AG is committed to protecting your personal data in accordance with the Swiss Data Protection Act (DSG) and the EU General Data Protection Regulation (GDPR).</p>
-            <p>Using our website generally does not require personal data. However, account creation and credit services require the collection of certain data.</p>
+            <p>Cashare AG is committed to protecting your personal data in accordance with the Swiss Data Protection Act (DSG) and the EU General Data Protection Régulation (GDPR).</p>
+            <p>Using our website generally does not require personal data. However, account creation and crédit services require the collection of certain data.</p>
           `,
         },
         {
@@ -398,12 +398,12 @@ const content = {
           `,
         },
         {
-          title: "5. Credit Assessment",
+          title: "5. Crédit Assessment",
           content: `
-            <p>For credit assessment, your data is transmitted to the following credit bureaus:</p>
+            <p>For crédit assessment, your data is transmitted to the following crédit bureaus:</p>
             <ul>
-              <li>ZEK (Central Credit Information Office)</li>
-              <li>IKO (Consumer Credit Information Office)</li>
+              <li>ZEK (Central Crédit Information Office)</li>
+              <li>IKO (Consumer Crédit Information Office)</li>
               <li>Bisnode</li>
               <li>CRIF</li>
             </ul>
@@ -492,7 +492,7 @@ const content = {
           content: `
             <ul>
               <li>Member of SRO Polyreg</li>
-              <li>Licensed consumer credit provider (Economic Directorate Canton Zug)</li>
+              <li>Licensed consumer crédit provider (Economic Directorate Canton Zug)</li>
               <li>Approved financial intermediary under Swiss Anti-Money Laundering Act</li>
               <li>Registered with the Federal Data Protection Commissioner (FDPIC)</li>
             </ul>

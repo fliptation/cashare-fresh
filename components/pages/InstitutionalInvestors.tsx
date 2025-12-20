@@ -6,20 +6,20 @@ interface InstitutionalInvestorsProps {
 
 const content = {
   de: {
-    backLink: { label: "Zuruck zur Ubersicht", href: "/investieren" },
+    backLink: { label: "Zurück zur Übersicht", href: "/investieren" },
     title: "Institutionelle Investoren",
-    subtitle: "Professionelle Private Debt Losungen fur Banken, Pensionskassen und Vermogensverwalter.",
+    subtitle: "Professionelle Private Debt Lösungen für Banken, Pensionskassen und Vermogensverwalter.",
     cta: { label: "Kontakt aufnehmen", href: "mailto:institutional@cashare.ch" },
     intro: {
-      title: "Ihr Partner fur Private Debt",
-      text: "Cashare bietet institutionellen Investoren Zugang zu einem diversifizierten Portfolio von Schweizer Privat- und KMU-Krediten. Mit uber 15 Jahren Erfahrung und einem verwalteten Volumen von uber CHF 2.5 Mrd. sind wir Ihr verlasslicher Partner fur alternative Anlagen.",
+      title: "Ihr Partner für Private Debt",
+      text: "Cashare bietet institutionellen Investoren Zugang zu einem diversifizierten Portfolio von Schweizer Privat- und KMU-Krediten. Mit über 15 Jahren Erfahrung und einem verwalteten Volumen von über CHF 2.5 Mrd. sind wir Ihr verlasslicher Partner für alternative Anlagen.",
     },
     solutions: {
-      title: "Unsere Losungen",
+      title: "Unsere Lösungen",
       items: [
         {
           title: "Direktinvestition",
-          desc: "Investieren Sie direkt in einzelne Kreditprojekte mit voller Kontrolle uber Ihre Allokation.",
+          desc: "Investieren Sie direkt in einzelne Kreditprojekte mit voller Kontrolle über Ihre Allokation.",
           features: ["Individuelle Projektauswahl", "Transparente Konditionen", "Detaillierte Reporting"],
         },
         {
@@ -35,10 +35,10 @@ const content = {
       ],
     },
     benefits: {
-      title: "Vorteile fur institutionelle Anleger",
+      title: "Vorteile für institutionelle Anleger",
       items: [
         { title: "Attraktive Renditen", desc: "Uberdurchschnittliche risikoadjustierte Returns im Vergleich zu traditionellen Fixed-Income-Anlagen." },
-        { title: "Niedrige Korrelation", desc: "Geringe Korrelation zu offentlichen Markten fur echte Portfoliodiversifikation." },
+        { title: "Niedrige Korrelation", desc: "Geringe Korrelation zu offentlichen Markten für echte Portfoliodiversifikation." },
         { title: "Stabile Cashflows", desc: "Regelmasslge, planbare Zahlungsstrome durch amortisierende Kredite." },
         { title: "ESG-Integration", desc: "Nachhaltigkeitskriterien in der Kreditvergabe und im Reporting." },
       ],
@@ -58,7 +58,7 @@ const content = {
     },
     contact: {
       title: "Kontaktieren Sie uns",
-      text: "Unser Institutional Sales Team steht Ihnen fur ein personliches Gesprach zur Verfugung.",
+      text: "Unser Institutional Sales Team steht Ihnen für ein personliches Gesprach zur Verfugung.",
       email: "institutional@cashare.ch",
       phone: "+41 41 544 61 70",
     },
@@ -111,7 +111,7 @@ const content = {
       ],
     },
     compliance: {
-      title: "Regulation & Compliance",
+      title: "Régulation & Compliance",
       items: ["FINMA-regulated platform", "Swiss data protection standards", "Annual audits", "AML/KYC compliant"],
     },
     contact: {
@@ -128,14 +128,14 @@ const content = {
     cta: { label: "Nous contacter", href: "mailto:institutional@cashare.ch" },
     intro: {
       title: "Votre partenaire pour le Private Debt",
-      text: "Cashare offre aux investisseurs institutionnels l'acces a un portefeuille diversifie de credits prives et PME suisses. Avec plus de 15 ans d'experience et un volume gere de plus de CHF 2,5 milliards, nous sommes votre partenaire fiable pour les investissements alternatifs.",
+      text: "Cashare offre aux investisseurs institutionnels l'acces a un portefeuille diversifie de credits privés et PME suisses. Avec plus de 15 ans d'experience et un volume gere de plus de CHF 2,5 milliards, nous sommes votre partenaire fiable pour les investissements alternatifs.",
     },
     solutions: {
       title: "Nos solutions",
       items: [
         {
           title: "Investissement direct",
-          desc: "Investissez directement dans des projets de credit individuels avec un controle total sur votre allocation.",
+          desc: "Investissez directement dans des projets de crédit individuels avec un controle total sur votre allocation.",
           features: ["Selection de projets individuelle", "Conditions transparentes", "Reporting detaille"],
         },
         {
@@ -169,7 +169,7 @@ const content = {
       ],
     },
     compliance: {
-      title: "Regulation & Conformite",
+      title: "Régulation & Conformite",
       items: ["Plateforme regulee par la FINMA", "Standards suisses de protection des donnees", "Audits annuels", "Conforme AML/KYC"],
     },
     contact: {

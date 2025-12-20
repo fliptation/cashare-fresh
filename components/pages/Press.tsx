@@ -4,36 +4,44 @@ interface PressProps {
   locale: Locale;
 }
 
+// Press logos - same as used on home page
+const pressLogos = [
+  { name: "Tages Anzeiger", src: "/images/press/tagi.png" },
+  { name: "Swissquote", src: "/images/press/swissquote.png" },
+  { name: "moneycab", src: "/images/press/moneycab.png" },
+  { name: "The Business Times", src: "/images/press/The-Business-Times.png" },
+  { name: "Finanz und Wirtschaft", src: "/images/press/fuw.png" },
+];
+
 const content = {
   de: {
-    backLink: { label: "Zuruck zu Uber uns", href: "/ueber-uns" },
+    backLink: { label: "Zurück zu Über uns", href: "/ueber-uns" },
     title: "Presse",
     subtitle: "Aktuelle Informationen, Medienmitteilungen und Pressekontakt.",
     featured: {
       title: "Bekannt aus",
-      outlets: ["Tages Anzeiger", "Finanz und Wirtschaft", "Swissquote", "moneycab", "The Business Times"],
     },
     releases: {
       title: "Medienmitteilungen",
       items: [
-        { date: "Dez 2024", title: "Cashare erreicht uber 250 Millionen CHF vermittelte Kredite", type: "Meilenstein" },
-        { date: "Sep 2024", title: "Neue Partnerschaft mit fuhrenden Schweizer Banken", type: "Partnerschaft" },
+        { date: "Dez 2024", title: "Cashare erreicht über 250 Millionen CHF vermittelte Kredite", type: "Meilenstein" },
+        { date: "Sep 2024", title: "Neue Partnerschaft mit führenden Schweizer Banken", type: "Partnerschaft" },
         { date: "Jun 2024", title: "Launch der neuen Anleger-Plattform", type: "Produkt" },
-        { date: "Mar 2024", title: "Cashare erweitert KMU-Kreditangebot", type: "Produkt" },
+        { date: "Mär 2024", title: "Cashare erweitert KMU-Kreditangebot", type: "Produkt" },
       ],
     },
     facts: {
-      title: "Uber Cashare",
+      title: "Über Cashare",
       items: [
-        { label: "Grundung", value: "2008" },
-        { label: "Hauptsitz", value: "Zurich" },
+        { label: "Gründung", value: "2008" },
+        { label: "Hauptsitz", value: "Zürich" },
         { label: "Vermittelte Kredite", value: "CHF 250+ Mio." },
         { label: "Regulierung", value: "FINMA" },
       ],
     },
     contact: {
       title: "Pressekontakt",
-      text: "Fur Medienanfragen, Interviews oder Bildmaterial kontaktieren Sie bitte:",
+      text: "Für Medienanfragen, Interviews oder Bildmaterial kontaktieren Sie bitte:",
       email: "presse@cashare.ch",
       phone: "+41 44 515 95 95",
       kit: {
@@ -49,7 +57,6 @@ const content = {
     subtitle: "Current information, press releases, and media contact.",
     featured: {
       title: "Featured in",
-      outlets: ["Tages Anzeiger", "Finanz und Wirtschaft", "Swissquote", "moneycab", "The Business Times"],
     },
     releases: {
       title: "Press Releases",
@@ -64,9 +71,9 @@ const content = {
       title: "About Cashare",
       items: [
         { label: "Founded", value: "2008" },
-        { label: "Headquarters", value: "Zurich" },
+        { label: "Headquarters", value: "Zürich" },
         { label: "Facilitated Loans", value: "CHF 250+ M" },
-        { label: "Regulation", value: "FINMA" },
+        { label: "Régulation", value: "FINMA" },
       ],
     },
     contact: {
@@ -82,40 +89,39 @@ const content = {
     },
   },
   fr: {
-    backLink: { label: "Retour a A propos", href: "/fr/a-propos" },
+    backLink: { label: "Retour à À propos", href: "/fr/a-propos" },
     title: "Presse",
-    subtitle: "Informations actuelles, communiques de presse et contact medias.",
+    subtitle: "Informations actuelles, communiqués de presse et contact médias.",
     featured: {
-      title: "Dans les medias",
-      outlets: ["Tages Anzeiger", "Finanz und Wirtschaft", "Swissquote", "moneycab", "The Business Times"],
+      title: "Dans les médias",
     },
     releases: {
-      title: "Communiques de presse",
+      title: "Communiqués de presse",
       items: [
-        { date: "Dec 2024", title: "Cashare atteint plus de 250 millions CHF de credits accordes", type: "Jalon" },
+        { date: "Déc 2024", title: "Cashare atteint plus de 250 millions CHF de crédits accordés", type: "Jalon" },
         { date: "Sep 2024", title: "Nouveau partenariat avec les principales banques suisses", type: "Partenariat" },
         { date: "Jun 2024", title: "Lancement de la nouvelle plateforme investisseurs", type: "Produit" },
-        { date: "Mar 2024", title: "Cashare elargit son offre de credit PME", type: "Produit" },
+        { date: "Mar 2024", title: "Cashare élargit son offre de crédit PME", type: "Produit" },
       ],
     },
     facts: {
-      title: "A propos de Cashare",
+      title: "À propos de Cashare",
       items: [
         { label: "Fondation", value: "2008" },
-        { label: "Siege", value: "Zurich" },
-        { label: "Credits accordes", value: "CHF 250+ M" },
-        { label: "Regulation", value: "FINMA" },
+        { label: "Siège", value: "Zürich" },
+        { label: "Crédits accordés", value: "CHF 250+ M" },
+        { label: "Régulation", value: "FINMA" },
       ],
     },
     contact: {
       title: "Contact presse",
-      text: "Pour les demandes medias, interviews ou materiels visuels, veuillez contacter:",
+      text: "Pour les demandes médias, interviews ou matériels visuels, veuillez contacter:",
       email: "presse@cashare.ch",
       phone: "+41 44 515 95 95",
       kit: {
         title: "Kit presse",
-        text: "Telechargez notre kit presse avec logos, fiche descriptive et materiels visuels.",
-        label: "Telecharger le kit presse",
+        text: "Téléchargez notre kit presse avec logos, fiche descriptive et matériels visuels.",
+        label: "Télécharger le kit presse",
       },
     },
   },
@@ -144,9 +150,16 @@ export function Press({ locale }: PressProps) {
           <div class="subpage-section__header">
             <p class="subpage-section__subtitle">{t.featured.title}</p>
           </div>
-          <div class="press-grid">
-            {t.featured.outlets.map((outlet, i) => (
-              <div key={i} class="press-grid__item">{outlet}</div>
+          <div class="logo-bar__container">
+            {pressLogos.map((logo) => (
+              <div key={logo.name} class="logo-bar__item" title={logo.name}>
+                <img
+                  src={logo.src}
+                  alt={logo.name}
+                  loading="lazy"
+                  class="logo-bar__image"
+                />
+              </div>
             ))}
           </div>
         </div>

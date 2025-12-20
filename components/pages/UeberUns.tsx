@@ -17,17 +17,17 @@ const content = {
     ],
     mission: {
       label: "Unsere Mission",
-      title: "Faire Finanzierung fur alle",
+      title: "Faire Finanzierung für alle",
       text: "Wir glauben, dass jeder Zugang zu fairen Krediten verdient. Unsere Plattform ermoglicht es Privatpersonen und KMUs, gunstige Kredite zu erhalten, wahrend Anleger attraktive Renditen erzielen. Durch innovative Technologie und transparente Prozesse schaffen wir Vertrauen zwischen allen Beteiligten.",
     },
     history: {
       title: "Unsere Geschichte",
-      subtitle: "Von der ersten Schweizer Crowdlending-Plattform zum fuhrenden FinTech-Unternehmen.",
+      subtitle: "Von der ersten Schweizer Crowdlending-Plattform zum führenden FinTech-Unternehmen.",
       items: [
-        { year: "2008", event: "Grundung von Cashare als erste Crowdlending-Plattform der Schweiz" },
+        { year: "2008", event: "Gründung von Cashare als erste Crowdlending-Plattform der Schweiz" },
         { year: "2010", event: "Erste 100 erfolgreich finanzierte Projekte" },
         { year: "2015", event: "Erweiterung des Angebots auf KMU-Kredite" },
-        { year: "2018", event: "10-jahriges Jubilaum mit uber CHF 100 Mio. finanziertem Volumen" },
+        { year: "2018", event: "10-jahriges Jubilaum mit über CHF 100 Mio. finanziertem Volumen" },
         { year: "2020", event: "Launch der neuen Plattform mit verbesserter Benutzerfreundlichkeit" },
         { year: "2024", event: "Uber CHF 2.5 Mrd. finanziertes Gesamtvolumen erreicht" },
       ],
@@ -37,7 +37,7 @@ const content = {
       items: [
         {
           title: "Transparenz",
-          description: "Offene Kommunikation und klare Konditionen fur alle Beteiligten.",
+          description: "Offene Kommunikation und klare Konditionen für alle Beteiligten.",
           icon: "eye",
         },
         {
@@ -59,7 +59,7 @@ const content = {
     },
     team: {
       title: "Unser Team",
-      text: "Ein erfahrenes Team aus Finanz-, Technologie- und Kundenservice-Experten arbeitet taglich daran, die beste Erfahrung fur unsere Nutzer zu schaffen. Mit Leidenschaft und Expertise entwickeln wir innovative Losungen fur die Finanzwelt von morgen.",
+      text: "Ein erfahrenes Team aus Finanz-, Technologie- und Kundenservice-Experten arbeitet taglich daran, die beste Erfahrung für unsere Nutzer zu schaffen. Mit Leidenschaft und Expertise entwickeln wir innovative Lösungen für die Finanzwelt von morgen.",
     },
     regulation: {
       title: "Regulierung & Sicherheit",
@@ -136,7 +136,7 @@ const content = {
       text: "An experienced team of finance, technology, and customer service experts works daily to create the best experience for our users. With passion and expertise, we develop innovative solutions for the financial world of tomorrow.",
     },
     regulation: {
-      title: "Regulation & Security",
+      title: "Régulation & Security",
       text: "Cashare is FINMA-regulated and subject to strict Swiss financial market laws. Your data and investments are safe with us.",
       badges: ["FINMA-regulated", "SRO Polyreg Member", "Swiss Made"],
     },
@@ -210,8 +210,8 @@ const content = {
       text: "Une equipe experimentee d'experts en finance, technologie et service client travaille quotidiennement pour creer la meilleure experience pour nos utilisateurs. Avec passion et expertise, nous developpons des solutions innovantes pour le monde financier de demain.",
     },
     regulation: {
-      title: "Regulation & Securite",
-      text: "Cashare est regulee par la FINMA et soumise aux strictes lois suisses sur les marches financiers. Vos donnees et investissements sont en securite chez nous.",
+      title: "Régulation & Sécurité",
+      text: "Cashare est regulee par la FINMA et soumise aux strictes lois suisses sur les marches financiers. Vos donnees et investissements sont en sécurité chez nous.",
       badges: ["Regulee FINMA", "Membre SRO Polyreg", "Swiss Made"],
     },
     links: [
@@ -386,7 +386,7 @@ export function UeberUns({ locale }: UeberUnsProps) {
         </div>
       </section>
 
-      {/* Regulation & Security */}
+      {/* Régulation & Security */}
       <section class="about-regulation">
         <div class="about-regulation__container">
           <div class="about-regulation__icon">

@@ -6,27 +6,27 @@ interface PartnersProps {
 
 const content = {
   de: {
-    backLink: { label: "Zuruck zu Uber uns", href: "/ueber-uns" },
+    backLink: { label: "Zurück zu Über uns", href: "/ueber-uns" },
     title: "Partner",
-    subtitle: "Starke Partnerschaften fur Ihren Erfolg",
+    subtitle: "Starke Partnerschaften für Ihren Erfolg",
     intro: {
       title: "Unsere Partnerschaften",
-      text: "Cashare hat uber die Jahre starke Partnerschaften mit renommierten Unternehmen aufgebaut. Diese Zusammenarbeit ermoglicht es uns, unseren Kunden und Anlegern erstklassige Dienstleistungen und zusatzliche Sicherheit zu bieten.",
+      text: "Cashare hat über die Jahre starke Partnerschaften mit renommierten Unternehmen aufgebaut. Diese Zusammenarbeit ermoglicht es uns, unseren Kunden und Anlegern erstklassige Dienstleistungen und zusatzliche Sicherheit zu bieten.",
     },
     categories: [
       {
         title: "Finanzpartner",
-        description: "Zusammenarbeit mit etablierten Finanzinstituten fur sichere und effiziente Transaktionen.",
+        description: "Zusammenarbeit mit etablierten Finanzinstituten für sichere und effiziente Transaktionen.",
         partners: ["PostFinance", "Swissquote", "Raiffeisen"],
       },
       {
         title: "Technologiepartner",
-        description: "Modernste Technologie fur optimale Sicherheit und Benutzerfreundlichkeit.",
+        description: "Modernste Technologie für optimale Sicherheit und Benutzerfreundlichkeit.",
         partners: ["AWS", "Intrum", "CRIF AG"],
       },
       {
         title: "Branchenverbande",
-        description: "Aktives Mitglied in fuhrenden Fintech- und Kreditverbanden.",
+        description: "Aktives Mitglied in führenden Fintech- und Kreditverbanden.",
         partners: ["Swiss Finance + Technology Association", "Verband Schweizerischer Kreditbanken"],
       },
     ],
@@ -41,7 +41,7 @@ const content = {
     },
     becomePartner: {
       title: "Partner werden",
-      text: "Sie mochten Partner von Cashare werden? Wir sind immer offen fur neue Kooperationen, die unseren Kunden Mehrwert bieten.",
+      text: "Sie mochten Partner von Cashare werden? Wir sind immer offen für neue Kooperationen, die unseren Kunden Mehrwert bieten.",
       cta: { label: "Kontakt aufnehmen", href: "mailto:partner@cashare.ch" },
     },
   },
@@ -66,8 +66,8 @@ const content = {
       },
       {
         title: "Industry Associations",
-        description: "Active member in leading fintech and credit associations.",
-        partners: ["Swiss Finance + Technology Association", "Association of Swiss Credit Banks"],
+        description: "Active member in leading fintech and crédit associations.",
+        partners: ["Swiss Finance + Technology Association", "Association of Swiss Crédit Banks"],
       },
     ],
     benefits: {
@@ -86,12 +86,12 @@ const content = {
     },
   },
   fr: {
-    backLink: { label: "Retour a A propos", href: "/fr/a-propos" },
+    backLink: { label: "Retour à À propos", href: "/fr/a-propos" },
     title: "Partenaires",
     subtitle: "Des partenariats solides pour votre succes",
     intro: {
       title: "Nos partenariats",
-      text: "Cashare a etabli de solides partenariats avec des entreprises renommees au fil des ans. Cette collaboration nous permet d'offrir a nos clients et investisseurs des services de premiere classe et une securite supplementaire.",
+      text: "Cashare a etabli de solides partenariats avec des entreprises renommees au fil des ans. Cette collaboration nous permet d'offrir a nos clients et investisseurs des services de premiere classe et une sécurité supplementaire.",
     },
     categories: [
       {
@@ -101,19 +101,19 @@ const content = {
       },
       {
         title: "Partenaires technologiques",
-        description: "Technologie de pointe pour une securite et une convivialite optimales.",
+        description: "Technologie de pointe pour une sécurité et une convivialite optimales.",
         partners: ["AWS", "Intrum", "CRIF AG"],
       },
       {
         title: "Associations professionnelles",
         description: "Membre actif des principales associations fintech et de credit.",
-        partners: ["Swiss Finance + Technology Association", "Association des banques de credit suisses"],
+        partners: ["Swiss Finance + Technology Association", "Association des banques de crédit suisses"],
       },
     ],
     benefits: {
       title: "Avantages de nos partenariats",
       items: [
-        { title: "Securite", desc: "Les normes les plus elevees grace a des partenaires renommes" },
+        { title: "Sécurité", desc: "Les normes les plus elevees grace a des partenaires renommes" },
         { title: "Innovation", desc: "Acces aux dernieres technologies" },
         { title: "Confiance", desc: "Les noms etablis renforcent la confiance" },
         { title: "Efficacite", desc: "Processus optimises grace a la collaboration" },

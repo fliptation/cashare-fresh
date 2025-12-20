@@ -16,10 +16,10 @@ const content = {
       { title: "Schnelle Abwicklung", description: "Automatisierte Prozesse ermoglichen schnelle Auszahlung" },
     ],
     products: {
-      title: "Unsere Finanzierungslosungen",
+      title: "Unsere Finanzierungslösungen",
       items: [
-        { title: "Privatkredit", description: "Personliche Kredite fur Privatpersonen bis CHF 250'000", href: "/so-funktionierts/privatkredit", icon: "user" },
-        { title: "KMU-Kredit", description: "Geschaftskredite fur kleine und mittlere Unternehmen", href: "/so-funktionierts/kmu", icon: "building" },
+        { title: "Privatkredit", description: "Personliche Kredite für Privatpersonen bis CHF 250'000", href: "/so-funktionierts/privatkredit", icon: "user" },
+        { title: "KMU-Kredit", description: "Geschaftskredite für kleine und mittlere Unternehmen", href: "/so-funktionierts/kmu", icon: "building" },
         { title: "Hypothek", description: "Immobilienfinanzierung zu attraktiven Konditionen", href: "/so-funktionierts/hypothek", icon: "home" },
       ],
     },
@@ -97,7 +97,7 @@ const content = {
   },
   fr: {
     title: "Comment ca marche",
-    subtitle: "Un credit aussi individuel que vous",
+    subtitle: "Un crédit aussi individuel que vous",
     heroText: "Cashare vous permet de realiser vos reves grace au crowdlending - des credits jusqu'a CHF 1 million sans banque traditionnelle.",
     backLink: { label: "Vers l'accueil", href: "/fr" },
     advantages: [
@@ -108,17 +108,17 @@ const content = {
     products: {
       title: "Nos solutions de financement",
       items: [
-        { title: "Credit prive", description: "Prets personnels pour particuliers jusqu'a CHF 250'000", href: "/fr/comment-ca-marche/credit-prive", icon: "user" },
-        { title: "Credit PME", description: "Credits commerciaux pour petites et moyennes entreprises", href: "/fr/comment-ca-marche/pme", icon: "building" },
+        { title: "Crédit privé", description: "Prets personnels pour particuliers jusqu'a CHF 250'000", href: "/fr/comment-ca-marche/credit-privé", icon: "user" },
+        { title: "Crédit PME", description: "Credits commerciaux pour petites et moyennes entreprises", href: "/fr/comment-ca-marche/pme", icon: "building" },
         { title: "Hypotheque", description: "Financement immobilier a des conditions attractives", href: "/fr/comment-ca-marche/hypotheque", icon: "home" },
       ],
     },
     process: {
       title: "Le processus en 3 etapes",
       steps: [
-        { step: "1", title: "Demande & Verification", description: "Soumettez votre demande de credit en ligne. Nous verifions automatiquement vos informations." },
+        { step: "1", title: "Demande & Verification", description: "Soumettez votre demande de crédit en ligne. Nous verifions automatiquement vos informations." },
         { step: "2", title: "Financement", description: "Une fois approuve, votre projet est presente aux investisseurs et finance." },
-        { step: "3", title: "Versement", description: "Le montant du credit est transfere electroniquement sur votre compte bancaire." },
+        { step: "3", title: "Versement", description: "Le montant du crédit est transfere electroniquement sur votre compte bancaire." },
       ],
     },
     stats: {

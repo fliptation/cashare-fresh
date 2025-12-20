@@ -168,7 +168,7 @@ const content = {
         {
           icon: "refinance",
           title: "Refinancing",
-          description: "Credit consolidation and debt optimization.",
+          description: "Crédit consolidation and debt optimization.",
         },
         {
           icon: "liquidity",
@@ -219,7 +219,7 @@ const content = {
       items: [
         {
           title: "Fast Decision",
-          description: "Credit decision within 48 hours.",
+          description: "Crédit decision within 48 hours.",
         },
         {
           title: "Flexible Terms",
@@ -252,23 +252,23 @@ const content = {
   fr: {
     hero: {
       title: "Solutions de financement flexibles pour votre entreprise",
-      subtitle: "Trouvez le bon credit PME chez nous",
+      subtitle: "Trouvez le bon crédit PME chez nous",
       cta: "Demander un credit",
     },
     loanTypes: {
       title: "Nos types de credit",
       items: [
         {
-          title: "Credit amortissable",
+          title: "Crédit amortissable",
           description:
             "Structure de remboursement mensuel ou le montant total est reparti sur toute la duree du pret.",
-          cta: "Demander un credit amortissable",
+          cta: "Demander un crédit amortissable",
         },
         {
-          title: "Credit in fine",
+          title: "Crédit in fine",
           description:
             "Credits de 1 a 36 mois ou le capital plus les interets sont rembourses en une seule fois a echeance.",
-          cta: "Demander un credit in fine",
+          cta: "Demander un crédit in fine",
         },
       ],
     },
@@ -341,7 +341,7 @@ const content = {
       items: [
         {
           title: "Decision rapide",
-          description: "Decision de credit sous 48 heures.",
+          description: "Decision de crédit sous 48 heures.",
         },
         {
           title: "Durees flexibles",
@@ -360,15 +360,15 @@ const content = {
     trust: {
       stats: [
         { value: "60'000+", label: "Clients" },
-        { value: "CHF 2.5 Mrd", label: "Demandes de credit verifiees" },
+        { value: "CHF 2.5 Mrd", label: "Demandes de crédit verifiees" },
         { value: "2008", label: "Fondee" },
       ],
     },
     cta: {
-      title: "Pret pour votre credit PME?",
+      title: "Pret pour votre crédit PME?",
       subtitle:
         "Commencez votre demande maintenant et obtenez rapidement le financement dont votre entreprise a besoin.",
-      button: "Demander un credit PME maintenant",
+      button: "Demander un crédit PME maintenant",
     },
   },
 };

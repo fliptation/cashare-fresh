@@ -8,8 +8,8 @@ const content = {
   de: {
     title: "Hypothek",
     subtitle: "So funktioniert Ihre Immobilienfinanzierung",
-    heroText: "Optimale Hypothekenlosungen fur Ihren Immobilienkauf - uber Crowdlending statt traditioneller Bank.",
-    backLink: { label: "Zuruck zu So funktioniert's", href: "/so-funktionierts" },
+    heroText: "Optimale Hypothekenlösungen für Ihren Immobilienkauf - über Crowdlending statt traditioneller Bank.",
+    backLink: { label: "Zurück zu So funktioniert's", href: "/so-funktionierts" },
     advantages: [
       { title: "Kosteneffizient", description: "Als Vermittler reduzieren wir Bankkosten und geben Einsparungen weiter" },
       { title: "Attraktive Zinsen", description: "Ab 2.1% dank unserer modernen Plattform" },
@@ -18,15 +18,15 @@ const content = {
     products: {
       title: "Unsere Hypothekenprodukte",
       items: [
-        { title: "Private Hypothek", description: "Hypotheken fur Privatpersonen" },
+        { title: "Private Hypothek", description: "Hypotheken für Privatpersonen" },
         { title: "Immobilienkredit", description: "Darlehen mit Grundpfand als Sicherheit" },
-        { title: "Mezzanine-Finanzierung", description: "Erganzende Finanzierungslosungen" },
+        { title: "Mezzanine-Finanzierung", description: "Erganzende Finanzierungslösungen" },
       ],
     },
     process: {
       title: "Der Ablauf in 3 Schritten",
       steps: [
-        { step: "1", title: "Online-Antrag", description: "Reichen Sie Ihren Hypothekenantrag uber unsere Plattform ein." },
+        { step: "1", title: "Online-Antrag", description: "Reichen Sie Ihren Hypothekenantrag über unsere Plattform ein." },
         { step: "2", title: "Partner-Prufung", description: "Cashare bewertet Ihren Antrag und sichert optimale Konditionen." },
         { step: "3", title: "Schnelle Auszahlung", description: "Die Mittel werden elektronisch auf Ihr Bankkonto uberwiesen." },
       ],
@@ -98,8 +98,8 @@ const content = {
     products: {
       title: "Nos produits hypothecaires",
       items: [
-        { title: "Hypotheque privee", description: "Hypotheques pour particuliers" },
-        { title: "Credit immobilier", description: "Prets avec garantie hypothecaire" },
+        { title: "Hypotheque privée", description: "Hypotheques pour particuliers" },
+        { title: "Crédit immobilier", description: "Prets avec garantie hypothecaire" },
         { title: "Financement mezzanine", description: "Solutions de financement complementaires" },
       ],
     },

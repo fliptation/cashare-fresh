@@ -132,7 +132,7 @@ const content = {
           icon: "refinance",
           title: "Refinancing",
           description:
-            "Consolidate high-interest debts from credit cards and consumer loans at better rates.",
+            "Consolidate high-interest debts from crédit cards and consumer loans at better rates.",
         },
         {
           icon: "education",
@@ -233,7 +233,7 @@ const content = {
   },
   fr: {
     hero: {
-      title: "Un credit personnel aussi unique que vous",
+      title: "Un crédit personnel aussi unique que vous",
       subtitle:
         "Obtenez un financement en quelques etapes. Realisez vos projets rapidement et simplement avec Cashare.",
       cta: "Demander un credit",
@@ -245,11 +245,11 @@ const content = {
           icon: "refinance",
           title: "Refinancement",
           description:
-            "Consolidez vos dettes a taux eleve de cartes de credit et prets a la consommation a de meilleures conditions.",
+            "Consolidez vos dettes a taux eleve de cartes de crédit et prets a la consommation a de meilleures conditions.",
         },
         {
           icon: "education",
-          title: "Credit formation",
+          title: "Crédit formation",
           description:
             "Financez votre formation continue et investissez dans votre carriere.",
         },
@@ -261,19 +261,19 @@ const content = {
         },
         {
           icon: "car",
-          title: "Credit auto",
+          title: "Crédit auto",
           description:
             "Conditions flexibles pour l'achat d'un vehicule neuf ou d'occasion.",
         },
         {
           icon: "celebration",
-          title: "Credit consommation",
+          title: "Crédit consommation",
           description:
             "Financez des occasions speciales comme mariages et lunes de miel.",
         },
         {
           icon: "health",
-          title: "Credit sante",
+          title: "Crédit sante",
           description:
             "Financez soins dentaires et interventions medicales.",
         },
@@ -285,12 +285,12 @@ const content = {
         {
           title: "Remplir la demande",
           description:
-            "Remplissez la demande en ligne et telechargez les documents requis.",
+            "Remplissez la demande en ligne et téléchargez les documents requis.",
         },
         {
           title: "Verification rapide",
           description:
-            "Une fois approuve, votre credit est publie sur la plateforme pour les investisseurs.",
+            "Une fois approuve, votre crédit est publie sur la plateforme pour les investisseurs.",
         },
         {
           title: "Versement du credit",
@@ -314,7 +314,7 @@ const content = {
       stats: [
         { value: "2008", label: "Fondee" },
         { value: "60'000+", label: "Clients" },
-        { value: "CHF 2.5 Mrd", label: "Demandes de credit verifiees" },
+        { value: "CHF 2.5 Mrd", label: "Demandes de crédit verifiees" },
       ],
       features: [
         {
@@ -339,9 +339,9 @@ const content = {
       ],
     },
     cta: {
-      title: "Pret pour votre credit personnel?",
+      title: "Pret pour votre crédit personnel?",
       subtitle: "Commencez votre demande maintenant - rapide, simple et transparent.",
-      button: "Demander un credit maintenant",
+      button: "Demander un crédit maintenant",
     },
   },
 };
@@ -386,7 +386,7 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
         </div>
       </section>
 
-      {/* Credit Types */}
+      {/* Crédit Types */}
       <section class="section section--light">
         <div class="container">
           <div class="section__header">
