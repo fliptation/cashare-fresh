@@ -339,7 +339,12 @@ export default function Styleguide() {
       <div class="top-bar top-bar--styleguide">
         <div class="top-bar__container">
           <a href="/" class="top-bar__back">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <svg
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
               <path d="M10 12L6 8l4-4" />
             </svg>
             Back to Site
@@ -381,7 +386,8 @@ export default function Styleguide() {
               <span class="styleguide__label">Design System</span>
               <h1 class="styleguide__title">Cashare Styleguide</h1>
               <p class="styleguide__subtitle">
-                Alli Komponentä, Farbä und Schriftä wo mir z'Zug so bruuchid. Eifach schön, oder?
+                Alli Komponentä, Farbä und Schriftä wo mir z'Zug so bruuchid.
+                Eifach schön, oder?
               </p>
             </header>
 
@@ -396,8 +402,9 @@ export default function Styleguide() {
                       20. Dezämber 2024
                     </span>
                     <p>
-                      Erscht richtigi Version! Alli Komponentä, Farbä und Schriftä sind jetzt parat.
-                      Mir händ mega büezt - jetzt chamer loslege! 🎉
+                      Erscht richtigi Version! Alli Komponentä, Farbä und
+                      Schriftä sind jetzt parat. Mir händ mega büezt - jetzt
+                      chamer loslege! 🎉
                     </p>
                   </div>
                   <div class="styleguide__changelog-entry">
@@ -406,8 +413,9 @@ export default function Styleguide() {
                       15. Dezämber 2024
                     </span>
                     <p>
-                      Beta-Version mit Chnöpf, Chärtli und Formular. Isch nonig perfekt gsi,
-                      aber mir händ dra gschaffet wie d'Zuger am Chriesitopf.
+                      Beta-Version mit Chnöpf, Chärtli und Formular. Isch nonig
+                      perfekt gsi, aber mir händ dra gschaffet wie d'Zuger am
+                      Chriesitopf.
                     </p>
                   </div>
                 </div>
@@ -422,7 +430,8 @@ export default function Styleguide() {
                 <h3 class="styleguide__group-title">Logo Variantä</h3>
                 <p class="styleguide__description">
                   S'Cashare Logo in verschidene Farbä - je noch Hintergrund.
-                  Bitte nöd verdrehe oder komisch skaliere, susch git's Ärger! 😤
+                  Bitte nöd verdrehe oder komisch skaliere, susch git's Ärger!
+                  😤
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__logo-grid">
@@ -497,8 +506,8 @@ export default function Styleguide() {
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Vorschau</h3>
                 <p class="styleguide__description">
-                  Das Bildli wo erschint wenn öpper üsi Syte teilt uf WhatsApp, Facebook und so.
-                  Sieht schön us, oder? 😎
+                  Das Bildli wo erschint wenn öpper üsi Syte teilt uf WhatsApp,
+                  Facebook und so. Sieht schön us, oder? 😎
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__og-image-wrapper">
@@ -522,9 +531,11 @@ export default function Styleguide() {
                     <p class="alert__title">PNG Export bruucht's! 🖼️</p>
                     <p class="alert__message">
                       Social Media checkt SVG nöd. So gaht's:
-                      <br />1. Mach <code>/images/og-image.svg</code> im Browser uf
+                      <br />1. Mach <code>/images/og-image.svg</code>{" "}
+                      im Browser uf
                       <br />2. Screenshot mache (1200x630px)
-                      <br />3. Als <code>og-image.png</code> i <code>/static/images/</code> speichere
+                      <br />3. Als <code>og-image.png</code> i{" "}
+                      <code>/static/images/</code> speichere
                       <br />Eifach, gäll? 👍
                     </p>
                   </div>
@@ -535,15 +546,28 @@ export default function Styleguide() {
                 <h3 class="styleguide__group-title">Meta Tags</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__code-block">
-                    <code>&lt;meta property="og:image" content="https://cashare.ch/images/og-image.png" /&gt;</code>
+                    <code>
+                      &lt;meta property="og:image"
+                      content="https://cashare.ch/images/og-image.png" /&gt;
+                    </code>
                     <br />
-                    <code>&lt;meta property="og:image:width" content="1200" /&gt;</code>
+                    <code>
+                      &lt;meta property="og:image:width" content="1200" /&gt;
+                    </code>
                     <br />
-                    <code>&lt;meta property="og:image:height" content="630" /&gt;</code>
+                    <code>
+                      &lt;meta property="og:image:height" content="630" /&gt;
+                    </code>
                     <br />
-                    <code>&lt;meta name="twitter:card" content="summary_large_image" /&gt;</code>
+                    <code>
+                      &lt;meta name="twitter:card" content="summary_large_image"
+                      /&gt;
+                    </code>
                     <br />
-                    <code>&lt;meta name="twitter:image" content="https://cashare.ch/images/og-image.png" /&gt;</code>
+                    <code>
+                      &lt;meta name="twitter:image"
+                      content="https://cashare.ch/images/og-image.png" /&gt;
+                    </code>
                   </div>
                 </div>
               </div>
@@ -637,7 +661,8 @@ export default function Styleguide() {
                 <div class="styleguide__demo">
                   <div class="styleguide__gradient-preview gradient-hero"></div>
                   <p class="styleguide__gradient-label">
-                    De Hero Gradient - so schön wie en Sunneuntergang überm Rigi! 🌅
+                    De Hero Gradient - so schön wie en Sunneuntergang überm
+                    Rigi! 🌅
                   </p>
                 </div>
               </div>
@@ -650,7 +675,8 @@ export default function Styleguide() {
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">D'Schrift</h3>
                 <p class="styleguide__description">
-                  Plus Jakarta Sans - die schönschti Schrift sit em Gutenberg! 📜
+                  Plus Jakarta Sans - die schönschti Schrift sit em Gutenberg!
+                  📜
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__font-samples">
@@ -695,7 +721,8 @@ export default function Styleguide() {
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Abstands-Skala</h3>
                 <p class="styleguide__description">
-                  Konsistenti Abständ basierend uf 4px - so ordentlich wie d'Schwiizer Pünktlichkeit! 🕐
+                  Konsistenti Abständ basierend uf 4px - so ordentlich wie
+                  d'Schwiizer Pünktlichkeit! 🕐
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__spacing-scale">
@@ -775,7 +802,8 @@ export default function Styleguide() {
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Icon Sammlig</h3>
                 <p class="styleguide__description">
-                  Klick uf es Icon zum de Name kopiere. Eifacher als Chriesichueche bache! 🍒
+                  Klick uf es Icon zum de Name kopiere. Eifacher als
+                  Chriesichueche bache! 🍒
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__icons-grid">
@@ -924,7 +952,8 @@ export default function Styleguide() {
                       <div class="alert__content">
                         <p class="alert__title">Erfolg</p>
                         <p class="alert__message">
-                          Alles im grüene Bereich! Hät klappt wie am Schnürli. 🎯
+                          Alles im grüene Bereich! Hät klappt wie am Schnürli.
+                          🎯
                         </p>
                       </div>
                     </div>
@@ -936,7 +965,8 @@ export default function Styleguide() {
                       <div class="alert__content">
                         <p class="alert__title">Obacht!</p>
                         <p class="alert__message">
-                          Pass uf, da stimmt öppis nöd ganz. Lueg mol gnauer ane! ⚠️
+                          Pass uf, da stimmt öppis nöd ganz. Lueg mol gnauer
+                          ane! ⚠️
                         </p>
                       </div>
                     </div>
@@ -948,7 +978,8 @@ export default function Styleguide() {
                       <div class="alert__content">
                         <p class="alert__title">Hoppla!</p>
                         <p class="alert__message">
-                          Da isch öppis schiefgloffe. Probier's nomal oder rüef üs aa! 📞
+                          Da isch öppis schiefgloffe. Probier's nomal oder rüef
+                          üs aa! 📞
                         </p>
                       </div>
                     </div>
@@ -1139,7 +1170,9 @@ export default function Styleguide() {
 
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Interaktivi Charte</h3>
-                <p class="styleguide__description">Fahre drüber für de Lift-Effekt - wie im Lift uf de Rigi! 🚡</p>
+                <p class="styleguide__description">
+                  Fahre drüber für de Lift-Effekt - wie im Lift uf de Rigi! 🚡
+                </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__cards-row">
                     <div class="card card--interactive styleguide__card-preview">
@@ -1356,8 +1389,8 @@ export default function Styleguide() {
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">FAQ Akkordeon</h3>
                 <p class="styleguide__description">
-                  Klappsch uf und zue - wie es Schwyzerörgeli! 🎵
-                  Verwendet <code>.faq__*</code> Klasse.
+                  Klappsch uf und zue - wie es Schwyzerörgeli! 🎵 Verwendet{" "}
+                  <code>.faq__*</code> Klasse.
                 </p>
                 <div class="faq__list">
                   <details class="faq__item" open>
@@ -1632,8 +1665,8 @@ export default function Styleguide() {
                     <p class="alert__title">Weniäger Bewegi</p>
                     <p class="alert__message">
                       Alli Animationä werded abgschaltet wenn{" "}
-                      <code>prefers-reduced-motion: reduce</code> aktiv isch.
-                      Mir dänked au a die wo's gschwind wird! 🤗
+                      <code>prefers-reduced-motion: reduce</code>{" "}
+                      aktiv isch. Mir dänked au a die wo's gschwind wird! 🤗
                     </p>
                   </div>
                 </div>
@@ -1719,7 +1752,8 @@ export default function Styleguide() {
                 <h3 class="styleguide__group-title">404 - Syte nöd gfunde</h3>
                 <p class="styleguide__description">
                   Wenns mol schiefgaht - aber stylisch! Finanz-Emojis wirbled
-                  ums Zäntrum wie s'Gäld ufem Bankkonto. D'"0" isch es 🪙 Münzli!
+                  ums Zäntrum wie s'Gäld ufem Bankkonto. D'"0" isch es 🪙
+                  Münzli!
                 </p>
                 <div class="styleguide__demo">
                   <div class="error-page error-page--animated error-page--preview">
@@ -1741,7 +1775,7 @@ export default function Styleguide() {
                             4
                           </span>
                           <span class="error-page__code error-page__code--emoji error-page__code--preview">
-                            🪙
+                            🌑
                           </span>
                           <span class="error-page__code error-page__code--animated error-page__code--preview">
                             4
@@ -1755,7 +1789,9 @@ export default function Styleguide() {
                           <button class="btn btn--primary btn--sm">
                             Zur Startseite
                           </button>
-                          <button class="btn btn--outline btn--sm">Kontakt</button>
+                          <button class="btn btn--outline btn--sm">
+                            Kontakt
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -1769,23 +1805,23 @@ export default function Styleguide() {
                   <div class="styleguide__code-block">
                     <code>.error-page</code> - Hauptcontainer
                     <br />
-                    <code>.error-page--animated</code> - Aktiviert
-                    Emoji-Animationen
+                    <code>.error-page--animated</code>{" "}
+                    - Aktiviert Emoji-Animationen
                     <br />
-                    <code>.error-page__emoji-vortex</code> - Container für
-                    wirbelnde Emojis
+                    <code>.error-page__emoji-vortex</code>{" "}
+                    - Container für wirbelnde Emojis
                     <br />
-                    <code>.error-page__emoji--ring-1/2/3</code> - Verschiedene
-                    Orbit-Ringe
+                    <code>.error-page__emoji--ring-1/2/3</code>{" "}
+                    - Verschiedene Orbit-Ringe
                     <br />
-                    <code>.error-page__code-wrapper</code> - Flex-Container für
-                    4🪙4
+                    <code>.error-page__code-wrapper</code>{" "}
+                    - Flex-Container für 4🪙4
                     <br />
-                    <code>.error-page__code--emoji</code> - Coin-Emoji mit
-                    Spin-Animation
+                    <code>.error-page__code--emoji</code>{" "}
+                    - Coin-Emoji mit Spin-Animation
                     <br />
-                    <code>.error-page__code--animated</code> - Float-Animation
-                    für Zahlen
+                    <code>.error-page__code--animated</code>{" "}
+                    - Float-Animation für Zahlen
                   </div>
                 </div>
               </div>
@@ -1809,12 +1845,15 @@ export default function Styleguide() {
 
             {/* 19. Interactive Components Section */}
             <section id="components" class="styleguide__section">
-              <h2 class="styleguide__section-title">Interaktivi Komponentä 🎮</h2>
+              <h2 class="styleguide__section-title">
+                Interaktivi Komponentä 🎮
+              </h2>
 
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Krediträchner</h3>
                 <p class="styleguide__description">
-                  De interaktivi Krediträchner - rächnet schneller als mer "Zuger Chriesi" säge cha! 🍒
+                  De interaktivi Krediträchner - rächnet schneller als mer
+                  "Zuger Chriesi" säge cha! 🍒
                 </p>
                 <div class="styleguide__component-preview">
                   <span class="styleguide__component-label">
@@ -1867,7 +1906,10 @@ export default function Styleguide() {
 
             {/* Footer */}
             <footer class="styleguide__footer">
-              <p>Cashare Design System &bull; Version 1.0 &bull; Made with ❤️ z'Zug</p>
+              <p>
+                Cashare Design System &bull; Version 1.0 &bull; Made with ❤️
+                z'Zug
+              </p>
               <a href="/" class="styleguide__footer-link">
                 &larr; Zrugg zur Homepage
               </a>
