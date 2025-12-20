@@ -14,13 +14,13 @@ const content = {
     privatinvestor: {
       title: "Privatinvestoren",
       description: "Investieren Sie direkt in Kredite und erzielen Sie attraktive Renditen. Diversifizieren Sie Ihr Portfolio mit Private Debt.",
-      href: "/privatinvestoren",
+      href: "/investieren/privatinvestoren",
       cta: "Mehr erfahren",
     },
     institutional: {
       title: "Institutionelle Investoren",
       description: "Professionelle Losungen fur Banken, Pensionskassen und Vermogensverwalter mit massgeschneiderten Anlagestrategien.",
-      href: "/institutionelle-investoren",
+      href: "/investieren/institutionelle",
       cta: "Mehr erfahren",
     },
     benefits: {
@@ -85,13 +85,13 @@ const content = {
     privatinvestor: {
       title: "Private Investors",
       description: "Invest directly in loans and achieve attractive returns. Diversify your portfolio with Private Debt.",
-      href: "/en/private-investors",
+      href: "/en/invest/private-investors",
       cta: "Learn more",
     },
     institutional: {
       title: "Institutional Investors",
       description: "Professional solutions for banks, pension funds and asset managers with tailored investment strategies.",
-      href: "/en/institutional-investors",
+      href: "/en/invest/institutional",
       cta: "Learn more",
     },
     benefits: {
@@ -156,13 +156,13 @@ const content = {
     privatinvestor: {
       title: "Investisseurs prives",
       description: "Investissez directement dans des credits et obtenez des rendements attractifs. Diversifiez votre portefeuille avec le Private Debt.",
-      href: "/fr/investisseurs-prives",
+      href: "/fr/investir/investisseurs-prives",
       cta: "En savoir plus",
     },
     institutional: {
       title: "Investisseurs institutionnels",
       description: "Solutions professionnelles pour banques, caisses de pension et gestionnaires de fortune avec des strategies d'investissement sur mesure.",
-      href: "/fr/investisseurs-institutionnels",
+      href: "/fr/investir/institutionnels",
       cta: "En savoir plus",
     },
     benefits: {

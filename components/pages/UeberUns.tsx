@@ -60,8 +60,8 @@ const content = {
       phone: "+41 41 544 61 70",
     },
     links: {
-      crowdlending: { title: "Was ist Crowdlending?", href: "/crowdlending" },
-      statistics: { title: "Statistik", href: "/statistik" },
+      crowdlending: { title: "Was ist Crowdlending?", href: "/ueber-uns/crowdlending" },
+      statistics: { title: "Statistik", href: "/ueber-uns/statistik" },
       press: { title: "Presse", href: "/presse" },
       careers: { title: "Karriere", href: "/karriere" },
     },
@@ -121,8 +121,8 @@ const content = {
       phone: "+41 41 544 61 70",
     },
     links: {
-      crowdlending: { title: "What is Crowdlending?", href: "/en/crowdlending" },
-      statistics: { title: "Statistics", href: "/en/statistics" },
+      crowdlending: { title: "What is Crowdlending?", href: "/en/about/crowdlending" },
+      statistics: { title: "Statistics", href: "/en/about/statistics" },
       press: { title: "Press", href: "/en/press" },
       careers: { title: "Careers", href: "/en/careers" },
     },
@@ -182,8 +182,8 @@ const content = {
       phone: "+41 41 544 61 70",
     },
     links: {
-      crowdlending: { title: "Qu'est-ce que le crowdlending?", href: "/fr/crowdlending" },
-      statistics: { title: "Statistiques", href: "/fr/statistiques" },
+      crowdlending: { title: "Qu'est-ce que le crowdlending?", href: "/fr/a-propos/crowdlending" },
+      statistics: { title: "Statistiques", href: "/fr/a-propos/statistiques" },
       press: { title: "Presse", href: "/fr/presse" },
       careers: { title: "Carrieres", href: "/fr/carrieres" },
     },
