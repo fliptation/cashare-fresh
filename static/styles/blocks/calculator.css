@@ -4,7 +4,8 @@
 
 /* Keyframes for micro-interactions */
 @keyframes value-pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -13,7 +14,8 @@
 }
 
 @keyframes value-glow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -195,11 +197,11 @@
 }
 
 .calculator__results-value--animated::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: -4px;
   border-radius: 6px;
-  background: var(--color-primary, #00B9D0);
+  background: var(--color-primary, #00b9d0);
   opacity: 0;
   z-index: -1;
   filter: blur(8px);
@@ -267,9 +269,7 @@
   margin: 0 auto;
   background: var(--color-white);
   border-radius: var(--radius-lg);
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.03),
-    0 2px 4px rgba(0, 0, 0, 0.05),
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.05),
     0 12px 24px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
@@ -511,7 +511,11 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   border-radius: calc(var(--radius-xl) + 1px);
   opacity: 0.4;
   transition: opacity 0.3s ease;
@@ -525,7 +529,11 @@
   display: flex;
   border-bottom: 1px solid var(--color-border);
   position: relative;
-  background: linear-gradient(to bottom, var(--color-bg-light), var(--color-white));
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg-light),
+    var(--color-white)
+  );
 }
 
 .loan-calculator__tab {
@@ -558,7 +566,11 @@
   left: 0;
   width: 50%;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
   border-radius: 3px 3px 0 0;
@@ -607,6 +619,7 @@
   font-weight: 700;
   font-size: var(--text-base);
   color: var(--color-gray-dark);
+  padding-right: 1rem;
 }
 
 .loan-calculator__slider-wrapper {
@@ -616,7 +629,11 @@
 
 .loan-calculator__results {
   position: relative;
-  background: linear-gradient(135deg, var(--color-bg-light) 0%, rgba(0, 181, 206, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-bg-light) 0%,
+    rgba(0, 181, 206, 0.05) 100%
+  );
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   border: 1px solid rgba(0, 115, 153, 0.08);
@@ -625,20 +642,29 @@
 
 /* Results Section Top Accent */
 .loan-calculator__results::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   border-radius: 3px 3px 0 0;
 }
 
 /* Shimmer Animation for Promo Badge */
 @keyframes shimmer {
-  0%, 100% { left: -100%; }
-  50% { left: 100%; }
+  0%,
+  100% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
 }
 
 .loan-calculator__promo {
@@ -651,20 +677,29 @@
   letter-spacing: 0.08em;
   padding: var(--space-3);
   margin-bottom: var(--space-4);
-  background: linear-gradient(135deg, rgba(0, 115, 153, 0.06) 0%, rgba(0, 181, 206, 0.08) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 115, 153, 0.06) 0%,
+    rgba(0, 181, 206, 0.08) 100%
+  );
   border: 1px solid rgba(0, 115, 153, 0.1);
   border-radius: var(--radius-sm);
   overflow: hidden;
 }
 
 .loan-calculator__promo::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
   animation: shimmer 3s ease-in-out infinite;
 }
 
@@ -688,21 +723,24 @@
   margin: 0 calc(-1 * var(--space-3));
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: var(--radius-sm);
-  transition:
-    background-color 0.2s ease,
+  transition: background-color 0.2s ease,
     transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* Row Hover Accent Indicator */
 .loan-calculator__results-row::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%) scaleY(0);
   width: 3px;
   height: 60%;
-  background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(
+    180deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   border-radius: 2px;
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -773,8 +811,7 @@
   font-weight: 700;
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--color-primary) 0%, #006080 100%);
-  box-shadow:
-    0 4px 14px 0 rgba(0, 115, 153, 0.25),
+  box-shadow: 0 4px 14px 0 rgba(0, 115, 153, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -782,8 +819,7 @@
 .loan-calculator__action .btn:hover {
   transform: translateY(-2px);
   background: linear-gradient(135deg, #006080 0%, var(--color-primary) 100%);
-  box-shadow:
-    0 8px 24px 0 rgba(0, 115, 153, 0.35),
+  box-shadow: 0 8px 24px 0 rgba(0, 115, 153, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 

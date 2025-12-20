@@ -30,6 +30,9 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 60px;
+  @media (width > 768px) {
+    padding-inline: 1.25rem;
+  }
 }
 
 /* Ensure all content is above the animated background */
@@ -41,6 +44,9 @@
 /* Left column - Text content */
 .hero__left {
   color: var(--color-gray-dark);
+  @media (width < 768px) {
+    padding-inline: 1.25rem;
+  }
 }
 
 /* Right column - Calculator */
@@ -56,15 +62,12 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.02),
-    0 4px 6px -1px rgba(0, 0, 0, 0.04),
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 4px 6px -1px rgba(0, 0, 0, 0.04),
     0 20px 25px -5px rgba(0, 0, 0, 0.06),
     0 60px 80px -20px rgba(0, 115, 153, 0.12);
   border-radius: 20px;
   margin: 0;
-  transition:
-    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
     background 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -72,9 +75,7 @@
 .hero__right .loan-calculator:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.95);
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.02),
-    0 8px 12px -2px rgba(0, 0, 0, 0.05),
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 8px 12px -2px rgba(0, 0, 0, 0.05),
     0 30px 40px -10px rgba(0, 0, 0, 0.08),
     0 80px 100px -25px rgba(0, 115, 153, 0.18);
 }

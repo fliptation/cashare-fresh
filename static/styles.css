@@ -2317,7 +2317,7 @@ a:hover {
 }
 
 .form-group__checkbox input[type="checkbox"]:checked::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 4px;
   top: 1px;
