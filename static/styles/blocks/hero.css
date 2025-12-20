@@ -54,30 +54,58 @@
   position: relative;
 }
 
-/* Calculator in hero - Glassmorphism Premium Effect */
+/* Calculator in hero - Ultra Frosty Glass Effect */
 .hero__right .loan-calculator {
   position: relative;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 4px 6px -1px rgba(0, 0, 0, 0.04),
-    0 20px 25px -5px rgba(0, 0, 0, 0.06),
-    0 60px 80px -20px rgba(0, 115, 153, 0.12);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(28px) saturate(1.2);
+  -webkit-backdrop-filter: blur(28px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   margin: 0;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    background 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__right .loan-calculator:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 8px 12px -2px rgba(0, 0, 0, 0.05),
-    0 30px 40px -10px rgba(0, 0, 0, 0.08),
-    0 80px 100px -25px rgba(0, 115, 153, 0.18);
+/* Override text colors for frosty glass - all dark */
+.hero__right .loan-calculator,
+.hero__right .loan-calculator .loan-calculator__field-label,
+.hero__right .loan-calculator .loan-calculator__tab,
+.hero__right .loan-calculator .loan-calculator__promo,
+.hero__right .loan-calculator .loan-calculator__disclaimer,
+.hero__right .loan-calculator .loan-calculator__results-col,
+.hero__right .loan-calculator .loan-calculator__results-header,
+.hero__right .loan-calculator .loan-calculator__results-subtext,
+.hero__right .loan-calculator .input-group__prefix,
+.hero__right .loan-calculator .input-group__suffix,
+.hero__right .loan-calculator .input-group__input,
+.hero__right .loan-calculator .calculator__slider-labels,
+.hero__right .loan-calculator .form-group__checkbox span {
+  color: var(--color-gray-dark);
+}
+
+/* Input fields - frosty inner glass */
+.hero__right .loan-calculator .input-group__input {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Results rows - subtle frosty backdrop */
+.hero__right .loan-calculator .loan-calculator__results-row {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Results header - transparent */
+.hero__right .loan-calculator .loan-calculator__results-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Monthly rate value - accent color for emphasis */
+.hero__right .loan-calculator .loan-calculator__results-value {
+  color: var(--color-primary);
 }
 
 /* ==========================================================================

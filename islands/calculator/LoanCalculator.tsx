@@ -306,6 +306,7 @@ export default function LoanCalculator({
                 min={1000}
                 max={1000000}
                 step={500}
+                style={`--slider-fill: ${((amount.value - 1000) / (1000000 - 1000)) * 100}%`}
               />
               <div class="calculator__slider-labels">
                 <span>1'000</span>
@@ -343,6 +344,7 @@ export default function LoanCalculator({
                 min={1}
                 max={60}
                 step={1}
+                style={`--slider-fill: ${((lifetime.value - 1) / (60 - 1)) * 100}%`}
               />
               <div class="calculator__slider-labels">
                 <span>1 {t("month")}</span>

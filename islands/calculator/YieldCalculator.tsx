@@ -208,6 +208,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
               step="500"
               min="100"
               max="1000000"
+              style={`--slider-fill: ${((amount.value - 100) / (1000000 - 100)) * 100}%`}
             />
             <div class="yield-calculator__slider-labels">
               <span>{t("CHF")} 100</span>
@@ -246,6 +247,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
               step="1"
               min="1"
               max="60"
+              style={`--slider-fill: ${((months.value - 1) / (60 - 1)) * 100}%`}
             />
             <div class="yield-calculator__slider-labels">
               <span>1 {t("month")}</span>
@@ -284,6 +286,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
               step="0.1"
               min="1"
               max="15"
+              style={`--slider-fill: ${((interestRate.value - 1) / (15 - 1)) * 100}%`}
             />
             <div class="yield-calculator__slider-labels">
               <span>1%</span>

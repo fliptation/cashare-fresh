@@ -511,18 +511,9 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
   border-radius: calc(var(--radius-xl) + 1px);
   opacity: 0.4;
   transition: opacity 0.3s ease;
-}
-
-.loan-calculator:hover::before {
-  opacity: 0.7;
 }
 
 .loan-calculator__tabs {
@@ -640,22 +631,6 @@
   overflow: hidden;
 }
 
-/* Results Section Top Accent */
-.loan-calculator__results::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  border-radius: 3px 3px 0 0;
-}
-
 /* Shimmer Animation for Promo Badge */
 @keyframes shimmer {
   0%,
@@ -713,6 +688,58 @@
   padding-bottom: var(--space-3);
   border-bottom: 2px solid var(--color-primary);
   margin-bottom: var(--space-3);
+}
+
+/* Calculator Checkbox */
+.form-group__checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-group__checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--color-gray);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.form-group__checkbox input[type="checkbox"]:hover {
+  border-color: var(--color-primary);
+}
+
+.form-group__checkbox input[type="checkbox"]:checked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.form-group__checkbox input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.form-group__checkbox span {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
 }
 
 .loan-calculator__results-row {
@@ -878,4 +905,44 @@
   padding-top: var(--space-4);
   border-top: 1px solid var(--color-border);
   line-height: var(--leading-relaxed);
+}
+
+/* ==========================================================================
+   Hero Frosty Glass Overrides
+   ========================================================================== */
+
+/* Frosty tabs - transparent background */
+.hero__right .loan-calculator .loan-calculator__tabs {
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Frosty results section */
+.hero__right .loan-calculator .loan-calculator__results {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Results top accent - subtle on frosty */
+.hero__right .loan-calculator .loan-calculator__results::before {
+  opacity: 0.6;
+}
+
+/* Frosty promo badge */
+.hero__right .loan-calculator .loan-calculator__promo {
+  background: rgba(0, 115, 153, 0.08);
+  border-color: rgba(0, 115, 153, 0.12);
+  color: var(--color-gray-dark);
+}
+
+/* Input group - more visible on frosty glass */
+.hero__right .loan-calculator .input-group {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hero__right .loan-calculator .input-group:focus-within {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 115, 153, 0.1);
 }

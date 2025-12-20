@@ -230,6 +230,7 @@ export default function HomeCalculator({
           min="1"
           max="190"
           step="1"
+          style={`--slider-fill: ${((sliderValue.value - 1) / (190 - 1)) * 100}%`}
         />
         <div class="calculator__slider-labels">
           <span>{t("CHF")} {formatMoney(minAmount)}</span>
@@ -270,6 +271,7 @@ export default function HomeCalculator({
           onInput={handleLifetimeSliderChange}
           min={minLifetime}
           max={maxLifetime}
+          style={`--slider-fill: ${((lifetime.value - minLifetime) / (maxLifetime - minLifetime)) * 100}%`}
         />
         <div class="calculator__slider-labels">
           <span>{minLifetime} {t("month")}</span>

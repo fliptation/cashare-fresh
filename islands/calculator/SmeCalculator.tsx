@@ -227,6 +227,7 @@ export default function SmeCalculator({
           min={minAmount}
           max={maxAmount}
           step={1000}
+          style={`--slider-fill: ${((amount.value - minAmount) / (maxAmount - minAmount)) * 100}%`}
         />
         <div class="calculator__slider-labels">
           <span>{t("CHF")} {formatMoney(minAmount)}</span>
@@ -266,6 +267,7 @@ export default function SmeCalculator({
           min={minLifetime}
           max={maxLifetime}
           step={1}
+          style={`--slider-fill: ${((lifetime.value - minLifetime) / (maxLifetime - minLifetime)) * 100}%`}
         />
         <div class="calculator__slider-labels">
           <span>{minLifetime} {t("months")}</span>

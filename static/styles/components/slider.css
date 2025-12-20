@@ -18,58 +18,66 @@
   width: 100%;
   height: 12px;
   border-radius: 6px;
-  background: var(--track-color-bg);
-  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    var(--track-color) 0%,
+    var(--track-color) var(--slider-fill, 50%),
+    var(--track-color-bg) var(--slider-fill, 50%),
+    var(--track-color-bg) 100%
+  );
+  overflow: visible;
   padding: 0;
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 0.1s ease;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  height: 15px;
-  width: 15px;
-  background-color: var(--track-color);
+  height: 28px;
+  width: 28px;
+  background-color: var(--color-white);
   border-radius: 50%;
-  border: 0;
-  cursor: pointer;
-  box-shadow: -407px 0 0 400px var(--track-color);
-  margin-top: -1.5px;
+  border: 4px solid var(--track-color);
+  cursor: grab;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-top: -8px;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 2;
 }
 
 .slider::-moz-range-thumb {
-  height: 15px;
-  width: 15px;
-  background-color: var(--track-color);
+  height: 28px;
+  width: 28px;
+  background-color: var(--color-white);
   border-radius: 50%;
-  border: 0;
-  cursor: pointer;
-  box-shadow: -407px 0 0 400px var(--track-color);
+  border: 4px solid var(--track-color);
+  cursor: grab;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hover effects for slider thumb */
 .slider:hover::-webkit-slider-thumb {
-  transform: scale(1.1);
-  box-shadow: -407px 0 0 400px var(--track-color), 0 0 0 4px rgba(0, 185, 208, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-primary);
 }
 
 .slider:hover::-moz-range-thumb {
-  transform: scale(1.1);
-  box-shadow: -407px 0 0 400px var(--track-color), 0 0 0 4px rgba(0, 185, 208, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-primary);
 }
 
 /* Active/dragging state */
 .slider:active::-webkit-slider-thumb {
-  transform: scale(1.15);
-  box-shadow: -407px 0 0 400px var(--track-color), 0 0 0 6px rgba(0, 185, 208, 0.25);
+  cursor: grabbing;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 .slider:active::-moz-range-thumb {
-  transform: scale(1.15);
-  box-shadow: -407px 0 0 400px var(--track-color), 0 0 0 6px rgba(0, 185, 208, 0.25);
+  cursor: grabbing;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 /* Pulse effect applied via JS */
@@ -100,7 +108,7 @@
 }
 
 .slider:focus::-webkit-slider-thumb {
-  box-shadow: -407px 0 0 400px var(--track-color), 0 0 0 3px rgba(79, 176, 198, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(79, 176, 198, 0.3);
 }
 
 /* Variants */
