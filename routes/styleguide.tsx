@@ -1908,7 +1908,7 @@ export default function Styleguide() {
             <footer class="styleguide__footer">
               <p>
                 Cashare Design System &bull; Version 1.0 &bull; Made with ❤️
-                z'Zug
+                z'Züri
               </p>
               <a href="/" class="styleguide__footer-link">
                 &larr; Zrugg zur Homepage
