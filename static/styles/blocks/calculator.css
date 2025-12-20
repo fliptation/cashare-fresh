@@ -755,35 +755,12 @@
     transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* Row Hover Accent Indicator */
-.loan-calculator__results-row::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) scaleY(0);
-  width: 3px;
-  height: 60%;
-  background: linear-gradient(
-    180deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  border-radius: 2px;
-  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
 .loan-calculator__results-row:last-of-type {
   border-bottom: none;
 }
 
 .loan-calculator__results-row:hover {
   background: rgba(0, 115, 153, 0.04);
-  transform: translateX(4px);
-}
-
-.loan-calculator__results-row:hover::after {
-  transform: translateY(-50%) scaleY(1);
 }
 
 .loan-calculator__results-col {

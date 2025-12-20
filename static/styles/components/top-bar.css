@@ -1,47 +1,81 @@
-/* Top Bar - Subtle notification bar */
+/* Dev Sidebar - Vertical toolbar for dev links */
 .top-bar {
-  position: relative;
-  z-index: 1001;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  z-index: 9999;
 }
 
 .top-bar__container {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 16px;
-  padding: 3px 9px;
+  flex-direction: column;
+  gap: 0;
 }
 
 .top-bar__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--color-dark);
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-text-light);
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 0.15s ease;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-left: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-bar__link:first-child {
+  border-radius: 0 8px 0 0;
+  border-bottom: none;
+}
+
+.top-bar__link:last-child {
+  border-radius: 0 0 8px 0;
 }
 
 .top-bar__link:hover {
   color: var(--color-primary);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.95));
+  padding-left: 12px;
+  box-shadow: 4px 0 20px rgba(0, 115, 153, 0.15);
+}
+
+.top-bar__link:hover .top-bar__icon {
+  transform: rotate(0deg) scale(1.1);
+  opacity: 1;
 }
 
 .top-bar__icon {
   width: 14px;
   height: 14px;
-  opacity: 0.6;
+  opacity: 0.5;
+  transform: rotate(90deg);
+  transition: all 0.2s ease;
 }
 
-.top-bar__link:hover .top-bar__icon {
+/* Active state for current page */
+.top-bar__link--active {
+  color: var(--color-primary);
+  background: linear-gradient(90deg, #f0fdfa, rgba(255, 255, 255, 0.9));
+  border-left: 3px solid var(--color-primary);
+}
+
+.top-bar__link--active .top-bar__icon {
   opacity: 1;
 }
 
 /* Styleguide page specific - with back link */
 .top-bar--styleguide .top-bar__container {
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .top-bar__back {
@@ -72,4 +106,11 @@
   letter-spacing: 0.04em;
   color: var(--color-gray);
   text-transform: uppercase;
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
 }

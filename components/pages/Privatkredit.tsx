@@ -7,49 +7,51 @@ interface PrivatkreditProps {
 const content = {
   de: {
     hero: {
-      title: "Ein persönlicher Kredit, so individuell wie Sie",
-      subtitle:
-        "In wenigen Schritten zur Finanzierung. Realisieren Sie Ihre Pläne schnell und unkompliziert mit Cashare.",
+      title: "Privatkredit",
+      subtitle: "Ein persönlicher Kredit, so individuell wie Sie",
+      text: "In wenigen Schritten zur Finanzierung. Realisieren Sie Ihre Pläne schnell und unkompliziert mit Cashare.",
       cta: "Kredit beantragen",
     },
     creditTypes: {
-      title: "Wofür brauchen Sie Ihren Kredit?",
+      title: "Unsere Produkte",
+      subtitle: "Flexible und sichere Privatkredite für Ihre individuellen Bedürfnisse",
+      description: "Schnell, transparent und fair – Finanzielle Lösungen für jede Lebenslage",
       items: [
         {
           icon: "refinance",
-          title: "Refinanzierung",
+          title: "Refinanzierung Kredit",
           description:
-            "Konsolidieren Sie hochverzinste Schulden von Kreditkarten und Konsumkrediten zu besseren Konditionen.",
+            "Konsolidieren Sie bestehende Schulden zu besseren Konditionen.",
         },
         {
           icon: "education",
           title: "Ausbildungskredit",
           description:
-            "Finanzieren Sie Ihre Weiterbildung und investieren Sie in Ihre Karriere.",
+            "Bildungsfinanzierung ohne finanzielle Barrieren.",
         },
         {
           icon: "renovation",
-          title: "Renovierung",
+          title: "Kredit für Renovierung",
           description:
-            "Finanzieren Sie Küchen, Wohnräume und Renovierungen Ihres Zuhauses.",
+            "Kredite für Heimwerker- und Renovierungsprojekte.",
         },
         {
           icon: "car",
           title: "Autokredit",
           description:
-            "Flexible Konditionen für den Kauf eines neuen oder gebrauchten Fahrzeugs.",
+            "Flexible Fahrzeugfinanzierung zu günstigen Konditionen.",
         },
         {
           icon: "celebration",
           title: "Konsumkredit",
           description:
-            "Finanzieren Sie besondere Anlässe wie Hochzeiten und Flitterwochen.",
+            "Kredite für persönliche Ausgaben wie Hochzeiten und Flitterwochen.",
         },
         {
           icon: "health",
           title: "Gesundheitskredit",
           description:
-            "Finanzieren Sie Zahnbehandlungen und medizinische Eingriffe.",
+            "Finanzierung von medizinischen und zahnärztlichen Eingriffen.",
         },
       ],
     },
@@ -59,32 +61,33 @@ const content = {
         {
           title: "Kreditantrag ausfüllen",
           description:
-            "Füllen Sie den Antrag online aus und laden Sie die erforderlichen Dokumente hoch.",
+            "Den Kreditantrag ausfüllen und online die benötigten Dokumente einreichen. Einfacher geht's nicht.",
         },
         {
           title: "Schnelle Überprüfung",
           description:
-            "Nach der Genehmigung wird Ihr Kredit auf der Plattform für Investoren freigegeben.",
+            "Wir prüfen Ihren Antrag schnell und sicher. Nach Aufschaltung Ihres Kredites auf unserer Plattform haben Cashare Anleger die Möglichkeit, Ihr Darlehen zu finanzieren.",
         },
         {
           title: "Kreditauszahlung",
           description:
-            "Das Geld wird nach Vertragsunterzeichnung direkt auf Ihr Konto überwiesen.",
+            "Nach Unterschrift aller Verträge wird der Darlehensbetrag auf Ihr Konto ausbezahlt.",
         },
       ],
     },
     requirements: {
-      title: "Voraussetzungen",
+      title: "Welche Voraussetzungen müssen Sie für einen Kreditantrag erfüllen?",
       items: [
-        "Mindestalter: 18 Jahre",
-        "Wohnsitz in der Schweiz oder Liechtenstein",
-        "Gültiges Schweizer Bankkonto",
-        "Feste Anstellung oder regelmässiges Einkommen",
-        "Keine laufenden Betreibungsverfahren oder Verlustscheine",
+        "Volljährig (mindestens 18 Jahre alt)",
+        "CH/LI-Staatsbürger oder gültige Aufenthaltsbewilligung",
+        "Schweizer Bankkonto",
+        "Feste Anstellung oder regelmässiges, nachweisbares Einkommen",
+        "Keine offenen Betreibungsverfahren und/oder Verlustscheine",
       ],
     },
     trust: {
       title: "Warum Cashare?",
+      subtitle: "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet. Mit über 60'000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge haben wir uns das Vertrauen tausender Kunden erarbeitet.",
       stats: [
         { value: "2008", label: "Gegründet" },
         { value: "60'000+", label: "Kunden" },
@@ -97,18 +100,18 @@ const content = {
             "Klare, faire Prozesse ohne versteckte Gebühren oder Überraschungen.",
         },
         {
-          title: "Flexibilität",
+          title: "Effizienz",
           description:
             "Alternative Banklösung mit attraktiven Zinsen und schneller Abwicklung.",
         },
         {
-          title: "Schweizer Pionier",
+          title: "Attraktive Renditen",
           description:
-            "Die erste Crowdlending-Plattform der Schweiz, gegründet 2008.",
+            "Investoren profitieren von attraktiven Renditen.",
         },
         {
-          title: "Reguliert",
-          description: "Mitglied der SRO Polyreg und lizenzierter Kreditgeber im Kanton Zug.",
+          title: "Risikomanagement",
+          description: "Robustes Risikomanagement für alle Beteiligten.",
         },
       ],
     },
@@ -120,13 +123,15 @@ const content = {
   },
   en: {
     hero: {
-      title: "A Personal Loan as Individual as You",
-      subtitle:
-        "Get financing in just a few steps. Realize your plans quickly and easily with Cashare.",
+      title: "Personal Loan",
+      subtitle: "A Personal Loan as Individual as You",
+      text: "Get financing in just a few steps. Realize your plans quickly and easily with Cashare.",
       cta: "Apply for Loan",
     },
     creditTypes: {
-      title: "What Do You Need Your Loan For?",
+      title: "Our Products",
+      subtitle: "Flexible and secure personal loans for your individual needs",
+      description: "Fast, transparent and fair – Financial solutions for every situation",
       items: [
         {
           icon: "refinance",
@@ -198,6 +203,7 @@ const content = {
     },
     trust: {
       title: "Why Cashare?",
+      subtitle: "Cashare was founded in 2008 as Switzerland's first crowdlending platform. With over 60,000 customers and CHF 2.5 billion in reviewed loan applications, we have earned the trust of thousands of customers.",
       stats: [
         { value: "2008", label: "Founded" },
         { value: "60,000+", label: "Customers" },
@@ -210,18 +216,18 @@ const content = {
             "Clear, fair processes without hidden fees or surprises.",
         },
         {
-          title: "Flexibility",
+          title: "Efficiency",
           description:
             "Alternative banking solution with attractive rates and quick processing.",
         },
         {
-          title: "Swiss Pioneer",
+          title: "Attractive Returns",
           description:
-            "Switzerland's first crowdlending platform, founded in 2008.",
+            "Investors benefit from attractive returns.",
         },
         {
-          title: "Regulated",
-          description: "Member of SRO Polyreg and licensed lender in Canton Zug.",
+          title: "Risk Management",
+          description: "Robust risk management for all parties involved.",
         },
       ],
     },
@@ -233,13 +239,15 @@ const content = {
   },
   fr: {
     hero: {
-      title: "Un crédit personnel aussi unique que vous",
-      subtitle:
-        "Obtenez un financement en quelques etapes. Realisez vos projets rapidement et simplement avec Cashare.",
-      cta: "Demander un credit",
+      title: "Crédit privé",
+      subtitle: "Un crédit personnel aussi unique que vous",
+      text: "Obtenez un financement en quelques étapes. Réalisez vos projets rapidement et simplement avec Cashare.",
+      cta: "Demander un crédit",
     },
     creditTypes: {
-      title: "Pour quoi avez-vous besoin de votre credit?",
+      title: "Nos produits",
+      subtitle: "Des crédits privés flexibles et sécurisés pour vos besoins individuels",
+      description: "Rapide, transparent et équitable – Des solutions financières pour chaque situation",
       items: [
         {
           icon: "refinance",
@@ -311,30 +319,31 @@ const content = {
     },
     trust: {
       title: "Pourquoi Cashare?",
+      subtitle: "Cashare a été fondée en 2008 en tant que première plateforme de crowdlending de Suisse. Avec plus de 60'000 clients et CHF 2,5 milliards de demandes de crédit examinées, nous avons gagné la confiance de milliers de clients.",
       stats: [
-        { value: "2008", label: "Fondee" },
+        { value: "2008", label: "Fondée" },
         { value: "60'000+", label: "Clients" },
-        { value: "CHF 2.5 Mrd", label: "Demandes de crédit verifiees" },
+        { value: "CHF 2.5 Mrd", label: "Demandes de crédit vérifiées" },
       ],
       features: [
         {
           title: "Transparence",
           description:
-            "Processus clairs et equitables, sans frais caches ni surprises.",
+            "Processus clairs et équitables, sans frais cachés ni surprises.",
         },
         {
-          title: "Flexibilite",
+          title: "Efficacité",
           description:
             "Solution bancaire alternative avec taux attractifs et traitement rapide.",
         },
         {
-          title: "Pionnier suisse",
+          title: "Rendements attractifs",
           description:
-            "Premiere plateforme de crowdlending de Suisse, fondee en 2008.",
+            "Les investisseurs bénéficient de rendements attractifs.",
         },
         {
-          title: "Reglemente",
-          description: "Membre de SRO Polyreg et preteur agree dans le canton de Zoug.",
+          title: "Gestion des risques",
+          description: "Gestion robuste des risques pour toutes les parties concernées.",
         },
       ],
     },
@@ -374,7 +383,8 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
           <div class="product-hero__content">
             <h1 class="product-hero__title">{t.hero.title}</h1>
             <p class="product-hero__subtitle">{t.hero.subtitle}</p>
-            <a href="/kredit-beantragen" class="btn btn--primary btn--lg">
+            <p class="product-hero__text">{t.hero.text}</p>
+            <a href="/loslegen" class="btn btn--primary btn--lg">
               {t.hero.cta}
             </a>
           </div>
@@ -386,11 +396,13 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
         </div>
       </section>
 
-      {/* Crédit Types */}
+      {/* Credit Types */}
       <section class="section section--light">
         <div class="container">
           <div class="section__header">
             <h2 class="section__title">{t.creditTypes.title}</h2>
+            <p class="section__subtitle">{t.creditTypes.subtitle}</p>
+            <p class="section__description">{t.creditTypes.description}</p>
           </div>
           <div class="grid grid--3 product-grid">
             {t.creditTypes.items.map((item, index) => (
@@ -472,6 +484,7 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
         <div class="container">
           <div class="section__header">
             <h2 class="section__title">{t.trust.title}</h2>
+            <p class="section__subtitle">{t.trust.subtitle}</p>
           </div>
 
           {/* Stats */}

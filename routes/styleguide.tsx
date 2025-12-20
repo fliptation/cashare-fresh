@@ -335,24 +335,6 @@ export default function Styleguide() {
         <link rel="stylesheet" href="/styles/global.css" />
       </Head>
 
-      {/* Top Bar */}
-      <div class="top-bar top-bar--styleguide">
-        <div class="top-bar__container">
-          <a href="/" class="top-bar__back">
-            <svg
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M10 12L6 8l4-4" />
-            </svg>
-            Back to Site
-          </a>
-          <span class="top-bar__title">Design System</span>
-        </div>
-      </div>
-
       <div class="styleguide-layout">
         {/* Sidebar Navigation */}
         <aside class="styleguide-nav">
