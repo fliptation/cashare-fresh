@@ -130,7 +130,7 @@
 .calculator__slider-labels {
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
+  font-weight: 800;
   font-size: var(--text-xs);
   color: var(--color-gray-light);
   line-height: 2;
@@ -185,7 +185,7 @@
 }
 
 .calculator__results-value {
-  font-weight: 700;
+  font-weight: 800;
   color: #646464;
   position: relative;
   display: inline-block;
@@ -293,7 +293,7 @@
 
 .yield-calculator__title {
   font-size: var(--text-xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin-bottom: var(--space-2);
 }
@@ -376,7 +376,7 @@
 /* Results Panel */
 .yield-calculator__results-title {
   font-size: var(--text-lg);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin-bottom: var(--space-6);
 }
@@ -409,7 +409,7 @@
 
 .yield-calculator__result-amount {
   font-size: var(--text-3xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-primary);
   line-height: 1;
 }
@@ -460,7 +460,7 @@
 
 .yield-calculator__summary-value {
   font-size: var(--text-base);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
 }
 
@@ -611,7 +611,7 @@
 }
 
 .loan-calculator__field-label {
-  font-weight: 700;
+  font-weight: 800;
   font-size: var(--text-base);
   color: var(--color-gray-dark);
   padding-right: 1rem;
@@ -741,7 +741,7 @@
 
 .loan-calculator__results-value {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-primary);
   font-size: var(--text-base);
   padding: 2px 6px;
@@ -781,7 +781,7 @@
   width: 100%;
   padding: var(--space-4) var(--space-6);
   font-size: var(--text-base);
-  font-weight: 700;
+  font-weight: 800;
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, var(--color-primary) 0%, #006080 100%);
   box-shadow: 0 4px 14px 0 rgba(0, 115, 153, 0.25),

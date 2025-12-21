@@ -16,7 +16,7 @@
 
 .ratings-chart__title {
   font-size: var(--text-xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin: 0;
 }
@@ -140,7 +140,7 @@
 .volumes-chart__axis-label {
   font-family: var(--font-sans);
   font-size: 12px;
-  fill: #7C8FAC;
+  fill: #7c8fac;
 }
 
 .volumes-chart__bar {
@@ -151,7 +151,7 @@
 
 .volumes-chart__bar:hover,
 .volumes-chart__bar--active {
-  fill: #00B5CE;
+  fill: #00b5ce;
 }
 
 .volumes-chart__tooltip {
@@ -170,7 +170,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #00B5CE;
+  background-color: #00b5ce;
   flex-shrink: 0;
   margin-top: 4px;
 }
@@ -194,7 +194,7 @@
 .timeline-chart__axis-label {
   font-family: var(--font-sans);
   font-size: 12px;
-  fill: #7C8FAC;
+  fill: #7c8fac;
 }
 
 .timeline-chart__bar {
@@ -205,7 +205,7 @@
 
 .timeline-chart__bar:hover,
 .timeline-chart__bar--active {
-  fill: #00B5CE;
+  fill: #00b5ce;
 }
 
 .timeline-chart__line {

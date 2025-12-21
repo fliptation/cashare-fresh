@@ -8,7 +8,8 @@ const content = {
   de: {
     title: "Der einfache Weg mit dem Cashare-Kredit",
     subtitle: "Flexible und sichere Kredite, die auf Sie zugeschnitten sind",
-    heroText: "Vertrauen Sie auf den FinTech-Pionier. Flexible und sichere Darlehen, abgestimmt auf Ihre Bedürfnisse.",
+    heroText:
+      "Vertrauen Sie auf den FinTech-Pionier. Flexible und sichere Darlehen, abgestimmt auf Ihre Bedürfnisse.",
     privatkredit: {
       title: "Privatkredit",
       tagline: "Ihr cleverer Kredit",
@@ -31,15 +32,18 @@ const content = {
     steps: [
       {
         title: "Kreditantrag ausfüllen",
-        description: "Den Kreditantrag ausfüllen und online die benötigten Dokumente einreichen. Einfacher geht's nicht.",
+        description:
+          "Den Kreditantrag ausfüllen und online die benötigten Dokumente einreichen. Einfacher geht's nicht.",
       },
       {
         title: "Schnelle Überprüfung",
-        description: "Wir prüfen Ihren Antrag schnell und sicher. Nach Aufschaltung Ihres Kredites auf unserer Plattform haben Cashare Anleger die Möglichkeit, Ihr Darlehen zu finanzieren.",
+        description:
+          "Wir prüfen Ihren Antrag schnell und sicher. Nach Aufschaltung Ihres Kredites auf unserer Plattform haben Cashare Anleger die Möglichkeit, Ihr Darlehen zu finanzieren.",
       },
       {
         title: "Kreditauszahlung",
-        description: "Nach Unterschrift aller Verträge wird der Darlehensbetrag auf Ihr Konto ausbezahlt.",
+        description:
+          "Nach Unterschrift aller Verträge wird der Darlehensbetrag auf Ihr Konto ausbezahlt.",
       },
     ],
     benefits: {
@@ -47,25 +51,30 @@ const content = {
       items: [
         {
           title: "Effiziente Prozesse",
-          description: "Der Kreditantrag ist online schnell ausgefüllt. Die Kreditprüfung erfolgt in kürzester Zeit und Sie erhalten Ihre persönliche Offerte.",
+          description:
+            "Der Kreditantrag ist online schnell ausgefüllt. Die Kreditprüfung erfolgt in kürzester Zeit und Sie erhalten Ihre persönliche Offerte.",
         },
         {
           title: "Attraktive Konditionen",
-          description: "Wir verbinden Kreditnehmer und Anleger direkt über unseren Kreditmarktplatz. So profitieren alle von attraktiven Zinsen und transparenten Gebühren, ganz ohne Bank.",
+          description:
+            "Wir verbinden Kreditnehmer und Anleger direkt über unseren Kreditmarktplatz. So profitieren alle von attraktiven Zinsen und transparenten Gebühren, ganz ohne Bank.",
         },
         {
           title: "Flexible Laufzeiten",
-          description: "Sie bestimmen die gewünschte Laufzeit nach Ihren Bedürfnissen. Eine vorzeitige Rückzahlung ist jederzeit problemlos möglich.",
+          description:
+            "Sie bestimmen die gewünschte Laufzeit nach Ihren Bedürfnissen. Eine vorzeitige Rückzahlung ist jederzeit problemlos möglich.",
         },
         {
           title: "Sichere Prozesse",
-          description: "Volle Kostenkontrolle und strenge Sicherheitsmassnahmen schützen Sie und Ihre Daten.",
+          description:
+            "Volle Kostenkontrolle und strenge Sicherheitsmassnahmen schützen Sie und Ihre Daten.",
         },
       ],
     },
     stats: {
       title: "Seit 2008 Ihr Partner",
-      subtitle: "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet. Mit über 60'000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge haben wir uns das Vertrauen tausender Kunden erarbeitet.",
+      subtitle:
+        "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet. Mit über 60'000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge haben wir uns das Vertrauen tausender Kunden erarbeitet.",
       items: [
         { value: "60'000+", label: "Kunden" },
         { value: "CHF 2.5 Mrd.", label: "Geprüfte Kreditanträge" },
@@ -106,7 +115,8 @@ const content = {
   en: {
     title: "Apply for a Loan",
     subtitle: "Flexible and secure loans tailored to you",
-    heroText: "Trust the FinTech pioneer. Flexible and secure loans tailored to your needs.",
+    heroText:
+      "Trust the FinTech pioneer. Flexible and secure loans tailored to your needs.",
     privatkredit: {
       title: "Personal Loan",
       tagline: "Your smart credit solution",
@@ -129,15 +139,18 @@ const content = {
     steps: [
       {
         title: "Submit Application",
-        description: "Complete the online application and upload your documents.",
+        description:
+          "Complete the online application and upload your documents.",
       },
       {
         title: "Quick Review",
-        description: "We review your application and list it on our platform for investors.",
+        description:
+          "We review your application and list it on our platform for investors.",
       },
       {
         title: "Receive Funds",
-        description: "After signing the contract, the money is transferred to your account.",
+        description:
+          "After signing the contract, the money is transferred to your account.",
       },
     ],
     benefits: {
@@ -145,25 +158,30 @@ const content = {
       items: [
         {
           title: "Efficient Processes",
-          description: "Complete your loan application online in minutes. Fast and straightforward credit review.",
+          description:
+            "Complete your loan application online in minutes. Fast and straightforward credit review.",
         },
         {
           title: "Attractive Conditions",
-          description: "Our direct marketplace connects borrowers with investors – for fair rates without bank margins.",
+          description:
+            "Our direct marketplace connects borrowers with investors – for fair rates without bank margins.",
         },
         {
           title: "Flexible Terms",
-          description: "Choose the term that suits you. Early repayment possible at any time.",
+          description:
+            "Choose the term that suits you. Early repayment possible at any time.",
         },
         {
           title: "Secure Processes",
-          description: "Highest data protection standards and secure processing of all transactions.",
+          description:
+            "Highest data protection standards and secure processing of all transactions.",
         },
       ],
     },
     stats: {
       title: "Your Partner Since 2008",
-      subtitle: "As Switzerland's first crowdlending platform, we have earned the trust of thousands of customers.",
+      subtitle:
+        "As Switzerland's first crowdlending platform, we have earned the trust of thousands of customers.",
       items: [
         { value: "60,000+", label: "Customers" },
         { value: "CHF 2.5 Bn", label: "Reviewed Credit Applications" },
@@ -204,7 +222,8 @@ const content = {
   fr: {
     title: "Demander un crédit",
     subtitle: "Des crédits flexibles et sécurisés, adaptés à vos besoins",
-    heroText: "Faites confiance au pionnier FinTech. Des prêts flexibles et sécurisés, adaptés à vos besoins.",
+    heroText:
+      "Faites confiance au pionnier FinTech. Des prêts flexibles et sécurisés, adaptés à vos besoins.",
     privatkredit: {
       title: "Crédit privé",
       tagline: "Votre crédit intelligent",
@@ -227,15 +246,18 @@ const content = {
     steps: [
       {
         title: "Soumettre la demande",
-        description: "Remplissez la demande en ligne et téléchargez vos documents.",
+        description:
+          "Remplissez la demande en ligne et téléchargez vos documents.",
       },
       {
         title: "Vérification rapide",
-        description: "Nous examinons votre demande et la listons sur notre plateforme pour les investisseurs.",
+        description:
+          "Nous examinons votre demande et la listons sur notre plateforme pour les investisseurs.",
       },
       {
         title: "Versement",
-        description: "Après signature du contrat, l'argent est transféré sur votre compte.",
+        description:
+          "Après signature du contrat, l'argent est transféré sur votre compte.",
       },
     ],
     benefits: {
@@ -243,25 +265,30 @@ const content = {
       items: [
         {
           title: "Processus efficaces",
-          description: "Complétez votre demande de crédit en ligne en quelques minutes. Vérification rapide et simple.",
+          description:
+            "Complétez votre demande de crédit en ligne en quelques minutes. Vérification rapide et simple.",
         },
         {
           title: "Conditions attractives",
-          description: "Notre marché direct connecte emprunteurs et investisseurs – pour des taux équitables sans marges bancaires.",
+          description:
+            "Notre marché direct connecte emprunteurs et investisseurs – pour des taux équitables sans marges bancaires.",
         },
         {
           title: "Durées flexibles",
-          description: "Choisissez la durée qui vous convient. Remboursement anticipé possible à tout moment.",
+          description:
+            "Choisissez la durée qui vous convient. Remboursement anticipé possible à tout moment.",
         },
         {
           title: "Processus sécurisés",
-          description: "Normes de protection des données les plus élevées et traitement sécurisé de toutes les transactions.",
+          description:
+            "Normes de protection des données les plus élevées et traitement sécurisé de toutes les transactions.",
         },
       ],
     },
     stats: {
       title: "Votre partenaire depuis 2008",
-      subtitle: "En tant que première plateforme de crowdlending en Suisse, nous avons gagné la confiance de milliers de clients.",
+      subtitle:
+        "En tant que première plateforme de crowdlending en Suisse, nous avons gagné la confiance de milliers de clients.",
       items: [
         { value: "60'000+", label: "Clients" },
         { value: "CHF 2.5 Mrd", label: "Demandes de crédit examinées" },
@@ -340,7 +367,9 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
                   />
                 </svg>
               </div>
-              <span class="solution-card__tagline">{t.privatkredit.tagline}</span>
+              <span class="solution-card__tagline">
+                {t.privatkredit.tagline}
+              </span>
               <h3 class="solution-card__title">{t.privatkredit.title}</h3>
               <span class="solution-card__link">
                 {t.privatkredit.cta} →
@@ -408,7 +437,9 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
           </div>
           <div class="requirements-grid">
             <div class="requirements-card">
-              <h3 class="requirements-card__title">{t.requirements.privatkredit.title}</h3>
+              <h3 class="requirements-card__title">
+                {t.requirements.privatkredit.title}
+              </h3>
               <ul class="requirements-card__list">
                 {t.requirements.privatkredit.items.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -416,7 +447,9 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
               </ul>
             </div>
             <div class="requirements-card">
-              <h3 class="requirements-card__title">{t.requirements.kmuKredit.title}</h3>
+              <h3 class="requirements-card__title">
+                {t.requirements.kmuKredit.title}
+              </h3>
               <ul class="requirements-card__list">
                 {t.requirements.kmuKredit.items.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -424,7 +457,9 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
               </ul>
             </div>
             <div class="requirements-card">
-              <h3 class="requirements-card__title">{t.requirements.hypothek.title}</h3>
+              <h3 class="requirements-card__title">
+                {t.requirements.hypothek.title}
+              </h3>
               <ul class="requirements-card__list">
                 {t.requirements.hypothek.items.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -445,9 +480,14 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
             {t.steps.map((step, index) => (
               <div key={index} class="stats-grid__item">
                 <div class="stats-grid__icon">
-                  <span style="font-size: 1.25rem; font-weight: 700;">{index + 1}</span>
+                  <span style="font-size: 1.25rem; font-weight: 800;">
+                    {index + 1}
+                  </span>
                 </div>
-                <div class="stats-grid__value" style="font-size: 1.25rem; color: var(--color-text);">
+                <div
+                  class="stats-grid__value"
+                  style="font-size: 1.25rem; color: var(--color-text);"
+                >
                   {step.title}
                 </div>
                 <div class="stats-grid__label">{step.description}</div>
@@ -519,7 +559,10 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
               : "Prêt pour votre crédit?"}
           </h2>
           <div class="subpage-cta__buttons">
-            <a href="/privatdarlehen-beantragen" class="subpage-cta__btn subpage-cta__btn--primary">
+            <a
+              href="/privatdarlehen-beantragen"
+              class="subpage-cta__btn subpage-cta__btn--primary"
+            >
               {locale === "de"
                 ? "Jetzt starten"
                 : locale === "en"

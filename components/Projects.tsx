@@ -6,7 +6,7 @@ interface ProjectsProps {
 
 const content = {
   de: {
-    label: "Aktuelle Projekte",
+    label: "Investieren",
     title: "Aktuelle Projekte",
     subtitle: "Erstellen Sie Ihr individuelles Portfolio, indem Sie gezielt in einzelne Kredite investieren und ein diversifiziertes Portfolio aufbauen, die Ihren Kriterien entsprechen.",
     cta: "Zu den Projekten",
@@ -20,7 +20,7 @@ const content = {
     progress: "Fortschritt",
   },
   en: {
-    label: "Current Projects",
+    label: "Invest",
     title: "Current Projects",
     subtitle: "Build your individual portfolio by investing in selected loans and creating a diversified portfolio that meets your criteria.",
     cta: "View Projects",
@@ -34,7 +34,7 @@ const content = {
     progress: "Progress",
   },
   fr: {
-    label: "Projets actuels",
+    label: "Investir",
     title: "Projets actuels",
     subtitle: "Construisez votre portefeuille individuel en investissant dans des prêts sélectionnés et en créant un portefeuille diversifié qui répond à vos critères.",
     cta: "Voir les projets",

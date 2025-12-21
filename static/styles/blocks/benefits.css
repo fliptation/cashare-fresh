@@ -21,7 +21,7 @@
 
 .benefits__title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-gray-dark);
   margin-bottom: 20px;
   letter-spacing: -0.02em;
@@ -73,7 +73,7 @@
 
 .benefits__card-title {
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-gray-dark);
   margin-bottom: 16px;
   line-height: 1.4;

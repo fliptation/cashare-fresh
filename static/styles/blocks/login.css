@@ -47,7 +47,7 @@
 
 .login-form-panel__title {
   font-size: var(--text-3xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin-bottom: 8px;
 }
@@ -222,7 +222,11 @@
 .login-info-panel {
   flex: 1;
   display: none;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
   position: relative;
   overflow: hidden;
 }
@@ -260,7 +264,7 @@
 
 .login-info-panel__title {
   font-size: var(--text-3xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-white);
   margin-bottom: 32px;
 }
@@ -360,7 +364,7 @@
   align-items: center;
   justify-content: center;
   font-size: var(--text-sm);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-white);
 }
 

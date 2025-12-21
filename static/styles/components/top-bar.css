@@ -19,14 +19,18 @@
   gap: 8px;
   padding: 16px 8px;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.15em;
   color: var(--color-text-light);
   text-decoration: none;
   text-transform: uppercase;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.8)
+  );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-left: none;
@@ -44,7 +48,11 @@
 
 .top-bar__link:hover {
   color: var(--color-primary);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.95));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.95)
+  );
   padding-left: 12px;
   box-shadow: 4px 0 20px rgba(0, 115, 153, 0.15);
 }

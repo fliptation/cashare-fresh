@@ -2,37 +2,43 @@
    Typography
    ========================================================================== */
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: var(--text-5xl);
   font-weight: 800;
   line-height: var(--leading-tight);
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: var(--text-3xl);
-  font-weight: 700;
+  font-weight: 800;
   line-height: var(--leading-tight);
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: var(--text-2xl);
-  font-weight: 700;
+  font-weight: 800;
   line-height: var(--leading-tight);
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: var(--text-xl);
   font-weight: 600;
   line-height: var(--leading-tight);
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: var(--text-lg);
   font-weight: 600;
   line-height: var(--leading-tight);
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: var(--text-base);
   font-weight: 600;
   line-height: var(--leading-tight);
@@ -46,8 +52,9 @@ p:last-child {
   margin-bottom: 0;
 }
 
-strong, b {
-  font-weight: 700;
+strong,
+b {
+  font-weight: 800;
 }
 
 small {

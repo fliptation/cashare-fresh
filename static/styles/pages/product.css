@@ -268,7 +268,7 @@
 
 .product-card__title {
   font-size: var(--text-xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin-bottom: var(--space-3);
 }
@@ -305,7 +305,7 @@
   align-items: center;
   justify-content: center;
   font-size: var(--text-xl);
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: var(--space-4);
 }
 
@@ -414,7 +414,7 @@
 
 .cta-block__title {
   font-size: var(--text-3xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-white);
   margin-bottom: var(--space-4);
 }
@@ -448,7 +448,7 @@
 
 .loan-type-card__title {
   font-size: var(--text-2xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin-bottom: var(--space-4);
 }
@@ -612,7 +612,7 @@
 
 .mortgage-card__title {
   font-size: var(--text-xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
 }
 
@@ -669,7 +669,7 @@
 
 .requirement-card__value {
   font-size: var(--text-lg);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
 }
 
@@ -721,7 +721,7 @@
 
 .audience-card__title {
   font-size: var(--text-xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin-bottom: var(--space-3);
 }

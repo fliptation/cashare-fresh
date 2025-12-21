@@ -155,7 +155,7 @@
 
 .loan-apply__required {
   color: var(--color-error);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .loan-apply__input {
@@ -272,8 +272,7 @@
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: var(--radius-md);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4),
     0 1px 3px rgba(0, 0, 0, 0.03);
 }
 

@@ -12,7 +12,7 @@
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-sm);
   font-size: var(--text-sm);
-  color: #373F52;
+  color: #373f52;
   min-width: 140px;
   margin-bottom: var(--space-4);
   z-index: var(--z-tooltip);
@@ -31,7 +31,7 @@
 }
 
 .tooltip__value {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* Position Variants */

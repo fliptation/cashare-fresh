@@ -14,7 +14,7 @@
 
 .legal-page__title {
   font-size: var(--text-3xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin-bottom: var(--space-3);
 }
@@ -44,7 +44,7 @@
 
 .legal-section__title {
   font-size: var(--text-xl);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-text);
   margin-bottom: var(--space-5);
   padding-bottom: var(--space-4);

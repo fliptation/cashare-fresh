@@ -16,8 +16,11 @@
   right: 0;
   width: 50%;
   height: 100%;
-  background:
-    radial-gradient(ellipse at 70% 50%, rgba(34, 197, 94, 0.15) 0%, transparent 60%);
+  background: radial-gradient(
+    ellipse at 70% 50%,
+    rgba(34, 197, 94, 0.15) 0%,
+    transparent 60%
+  );
   z-index: 0;
   pointer-events: none;
 }
@@ -47,7 +50,7 @@
 
 .investors__title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-gray-dark);
   margin-bottom: 16px;
   letter-spacing: -0.02em;
@@ -99,13 +102,18 @@
 
 /* Divider between cards */
 .investors__card:first-child::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -20px;
   top: 10%;
   bottom: 10%;
   width: 1px;
-  background: linear-gradient(180deg, transparent, var(--color-border), transparent);
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--color-border),
+    transparent
+  );
 }
 
 .investors__card:hover {
@@ -120,7 +128,7 @@
 
 .investors__card-title {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-gray-dark);
   margin-bottom: 16px;
 }

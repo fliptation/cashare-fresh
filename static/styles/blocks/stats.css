@@ -11,7 +11,7 @@
 
 .stats__title {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0;
   color: var(--color-text-primary, #1a1a1a);
 }
@@ -97,7 +97,7 @@
 
 .stats__value {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
   color: var(--color-primary, #0066cc);
   font-variant-numeric: tabular-nums;

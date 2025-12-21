@@ -16,9 +16,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(ellipse at 20% 80%, rgba(34, 211, 238, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(34, 211, 238, 0.1) 0%, transparent 45%);
+  background: radial-gradient(
+      ellipse at 20% 80%,
+      rgba(34, 211, 238, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 20%,
+      rgba(34, 211, 238, 0.1) 0%,
+      transparent 45%
+    );
   z-index: 0;
   pointer-events: none;
 }
@@ -48,7 +55,7 @@
 
 .borrowers__title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-gray-dark);
   margin-bottom: 16px;
   letter-spacing: -0.02em;
@@ -66,7 +73,7 @@
   background: var(--color-secondary);
   color: var(--color-white);
   padding: 14px 32px;
-  border-radius: 8px;
+  border-radius: 9999px;
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
@@ -99,7 +106,7 @@
 }
 
 .borrowers__card::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 0;
@@ -112,7 +119,7 @@
 
 /* Dividers between cards */
 .borrowers__card:not(:last-child)::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -12px;
   top: 20%;
@@ -135,7 +142,7 @@
 
 .borrowers__card-title {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-gray-dark);
   margin-bottom: 12px;
 }
