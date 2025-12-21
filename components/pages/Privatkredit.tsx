@@ -381,10 +381,10 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
       <section class="product-hero">
         <div class="container">
           <div class="product-hero__content">
-            <h1 class="product-hero__title">{t.hero.title}</h1>
-            <p class="product-hero__subtitle">{t.hero.subtitle}</p>
+            <span class="product-hero__badge">{t.hero.title}</span>
+            <h1 class="product-hero__title">{t.hero.subtitle}</h1>
             <p class="product-hero__text">{t.hero.text}</p>
-            <a href="/loslegen" class="btn btn--primary btn--lg">
+            <a href="/privatdarlehen-beantragen" class="btn btn--outline">
               {t.hero.cta}
             </a>
           </div>
@@ -515,7 +515,7 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
           <div class="cta-block">
             <h2 class="cta-block__title">{t.cta.title}</h2>
             <p class="cta-block__subtitle">{t.cta.subtitle}</p>
-            <a href="/kredit-beantragen" class="btn btn--white btn--lg">
+            <a href="/privatdarlehen-beantragen" class="btn btn--white btn--lg">
               {t.cta.button}
             </a>
           </div>

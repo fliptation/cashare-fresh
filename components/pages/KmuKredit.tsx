@@ -7,8 +7,9 @@ interface KmuKreditProps {
 const content = {
   de: {
     hero: {
+      badge: "KMU-Kredit",
       title: "Flexible Finanzierungslösungen für Ihr Unternehmen",
-      subtitle: "Finden Sie bei uns den richtigen KMU-Kredit",
+      subtitle: "Finden Sie bei uns den richtigen KMU-Kredit für Wachstum, Investitionen und Liquidität.",
       cta: "Kredit beantragen",
     },
     loanTypes: {
@@ -129,8 +130,9 @@ const content = {
   },
   en: {
     hero: {
+      badge: "SME Loan",
       title: "Flexible Financing Solutions for Your Business",
-      subtitle: "Find the right SME loan with us",
+      subtitle: "Find the right SME loan with us for growth, investments and liquidity.",
       cta: "Apply for Loan",
     },
     loanTypes: {
@@ -251,8 +253,9 @@ const content = {
   },
   fr: {
     hero: {
+      badge: "Crédit PME",
       title: "Solutions de financement flexibles pour votre entreprise",
-      subtitle: "Trouvez le bon crédit PME chez nous",
+      subtitle: "Trouvez le bon crédit PME chez nous pour la croissance, les investissements et la liquidité.",
       cta: "Demander un credit",
     },
     loanTypes: {
@@ -398,9 +401,10 @@ export function KmuKredit({ locale }: KmuKreditProps) {
       <section class="product-hero product-hero--business">
         <div class="container">
           <div class="product-hero__content">
+            <span class="product-hero__badge">{t.hero.badge}</span>
             <h1 class="product-hero__title">{t.hero.title}</h1>
-            <p class="product-hero__subtitle">{t.hero.subtitle}</p>
-            <a href="/kredit-beantragen" class="btn btn--primary btn--lg">
+            <p class="product-hero__text">{t.hero.subtitle}</p>
+            <a href="/kredit-beantragen" class="btn btn--outline">
               {t.hero.cta}
             </a>
           </div>

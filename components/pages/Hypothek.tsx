@@ -7,6 +7,7 @@ interface HypothekProps {
 const content = {
   de: {
     hero: {
+      badge: "Hypothek",
       title: "Immobilienkredite für Ihre Bedürfnisse",
       subtitle:
         "Wir unterstützen Sie bei der Finanzierung von Wohneigentum und Renditeobjekten.",
@@ -139,6 +140,7 @@ const content = {
   },
   en: {
     hero: {
+      badge: "Mortgage",
       title: "Real Estate Loans for Your Needs",
       subtitle:
         "We support you in financing residential property and investment properties.",
@@ -271,6 +273,7 @@ const content = {
   },
   fr: {
     hero: {
+      badge: "Hypothèque",
       title: "Credits immobiliers pour vos besoins",
       subtitle:
         "Nous vous accompagnons dans le financement de votre bien immobilier et de vos investissements.",
@@ -430,9 +433,10 @@ export function Hypothek({ locale }: HypothekProps) {
       <section class="product-hero product-hero--property">
         <div class="container">
           <div class="product-hero__content">
+            <span class="product-hero__badge">{t.hero.badge}</span>
             <h1 class="product-hero__title">{t.hero.title}</h1>
-            <p class="product-hero__subtitle">{t.hero.subtitle}</p>
-            <a href="/kredit-beantragen" class="btn btn--primary btn--lg">
+            <p class="product-hero__text">{t.hero.subtitle}</p>
+            <a href="/kredit-beantragen" class="btn btn--outline">
               {t.hero.cta}
             </a>
           </div>

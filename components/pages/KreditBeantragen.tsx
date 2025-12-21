@@ -519,7 +519,7 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
               : "Prêt pour votre crédit?"}
           </h2>
           <div class="subpage-cta__buttons">
-            <a href="/loslegen" class="subpage-cta__btn subpage-cta__btn--primary">
+            <a href="/privatdarlehen-beantragen" class="subpage-cta__btn subpage-cta__btn--primary">
               {locale === "de"
                 ? "Jetzt starten"
                 : locale === "en"

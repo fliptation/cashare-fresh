@@ -23,6 +23,7 @@ import * as $en_apply_for_credit from "./routes/en/apply-for-credit.tsx";
 import * as $en_apply_for_credit_mortgage from "./routes/en/apply-for-credit/mortgage.tsx";
 import * as $en_apply_for_credit_personal_loan from "./routes/en/apply-for-credit/personal-loan.tsx";
 import * as $en_apply_for_credit_sme_loan from "./routes/en/apply-for-credit/sme-loan.tsx";
+import * as $en_apply_for_personal_loan from "./routes/en/apply-for-personal-loan.tsx";
 import * as $en_cookies from "./routes/en/cookies.tsx";
 import * as $en_how_it_works from "./routes/en/how-it-works.tsx";
 import * as $en_how_it_works_mortgage from "./routes/en/how-it-works/mortgage.tsx";
@@ -55,6 +56,7 @@ import * as $fr_comment_ca_marche_hypotheque from "./routes/fr/comment-ca-marche
 import * as $fr_comment_ca_marche_pme from "./routes/fr/comment-ca-marche/pme.tsx";
 import * as $fr_confidentialite from "./routes/fr/confidentialite.tsx";
 import * as $fr_cookies from "./routes/fr/cookies.tsx";
+import * as $fr_demander_credit_prive from "./routes/fr/demander-credit-prive.tsx";
 import * as $fr_demander_un_credit from "./routes/fr/demander-un-credit.tsx";
 import * as $fr_demander_un_credit_credit_pme from "./routes/fr/demander-un-credit/credit-pme.tsx";
 import * as $fr_demander_un_credit_credit_prive from "./routes/fr/demander-un-credit/credit-prive.tsx";
@@ -80,6 +82,7 @@ import * as $kredit_beantragen_privatkredit from "./routes/kredit-beantragen/pri
 import * as $login from "./routes/login.tsx";
 import * as $migration from "./routes/migration.tsx";
 import * as $passwort_zuruecksetzen from "./routes/passwort-zuruecksetzen.tsx";
+import * as $privatdarlehen_beantragen from "./routes/privatdarlehen-beantragen.tsx";
 import * as $sicherheit from "./routes/sicherheit.tsx";
 import * as $so_funktionierts from "./routes/so-funktionierts.tsx";
 import * as $so_funktionierts_hypothek from "./routes/so-funktionierts/hypothek.tsx";
@@ -141,6 +144,7 @@ const manifest = {
     "./routes/en/apply-for-credit/personal-loan.tsx":
       $en_apply_for_credit_personal_loan,
     "./routes/en/apply-for-credit/sme-loan.tsx": $en_apply_for_credit_sme_loan,
+    "./routes/en/apply-for-personal-loan.tsx": $en_apply_for_personal_loan,
     "./routes/en/cookies.tsx": $en_cookies,
     "./routes/en/how-it-works.tsx": $en_how_it_works,
     "./routes/en/how-it-works/mortgage.tsx": $en_how_it_works_mortgage,
@@ -176,6 +180,7 @@ const manifest = {
     "./routes/fr/comment-ca-marche/pme.tsx": $fr_comment_ca_marche_pme,
     "./routes/fr/confidentialite.tsx": $fr_confidentialite,
     "./routes/fr/cookies.tsx": $fr_cookies,
+    "./routes/fr/demander-credit-prive.tsx": $fr_demander_credit_prive,
     "./routes/fr/demander-un-credit.tsx": $fr_demander_un_credit,
     "./routes/fr/demander-un-credit/credit-pme.tsx":
       $fr_demander_un_credit_credit_pme,
@@ -207,6 +212,7 @@ const manifest = {
     "./routes/login.tsx": $login,
     "./routes/migration.tsx": $migration,
     "./routes/passwort-zuruecksetzen.tsx": $passwort_zuruecksetzen,
+    "./routes/privatdarlehen-beantragen.tsx": $privatdarlehen_beantragen,
     "./routes/sicherheit.tsx": $sicherheit,
     "./routes/so-funktionierts.tsx": $so_funktionierts,
     "./routes/so-funktionierts/hypothek.tsx": $so_funktionierts_hypothek,

@@ -24,7 +24,7 @@ interface StripeNavProps {
   currentPath?: string;
 }
 
-const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: string }> = {
+const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: string; menu: string }> = {
   de: {
     sections: [
       {
@@ -69,6 +69,7 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
     ],
     login: "Login",
     cta: "Loslegen",
+    menu: "Menü",
   },
   en: {
     sections: [
@@ -114,6 +115,7 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
     ],
     login: "Login",
     cta: "Get Started",
+    menu: "Menu",
   },
   fr: {
     sections: [
@@ -159,6 +161,7 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
     ],
     login: "Connexion",
     cta: "Commencer",
+    menu: "Menu",
   },
 };
 
@@ -475,9 +478,7 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
             onClick={() => isMobileMenuOpen.value = !isMobileMenuOpen.value}
             aria-label="Toggle menu"
           >
-            <span />
-            <span />
-            <span />
+            {nav.menu}
           </button>
         </div>
       </div>
