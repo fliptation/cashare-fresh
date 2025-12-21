@@ -14,38 +14,31 @@ import type {
 } from "./types.ts";
 import type { Locale } from "../i18n/index.ts";
 
-// API base URL - WordPress used: window.location.origin.replace('www.', 'my.')
-const API_BASE = "https://my.cashare.ch";
+// External app URL for redirects
+const APP_BASE = "https://app.cashare.ch";
 
 /**
- * Make an API request to the Cashare backend
+ * Build redirect URL for loan application
+ * Since the my.cashare.ch API is no longer available, we redirect to the external app
  */
-async function apiRequest<T>(
-  endpoint: string,
-  options: RequestInit = {}
-): Promise<ApiResponse<T>> {
-  const url = `${API_BASE}${endpoint}`;
+export function buildLoanRedirectUrl(params: {
+  amount: number;
+  lifetime: number;
+  email: string;
+  locale: string;
+  type: "private" | "sme" | "sme-bullet";
+}): string {
+  const { amount, lifetime, email, locale, type } = params;
 
-  const defaultHeaders: HeadersInit = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-  };
-
-  const response = await fetch(url, {
-    ...options,
-    headers: {
-      ...defaultHeaders,
-      ...options.headers,
-    },
-    credentials: "include", // Include cookies for CORS
+  const baseUrl = `${APP_BASE}/${locale}/borrower/register`;
+  const searchParams = new URLSearchParams({
+    amount: amount.toString(),
+    duration: lifetime.toString(),
+    email: email,
+    type: type,
   });
 
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => ({}));
-    throw new Error(errorData.message || `API error: ${response.status}`);
-  }
-
-  return response.json();
+  return `${baseUrl}?${searchParams.toString()}`;
 }
 
 /**

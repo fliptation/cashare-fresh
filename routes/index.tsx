@@ -1,4 +1,5 @@
 import { Layout } from "../components/Layout.tsx";
+import { SeoHead } from "../components/SeoHead.tsx";
 import { Hero } from "../components/Hero.tsx";
 import { LogoBar } from "../components/LogoBar.tsx";
 import { Borrowers } from "../components/Borrowers.tsx";
@@ -18,6 +19,12 @@ export default function Home() {
 
   return (
     <Layout locale={locale}>
+      <SeoHead
+        title="Schweizer Crowdlending Plattform"
+        description="Cashare ist die erste Crowdlending-Plattform der Schweiz. Privatkredite, KMU-Kredite und Hypotheken zu fairen Konditionen. Investieren Sie direkt in Schweizer Kredite."
+        canonicalPath="/"
+        locale={locale}
+      />
       <Hero
         locale={locale}
         calculator={<LoanCalculator lang={locale} />}

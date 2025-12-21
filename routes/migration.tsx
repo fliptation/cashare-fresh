@@ -1,6 +1,8 @@
 import { Head } from "$fresh/runtime.ts";
 import { blogPosts } from "../lib/blog/posts.ts";
 import MigrationCheckbox from "../islands/MigrationCheckbox.tsx";
+import { contentDatabase, getCrawlProgress } from "../lib/migration/content.ts";
+import type { ContentStatus } from "../lib/migration/types.ts";
 
 // Helper to count words in a string
 function countWords(text: string): number {
@@ -30,6 +32,21 @@ interface MigrationSection {
 }
 
 const migrationData: MigrationSection[] = [
+  {
+    title: "SEO Migration",
+    items: [
+      { name: "301 Redirects", status: "done", notes: "Middleware + lib/seo/redirects.ts" },
+      { name: "robots.txt", newUrl: "/robots.txt", status: "done", notes: "routes/robots.txt.ts" },
+      { name: "sitemap.xml", newUrl: "/sitemap.xml", status: "done", notes: "Pages + Blog, 3 Sprachen, xhtml:link" },
+      { name: "SeoHead Komponente", status: "done", notes: "components/SeoHead.tsx - canonical, hreflang, OG" },
+      { name: "Canonical URLs", status: "done", notes: "In SeoHead implementiert" },
+      { name: "Hreflang Tags", status: "done", notes: "de, en, fr, x-default in SeoHead" },
+      { name: "Per-Page SEO", status: "done", notes: "SeoHead auf allen 70+ Seiten integriert" },
+      { name: "JSON-LD Schema", status: "todo", notes: "Organization, Website, Article" },
+      { name: "Google Search Console", status: "todo", notes: "Verifizierung ausstehend" },
+      { name: "Bing Webmaster Tools", status: "todo", notes: "Verifizierung ausstehend" },
+    ],
+  },
   {
     title: "Hauptseiten",
     items: [
@@ -227,6 +244,20 @@ const statusConfig: Record<Status, { label: string; class: string }> = {
   "not-needed": { label: "Nicht nötig", class: "migration__status--skip" },
 };
 
+// Content crawl status config
+const contentStatusConfig: Record<ContentStatus, { label: string; class: string }> = {
+  crawled: { label: "✓ Crawled", class: "migration__content--crawled" },
+  verified: { label: "✓✓ Verified", class: "migration__content--verified" },
+  updated: { label: "✓✓✓ Updated", class: "migration__content--updated" },
+  todo: { label: "○ Todo", class: "migration__content--todo" },
+};
+
+// Helper to get content status for a page by slug
+function getContentStatus(slug: string): ContentStatus | null {
+  const page = contentDatabase.pages[slug];
+  return page?.status ?? null;
+}
+
 export default function MigrationPage() {
   // Calculate stats (including blog articles)
   const pageItems = migrationData.flatMap((s) => s.items);
@@ -242,6 +273,9 @@ export default function MigrationPage() {
     notNeeded: allStatuses.filter((s) => s === "not-needed").length,
   };
   const progress = Math.round((stats.done / (stats.total - stats.notNeeded)) * 100);
+
+  // Content crawl progress
+  const crawlProgress = getCrawlProgress();
 
   return (
     <>
@@ -291,6 +325,30 @@ export default function MigrationPage() {
             </div>
           </div>
 
+          {/* Content Crawl Progress */}
+          <div class="migration__content-progress">
+            <h3 class="migration__content-title">Content Crawl Status</h3>
+            <p class="migration__content-date">Last Updated: {contentDatabase.lastUpdated}</p>
+            <div class="migration__content-stats">
+              <div class="migration__stat migration__stat--done">
+                <span class="migration__stat-value">{crawlProgress.crawled}</span>
+                <span class="migration__stat-label">Crawled</span>
+              </div>
+              <div class="migration__stat migration__stat--progress">
+                <span class="migration__stat-value">{crawlProgress.verified}</span>
+                <span class="migration__stat-label">Verified</span>
+              </div>
+              <div class="migration__stat migration__stat--todo">
+                <span class="migration__stat-value">{crawlProgress.todo}</span>
+                <span class="migration__stat-label">Todo</span>
+              </div>
+              <div class="migration__stat">
+                <span class="migration__stat-value">{crawlProgress.total}</span>
+                <span class="migration__stat-label">Total</span>
+              </div>
+            </div>
+          </div>
+
           {/* Migration Sections */}
           {migrationData.map((section) => (
             <section key={section.title} class="migration__section">
@@ -301,6 +359,7 @@ export default function MigrationPage() {
                   <span>Alt (WordPress)</span>
                   <span>Neu (Fresh)</span>
                   <span>Status</span>
+                  <span>Content</span>
                   <span>OK?</span>
                 </div>
                 {section.items.map((item) => (
@@ -335,6 +394,24 @@ export default function MigrationPage() {
                       class={`migration__status ${statusConfig[item.status].class}`}
                     >
                       {statusConfig[item.status].label}
+                    </span>
+                    <span class="migration__item-content">
+                      {(() => {
+                        const slug = item.name.toLowerCase()
+                          .replace(/\s+/g, '-')
+                          .replace('ü', 'ue')
+                          .replace('ä', 'ae')
+                          .replace('ö', 'oe');
+                        const contentStatus = getContentStatus(slug);
+                        if (contentStatus) {
+                          return (
+                            <span class={contentStatusConfig[contentStatus].class}>
+                              {contentStatusConfig[contentStatus].label}
+                            </span>
+                          );
+                        }
+                        return <span class="migration__content--none">-</span>;
+                      })()}
                     </span>
                     <span class="migration__item-check">
                       <MigrationCheckbox pageId={`page-${item.name.toLowerCase().replace(/\s+/g, '-')}`} label="" />

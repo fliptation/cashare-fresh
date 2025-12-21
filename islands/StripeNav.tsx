@@ -545,7 +545,9 @@ export default function StripeNav(
 
   return (
     <header
-      class={`stripe-nav ${isScrolled.value ? "stripe-nav--scrolled" : ""}`}
+      class={`stripe-nav ${isScrolled.value ? "stripe-nav--scrolled" : ""} ${
+        isMobileMenuOpen.value ? "stripe-nav--mobile-open" : ""
+      }`}
     >
       <div class="stripe-nav__container">
         {/* Logo */}
@@ -756,6 +758,19 @@ export default function StripeNav(
         }`}
       >
         <div class="stripe-nav__mobile-header">
+          <select
+            class="stripe-nav__mobile-lang-select"
+            value={locale}
+            onChange={(e) => {
+              const target = e.target as HTMLSelectElement;
+              const selectedLocale = target.value as Locale;
+              window.location.href = alternateUrls[selectedLocale];
+            }}
+          >
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+          </select>
           <button
             class="stripe-nav__mobile-close"
             onClick={() => isMobileMenuOpen.value = false}
@@ -841,37 +856,14 @@ export default function StripeNav(
             </div>
           ))}
 
-          <a href={`${localePath}/login`} class="stripe-nav__mobile-login">
+          <a href={nav.sections[0].href} class="btn btn--primary">
+            {nav.cta}
+          </a>
+
+          <a href={`${localePath}/login`} class="btn btn--outline">
             {nav.login}
           </a>
         </nav>
-
-        <div class="stripe-nav__mobile-lang">
-          <a
-            href={alternateUrls.de}
-            class={`stripe-nav__lang-item ${
-              locale === "de" ? "stripe-nav__lang-item--active" : ""
-            }`}
-          >
-            Deutsch
-          </a>
-          <a
-            href={alternateUrls.en}
-            class={`stripe-nav__lang-item ${
-              locale === "en" ? "stripe-nav__lang-item--active" : ""
-            }`}
-          >
-            English
-          </a>
-          <a
-            href={alternateUrls.fr}
-            class={`stripe-nav__lang-item ${
-              locale === "fr" ? "stripe-nav__lang-item--active" : ""
-            }`}
-          >
-            Français
-          </a>
-        </div>
       </div>
     </header>
   );

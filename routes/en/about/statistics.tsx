@@ -1,4 +1,5 @@
 import { Layout } from "../../../components/Layout.tsx";
+import { SeoHead } from "../../../components/SeoHead.tsx";
 import { Statistics } from "../../../components/pages/Statistics.tsx";
 import type { Locale } from "../../../lib/i18n/index.ts";
 
@@ -7,6 +8,12 @@ export default function StatisticsEN() {
 
   return (
     <Layout locale={locale}>
+      <SeoHead
+        title="Statistics"
+        description="Cashare statistics: Funded loans, default rates, average returns. Transparent figures about our crowdlending platform."
+        canonicalPath="/en/about/statistics"
+        locale={locale}
+      />
       <Statistics locale={locale} />
     </Layout>
   );

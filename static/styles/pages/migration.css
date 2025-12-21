@@ -144,8 +144,8 @@
 
 .migration__table-header {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 100px 60px;
-  gap: 16px;
+  grid-template-columns: 2fr 2fr 2fr 90px 80px 50px;
+  gap: 12px;
   padding: 12px 16px;
   background: #f8fafc;
   border-radius: 8px;
@@ -158,8 +158,8 @@
 
 .migration__table-row {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 100px 60px;
-  gap: 16px;
+  grid-template-columns: 2fr 2fr 2fr 90px 80px 50px;
+  gap: 12px;
   padding: 12px 16px;
   border-radius: 8px;
   transition: background 0.2s ease;
@@ -496,6 +496,90 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Content Crawl Progress */
+.migration__content-progress {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+  border: 1px solid #86efac;
+}
+
+.migration__content-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #166534;
+  margin: 0 0 4px 0;
+}
+
+.migration__content-date {
+  font-size: 0.875rem;
+  color: #15803d;
+  margin: 0 0 16px 0;
+}
+
+.migration__content-stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Content Status Badges */
+.migration__item-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.migration__content--crawled {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.migration__content--verified {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.migration__content--updated {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  background: #d1fae5;
+  color: #059669;
+}
+
+.migration__content--todo {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.migration__content--none {
+  color: #94a3b8;
+  font-size: 0.75rem;
 }
 
 .migration__blog-links .migration__checkbox {

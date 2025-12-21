@@ -4,8 +4,10 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $_middleware from "./routes/_middleware.ts";
 import * as $agb from "./routes/agb.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $api_proxy_cashare from "./routes/api/proxy/cashare.ts";
 import * as $api_statistics from "./routes/api/statistics.ts";
 import * as $cookies from "./routes/cookies.tsx";
 import * as $datenschutzerklaerung from "./routes/datenschutzerklaerung.tsx";
@@ -85,7 +87,9 @@ import * as $login from "./routes/login.tsx";
 import * as $migration from "./routes/migration.tsx";
 import * as $passwort_zuruecksetzen from "./routes/passwort-zuruecksetzen.tsx";
 import * as $privatdarlehen_beantragen from "./routes/privatdarlehen-beantragen.tsx";
+import * as $robots_txt from "./routes/robots.txt.ts";
 import * as $sicherheit from "./routes/sicherheit.tsx";
+import * as $sitemap_xml from "./routes/sitemap.xml.ts";
 import * as $so_funktionierts from "./routes/so-funktionierts.tsx";
 import * as $so_funktionierts_hypothek from "./routes/so-funktionierts/hypothek.tsx";
 import * as $so_funktionierts_kmu from "./routes/so-funktionierts/kmu.tsx";
@@ -136,8 +140,10 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/_middleware.ts": $_middleware,
     "./routes/agb.tsx": $agb,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/api/proxy/cashare.ts": $api_proxy_cashare,
     "./routes/api/statistics.ts": $api_statistics,
     "./routes/cookies.tsx": $cookies,
     "./routes/datenschutzerklaerung.tsx": $datenschutzerklaerung,
@@ -227,7 +233,9 @@ const manifest = {
     "./routes/migration.tsx": $migration,
     "./routes/passwort-zuruecksetzen.tsx": $passwort_zuruecksetzen,
     "./routes/privatdarlehen-beantragen.tsx": $privatdarlehen_beantragen,
+    "./routes/robots.txt.ts": $robots_txt,
     "./routes/sicherheit.tsx": $sicherheit,
+    "./routes/sitemap.xml.ts": $sitemap_xml,
     "./routes/so-funktionierts.tsx": $so_funktionierts,
     "./routes/so-funktionierts/hypothek.tsx": $so_funktionierts_hypothek,
     "./routes/so-funktionierts/kmu.tsx": $so_funktionierts_kmu,
