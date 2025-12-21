@@ -72,21 +72,60 @@ const content = {
 
 const icons = {
   private: (
-    <svg viewBox="0 0 80 80" fill="none" class="investors__icon">
-      <ellipse cx="40" cy="55" rx="28" ry="12" fill="#d1fae5" />
-      <ellipse cx="32" cy="40" rx="16" ry="28" fill="#fde047" transform="rotate(-15 32 40)" />
-      <ellipse cx="48" cy="42" rx="14" ry="24" fill="#22c55e" transform="rotate(15 48 42)" />
+    <svg viewBox="0 0 64 64" fill="none" class="investors__icon">
+      <defs>
+        <linearGradient id="priv-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fef08a" />
+          <stop offset="100%" stop-color="#fde047" />
+        </linearGradient>
+        <linearGradient id="priv-green" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#4ade80" />
+          <stop offset="100%" stop-color="#22c55e" />
+        </linearGradient>
+      </defs>
+      {/* Refined overlapping leaf shapes */}
+      <ellipse
+        cx="24" cy="34"
+        rx="11" ry="20"
+        fill="url(#priv-yellow)"
+        transform="rotate(-12 24 34)"
+      />
+      <ellipse
+        cx="38" cy="34"
+        rx="11" ry="20"
+        fill="url(#priv-green)"
+        transform="rotate(12 38 34)"
+      />
+      {/* Subtle vein details */}
+      <path d="M24 18 L24 50" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" opacity="0.3" transform="rotate(-12 24 34)" />
+      <path d="M38 18 L38 50" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" opacity="0.25" transform="rotate(12 38 34)" />
     </svg>
   ),
   institutional: (
-    <svg viewBox="0 0 80 80" fill="none" class="investors__icon">
-      <rect x="20" y="30" width="40" height="45" rx="4" fill="#22c55e" />
-      <rect x="20" y="30" width="40" height="12" fill="#fbbf24" />
-      <rect x="28" y="48" width="10" height="10" fill="#dcfce7" />
-      <rect x="42" y="48" width="10" height="10" fill="#dcfce7" />
-      <rect x="28" y="62" width="10" height="10" fill="#dcfce7" />
-      <rect x="42" y="62" width="10" height="10" fill="#dcfce7" />
-      <rect x="35" y="20" width="10" height="14" fill="#d1d5db" />
+    <svg viewBox="0 0 64 64" fill="none" class="investors__icon">
+      <defs>
+        <linearGradient id="inst-green" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#4ade80" />
+          <stop offset="100%" stop-color="#22c55e" />
+        </linearGradient>
+        <linearGradient id="inst-yellow" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#fde047" />
+          <stop offset="100%" stop-color="#fbbf24" />
+        </linearGradient>
+      </defs>
+      {/* Clean calendar/building icon */}
+      <rect x="12" y="18" width="40" height="40" rx="4" fill="url(#inst-green)" />
+      {/* Header bar */}
+      <rect x="12" y="18" width="40" height="12" rx="4" fill="url(#inst-yellow)" />
+      <rect x="12" y="26" width="40" height="4" fill="url(#inst-yellow)" />
+      {/* Calendar hanger */}
+      <rect x="24" y="10" width="4" height="12" rx="2" fill="#9ca3af" />
+      <rect x="36" y="10" width="4" height="12" rx="2" fill="#9ca3af" />
+      {/* Grid cells - 2x2 */}
+      <rect x="18" y="36" width="10" height="8" rx="1.5" fill="#dcfce7" />
+      <rect x="36" y="36" width="10" height="8" rx="1.5" fill="#dcfce7" />
+      <rect x="18" y="48" width="10" height="6" rx="1.5" fill="#dcfce7" />
+      <rect x="36" y="48" width="10" height="6" rx="1.5" fill="#dcfce7" />
     </svg>
   ),
 };

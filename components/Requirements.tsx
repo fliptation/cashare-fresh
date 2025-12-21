@@ -154,41 +154,109 @@ const content = {
 const icons = {
   age: (
     <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
-      <circle cx="20" cy="14" r="8" fill="#fde047" />
-      <path d="M8 34c0-6.627 5.373-12 12-12s12 5.373 12 12" fill="#22d3ee" />
+      <defs>
+        <linearGradient id="age-head" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fef08a" />
+          <stop offset="100%" stop-color="#fde047" />
+        </linearGradient>
+        <linearGradient id="age-body" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#67e8f9" />
+          <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+      </defs>
+      <circle cx="20" cy="13" r="7" fill="url(#age-head)" />
+      <path d="M9 34c0-6.075 4.925-11 11-11s11 4.925 11 11" fill="url(#age-body)" />
+      <circle cx="17" cy="11" r="1.5" fill="#fbbf24" opacity="0.4" />
     </svg>
   ),
   residence: (
     <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
-      <rect x="8" y="12" width="24" height="20" rx="2" fill="#22d3ee" />
-      <rect x="12" y="16" width="8" height="6" fill="#fde047" />
-      <rect x="24" y="16" width="4" height="4" fill="#a78bfa" />
-      <rect x="24" y="22" width="4" height="4" fill="#a78bfa" />
+      <defs>
+        <linearGradient id="res-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#67e8f9" />
+          <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+      </defs>
+      <rect x="8" y="12" width="24" height="20" rx="3" fill="url(#res-bg)" />
+      {/* Photo area */}
+      <rect x="11" y="16" width="9" height="8" rx="1" fill="#fde047" />
+      {/* Text lines */}
+      <rect x="23" y="16" width="6" height="2" rx="1" fill="#cffafe" />
+      <rect x="23" y="20" width="6" height="2" rx="1" fill="#cffafe" />
+      <rect x="23" y="24" width="4" height="2" rx="1" fill="#cffafe" />
     </svg>
   ),
   bank: (
     <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
-      <rect x="6" y="16" width="28" height="18" rx="2" fill="#22d3ee" />
-      <rect x="6" y="12" width="28" height="6" fill="#0ea5e9" />
-      <rect x="12" y="22" width="6" height="4" fill="#fde047" />
+      <defs>
+        <linearGradient id="bank-main" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#67e8f9" />
+          <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+        <linearGradient id="bank-top" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#22d3ee" />
+          <stop offset="100%" stop-color="#0891b2" />
+        </linearGradient>
+      </defs>
+      {/* Roof */}
+      <path d="M20 6L4 16h32L20 6z" fill="url(#bank-top)" />
+      {/* Building */}
+      <rect x="6" y="16" width="28" height="18" rx="1" fill="url(#bank-main)" />
+      {/* Pillars */}
+      <rect x="10" y="20" width="3" height="10" rx="1" fill="#cffafe" />
+      <rect x="18.5" y="20" width="3" height="10" rx="1" fill="#cffafe" />
+      <rect x="27" y="20" width="3" height="10" rx="1" fill="#cffafe" />
+      {/* Base */}
+      <rect x="6" y="32" width="28" height="2" fill="url(#bank-top)" />
     </svg>
   ),
   income: (
     <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
-      <rect x="8" y="8" width="24" height="24" rx="4" fill="#a78bfa" />
-      <path d="M14 20h12M20 14v12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+      <defs>
+        <linearGradient id="income-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#c4b5fd" />
+          <stop offset="100%" stop-color="#a78bfa" />
+        </linearGradient>
+      </defs>
+      <rect x="8" y="8" width="24" height="24" rx="5" fill="url(#income-bg)" />
+      {/* Plus icon - centered */}
+      <path d="M14 20h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M20 14v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
     </svg>
   ),
   debt: (
     <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
-      <rect x="8" y="10" width="24" height="20" rx="2" fill="#fde047" />
-      <path d="M14 18h12M14 24h8" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+      <defs>
+        <linearGradient id="debt-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fef08a" />
+          <stop offset="100%" stop-color="#fde047" />
+        </linearGradient>
+      </defs>
+      <rect x="8" y="8" width="24" height="24" rx="3" fill="url(#debt-bg)" />
+      {/* Document lines */}
+      <rect x="13" y="14" width="14" height="2.5" rx="1" fill="#fbbf24" />
+      <rect x="13" y="20" width="10" height="2.5" rx="1" fill="#fbbf24" />
+      <rect x="13" y="26" width="6" height="2.5" rx="1" fill="#fbbf24" />
     </svg>
   ),
   registration: (
     <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
-      <rect x="10" y="8" width="20" height="24" rx="2" fill="#22c55e" />
-      <path d="M16 18l3 3 6-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <defs>
+        <linearGradient id="reg-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#4ade80" />
+          <stop offset="100%" stop-color="#22c55e" />
+        </linearGradient>
+      </defs>
+      <rect x="10" y="6" width="20" height="28" rx="3" fill="url(#reg-bg)" />
+      {/* Checkmark */}
+      <path
+        d="M15 20l4 4 7-8"
+        stroke="#fff"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
     </svg>
   ),
 };

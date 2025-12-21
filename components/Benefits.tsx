@@ -115,53 +115,130 @@ const content = {
   },
 };
 
-// Icons matching the reference image style
+// Refined icons with polished geometry and smooth gradients
 const icons = {
   history: (
-    <svg viewBox="0 0 80 80" fill="none" class="benefits__icon">
-      {/* Three overlapping circles - pink/purple/blue */}
-      <circle cx="30" cy="40" r="18" fill="#f9a8d4" />
-      <circle cx="40" cy="35" r="16" fill="#c084fc" opacity="0.9" />
-      <circle cx="50" cy="42" r="14" fill="#60a5fa" opacity="0.8" />
+    <svg viewBox="0 0 64 64" fill="none" class="benefits__icon">
+      <defs>
+        <linearGradient id="history-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#67e8f9" />
+          <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+        <linearGradient id="history-grad-2" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#f9a8d4" />
+          <stop offset="100%" stop-color="#f472b6" />
+        </linearGradient>
+        <linearGradient id="history-grad-3" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#c4b5fd" />
+          <stop offset="100%" stop-color="#a78bfa" />
+        </linearGradient>
+      </defs>
+      {/* Three soft overlapping circles with gradients */}
+      <circle cx="22" cy="38" r="16" fill="url(#history-grad-1)" />
+      <circle cx="32" cy="28" r="14" fill="url(#history-grad-2)" opacity="0.92" />
+      <circle cx="42" cy="40" r="12" fill="url(#history-grad-3)" opacity="0.88" />
     </svg>
   ),
   transparency: (
-    <svg viewBox="0 0 80 80" fill="none" class="benefits__icon">
-      {/* Overlapping ovals - pink/purple */}
-      <ellipse cx="35" cy="40" rx="18" ry="24" fill="#f472b6" />
-      <ellipse cx="45" cy="40" rx="16" ry="22" fill="#a855f7" opacity="0.85" />
+    <svg viewBox="0 0 64 64" fill="none" class="benefits__icon">
+      <defs>
+        <linearGradient id="trans-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#f472b6" />
+          <stop offset="50%" stop-color="#ec4899" />
+          <stop offset="100%" stop-color="#db2777" />
+        </linearGradient>
+      </defs>
+      {/* Refined vertical pill/oval shape */}
+      <rect x="20" y="12" width="24" height="40" rx="12" fill="url(#trans-grad)" />
+      {/* Subtle inner highlight */}
+      <ellipse cx="28" cy="24" rx="4" ry="6" fill="#fce7f3" opacity="0.3" />
     </svg>
   ),
   flexible: (
-    <svg viewBox="0 0 80 80" fill="none" class="benefits__icon">
-      {/* Three overlapping circles - yellow/cyan/purple */}
-      <circle cx="50" cy="28" r="16" fill="#fde047" />
-      <circle cx="32" cy="42" r="20" fill="#22d3ee" />
-      <circle cx="52" cy="52" r="14" fill="#a78bfa" opacity="0.9" />
+    <svg viewBox="0 0 64 64" fill="none" class="benefits__icon">
+      <defs>
+        <linearGradient id="flex-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fef08a" />
+          <stop offset="100%" stop-color="#fde047" />
+        </linearGradient>
+        <linearGradient id="flex-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#c4b5fd" />
+          <stop offset="100%" stop-color="#a78bfa" />
+        </linearGradient>
+      </defs>
+      {/* Two clean overlapping circles - yellow and purple */}
+      <circle cx="26" cy="28" r="16" fill="url(#flex-yellow)" />
+      <circle cx="38" cy="38" r="16" fill="url(#flex-purple)" opacity="0.9" />
     </svg>
   ),
   returns: (
-    <svg viewBox="0 0 80 80" fill="none" class="benefits__icon">
-      {/* Medal/ribbon shape */}
-      <circle cx="40" cy="32" r="20" fill="#fde047" />
-      <path d="M30 48 L40 70 L50 48" fill="#f472b6" />
-      <circle cx="40" cy="32" r="12" fill="#fbbf24" />
+    <svg viewBox="0 0 64 64" fill="none" class="benefits__icon">
+      <defs>
+        <linearGradient id="returns-pin" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#fda4af" />
+          <stop offset="100%" stop-color="#f472b6" />
+        </linearGradient>
+        <linearGradient id="returns-top" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#fef08a" />
+          <stop offset="100%" stop-color="#fde047" />
+        </linearGradient>
+      </defs>
+      {/* Polished location pin icon */}
+      <path
+        d="M32 8c-9.941 0-18 8.059-18 18 0 12 18 30 18 30s18-18 18-30c0-9.941-8.059-18-18-18z"
+        fill="url(#returns-pin)"
+      />
+      {/* Inner highlight circle */}
+      <circle cx="32" cy="26" r="8" fill="url(#returns-top)" />
+      {/* Subtle shine */}
+      <ellipse cx="26" cy="18" rx="4" ry="5" fill="#fce7f3" opacity="0.35" />
     </svg>
   ),
   security: (
-    <svg viewBox="0 0 80 80" fill="none" class="benefits__icon">
-      {/* Document/folder with stripes */}
-      <rect x="20" y="20" width="40" height="45" rx="4" fill="#f472b6" />
-      <rect x="20" y="20" width="40" height="12" fill="#fbbf24" />
-      <rect x="28" y="38" width="24" height="4" rx="2" fill="#fce7f3" />
-      <rect x="28" y="48" width="18" height="4" rx="2" fill="#fce7f3" />
+    <svg viewBox="0 0 64 64" fill="none" class="benefits__icon">
+      <defs>
+        <linearGradient id="sec-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#fdba74" />
+          <stop offset="100%" stop-color="#f97316" />
+        </linearGradient>
+      </defs>
+      {/* Clean document/clipboard icon */}
+      <rect x="14" y="8" width="36" height="48" rx="4" fill="url(#sec-bg)" />
+      {/* Document lines - precise spacing */}
+      <rect x="22" y="22" width="20" height="4" rx="2" fill="#fff" opacity="0.95" />
+      <rect x="22" y="32" width="16" height="4" rx="2" fill="#fff" opacity="0.95" />
+      <rect x="22" y="42" width="12" height="4" rx="2" fill="#fff" opacity="0.95" />
     </svg>
   ),
   sustainable: (
-    <svg viewBox="0 0 80 80" fill="none" class="benefits__icon">
-      {/* Leaves/petals shape - green/cyan */}
-      <ellipse cx="32" cy="50" rx="14" ry="20" fill="#86efac" transform="rotate(-20 32 50)" />
-      <ellipse cx="48" cy="50" rx="14" ry="20" fill="#22d3ee" transform="rotate(20 48 50)" />
+    <svg viewBox="0 0 64 64" fill="none" class="benefits__icon">
+      <defs>
+        <linearGradient id="sust-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#5eead4" />
+          <stop offset="100%" stop-color="#14b8a6" />
+        </linearGradient>
+        <linearGradient id="sust-teal" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#22d3ee" />
+          <stop offset="100%" stop-color="#06b6d4" />
+        </linearGradient>
+      </defs>
+      {/* Two refined leaf/petal shapes */}
+      <ellipse
+        cx="24" cy="36"
+        rx="10" ry="18"
+        fill="url(#sust-cyan)"
+        transform="rotate(-15 24 36)"
+      />
+      <ellipse
+        cx="40" cy="36"
+        rx="10" ry="18"
+        fill="url(#sust-teal)"
+        transform="rotate(15 40 36)"
+        opacity="0.92"
+      />
+      {/* Subtle vein detail on leaves */}
+      <path d="M24 22 L24 50" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.25" transform="rotate(-15 24 36)" />
+      <path d="M40 22 L40 50" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity="0.25" transform="rotate(15 40 36)" />
     </svg>
   ),
 };

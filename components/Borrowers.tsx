@@ -91,47 +91,82 @@ const content = {
 const icons = {
   person: (
     <svg viewBox="0 0 64 64" fill="none" class="borrowers__icon">
-      <rect width="64" height="64" rx="16" fill="url(#person-gradient)" />
-      <circle cx="32" cy="24" r="10" fill="#6366f1" />
-      <path d="M16 56c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#6366f1" stroke-width="4" fill="none" />
       <defs>
-        <linearGradient id="person-gradient" x1="0" y1="0" x2="64" y2="64">
-          <stop stop-color="#c7d2fe" />
-          <stop offset="1" stop-color="#e0e7ff" />
+        <linearGradient id="person-bg" x1="0" y1="0" x2="64" y2="64">
+          <stop stop-color="#e0e7ff" />
+          <stop offset="1" stop-color="#c7d2fe" />
+        </linearGradient>
+        <linearGradient id="person-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#818cf8" />
+          <stop offset="100%" stop-color="#6366f1" />
         </linearGradient>
       </defs>
+      <rect width="64" height="64" rx="16" fill="url(#person-bg)" />
+      {/* Head */}
+      <circle cx="32" cy="22" r="9" fill="url(#person-fill)" />
+      {/* Body arc */}
+      <path
+        d="M18 52c0-7.732 6.268-14 14-14s14 6.268 14 14"
+        fill="url(#person-fill)"
+      />
+      {/* Subtle highlight */}
+      <circle cx="29" cy="19" r="2.5" fill="#a5b4fc" opacity="0.5" />
     </svg>
   ),
   building: (
     <svg viewBox="0 0 64 64" fill="none" class="borrowers__icon">
-      <rect width="64" height="64" rx="16" fill="url(#building-gradient)" />
-      <rect x="12" y="20" width="40" height="36" rx="2" fill="#ec4899" />
-      <rect x="18" y="26" width="8" height="8" fill="#fce7f3" />
-      <rect x="28" y="26" width="8" height="8" fill="#fce7f3" />
-      <rect x="38" y="26" width="8" height="8" fill="#fce7f3" />
-      <rect x="18" y="38" width="8" height="8" fill="#fce7f3" />
-      <rect x="28" y="38" width="8" height="8" fill="#fce7f3" />
-      <rect x="38" y="38" width="8" height="8" fill="#fce7f3" />
-      <polygon points="32,8 52,20 12,20" fill="#ec4899" />
       <defs>
-        <linearGradient id="building-gradient" x1="0" y1="0" x2="64" y2="64">
+        <linearGradient id="building-bg" x1="0" y1="0" x2="64" y2="64">
           <stop stop-color="#fce7f3" />
           <stop offset="1" stop-color="#fbcfe8" />
         </linearGradient>
+        <linearGradient id="building-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#f472b6" />
+          <stop offset="100%" stop-color="#ec4899" />
+        </linearGradient>
       </defs>
+      <rect width="64" height="64" rx="16" fill="url(#building-bg)" />
+      {/* Roof */}
+      <path d="M32 8L12 22h40L32 8z" fill="url(#building-fill)" />
+      {/* Building body */}
+      <rect x="14" y="22" width="36" height="34" rx="2" fill="url(#building-fill)" />
+      {/* Windows - 3x2 grid, precisely aligned */}
+      <rect x="19" y="28" width="7" height="6" rx="1" fill="#fce7f3" />
+      <rect x="28.5" y="28" width="7" height="6" rx="1" fill="#fce7f3" />
+      <rect x="38" y="28" width="7" height="6" rx="1" fill="#fce7f3" />
+      <rect x="19" y="38" width="7" height="6" rx="1" fill="#fce7f3" />
+      <rect x="28.5" y="38" width="7" height="6" rx="1" fill="#fce7f3" />
+      <rect x="38" y="38" width="7" height="6" rx="1" fill="#fce7f3" />
+      {/* Door */}
+      <rect x="27" y="48" width="10" height="8" rx="1" fill="#fce7f3" />
     </svg>
   ),
   home: (
     <svg viewBox="0 0 64 64" fill="none" class="borrowers__icon">
-      <rect width="64" height="64" rx="16" fill="url(#home-gradient)" />
-      <path d="M32 12L8 32h8v20h32V32h8L32 12z" fill="#0891b2" />
-      <rect x="26" y="36" width="12" height="16" fill="#cffafe" />
       <defs>
-        <linearGradient id="home-gradient" x1="0" y1="0" x2="64" y2="64">
+        <linearGradient id="home-bg" x1="0" y1="0" x2="64" y2="64">
           <stop stop-color="#cffafe" />
           <stop offset="1" stop-color="#a5f3fc" />
         </linearGradient>
+        <linearGradient id="home-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#22d3ee" />
+          <stop offset="100%" stop-color="#0891b2" />
+        </linearGradient>
       </defs>
+      <rect width="64" height="64" rx="16" fill="url(#home-bg)" />
+      {/* House shape - clean geometry */}
+      <path
+        d="M32 10L8 30h6v22h36V30h6L32 10z"
+        fill="url(#home-fill)"
+      />
+      {/* Door */}
+      <rect x="26" y="36" width="12" height="16" rx="1.5" fill="#ecfeff" />
+      {/* Door handle */}
+      <circle cx="35" cy="44" r="1.5" fill="#0891b2" />
+      {/* Window */}
+      <rect x="38" y="32" width="8" height="6" rx="1" fill="#ecfeff" />
+      {/* Chimney */}
+      <rect x="40" y="14" width="6" height="12" rx="1" fill="url(#home-fill)" />
     </svg>
   ),
 };
