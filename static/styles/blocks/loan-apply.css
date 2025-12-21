@@ -68,6 +68,21 @@
   letter-spacing: -0.02em;
 }
 
+/* When subtitle follows title, reduce title margin */
+.loan-apply__title:has(+ .loan-apply__subtitle) {
+  margin-bottom: var(--space-4);
+}
+
+.loan-apply__subtitle {
+  font-size: var(--text-base);
+  color: var(--color-gray-dark);
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==========================================================================
    Form
    ========================================================================== */

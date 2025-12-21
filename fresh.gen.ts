@@ -75,6 +75,8 @@ import * as $index from "./routes/index.tsx";
 import * as $investieren from "./routes/investieren.tsx";
 import * as $investieren_institutionelle from "./routes/investieren/institutionelle.tsx";
 import * as $investieren_privatinvestoren from "./routes/investieren/privatinvestoren.tsx";
+import * as $kmu_kredit_beantragen from "./routes/kmu-kredit-beantragen.tsx";
+import * as $kmu_kurzkredit_beantragen from "./routes/kmu-kurzkredit-beantragen.tsx";
 import * as $kredit_beantragen from "./routes/kredit-beantragen.tsx";
 import * as $kredit_beantragen_hypotheken from "./routes/kredit-beantragen/hypotheken.tsx";
 import * as $kredit_beantragen_kmu_kredit from "./routes/kredit-beantragen/kmu-kredit.tsx";
@@ -108,6 +110,8 @@ import * as $LoanApplyForm from "./islands/LoanApplyForm.tsx";
 import * as $LoanCalculator from "./islands/LoanCalculator.tsx";
 import * as $MigrationCheckbox from "./islands/MigrationCheckbox.tsx";
 import * as $ScrollReveal from "./islands/ScrollReveal.tsx";
+import * as $SmeApplyForm from "./islands/SmeApplyForm.tsx";
+import * as $SmeBulletApplyForm from "./islands/SmeBulletApplyForm.tsx";
 import * as $StripeNav from "./islands/StripeNav.tsx";
 import * as $calculator_HomeCalculator from "./islands/calculator/HomeCalculator.tsx";
 import * as $calculator_LoanCalculator from "./islands/calculator/LoanCalculator.tsx";
@@ -205,6 +209,8 @@ const manifest = {
     "./routes/investieren.tsx": $investieren,
     "./routes/investieren/institutionelle.tsx": $investieren_institutionelle,
     "./routes/investieren/privatinvestoren.tsx": $investieren_privatinvestoren,
+    "./routes/kmu-kredit-beantragen.tsx": $kmu_kredit_beantragen,
+    "./routes/kmu-kurzkredit-beantragen.tsx": $kmu_kurzkredit_beantragen,
     "./routes/kredit-beantragen.tsx": $kredit_beantragen,
     "./routes/kredit-beantragen/hypotheken.tsx": $kredit_beantragen_hypotheken,
     "./routes/kredit-beantragen/kmu-kredit.tsx": $kredit_beantragen_kmu_kredit,
@@ -242,6 +248,8 @@ const manifest = {
     "./islands/LoanCalculator.tsx": $LoanCalculator,
     "./islands/MigrationCheckbox.tsx": $MigrationCheckbox,
     "./islands/ScrollReveal.tsx": $ScrollReveal,
+    "./islands/SmeApplyForm.tsx": $SmeApplyForm,
+    "./islands/SmeBulletApplyForm.tsx": $SmeBulletApplyForm,
     "./islands/StripeNav.tsx": $StripeNav,
     "./islands/calculator/HomeCalculator.tsx": $calculator_HomeCalculator,
     "./islands/calculator/LoanCalculator.tsx": $calculator_LoanCalculator,

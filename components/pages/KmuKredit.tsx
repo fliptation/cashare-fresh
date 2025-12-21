@@ -20,12 +20,14 @@ const content = {
           description:
             "Monatliche Rückzahlungsstruktur, bei der der Gesamtbetrag über die gesamte Kreditlaufzeit verteilt wird.",
           cta: "Ratenkredit beantragen",
+          href: "/kmu-kredit-beantragen/",
         },
         {
           title: "Endfälliger Kredit",
           description:
             "Kredite mit 1-36 Monaten Laufzeit, bei denen Kapital plus Zinsen als Einmalzahlung bei Fälligkeit zurückgezahlt werden.",
           cta: "Endfälligen Kredit beantragen",
+          href: "/kmu-kurzkredit-beantragen/",
         },
       ],
     },
@@ -143,12 +145,14 @@ const content = {
           description:
             "Monthly repayment structure where the total amount is divided across the entire loan term.",
           cta: "Apply for Installment Loan",
+          href: "/en/sme-loan-application/",
         },
         {
           title: "Bullet Loan",
           description:
             "Loans with 1-36 month terms where principal plus interest are repaid as a lump sum at maturity.",
           cta: "Apply for Bullet Loan",
+          href: "/en/sme-short-loan-application/",
         },
       ],
     },
@@ -266,12 +270,14 @@ const content = {
           description:
             "Structure de remboursement mensuel ou le montant total est reparti sur toute la duree du pret.",
           cta: "Demander un crédit amortissable",
+          href: "/fr/demande-credit-pme/",
         },
         {
           title: "Crédit in fine",
           description:
             "Credits de 1 a 36 mois ou le capital plus les interets sont rembourses en une seule fois a echeance.",
           cta: "Demander un crédit in fine",
+          href: "/fr/demande-credit-pme-court/",
         },
       ],
     },
@@ -427,7 +433,7 @@ export function KmuKredit({ locale }: KmuKreditProps) {
               <div key={index} class="loan-type-card">
                 <h3 class="loan-type-card__title">{item.title}</h3>
                 <p class="loan-type-card__description">{item.description}</p>
-                <a href="/kredit-beantragen" class="btn btn--outline">
+                <a href={item.href} class="btn btn--outline">
                   {item.cta}
                 </a>
               </div>
@@ -552,7 +558,7 @@ export function KmuKredit({ locale }: KmuKreditProps) {
           <div class="cta-block">
             <h2 class="cta-block__title">{t.cta.title}</h2>
             <p class="cta-block__subtitle">{t.cta.subtitle}</p>
-            <a href="/kredit-beantragen" class="btn btn--white btn--lg">
+            <a href="/kredit-beantragen/kmu-kredit/" class="btn btn--white btn--lg">
               {t.cta.button}
             </a>
           </div>
