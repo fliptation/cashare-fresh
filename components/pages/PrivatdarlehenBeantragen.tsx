@@ -6,135 +6,87 @@ interface PrivatdarlehenBeantragenProps {
 
 const content = {
   de: {
-    hero: {
-      title: "Privatdarlehen beantragen",
-      subtitle: "Ihr persönlicher Kredit in wenigen Schritten",
-      text: "Füllen Sie den Antrag aus und erhalten Sie schnell Ihre individuelle Offerte.",
-    },
+    badge: "Antrag auf Privatkredit",
+    title: "In wenigen Minuten zum Kredit",
     form: {
-      title: "Jetzt Kredit beantragen",
-      subtitle: "Starten Sie Ihren Antrag online - einfach, schnell und sicher.",
-      cta: "Zum Antragsformular",
+      amountLabel: "Darlehensbetrag (1'000-1'000'000)",
+      amountPlaceholder: "Darlehensbetrag (1'000-1'000'000)",
+      durationLabel: "Laufzeit (1-60 Monate)",
+      durationPlaceholder: "Laufzeit (1-60 Monate)",
+      durationHint: "Sie können jederzeit den Betrag und die Laufzeit ändern, bevor Sie Ihren Antrag einreichen.",
+      emailLabel: "Ihre E-Mail-Adresse",
+      emailPlaceholder: "Ihre E-Mail-Adresse",
+      passwordLabel: "Ihr Passwort",
+      passwordPlaceholder: "Ihr Passwort",
+      submit: "Jetzt beantragen",
       ctaLink: "https://app.cashare.ch/de/borrower/register",
     },
-    benefits: {
-      title: "Ihre Vorteile",
-      items: [
-        {
-          title: "Schnelle Bearbeitung",
-          description: "Ihr Antrag wird innerhalb kürzester Zeit geprüft.",
-        },
-        {
-          title: "Attraktive Zinsen",
-          description: "Profitieren Sie von fairen Konditionen ohne versteckte Gebühren.",
-        },
-        {
-          title: "Flexible Laufzeiten",
-          description: "Wählen Sie die Laufzeit, die zu Ihnen passt.",
-        },
-        {
-          title: "100% Online",
-          description: "Der gesamte Prozess läuft digital ab - kein Papierkram.",
-        },
-      ],
-    },
-    requirements: {
-      title: "Voraussetzungen",
-      items: [
-        "Volljährig (mindestens 18 Jahre alt)",
-        "CH/LI-Staatsbürger oder gültige Aufenthaltsbewilligung",
-        "Schweizer Bankkonto",
-        "Feste Anstellung oder regelmässiges, nachweisbares Einkommen",
-        "Keine offenen Betreibungsverfahren und/oder Verlustscheine",
-      ],
+    rates: {
+      interestRate: "Zinssatz",
+      monthlyPayment: "Monatsrate*",
+      interestCosts: "Zinskosten*",
+      platformFee: "Plattformgebühr*",
+      from: "von",
+      to: "bis",
+      minRate: "4.4 %",
+      maxRate: "10.9 %",
+      disclaimer: "*Die effektiven Werte hängen von Ihrem Betrag, der Laufzeit und dem Zinssatz Ihres Darlehens ab. Sobald Sie den Antrag eingereicht haben, können wir Ihnen ein individuelles Angebot unterbreiten. Die Beträge verstehen sich in CHF.",
     },
   },
   en: {
-    hero: {
-      title: "Apply for Personal Loan",
-      subtitle: "Your personal loan in just a few steps",
-      text: "Fill out the application and quickly receive your personalized offer.",
-    },
+    badge: "Personal Loan Application",
+    title: "Get Your Loan in Minutes",
     form: {
-      title: "Apply for Loan Now",
-      subtitle: "Start your application online - simple, fast, and secure.",
-      cta: "Go to Application Form",
+      amountLabel: "Loan Amount (1,000-1,000,000)",
+      amountPlaceholder: "Loan Amount (1,000-1,000,000)",
+      durationLabel: "Duration (1-60 Months)",
+      durationPlaceholder: "Duration (1-60 Months)",
+      durationHint: "You can change the amount and duration at any time before submitting your application.",
+      emailLabel: "Your Email Address",
+      emailPlaceholder: "Your Email Address",
+      passwordLabel: "Your Password",
+      passwordPlaceholder: "Your Password",
+      submit: "Apply Now",
       ctaLink: "https://app.cashare.ch/en/borrower/register",
     },
-    benefits: {
-      title: "Your Benefits",
-      items: [
-        {
-          title: "Fast Processing",
-          description: "Your application is reviewed within a short time.",
-        },
-        {
-          title: "Attractive Rates",
-          description: "Benefit from fair conditions without hidden fees.",
-        },
-        {
-          title: "Flexible Terms",
-          description: "Choose the term that suits you.",
-        },
-        {
-          title: "100% Online",
-          description: "The entire process is digital - no paperwork.",
-        },
-      ],
-    },
-    requirements: {
-      title: "Requirements",
-      items: [
-        "Minimum age 18 years",
-        "CH/LI citizenship or valid residence permit",
-        "Swiss bank account",
-        "Stable employment or regular income",
-        "No active debt collection or loss records",
-      ],
+    rates: {
+      interestRate: "Interest Rate",
+      monthlyPayment: "Monthly Payment*",
+      interestCosts: "Interest Costs*",
+      platformFee: "Platform Fee*",
+      from: "from",
+      to: "to",
+      minRate: "4.4%",
+      maxRate: "10.9%",
+      disclaimer: "*The actual values depend on your amount, duration, and interest rate of your loan. Once you submit the application, we can provide you with a personalized offer. Amounts are in CHF.",
     },
   },
   fr: {
-    hero: {
-      title: "Demander un crédit privé",
-      subtitle: "Votre crédit personnel en quelques étapes",
-      text: "Remplissez la demande et recevez rapidement votre offre personnalisée.",
-    },
+    badge: "Demande de crédit privé",
+    title: "Obtenez votre crédit en quelques minutes",
     form: {
-      title: "Demander un crédit maintenant",
-      subtitle: "Commencez votre demande en ligne - simple, rapide et sécurisé.",
-      cta: "Vers le formulaire de demande",
+      amountLabel: "Montant du prêt (1'000-1'000'000)",
+      amountPlaceholder: "Montant du prêt (1'000-1'000'000)",
+      durationLabel: "Durée (1-60 mois)",
+      durationPlaceholder: "Durée (1-60 mois)",
+      durationHint: "Vous pouvez modifier le montant et la durée à tout moment avant de soumettre votre demande.",
+      emailLabel: "Votre adresse e-mail",
+      emailPlaceholder: "Votre adresse e-mail",
+      passwordLabel: "Votre mot de passe",
+      passwordPlaceholder: "Votre mot de passe",
+      submit: "Demander maintenant",
       ctaLink: "https://app.cashare.ch/fr/borrower/register",
     },
-    benefits: {
-      title: "Vos avantages",
-      items: [
-        {
-          title: "Traitement rapide",
-          description: "Votre demande est examinée dans les plus brefs délais.",
-        },
-        {
-          title: "Taux attractifs",
-          description: "Bénéficiez de conditions équitables sans frais cachés.",
-        },
-        {
-          title: "Durées flexibles",
-          description: "Choisissez la durée qui vous convient.",
-        },
-        {
-          title: "100% en ligne",
-          description: "Tout le processus est numérique - pas de paperasse.",
-        },
-      ],
-    },
-    requirements: {
-      title: "Conditions requises",
-      items: [
-        "Âge minimum 18 ans",
-        "Nationalité CH/LI ou permis de séjour valide",
-        "Compte bancaire suisse",
-        "Emploi stable ou revenu régulier",
-        "Pas de poursuites actives ou d'actes de défaut de biens",
-      ],
+    rates: {
+      interestRate: "Taux d'intérêt",
+      monthlyPayment: "Mensualité*",
+      interestCosts: "Coûts d'intérêt*",
+      platformFee: "Frais de plateforme*",
+      from: "de",
+      to: "à",
+      minRate: "4.4%",
+      maxRate: "10.9%",
+      disclaimer: "*Les valeurs effectives dépendent de votre montant, de la durée et du taux d'intérêt de votre prêt. Une fois la demande soumise, nous pourrons vous faire une offre personnalisée. Les montants sont en CHF.",
     },
   },
 };
@@ -143,110 +95,125 @@ export function PrivatdarlehenBeantragen({ locale }: PrivatdarlehenBeantragenPro
   const t = content[locale];
 
   return (
-    <>
-      {/* Hero Section */}
-      <section class="subpage-hero">
-        <div class="subpage-hero__container">
-          <h1 class="subpage-hero__title">{t.hero.title}</h1>
-          <p class="subpage-hero__subtitle">{t.hero.subtitle}</p>
-          <p class="subpage-hero__text">{t.hero.text}</p>
-        </div>
-      </section>
+    <section class="loan-apply gradient-hero">
+      {/* Animated background orbs */}
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--4" aria-hidden="true"></div>
 
-      {/* CTA Section */}
-      <section class="subpage-section subpage-section--white">
-        <div class="subpage-section__container">
-          <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.form.title}</h2>
-            <p class="subpage-section__subtitle">{t.form.subtitle}</p>
-          </div>
-          <div class="text-center">
-            <a href={t.form.ctaLink} class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
-              {t.form.cta}
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Grid lines effect */}
+      <div class="hero__grid-lines" aria-hidden="true"></div>
+      <div class="hero__shine" aria-hidden="true"></div>
+      <div class="hero__shine hero__shine--2" aria-hidden="true"></div>
 
-      {/* Benefits */}
-      <section class="subpage-section subpage-section--gray">
-        <div class="subpage-section__container subpage-section__container--wide">
-          <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.benefits.title}</h2>
-          </div>
-          <div class="benefits-grid">
-            {t.benefits.items.map((benefit, index) => (
-              <div key={index} class="benefits-grid__item">
-                <div class="benefits-grid__icon">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    width="28"
-                    height="28"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <h3 class="benefits-grid__title">{benefit.title}</h3>
-                <p class="benefits-grid__desc">{benefit.description}</p>
+      <div class="loan-apply__container">
+        <div class="loan-apply__form-card">
+          {/* Badge */}
+          <span class="loan-apply__badge">{t.badge}</span>
+
+          {/* Title */}
+          <h1 class="loan-apply__title">{t.title}</h1>
+
+          {/* Form */}
+          <form class="loan-apply__form" action={t.form.ctaLink} method="GET">
+            {/* Amount Field */}
+            <div class="loan-apply__field">
+              <label class="loan-apply__label">
+                {t.form.amountLabel} <span class="loan-apply__required">*</span>
+              </label>
+              <input
+                type="text"
+                class="loan-apply__input"
+                placeholder={t.form.amountPlaceholder}
+                required
+              />
+            </div>
+
+            {/* Duration Field */}
+            <div class="loan-apply__field">
+              <label class="loan-apply__label">
+                {t.form.durationLabel} <span class="loan-apply__required">*</span>
+              </label>
+              <input
+                type="text"
+                class="loan-apply__input"
+                placeholder={t.form.durationPlaceholder}
+                required
+              />
+            </div>
+
+            <p class="loan-apply__hint">{t.form.durationHint}</p>
+
+            {/* Email Field */}
+            <div class="loan-apply__field">
+              <label class="loan-apply__label">
+                {t.form.emailLabel} <span class="loan-apply__required">*</span>
+              </label>
+              <input
+                type="email"
+                class="loan-apply__input"
+                placeholder={t.form.emailPlaceholder}
+                required
+              />
+            </div>
+
+            {/* Password Field */}
+            <div class="loan-apply__field">
+              <label class="loan-apply__label">
+                {t.form.passwordLabel} <span class="loan-apply__required">*</span>
+              </label>
+              <input
+                type="password"
+                class="loan-apply__input"
+                placeholder={t.form.passwordPlaceholder}
+                required
+              />
+            </div>
+
+            {/* Rate Display Table */}
+            <div class="loan-apply__rates">
+              <div class="loan-apply__rates-header">
+                <span></span>
+                <span class="loan-apply__rates-col loan-apply__rates-col--from">{t.rates.from}</span>
+                <span class="loan-apply__rates-col loan-apply__rates-col--to">{t.rates.to}</span>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Requirements */}
-      <section class="subpage-section subpage-section--white">
-        <div class="subpage-section__container">
-          <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.requirements.title}</h2>
-          </div>
-          <div class="requirements-list">
-            {t.requirements.items.map((item, index) => (
-              <div key={index} class="requirements-list__item">
-                <svg
-                  class="requirements-list__icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>{item}</span>
+              <div class="loan-apply__rates-row">
+                <span class="loan-apply__rates-label">{t.rates.interestRate}</span>
+                <span class="loan-apply__rates-value loan-apply__rates-value--from">{t.rates.minRate}</span>
+                <span class="loan-apply__rates-value loan-apply__rates-value--to">{t.rates.maxRate}</span>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+              <div class="loan-apply__rates-row">
+                <span class="loan-apply__rates-label">{t.rates.monthlyPayment}</span>
+                <span class="loan-apply__rates-value"></span>
+                <span class="loan-apply__rates-value"></span>
+              </div>
+              <div class="loan-apply__rates-row">
+                <span class="loan-apply__rates-label">{t.rates.interestCosts}</span>
+                <span class="loan-apply__rates-value"></span>
+                <span class="loan-apply__rates-value"></span>
+              </div>
+              <div class="loan-apply__rates-row">
+                <span class="loan-apply__rates-label">{t.rates.platformFee}</span>
+                <span class="loan-apply__rates-value"></span>
+                <span class="loan-apply__rates-value"></span>
+              </div>
+            </div>
 
-      {/* Bottom CTA */}
-      <section class="subpage-cta">
-        <div class="subpage-cta__container">
-          <h2 class="subpage-cta__title">
-            {locale === "de"
-              ? "Bereit für Ihren Privatkredit?"
-              : locale === "en"
-              ? "Ready for your personal loan?"
-              : "Prêt pour votre crédit privé?"}
-          </h2>
-          <div class="subpage-cta__buttons">
-            <a href={t.form.ctaLink} class="subpage-cta__btn subpage-cta__btn--primary" target="_blank" rel="noopener noreferrer">
-              {t.form.cta}
+            <p class="loan-apply__disclaimer">{t.rates.disclaimer}</p>
+
+            {/* Submit Button */}
+            <a
+              href={t.form.ctaLink}
+              class="loan-apply__submit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.form.submit}
             </a>
-          </div>
+          </form>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
