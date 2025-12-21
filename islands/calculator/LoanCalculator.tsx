@@ -1,12 +1,12 @@
-import { useSignal, useComputed } from "@preact/signals";
+import { useComputed, useSignal } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
 import {
   Calculator,
-  ProductType,
   InsuranceType,
+  ProductType,
 } from "../../lib/calculator/mod.ts";
 import { formatMoney, parseSwissNumber } from "../../lib/utils/format.ts";
-import { t, type Locale } from "../../lib/i18n/index.ts";
+import { type Locale, t } from "../../lib/i18n/index.ts";
 
 type LoanType = "private" | "sme";
 
@@ -25,7 +25,24 @@ export default function LoanCalculator({
   initialLifetime = 24,
   showTabs = true,
 }: LoanCalculatorProps) {
-  const tc = (key: "privateTab" | "smeTab" | "loanAmount" | "duration" | "interest" | "Fees" | "withInsurance" | "monthlyRate" | "insuranceIncluded" | "from" | "applyLoan" | "applyNote" | "disclaimer" | "amountError" | "monthsError") => t(lang, "calculator", key);
+  const tc = (
+    key:
+      | "privateTab"
+      | "smeTab"
+      | "loanAmount"
+      | "duration"
+      | "interest"
+      | "Fees"
+      | "withInsurance"
+      | "monthlyRate"
+      | "insuranceIncluded"
+      | "from"
+      | "applyLoan"
+      | "applyNote"
+      | "disclaimer"
+      | "amountError"
+      | "monthsError",
+  ) => t(lang, "calculator", key);
   const tm = (key: "CHF" | "month" | "months") => t(lang, "common", key);
 
   // Calculator instance
@@ -75,7 +92,11 @@ export default function LoanCalculator({
     if (amountError.value || lifetimeError.value) return null;
     calc.setProduct(productType.value);
     calc.setInsuranceType(insuranceType.value);
-    return calc.calculate(amount.value, interestRates.value.min, lifetime.value);
+    return calc.calculate(
+      amount.value,
+      interestRates.value.min,
+      lifetime.value,
+    );
   });
 
   // Computed results for max interest
@@ -83,7 +104,11 @@ export default function LoanCalculator({
     if (amountError.value || lifetimeError.value) return null;
     calc.setProduct(productType.value);
     calc.setInsuranceType(insuranceType.value);
-    return calc.calculate(amount.value, interestRates.value.max, lifetime.value);
+    return calc.calculate(
+      amount.value,
+      interestRates.value.max,
+      lifetime.value,
+    );
   });
 
   // Dynamic application URL
@@ -93,7 +118,9 @@ export default function LoanCalculator({
       ? "/privatdarlehen-beantragen/"
       : "/kmu-darlehen-beantragen/";
     const params = `?amount=${amount.value}&lifetime=${lifetime.value}`;
-    return lang === "de" ? `${basePath}${params}` : `/${lang}${basePath}${params}`;
+    return lang === "de"
+      ? `${basePath}${params}`
+      : `/${lang}${basePath}${params}`;
   });
 
   // Update slider background
@@ -103,19 +130,28 @@ export default function LoanCalculator({
     const max = parseFloat(slider.max) || 100;
     const val = parseFloat(slider.value) || 0;
     const percentage = ((val - min) / (max - min)) * 100;
-    slider.style.background = `linear-gradient(to right, var(--color-primary) 0%, var(--color-primary) ${percentage}%, var(--color-bg-light) ${percentage}%, var(--color-bg-light) 100%)`;
+    slider.style.background =
+      `linear-gradient(to right, var(--color-primary) 0%, var(--color-primary) ${percentage}%, var(--color-bg-light) ${percentage}%, var(--color-bg-light) 100%)`;
   }
 
   // Trigger value update animation
   function triggerValueAnimation() {
     // Add updating class to trigger CSS animation
-    valueMinRef.current?.classList.add("loan-calculator__results-value--updating");
-    valueMaxRef.current?.classList.add("loan-calculator__results-value--updating");
+    valueMinRef.current?.classList.add(
+      "loan-calculator__results-value--updating",
+    );
+    valueMaxRef.current?.classList.add(
+      "loan-calculator__results-value--updating",
+    );
 
     // Remove class after animation completes
     setTimeout(() => {
-      valueMinRef.current?.classList.remove("loan-calculator__results-value--updating");
-      valueMaxRef.current?.classList.remove("loan-calculator__results-value--updating");
+      valueMinRef.current?.classList.remove(
+        "loan-calculator__results-value--updating",
+      );
+      valueMaxRef.current?.classList.remove(
+        "loan-calculator__results-value--updating",
+      );
     }, 500);
   }
 
@@ -145,8 +181,8 @@ export default function LoanCalculator({
     validateAmount();
     triggerValueAnimation();
     // Add pulse effect
-    target.classList.add('slider--pulse');
-    setTimeout(() => target.classList.remove('slider--pulse'), 150);
+    target.classList.add("slider--pulse");
+    setTimeout(() => target.classList.remove("slider--pulse"), 150);
   }
 
   function handleAmountInput(e: Event) {
@@ -163,8 +199,8 @@ export default function LoanCalculator({
     validateLifetime();
     triggerValueAnimation();
     // Add pulse effect
-    target.classList.add('slider--pulse');
-    setTimeout(() => target.classList.remove('slider--pulse'), 150);
+    target.classList.add("slider--pulse");
+    setTimeout(() => target.classList.remove("slider--pulse"), 150);
   }
 
   function handleLifetimeInput(e: Event) {
@@ -196,21 +232,29 @@ export default function LoanCalculator({
         <div class="loan-calculator__tabs">
           <button
             type="button"
-            class={`loan-calculator__tab ${activeTab.value === "private" ? "loan-calculator__tab--active" : ""}`}
+            class={`loan-calculator__tab ${
+              activeTab.value === "private"
+                ? "loan-calculator__tab--active"
+                : ""
+            }`}
             onClick={() => switchTab("private")}
           >
             {tc("privateTab")}
           </button>
           <button
             type="button"
-            class={`loan-calculator__tab ${activeTab.value === "sme" ? "loan-calculator__tab--active" : ""}`}
+            class={`loan-calculator__tab ${
+              activeTab.value === "sme" ? "loan-calculator__tab--active" : ""
+            }`}
             onClick={() => switchTab("sme")}
           >
             {tc("smeTab")}
           </button>
           <div
             class="loan-calculator__tab-indicator"
-            style={`transform: translateX(${activeTab.value === "private" ? "0%" : "100%"})`}
+            style={`transform: translateX(${
+              activeTab.value === "private" ? "0%" : "100%"
+            })`}
           />
         </div>
       )}
@@ -221,7 +265,9 @@ export default function LoanCalculator({
           {/* Amount Input */}
           <div class="loan-calculator__field">
             <div class="loan-calculator__field-header">
-              <span class="loan-calculator__field-label">{tc("loanAmount")}</span>
+              <span class="loan-calculator__field-label">
+                {tc("loanAmount")}
+              </span>
               <div class="input-group">
                 <span class="input-group__prefix">{tm("CHF")}</span>
                 <input
@@ -243,7 +289,9 @@ export default function LoanCalculator({
                 min={1000}
                 max={1000000}
                 step={500}
-                style={`--slider-fill: ${((amount.value - 1000) / (1000000 - 1000)) * 100}%`}
+                style={`--slider-fill: ${
+                  ((amount.value - 1000) / (1000000 - 1000)) * 100
+                }%`}
               />
               <div class="calculator__slider-labels">
                 <span>1'000</span>
@@ -281,7 +329,9 @@ export default function LoanCalculator({
                 min={1}
                 max={60}
                 step={1}
-                style={`--slider-fill: ${((lifetime.value - 1) / (60 - 1)) * 100}%`}
+                style={`--slider-fill: ${
+                  ((lifetime.value - 1) / (60 - 1)) * 100
+                }%`}
               />
               <div class="calculator__slider-labels">
                 <span>1 {tm("month")}</span>
@@ -296,10 +346,6 @@ export default function LoanCalculator({
 
         {/* Results Section */}
         <div class="loan-calculator__results">
-          <div class="loan-calculator__promo">
-            {tc("applyNote")}
-          </div>
-
           {/* Results Header */}
           <div class="loan-calculator__results-header">
             <div class="loan-calculator__results-col">{tc("interest")}:</div>
@@ -339,11 +385,15 @@ export default function LoanCalculator({
                 ref={valueMinRef}
                 class="loan-calculator__results-value"
               >
-                {tm("CHF")} {resultsMin.value ? formatMoney(parseFloat(resultsMin.value.instalment)) : "-"}
+                {tm("CHF")} {resultsMin.value
+                  ? formatMoney(parseFloat(resultsMin.value.instalment))
+                  : "-"}
               </div>
               {activeTab.value === "private" && (
                 <div class="loan-calculator__results-subtext">
-                  {tc("insuranceIncluded")}: {hasInsurance.value ? resultsMin.value?.insuranceUnemployedProRata ?? "0.00" : "0.00"}
+                  {tc("insuranceIncluded")}: {hasInsurance.value
+                    ? resultsMin.value?.insuranceUnemployedProRata ?? "0.00"
+                    : "0.00"}
                 </div>
               )}
             </div>
@@ -367,11 +417,15 @@ export default function LoanCalculator({
                 ref={valueMaxRef}
                 class="loan-calculator__results-value"
               >
-                {tm("CHF")} {resultsMax.value ? formatMoney(parseFloat(resultsMax.value.instalment)) : "-"}
+                {tm("CHF")} {resultsMax.value
+                  ? formatMoney(parseFloat(resultsMax.value.instalment))
+                  : "-"}
               </div>
               {activeTab.value === "private" && (
                 <div class="loan-calculator__results-subtext">
-                  {tc("insuranceIncluded")}: {hasInsurance.value ? resultsMax.value?.insuranceUnemployedProRata ?? "0.00" : "0.00"}
+                  {tc("insuranceIncluded")}: {hasInsurance.value
+                    ? resultsMax.value?.insuranceUnemployedProRata ?? "0.00"
+                    : "0.00"}
                 </div>
               )}
             </div>
@@ -386,7 +440,9 @@ export default function LoanCalculator({
           <div class="loan-calculator__action">
             <a
               href={applicationUrl.value}
-              class={`btn btn--primary hover-lift shadow-primary ${amountError.value || lifetimeError.value ? "btn--disabled" : ""}`}
+              class={`btn btn--primary hover-lift shadow-primary ${
+                amountError.value || lifetimeError.value ? "btn--disabled" : ""
+              }`}
             >
               {tc("applyLoan")}
             </a>

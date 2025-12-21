@@ -73,7 +73,6 @@
 .hero__right .loan-calculator,
 .hero__right .loan-calculator .loan-calculator__field-label,
 .hero__right .loan-calculator .loan-calculator__tab,
-.hero__right .loan-calculator .loan-calculator__promo,
 .hero__right .loan-calculator .loan-calculator__disclaimer,
 .hero__right .loan-calculator .loan-calculator__results-col,
 .hero__right .loan-calculator .loan-calculator__results-header,
@@ -412,7 +411,6 @@
     text-align: left;
   }
 
-  .hero__right .loan-calculator .loan-calculator__promo,
   .hero__right .loan-calculator .loan-calculator__results-header,
   .hero__right .loan-calculator .loan-calculator__results-col,
   .hero__right .loan-calculator .loan-calculator__results-subtext,
@@ -471,7 +469,6 @@
     text-align: left;
   }
 
-  .hero__right .loan-calculator .loan-calculator__promo,
   .hero__right .loan-calculator .loan-calculator__results-header,
   .hero__right .loan-calculator .loan-calculator__results-col,
   .hero__right .loan-calculator .loan-calculator__results-subtext,
