@@ -1,4 +1,4 @@
-import { signal, computed } from "@preact/signals";
+import { computed, signal } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
 import type { Locale } from "../lib/i18n/index.ts";
 import { getAlternateUrls } from "../lib/i18n/routes.ts";
@@ -24,7 +24,10 @@ interface StripeNavProps {
   currentPath?: string;
 }
 
-const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: string; menu: string }> = {
+const navigation: Record<
+  Locale,
+  { sections: NavSection[]; login: string; cta: string; menu: string }
+> = {
   de: {
     sections: [
       {
@@ -34,9 +37,24 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Kredit beantragen",
         subtitle: "Beantragen Sie ihren Wunschkredit",
         items: [
-          { label: "Privatkredit", href: "/kredit-beantragen/privatkredit", description: "Ihr cleverer Kredit", icon: "user" },
-          { label: "KMU Kredit", href: "/kredit-beantragen/kmu-kredit", description: "Die smarte Finanzierung für Unternehmen", icon: "building" },
-          { label: "Hypothek", href: "/kredit-beantragen/hypotheken", description: "Optimale Immobilienfinanzierung", icon: "home" },
+          {
+            label: "Privatkredit",
+            href: "/kredit-beantragen/privatkredit",
+            description: "Ihr cleverer Kredit",
+            icon: "user",
+          },
+          {
+            label: "KMU Kredit",
+            href: "/kredit-beantragen/kmu-kredit",
+            description: "Die smarte Finanzierung für Unternehmen",
+            icon: "building",
+          },
+          {
+            label: "Hypothek",
+            href: "/kredit-beantragen/hypotheken",
+            description: "Optimale Immobilienfinanzierung",
+            icon: "home",
+          },
         ],
       },
       {
@@ -46,8 +64,18 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Investieren",
         subtitle: "Geld anlegen für die Zukunft",
         items: [
-          { label: "Private Anleger", href: "/investieren/privatinvestoren", description: "Attraktive Rendite mit Krediten", icon: "leaf" },
-          { label: "Institutionelle Anleger", href: "/investieren/institutionelle", description: "Das Anlageportfolio mit Private Debt erweitern", icon: "building" },
+          {
+            label: "Private Anleger",
+            href: "/investieren/privatinvestoren",
+            description: "Attraktive Rendite mit Krediten",
+            icon: "leaf",
+          },
+          {
+            label: "Institutionelle Anleger",
+            href: "/investieren/institutionelle",
+            description: "Das Anlageportfolio mit Private Debt erweitern",
+            icon: "building",
+          },
         ],
       },
       {
@@ -57,13 +85,48 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Über uns",
         subtitle: "Erfahren Sie mehr über Cashare",
         items: [
-          { label: "Wer sind wir", href: "/ueber-uns/wer-sind-wir", description: "Unsere Vision und Mission", icon: "users" },
-          { label: "Partner", href: "/ueber-uns/partner", description: "Starke Zusammenarbeit und Vertrauen", icon: "handshake" },
-          { label: "Crowdlending", href: "/ueber-uns/crowdlending", description: "Der Schweizer FinTech Pionier", icon: "diamond" },
-          { label: "Presse", href: "/ueber-uns/presse", description: "Medienzentrum", icon: "press" },
-          { label: "Statistik", href: "/ueber-uns/statistik", description: "Unser Leistungsausweis", icon: "chart" },
-          { label: "Blog", href: "/ueber-uns/blog", description: "Einblicke & Geschichten", icon: "newspaper" },
-          { label: "Jobs", href: "/ueber-uns/jobs", description: "Karriere und Pionierarbeit mit Cashare", icon: "jobs" },
+          {
+            label: "Wer sind wir",
+            href: "/ueber-uns/wer-sind-wir",
+            description: "Unsere Vision und Mission",
+            icon: "users",
+          },
+          {
+            label: "Partner",
+            href: "/ueber-uns/partner",
+            description: "Starke Zusammenarbeit und Vertrauen",
+            icon: "handshake",
+          },
+          {
+            label: "Crowdlending",
+            href: "/ueber-uns/crowdlending",
+            description: "Der Schweizer FinTech Pionier",
+            icon: "diamond",
+          },
+          {
+            label: "Presse",
+            href: "/ueber-uns/presse",
+            description: "Medienzentrum",
+            icon: "press",
+          },
+          {
+            label: "Statistik",
+            href: "/ueber-uns/statistik",
+            description: "Unser Leistungsausweis",
+            icon: "chart",
+          },
+          {
+            label: "Blog",
+            href: "/ueber-uns/blog",
+            description: "Einblicke & Geschichten",
+            icon: "newspaper",
+          },
+          {
+            label: "Jobs",
+            href: "/ueber-uns/jobs",
+            description: "Karriere und Pionierarbeit mit Cashare",
+            icon: "jobs",
+          },
         ],
       },
     ],
@@ -80,9 +143,24 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Apply for Loan",
         subtitle: "Quick and easy financing",
         items: [
-          { label: "Private Loan", href: "/en/apply-for-credit/personal-loan", description: "Personal loans up to CHF 250,000", icon: "user" },
-          { label: "SME Loan", href: "/en/apply-for-credit/sme-loan", description: "Business loans for companies", icon: "briefcase" },
-          { label: "Mortgage", href: "/en/apply-for-credit/mortgage", description: "Real estate financing", icon: "home" },
+          {
+            label: "Private Loan",
+            href: "/en/apply-for-credit/personal-loan",
+            description: "Personal loans up to CHF 250,000",
+            icon: "user",
+          },
+          {
+            label: "SME Loan",
+            href: "/en/apply-for-credit/sme-loan",
+            description: "Business loans for companies",
+            icon: "briefcase",
+          },
+          {
+            label: "Mortgage",
+            href: "/en/apply-for-credit/mortgage",
+            description: "Real estate financing",
+            icon: "home",
+          },
         ],
       },
       {
@@ -92,8 +170,18 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Investing",
         subtitle: "Invest money for the future",
         items: [
-          { label: "Private Investors", href: "/en/invest/private-investors", description: "Attractive returns with loans", icon: "leaf" },
-          { label: "Institutional Investors", href: "/en/invest/institutional", description: "Expand your portfolio with Private Debt", icon: "building" },
+          {
+            label: "Private Investors",
+            href: "/en/invest/private-investors",
+            description: "Attractive returns with loans",
+            icon: "leaf",
+          },
+          {
+            label: "Institutional Investors",
+            href: "/en/invest/institutional",
+            description: "Expand your portfolio with Private Debt",
+            icon: "building",
+          },
         ],
       },
       {
@@ -103,13 +191,48 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "About Us",
         subtitle: "Learn more about Cashare",
         items: [
-          { label: "Who We Are", href: "/en/about/who-we-are", description: "Our vision and mission", icon: "users" },
-          { label: "Partners", href: "/en/about/partners", description: "Strong collaboration and trust", icon: "handshake" },
-          { label: "Crowdlending", href: "/en/about/crowdlending", description: "The Swiss FinTech pioneer", icon: "diamond" },
-          { label: "Press", href: "/en/about/press", description: "Media center", icon: "press" },
-          { label: "Statistics", href: "/en/about/statistics", description: "Our track record", icon: "chart" },
-          { label: "Blog", href: "/en/about/blog", description: "Insights & stories", icon: "newspaper" },
-          { label: "Jobs", href: "/en/about/jobs", description: "Career and pioneering with Cashare", icon: "jobs" },
+          {
+            label: "Who We Are",
+            href: "/en/about/who-we-are",
+            description: "Our vision and mission",
+            icon: "users",
+          },
+          {
+            label: "Partners",
+            href: "/en/about/partners",
+            description: "Strong collaboration and trust",
+            icon: "handshake",
+          },
+          {
+            label: "Crowdlending",
+            href: "/en/about/crowdlending",
+            description: "The Swiss FinTech pioneer",
+            icon: "diamond",
+          },
+          {
+            label: "Press",
+            href: "/en/about/press",
+            description: "Media center",
+            icon: "press",
+          },
+          {
+            label: "Statistics",
+            href: "/en/about/statistics",
+            description: "Our track record",
+            icon: "chart",
+          },
+          {
+            label: "Blog",
+            href: "/en/about/blog",
+            description: "Insights & stories",
+            icon: "newspaper",
+          },
+          {
+            label: "Jobs",
+            href: "/en/about/jobs",
+            description: "Career and pioneering with Cashare",
+            icon: "jobs",
+          },
         ],
       },
     ],
@@ -126,9 +249,24 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Demander un crédit",
         subtitle: "Financement rapide et simple",
         items: [
-          { label: "Crédit privé", href: "/fr/demander-un-credit/credit-prive", description: "Prêt personnel jusqu'à CHF 250'000", icon: "user" },
-          { label: "Crédit PME", href: "/fr/demander-un-credit/credit-pme", description: "Crédit commercial pour entreprises", icon: "briefcase" },
-          { label: "Hypothèque", href: "/fr/demander-un-credit/hypotheque", description: "Financement immobilier", icon: "home" },
+          {
+            label: "Crédit privé",
+            href: "/fr/demander-un-credit/credit-prive",
+            description: "Prêt personnel jusqu'à CHF 250'000",
+            icon: "user",
+          },
+          {
+            label: "Crédit PME",
+            href: "/fr/demander-un-credit/credit-pme",
+            description: "Crédit commercial pour entreprises",
+            icon: "briefcase",
+          },
+          {
+            label: "Hypothèque",
+            href: "/fr/demander-un-credit/hypotheque",
+            description: "Financement immobilier",
+            icon: "home",
+          },
         ],
       },
       {
@@ -138,8 +276,18 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "Investir",
         subtitle: "Investir pour l'avenir",
         items: [
-          { label: "Investisseurs privés", href: "/fr/investir/investisseurs-prives", description: "Rendements attractifs avec les crédits", icon: "leaf" },
-          { label: "Investisseurs institutionnels", href: "/fr/investir/institutionnels", description: "Élargir le portefeuille avec Private Debt", icon: "building" },
+          {
+            label: "Investisseurs privés",
+            href: "/fr/investir/investisseurs-prives",
+            description: "Rendements attractifs avec les crédits",
+            icon: "leaf",
+          },
+          {
+            label: "Investisseurs institutionnels",
+            href: "/fr/investir/institutionnels",
+            description: "Élargir le portefeuille avec Private Debt",
+            icon: "building",
+          },
         ],
       },
       {
@@ -149,13 +297,48 @@ const navigation: Record<Locale, { sections: NavSection[]; login: string; cta: s
         title: "À propos",
         subtitle: "En savoir plus sur Cashare",
         items: [
-          { label: "Qui sommes-nous", href: "/fr/a-propos/qui-sommes-nous", description: "Notre vision et mission", icon: "users" },
-          { label: "Partenaires", href: "/fr/a-propos/partenaires", description: "Collaboration et confiance", icon: "handshake" },
-          { label: "Crowdlending", href: "/fr/a-propos/crowdlending", description: "Le pionnier FinTech suisse", icon: "diamond" },
-          { label: "Presse", href: "/fr/a-propos/presse", description: "Centre médias", icon: "press" },
-          { label: "Statistiques", href: "/fr/a-propos/statistiques", description: "Notre bilan", icon: "chart" },
-          { label: "Blog", href: "/fr/a-propos/blog", description: "Aperçus & histoires", icon: "newspaper" },
-          { label: "Emplois", href: "/fr/a-propos/emplois", description: "Carrière et innovation avec Cashare", icon: "jobs" },
+          {
+            label: "Qui sommes-nous",
+            href: "/fr/a-propos/qui-sommes-nous",
+            description: "Notre vision et mission",
+            icon: "users",
+          },
+          {
+            label: "Partenaires",
+            href: "/fr/a-propos/partenaires",
+            description: "Collaboration et confiance",
+            icon: "handshake",
+          },
+          {
+            label: "Crowdlending",
+            href: "/fr/a-propos/crowdlending",
+            description: "Le pionnier FinTech suisse",
+            icon: "diamond",
+          },
+          {
+            label: "Presse",
+            href: "/fr/a-propos/presse",
+            description: "Centre médias",
+            icon: "press",
+          },
+          {
+            label: "Statistiques",
+            href: "/fr/a-propos/statistiques",
+            description: "Notre bilan",
+            icon: "chart",
+          },
+          {
+            label: "Blog",
+            href: "/fr/a-propos/blog",
+            description: "Aperçus & histoires",
+            icon: "newspaper",
+          },
+          {
+            label: "Emplois",
+            href: "/fr/a-propos/emplois",
+            description: "Carrière et innovation avec Cashare",
+            icon: "jobs",
+          },
         ],
       },
     ],
@@ -174,7 +357,9 @@ const isMobileMenuOpen = signal(false);
 const mobileActiveSection = signal<string | null>(null);
 
 // Computed: is dropdown visible
-const isDropdownVisible = computed(() => isNavHovered.value && activeSection.value !== null);
+const isDropdownVisible = computed(() =>
+  isNavHovered.value && activeSection.value !== null
+);
 
 // Two-color icons - using solid colors to avoid gradient ID conflicts
 const icons: Record<string, string> = {
@@ -258,7 +443,9 @@ const icons: Record<string, string> = {
   </svg>`,
 };
 
-export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) {
+export default function StripeNav(
+  { locale, currentPath = "" }: StripeNavProps,
+) {
   const nav = navigation[locale];
   const localePath = locale === "de" ? "" : `/${locale}`;
   const alternateUrls = getAlternateUrls(currentPath || "/", locale);
@@ -354,10 +541,12 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
     return currentPath === href || currentPath.startsWith(href + "/");
   };
 
-  const activeContent = nav.sections.find(s => s.id === activeSection.value);
+  const activeContent = nav.sections.find((s) => s.id === activeSection.value);
 
   return (
-    <header class={`stripe-nav ${isScrolled.value ? "stripe-nav--scrolled" : ""}`}>
+    <header
+      class={`stripe-nav ${isScrolled.value ? "stripe-nav--scrolled" : ""}`}
+    >
       <div class="stripe-nav__container">
         {/* Logo */}
         <a href={localePath || "/"} class="stripe-nav__logo">
@@ -375,22 +564,39 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
               <div
                 key={section.id}
                 ref={(el) => el && itemRefs.current.set(section.id, el)}
-                class={`stripe-nav__item ${activeSection.value === section.id ? "stripe-nav__item--active" : ""}`}
-                onMouseEnter={() => section.items && handleMouseEnter(section.id)}
+                class={`stripe-nav__item ${
+                  activeSection.value === section.id
+                    ? "stripe-nav__item--active"
+                    : ""
+                }`}
+                onMouseEnter={() =>
+                  section.items && handleMouseEnter(section.id)}
               >
                 <a
                   href={section.href}
-                  class={`stripe-nav__link ${isActive(section.href) ? "stripe-nav__link--current" : ""}`}
+                  class={`stripe-nav__link ${
+                    isActive(section.href) ? "stripe-nav__link--current" : ""
+                  }`}
                 >
                   {section.label}
                   {section.items && (
                     <svg
-                      class={`stripe-nav__chevron ${activeSection.value === section.id ? "stripe-nav__chevron--open" : ""}`}
+                      class={`stripe-nav__chevron ${
+                        activeSection.value === section.id
+                          ? "stripe-nav__chevron--open"
+                          : ""
+                      }`}
                       width="10"
                       height="10"
                       viewBox="0 0 10 10"
                     >
-                      <path d="M1 3L5 7L9 3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                      <path
+                        d="M1 3L5 7L9 3"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        fill="none"
+                        stroke-linecap="round"
+                      />
                     </svg>
                   )}
                 </a>
@@ -401,7 +607,9 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
           {/* Animated Dropdown Backdrop */}
           <div
             ref={dropdownRef}
-            class={`stripe-nav__dropdown ${isDropdownVisible.value ? "stripe-nav__dropdown--visible" : ""}`}
+            class={`stripe-nav__dropdown ${
+              isDropdownVisible.value ? "stripe-nav__dropdown--visible" : ""
+            }`}
             style={{
               transform: `translateX(${backdropStyle.value.left}px)`,
               width: `${backdropStyle.value.width}px`,
@@ -415,14 +623,20 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
             {nav.sections.map((section) => (
               <div
                 key={section.id}
-                class={`stripe-nav__panel ${activeSection.value === section.id ? "stripe-nav__panel--active" : ""} ${section.id === "about" ? "stripe-nav__panel--about" : ""}`}
+                class={`stripe-nav__panel ${
+                  activeSection.value === section.id
+                    ? "stripe-nav__panel--active"
+                    : ""
+                } ${section.id === "about" ? "stripe-nav__panel--about" : ""}`}
               >
                 {/* Header with title and subtitle */}
                 {section.title && (
                   <a href={section.href} class="stripe-nav__panel-header">
                     <span class="stripe-nav__panel-title">{section.title}</span>
                     {section.subtitle && (
-                      <span class="stripe-nav__panel-subtitle">{section.subtitle}</span>
+                      <span class="stripe-nav__panel-subtitle">
+                        {section.subtitle}
+                      </span>
                     )}
                   </a>
                 )}
@@ -431,21 +645,42 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
                     <a
                       key={item.href}
                       href={item.href}
-                      class={`stripe-nav__dropdown-item ${isActive(item.href) ? "stripe-nav__dropdown-item--active" : ""}`}
+                      class={`stripe-nav__dropdown-item ${
+                        isActive(item.href)
+                          ? "stripe-nav__dropdown-item--active"
+                          : ""
+                      }`}
                       style={{ animationDelay: `${index * 30}ms` }}
                     >
                       <span
                         class="stripe-nav__dropdown-icon"
-                        dangerouslySetInnerHTML={{ __html: icons[item.icon || "info"] }}
+                        dangerouslySetInnerHTML={{
+                          __html: icons[item.icon || "info"],
+                        }}
                       />
                       <div class="stripe-nav__dropdown-content">
-                        <span class="stripe-nav__dropdown-label">{item.label}</span>
+                        <span class="stripe-nav__dropdown-label">
+                          {item.label}
+                        </span>
                         {item.description && (
-                          <span class="stripe-nav__dropdown-desc">{item.description}</span>
+                          <span class="stripe-nav__dropdown-desc">
+                            {item.description}
+                          </span>
                         )}
                       </div>
-                      <svg class="stripe-nav__dropdown-arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      <svg
+                        class="stripe-nav__dropdown-arrow-icon"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M6 4L10 8L6 12"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
                       </svg>
                     </a>
                   ))}
@@ -459,9 +694,30 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
         <div class="stripe-nav__actions">
           {/* Language Switcher */}
           <div class="stripe-nav__lang">
-            <a href={alternateUrls.de} class={`stripe-nav__lang-item ${locale === "de" ? "stripe-nav__lang-item--active" : ""}`}>DE</a>
-            <a href={alternateUrls.en} class={`stripe-nav__lang-item ${locale === "en" ? "stripe-nav__lang-item--active" : ""}`}>EN</a>
-            <a href={alternateUrls.fr} class={`stripe-nav__lang-item ${locale === "fr" ? "stripe-nav__lang-item--active" : ""}`}>FR</a>
+            <a
+              href={alternateUrls.de}
+              class={`stripe-nav__lang-item ${
+                locale === "de" ? "stripe-nav__lang-item--active" : ""
+              }`}
+            >
+              DE
+            </a>
+            <a
+              href={alternateUrls.en}
+              class={`stripe-nav__lang-item ${
+                locale === "en" ? "stripe-nav__lang-item--active" : ""
+              }`}
+            >
+              EN
+            </a>
+            <a
+              href={alternateUrls.fr}
+              class={`stripe-nav__lang-item ${
+                locale === "fr" ? "stripe-nav__lang-item--active" : ""
+              }`}
+            >
+              FR
+            </a>
           </div>
 
           <a href={`${localePath}/login`} class="stripe-nav__login">
@@ -474,7 +730,9 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
 
           {/* Mobile Menu Toggle */}
           <button
-            class={`stripe-nav__toggle ${isMobileMenuOpen.value ? "stripe-nav__toggle--open" : ""}`}
+            class={`stripe-nav__toggle ${
+              isMobileMenuOpen.value ? "stripe-nav__toggle--open" : ""
+            }`}
             onClick={() => isMobileMenuOpen.value = !isMobileMenuOpen.value}
             aria-label="Toggle menu"
           >
@@ -492,16 +750,24 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
       )}
 
       {/* Mobile Menu */}
-      <div class={`stripe-nav__mobile ${isMobileMenuOpen.value ? "stripe-nav__mobile--open" : ""}`}>
+      <div
+        class={`stripe-nav__mobile ${
+          isMobileMenuOpen.value ? "stripe-nav__mobile--open" : ""
+        }`}
+      >
         <div class="stripe-nav__mobile-header">
-          <img src="/images/cashare-black-logo.svg" alt="Cashare" class="stripe-nav__mobile-logo" />
           <button
             class="stripe-nav__mobile-close"
             onClick={() => isMobileMenuOpen.value = false}
             aria-label="Close menu"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path
+                d="M6 6L18 18M6 18L18 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
           </button>
         </div>
@@ -510,21 +776,45 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
           {nav.sections.map((section) => (
             <div key={section.id} class="stripe-nav__mobile-section">
               <button
-                class={`stripe-nav__mobile-button ${mobileActiveSection.value === section.id ? "stripe-nav__mobile-button--open" : ""}`}
-                onClick={() => mobileActiveSection.value = mobileActiveSection.value === section.id ? null : section.id}
+                class={`stripe-nav__mobile-button ${
+                  mobileActiveSection.value === section.id
+                    ? "stripe-nav__mobile-button--open"
+                    : ""
+                }`}
+                onClick={() =>
+                  mobileActiveSection.value =
+                    mobileActiveSection.value === section.id
+                      ? null
+                      : section.id}
               >
                 <span>{section.label}</span>
                 <svg
-                  class={`stripe-nav__mobile-chevron ${mobileActiveSection.value === section.id ? "stripe-nav__mobile-chevron--open" : ""}`}
+                  class={`stripe-nav__mobile-chevron ${
+                    mobileActiveSection.value === section.id
+                      ? "stripe-nav__mobile-chevron--open"
+                      : ""
+                  }`}
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
                 >
-                  <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <path
+                    d="M4 6L8 10L12 6"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    fill="none"
+                    stroke-linecap="round"
+                  />
                 </svg>
               </button>
 
-              <div class={`stripe-nav__mobile-submenu ${mobileActiveSection.value === section.id ? "stripe-nav__mobile-submenu--open" : ""}`}>
+              <div
+                class={`stripe-nav__mobile-submenu ${
+                  mobileActiveSection.value === section.id
+                    ? "stripe-nav__mobile-submenu--open"
+                    : ""
+                }`}
+              >
                 {section.items?.map((item) => (
                   <a
                     key={item.href}
@@ -533,12 +823,16 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
                   >
                     <span
                       class="stripe-nav__mobile-icon"
-                      dangerouslySetInnerHTML={{ __html: icons[item.icon || "info"] }}
+                      dangerouslySetInnerHTML={{
+                        __html: icons[item.icon || "info"],
+                      }}
                     />
                     <div class="stripe-nav__mobile-text">
                       <span class="stripe-nav__mobile-label">{item.label}</span>
                       {item.description && (
-                        <span class="stripe-nav__mobile-desc">{item.description}</span>
+                        <span class="stripe-nav__mobile-desc">
+                          {item.description}
+                        </span>
                       )}
                     </div>
                   </a>
@@ -553,9 +847,30 @@ export default function StripeNav({ locale, currentPath = "" }: StripeNavProps) 
         </nav>
 
         <div class="stripe-nav__mobile-lang">
-          <a href={alternateUrls.de} class={`stripe-nav__lang-item ${locale === "de" ? "stripe-nav__lang-item--active" : ""}`}>Deutsch</a>
-          <a href={alternateUrls.en} class={`stripe-nav__lang-item ${locale === "en" ? "stripe-nav__lang-item--active" : ""}`}>English</a>
-          <a href={alternateUrls.fr} class={`stripe-nav__lang-item ${locale === "fr" ? "stripe-nav__lang-item--active" : ""}`}>Français</a>
+          <a
+            href={alternateUrls.de}
+            class={`stripe-nav__lang-item ${
+              locale === "de" ? "stripe-nav__lang-item--active" : ""
+            }`}
+          >
+            Deutsch
+          </a>
+          <a
+            href={alternateUrls.en}
+            class={`stripe-nav__lang-item ${
+              locale === "en" ? "stripe-nav__lang-item--active" : ""
+            }`}
+          >
+            English
+          </a>
+          <a
+            href={alternateUrls.fr}
+            class={`stripe-nav__lang-item ${
+              locale === "fr" ? "stripe-nav__lang-item--active" : ""
+            }`}
+          >
+            Français
+          </a>
         </div>
       </div>
     </header>
