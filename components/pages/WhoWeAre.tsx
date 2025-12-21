@@ -659,6 +659,60 @@ const credentialIcons: Record<string, string> = {
   approved: "/images/polyreg.svg",
 };
 
+// Benefit icons - colorful abstract SVGs
+const benefitIcons = [
+  // Knowledge/About - People figures (teal)
+  `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="12" r="8" fill="#00B5CE"/>
+    <circle cx="10" cy="16" r="5" fill="#007399" opacity="0.6"/>
+    <circle cx="38" cy="16" r="5" fill="#007399" opacity="0.6"/>
+    <path d="M8 38c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#00B5CE" stroke-width="3" fill="none"/>
+    <path d="M2 40c0-5.523 3.582-10 8-10" stroke="#007399" stroke-width="2" opacity="0.6"/>
+    <path d="M46 40c0-5.523-3.582-10-8-10" stroke="#007399" stroke-width="2" opacity="0.6"/>
+  </svg>`,
+  // Transparent - Eye/clarity (blue)
+  `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 24s8-12 20-12 20 12 20 12-8 12-20 12S4 24 4 24z" fill="#E3F2FD"/>
+    <circle cx="24" cy="24" r="10" fill="#2196F3"/>
+    <circle cx="24" cy="24" r="5" fill="#1565C0"/>
+    <circle cx="27" cy="21" r="2" fill="white" opacity="0.8"/>
+  </svg>`,
+  // Flexible - Interconnected nodes (purple)
+  `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="24" r="6" fill="#7C3AED"/>
+    <circle cx="12" cy="12" r="4" fill="#A78BFA"/>
+    <circle cx="36" cy="12" r="4" fill="#A78BFA"/>
+    <circle cx="12" cy="36" r="4" fill="#A78BFA"/>
+    <circle cx="36" cy="36" r="4" fill="#A78BFA"/>
+    <line x1="24" y1="24" x2="12" y2="12" stroke="#7C3AED" stroke-width="2"/>
+    <line x1="24" y1="24" x2="36" y2="12" stroke="#7C3AED" stroke-width="2"/>
+    <line x1="24" y1="24" x2="12" y2="36" stroke="#7C3AED" stroke-width="2"/>
+    <line x1="24" y1="24" x2="36" y2="36" stroke="#7C3AED" stroke-width="2"/>
+  </svg>`,
+  // Returns - Growth chart (green)
+  `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="6" y="28" width="8" height="14" rx="2" fill="#86EFAC"/>
+    <rect x="20" y="20" width="8" height="22" rx="2" fill="#4ADE80"/>
+    <rect x="34" y="10" width="8" height="32" rx="2" fill="#22C55E"/>
+    <path d="M10 20L24 12L38 6" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="38" cy="6" r="3" fill="#16A34A"/>
+  </svg>`,
+  // Security - Shield (orange)
+  `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 4L6 12v12c0 11.1 7.67 21.47 18 24 10.33-2.53 18-12.9 18-24V12L24 4z" fill="#FED7AA"/>
+    <path d="M24 8L10 14v10c0 9.24 6.39 17.89 14 20 7.61-2.11 14-10.76 14-20V14L24 8z" fill="#FB923C"/>
+    <path d="M18 25l5 5 10-10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>`,
+  // Sustainable - Leaf/plant (lime)
+  `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 44V28" stroke="#65A30D" stroke-width="3" stroke-linecap="round"/>
+    <path d="M24 28c-8-2-14-10-14-18 12 0 20 8 20 18" fill="#A3E635"/>
+    <path d="M24 28c8-2 14-10 14-18-12 0-20 8-20 18" fill="#84CC16"/>
+    <circle cx="16" cy="14" r="2" fill="#65A30D" opacity="0.5"/>
+    <circle cx="32" cy="14" r="2" fill="#4D7C0F" opacity="0.5"/>
+  </svg>`,
+];
+
 // Image mapping for team and board members
 const imageMap: Record<string, string> = {
   // Team
@@ -845,6 +899,10 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
           <div class="wwa-benefits__grid">
             {t.benefits.items.map((item, i) => (
               <div key={i} class="wwa-benefits__card">
+                <div
+                  class="wwa-benefits__icon"
+                  dangerouslySetInnerHTML={{ __html: benefitIcons[i] || "" }}
+                />
                 <h3 class="wwa-benefits__card-title">{item.title}</h3>
                 <p class="wwa-benefits__card-text">{item.text}</p>
               </div>
