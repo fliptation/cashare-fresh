@@ -1,0 +1,717 @@
+/* ==========================================================================
+   Who We Are Page - Wer sind wir
+   ========================================================================== */
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.wwa-hero {
+  position: relative;
+  padding: 120px 40px 80px;
+  overflow: hidden;
+}
+
+.wwa-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      ellipse 80% 50% at 50% 0%,
+      rgba(0, 181, 206, 0.15) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 100% 100%,
+      rgba(0, 115, 153, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.wwa-hero__container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.wwa-hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.wwa-hero__subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Credentials Cards
+   ========================================================================== */
+
+.wwa-credentials {
+  position: relative;
+  z-index: 2;
+  padding: 60px 40px 80px;
+  margin-top: -40px;
+}
+
+.wwa-credentials__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.wwa-credentials__card {
+  background: var(--color-white);
+  padding: 32px 24px;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wwa-credentials__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.wwa-credentials__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 181, 206, 0.1),
+    rgba(0, 115, 153, 0.15)
+  );
+  border-radius: var(--radius-full);
+  color: var(--color-primary);
+}
+
+.wwa-credentials__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.wwa-credentials__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.wwa-credentials__text {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* ==========================================================================
+   17 Years Section
+   ========================================================================== */
+
+.wwa-years {
+  padding: 80px 40px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+}
+
+.wwa-years__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.wwa-years__content {
+  flex: 1;
+}
+
+.wwa-years__title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.wwa-years__subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.wwa-years__badge {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+/* ==========================================================================
+   About Section (What We Do / Who We Are)
+   ========================================================================== */
+
+.wwa-about {
+  padding: 100px 40px;
+  background: var(--color-white);
+}
+
+.wwa-about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.wwa-about__block {
+  padding: 40px;
+  background: var(--color-bg-section);
+  border-radius: var(--radius-xl);
+}
+
+.wwa-about__label {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.wwa-about__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.wwa-about__text {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.wwa-about__text:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Why Cashare Section (Accordion)
+   ========================================================================== */
+
+.wwa-why {
+  padding: 100px 40px;
+  background: var(--color-bg-section);
+}
+
+.wwa-why__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wwa-why__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.wwa-why__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.wwa-why__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.wwa-why__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.wwa-why__card {
+  background: var(--color-white);
+  padding: 32px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wwa-why__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.wwa-why__card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.wwa-why__card-text {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Team Section
+   ========================================================================== */
+
+.wwa-team {
+  padding: 100px 40px;
+  background: var(--color-white);
+}
+
+.wwa-team__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wwa-team__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.wwa-team__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.wwa-team__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+}
+
+.wwa-team__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.wwa-team__card {
+  text-align: center;
+  padding: 28px 20px;
+  background: var(--color-bg-section);
+  border-radius: var(--radius-xl);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wwa-team__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.wwa-team__avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.wwa-team__avatar--photo {
+  object-fit: cover;
+  background: none;
+}
+
+.wwa-team__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.wwa-team__role {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  line-height: 1.4;
+}
+
+.wwa-team__cta {
+  text-align: center;
+}
+
+.wwa-team__btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 32px;
+  background: var(--color-text);
+  color: var(--color-white);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.wwa-team__btn:hover {
+  background: var(--color-gray-dark);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Board & Advisory Section
+   ========================================================================== */
+
+.wwa-board {
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.wwa-board__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wwa-board__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 60px;
+  letter-spacing: -0.02em;
+}
+
+.wwa-board__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.wwa-board__card {
+  text-align: center;
+  padding: 32px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.wwa-board__card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+}
+
+.wwa-board__avatar {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 181, 206, 0.3),
+    rgba(0, 115, 153, 0.3)
+  );
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.wwa-board__avatar--photo {
+  object-fit: cover;
+  background: none;
+}
+
+.wwa-board__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 4px;
+}
+
+.wwa-board__role {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ==========================================================================
+   Benefits Section
+   ========================================================================== */
+
+.wwa-benefits {
+  padding: 100px 40px;
+  background: var(--color-bg-section);
+}
+
+.wwa-benefits__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wwa-benefits__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.wwa-benefits__label {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.wwa-benefits__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.wwa-benefits__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.wwa-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.wwa-benefits__card {
+  background: var(--color-white);
+  padding: 32px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wwa-benefits__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.wwa-benefits__card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.wwa-benefits__card-text {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .wwa-credentials__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wwa-about__container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .wwa-team__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wwa-board__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wwa-benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .wwa-hero {
+    padding: 100px 20px 60px;
+  }
+
+  .wwa-hero__title {
+    font-size: 2.5rem;
+  }
+
+  .wwa-hero__subtitle {
+    font-size: 1.0625rem;
+  }
+
+  .wwa-credentials {
+    padding: 40px 20px 60px;
+  }
+
+  .wwa-credentials__container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .wwa-years {
+    padding: 60px 20px;
+  }
+
+  .wwa-years__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wwa-years__title {
+    font-size: 2rem;
+  }
+
+  .wwa-years__subtitle {
+    font-size: 1.0625rem;
+  }
+
+  .wwa-years__badge {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+
+  .wwa-about {
+    padding: 60px 20px;
+  }
+
+  .wwa-about__block {
+    padding: 28px;
+  }
+
+  .wwa-about__title {
+    font-size: 1.75rem;
+  }
+
+  .wwa-why {
+    padding: 60px 20px;
+  }
+
+  .wwa-why__title {
+    font-size: 2rem;
+  }
+
+  .wwa-why__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wwa-team {
+    padding: 60px 20px;
+  }
+
+  .wwa-team__title {
+    font-size: 2rem;
+  }
+
+  .wwa-team__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .wwa-board {
+    padding: 60px 20px;
+  }
+
+  .wwa-board__title {
+    font-size: 2rem;
+  }
+
+  .wwa-board__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .wwa-benefits {
+    padding: 60px 20px;
+  }
+
+  .wwa-benefits__title {
+    font-size: 1.75rem;
+  }
+
+  .wwa-benefits__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .wwa-hero__title {
+    font-size: 2rem;
+  }
+
+  .wwa-years__title {
+    font-size: 1.75rem;
+  }
+
+  .wwa-team__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wwa-board__grid {
+    grid-template-columns: 1fr;
+  }
+}
