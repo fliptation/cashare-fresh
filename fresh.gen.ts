@@ -108,6 +108,7 @@ import * as $Counter from "./islands/Counter.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $LoanApplyForm from "./islands/LoanApplyForm.tsx";
 import * as $LoanCalculator from "./islands/LoanCalculator.tsx";
+import * as $LoginForm from "./islands/LoginForm.tsx";
 import * as $MigrationCheckbox from "./islands/MigrationCheckbox.tsx";
 import * as $ScrollReveal from "./islands/ScrollReveal.tsx";
 import * as $SmeApplyForm from "./islands/SmeApplyForm.tsx";
@@ -120,6 +121,12 @@ import * as $calculator_YieldCalculator from "./islands/calculator/YieldCalculat
 import * as $charts_RatingsChart from "./islands/charts/RatingsChart.tsx";
 import * as $charts_TimelineChart from "./islands/charts/TimelineChart.tsx";
 import * as $charts_VolumesChart from "./islands/charts/VolumesChart.tsx";
+import * as $modals_EmailValidationModal from "./islands/modals/EmailValidationModal.tsx";
+import * as $modals_ErrorModal from "./islands/modals/ErrorModal.tsx";
+import * as $modals_Modal from "./islands/modals/Modal.tsx";
+import * as $modals_RoleSelectionModal from "./islands/modals/RoleSelectionModal.tsx";
+import * as $modals_TwoFactorModal from "./islands/modals/TwoFactorModal.tsx";
+import * as $modals_index from "./islands/modals/index.ts";
 import * as $styleguide_ActiveNavigation from "./islands/styleguide/ActiveNavigation.tsx";
 import * as $styleguide_CollapsibleSection from "./islands/styleguide/CollapsibleSection.tsx";
 import * as $styleguide_CopyToClipboard from "./islands/styleguide/CopyToClipboard.tsx";
@@ -246,6 +253,7 @@ const manifest = {
     "./islands/Header.tsx": $Header,
     "./islands/LoanApplyForm.tsx": $LoanApplyForm,
     "./islands/LoanCalculator.tsx": $LoanCalculator,
+    "./islands/LoginForm.tsx": $LoginForm,
     "./islands/MigrationCheckbox.tsx": $MigrationCheckbox,
     "./islands/ScrollReveal.tsx": $ScrollReveal,
     "./islands/SmeApplyForm.tsx": $SmeApplyForm,
@@ -258,6 +266,12 @@ const manifest = {
     "./islands/charts/RatingsChart.tsx": $charts_RatingsChart,
     "./islands/charts/TimelineChart.tsx": $charts_TimelineChart,
     "./islands/charts/VolumesChart.tsx": $charts_VolumesChart,
+    "./islands/modals/EmailValidationModal.tsx": $modals_EmailValidationModal,
+    "./islands/modals/ErrorModal.tsx": $modals_ErrorModal,
+    "./islands/modals/Modal.tsx": $modals_Modal,
+    "./islands/modals/RoleSelectionModal.tsx": $modals_RoleSelectionModal,
+    "./islands/modals/TwoFactorModal.tsx": $modals_TwoFactorModal,
+    "./islands/modals/index.ts": $modals_index,
     "./islands/styleguide/ActiveNavigation.tsx": $styleguide_ActiveNavigation,
     "./islands/styleguide/CollapsibleSection.tsx":
       $styleguide_CollapsibleSection,

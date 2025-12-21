@@ -1,8 +1,8 @@
-import { Login } from "../components/pages/Login.tsx";
+import LoginForm from "../islands/LoginForm.tsx";
 import type { Locale } from "../lib/i18n/index.ts";
 
 export default function LoginDE() {
   const locale: Locale = "de";
 
-  return <Login locale={locale} />;
+  return <LoginForm locale={locale} />;
 }

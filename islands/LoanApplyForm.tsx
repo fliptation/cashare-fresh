@@ -1,6 +1,12 @@
 import { useSignal, useComputed } from "@preact/signals";
 import { Calculator, ProductType, InsuranceType } from "../lib/calculator/mod.ts";
 import { formatMoney } from "../lib/utils/format.ts";
+import { createLoanApplication, buildLoanPayload, getBorrowerDashboardUrl } from "../lib/api/cashare.ts";
+import { LoanProduct, LiableEntity } from "../lib/api/types.ts";
+import { storeTokens, storeUserDetails } from "../lib/auth/storage.ts";
+import EmailValidationModal from "./modals/EmailValidationModal.tsx";
+import TwoFactorModal from "./modals/TwoFactorModal.tsx";
+import ErrorModal from "./modals/ErrorModal.tsx";
 import type { Locale } from "../lib/i18n/index.ts";
 
 const content = {
@@ -19,7 +25,7 @@ const content = {
       passwordLabel: "Ihr Passwort",
       passwordPlaceholder: "Ihr Passwort",
       submit: "Jetzt beantragen",
-      ctaLink: "https://app.cashare.ch/de/borrower/register",
+      submitting: "Wird verarbeitet...",
     },
     rates: {
       interestRate: "Zinssatz",
@@ -42,6 +48,13 @@ const content = {
       termsLinkHref: "/agb",
       termsEnd: "zu.",
     },
+    validation: {
+      emailRequired: "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+      emailInvalid: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      passwordRequired: "Bitte geben Sie ein Passwort ein.",
+      amountInvalid: "Bitte geben Sie einen Betrag zwischen 1'000 und 1'000'000 ein.",
+      durationInvalid: "Bitte geben Sie eine Laufzeit zwischen 1 und 60 Monaten ein.",
+    },
   },
   en: {
     badge: "Personal Loan Application",
@@ -58,7 +71,7 @@ const content = {
       passwordLabel: "Your Password",
       passwordPlaceholder: "Your Password",
       submit: "Apply Now",
-      ctaLink: "https://app.cashare.ch/en/borrower/register",
+      submitting: "Processing...",
     },
     rates: {
       interestRate: "Interest Rate",
@@ -81,6 +94,13 @@ const content = {
       termsLinkHref: "/en/terms",
       termsEnd: ".",
     },
+    validation: {
+      emailRequired: "Please enter your email address.",
+      emailInvalid: "Please enter a valid email address.",
+      passwordRequired: "Please enter a password.",
+      amountInvalid: "Please enter an amount between 1,000 and 1,000,000.",
+      durationInvalid: "Please enter a duration between 1 and 60 months.",
+    },
   },
   fr: {
     badge: "Demande de crédit privé",
@@ -97,7 +117,7 @@ const content = {
       passwordLabel: "Votre mot de passe",
       passwordPlaceholder: "Votre mot de passe",
       submit: "Demander maintenant",
-      ctaLink: "https://app.cashare.ch/fr/borrower/register",
+      submitting: "Traitement en cours...",
     },
     rates: {
       interestRate: "Taux d'intérêt",
@@ -120,6 +140,13 @@ const content = {
       termsLinkHref: "/fr/cgv",
       termsEnd: ".",
     },
+    validation: {
+      emailRequired: "Veuillez saisir votre adresse e-mail.",
+      emailInvalid: "Veuillez saisir une adresse e-mail valide.",
+      passwordRequired: "Veuillez saisir un mot de passe.",
+      amountInvalid: "Veuillez saisir un montant entre 1'000 et 1'000'000.",
+      durationInvalid: "Veuillez saisir une durée entre 1 et 60 mois.",
+    },
   },
 };
 
@@ -135,11 +162,23 @@ export default function LoanApplyForm({ locale }: LoanApplyFormProps) {
   calc.setProduct(ProductType.P2P);
   calc.setInsuranceType(InsuranceType.NONE);
 
-  // State
+  // Form state
   const amount = useSignal(25000);
   const duration = useSignal(24);
   const email = useSignal("");
   const password = useSignal("");
+
+  // UI state
+  const isLoading = useSignal(false);
+  const formError = useSignal("");
+  const fieldErrors = useSignal<Record<string, string>>({});
+
+  // Modal state
+  const showEmailValidation = useSignal(false);
+  const showTwoFactor = useSignal(false);
+  const showError = useSignal(false);
+  const errorMessage = useSignal("");
+  const pendingAuthCode = useSignal("");
 
   // Interest rates
   const minRate = 4.4;
@@ -167,11 +206,120 @@ export default function LoanApplyForm({ locale }: LoanApplyFormProps) {
     return formatMoney(n);
   };
 
+  // Validation
+  const validateForm = (): boolean => {
+    const errors: Record<string, string> = {};
+
+    if (amount.value < 1000 || amount.value > 1000000) {
+      errors.amount = t.validation.amountInvalid;
+    }
+
+    if (duration.value < 1 || duration.value > 60) {
+      errors.duration = t.validation.durationInvalid;
+    }
+
+    if (!email.value) {
+      errors.email = t.validation.emailRequired;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+      errors.email = t.validation.emailInvalid;
+    }
+
+    if (!password.value) {
+      errors.password = t.validation.passwordRequired;
+    }
+
+    fieldErrors.value = errors;
+    return Object.keys(errors).length === 0;
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e: Event, authCode = "") => {
+    e.preventDefault();
+    formError.value = "";
+
+    if (!validateForm()) return;
+
+    isLoading.value = true;
+
+    try {
+      const payload = buildLoanPayload({
+        amount: amount.value,
+        interest: minRate,
+        lifetime: duration.value,
+        product: LoanProduct.P2P,
+        liableEntity: LiableEntity.PRIVATE,
+        email: email.value,
+        password: password.value,
+        language: locale,
+        authCode,
+      });
+
+      const response = await createLoanApplication(payload);
+
+      // Handle response based on action
+      switch (response.action) {
+        case "redirect":
+          // Success! Store tokens and redirect
+          if (response.token && response.refresh_token) {
+            storeTokens({
+              token: response.token,
+              refresh_token: response.refresh_token,
+            });
+          }
+          if (response.userDetails) {
+            storeUserDetails(response.userDetails);
+          }
+          // Redirect to dashboard
+          window.location.href = response.redirect || getBorrowerDashboardUrl(locale);
+          break;
+
+        case "ok":
+          // Email validation needed
+          showEmailValidation.value = true;
+          break;
+
+        case "requestPossessionFactorAuthenticationToken":
+          // 2FA required
+          showTwoFactor.value = true;
+          break;
+
+        case "message":
+        case "modalNLNL":
+          // Error message
+          errorMessage.value = response.message || "An error occurred";
+          showError.value = true;
+          break;
+
+        default:
+          errorMessage.value = response.message || "Unexpected response";
+          showError.value = true;
+      }
+    } catch (err) {
+      errorMessage.value = err instanceof Error ? err.message : "An error occurred";
+      showError.value = true;
+    } finally {
+      isLoading.value = false;
+    }
+  };
+
+  // Handle 2FA submission
+  const handleTwoFactorSubmit = async (code: string) => {
+    showTwoFactor.value = false;
+    pendingAuthCode.value = code;
+    // Resubmit with auth code
+    const fakeEvent = { preventDefault: () => {} } as Event;
+    await handleSubmit(fakeEvent, code);
+  };
+
   // Handle amount input
   const handleAmountChange = (e: Event) => {
     const target = e.target as HTMLInputElement;
     const value = target.value.replace(/[^0-9]/g, "");
     amount.value = parseInt(value) || 0;
+    if (fieldErrors.value.amount) {
+      const { amount: _, ...rest } = fieldErrors.value;
+      fieldErrors.value = rest;
+    }
   };
 
   // Handle duration input
@@ -179,199 +327,255 @@ export default function LoanApplyForm({ locale }: LoanApplyFormProps) {
     const target = e.target as HTMLInputElement;
     const value = target.value.replace(/[^0-9]/g, "");
     duration.value = parseInt(value) || 0;
+    if (fieldErrors.value.duration) {
+      const { duration: _, ...rest } = fieldErrors.value;
+      fieldErrors.value = rest;
+    }
   };
 
   return (
-    <section class="loan-apply gradient-hero">
-      {/* Animated background orbs */}
-      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
-      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
-      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
-      <div class="hero__orb hero__orb--4" aria-hidden="true"></div>
+    <>
+      <section class="loan-apply gradient-hero">
+        {/* Animated background orbs */}
+        <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--4" aria-hidden="true"></div>
 
-      {/* Grid lines effect */}
-      <div class="hero__grid-lines" aria-hidden="true"></div>
-      <div class="hero__shine" aria-hidden="true"></div>
-      <div class="hero__shine hero__shine--2" aria-hidden="true"></div>
+        {/* Grid lines effect */}
+        <div class="hero__grid-lines" aria-hidden="true"></div>
+        <div class="hero__shine" aria-hidden="true"></div>
+        <div class="hero__shine hero__shine--2" aria-hidden="true"></div>
 
-      <div class="loan-apply__container">
-        <div class="loan-apply__form-card">
-          {/* Badge */}
-          <span class="loan-apply__badge">{t.badge}</span>
+        <div class="loan-apply__container">
+          <div class="loan-apply__form-card">
+            {/* Badge */}
+            <span class="loan-apply__badge">{t.badge}</span>
 
-          {/* Title */}
-          <h1 class="loan-apply__title">{t.title}</h1>
+            {/* Title */}
+            <h1 class="loan-apply__title">{t.title}</h1>
 
-          {/* Form - Two Column Layout */}
-          <form class="loan-apply__form" action={t.form.ctaLink} method="GET">
-            <div class="loan-apply__columns">
-              {/* Left Column - Input Fields */}
-              <div class="loan-apply__column loan-apply__column--left">
-                {/* Amount Field */}
-                <div class="loan-apply__field">
-                  <label class="loan-apply__label">
-                    {t.form.amountLabel}{" "}
-                    <span class="loan-apply__required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    class="loan-apply__input"
-                    placeholder={t.form.amountPlaceholder}
-                    value={amount.value || ""}
-                    onInput={handleAmountChange}
-                    required
-                  />
+            {/* Form - Two Column Layout */}
+            <form class="loan-apply__form" onSubmit={handleSubmit}>
+              <div class="loan-apply__columns">
+                {/* Left Column - Input Fields */}
+                <div class="loan-apply__column loan-apply__column--left">
+                  {/* Amount Field */}
+                  <div class="loan-apply__field">
+                    <label class="loan-apply__label">
+                      {t.form.amountLabel}{" "}
+                      <span class="loan-apply__required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class={`loan-apply__input ${fieldErrors.value.amount ? "loan-apply__input--error" : ""}`}
+                      placeholder={t.form.amountPlaceholder}
+                      value={amount.value || ""}
+                      onInput={handleAmountChange}
+                      required
+                    />
+                    {fieldErrors.value.amount && (
+                      <span class="loan-apply__field-error">{fieldErrors.value.amount}</span>
+                    )}
+                  </div>
+
+                  {/* Duration Field */}
+                  <div class="loan-apply__field">
+                    <label class="loan-apply__label">
+                      {t.form.durationLabel}{" "}
+                      <span class="loan-apply__required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class={`loan-apply__input ${fieldErrors.value.duration ? "loan-apply__input--error" : ""}`}
+                      placeholder={t.form.durationPlaceholder}
+                      value={duration.value || ""}
+                      onInput={handleDurationChange}
+                      required
+                    />
+                    {fieldErrors.value.duration && (
+                      <span class="loan-apply__field-error">{fieldErrors.value.duration}</span>
+                    )}
+                  </div>
+
+                  <p class="loan-apply__hint">{t.form.durationHint}</p>
+
+                  {/* Email Field */}
+                  <div class="loan-apply__field">
+                    <label class="loan-apply__label">
+                      {t.form.emailLabel}{" "}
+                      <span class="loan-apply__required">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      class={`loan-apply__input ${fieldErrors.value.email ? "loan-apply__input--error" : ""}`}
+                      placeholder={t.form.emailPlaceholder}
+                      value={email.value}
+                      onInput={(e) => {
+                        email.value = (e.target as HTMLInputElement).value;
+                        if (fieldErrors.value.email) {
+                          const { email: _, ...rest } = fieldErrors.value;
+                          fieldErrors.value = rest;
+                        }
+                      }}
+                      required
+                    />
+                    {fieldErrors.value.email && (
+                      <span class="loan-apply__field-error">{fieldErrors.value.email}</span>
+                    )}
+                  </div>
+
+                  {/* Password Field */}
+                  <div class="loan-apply__field">
+                    <label class="loan-apply__label">
+                      {t.form.passwordLabel}{" "}
+                      <span class="loan-apply__required">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      class={`loan-apply__input ${fieldErrors.value.password ? "loan-apply__input--error" : ""}`}
+                      placeholder={t.form.passwordPlaceholder}
+                      value={password.value}
+                      onInput={(e) => {
+                        password.value = (e.target as HTMLInputElement).value;
+                        if (fieldErrors.value.password) {
+                          const { password: _, ...rest } = fieldErrors.value;
+                          fieldErrors.value = rest;
+                        }
+                      }}
+                      required
+                    />
+                    {fieldErrors.value.password && (
+                      <span class="loan-apply__field-error">{fieldErrors.value.password}</span>
+                    )}
+                  </div>
                 </div>
 
-                {/* Duration Field */}
-                <div class="loan-apply__field">
-                  <label class="loan-apply__label">
-                    {t.form.durationLabel}{" "}
-                    <span class="loan-apply__required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    class="loan-apply__input"
-                    placeholder={t.form.durationPlaceholder}
-                    value={duration.value || ""}
-                    onInput={handleDurationChange}
-                    required
-                  />
-                </div>
+                {/* Right Column - Rates & Submit */}
+                <div class="loan-apply__column loan-apply__column--right">
+                  {/* Rate Display Table */}
+                  <div class="loan-apply__rates">
+                    <div class="loan-apply__rates-header">
+                      <span></span>
+                      <span class="loan-apply__rates-col loan-apply__rates-col--from">
+                        {t.rates.from}
+                      </span>
+                      <span class="loan-apply__rates-col loan-apply__rates-col--to">
+                        {t.rates.to}
+                      </span>
+                    </div>
+                    <div class="loan-apply__rates-row">
+                      <span class="loan-apply__rates-label">
+                        {t.rates.interestRate}
+                      </span>
+                      <span class="loan-apply__rates-value loan-apply__rates-value--from">
+                        {t.rates.minRate}
+                      </span>
+                      <span class="loan-apply__rates-value loan-apply__rates-value--to">
+                        {t.rates.maxRate}
+                      </span>
+                    </div>
+                    <div class="loan-apply__rates-row">
+                      <span class="loan-apply__rates-label">
+                        {t.rates.monthlyPayment}
+                      </span>
+                      <span class="loan-apply__rates-value loan-apply__rates-value--from">
+                        {resultsMin.value ? formatSwiss(resultsMin.value.instalmentWithoutPremium) : "-"}
+                      </span>
+                      <span class="loan-apply__rates-value loan-apply__rates-value--to">
+                        {resultsMax.value ? formatSwiss(resultsMax.value.instalmentWithoutPremium) : "-"}
+                      </span>
+                    </div>
+                    <div class="loan-apply__rates-row">
+                      <span class="loan-apply__rates-label">
+                        {t.rates.interestCosts}
+                      </span>
+                      <span class="loan-apply__rates-value loan-apply__rates-value--from">
+                        {resultsMin.value ? formatSwiss(resultsMin.value.interestCosts) : "-"}
+                      </span>
+                      <span class="loan-apply__rates-value loan-apply__rates-value--to">
+                        {resultsMax.value ? formatSwiss(resultsMax.value.interestCosts) : "-"}
+                      </span>
+                    </div>
+                    <div class="loan-apply__rates-row">
+                      <span class="loan-apply__rates-label">
+                        {t.rates.platformFee}
+                      </span>
+                      <span class="loan-apply__rates-value loan-apply__rates-value--from">
+                        {resultsMin.value?.fee ? formatSwiss(resultsMin.value.fee) : "-"}
+                      </span>
+                      <span class="loan-apply__rates-value loan-apply__rates-value--to">
+                        {resultsMax.value?.fee ? formatSwiss(resultsMax.value.fee) : "-"}
+                      </span>
+                    </div>
+                  </div>
 
-                <p class="loan-apply__hint">{t.form.durationHint}</p>
+                  <p class="loan-apply__disclaimer">{t.rates.disclaimer}</p>
 
-                {/* Email Field */}
-                <div class="loan-apply__field">
-                  <label class="loan-apply__label">
-                    {t.form.emailLabel}{" "}
-                    <span class="loan-apply__required">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    class="loan-apply__input"
-                    placeholder={t.form.emailPlaceholder}
-                    value={email.value}
-                    onInput={(e) => email.value = (e.target as HTMLInputElement).value}
-                    required
-                  />
-                </div>
+                  {/* Form Error */}
+                  {formError.value && (
+                    <p class="loan-apply__form-error">{formError.value}</p>
+                  )}
 
-                {/* Password Field */}
-                <div class="loan-apply__field">
-                  <label class="loan-apply__label">
-                    {t.form.passwordLabel}{" "}
-                    <span class="loan-apply__required">*</span>
-                  </label>
-                  <input
-                    type="password"
-                    class="loan-apply__input"
-                    placeholder={t.form.passwordPlaceholder}
-                    value={password.value}
-                    onInput={(e) => password.value = (e.target as HTMLInputElement).value}
-                    required
-                  />
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    class="btn btn--primary"
+                    disabled={isLoading.value}
+                  >
+                    {isLoading.value ? t.form.submitting : t.form.submit}
+                  </button>
+
+                  {/* Footer Links */}
+                  <div class="loan-apply__footer">
+                    <p class="loan-apply__footer-text">
+                      {t.footer.hasAccount}{" "}
+                      <a
+                        href={t.footer.loginLink}
+                        class="loan-apply__footer-link"
+                      >
+                        {t.footer.login}
+                      </a>.
+                    </p>
+                    <p class="loan-apply__footer-text">
+                      {t.footer.terms}{" "}
+                      <a
+                        href={t.footer.termsLinkHref}
+                        class="loan-apply__footer-link"
+                      >
+                        {t.footer.termsLink}
+                      </a>{" "}
+                      {t.footer.termsEnd}
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              {/* Right Column - Rates & Submit */}
-              <div class="loan-apply__column loan-apply__column--right">
-                {/* Rate Display Table */}
-                <div class="loan-apply__rates">
-                  <div class="loan-apply__rates-header">
-                    <span></span>
-                    <span class="loan-apply__rates-col loan-apply__rates-col--from">
-                      {t.rates.from}
-                    </span>
-                    <span class="loan-apply__rates-col loan-apply__rates-col--to">
-                      {t.rates.to}
-                    </span>
-                  </div>
-                  <div class="loan-apply__rates-row">
-                    <span class="loan-apply__rates-label">
-                      {t.rates.interestRate}
-                    </span>
-                    <span class="loan-apply__rates-value loan-apply__rates-value--from">
-                      {t.rates.minRate}
-                    </span>
-                    <span class="loan-apply__rates-value loan-apply__rates-value--to">
-                      {t.rates.maxRate}
-                    </span>
-                  </div>
-                  <div class="loan-apply__rates-row">
-                    <span class="loan-apply__rates-label">
-                      {t.rates.monthlyPayment}
-                    </span>
-                    <span class="loan-apply__rates-value loan-apply__rates-value--from">
-                      {resultsMin.value ? formatSwiss(resultsMin.value.instalmentWithoutPremium) : "-"}
-                    </span>
-                    <span class="loan-apply__rates-value loan-apply__rates-value--to">
-                      {resultsMax.value ? formatSwiss(resultsMax.value.instalmentWithoutPremium) : "-"}
-                    </span>
-                  </div>
-                  <div class="loan-apply__rates-row">
-                    <span class="loan-apply__rates-label">
-                      {t.rates.interestCosts}
-                    </span>
-                    <span class="loan-apply__rates-value loan-apply__rates-value--from">
-                      {resultsMin.value ? formatSwiss(resultsMin.value.interestCosts) : "-"}
-                    </span>
-                    <span class="loan-apply__rates-value loan-apply__rates-value--to">
-                      {resultsMax.value ? formatSwiss(resultsMax.value.interestCosts) : "-"}
-                    </span>
-                  </div>
-                  <div class="loan-apply__rates-row">
-                    <span class="loan-apply__rates-label">
-                      {t.rates.platformFee}
-                    </span>
-                    <span class="loan-apply__rates-value loan-apply__rates-value--from">
-                      {resultsMin.value?.fee ? formatSwiss(resultsMin.value.fee) : "-"}
-                    </span>
-                    <span class="loan-apply__rates-value loan-apply__rates-value--to">
-                      {resultsMax.value?.fee ? formatSwiss(resultsMax.value.fee) : "-"}
-                    </span>
-                  </div>
-                </div>
-
-                <p class="loan-apply__disclaimer">{t.rates.disclaimer}</p>
-
-                {/* Submit Button */}
-                <a
-                  href={t.form.ctaLink}
-                  class="btn btn--primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t.form.submit}
-                </a>
-
-                {/* Footer Links */}
-                <div class="loan-apply__footer">
-                  <p class="loan-apply__footer-text">
-                    {t.footer.hasAccount}{" "}
-                    <a
-                      href={t.footer.loginLink}
-                      class="loan-apply__footer-link"
-                    >
-                      {t.footer.login}
-                    </a>.
-                  </p>
-                  <p class="loan-apply__footer-text">
-                    {t.footer.terms}{" "}
-                    <a
-                      href={t.footer.termsLinkHref}
-                      class="loan-apply__footer-link"
-                    >
-                      {t.footer.termsLink}
-                    </a>{" "}
-                    {t.footer.termsEnd}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Modals */}
+      <EmailValidationModal
+        isOpen={showEmailValidation.value}
+        onClose={() => showEmailValidation.value = false}
+        email={email.value}
+        locale={locale}
+      />
+
+      <TwoFactorModal
+        isOpen={showTwoFactor.value}
+        onClose={() => showTwoFactor.value = false}
+        onSubmit={handleTwoFactorSubmit}
+        locale={locale}
+      />
+
+      <ErrorModal
+        isOpen={showError.value}
+        onClose={() => showError.value = false}
+        message={errorMessage.value}
+        locale={locale}
+      />
+    </>
   );
 }
