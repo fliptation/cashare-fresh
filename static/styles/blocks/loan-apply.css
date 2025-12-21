@@ -5,9 +5,6 @@
 .loan-apply {
   position: relative;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 120px 20px 80px;
   isolation: isolate;
 }
@@ -16,7 +13,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 640px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -35,8 +32,7 @@
   backdrop-filter: blur(28px) saturate(1.2);
   -webkit-backdrop-filter: blur(28px) saturate(1.2);
   border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.08),
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
   border-radius: 24px;
   padding: var(--space-8);
@@ -81,6 +77,51 @@
   flex-direction: column;
   gap: var(--space-4);
   text-align: left;
+}
+
+/* ==========================================================================
+   Two Column Layout
+   ========================================================================== */
+
+.loan-apply__columns {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.loan-apply__column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.loan-apply__column--right {
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-apply__column--right .loan-apply__rates {
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+  .loan-apply__columns {
+    flex-direction: row;
+    gap: var(--space-8);
+  }
+
+  .loan-apply__column {
+    flex: 1;
+  }
+
+  .loan-apply__column--left {
+    flex: 1.1;
+  }
+
+  .loan-apply__column--right {
+    flex: 0.9;
+    justify-content: space-between;
+  }
 }
 
 .loan-apply__field {
@@ -205,37 +246,35 @@
 }
 
 /* ==========================================================================
-   Submit Button
+   Footer
    ========================================================================== */
 
-.loan-apply__submit {
-  display: block;
-  width: 100%;
-  padding: var(--space-5) var(--space-8);
-  background: linear-gradient(135deg, var(--color-secondary) 0%, #00a3b8 100%);
-  color: var(--color-white);
-  border: none;
-  border-radius: var(--radius-lg);
-  font-size: var(--text-base);
-  font-weight: 600;
-  font-family: var(--font-sans);
+.loan-apply__footer {
+  margin-top: var(--space-6);
   text-align: center;
+}
+
+.loan-apply__footer-text {
+  font-size: var(--text-sm);
+  color: var(--color-gray-dark);
+  margin-bottom: var(--space-2);
+  line-height: 1.5;
+}
+
+.loan-apply__footer-text:last-child {
+  margin-bottom: 0;
+}
+
+.loan-apply__footer-link {
+  color: var(--color-secondary);
   text-decoration: none;
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 14px rgba(0, 181, 206, 0.35);
-  margin-top: var(--space-4);
+  font-weight: 500;
+  transition: var(--transition-fast);
 }
 
-.loan-apply__submit:hover {
-  background: linear-gradient(135deg, #00c4db 0%, var(--color-secondary) 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 181, 206, 0.45);
-}
-
-.loan-apply__submit:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 10px rgba(0, 181, 206, 0.3);
+.loan-apply__footer-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 /* ==========================================================================
