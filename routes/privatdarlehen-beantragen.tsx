@@ -1,5 +1,5 @@
 import { Layout } from "../components/Layout.tsx";
-import { PrivatdarlehenBeantragen } from "../components/pages/PrivatdarlehenBeantragen.tsx";
+import LoanApplyForm from "../islands/LoanApplyForm.tsx";
 import type { Locale } from "../lib/i18n/index.ts";
 
 export default function PrivatdarlehenBeantragenDE() {
@@ -7,7 +7,7 @@ export default function PrivatdarlehenBeantragenDE() {
 
   return (
     <Layout locale={locale}>
-      <PrivatdarlehenBeantragen locale={locale} />
+      <LoanApplyForm locale={locale} />
     </Layout>
   );
 }

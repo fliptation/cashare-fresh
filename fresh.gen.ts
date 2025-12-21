@@ -104,6 +104,7 @@ import * as $AnimatedCounter from "./islands/AnimatedCounter.tsx";
 import * as $BlogIsland from "./islands/BlogIsland.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $Header from "./islands/Header.tsx";
+import * as $LoanApplyForm from "./islands/LoanApplyForm.tsx";
 import * as $LoanCalculator from "./islands/LoanCalculator.tsx";
 import * as $MigrationCheckbox from "./islands/MigrationCheckbox.tsx";
 import * as $ScrollReveal from "./islands/ScrollReveal.tsx";
@@ -237,6 +238,7 @@ const manifest = {
     "./islands/BlogIsland.tsx": $BlogIsland,
     "./islands/Counter.tsx": $Counter,
     "./islands/Header.tsx": $Header,
+    "./islands/LoanApplyForm.tsx": $LoanApplyForm,
     "./islands/LoanCalculator.tsx": $LoanCalculator,
     "./islands/MigrationCheckbox.tsx": $MigrationCheckbox,
     "./islands/ScrollReveal.tsx": $ScrollReveal,
