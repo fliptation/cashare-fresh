@@ -45,7 +45,10 @@ const footerContent = {
         title: "Support",
         links: [
           { label: "FAQ/Hilfe", href: "https://support.cashare.ch/hc/de" },
-          { label: "Kontakt", href: "https://support.cashare.ch/hc/de/requests/new" },
+          {
+            label: "Kontakt",
+            href: "https://support.cashare.ch/hc/de/requests/new",
+          },
         ],
       },
       legal: {
@@ -68,20 +71,24 @@ const footerContent = {
       fr: "Français",
     },
     regulatory: {
-      edob: "Die Datenbank von Cashare ist beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) registriert.",
+      edob:
+        "Die Datenbank von Cashare ist beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) registriert.",
       confederation: {
         de: "Schweizerische Eidgenossenschaft",
         fr: "Confédération suisse",
         it: "Confederazione Svizzera",
         rm: "Confederaziun svizra",
       },
-      edobTitle: "Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)",
+      edobTitle:
+        "Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)",
       sroPolyreg: "Cashare ist Mitglied der",
       sroPolyregLink: "SRO Polyreg",
       sroPolyregUrl: "https://www.polyreg.ch/",
-      finma: "und ein genehmigter Finanzintermediär im Sinne von Artikel 2, Absatz 3ff des Schweizer Geldwäschereigesetzes. Cashare wurde die Lizenz für die Gewährung von Verbraucherkrediten des Direktionssekretariats der",
+      finma:
+        "und ein genehmigter Finanzintermediär im Sinne von Artikel 2, Absatz 3ff des Schweizer Geldwäschereigesetzes. Cashare wurde die Lizenz für die Gewährung von Verbraucherkrediten des Direktionssekretariats der",
       wirtschaftsdirektion: "Nationalen Wirtschaftsdirektion",
-      wirtschaftsdirektionUrl: "https://www.zg.ch/behoerden/volkswirtschaftsdirektion",
+      wirtschaftsdirektionUrl:
+        "https://www.zg.ch/behoerden/volkswirtschaftsdirektion",
       zugSuffix: "des Kantons Zug erteilt.",
     },
     copyright: "© 2008-2026 Cashare AG. Alle Rechte vorbehalten.",
@@ -128,7 +135,10 @@ const footerContent = {
         title: "Support",
         links: [
           { label: "FAQ/Help", href: "https://support.cashare.ch/hc/en-us" },
-          { label: "Contact", href: "https://support.cashare.ch/hc/en-us/requests/new" },
+          {
+            label: "Contact",
+            href: "https://support.cashare.ch/hc/en-us/requests/new",
+          },
         ],
       },
       legal: {
@@ -151,7 +161,8 @@ const footerContent = {
       fr: "Français",
     },
     regulatory: {
-      edob: "The Cashare database is registered with the Federal Data Protection and Information Commissioner (FDPIC).",
+      edob:
+        "The Cashare database is registered with the Federal Data Protection and Information Commissioner (FDPIC).",
       confederation: {
         de: "Schweizerische Eidgenossenschaft",
         fr: "Confédération suisse",
@@ -162,9 +173,11 @@ const footerContent = {
       sroPolyreg: "Cashare is a member of",
       sroPolyregLink: "SRO Polyreg",
       sroPolyregUrl: "https://www.polyreg.ch/",
-      finma: "and an approved financial intermediary within the meaning of Article 2, Paragraph 3ff of the Swiss Anti-Money Laundering Act. Cashare was granted the license for consumer credit by the Directorate Secretariat of the",
+      finma:
+        "and an approved financial intermediary within the meaning of Article 2, Paragraph 3ff of the Swiss Anti-Money Laundering Act. Cashare was granted the license for consumer credit by the Directorate Secretariat of the",
       wirtschaftsdirektion: "National Economic Directorate",
-      wirtschaftsdirektionUrl: "https://www.zg.ch/behoerden/volkswirtschaftsdirektion",
+      wirtschaftsdirektionUrl:
+        "https://www.zg.ch/behoerden/volkswirtschaftsdirektion",
       zugSuffix: "of the Canton of Zug.",
     },
     copyright: "© 2008-2026 Cashare AG. All rights reserved.",
@@ -211,7 +224,10 @@ const footerContent = {
         title: "Support",
         links: [
           { label: "FAQ/Aide", href: "https://support.cashare.ch/hc/fr" },
-          { label: "Contact", href: "https://support.cashare.ch/hc/fr/requests/new" },
+          {
+            label: "Contact",
+            href: "https://support.cashare.ch/hc/fr/requests/new",
+          },
         ],
       },
       legal: {
@@ -234,20 +250,24 @@ const footerContent = {
       fr: "Français",
     },
     regulatory: {
-      edob: "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT).",
+      edob:
+        "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT).",
       confederation: {
         de: "Schweizerische Eidgenossenschaft",
         fr: "Confédération suisse",
         it: "Confederazione Svizzera",
         rm: "Confederaziun svizra",
       },
-      edobTitle: "Préposé fédéral à la protection des données et à la transparence (PFPDT)",
+      edobTitle:
+        "Préposé fédéral à la protection des données et à la transparence (PFPDT)",
       sroPolyreg: "Cashare est membre de",
       sroPolyregLink: "SRO Polyreg",
       sroPolyregUrl: "https://www.polyreg.ch/",
-      finma: "et un intermédiaire financier agréé au sens de l'article 2, alinéa 3ss de la loi suisse sur le blanchiment d'argent. Cashare a obtenu la licence pour l'octroi de crédits à la consommation du Secrétariat de direction de la",
+      finma:
+        "et un intermédiaire financier agréé au sens de l'article 2, alinéa 3ss de la loi suisse sur le blanchiment d'argent. Cashare a obtenu la licence pour l'octroi de crédits à la consommation du Secrétariat de direction de la",
       wirtschaftsdirektion: "Direction nationale de l'économie",
-      wirtschaftsdirektionUrl: "https://www.zg.ch/behoerden/volkswirtschaftsdirektion",
+      wirtschaftsdirektionUrl:
+        "https://www.zg.ch/behoerden/volkswirtschaftsdirektion",
       zugSuffix: "du canton de Zoug.",
     },
     copyright: "© 2008-2026 Cashare AG. Tous droits réservés.",
@@ -466,12 +486,12 @@ export function Footer({ locale }: FooterProps) {
                   font-weight="bold"
                   fill="white"
                 >
-                  17+
+                  18+
                 </text>
               </svg>
             </div>
             <div class="footer__trust-content">
-              <span class="footer__trust-title">17 Jahre Erfahrung</span>
+              <span class="footer__trust-title">18 Jahre Erfahrung</span>
               <span class="footer__trust-text">Pionier seit 2008</span>
             </div>
           </div>
@@ -788,8 +808,8 @@ export function Footer({ locale }: FooterProps) {
           <div class="footer__confederation">
             <div class="footer__confederation-left">
               <svg class="footer__swiss-shield" viewBox="0 0 32 32" fill="none">
-                <rect x="4" y="4" width="24" height="24" fill="#dc2626"/>
-                <path d="M16 8V24M8 16H24" stroke="white" stroke-width="4"/>
+                <rect x="4" y="4" width="24" height="24" fill="#dc2626" />
+                <path d="M16 8V24M8 16H24" stroke="white" stroke-width="4" />
               </svg>
               <div class="footer__confederation-names">
                 <span>{content.regulatory.confederation.de}</span>
@@ -800,18 +820,30 @@ export function Footer({ locale }: FooterProps) {
             </div>
             <div class="footer__confederation-divider"></div>
             <div class="footer__confederation-right">
-              <span class="footer__edob-title">{content.regulatory.edobTitle}</span>
+              <span class="footer__edob-title">
+                {content.regulatory.edobTitle}
+              </span>
             </div>
           </div>
 
           {/* SRO Polyreg & License Info */}
           <p class="footer__regulatory-text">
             {content.regulatory.sroPolyreg}{" "}
-            <a href={content.regulatory.sroPolyregUrl} target="_blank" rel="noopener noreferrer" class="footer__regulatory-link">
+            <a
+              href={content.regulatory.sroPolyregUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__regulatory-link"
+            >
               {content.regulatory.sroPolyregLink}
             </a>{" "}
             {content.regulatory.finma}{" "}
-            <a href={content.regulatory.wirtschaftsdirektionUrl} target="_blank" rel="noopener noreferrer" class="footer__regulatory-link">
+            <a
+              href={content.regulatory.wirtschaftsdirektionUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__regulatory-link"
+            >
               {content.regulatory.wirtschaftsdirektion}
             </a>{" "}
             {content.regulatory.zugSuffix}

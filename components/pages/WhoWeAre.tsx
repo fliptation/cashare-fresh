@@ -14,27 +14,32 @@ const content = {
       {
         icon: "pioneer",
         title: "Die Pioniere",
-        text: "Gegründet im Januar 2008\nAls Schweizer Fintech-Pionier haben wir den Weg für eine moderne und digitale Kreditvergabe bereitet und verfügen entsprechend über die grösste Erfahrung in diesem Bereich.",
+        text:
+          "Gegründet im Januar 2008\nAls Schweizer Fintech-Pionier haben wir den Weg für eine moderne und digitale Kreditvergabe bereitet und verfügen entsprechend über die grösste Erfahrung in diesem Bereich.",
       },
       {
         icon: "regulated",
         title: "Reguliert",
-        text: "Als Aktiengesellschaft nach schweizerischem Recht mit Sitz in Hünenberg (ZG) und eingetragen im Handelsregister des Kantons Zug, Schweiz, verfügen wir über die Kreditgeber-Lizenz.",
+        text:
+          "Als Aktiengesellschaft nach schweizerischem Recht mit Sitz in Hünenberg (ZG) und eingetragen im Handelsregister des Kantons Zug, Schweiz, verfügen wir über die Kreditgeber-Lizenz.",
       },
       {
         icon: "audited",
         title: "Geprüft",
-        text: "Seit der Gründung geprüft durch das führende Prüfungs- und Beratungsunternehmen der Schweiz PricewaterhouseCoopers AG, Zürich",
+        text:
+          "Seit der Gründung geprüft durch das führende Prüfungs- und Beratungsunternehmen der Schweiz PricewaterhouseCoopers AG, Zürich",
       },
       {
         icon: "approved",
         title: "Genehmigt",
-        text: "Finanzintermediär im Sinne von GwG Art. 2 Abs. 3 und Mitglied bei der von der FINMA anerkannten Selbstregulierungsorganisation PolyReg",
+        text:
+          "Finanzintermediär im Sinne von GwG Art. 2 Abs. 3 und Mitglied bei der von der FINMA anerkannten Selbstregulierungsorganisation PolyReg",
       },
     ],
     years: {
-      title: "17 Jahre Cashare",
-      subtitle: "Eine Reise voller Innovation, Vertrauen und Wachstum im Marketplace-Lending.",
+      title: "18 Jahre Cashare",
+      subtitle:
+        "Eine Reise voller Innovation, Vertrauen und Wachstum im Marketplace-Lending.",
     },
     whatWeDo: {
       label: "Über uns",
@@ -55,23 +60,28 @@ const content = {
     },
     whyCashare: {
       title: "Wieso mit Cashare",
-      subtitle: "Bei Cashare verbinden wir modernste Finanztechnologie mit bewährter Schweizer Zuverlässigkeit – und bieten Ihnen damit das Beste aus beiden Welten.",
+      subtitle:
+        "Bei Cashare verbinden wir modernste Finanztechnologie mit bewährter Schweizer Zuverlässigkeit – und bieten Ihnen damit das Beste aus beiden Welten.",
       items: [
         {
           title: "Transparent und fair",
-          text: "Ohne versteckte Kosten verbinden wir Anleger und Kreditnehmer direkt über unsere Plattform – unkompliziert und zu fairen Konditionen.",
+          text:
+            "Ohne versteckte Kosten verbinden wir Anleger und Kreditnehmer direkt über unsere Plattform – unkompliziert und zu fairen Konditionen.",
         },
         {
           title: "Innovative Finanzlösungen",
-          text: "Wir nutzen moderne Technologien und datenbasierte Analysen, um verschiedene finanzielle Bedürfnisse effizient zu erfüllen.",
+          text:
+            "Wir nutzen moderne Technologien und datenbasierte Analysen, um verschiedene finanzielle Bedürfnisse effizient zu erfüllen.",
         },
         {
           title: "Erprobte Expertise",
-          text: "Mit unserer langjährigen Erfahrung und innovativen Technologie ermöglichen wir effiziente und fundierte Finanzierungslösungen.",
+          text:
+            "Mit unserer langjährigen Erfahrung und innovativen Technologie ermöglichen wir effiziente und fundierte Finanzierungslösungen.",
         },
         {
           title: "Kundenorientiert",
-          text: "Unsere Mitarbeiter und Plattform stellen die Bedürfnisse von Anleger und Kreditnehmern in den Mittelpunkt.",
+          text:
+            "Unsere Mitarbeiter und Plattform stellen die Bedürfnisse von Anleger und Kreditnehmern in den Mittelpunkt.",
         },
       ],
     },
@@ -80,58 +90,129 @@ const content = {
       subtitle: "Lernen Sie unser Team kennen",
       contactBtn: "Kontaktieren Sie uns",
       members: [
-        { name: "Michael Borter", role: "CEO / Gründer", image: "michael-borter" },
-        { name: "Roger Müller", role: "COO / Mitgründer", image: "roger-muller" },
-        { name: "Sajmir Medija", role: "Leiter Geschäftsentwicklung", image: "sajmir-medija" },
+        {
+          name: "Michael Borter",
+          role: "CEO / Gründer",
+          image: "michael-borter",
+        },
+        {
+          name: "Roger Müller",
+          role: "COO / Mitgründer",
+          image: "roger-muller",
+        },
+        {
+          name: "Sajmir Medija",
+          role: "Leiter Geschäftsentwicklung",
+          image: "sajmir-medija",
+        },
         { name: "Delia Aellen", role: "Leiter Betrieb", image: "delia-allen" },
-        { name: "Jonas Imfeld", role: "Leitender Risikomanager", image: "jonas-imfeld" },
-        { name: "Filipe Goncalves", role: "Verkaufsleiter", image: "filipe-goncalves" },
-        { name: "Andy Jenk", role: "Leiter B2B-Partnerschaften", image: "andy-jenk" },
-        { name: "Kassandra Bulica", role: "Kreditmanagerin / Sachbearbeiterin", image: "kassandra-bulica" },
-        { name: "Arbresha Hoxhaj", role: "Kreditmanagerin / Sachbearbeiterin", image: "arbresha-hoxhaj" },
-        { name: "Débora Fernandes Martins", role: "Junior-Kreditanalyst", image: "debora-fernandes" },
+        {
+          name: "Jonas Imfeld",
+          role: "Leitender Risikomanager",
+          image: "jonas-imfeld",
+        },
+        {
+          name: "Filipe Goncalves",
+          role: "Verkaufsleiter",
+          image: "filipe-goncalves",
+        },
+        {
+          name: "Andy Jenk",
+          role: "Leiter B2B-Partnerschaften",
+          image: "andy-jenk",
+        },
+        {
+          name: "Kassandra Bulica",
+          role: "Kreditmanagerin / Sachbearbeiterin",
+          image: "kassandra-bulica",
+        },
+        {
+          name: "Arbresha Hoxhaj",
+          role: "Kreditmanagerin / Sachbearbeiterin",
+          image: "arbresha-hoxhaj",
+        },
+        {
+          name: "Débora Fernandes Martins",
+          role: "Junior-Kreditanalyst",
+          image: "debora-fernandes",
+        },
       ],
     },
     board: {
       title: "Vorstand & Beirat",
       members: [
-        { name: "Jan F. Moermann", role: "Mitglied des Vorstands", image: "jan-moermann" },
-        { name: "Tina Störmer", role: "Mitglied des Beirats", image: "tina-stormer" },
-        { name: "Dr. Tom Ludescher", role: "Mitglied des Beirats", image: "tom-ludescher" },
-        { name: "Prof. Dr Alfred Mettler", role: "Mitglied des Beirats", image: "alfred-mettler" },
-        { name: "Harald Schnabel", role: "Mitglied des Beirats", image: "harald-schnabel" },
-        { name: "Dominik Joke", role: "Mitglied des Beirats", image: "dominik-joke" },
-        { name: "Oscar Neira", role: "Mitglied des Beirats", image: "oscar-neira" },
+        {
+          name: "Jan F. Moermann",
+          role: "Mitglied des Vorstands",
+          image: "jan-moermann",
+        },
+        {
+          name: "Tina Störmer",
+          role: "Mitglied des Beirats",
+          image: "tina-stormer",
+        },
+        {
+          name: "Dr. Tom Ludescher",
+          role: "Mitglied des Beirats",
+          image: "tom-ludescher",
+        },
+        {
+          name: "Prof. Dr Alfred Mettler",
+          role: "Mitglied des Beirats",
+          image: "alfred-mettler",
+        },
+        {
+          name: "Harald Schnabel",
+          role: "Mitglied des Beirats",
+          image: "harald-schnabel",
+        },
+        {
+          name: "Dominik Joke",
+          role: "Mitglied des Beirats",
+          image: "dominik-joke",
+        },
+        {
+          name: "Oscar Neira",
+          role: "Mitglied des Beirats",
+          image: "oscar-neira",
+        },
       ],
     },
     benefits: {
       title: "Unsere Vorteile",
       headline: "Erfahrung – Sicherheit – Effizienz – Technologie",
-      subtitle: "Mit Innovation und Verantwortung zu kosteneffizienten Lösungen für Kreditnehmer und Anleger.",
+      subtitle:
+        "Mit Innovation und Verantwortung zu kosteneffizienten Lösungen für Kreditnehmer und Anleger.",
       items: [
         {
           title: "Was Sie über uns wissen sollten",
-          text: "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet und hat sich als führender Anbieter für innovative Finanzierungslösungen etabliert. Mit über 60'000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge.",
+          text:
+            "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet und hat sich als führender Anbieter für innovative Finanzierungslösungen etabliert. Mit über 60'000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge.",
         },
         {
           title: "Transparente & effiziente Prozesse",
-          text: "Cashare steht für klare, faire und transparente Abläufe. Ob für Kreditnehmer oder Investoren – alle Prozesse sind verständlich und ohne versteckte Gebühren oder Überraschungen.",
+          text:
+            "Cashare steht für klare, faire und transparente Abläufe. Ob für Kreditnehmer oder Investoren – alle Prozesse sind verständlich und ohne versteckte Gebühren oder Überraschungen.",
         },
         {
           title: "Flexible Finanzlösungen für alle",
-          text: "Cashare verbindet Kreditnehmer mit Investoren und bietet eine faire Alternative zu Banken. Kreditnehmer profitieren von flexiblen Laufzeiten, Investoren von attraktiven Renditen und einer diversifizierten Anlagestrategie.",
+          text:
+            "Cashare verbindet Kreditnehmer mit Investoren und bietet eine faire Alternative zu Banken. Kreditnehmer profitieren von flexiblen Laufzeiten, Investoren von attraktiven Renditen und einer diversifizierten Anlagestrategie.",
         },
         {
           title: "Attraktive Renditen für Anleger",
-          text: "Anleger profitieren von attraktiven Renditen, die traditionelle Anlageformen in einem Portfolio optimal ergänzen, speziell als Erweiterung im Fixed Income Bereich.",
+          text:
+            "Anleger profitieren von attraktiven Renditen, die traditionelle Anlageformen in einem Portfolio optimal ergänzen, speziell als Erweiterung im Fixed Income Bereich.",
         },
         {
           title: "Sicherheit durch intelligentes Risikomanagement",
-          text: "Optimieren Sie Ihr Portfolio mit unseren massgeschneiderten Investitionslösungen für institutionelle Anleger. Profitieren Sie von einem starken Risikomanagement und einer professionellen Abwicklung.",
+          text:
+            "Optimieren Sie Ihr Portfolio mit unseren massgeschneiderten Investitionslösungen für institutionelle Anleger. Profitieren Sie von einem starken Risikomanagement und einer professionellen Abwicklung.",
         },
         {
           title: "Nachhaltige Finanzlösungen",
-          text: "Cashare verbindet Kreditnehmer und Investoren zu einer starken Finanzgemeinschaft. Durch Crowdlending wird finanzielle Unabhängigkeit gefördert und kleine Unternehmen unterstützt.",
+          text:
+            "Cashare verbindet Kreditnehmer und Investoren zu einer starken Finanzgemeinschaft. Durch Crowdlending wird finanzielle Unabhängigkeit gefördert und kleine Unternehmen unterstützt.",
         },
       ],
     },
@@ -145,27 +226,32 @@ const content = {
       {
         icon: "pioneer",
         title: "The Pioneers",
-        text: "Founded in January 2008\nAs a Swiss fintech pioneer, we have paved the way for modern digital lending and have the most experience in this area.",
+        text:
+          "Founded in January 2008\nAs a Swiss fintech pioneer, we have paved the way for modern digital lending and have the most experience in this area.",
       },
       {
         icon: "regulated",
         title: "Regulated",
-        text: "As a public limited company under Swiss law based in Hünenberg (ZG) and registered in the commercial register of the Canton of Zug, Switzerland, we hold the lending license.",
+        text:
+          "As a public limited company under Swiss law based in Hünenberg (ZG) and registered in the commercial register of the Canton of Zug, Switzerland, we hold the lending license.",
       },
       {
         icon: "audited",
         title: "Audited",
-        text: "Audited since founding by Switzerland's leading audit and consulting firm PricewaterhouseCoopers AG, Zurich",
+        text:
+          "Audited since founding by Switzerland's leading audit and consulting firm PricewaterhouseCoopers AG, Zurich",
       },
       {
         icon: "approved",
         title: "Approved",
-        text: "Financial intermediary within the meaning of AMLA Art. 2 Para. 3 and member of the FINMA-recognized self-regulatory organization PolyReg",
+        text:
+          "Financial intermediary within the meaning of AMLA Art. 2 Para. 3 and member of the FINMA-recognized self-regulatory organization PolyReg",
       },
     ],
     years: {
       title: "17 Years of Cashare",
-      subtitle: "A journey full of innovation, trust and growth in marketplace lending.",
+      subtitle:
+        "A journey full of innovation, trust and growth in marketplace lending.",
     },
     whatWeDo: {
       label: "About Us",
@@ -186,23 +272,28 @@ const content = {
     },
     whyCashare: {
       title: "Why Cashare",
-      subtitle: "At Cashare, we combine cutting-edge financial technology with proven Swiss reliability – giving you the best of both worlds.",
+      subtitle:
+        "At Cashare, we combine cutting-edge financial technology with proven Swiss reliability – giving you the best of both worlds.",
       items: [
         {
           title: "Transparent and Fair",
-          text: "Without hidden costs, we connect investors and borrowers directly through our platform – straightforward and at fair conditions.",
+          text:
+            "Without hidden costs, we connect investors and borrowers directly through our platform – straightforward and at fair conditions.",
         },
         {
           title: "Innovative Financial Solutions",
-          text: "We use modern technologies and data-driven analysis to efficiently meet various financial needs.",
+          text:
+            "We use modern technologies and data-driven analysis to efficiently meet various financial needs.",
         },
         {
           title: "Proven Expertise",
-          text: "With our long-standing experience and innovative technology, we enable efficient and well-founded financing solutions.",
+          text:
+            "With our long-standing experience and innovative technology, we enable efficient and well-founded financing solutions.",
         },
         {
           title: "Customer-Oriented",
-          text: "Our employees and platform put the needs of investors and borrowers at the center.",
+          text:
+            "Our employees and platform put the needs of investors and borrowers at the center.",
         },
       ],
     },
@@ -211,58 +302,133 @@ const content = {
       subtitle: "Get to know our team",
       contactBtn: "Contact Us",
       members: [
-        { name: "Michael Borter", role: "CEO / Founder", image: "michael-borter" },
-        { name: "Roger Müller", role: "COO / Co-Founder", image: "roger-muller" },
-        { name: "Sajmir Medija", role: "Head of Business Development", image: "sajmir-medija" },
-        { name: "Delia Aellen", role: "Head of Operations", image: "delia-allen" },
-        { name: "Jonas Imfeld", role: "Lead Risk Manager", image: "jonas-imfeld" },
-        { name: "Filipe Goncalves", role: "Sales Manager", image: "filipe-goncalves" },
-        { name: "Andy Jenk", role: "Head of B2B Partnerships", image: "andy-jenk" },
-        { name: "Kassandra Bulica", role: "Credit Manager", image: "kassandra-bulica" },
-        { name: "Arbresha Hoxhaj", role: "Credit Manager", image: "arbresha-hoxhaj" },
-        { name: "Débora Fernandes Martins", role: "Junior Credit Analyst", image: "debora-fernandes" },
+        {
+          name: "Michael Borter",
+          role: "CEO / Founder",
+          image: "michael-borter",
+        },
+        {
+          name: "Roger Müller",
+          role: "COO / Co-Founder",
+          image: "roger-muller",
+        },
+        {
+          name: "Sajmir Medija",
+          role: "Head of Business Development",
+          image: "sajmir-medija",
+        },
+        {
+          name: "Delia Aellen",
+          role: "Head of Operations",
+          image: "delia-allen",
+        },
+        {
+          name: "Jonas Imfeld",
+          role: "Lead Risk Manager",
+          image: "jonas-imfeld",
+        },
+        {
+          name: "Filipe Goncalves",
+          role: "Sales Manager",
+          image: "filipe-goncalves",
+        },
+        {
+          name: "Andy Jenk",
+          role: "Head of B2B Partnerships",
+          image: "andy-jenk",
+        },
+        {
+          name: "Kassandra Bulica",
+          role: "Credit Manager",
+          image: "kassandra-bulica",
+        },
+        {
+          name: "Arbresha Hoxhaj",
+          role: "Credit Manager",
+          image: "arbresha-hoxhaj",
+        },
+        {
+          name: "Débora Fernandes Martins",
+          role: "Junior Credit Analyst",
+          image: "debora-fernandes",
+        },
       ],
     },
     board: {
       title: "Board & Advisory",
       members: [
-        { name: "Jan F. Moermann", role: "Board Member", image: "jan-moermann" },
-        { name: "Tina Störmer", role: "Advisory Board Member", image: "tina-stormer" },
-        { name: "Dr. Tom Ludescher", role: "Advisory Board Member", image: "tom-ludescher" },
-        { name: "Prof. Dr Alfred Mettler", role: "Advisory Board Member", image: "alfred-mettler" },
-        { name: "Harald Schnabel", role: "Advisory Board Member", image: "harald-schnabel" },
-        { name: "Dominik Joke", role: "Advisory Board Member", image: "dominik-joke" },
-        { name: "Oscar Neira", role: "Advisory Board Member", image: "oscar-neira" },
+        {
+          name: "Jan F. Moermann",
+          role: "Board Member",
+          image: "jan-moermann",
+        },
+        {
+          name: "Tina Störmer",
+          role: "Advisory Board Member",
+          image: "tina-stormer",
+        },
+        {
+          name: "Dr. Tom Ludescher",
+          role: "Advisory Board Member",
+          image: "tom-ludescher",
+        },
+        {
+          name: "Prof. Dr Alfred Mettler",
+          role: "Advisory Board Member",
+          image: "alfred-mettler",
+        },
+        {
+          name: "Harald Schnabel",
+          role: "Advisory Board Member",
+          image: "harald-schnabel",
+        },
+        {
+          name: "Dominik Joke",
+          role: "Advisory Board Member",
+          image: "dominik-joke",
+        },
+        {
+          name: "Oscar Neira",
+          role: "Advisory Board Member",
+          image: "oscar-neira",
+        },
       ],
     },
     benefits: {
       title: "Our Advantages",
       headline: "Experience – Security – Efficiency – Technology",
-      subtitle: "Innovation and responsibility for cost-efficient solutions for borrowers and investors.",
+      subtitle:
+        "Innovation and responsibility for cost-efficient solutions for borrowers and investors.",
       items: [
         {
           title: "What You Should Know About Us",
-          text: "Cashare was founded in 2008 as Switzerland's first crowdlending platform and has established itself as a leading provider of innovative financing solutions. With over 60,000 customers and CHF 2.5 billion in reviewed loan applications.",
+          text:
+            "Cashare was founded in 2008 as Switzerland's first crowdlending platform and has established itself as a leading provider of innovative financing solutions. With over 60,000 customers and CHF 2.5 billion in reviewed loan applications.",
         },
         {
           title: "Transparent & Efficient Processes",
-          text: "Cashare stands for clear, fair, and transparent processes. Whether for borrowers or investors – all processes are understandable and without hidden fees or surprises.",
+          text:
+            "Cashare stands for clear, fair, and transparent processes. Whether for borrowers or investors – all processes are understandable and without hidden fees or surprises.",
         },
         {
           title: "Flexible Financial Solutions for Everyone",
-          text: "Cashare connects borrowers with investors and offers a fair alternative to banks. Borrowers benefit from flexible terms, investors from attractive returns and a diversified investment strategy.",
+          text:
+            "Cashare connects borrowers with investors and offers a fair alternative to banks. Borrowers benefit from flexible terms, investors from attractive returns and a diversified investment strategy.",
         },
         {
           title: "Attractive Returns for Investors",
-          text: "Investors benefit from attractive returns that optimally complement traditional investments in a portfolio, especially as an extension in the fixed income sector.",
+          text:
+            "Investors benefit from attractive returns that optimally complement traditional investments in a portfolio, especially as an extension in the fixed income sector.",
         },
         {
           title: "Security Through Intelligent Risk Management",
-          text: "Optimize your portfolio with our tailored investment solutions for institutional investors. Benefit from strong risk management and professional handling.",
+          text:
+            "Optimize your portfolio with our tailored investment solutions for institutional investors. Benefit from strong risk management and professional handling.",
         },
         {
           title: "Sustainable Financial Solutions",
-          text: "Cashare connects borrowers and investors into a strong financial community. Through crowdlending, financial independence is promoted and small businesses are supported.",
+          text:
+            "Cashare connects borrowers and investors into a strong financial community. Through crowdlending, financial independence is promoted and small businesses are supported.",
         },
       ],
     },
@@ -276,27 +442,32 @@ const content = {
       {
         icon: "pioneer",
         title: "Les Pionniers",
-        text: "Fondée en janvier 2008\nEn tant que pionnier suisse de la fintech, nous avons ouvert la voie à un crédit moderne et numérique et disposons de la plus grande expérience dans ce domaine.",
+        text:
+          "Fondée en janvier 2008\nEn tant que pionnier suisse de la fintech, nous avons ouvert la voie à un crédit moderne et numérique et disposons de la plus grande expérience dans ce domaine.",
       },
       {
         icon: "regulated",
         title: "Réglementée",
-        text: "En tant que société anonyme de droit suisse basée à Hünenberg (ZG) et inscrite au registre du commerce du canton de Zoug, Suisse, nous détenons la licence de prêteur.",
+        text:
+          "En tant que société anonyme de droit suisse basée à Hünenberg (ZG) et inscrite au registre du commerce du canton de Zoug, Suisse, nous détenons la licence de prêteur.",
       },
       {
         icon: "audited",
         title: "Auditée",
-        text: "Auditée depuis sa création par le principal cabinet d'audit et de conseil de Suisse PricewaterhouseCoopers AG, Zurich",
+        text:
+          "Auditée depuis sa création par le principal cabinet d'audit et de conseil de Suisse PricewaterhouseCoopers AG, Zurich",
       },
       {
         icon: "approved",
         title: "Approuvée",
-        text: "Intermédiaire financier au sens de la LBA Art. 2 al. 3 et membre de l'organisme d'autorégulation PolyReg reconnu par la FINMA",
+        text:
+          "Intermédiaire financier au sens de la LBA Art. 2 al. 3 et membre de l'organisme d'autorégulation PolyReg reconnu par la FINMA",
       },
     ],
     years: {
       title: "17 Ans de Cashare",
-      subtitle: "Un voyage rempli d'innovation, de confiance et de croissance dans le marketplace lending.",
+      subtitle:
+        "Un voyage rempli d'innovation, de confiance et de croissance dans le marketplace lending.",
     },
     whatWeDo: {
       label: "À Propos",
@@ -317,23 +488,28 @@ const content = {
     },
     whyCashare: {
       title: "Pourquoi Cashare",
-      subtitle: "Chez Cashare, nous combinons une technologie financière de pointe avec une fiabilité suisse éprouvée – vous offrant le meilleur des deux mondes.",
+      subtitle:
+        "Chez Cashare, nous combinons une technologie financière de pointe avec une fiabilité suisse éprouvée – vous offrant le meilleur des deux mondes.",
       items: [
         {
           title: "Transparent et Équitable",
-          text: "Sans frais cachés, nous connectons directement investisseurs et emprunteurs via notre plateforme – simplement et à des conditions équitables.",
+          text:
+            "Sans frais cachés, nous connectons directement investisseurs et emprunteurs via notre plateforme – simplement et à des conditions équitables.",
         },
         {
           title: "Solutions Financières Innovantes",
-          text: "Nous utilisons des technologies modernes et des analyses basées sur les données pour répondre efficacement à divers besoins financiers.",
+          text:
+            "Nous utilisons des technologies modernes et des analyses basées sur les données pour répondre efficacement à divers besoins financiers.",
         },
         {
           title: "Expertise Éprouvée",
-          text: "Grâce à notre longue expérience et à notre technologie innovante, nous permettons des solutions de financement efficaces et bien fondées.",
+          text:
+            "Grâce à notre longue expérience et à notre technologie innovante, nous permettons des solutions de financement efficaces et bien fondées.",
         },
         {
           title: "Orienté Client",
-          text: "Nos employés et notre plateforme placent les besoins des investisseurs et des emprunteurs au centre.",
+          text:
+            "Nos employés et notre plateforme placent les besoins des investisseurs et des emprunteurs au centre.",
         },
       ],
     },
@@ -342,58 +518,133 @@ const content = {
       subtitle: "Faites connaissance avec notre équipe",
       contactBtn: "Contactez-nous",
       members: [
-        { name: "Michael Borter", role: "CEO / Fondateur", image: "michael-borter" },
-        { name: "Roger Müller", role: "COO / Co-fondateur", image: "roger-muller" },
-        { name: "Sajmir Medija", role: "Responsable Développement Commercial", image: "sajmir-medija" },
-        { name: "Delia Aellen", role: "Responsable des Opérations", image: "delia-allen" },
-        { name: "Jonas Imfeld", role: "Responsable Risques", image: "jonas-imfeld" },
-        { name: "Filipe Goncalves", role: "Responsable des Ventes", image: "filipe-goncalves" },
-        { name: "Andy Jenk", role: "Responsable Partenariats B2B", image: "andy-jenk" },
-        { name: "Kassandra Bulica", role: "Gestionnaire de Crédit", image: "kassandra-bulica" },
-        { name: "Arbresha Hoxhaj", role: "Gestionnaire de Crédit", image: "arbresha-hoxhaj" },
-        { name: "Débora Fernandes Martins", role: "Analyste Crédit Junior", image: "debora-fernandes" },
+        {
+          name: "Michael Borter",
+          role: "CEO / Fondateur",
+          image: "michael-borter",
+        },
+        {
+          name: "Roger Müller",
+          role: "COO / Co-fondateur",
+          image: "roger-muller",
+        },
+        {
+          name: "Sajmir Medija",
+          role: "Responsable Développement Commercial",
+          image: "sajmir-medija",
+        },
+        {
+          name: "Delia Aellen",
+          role: "Responsable des Opérations",
+          image: "delia-allen",
+        },
+        {
+          name: "Jonas Imfeld",
+          role: "Responsable Risques",
+          image: "jonas-imfeld",
+        },
+        {
+          name: "Filipe Goncalves",
+          role: "Responsable des Ventes",
+          image: "filipe-goncalves",
+        },
+        {
+          name: "Andy Jenk",
+          role: "Responsable Partenariats B2B",
+          image: "andy-jenk",
+        },
+        {
+          name: "Kassandra Bulica",
+          role: "Gestionnaire de Crédit",
+          image: "kassandra-bulica",
+        },
+        {
+          name: "Arbresha Hoxhaj",
+          role: "Gestionnaire de Crédit",
+          image: "arbresha-hoxhaj",
+        },
+        {
+          name: "Débora Fernandes Martins",
+          role: "Analyste Crédit Junior",
+          image: "debora-fernandes",
+        },
       ],
     },
     board: {
       title: "Conseil d'Administration & Consultatif",
       members: [
-        { name: "Jan F. Moermann", role: "Membre du Conseil", image: "jan-moermann" },
-        { name: "Tina Störmer", role: "Membre du Conseil Consultatif", image: "tina-stormer" },
-        { name: "Dr. Tom Ludescher", role: "Membre du Conseil Consultatif", image: "tom-ludescher" },
-        { name: "Prof. Dr Alfred Mettler", role: "Membre du Conseil Consultatif", image: "alfred-mettler" },
-        { name: "Harald Schnabel", role: "Membre du Conseil Consultatif", image: "harald-schnabel" },
-        { name: "Dominik Joke", role: "Membre du Conseil Consultatif", image: "dominik-joke" },
-        { name: "Oscar Neira", role: "Membre du Conseil Consultatif", image: "oscar-neira" },
+        {
+          name: "Jan F. Moermann",
+          role: "Membre du Conseil",
+          image: "jan-moermann",
+        },
+        {
+          name: "Tina Störmer",
+          role: "Membre du Conseil Consultatif",
+          image: "tina-stormer",
+        },
+        {
+          name: "Dr. Tom Ludescher",
+          role: "Membre du Conseil Consultatif",
+          image: "tom-ludescher",
+        },
+        {
+          name: "Prof. Dr Alfred Mettler",
+          role: "Membre du Conseil Consultatif",
+          image: "alfred-mettler",
+        },
+        {
+          name: "Harald Schnabel",
+          role: "Membre du Conseil Consultatif",
+          image: "harald-schnabel",
+        },
+        {
+          name: "Dominik Joke",
+          role: "Membre du Conseil Consultatif",
+          image: "dominik-joke",
+        },
+        {
+          name: "Oscar Neira",
+          role: "Membre du Conseil Consultatif",
+          image: "oscar-neira",
+        },
       ],
     },
     benefits: {
       title: "Nos Avantages",
       headline: "Expérience – Sécurité – Efficacité – Technologie",
-      subtitle: "Innovation et responsabilité pour des solutions rentables pour les emprunteurs et les investisseurs.",
+      subtitle:
+        "Innovation et responsabilité pour des solutions rentables pour les emprunteurs et les investisseurs.",
       items: [
         {
           title: "Ce Que Vous Devez Savoir Sur Nous",
-          text: "Cashare a été fondée en 2008 en tant que première plateforme de crowdlending en Suisse et s'est établie comme un fournisseur leader de solutions de financement innovantes. Avec plus de 60'000 clients et CHF 2,5 milliards de demandes de crédit examinées.",
+          text:
+            "Cashare a été fondée en 2008 en tant que première plateforme de crowdlending en Suisse et s'est établie comme un fournisseur leader de solutions de financement innovantes. Avec plus de 60'000 clients et CHF 2,5 milliards de demandes de crédit examinées.",
         },
         {
           title: "Processus Transparents & Efficaces",
-          text: "Cashare représente des processus clairs, équitables et transparents. Que ce soit pour les emprunteurs ou les investisseurs – tous les processus sont compréhensibles et sans frais cachés ni surprises.",
+          text:
+            "Cashare représente des processus clairs, équitables et transparents. Que ce soit pour les emprunteurs ou les investisseurs – tous les processus sont compréhensibles et sans frais cachés ni surprises.",
         },
         {
           title: "Solutions Financières Flexibles pour Tous",
-          text: "Cashare connecte les emprunteurs aux investisseurs et offre une alternative équitable aux banques. Les emprunteurs bénéficient de conditions flexibles, les investisseurs de rendements attractifs et d'une stratégie d'investissement diversifiée.",
+          text:
+            "Cashare connecte les emprunteurs aux investisseurs et offre une alternative équitable aux banques. Les emprunteurs bénéficient de conditions flexibles, les investisseurs de rendements attractifs et d'une stratégie d'investissement diversifiée.",
         },
         {
           title: "Rendements Attractifs pour les Investisseurs",
-          text: "Les investisseurs bénéficient de rendements attractifs qui complètent idéalement les placements traditionnels dans un portefeuille, notamment comme extension dans le secteur des revenus fixes.",
+          text:
+            "Les investisseurs bénéficient de rendements attractifs qui complètent idéalement les placements traditionnels dans un portefeuille, notamment comme extension dans le secteur des revenus fixes.",
         },
         {
           title: "Sécurité par une Gestion Intelligente des Risques",
-          text: "Optimisez votre portefeuille avec nos solutions d'investissement sur mesure pour les investisseurs institutionnels. Bénéficiez d'une gestion des risques solide et d'un traitement professionnel.",
+          text:
+            "Optimisez votre portefeuille avec nos solutions d'investissement sur mesure pour les investisseurs institutionnels. Bénéficiez d'une gestion des risques solide et d'un traitement professionnel.",
         },
         {
           title: "Solutions Financières Durables",
-          text: "Cashare connecte les emprunteurs et les investisseurs en une communauté financière forte. Grâce au crowdlending, l'indépendance financière est favorisée et les petites entreprises sont soutenues.",
+          text:
+            "Cashare connecte les emprunteurs et les investisseurs en une communauté financière forte. Grâce au crowdlending, l'indépendance financière est favorisée et les petites entreprises sont soutenues.",
         },
       ],
     },
@@ -432,7 +683,7 @@ const imageMap: Record<string, string> = {
 };
 
 function getInitials(name: string): string {
-  return name.split(' ').map(n => n[0]).join('');
+  return name.split(" ").map((n) => n[0]).join("");
 }
 
 export function WhoWeAre({ locale }: WhoWeAreProps) {
@@ -453,7 +704,11 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
             {t.credentials.map((cred, i) => (
               <div key={i} class="wwa-credentials__card">
                 <div class="wwa-credentials__icon">
-                  {getCredentialIcon(cred.icon)}
+                  <img
+                    src={credentialIcons[cred.icon]}
+                    alt={cred.title}
+                    class="wwa-credentials__img"
+                  />
                 </div>
                 <h3 class="wwa-credentials__title">{cred.title}</h3>
                 <p class="wwa-credentials__text">{cred.text}</p>
@@ -470,7 +725,7 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
             <h2 class="wwa-years__title">{t.years.title}</h2>
             <p class="wwa-years__subtitle">{t.years.subtitle}</p>
           </div>
-          <div class="wwa-years__badge">17</div>
+          <div class="wwa-years__badge">18</div>
         </div>
       </section>
 
@@ -522,24 +777,29 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
           <div class="wwa-team__grid">
             {t.team.members.map((member, i) => (
               <div key={i} class="wwa-team__card">
-                {imageMap[member.image] ? (
-                  <img
-                    src={imageMap[member.image]}
-                    alt={member.name}
-                    class="wwa-team__avatar wwa-team__avatar--photo"
-                  />
-                ) : (
-                  <div class="wwa-team__avatar">
-                    {getInitials(member.name)}
-                  </div>
-                )}
+                {imageMap[member.image]
+                  ? (
+                    <img
+                      src={imageMap[member.image]}
+                      alt={member.name}
+                      class="wwa-team__avatar wwa-team__avatar--photo"
+                    />
+                  )
+                  : (
+                    <div class="wwa-team__avatar">
+                      {getInitials(member.name)}
+                    </div>
+                  )}
                 <h3 class="wwa-team__name">{member.name}</h3>
                 <p class="wwa-team__role">{member.role}</p>
               </div>
             ))}
           </div>
           <div class="wwa-team__cta">
-            <a href="https://support.cashare.ch/hc/de/requests/new" class="wwa-team__btn">
+            <a
+              href="https://support.cashare.ch/hc/de/requests/new"
+              class="wwa-team__btn"
+            >
               {t.team.contactBtn}
             </a>
           </div>
@@ -553,17 +813,19 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
           <div class="wwa-board__grid">
             {t.board.members.map((member, i) => (
               <div key={i} class="wwa-board__card">
-                {imageMap[member.image] ? (
-                  <img
-                    src={imageMap[member.image]}
-                    alt={member.name}
-                    class="wwa-board__avatar wwa-board__avatar--photo"
-                  />
-                ) : (
-                  <div class="wwa-board__avatar">
-                    {getInitials(member.name)}
-                  </div>
-                )}
+                {imageMap[member.image]
+                  ? (
+                    <img
+                      src={imageMap[member.image]}
+                      alt={member.name}
+                      class="wwa-board__avatar wwa-board__avatar--photo"
+                    />
+                  )
+                  : (
+                    <div class="wwa-board__avatar">
+                      {getInitials(member.name)}
+                    </div>
+                  )}
                 <h3 class="wwa-board__name">{member.name}</h3>
                 <p class="wwa-board__role">{member.role}</p>
               </div>

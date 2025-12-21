@@ -34,7 +34,7 @@
 
 .wwa-hero__container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -79,7 +79,6 @@
   padding: 32px 24px;
   border-radius: var(--radius-xl);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -89,24 +88,21 @@
 }
 
 .wwa-credentials__icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 181, 206, 0.1),
-    rgba(0, 115, 153, 0.15)
-  );
-  border-radius: var(--radius-full);
-  color: var(--color-primary);
+  width: 96px;
+  height: 48px;
+  margin-bottom: 16px;
 }
 
 .wwa-credentials__icon svg {
   width: 28px;
   height: 28px;
+}
+
+.wwa-credentials__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
 }
 
 .wwa-credentials__title {
