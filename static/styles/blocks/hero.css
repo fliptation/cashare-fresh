@@ -92,6 +92,12 @@
   border-color: rgba(0, 0, 0, 0.08);
 }
 
+/* Slider - darker progress track for visibility */
+.hero__right .loan-calculator .slider {
+  --track-color: #005570;
+  --track-color-bg: rgba(255, 255, 255, 0.2);
+}
+
 /* Results rows - subtle frosty backdrop */
 .hero__right .loan-calculator .loan-calculator__results-row {
   background: rgba(255, 255, 255, 0.25);
