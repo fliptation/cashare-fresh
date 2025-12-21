@@ -606,6 +606,10 @@
   align-items: center;
 }
 
+.loan-calculator__field-header .input-group {
+  min-width: 160px;
+}
+
 .loan-calculator__field-label {
   font-weight: 700;
   font-size: var(--text-base);

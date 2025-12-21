@@ -6,65 +6,7 @@ import {
   InsuranceType,
 } from "../../lib/calculator/mod.ts";
 import { formatMoney } from "../../lib/utils/format.ts";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-// Calculator translations (inline for island)
-const translations = {
-  de: {
-    Loan: "Leihen",
-    CHF: "CHF",
-    Duration: "Dauer",
-    month: "Monat",
-    months: "Monate",
-    interest: "Zins",
-    from: "von",
-    Fees: "Gebühren",
-    "With insurance": "Mit Versicherung",
-    "Monthly instalment": "Mtl. Rate",
-    "of which insurance": "davon Versicherung",
-    Apply: "Beantragen",
-    amountError: "Bitte geben Sie einen Betrag zwischen 1'000 und 1'000'000 ein.",
-    monthError1: "Bitte geben Sie einen Wert zwischen ",
-    monthError2: " und ",
-    monthError3: " Monate ein.",
-  },
-  en: {
-    Loan: "Loan",
-    CHF: "CHF",
-    Duration: "Duration",
-    month: "month",
-    months: "months",
-    interest: "Interest",
-    from: "from",
-    Fees: "Fees",
-    "With insurance": "With insurance",
-    "Monthly instalment": "Monthly instalment",
-    "of which insurance": "of which insurance",
-    Apply: "Apply",
-    amountError: "Please enter an amount between 1'000 and 1'000'000.",
-    monthError1: "Please enter a value between ",
-    monthError2: " and ",
-    monthError3: " months.",
-  },
-  fr: {
-    Loan: "Emprunter",
-    CHF: "CHF",
-    Duration: "Durée",
-    month: "mois",
-    months: "mois",
-    interest: "Intérêt",
-    from: "dès",
-    Fees: "Frais",
-    "With insurance": "Avec assurance",
-    "Monthly instalment": "Mensualité",
-    "of which insurance": "dont assurance",
-    Apply: "Demander",
-    amountError: "Veuillez saisir un montant compris entre 1'000 et 1'000'000.",
-    monthError1: "Veuillez saisir une valeur comprise entre ",
-    monthError2: " et ",
-    monthError3: " mois.",
-  },
-} as const;
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 interface HomeCalculatorProps {
   lang?: Locale;
@@ -95,7 +37,8 @@ export default function HomeCalculator({
   minLifetime = 1,
   maxLifetime = 60,
 }: HomeCalculatorProps) {
-  const t = (key: keyof typeof translations.de) => translations[lang][key];
+  const tc = (key: "Loan" | "Duration" | "interest" | "from" | "Fees" | "With insurance" | "Monthly instalment" | "of which insurance" | "Apply" | "amountError" | "monthError1" | "monthError2" | "monthError3") => t(lang, "calculator", key);
+  const tm = (key: "CHF" | "month" | "months") => t(lang, "common", key);
 
   // Create calculator instance
   const calc = new Calculator();
@@ -201,9 +144,9 @@ export default function HomeCalculator({
       {/* Amount Section */}
       <div class="calculator__input-wrapper">
         <div class="calculator__header">
-          <div class="calculator__title">{t("Loan")}</div>
+          <div class="calculator__title">{tc("Loan")}</div>
           <div class="input-group">
-            <span class="input-group__prefix">{t("CHF")}</span>
+            <span class="input-group__prefix">{tm("CHF")}</span>
             <input
               type="number"
               class="input-group__input"
@@ -215,7 +158,7 @@ export default function HomeCalculator({
           </div>
         </div>
         {amountError.value && (
-          <div class="calculator__error">{t("amountError")}</div>
+          <div class="calculator__error">{tc("amountError")}</div>
         )}
       </div>
 
@@ -233,17 +176,17 @@ export default function HomeCalculator({
           style={`--slider-fill: ${((sliderValue.value - 1) / (190 - 1)) * 100}%`}
         />
         <div class="calculator__slider-labels">
-          <span>{t("CHF")} {formatMoney(minAmount)}</span>
-          <span>{t("CHF")} {formatMoney(maxAmount)}</span>
+          <span>{tm("CHF")} {formatMoney(minAmount)}</span>
+          <span>{tm("CHF")} {formatMoney(maxAmount)}</span>
         </div>
       </div>
 
       {/* Lifetime Section */}
       <div class="calculator__input-wrapper">
         <div class="calculator__input-row">
-          <div class="calculator__title">{t("Duration")}</div>
+          <div class="calculator__title">{tc("Duration")}</div>
           <div class="input-group">
-            <span class="input-group__prefix">{t("months")}</span>
+            <span class="input-group__prefix">{tm("months")}</span>
             <input
               type="number"
               class="input-group__input"
@@ -256,7 +199,7 @@ export default function HomeCalculator({
         </div>
         {lifetimeError.value && (
           <div class="calculator__error">
-            {t("monthError1")}{minLifetime}{t("monthError2")}{maxLifetime}{t("monthError3")}
+            {tc("monthError1")}{minLifetime}{tc("monthError2")}{maxLifetime}{tc("monthError3")}
           </div>
         )}
       </div>
@@ -274,8 +217,8 @@ export default function HomeCalculator({
           style={`--slider-fill: ${((lifetime.value - minLifetime) / (maxLifetime - minLifetime)) * 100}%`}
         />
         <div class="calculator__slider-labels">
-          <span>{minLifetime} {t("month")}</span>
-          <span>{maxLifetime} {t("months")}</span>
+          <span>{minLifetime} {tm("month")}</span>
+          <span>{maxLifetime} {tm("months")}</span>
         </div>
       </div>
 
@@ -283,8 +226,8 @@ export default function HomeCalculator({
       <div class="calculator__results">
         {/* Header */}
         <div class="calculator__results-header">
-          <div class="u-w--1/5">{t("interest")}:</div>
-          <div class="u-w--1/5">{t("Fees")}:</div>
+          <div class="u-w--1/5">{tc("interest")}:</div>
+          <div class="u-w--1/5">{tc("Fees")}:</div>
           <div class="u-w--2/5 u-text--center">
             <label class="form-group__checkbox">
               <input
@@ -292,16 +235,16 @@ export default function HomeCalculator({
                 checked={withInsurance.value}
                 onChange={() => (withInsurance.value = !withInsurance.value)}
               />
-              <span>{t("With insurance")}</span>
+              <span>{tc("With insurance")}</span>
             </label>
           </div>
-          <div class="u-w--1/5 u-text--right">{t("Monthly instalment")}:</div>
+          <div class="u-w--1/5 u-text--right">{tc("Monthly instalment")}:</div>
         </div>
 
         {/* Min Interest Row */}
         <div class="calculator__results-row calculator__results-row--stagger-1">
           <div class="u-w--1/5">
-            {t("from")}: <strong>4.4%</strong>
+            {tc("from")}: <strong>4.4%</strong>
           </div>
           <div class="u-w--1/5">{resultsMin.value?.fee ?? "-"}</div>
           <div class="u-w--2/5 u-text--center">
@@ -309,9 +252,9 @@ export default function HomeCalculator({
           </div>
           <div class="u-w--1/5 calculator__results-cell--right">
             <span class="calculator__results-value calculator__results-value--animated">
-              {t("CHF")} {resultsMin.value ? formatMoney(parseFloat(resultsMin.value.instalment)) : "-"}
+              {tm("CHF")} {resultsMin.value ? formatMoney(parseFloat(resultsMin.value.instalment)) : "-"}
             </span>
-            <span class="calculator__results-subtext">{t("of which insurance")}:</span>
+            <span class="calculator__results-subtext">{tc("of which insurance")}:</span>
             <span class="calculator__results-subtext">
               {withInsurance.value ? resultsMin.value?.insuranceUnemployedProRata : "0.00"}
             </span>
@@ -321,7 +264,7 @@ export default function HomeCalculator({
         {/* Max Interest Row */}
         <div class="calculator__results-row calculator__results-row--stagger-2">
           <div class="u-w--1/5">
-            {t("from")}: <strong>10.9%</strong>
+            {tc("from")}: <strong>10.9%</strong>
           </div>
           <div class="u-w--1/5">{resultsMax.value?.fee ?? "-"}</div>
           <div class="u-w--2/5 u-text--center">
@@ -329,9 +272,9 @@ export default function HomeCalculator({
           </div>
           <div class="u-w--1/5 calculator__results-cell--right">
             <span class="calculator__results-value calculator__results-value--animated">
-              {t("CHF")} {resultsMax.value ? formatMoney(parseFloat(resultsMax.value.instalment)) : "-"}
+              {tm("CHF")} {resultsMax.value ? formatMoney(parseFloat(resultsMax.value.instalment)) : "-"}
             </span>
-            <span class="calculator__results-subtext">{t("of which insurance")}:</span>
+            <span class="calculator__results-subtext">{tc("of which insurance")}:</span>
             <span class="calculator__results-subtext">
               {withInsurance.value ? resultsMax.value?.insuranceUnemployedProRata : "0.00"}
             </span>
@@ -345,7 +288,7 @@ export default function HomeCalculator({
           href={dynamicUrl.value}
           class={`btn btn--primary hover-lift shadow-primary ${amountError.value || lifetimeError.value ? "btn--disabled" : ""}`}
         >
-          {t("Apply")}
+          {tc("Apply")}
         </a>
       </div>
     </div>

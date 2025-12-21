@@ -52,6 +52,7 @@
 /* Right column - Calculator */
 .hero__right {
   position: relative;
+  max-width: 100%;
 }
 
 /* Calculator in hero - Ultra Frosty Glass Effect */

@@ -6,69 +6,15 @@ import {
   InsuranceType,
 } from "../../lib/calculator/mod.ts";
 import { formatMoney } from "../../lib/utils/format.ts";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-// Translations for yield calculator
-const translations = {
-  de: {
-    title: "Renditerechner",
-    subtitle: "Berechnen Sie Ihre potenzielle Rendite als Anleger auf der Cashare Plattform.",
-    amount: "Anlagebetrag",
-    duration: "Laufzeit",
-    interestRate: "Zinssatz",
-    months: "Monate",
-    month: "Monat",
-    calculation: "Ihre Rendite",
-    yield: "Bruttoertrag",
-    platformFee: "Plattformgebühr",
-    netYield: "Nettoertrag",
-    CHF: "CHF",
-    amountError: "Bitte geben Sie einen Betrag zwischen 100 und 1'000'000 ein.",
-    monthsError: "Bitte geben Sie eine Laufzeit zwischen 1 und 60 ein.",
-    interestError: "Bitte geben Sie einen Zinssatz zwischen 1 und 15 ein.",
-  },
-  en: {
-    title: "Yield Calculator",
-    subtitle: "Calculate your potential return as an investor on the Cashare platform.",
-    amount: "Investment Amount",
-    duration: "Duration",
-    interestRate: "Interest Rate",
-    months: "months",
-    month: "month",
-    calculation: "Your Return",
-    yield: "Gross Yield",
-    platformFee: "Platform Fee",
-    netYield: "Net Yield",
-    CHF: "CHF",
-    amountError: "Please enter an amount between 100 and 1'000'000.",
-    monthsError: "Please enter a duration between 1 and 60.",
-    interestError: "Please enter an interest rate between 1 and 15.",
-  },
-  fr: {
-    title: "Calculateur de rendement",
-    subtitle: "Calculez votre rendement potentiel en tant qu'investisseur sur la plateforme Cashare.",
-    amount: "Montant d'investissement",
-    duration: "Durée",
-    interestRate: "Taux d'intérêt",
-    months: "mois",
-    month: "mois",
-    calculation: "Votre rendement",
-    yield: "Rendement brut",
-    platformFee: "Frais de plateforme",
-    netYield: "Rendement net",
-    CHF: "CHF",
-    amountError: "Veuillez entrer un montant entre 100 et 1'000'000.",
-    monthsError: "Veuillez entrer une durée entre 1 et 60.",
-    interestError: "Veuillez entrer un taux d'intérêt entre 1 et 15.",
-  },
-} as const;
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 interface YieldCalculatorProps {
   lang?: Locale;
 }
 
 export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
-  const t = (key: keyof typeof translations.de) => translations[lang][key];
+  const ty = (key: "title" | "subtitle" | "amount" | "duration" | "interestRate" | "calculation" | "yield" | "platformFee" | "netYield" | "amountError" | "monthsError" | "interestError") => t(lang, "yieldCalculator", key);
+  const tm = (key: "CHF" | "month" | "months") => t(lang, "common", key);
 
   // Create calculator instance
   const calc = new Calculator();
@@ -109,7 +55,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
   // Validation handlers
   function validateAmount() {
     if (amount.value < 100 || amount.value > 1000000) {
-      amountError.value = t("amountError");
+      amountError.value = ty("amountError");
     } else {
       amountError.value = "";
     }
@@ -118,7 +64,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
 
   function validateMonths() {
     if (months.value < 1 || months.value > 60) {
-      monthsError.value = t("monthsError");
+      monthsError.value = ty("monthsError");
     } else {
       monthsError.value = "";
     }
@@ -127,7 +73,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
 
   function validateInterest() {
     if (interestRate.value < 1 || interestRate.value > 15) {
-      interestError.value = t("interestError");
+      interestError.value = ty("interestError");
     } else {
       interestError.value = "";
     }
@@ -177,14 +123,14 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
       {/* Left Panel - Inputs */}
       <div class="yield-calculator__panel yield-calculator__panel--inputs">
         <div class="yield-calculator__header">
-          <h3 class="yield-calculator__title">{t("title")}</h3>
-          <p class="yield-calculator__subtitle">{t("subtitle")}</p>
+          <h3 class="yield-calculator__title">{ty("title")}</h3>
+          <p class="yield-calculator__subtitle">{ty("subtitle")}</p>
         </div>
 
         {/* Amount Input */}
         <div class="yield-calculator__field">
           <div class="yield-calculator__field-header">
-            <span class="yield-calculator__field-label">{t("amount")}</span>
+            <span class="yield-calculator__field-label">{ty("amount")}</span>
             <div class="yield-calculator__input-group">
               <input
                 type="number"
@@ -195,7 +141,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
                 max="1000000"
                 class="yield-calculator__input"
               />
-              <span class="yield-calculator__input-suffix">{t("CHF")}</span>
+              <span class="yield-calculator__input-suffix">{tm("CHF")}</span>
             </div>
           </div>
           <div class="yield-calculator__slider-wrapper">
@@ -211,8 +157,8 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
               style={`--slider-fill: ${((amount.value - 100) / (1000000 - 100)) * 100}%`}
             />
             <div class="yield-calculator__slider-labels">
-              <span>{t("CHF")} 100</span>
-              <span>{t("CHF")} 1'000'000</span>
+              <span>{tm("CHF")} 100</span>
+              <span>{tm("CHF")} 1'000'000</span>
             </div>
           </div>
           {amountError.value && (
@@ -223,7 +169,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
         {/* Duration Input */}
         <div class="yield-calculator__field">
           <div class="yield-calculator__field-header">
-            <span class="yield-calculator__field-label">{t("duration")}</span>
+            <span class="yield-calculator__field-label">{ty("duration")}</span>
             <div class="yield-calculator__input-group">
               <input
                 type="number"
@@ -234,7 +180,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
                 max="60"
                 class="yield-calculator__input"
               />
-              <span class="yield-calculator__input-suffix">{t("months")}</span>
+              <span class="yield-calculator__input-suffix">{tm("months")}</span>
             </div>
           </div>
           <div class="yield-calculator__slider-wrapper">
@@ -250,8 +196,8 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
               style={`--slider-fill: ${((months.value - 1) / (60 - 1)) * 100}%`}
             />
             <div class="yield-calculator__slider-labels">
-              <span>1 {t("month")}</span>
-              <span>60 {t("months")}</span>
+              <span>1 {tm("month")}</span>
+              <span>60 {tm("months")}</span>
             </div>
           </div>
           {monthsError.value && (
@@ -262,7 +208,7 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
         {/* Interest Rate Input */}
         <div class="yield-calculator__field">
           <div class="yield-calculator__field-header">
-            <span class="yield-calculator__field-label">{t("interestRate")}</span>
+            <span class="yield-calculator__field-label">{ty("interestRate")}</span>
             <div class="yield-calculator__input-group">
               <input
                 type="number"
@@ -301,20 +247,20 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
 
       {/* Right Panel - Results */}
       <div class="yield-calculator__panel yield-calculator__panel--results">
-        <h4 class="yield-calculator__results-title">{t("calculation")}</h4>
+        <h4 class="yield-calculator__results-title">{ty("calculation")}</h4>
 
         {/* Main Yield Result */}
         <div class="yield-calculator__result-card">
-          <div class="yield-calculator__result-label">{t("yield")}</div>
+          <div class="yield-calculator__result-label">{ty("yield")}</div>
           <div class="yield-calculator__result-row">
             <div class="yield-calculator__result-value">
               <span class="yield-calculator__result-amount calculator__results-value--animated">
                 {results.value?.yield ?? "0.00"}
               </span>
-              <span class="yield-calculator__result-currency">{t("CHF")}</span>
+              <span class="yield-calculator__result-currency">{tm("CHF")}</span>
             </div>
             <div class="yield-calculator__result-meta">
-              <span class="yield-calculator__result-rate-label">{t("interestRate")}</span>
+              <span class="yield-calculator__result-rate-label">{ty("interestRate")}</span>
               <span class="yield-calculator__result-rate">{interestRate.value}%</span>
             </div>
           </div>
@@ -323,15 +269,15 @@ export default function YieldCalculator({ lang = "de" }: YieldCalculatorProps) {
         {/* Summary: Fee and Net Yield */}
         <div class="yield-calculator__summary">
           <div class="yield-calculator__summary-item">
-            <div class="yield-calculator__summary-label">{t("platformFee")}</div>
+            <div class="yield-calculator__summary-label">{ty("platformFee")}</div>
             <div class="yield-calculator__summary-value calculator__results-value--animated">
-              {t("CHF")} {results.value?.fee_forLoaner ?? "0.00"}
+              {tm("CHF")} {results.value?.fee_forLoaner ?? "0.00"}
             </div>
           </div>
           <div class="yield-calculator__summary-item">
-            <div class="yield-calculator__summary-label">{t("netYield")}</div>
+            <div class="yield-calculator__summary-label">{ty("netYield")}</div>
             <div class="yield-calculator__summary-value calculator__results-value--animated">
-              {t("CHF")} {results.value?.netYield ?? "0.00"}
+              {tm("CHF")} {results.value?.netYield ?? "0.00"}
             </div>
           </div>
         </div>

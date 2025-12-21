@@ -435,9 +435,11 @@
   background: transparent;
   font-size: 1rem;
   font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
   color: var(--color-text);
   outline: none;
   min-width: 0;
+  width: 100%;
 }
 
 .input-group__input::placeholder {

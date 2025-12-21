@@ -60,6 +60,24 @@ export interface CalculatorTranslations {
   monthError2: string;
   monthError3: string;
   "of which insurance": string;
+  privateTab: string;
+  smeTab: string;
+  loanAmount: string;
+  withInsurance: string;
+  monthlyRate: string;
+  insuranceIncluded: string;
+  applyLoan: string;
+  applyNote: string;
+  disclaimer: string;
+  monthsError: string;
+  smeTitle: string;
+  totalInterest: string;
+  totalAmount: string;
+  to: string;
+  smeApplyLoan: string;
+  smeAmountError: string;
+  smeMonthsError: string;
+  smeDisclaimer: string;
 }
 
 export interface YieldCalculatorTranslations {

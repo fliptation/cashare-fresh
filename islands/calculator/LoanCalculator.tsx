@@ -5,72 +5,8 @@ import {
   ProductType,
   InsuranceType,
 } from "../../lib/calculator/mod.ts";
-import { formatMoney } from "../../lib/utils/format.ts";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-// Translations for loan calculator
-const translations = {
-  de: {
-    privateTab: "Privatkredit",
-    smeTab: "KMU-Darlehen",
-    loanAmount: "Darlehenssumme",
-    duration: "Laufzeit",
-    months: "Monate",
-    month: "Monat",
-    interest: "Zins",
-    fees: "Gebühren",
-    withInsurance: "Mit Versicherung?",
-    monthlyRate: "Mtl. Rate",
-    insuranceIncluded: "davon Versicherung",
-    from: "von",
-    applyLoan: "Darlehen beantragen",
-    applyNote: "BEANTRAGEN SIE IHREN PERSÖNLICHEN KREDIT IN WENIGEN MINUTEN",
-    disclaimer: "Die effektiven Werte hängen von Ihrem Betrag, der Laufzeit und dem Zinssatz Ihres Darlehens ab. Sobald Sie den Antrag eingereicht haben, können wir Ihnen ein individuelles Angebot unterbreiten.",
-    CHF: "CHF",
-    amountError: "Bitte geben Sie einen Betrag zwischen 1'000 und 1'000'000 ein.",
-    monthsError: "Bitte geben Sie eine Laufzeit zwischen 1 und 60 Monate ein.",
-  },
-  en: {
-    privateTab: "Private Loan",
-    smeTab: "SME Loan",
-    loanAmount: "Loan amount",
-    duration: "Duration",
-    months: "months",
-    month: "month",
-    interest: "Interest",
-    fees: "Fees",
-    withInsurance: "With insurance?",
-    monthlyRate: "Monthly rate",
-    insuranceIncluded: "of which insurance",
-    from: "from",
-    applyLoan: "Apply for loan",
-    applyNote: "APPLY FOR YOUR PERSONAL LOAN IN A FEW MINUTES",
-    disclaimer: "The actual values depend on your amount, the term and the interest rate of your loan. Once you have submitted your application, we can make you an individual offer.",
-    CHF: "CHF",
-    amountError: "Please enter an amount between 1,000 and 1,000,000.",
-    monthsError: "Please enter a duration between 1 and 60 months.",
-  },
-  fr: {
-    privateTab: "Prêt privé",
-    smeTab: "Prêt PME",
-    loanAmount: "Montant du prêt",
-    duration: "Durée",
-    months: "mois",
-    month: "mois",
-    interest: "Intérêt",
-    fees: "Frais",
-    withInsurance: "Avec assurance?",
-    monthlyRate: "Mensualité",
-    insuranceIncluded: "dont assurance",
-    from: "dès",
-    applyLoan: "Demander un prêt",
-    applyNote: "DEMANDEZ VOTRE PRÊT PERSONNEL EN QUELQUES MINUTES",
-    disclaimer: "Les valeurs effectives dépendent de votre montant, de la durée et du taux d'intérêt de votre prêt. Une fois votre demande soumise, nous pourrons vous faire une offre individuelle.",
-    CHF: "CHF",
-    amountError: "Veuillez saisir un montant entre 1'000 et 1'000'000.",
-    monthsError: "Veuillez saisir une durée entre 1 et 60 mois.",
-  },
-} as const;
+import { formatMoney, parseSwissNumber } from "../../lib/utils/format.ts";
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 type LoanType = "private" | "sme";
 
@@ -89,7 +25,8 @@ export default function LoanCalculator({
   initialLifetime = 24,
   showTabs = true,
 }: LoanCalculatorProps) {
-  const t = (key: keyof typeof translations.de) => translations[lang][key];
+  const tc = (key: "privateTab" | "smeTab" | "loanAmount" | "duration" | "interest" | "Fees" | "withInsurance" | "monthlyRate" | "insuranceIncluded" | "from" | "applyLoan" | "applyNote" | "disclaimer" | "amountError" | "monthsError") => t(lang, "calculator", key);
+  const tm = (key: "CHF" | "month" | "months") => t(lang, "common", key);
 
   // Calculator instance
   const calc = new Calculator();
@@ -185,7 +122,7 @@ export default function LoanCalculator({
   // Validation
   function validateAmount() {
     if (amount.value < 1000 || amount.value > 1000000) {
-      amountError.value = t("amountError");
+      amountError.value = tc("amountError");
     } else {
       amountError.value = "";
     }
@@ -194,7 +131,7 @@ export default function LoanCalculator({
 
   function validateLifetime() {
     if (lifetime.value < 1 || lifetime.value > 60) {
-      lifetimeError.value = t("monthsError");
+      lifetimeError.value = tc("monthsError");
     } else {
       lifetimeError.value = "";
     }
@@ -214,7 +151,8 @@ export default function LoanCalculator({
 
   function handleAmountInput(e: Event) {
     const target = e.target as HTMLInputElement;
-    amount.value = parseInt(target.value) || 0;
+    // Parse Swiss-formatted number (strip apostrophes)
+    amount.value = parseSwissNumber(target.value) || 0;
     validateAmount();
     triggerValueAnimation();
   }
@@ -261,14 +199,14 @@ export default function LoanCalculator({
             class={`loan-calculator__tab ${activeTab.value === "private" ? "loan-calculator__tab--active" : ""}`}
             onClick={() => switchTab("private")}
           >
-            {t("privateTab")}
+            {tc("privateTab")}
           </button>
           <button
             type="button"
             class={`loan-calculator__tab ${activeTab.value === "sme" ? "loan-calculator__tab--active" : ""}`}
             onClick={() => switchTab("sme")}
           >
-            {t("smeTab")}
+            {tc("smeTab")}
           </button>
           <div
             class="loan-calculator__tab-indicator"
@@ -283,16 +221,15 @@ export default function LoanCalculator({
           {/* Amount Input */}
           <div class="loan-calculator__field">
             <div class="loan-calculator__field-header">
-              <span class="loan-calculator__field-label">{t("loanAmount")}</span>
+              <span class="loan-calculator__field-label">{tc("loanAmount")}</span>
               <div class="input-group">
-                <span class="input-group__prefix">{t("CHF")}</span>
+                <span class="input-group__prefix">{tm("CHF")}</span>
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
                   class="input-group__input"
-                  value={amount.value}
+                  value={formatMoney(amount.value)}
                   onInput={handleAmountInput}
-                  min={1000}
-                  max={1000000}
                 />
               </div>
             </div>
@@ -321,7 +258,7 @@ export default function LoanCalculator({
           {/* Lifetime Input */}
           <div class="loan-calculator__field">
             <div class="loan-calculator__field-header">
-              <span class="loan-calculator__field-label">{t("duration")}</span>
+              <span class="loan-calculator__field-label">{tc("duration")}</span>
               <div class="input-group">
                 <input
                   type="number"
@@ -331,7 +268,7 @@ export default function LoanCalculator({
                   min={1}
                   max={60}
                 />
-                <span class="input-group__suffix">{t("months")}</span>
+                <span class="input-group__suffix">{tm("months")}</span>
               </div>
             </div>
             <div class="loan-calculator__slider-wrapper">
@@ -347,8 +284,8 @@ export default function LoanCalculator({
                 style={`--slider-fill: ${((lifetime.value - 1) / (60 - 1)) * 100}%`}
               />
               <div class="calculator__slider-labels">
-                <span>1 {t("month")}</span>
-                <span>60 {t("months")}</span>
+                <span>1 {tm("month")}</span>
+                <span>60 {tm("months")}</span>
               </div>
             </div>
             {lifetimeError.value && (
@@ -360,13 +297,13 @@ export default function LoanCalculator({
         {/* Results Section */}
         <div class="loan-calculator__results">
           <div class="loan-calculator__promo">
-            {t("applyNote")}
+            {tc("applyNote")}
           </div>
 
           {/* Results Header */}
           <div class="loan-calculator__results-header">
-            <div class="loan-calculator__results-col">{t("interest")}:</div>
-            <div class="loan-calculator__results-col">{t("fees")}:</div>
+            <div class="loan-calculator__results-col">{tc("interest")}:</div>
+            <div class="loan-calculator__results-col">{tc("Fees")}:</div>
             <div class="loan-calculator__results-col">
               {activeTab.value === "private" && (
                 <label class="form-group__checkbox">
@@ -375,19 +312,19 @@ export default function LoanCalculator({
                     checked={hasInsurance.value}
                     onChange={() => (hasInsurance.value = !hasInsurance.value)}
                   />
-                  <span>{t("withInsurance")}</span>
+                  <span>{tc("withInsurance")}</span>
                 </label>
               )}
             </div>
             <div class="loan-calculator__results-col loan-calculator__results-col--right">
-              {t("monthlyRate")}:
+              {tc("monthlyRate")}:
             </div>
           </div>
 
           {/* Min Interest Row */}
           <div class="loan-calculator__results-row calculator__results-row--stagger-1">
             <div class="loan-calculator__results-col">
-              {t("from")} <strong>{interestRates.value.min}%</strong>
+              {tc("from")} <strong>{interestRates.value.min}%</strong>
             </div>
             <div class="loan-calculator__results-col">
               {resultsMin.value?.fee ?? "-"}
@@ -402,11 +339,11 @@ export default function LoanCalculator({
                 ref={valueMinRef}
                 class="loan-calculator__results-value"
               >
-                {t("CHF")} {resultsMin.value ? formatMoney(parseFloat(resultsMin.value.instalment)) : "-"}
+                {tm("CHF")} {resultsMin.value ? formatMoney(parseFloat(resultsMin.value.instalment)) : "-"}
               </div>
               {activeTab.value === "private" && (
                 <div class="loan-calculator__results-subtext">
-                  {t("insuranceIncluded")}: {hasInsurance.value ? resultsMin.value?.insuranceUnemployedProRata ?? "0.00" : "0.00"}
+                  {tc("insuranceIncluded")}: {hasInsurance.value ? resultsMin.value?.insuranceUnemployedProRata ?? "0.00" : "0.00"}
                 </div>
               )}
             </div>
@@ -415,7 +352,7 @@ export default function LoanCalculator({
           {/* Max Interest Row */}
           <div class="loan-calculator__results-row calculator__results-row--stagger-2">
             <div class="loan-calculator__results-col">
-              {t("from")} <strong>{interestRates.value.max}%</strong>
+              {tc("from")} <strong>{interestRates.value.max}%</strong>
             </div>
             <div class="loan-calculator__results-col">
               {resultsMax.value?.fee ?? "-"}
@@ -430,11 +367,11 @@ export default function LoanCalculator({
                 ref={valueMaxRef}
                 class="loan-calculator__results-value"
               >
-                {t("CHF")} {resultsMax.value ? formatMoney(parseFloat(resultsMax.value.instalment)) : "-"}
+                {tm("CHF")} {resultsMax.value ? formatMoney(parseFloat(resultsMax.value.instalment)) : "-"}
               </div>
               {activeTab.value === "private" && (
                 <div class="loan-calculator__results-subtext">
-                  {t("insuranceIncluded")}: {hasInsurance.value ? resultsMax.value?.insuranceUnemployedProRata ?? "0.00" : "0.00"}
+                  {tc("insuranceIncluded")}: {hasInsurance.value ? resultsMax.value?.insuranceUnemployedProRata ?? "0.00" : "0.00"}
                 </div>
               )}
             </div>
@@ -442,7 +379,7 @@ export default function LoanCalculator({
 
           {/* Disclaimer */}
           <div class="loan-calculator__disclaimer">
-            {t("disclaimer")}
+            {tc("disclaimer")}
           </div>
 
           {/* Apply Button */}
@@ -451,7 +388,7 @@ export default function LoanCalculator({
               href={applicationUrl.value}
               class={`btn btn--primary hover-lift shadow-primary ${amountError.value || lifetimeError.value ? "btn--disabled" : ""}`}
             >
-              {t("applyLoan")}
+              {tc("applyLoan")}
             </a>
           </div>
         </div>

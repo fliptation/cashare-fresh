@@ -126,7 +126,6 @@ const icons = {
       <rect width="64" height="64" rx="16" fill="url(#home-gradient)" />
       <path d="M32 12L8 32h8v20h32V32h8L32 12z" fill="#0891b2" />
       <rect x="26" y="36" width="12" height="16" fill="#cffafe" />
-      <rect x="40" y="24" width="8" height="12" fill="#0e7490" />
       <defs>
         <linearGradient id="home-gradient" x1="0" y1="0" x2="64" y2="64">
           <stop stop-color="#cffafe" />

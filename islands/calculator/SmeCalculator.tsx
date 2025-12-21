@@ -6,68 +6,7 @@ import {
   InsuranceType,
 } from "../../lib/calculator/mod.ts";
 import { formatMoney } from "../../lib/utils/format.ts";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-// Translations for SME calculator
-const translations = {
-  de: {
-    title: "KMU-Darlehen Rechner",
-    loanAmount: "Darlehenssumme",
-    duration: "Laufzeit",
-    months: "Monate",
-    month: "Monat",
-    interest: "Zinssatz",
-    fees: "Gebühren",
-    monthlyRate: "Monatliche Rate",
-    totalInterest: "Zinskosten",
-    totalAmount: "Gesamtbetrag",
-    from: "von",
-    to: "bis",
-    applyLoan: "KMU-Darlehen beantragen",
-    CHF: "CHF",
-    amountError: "Bitte geben Sie einen Betrag zwischen 10'000 und 1'000'000 ein.",
-    monthsError: "Bitte geben Sie eine Laufzeit zwischen 3 und 60 Monate ein.",
-    disclaimer: "Die effektiven Werte hängen von Ihrem Betrag, der Laufzeit und dem Zinssatz Ihres Darlehens ab.",
-  },
-  en: {
-    title: "SME Loan Calculator",
-    loanAmount: "Loan amount",
-    duration: "Duration",
-    months: "months",
-    month: "month",
-    interest: "Interest rate",
-    fees: "Fees",
-    monthlyRate: "Monthly rate",
-    totalInterest: "Interest costs",
-    totalAmount: "Total amount",
-    from: "from",
-    to: "to",
-    applyLoan: "Apply for SME loan",
-    CHF: "CHF",
-    amountError: "Please enter an amount between 10,000 and 1,000,000.",
-    monthsError: "Please enter a duration between 3 and 60 months.",
-    disclaimer: "The actual values depend on your amount, the term and the interest rate of your loan.",
-  },
-  fr: {
-    title: "Calculateur prêt PME",
-    loanAmount: "Montant du prêt",
-    duration: "Durée",
-    months: "mois",
-    month: "mois",
-    interest: "Taux d'intérêt",
-    fees: "Frais",
-    monthlyRate: "Mensualité",
-    totalInterest: "Coûts d'intérêts",
-    totalAmount: "Montant total",
-    from: "de",
-    to: "à",
-    applyLoan: "Demander un prêt PME",
-    CHF: "CHF",
-    amountError: "Veuillez saisir un montant entre 10'000 et 1'000'000.",
-    monthsError: "Veuillez saisir une durée entre 3 et 60 mois.",
-    disclaimer: "Les valeurs effectives dépendent de votre montant, de la durée et du taux d'intérêt de votre prêt.",
-  },
-} as const;
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 interface SmeCalculatorProps {
   lang?: Locale;
@@ -84,7 +23,8 @@ export default function SmeCalculator({
   minLifetime = 3,
   maxLifetime = 60,
 }: SmeCalculatorProps) {
-  const t = (key: keyof typeof translations.de) => translations[lang][key];
+  const tc = (key: "smeTitle" | "loanAmount" | "duration" | "interest" | "Fees" | "monthlyRate" | "totalInterest" | "totalAmount" | "from" | "to" | "smeApplyLoan" | "smeAmountError" | "smeMonthsError" | "smeDisclaimer") => t(lang, "calculator", key);
+  const tm = (key: "CHF" | "month" | "months") => t(lang, "common", key);
 
   // Calculator instance
   const calc = new Calculator();
@@ -138,7 +78,7 @@ export default function SmeCalculator({
   // Validation
   function validateAmount() {
     if (amount.value < minAmount || amount.value > maxAmount) {
-      amountError.value = t("amountError");
+      amountError.value = tc("smeAmountError");
     } else {
       amountError.value = "";
     }
@@ -147,7 +87,7 @@ export default function SmeCalculator({
 
   function validateLifetime() {
     if (lifetime.value < minLifetime || lifetime.value > maxLifetime) {
-      lifetimeError.value = t("monthsError");
+      lifetimeError.value = tc("smeMonthsError");
     } else {
       lifetimeError.value = "";
     }
@@ -193,14 +133,14 @@ export default function SmeCalculator({
 
   return (
     <div class="sme-calculator calculator">
-      <div class="calculator__title">{t("title")}</div>
+      <div class="calculator__title">{tc("smeTitle")}</div>
 
       {/* Amount Input */}
       <div class="calculator__input-wrapper">
         <div class="calculator__header">
-          <div class="calculator__title">{t("loanAmount")}</div>
+          <div class="calculator__title">{tc("loanAmount")}</div>
           <div class="input-group">
-            <span class="input-group__prefix">{t("CHF")}</span>
+            <span class="input-group__prefix">{tm("CHF")}</span>
             <input
               type="number"
               class="input-group__input"
@@ -230,15 +170,15 @@ export default function SmeCalculator({
           style={`--slider-fill: ${((amount.value - minAmount) / (maxAmount - minAmount)) * 100}%`}
         />
         <div class="calculator__slider-labels">
-          <span>{t("CHF")} {formatMoney(minAmount)}</span>
-          <span>{t("CHF")} {formatMoney(maxAmount)}</span>
+          <span>{tm("CHF")} {formatMoney(minAmount)}</span>
+          <span>{tm("CHF")} {formatMoney(maxAmount)}</span>
         </div>
       </div>
 
       {/* Lifetime Input */}
       <div class="calculator__input-wrapper">
         <div class="calculator__input-row">
-          <div class="calculator__title">{t("duration")}</div>
+          <div class="calculator__title">{tc("duration")}</div>
           <div class="input-group">
             <input
               type="number"
@@ -248,7 +188,7 @@ export default function SmeCalculator({
               min={minLifetime}
               max={maxLifetime}
             />
-            <span class="input-group__suffix">{t("months")}</span>
+            <span class="input-group__suffix">{tm("months")}</span>
           </div>
         </div>
         {lifetimeError.value && (
@@ -270,8 +210,8 @@ export default function SmeCalculator({
           style={`--slider-fill: ${((lifetime.value - minLifetime) / (maxLifetime - minLifetime)) * 100}%`}
         />
         <div class="calculator__slider-labels">
-          <span>{minLifetime} {t("months")}</span>
-          <span>{maxLifetime} {t("months")}</span>
+          <span>{minLifetime} {tm("months")}</span>
+          <span>{maxLifetime} {tm("months")}</span>
         </div>
       </div>
 
@@ -279,22 +219,22 @@ export default function SmeCalculator({
       <div class="calculator__results">
         {/* Header */}
         <div class="calculator__results-header">
-          <div class="u-w--1/4">{t("interest")}:</div>
-          <div class="u-w--1/4">{t("fees")}:</div>
-          <div class="u-w--1/4">{t("totalInterest")}:</div>
-          <div class="u-w--1/4 u-text--right">{t("monthlyRate")}:</div>
+          <div class="u-w--1/4">{tc("interest")}:</div>
+          <div class="u-w--1/4">{tc("Fees")}:</div>
+          <div class="u-w--1/4">{tc("totalInterest")}:</div>
+          <div class="u-w--1/4 u-text--right">{tc("monthlyRate")}:</div>
         </div>
 
         {/* Min Interest Row */}
         <div class="calculator__results-row calculator__results-row--stagger-1">
           <div class="u-w--1/4">
-            {t("from")}: <strong>{interestMin}%</strong>
+            {tc("from")}: <strong>{interestMin}%</strong>
           </div>
           <div class="u-w--1/4">{resultsMin.value?.fee ?? "-"}</div>
-          <div class="u-w--1/4">{resultsMin.value?.interestCost ?? "-"}</div>
+          <div class="u-w--1/4">{resultsMin.value?.interestCosts ?? "-"}</div>
           <div class="u-w--1/4 calculator__results-cell--right">
             <span class="calculator__results-value calculator__results-value--animated">
-              {t("CHF")} {resultsMin.value ? formatMoney(parseFloat(resultsMin.value.instalment)) : "-"}
+              {tm("CHF")} {resultsMin.value ? formatMoney(parseFloat(resultsMin.value.instalment)) : "-"}
             </span>
           </div>
         </div>
@@ -302,20 +242,20 @@ export default function SmeCalculator({
         {/* Max Interest Row */}
         <div class="calculator__results-row calculator__results-row--stagger-2">
           <div class="u-w--1/4">
-            {t("from")}: <strong>{interestMax}%</strong>
+            {tc("from")}: <strong>{interestMax}%</strong>
           </div>
           <div class="u-w--1/4">{resultsMax.value?.fee ?? "-"}</div>
-          <div class="u-w--1/4">{resultsMax.value?.interestCost ?? "-"}</div>
+          <div class="u-w--1/4">{resultsMax.value?.interestCosts ?? "-"}</div>
           <div class="u-w--1/4 calculator__results-cell--right">
             <span class="calculator__results-value calculator__results-value--animated">
-              {t("CHF")} {resultsMax.value ? formatMoney(parseFloat(resultsMax.value.instalment)) : "-"}
+              {tm("CHF")} {resultsMax.value ? formatMoney(parseFloat(resultsMax.value.instalment)) : "-"}
             </span>
           </div>
         </div>
 
         {/* Disclaimer */}
         <div class="sme-calculator__disclaimer">
-          {t("disclaimer")}
+          {tc("smeDisclaimer")}
         </div>
       </div>
 
@@ -325,7 +265,7 @@ export default function SmeCalculator({
           href={applicationUrl.value}
           class={`btn btn--primary hover-lift shadow-primary ${amountError.value || lifetimeError.value ? "btn--disabled" : ""}`}
         >
-          {t("applyLoan")}
+          {tc("smeApplyLoan")}
         </a>
       </div>
     </div>
