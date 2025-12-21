@@ -1,14 +1,21 @@
 /**
  * Validation Utilities
  *
- * Form validation helpers.
+ * Form validation helpers integrated with loan product configuration.
  */
+
+import { LOAN_PRODUCTS, type LoanProductKey } from "../config/loanProducts.ts";
 
 /**
  * Email validation regex (RFC 5322 compliant)
  */
-const EMAIL_REGEX =
+export const EMAIL_REGEX =
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+/**
+ * Simple email validation regex (used in forms)
+ */
+export const SIMPLE_EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /**
  * Validate an email address
@@ -17,18 +24,35 @@ const EMAIL_REGEX =
  * @returns True if valid
  */
 export function isValidEmail(email: string): boolean {
+  if (!email || typeof email !== "string") return false;
+  return SIMPLE_EMAIL_REGEX.test(email.trim());
+}
+
+/**
+ * Validate email with strict RFC 5322 pattern
+ */
+export function isValidEmailStrict(email: string): boolean {
+  if (!email || typeof email !== "string") return false;
   return EMAIL_REGEX.test(email.toLowerCase());
 }
 
 /**
- * Validate a loan amount
+ * Validate a loan amount for a specific product
  *
+ * @param product - The loan product key
  * @param amount - The amount to validate
- * @param min - Minimum allowed (default 1000)
- * @param max - Maximum allowed (default 1000000)
  * @returns True if valid
  */
-export function isValidAmount(
+export function isValidAmount(product: LoanProductKey, amount: number): boolean {
+  const config = LOAN_PRODUCTS[product];
+  if (!config) return false;
+  return !isNaN(amount) && amount >= config.amount.min && amount <= config.amount.max;
+}
+
+/**
+ * Validate a loan amount with explicit min/max (legacy support)
+ */
+export function isValidAmountRange(
   amount: number,
   min = 1000,
   max = 1000000
@@ -37,12 +61,25 @@ export function isValidAmount(
 }
 
 /**
- * Validate a loan lifetime (duration in months)
+ * Validate a loan duration for a specific product
  *
- * @param lifetime - Duration in months
- * @param min - Minimum months (default 1)
- * @param max - Maximum months (default 60)
+ * @param product - The loan product key
+ * @param duration - Duration in months
  * @returns True if valid
+ */
+export function isValidDuration(product: LoanProductKey, duration: number): boolean {
+  const config = LOAN_PRODUCTS[product];
+  if (!config) return false;
+  return (
+    !isNaN(duration) &&
+    Number.isInteger(duration) &&
+    duration >= config.duration.min &&
+    duration <= config.duration.max
+  );
+}
+
+/**
+ * Validate a loan lifetime with explicit min/max (legacy support)
  */
 export function isValidLifetime(
   lifetime: number,
@@ -72,11 +109,27 @@ export function isValidInterestRate(
  * Validate a password
  *
  * @param password - The password to validate
- * @param minLength - Minimum length (default 8)
+ * @param minLength - Minimum length (default 1 for basic presence check)
  * @returns True if valid
  */
-export function isValidPassword(password: string, minLength = 8): boolean {
-  return password.length >= minLength;
+export function isValidPassword(password: string, minLength = 1): boolean {
+  return typeof password === "string" && password.length >= minLength;
+}
+
+/**
+ * Form field errors type
+ */
+export type FieldErrors = Record<string, string>;
+
+/**
+ * Validation error messages by locale
+ */
+export interface ValidationMessages {
+  emailRequired: string;
+  emailInvalid: string;
+  passwordRequired: string;
+  amountInvalid: string;
+  durationInvalid: string;
 }
 
 /**
@@ -88,7 +141,52 @@ export interface ValidationResult {
 }
 
 /**
- * Validate a loan application form
+ * Validate a loan application form with product-specific constraints
+ *
+ * @param product - The loan product key
+ * @param data - Form data to validate
+ * @param messages - Localized error messages
+ * @returns Object with field-specific errors (empty if all valid)
+ */
+export function validateLoanApplicationForm(
+  product: LoanProductKey,
+  data: {
+    amount: number;
+    duration: number;
+    email: string;
+    password: string;
+  },
+  messages: ValidationMessages
+): FieldErrors {
+  const errors: FieldErrors = {};
+
+  // Validate amount
+  if (!isValidAmount(product, data.amount)) {
+    errors.amount = messages.amountInvalid;
+  }
+
+  // Validate duration
+  if (!isValidDuration(product, data.duration)) {
+    errors.duration = messages.durationInvalid;
+  }
+
+  // Validate email
+  if (!data.email) {
+    errors.email = messages.emailRequired;
+  } else if (!isValidEmail(data.email)) {
+    errors.email = messages.emailInvalid;
+  }
+
+  // Validate password
+  if (!isValidPassword(data.password)) {
+    errors.password = messages.passwordRequired;
+  }
+
+  return errors;
+}
+
+/**
+ * Validate a loan form (legacy - without product type)
  *
  * @param data - Form data
  * @returns Validation result
@@ -100,7 +198,7 @@ export function validateLoanForm(data: {
 }): ValidationResult {
   const errors: string[] = [];
 
-  if (!isValidAmount(data.amount)) {
+  if (!isValidAmountRange(data.amount)) {
     errors.push("amount");
   }
 
@@ -116,4 +214,37 @@ export function validateLoanForm(data: {
     valid: errors.length === 0,
     errors,
   };
+}
+
+/**
+ * Check if form has any validation errors
+ *
+ * @param errors - Field errors object
+ * @returns true if there are no errors
+ */
+export function isFormValid(errors: FieldErrors): boolean {
+  return Object.keys(errors).length === 0;
+}
+
+/**
+ * Parse numeric input, stripping non-digit characters
+ *
+ * @param value - Input string to parse
+ * @returns Parsed number, or 0 if invalid
+ */
+export function parseNumericInput(value: string): number {
+  const cleaned = value.replace(/[^0-9]/g, "");
+  return parseInt(cleaned, 10) || 0;
+}
+
+/**
+ * Clamp a value between min and max
+ *
+ * @param value - Value to clamp
+ * @param min - Minimum value
+ * @param max - Maximum value
+ * @returns Clamped value
+ */
+export function clamp(value: number, min: number, max: number): number {
+  return Math.min(Math.max(value, min), max);
 }

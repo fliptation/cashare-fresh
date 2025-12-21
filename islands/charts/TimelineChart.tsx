@@ -1,22 +1,6 @@
 import { useSignal, useComputed } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-// Translations
-const translations = {
-  de: {
-    financedProjects: "Finanzierte Kreditprojekte",
-    members: "Anzahl Mitglieder",
-  },
-  en: {
-    financedProjects: "Financed projects",
-    members: "Members",
-  },
-  fr: {
-    financedProjects: "Projets de prêts financés",
-    members: "Nombre de membres",
-  },
-} as const;
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 interface TimelineData {
   year: number;
@@ -35,7 +19,7 @@ export default function TimelineChart({
   data: initialData,
   apiEndpoint = "/api/statistics",
 }: TimelineChartProps) {
-  const t = (key: keyof typeof translations.de) => translations[lang][key];
+  const tr = (key: "financedProjects" | "members") => t(lang, "charts", key);
 
   const data = useSignal<TimelineData[]>(initialData || []);
   const hoveredIndex = useSignal<number | null>(null);
@@ -201,7 +185,7 @@ export default function TimelineChart({
           text-anchor="end"
           class="timeline-chart__axis-title"
         >
-          {t("financedProjects")}
+          {tr("financedProjects")}
         </text>
 
         {projectTicks.value.map((tick) => (
@@ -225,7 +209,7 @@ export default function TimelineChart({
           text-anchor="start"
           class="timeline-chart__axis-title"
         >
-          {t("members")}
+          {tr("members")}
         </text>
 
         {memberTicks.value.map((tick) => (
@@ -343,8 +327,8 @@ export default function TimelineChart({
                 <div>
                   <strong>
                     {hoveredType.value === "bar"
-                      ? t("financedProjects")
-                      : t("members")}
+                      ? tr("financedProjects")
+                      : tr("members")}
                     :
                   </strong>{" "}
                   {formatNumber(

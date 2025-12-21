@@ -1,28 +1,6 @@
 import { useSignal, useComputed } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-// Translations
-const translations = {
-  de: {
-    title: "Verteilung der Kreditratings: Abwägung von Risiken und Chancen",
-    overview: "Überblick",
-    rating: "Rating",
-    share: "Anteil",
-  },
-  en: {
-    title: "Distribution of Credit Ratings: Balancing Risks and Opportunities",
-    overview: "Overview",
-    rating: "Rating",
-    share: "Share",
-  },
-  fr: {
-    title: "Répartition des notations de crédit: équilibre entre risques et opportunités",
-    overview: "Aperçu",
-    rating: "Rating",
-    share: "Part",
-  },
-} as const;
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 // Color palette for ratings
 const COLORS = [
@@ -47,7 +25,7 @@ export default function RatingsChart({
   data: initialData,
   apiEndpoint = "/api/statistics",
 }: RatingsChartProps) {
-  const t = (key: keyof typeof translations.de) => translations[lang][key];
+  const tr = (key: "ratingsTitle" | "overview" | "rating" | "share") => t(lang, "charts", key);
 
   const data = useSignal<RatingData[]>(initialData || []);
   const hoveredIndex = useSignal<number | null>(null);
@@ -157,9 +135,9 @@ export default function RatingsChart({
   return (
     <div class="ratings-chart" ref={containerRef}>
       <div class="ratings-chart__header">
-        <h3 class="ratings-chart__title">{t("title")}</h3>
+        <h3 class="ratings-chart__title">{tr("ratingsTitle")}</h3>
       </div>
-      <p class="ratings-chart__overview">{t("overview")}</p>
+      <p class="ratings-chart__overview">{tr("overview")}</p>
 
       <div class="ratings-chart__container">
         {/* SVG Donut Chart */}
@@ -194,10 +172,10 @@ export default function RatingsChart({
               />
               <div>
                 <div>
-                  {t("rating")}: <strong>{chartData.value[hoveredIndex.value].rating}</strong>
+                  {tr("rating")}: <strong>{chartData.value[hoveredIndex.value].rating}</strong>
                 </div>
                 <div>
-                  {t("share")}: {chartData.value[hoveredIndex.value].value} ({chartData.value[hoveredIndex.value].percentage.toFixed(1)}%)
+                  {tr("share")}: {chartData.value[hoveredIndex.value].value} ({chartData.value[hoveredIndex.value].percentage.toFixed(1)}%)
                 </div>
               </div>
             </div>

@@ -25,7 +25,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/ueber-uns/statistik/",
       freshRoute: "routes/ueber-uns/statistik.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         tagline: "Unsere Wirkung in Zahlen",
@@ -125,7 +125,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/",
       freshRoute: "routes/index.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "updated",
 
       hero: {
         heading: "Unkompliziert zur cleveren Finanzierung",
@@ -227,7 +227,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/kredit-beantragen/",
       freshRoute: "routes/kredit-beantragen.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "updated",
 
       hero: {
         tagline: "Flexible und sichere Kredite, die auf Sie zugeschnitten sind",
@@ -309,7 +309,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/kredit-beantragen/privatkredit/",
       freshRoute: "routes/kredit-beantragen/privatkredit.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         tagline: "Privatkredit",
@@ -370,7 +370,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/kredit-beantragen/kmu-kredit/",
       freshRoute: "routes/kredit-beantragen/kmu-kredit.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "updated",
 
       hero: {
         tagline: "KMU Kreditnehmer",
@@ -431,7 +431,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/Hypotheken-Rechner.html",
       freshRoute: "routes/kredit-beantragen/hypotheken.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         heading: "Vergleichen Sie die günstigsten Hypotheken",
@@ -489,7 +489,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/investieren/",
       freshRoute: "routes/investieren.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "updated",
 
       hero: {
         tagline: "Entfalten Sie Ihr finanzielles Potenzial",
@@ -576,7 +576,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/investieren/privatinvestoren/",
       freshRoute: "routes/investieren/privatinvestoren.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "updated",
 
       hero: {
         tagline: "Privatanleger",
@@ -654,7 +654,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/investieren/institutionelle-investoren/",
       freshRoute: "routes/investieren/institutionelle.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "updated",
 
       hero: {
         tagline: "Institutionelle Anleger",
@@ -754,7 +754,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/ueber-uns/wer-sind-wir/",
       freshRoute: "routes/ueber-uns/wer-sind-wir.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         heading: "Geschichte und Kompetenzen",
@@ -854,7 +854,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/ueber-uns/crowdlending/",
       freshRoute: "routes/ueber-uns/crowdlending.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         tagline: "Crowdlending",
@@ -954,7 +954,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/ueber-uns/rating/",
       freshRoute: "routes/ueber-uns/rating.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         tagline: "Rating",
@@ -1043,7 +1043,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/ueber-uns/jobs/",
       freshRoute: "routes/ueber-uns/jobs.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         tagline: "Jobs",
@@ -1081,7 +1081,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/ueber-uns/partner/",
       freshRoute: "routes/ueber-uns/partner.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         tagline: "Vertrauensvolle Partnerschaften",
@@ -1183,7 +1183,7 @@ export const contentDatabase: ContentDatabase = {
       liveUrl: "/presse/",
       freshRoute: "routes/ueber-uns/presse.tsx",
       crawledAt: "2025-12-21",
-      status: "crawled",
+      status: "verified",
 
       hero: {
         tagline: "Presse Mitteilungen",

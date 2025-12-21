@@ -7,9 +7,10 @@ interface InstitutionalInvestorsProps {
 const content = {
   de: {
     backLink: { label: "Zurück zur Übersicht", href: "/investieren" },
-    title: "Institutionelle Investoren",
-    subtitle: "Professionelle Private Debt Lösungen für Banken, Pensionskassen und Vermogensverwalter.",
-    cta: { label: "Kontakt aufnehmen", href: "mailto:institutional@cashare.ch" },
+    badge: "Institutionelle Anleger",
+    title: "Erfolgreich und professionell in Kredite investieren!",
+    subtitle: "Investitionen in Kredite als ideale Ergänzung zum Anlageportfolio.",
+    cta: { label: "Jetzt investieren", href: "/werde-anleger/" },
     intro: {
       title: "Ihr Partner für Private Debt",
       text: "Cashare bietet institutionellen Investoren Zugang zu einem diversifizierten Portfolio von Schweizer Privat- und KMU-Krediten. Mit über 15 Jahren Erfahrung und einem verwalteten Volumen von über CHF 2.5 Mrd. sind wir Ihr verlasslicher Partner für alternative Anlagen.",
@@ -188,12 +189,6 @@ export function InstitutionalInvestors({ locale }: InstitutionalInvestorsProps) 
     <>
       <section class="subpage-hero">
         <div class="subpage-hero__container">
-          <a href={t.backLink.href} class="subpage-hero__back">
-            <svg class="subpage-hero__back-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-            {t.backLink.label}
-          </a>
           <h1 class="subpage-hero__title">{t.title}</h1>
           <p class="subpage-hero__subtitle">{t.subtitle}</p>
           <a href={t.cta.href} class="subpage-cta__button" style="margin-top: 32px;">

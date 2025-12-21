@@ -13,7 +13,7 @@ interface HeroProps {
 const heroContent = {
   de: {
     headline: "Unkompliziert zur cleveren Finanzierung",
-    subline: "Die erste Crowdlending-Plattform der Schweiz verbindet Kreditnehmer direkt mit Anlegern. Transparent, fair und ohne Bank.",
+    subline: "Mit Cashare zum individuellen Kredit. Einfach, transparent und sicher – ganz ohne Bank. Der faire Kredit für Privatpersonen und Unternehmen.",
     ctaLoan: "Kredit beantragen",
     ctaInvest: "Jetzt investieren",
     loanHref: "/kredit-beantragen",

@@ -267,12 +267,6 @@ export function Crowdlending({ locale }: CrowdlendingProps) {
       {/* Hero */}
       <section class="subpage-hero">
         <div class="subpage-hero__container">
-          <a href={t.backLink.href} class="subpage-hero__back">
-            <svg class="subpage-hero__back-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-            {t.backLink.label}
-          </a>
           <h1 class="subpage-hero__title">{t.title}</h1>
           <p class="subpage-hero__subtitle">{t.subtitle}</p>
         </div>

@@ -6,7 +6,7 @@ interface KreditBeanttragenProps {
 
 const content = {
   de: {
-    title: "Kredit beantragen",
+    title: "Der einfache Weg mit dem Cashare-Kredit",
     subtitle: "Flexible und sichere Kredite, die auf Sie zugeschnitten sind",
     heroText: "Vertrauen Sie auf den FinTech-Pionier. Flexible und sichere Darlehen, abgestimmt auf Ihre Bedürfnisse.",
     privatkredit: {

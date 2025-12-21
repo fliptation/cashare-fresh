@@ -7,9 +7,10 @@ interface PrivateInvestorsProps {
 const content = {
   de: {
     backLink: { label: "Zurück zur Übersicht", href: "/investieren" },
-    title: "Privatinvestoren",
-    subtitle: "Investieren Sie direkt in Kredite und erzielen Sie attraktive Renditen.",
-    cta: { label: "Jetzt starten", href: "/registrieren" },
+    badge: "Privatanleger",
+    title: "Erfolgreich Geld in Kredite investieren",
+    subtitle: "Lassen Sie Ihr Geld für Sie arbeiten. Der beste Weg, um ein passives Einkommen aufzubauen.",
+    cta: { label: "Jetzt investieren", href: "/werde-anleger/" },
     benefits: {
       title: "Vorteile für Privatinvestoren",
       items: [
@@ -155,12 +156,6 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
     <>
       <section class="subpage-hero">
         <div class="subpage-hero__container">
-          <a href={t.backLink.href} class="subpage-hero__back">
-            <svg class="subpage-hero__back-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-            {t.backLink.label}
-          </a>
           <h1 class="subpage-hero__title">{t.title}</h1>
           <p class="subpage-hero__subtitle">{t.subtitle}</p>
           <a href={t.cta.href} class="subpage-cta__button" style="margin-top: 32px;">

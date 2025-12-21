@@ -6,11 +6,11 @@ interface InvestierenProps {
 
 const content = {
   de: {
-    title: "Investieren",
+    title: "Clever in Private Debt investieren",
     subtitle: "Entfalten Sie Ihr finanzielles Potenzial",
     heroText: "Bei Cashare bieten wir Ihnen massgeschneiderte Möglichkeiten, um in Kredite (Private Debt) investieren zu können.",
     cta: "Jetzt investieren",
-    ctaHref: "/registrieren",
+    ctaHref: "/werde-anleger",
     investorTypes: [
       {
         title: "Privatinvestoren",

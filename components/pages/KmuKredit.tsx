@@ -7,9 +7,9 @@ interface KmuKreditProps {
 const content = {
   de: {
     hero: {
-      badge: "KMU-Kredit",
+      badge: "KMU Kreditnehmer",
       title: "Flexible Finanzierungslösungen für Ihr Unternehmen",
-      subtitle: "Finden Sie bei uns den richtigen KMU-Kredit für Wachstum, Investitionen und Liquidität.",
+      subtitle: "Finden Sie bei uns den richtigen KMU-Kredit",
       cta: "Kredit beantragen",
     },
     loanTypes: {

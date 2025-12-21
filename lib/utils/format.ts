@@ -66,3 +66,39 @@ export function formatPercent(value: number, decimals = 1): string {
 export function parseSwissNumber(value: string): number {
   return parseFloat(value.replace(/'/g, ""));
 }
+
+/**
+ * Safely format a number or string value for display.
+ * Returns "-" for undefined/null/NaN values.
+ *
+ * @param value - The value to format
+ * @returns Formatted string or "-" if invalid
+ *
+ * @example
+ * formatSafe(1234.56) // "1'234.56"
+ * formatSafe(undefined) // "-"
+ * formatSafe("1234.56") // "1'234.56"
+ */
+export function formatSafe(value: number | string | undefined | null): string {
+  if (value === undefined || value === null) return "-";
+  const n = typeof value === "string" ? parseFloat(value) : value;
+  if (isNaN(n)) return "-";
+  return formatMoney(n);
+}
+
+/**
+ * Format a value with CHF prefix, or return "-" if invalid.
+ *
+ * @param value - The amount in CHF
+ * @returns Formatted string with CHF prefix or "-"
+ *
+ * @example
+ * formatCHFSafe(1234.56) // "CHF 1'234.56"
+ * formatCHFSafe(undefined) // "-"
+ */
+export function formatCHFSafe(value: number | string | undefined | null): string {
+  if (value === undefined || value === null) return "-";
+  const n = typeof value === "string" ? parseFloat(value) : value;
+  if (isNaN(n)) return "-";
+  return formatCHF(n);
+}

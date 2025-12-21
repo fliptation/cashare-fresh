@@ -1,22 +1,6 @@
 import { useSignal, useComputed } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-// Translations
-const translations = {
-  de: {
-    title: "Total angefragtes Kreditvolumen",
-    million: "Mio",
-  },
-  en: {
-    title: "Total requested credit volume",
-    million: "M",
-  },
-  fr: {
-    title: "Volume total de crédit demandé",
-    million: "M",
-  },
-} as const;
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 interface VolumeData {
   year: number;
@@ -34,7 +18,7 @@ export default function VolumesChart({
   data: initialData,
   apiEndpoint = "/api/statistics",
 }: VolumesChartProps) {
-  const t = (key: keyof typeof translations.de) => translations[lang][key];
+  const tr = (key: "volumeTitle" | "million") => t(lang, "charts", key);
 
   const data = useSignal<VolumeData[]>(initialData || []);
   const hoveredIndex = useSignal<number | null>(null);
@@ -161,7 +145,7 @@ export default function VolumesChart({
               dominant-baseline="middle"
               class="volumes-chart__axis-label"
             >
-              {tick} {t("million")}
+              {tick} {tr("million")}
             </text>
           </g>
         ))}
@@ -217,7 +201,7 @@ export default function VolumesChart({
               <div>
                 <div>{data.value[hoveredIndex.value].year}</div>
                 <div>
-                  <strong>{t("title")}:</strong>
+                  <strong>{tr("volumeTitle")}:</strong>
                   <br />
                   {formatValue(data.value[hoveredIndex.value].value)}
                 </div>

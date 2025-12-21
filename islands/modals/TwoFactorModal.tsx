@@ -5,37 +5,7 @@
 
 import { useSignal } from "@preact/signals";
 import Modal from "./Modal.tsx";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-const translations = {
-  de: {
-    title: "Zwei-Faktor-Authentifizierung",
-    message: "Bitte geben Sie den Code aus Ihrer Authenticator-App ein.",
-    placeholder: "6-stelliger Code",
-    submit: "Bestätigen",
-    submitting: "Wird überprüft...",
-    cancel: "Abbrechen",
-    error: "Ungültiger Code. Bitte versuchen Sie es erneut.",
-  },
-  en: {
-    title: "Two-Factor Authentication",
-    message: "Please enter the code from your authenticator app.",
-    placeholder: "6-digit code",
-    submit: "Confirm",
-    submitting: "Verifying...",
-    cancel: "Cancel",
-    error: "Invalid code. Please try again.",
-  },
-  fr: {
-    title: "Authentification à deux facteurs",
-    message: "Veuillez saisir le code de votre application d'authentification.",
-    placeholder: "Code à 6 chiffres",
-    submit: "Confirmer",
-    submitting: "Vérification...",
-    cancel: "Annuler",
-    error: "Code invalide. Veuillez réessayer.",
-  },
-};
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 interface TwoFactorModalProps {
   isOpen: boolean;
@@ -52,7 +22,7 @@ export default function TwoFactorModal({
   locale,
   error,
 }: TwoFactorModalProps) {
-  const t = translations[locale];
+  const tr = (key: "twoFactorTitle" | "twoFactorMessage" | "twoFactorPlaceholder" | "twoFactorSubmit" | "twoFactorSubmitting" | "twoFactorCancel" | "twoFactorError") => t(locale, "modals", key);
   const code = useSignal("");
   const isSubmitting = useSignal(false);
   const localError = useSignal("");
@@ -61,7 +31,7 @@ export default function TwoFactorModal({
     e.preventDefault();
 
     if (code.value.length !== 6) {
-      localError.value = t.error;
+      localError.value = tr("twoFactorError");
       return;
     }
 
@@ -71,7 +41,7 @@ export default function TwoFactorModal({
     try {
       await onSubmit(code.value);
     } catch (err) {
-      localError.value = err instanceof Error ? err.message : t.error;
+      localError.value = err instanceof Error ? err.message : tr("twoFactorError");
     } finally {
       isSubmitting.value = false;
     }
@@ -86,7 +56,7 @@ export default function TwoFactorModal({
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={t.title}>
+    <Modal isOpen={isOpen} onClose={onClose} title={tr("twoFactorTitle")}>
       <div class="modal__icon modal__icon--2fa">
         <svg
           width="64"
@@ -100,7 +70,7 @@ export default function TwoFactorModal({
         </svg>
       </div>
 
-      <p class="modal__message">{t.message}</p>
+      <p class="modal__message">{tr("twoFactorMessage")}</p>
 
       <form onSubmit={handleSubmit} class="modal__form">
         <input
@@ -108,7 +78,7 @@ export default function TwoFactorModal({
           inputMode="numeric"
           pattern="[0-9]*"
           class="modal__input modal__input--code"
-          placeholder={t.placeholder}
+          placeholder={tr("twoFactorPlaceholder")}
           value={code.value}
           onInput={handleInput}
           maxLength={6}
@@ -126,14 +96,14 @@ export default function TwoFactorModal({
             onClick={onClose}
             disabled={isSubmitting.value}
           >
-            {t.cancel}
+            {tr("twoFactorCancel")}
           </button>
           <button
             type="submit"
             class="btn btn--primary"
             disabled={isSubmitting.value || code.value.length !== 6}
           >
-            {isSubmitting.value ? t.submitting : t.submit}
+            {isSubmitting.value ? tr("twoFactorSubmitting") : tr("twoFactorSubmit")}
           </button>
         </div>
       </form>

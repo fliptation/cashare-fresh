@@ -4,28 +4,7 @@
  */
 
 import Modal from "./Modal.tsx";
-import type { Locale } from "../../lib/i18n/index.ts";
-
-const translations = {
-  de: {
-    title: "Fehler",
-    defaultMessage: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
-    close: "Schliessen",
-    retry: "Erneut versuchen",
-  },
-  en: {
-    title: "Error",
-    defaultMessage: "An error occurred. Please try again.",
-    close: "Close",
-    retry: "Try Again",
-  },
-  fr: {
-    title: "Erreur",
-    defaultMessage: "Une erreur s'est produite. Veuillez réessayer.",
-    close: "Fermer",
-    retry: "Réessayer",
-  },
-};
+import { t, type Locale } from "../../lib/i18n/index.ts";
 
 interface ErrorModalProps {
   isOpen: boolean;
@@ -42,10 +21,10 @@ export default function ErrorModal({
   message,
   locale,
 }: ErrorModalProps) {
-  const t = translations[locale];
+  const tr = (key: "errorTitle" | "errorDefaultMessage" | "errorClose" | "errorRetry") => t(locale, "modals", key);
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={t.title}>
+    <Modal isOpen={isOpen} onClose={onClose} title={tr("errorTitle")}>
       <div class="modal__icon modal__icon--error">
         <svg
           width="64"
@@ -60,7 +39,7 @@ export default function ErrorModal({
       </div>
 
       <p class="modal__message modal__message--error">
-        {message || t.defaultMessage}
+        {message || tr("errorDefaultMessage")}
       </p>
 
       <div class="modal__actions">
@@ -70,7 +49,7 @@ export default function ErrorModal({
             class="btn btn--outline"
             onClick={onRetry}
           >
-            {t.retry}
+            {tr("errorRetry")}
           </button>
         )}
         <button
@@ -78,7 +57,7 @@ export default function ErrorModal({
           class="btn btn--primary"
           onClick={onClose}
         >
-          {t.close}
+          {tr("errorClose")}
         </button>
       </div>
     </Modal>

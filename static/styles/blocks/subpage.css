@@ -16,27 +16,6 @@
   margin: 0 auto;
 }
 
-.subpage-hero__back {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-gray);
-  text-decoration: none;
-  font-size: var(--text-sm);
-  font-weight: 500;
-  margin-bottom: 24px;
-  transition: color 0.2s ease;
-}
-
-.subpage-hero__back:hover {
-  color: var(--color-primary);
-}
-
-.subpage-hero__back-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .subpage-hero__title {
   font-size: var(--text-5xl);
   font-weight: 800;

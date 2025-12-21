@@ -10,9 +10,12 @@ export type Locale = "de" | "en" | "fr";
 export type TranslationNamespace =
   | "auth"
   | "calculator"
+  | "charts"
   | "common"
   | "error"
-  | "validation";
+  | "modals"
+  | "validation"
+  | "yieldCalculator";
 
 export interface AuthTranslations {
   "Apply for a loan": string;
@@ -59,6 +62,60 @@ export interface CalculatorTranslations {
   "of which insurance": string;
 }
 
+export interface YieldCalculatorTranslations {
+  title: string;
+  subtitle: string;
+  amount: string;
+  duration: string;
+  interestRate: string;
+  calculation: string;
+  yield: string;
+  platformFee: string;
+  netYield: string;
+  amountError: string;
+  monthsError: string;
+  interestError: string;
+}
+
+export interface ChartsTranslations {
+  ratingsTitle: string;
+  overview: string;
+  rating: string;
+  share: string;
+  financedProjects: string;
+  members: string;
+  volumeTitle: string;
+  million: string;
+}
+
+export interface ModalsTranslations {
+  emailValidationTitle: string;
+  emailValidationMessage: string;
+  emailValidationCheckInbox: string;
+  emailValidationCheckSpam: string;
+  emailValidationResend: string;
+  emailValidationResending: string;
+  emailValidationResent: string;
+  emailValidationClose: string;
+  errorTitle: string;
+  errorDefaultMessage: string;
+  errorClose: string;
+  errorRetry: string;
+  roleSelectionTitle: string;
+  roleSelectionMessage: string;
+  roleSelectionInvestTitle: string;
+  roleSelectionInvestDescription: string;
+  roleSelectionBorrowTitle: string;
+  roleSelectionBorrowDescription: string;
+  twoFactorTitle: string;
+  twoFactorMessage: string;
+  twoFactorPlaceholder: string;
+  twoFactorSubmit: string;
+  twoFactorSubmitting: string;
+  twoFactorCancel: string;
+  twoFactorError: string;
+}
+
 export interface CommonTranslations {
   CHF: string;
   Continue: string;
@@ -90,9 +147,12 @@ export interface ValidationTranslations {
 export interface Translations {
   auth: AuthTranslations;
   calculator: CalculatorTranslations;
+  charts: ChartsTranslations;
   common: CommonTranslations;
   error: ErrorTranslations;
+  modals: ModalsTranslations;
   validation: ValidationTranslations;
+  yieldCalculator: YieldCalculatorTranslations;
 }
 
 export type TranslationKey<N extends TranslationNamespace> =
@@ -100,10 +160,16 @@ export type TranslationKey<N extends TranslationNamespace> =
     ? keyof AuthTranslations
   : N extends "calculator"
     ? keyof CalculatorTranslations
+  : N extends "charts"
+    ? keyof ChartsTranslations
   : N extends "common"
     ? keyof CommonTranslations
   : N extends "error"
     ? keyof ErrorTranslations
+  : N extends "modals"
+    ? keyof ModalsTranslations
   : N extends "validation"
     ? keyof ValidationTranslations
+  : N extends "yieldCalculator"
+    ? keyof YieldCalculatorTranslations
     : never;

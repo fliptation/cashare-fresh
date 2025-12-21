@@ -14,8 +14,35 @@ import type {
 } from "./types.ts";
 import type { Locale } from "../i18n/index.ts";
 
+// API base URL
+const API_BASE = "https://my.cashare.ch";
+
 // External app URL for redirects
 const APP_BASE = "https://app.cashare.ch";
+
+/**
+ * Make an API request to the Cashare backend
+ */
+async function apiRequest(
+  endpoint: string,
+  options: RequestInit = {}
+): Promise<ApiResponse> {
+  const url = `${API_BASE}${endpoint}`;
+
+  const response = await fetch(url, {
+    ...options,
+    headers: {
+      "Content-Type": "application/json",
+      ...options.headers,
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`API error: ${response.status}`);
+  }
+
+  return response.json();
+}
 
 /**
  * Build redirect URL for loan application
@@ -149,19 +176,19 @@ export async function resetPassword(
  * Get the dashboard URL for redirect after login
  */
 export function getDashboardUrl(locale: Locale): string {
-  return `${API_BASE}/${locale}/dashboard`;
+  return `${APP_BASE}/${locale}/dashboard`;
 }
 
 /**
  * Get the borrower dashboard URL
  */
 export function getBorrowerDashboardUrl(locale: Locale): string {
-  return `${API_BASE}/${locale}/borrower/dashboard`;
+  return `${APP_BASE}/${locale}/borrower/dashboard`;
 }
 
 /**
  * Get the investor dashboard URL
  */
 export function getInvestorDashboardUrl(locale: Locale): string {
-  return `${API_BASE}/${locale}/investor/dashboard`;
+  return `${APP_BASE}/${locale}/investor/dashboard`;
 }
