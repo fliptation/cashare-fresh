@@ -1,0 +1,50 @@
+{
+  "url": "https://www.cashare.ch/en/about-us/rating/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Rating - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Rating",
+    "h1": "The Cashare Rating",
+    "description": "Learn how our rating system works"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "Discover what our detailed rating reveals about credit risk",
+      "content": [
+        "Cashare has developed a proprietary credit scoring technology that leverages big data, artificial intelligence, and machine learning algorithms to deliver fast and efficient credit solutions for our customers.",
+        "Each loan application goes through our rigorous risk assessment system and is evaluated against hundreds of data points, based on Cashare's historical database.",
+        "We use direct API connections to multiple external payment and government databases to enrich our overall credit evaluation. This allows us to assess credit applications faster and determine credit risks with greater precision than traditional systems."
+      ]
+    },
+    {
+      "id": "rating-explanation",
+      "heading": "What does our rating say?",
+      "subheading": "Our Rating Creates Transparency",
+      "content": [
+        "Each loan receives a risk rating from A (low risk/low return) to F (higher risk/higher return). Loans from a rating of C are admitted for investment.",
+        "Overall Return: 6.48%",
+        "The role of Cashare as a P2P lending platform provider is to bring people together. It facilitates mediation between borrowers and investors and provides the platform as a communication channel. As an investor, you can freely select your loan projects and invest a portion of the sought loan amount. Thus, the investment can be diversified across many different borrowers. There are no hidden fees."
+      ]
+    },
+    {
+      "id": "collateral",
+      "heading": "Collateral",
+      "description": "On Cashare, loans can also be secured by the borrower with additional collateral. These include:",
+      "items": [
+        {"title": "Mortgage as collateral"},
+        {"title": "Guarantee"}
+      ],
+      "footer": "The additional collateral is specified in each loan project. In the event of a payment default, the collateral is liquidated to ensure a quick recovery of funds. The collateral is already factored into the rating."
+    },
+    {
+      "id": "interest-rate",
+      "heading": "Minimum interest rate (interest rate floor)",
+      "description": "Cashare ensures that a fair interest rate is always achieved. This always includes a return on equity, the refinancing costs, the inflation premium and the risk premium.Graded according to rating and term, the total interest will vary accordingly.The floor determines the minimum interest rate, while higher interest rates enable an additional return.The floor cannot be undercut."
+    }
+  ]
+}

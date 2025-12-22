@@ -1,0 +1,63 @@
+{
+  "url": "https://www.cashare.ch/ueber-uns/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Ueber Uns - Cashare",
+    "description": ""
+  },
+  "type": "navigation",
+  "sections": [
+    {
+      "id": "about-cards",
+      "heading": "Über uns",
+      "subheading": "Wer ist Cashare",
+      "cards": [
+        {
+          "title": "Wer sind wir",
+          "description": "Unsere Vision und Mission",
+          "icon": "who-we-are.png",
+          "href": "/ueber-uns/wer-sind-wir/"
+        },
+        {
+          "title": "Crowdlending",
+          "description": "Der Schweizer FinTech Pionier",
+          "icon": "crowd-lending.png",
+          "href": "/ueber-uns/crowdlending/"
+        },
+        {
+          "title": "Statistik",
+          "description": "Unser Leistungsausweis",
+          "icon": "statistics.png",
+          "href": "/ueber-uns/statistik/"
+        },
+        {
+          "title": "Jobs",
+          "description": "Karriere und Pionierarbeit mit Cashare",
+          "icon": "jobs.png",
+          "href": "/ueber-uns/jobs/"
+        },
+        {
+          "title": "Partner",
+          "description": "Starke Zusammenarbeit und Vertrauen",
+          "icon": "partner.png",
+          "href": "/ueber-uns/partner/"
+        },
+        {
+          "title": "Presse",
+          "description": "Medienzentrum",
+          "icon": "press.png",
+          "href": "/ueber-uns/presse/"
+        },
+        {
+          "title": "Blog",
+          "description": "Einblicke & Geschichten",
+          "icon": "blog.png",
+          "href": "/ueber-uns/blog/"
+        }
+      ]
+    }
+  ],
+  "footer_note": "Die Datenbank von Cashare ist bei beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) registriert.",
+  "legal_note": "Cashare ist Mitglied der SRO Polyreg und ein genehmigter Finanzintermediär im Sinne von Artikel 2, Absatz 3ff des Schweizer Geldwäschereigesetzes. Cashare wurde die Lizenz für die Gewährung von Verbraucherkrediten des Direktionssekretariats der Nationalen Wirtschaftsdirektion des Kantons Zug erteilt."
+}

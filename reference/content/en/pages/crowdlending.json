@@ -1,0 +1,52 @@
+{
+  "url": "https://www.cashare.ch/en/about-us/crowdlending/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Crowdlending - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Crowdlending",
+    "h1": "The Future of Loans and Investments",
+    "description": "Connecting borrowers and investors – for a smart financial future."
+  },
+  "sections": [
+    {
+      "id": "how-it-works",
+      "heading": "How Crowdlending Works",
+      "subheading": "What is Crowdlending?",
+      "title": "Peer-to-peer loans made simple",
+      "content": "We simplify Peer-to-Peer lending, also known as Marketplace Lending. Crowdlending is an innovative and secure financing solution that directly connects borrowers with investors through online platforms. By bypassing traditional banks, the process is simplified and costs are reduced for all parties involved."
+    },
+    {
+      "id": "direct-loans",
+      "heading": "How Does It Work?",
+      "subheading": "Loans Directly from Investors",
+      "content": "On Crowdlending platforms like Cashare, borrowers apply for loans that are directly financed by investors. For borrowers, it is as straightforward as a bank loan.The platform serves as a marketplace, handles all documentation and processing, and ensures compliance with strict security and integrity standards."
+    },
+    {
+      "id": "why-crowdlending",
+      "heading": "Why Choose Crowdlending?",
+      "subheading": "Fast, Flexible and Transparent Financing",
+      "content": [
+        "At Cashare, we believe there is a better way. By eliminating banks as intermediaries, we create a direct connection between borrowers and investors—benefiting both sides.This results in lower interest rates for borrowers and higher returns for investors.",
+        "Founded in 2008, we are the most experienced FinTech company in Switzerland and the country's first crowdlending provider.",
+        "From the beginning, we have set the standard for innovation in the industry, ensuring that both investors and borrowers benefit from responsible and transparent financial solutions.",
+        "Guided by strong values and independence, we have served over 60,000 customers and processed loan applications totaling more than CHF 2.5 billion."
+      ]
+    },
+    {
+      "id": "borrower-benefits",
+      "heading": "Benefits for Borrowers",
+      "description": "From flexible repayment plans to fast approvals, our platform gives borrowers the tools they need to take control of their financial goals—without unnecessary hurdles or hidden costs.",
+      "cta": "Apply now"
+    },
+    {
+      "id": "investor-benefits",
+      "heading": "Benefits for Investors",
+      "description": "Grow your portfolio with direct access to Swiss borrowers. Cashare empowers investors with transparency, steady returns, and control over every investment decision—no banks in between.",
+      "cta": "Invest now"
+    }
+  ]
+}

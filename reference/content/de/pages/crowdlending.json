@@ -1,0 +1,54 @@
+{
+  "url": "https://www.cashare.ch/ueber-uns/crowdlending/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Crowdlending - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Crowdlending",
+    "h1": "Die Zukunft von Krediten und Investitionen",
+    "description": "Kreditnehmer und Investoren verbinden – für eine intelligente finanzielle Zukunft."
+  },
+  "sections": [
+    {
+      "id": "how-it-works",
+      "heading": "So funktioniert Crowdlending",
+      "subsections": [
+        {
+          "heading": "Was ist Crowdlending?",
+          "subheading": "Peer-to-Peer-Kredite einfach gemacht",
+          "content": "Wir machen Peer-to-Peer-Kredite, auch bekannt als Marketplace Lending, einfach. Crowdlending ist eine innovative und sichere Finanzierungslösung, die Kreditnehmer über Online-Plattformen direkt mit Investoren verbindet. Durch den Wegfall traditioneller Banken wird der Prozess vereinfacht und die Kosten für alle Beteiligten reduziert."
+        },
+        {
+          "heading": "Wie funktioniert es?",
+          "subheading": "Kredite direkt von Anlegern erhalten",
+          "content": "Auf Crowdlending-Plattformen wie Cashare beantragen Kreditnehmer einen Kredit, der direkt von Anleger finanziert wird. Für Kreditnehmer ist es genauso unkompliziert, wie ein Bankkredit.Die Plattform dient als Marktplatz, übernimmt die gesamte Dokumentation und Abwicklung und stellt die Einhaltung strenger Sicherheits- und Integritätsstandards sicher."
+        },
+        {
+          "heading": "Warum Crowdlending wählen?",
+          "subheading": "Schnell, flexibel und transparent",
+          "content": [
+            "Bei Cashare sind wir überzeugt, dass es einen besseren Weg gibt. Indem wir Banken als Zwischeninstanz ausschließen, schaffen wir eine direkte Verbindung zwischen Kreditnehmern und Anleger – zum Vorteil beider Seiten.Das führt zu niedrigeren Zinssätzen für Kreditnehmer und höheren Renditen für Anleger.",
+            "Gegründet 2008, sind wir das erfahrendste FinTech-Unternehmen der Schweiz und der erste Crowdlending-Anbieter des Landes.",
+            "Von Anfang an haben wir den Standard für Innovation in der Branche gesetzt. Dadurch profitieren sowohl Anleger als auch Kreditnehmern von verantwortungsvollen und transparenten Finanzlösungen.",
+            "Geleitet von starken Werten und Unabhängigkeit, haben wir bis heute über 60'000 Kunden betreut und ein Kreditantragsvolumen von mehr als CHF 2,5 Milliarden bearbeitet."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "borrowers",
+      "heading": "Vorteile für Kreditnehmer",
+      "description": "Von flexiblen Rückzahlungsplänen bis hin zu schnellen Kreditentscheiden – unsere Plattform bietet Kreditnehmenden die Werkzeuge, um ihre finanziellen Ziele zu erreichen – ohne Hürden oder versteckte Kosten.",
+      "cta": "Jetzt beantragen"
+    },
+    {
+      "id": "investors",
+      "heading": "Vorteile für Investoren",
+      "description": "Erweitern Sie Ihr Portfolio mit direktem Zugang zu Schweizer Kreditnehmenden. Cashare bietet Investierenden Transparenz, stabile Renditen und volle Kontrolle – ganz ohne Banken als Zwischeninstanz.",
+      "cta": "Investieren Sie jetzt"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "url": "https://www.cashare.ch/en/about-us/partner/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Partner - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Trusted Partnerships",
+    "h1": "Partnerships with Cashare for Success",
+    "description": "Interested in becoming a partner of Cashare? We look forward to your email at partner@cashare.ch.",
+    "cta": "Become a partner"
+  },
+  "sections": [
+    {
+      "id": "partner-logos",
+      "note": "Partner logos displayed on page",
+      "cta": "View website"
+    }
+  ]
+}

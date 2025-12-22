@@ -1,0 +1,40 @@
+{
+  "url": "https://www.cashare.ch/ueber-uns/statistik/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Statistik - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Unsere Wirkung in Zahlen",
+    "h1": "Eine Geschichte finanzieller Unabhängigkeit",
+    "description": "Entdecken Sie die Meilensteine, die Cashares Weg als erste Crowdlending-Plattform der Schweiz geprägt haben – und wie wir Kreditnehmer sowie Investoren stärken"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "Die Kraft des Crowdlendings: Eine intelligentere Finanzierungslösung",
+      "content": [
+        "Cashare brachte 2008 ein neues Kreditmodell auf den Markt – einfach, sicher und ohne Banken. Unser Ziel: faire Finanzierungen unter besten Bedingungen für alle Beteiligten.",
+        "Als Pionier im Crowdlending verfügen wir heute über die grösste aktive „Crowd" in der Schweiz und haben mehr P2P-Kredite finanziert als jeder andere Anbieter – Tendenz steigend!",
+        "Crowdlending hat sich längst als echte Alternative für Privatpersonen und Unternehmen etabliert. Während Banken kleinere Kredite oft vernachlässigen und wenig attraktive Zinsen bieten, punktet der FinTech-Sektor – und damit auch Cashare – mit fairen, flexiblen Lösungen.",
+        "Werfen Sie einen Blick auf unsere aktuellen Kennzahlen und sehen Sie selbst, warum immer mehr Investoren und Kreditnehmer auf Crowdlending setzen."
+      ]
+    },
+    {
+      "id": "key-figures",
+      "heading": "Wichtige Kennzahlen",
+      "description": "Bei Cashare sind wir stolz darauf, die Auswirkungen unserer Crowdlending-Plattform in der Schweiz zu präsentieren. Seit unserer Gründung haben wir tausende Kreditnehmer mit engagierten Investoren vernetzt und so einen positiven finanziellen Effekt in der Gemeinschaft geschaffen."
+    },
+    {
+      "id": "charts",
+      "charts": [
+        {"heading": "Kreditprojekte nach Verwendungszweck"},
+        {"heading": "Anzahl der Mitglieder und finanzierte Kreditprojekte"},
+        {"heading": "Verteilung nach Rating"},
+        {"heading": "Gesamtvolumen der angeforderten Kredite"}
+      ]
+    }
+  ]
+}

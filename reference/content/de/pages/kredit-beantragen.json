@@ -1,0 +1,87 @@
+{
+  "url": "https://www.cashare.ch/kredit-beantragen/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Kredit beantragen - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Flexible und sichere Kredite, die auf Sie zugeschnitten sind",
+    "h1": "Der einfache Weg mit dem Cashare-Kredit",
+    "description": "Vertrauen Sie auf den FinTech-Pionier.Flexible und sichere Darlehen, abgestimmt auf Ihre Bedürfnisse."
+  },
+  "sections": [
+    {
+      "id": "loan-types",
+      "cards": [
+        {"title": "Privatkredit beantragen"},
+        {"title": "KMU-Kredit beantragen"},
+        {"title": "Hypothek beantragen"}
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "Cashare funktioniert schnell und einfach",
+      "description": "Schnelle, flexible und sichere Kredite, die auf Ihre Bedürfnisse zugeschnitten sind.",
+      "features": [
+        "Effiziente Prozesse",
+        "Attraktive Konditionen",
+        "Flexible Laufzeiten",
+        "Sichere Prozesse"
+      ]
+    },
+    {
+      "id": "requirements",
+      "heading": "Voraussetzungen für Ihren Kredit"
+    },
+    {
+      "id": "loan-options",
+      "heading": "Schnell und einfach zum Kredit",
+      "description": "Schnelle, einfache und sichere Kredite für Privatpersonen und kleine Unternehmen.",
+      "cards": [
+        {"title": "Privatkredit", "cta": "Mehr Informationen"},
+        {"title": "KMU-Kredit"},
+        {"title": "Immobilienkredit", "cta": "Immobilienkredit beantragen"}
+      ]
+    },
+    {
+      "id": "steps",
+      "heading": "3 Schritte zum Wunschkredit",
+      "subheading": "Wie funktioniert der Kreditantrag",
+      "description": "Unsere Investoren finanzieren eine Vielzahl von Kreditanträgen – verwirklichen Sie Ihre Ziele jetzt mit Crowdlending."
+    },
+    {
+      "id": "benefits",
+      "tagline": "Unsere Vorteile",
+      "heading": "Erfahrung- Sicherheit Effizienz- Technologie",
+      "description": "Mit Innovation und Verantwortung zu kosteneffizienten Lösungen für Kreditnehmer und Anleger.",
+      "cards": [
+        {
+          "title": "Was Sie über uns wissen sollten",
+          "description": "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet und hat sich als führender Anbieter für innovative Finanzierungslösungen etabliert. Mit über 60`000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge bietet Cashare bewährte und sichere Finanzlösungen."
+        },
+        {
+          "title": "Transparente & effiziente Prozesse",
+          "description": "Cashare steht für klare, faire und transparente Abläufe. Ob für Kreditnehmer oder Investoren – alle Schritte sind strukturiert, ohne versteckte Gebühren oder Überraschungen. Dank Echtzeit-Updates und detaillierten Analysen können Nutzer fundierte Finanzentscheidungen treffen."
+        },
+        {
+          "title": "Flexible Finanzlösungen für alle",
+          "description": "Cashare verbindet Kreditnehmer mit Investoren und bietet eine faire Alternative zu Banken. Kreditnehmer profitieren von flexiblen Laufzeiten, attraktiven Zinssätzen und schneller Abwicklung, während Investoren Zugang zu attraktiven Renditen und einer diversifizierten Anlagestrategie erhalten."
+        },
+        {
+          "title": "Attraktive Renditen für Anleger",
+          "description": "Anleger profitieren von attraktiven Renditen, die traditionelle Anlageformen in einem Portfolio optimal ergänzen, speziell als Erweiterung im Fixed Income Bereich."
+        },
+        {
+          "title": "Sicherheit durch intelligentes Risikomanagement",
+          "description": "Optimieren Sie Ihr Portfolio mit unseren massgeschneiderten Investitionslösungen für institutionelle Anleger. Profitieren Sie von einem starken Risikomanagement und einer professionellen Abwicklung in jeder Phase Ihrer Investition."
+        },
+        {
+          "title": "Nachhaltige Finanzlösungen",
+          "description": "Cashare verbindet Kreditnehmer und Investoren zu einer starken Finanzgemeinschaft. Durch Crowdlending wird nicht nur finanzielle Unabhängigkeit gefördert, sondern auch kleine Unternehmen unterstützt, die sonst keinen Zugang zu fairen Finanzierungsmöglichkeiten haben."
+        }
+      ]
+    }
+  ]
+}

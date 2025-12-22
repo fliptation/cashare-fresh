@@ -1,0 +1,41 @@
+{
+  "url": "https://www.cashare.ch/werde-anleger/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Werde Anleger - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Investieren Sie in Ihre Zukunft",
+    "h1": "Lassen Sie Ihr Geld für sich arbeiten",
+    "description": "Werden Sie in nur wenigen Schritten zum Investor"
+  },
+  "sections": [
+    {
+      "id": "investor-type",
+      "heading": "Welche Art von Anleger sind Sie?",
+      "instruction": "Bitte wählen Sie eine Option aus, um fortzufahren.",
+      "options": [
+        {
+          "title": "Private Anleger",
+          "description": "Steigern Sie Ihr Vermögen mit unseren maßgeschneiderten Anlagemöglichkeiten. Als Privatanleger profitieren Sie von attraktiven Renditen, diversifizieren Ihr Portfolio und unterstützen sinnvolle Projekte."
+        },
+        {
+          "title": "Institut Investor",
+          "description": "Maximieren Sie Ihr Portfolio mit unseren maßgeschneiderten Anlagelösungen für Institutionen. Profitieren Sie von skalierbaren Möglichkeiten, robustem Risikomanagement und sicheren Renditen – alles zugeschnitten auf Ihre Bedürfnisse."
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "heading": "Werden Sie Anleger in wenigen Schritten",
+      "subheading": "Welcher Anleger möchten Sie sein?"
+    }
+  ],
+  "support": {
+    "help": "Brauchen Sie Hilfe? Rufen Sie uns unter 041 558 48 88 an.",
+    "login": "Haben Sie bereits ein Konto? Einloggen.",
+    "terms": "Mit der Anmeldung erklären Sie sich mit unseren Allgemeinen Geschäftsbedingungen einverstanden."
+  }
+}

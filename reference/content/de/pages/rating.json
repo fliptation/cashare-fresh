@@ -1,0 +1,50 @@
+{
+  "url": "https://www.cashare.ch/ueber-uns/rating/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Rating - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Rating",
+    "h1": "Das Cashare Rating",
+    "description": "Erfahren Sie, wie unser Rating funktioniert"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "Erfahren Sie, was unser detailliertes Rating über Kreditrisiken verrät",
+      "content": [
+        "Cashare hat eine proprietäre Kredit-Scoring-Technologie entwickelt, die big data, künstliche Intelligenz und maschinelle Lernalgorithmen einsetzt, um schnelle und effiziente Kreditlösungen für unsere Kunden anbieten zu können.",
+        "Jeder Darlehensantrag durchläuft unser strenges Risikobewertungssystem und wird gegen Hunderte von Datenpunkten ausgewertet, die auf der historischen Datenbank von Cashare basieren.",
+        "Wir nutzen direkte API-Verbindungen zu mehreren externen Zahlungs- und Regierungsdatenbanken, um unsere Gesamtkreditbewertung anzureichern. So können wir Kreditaufträge schneller beurteilen und Kreditrisiken mit höherer Präzision bestimmen als herkömmliche Systeme."
+      ]
+    },
+    {
+      "id": "rating-explanation",
+      "heading": "Was sagt unsere Bewertung aus?",
+      "subheading": "Unser Rating schafft Klarheit",
+      "content": [
+        "Jeder Kredit erhält eine Risikobewertung von A (niedriges Risiko/niedrige Rendite) bis F (höheres Risiko/höhere Rendite). Kredite ab einem Rating C werden zu Investitionen zugelassen.",
+        "Gesamtrendite: 6.48%",
+        "Die Rolle von Cashare als Anbieter einer P2P-Kreditplattform ist, Menschen zusammenzubringen. Es wird zwischen Kreditnehmern und Anlegern vermittelt und die Plattform als Kommunikationskanal zur Verfügung gestellt. Als Anleger sucht man sich seine Kreditprojekte frei aus und investiert einen Teil des Kredits."
+      ]
+    },
+    {
+      "id": "securities",
+      "heading": "Sicherheiten",
+      "description": "Auf Cashare können Kredite durch den Kreditnehmer auch mit zusätzlichen Sicherheiten abgesichert werden. Dies sind:",
+      "items": [
+        {"title": "Grundpfand"},
+        {"title": "Bürgschaft"}
+      ],
+      "footer": "Die zusätzlichen Sicherheiten werden in den Kreditprojekten spezifisch ausgewiesen. Bei einer allfälligen Zahlungsstörung werden die Sicherheiten verwertet, um einen schnellen Rückfluss der Gelder zu erzielen. Die Sicherheiten werden im Rating bereits berücksichtigt."
+    },
+    {
+      "id": "interest-rate",
+      "heading": "Mindestzinssatz (Zinsuntergrenze)",
+      "description": "Cashare stellt sicher, dass stets ein fairer Zinssatz erzielt wird. Dieser beinhaltet stets die Eigenkapitalrendite, die Refinanzierungskosten, die Inflationsprämie und die Risikoprämie.Je nach Rating und Laufzeit variiert der Gesamtzins entsprechend.Der Floor bestimmt den Mindestzinssatz."
+    }
+  ]
+}

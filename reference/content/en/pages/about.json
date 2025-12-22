@@ -1,0 +1,22 @@
+{
+  "url": "https://www.cashare.ch/en/about-us/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "About Us - Cashare",
+    "description": ""
+  },
+  "navigation_cards": [
+    {"title": "Who We Are", "description": "Our Vision and Mission"},
+    {"title": "Crowdlending", "description": "The Swiss FinTech Pioneer"},
+    {"title": "Statistics", "description": "Our track record"},
+    {"title": "Jobs", "description": "Careers and pioneering work with Cashare"},
+    {"title": "Partners", "description": "Strong collaboration and trust"},
+    {"title": "Press", "description": "Media Center"},
+    {"title": "Blog", "description": "Insights & Stories"}
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. All rights reserved.",
+    "legal_note": "The Cashare database is registered with the Federal Data Protection and Information Commissioner (FDPIC)."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "url": "https://www.cashare.ch/en/about-us/jobs/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Jobs - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Jobs",
+    "h1": "Discover exciting career opportunities with us",
+    "description": "Shape the future of the financial world with Cashare."
+  },
+  "sections": [
+    {
+      "id": "why-cashare",
+      "heading": "Why Choose Cashare?",
+      "subheading": "Transform the Finance Industry with Us",
+      "content": [
+        "We are always looking for passionate and creative minds who want to make an impact in the world of digital media or the credit sector. If you are excited about being part of a team that is reshaping the financial world, we would like to have you on board!",
+        "Do you want to look behind the scenes of an innovative FinTech company and actively engage in a diverse challenge?Are you a reliable, innovative team player who loves new ideas?Are you adaptable, flexible, and ready to accompany our team on the path to a successful future?",
+        "Then join our mission and help us shape the future of the finance industry!"
+      ]
+    },
+    {
+      "id": "apply",
+      "heading": "Contribute your knowledge",
+      "description": "We are also open to speculative applications and look forward to receiving your complete application documents at jobs@cashare.ch."
+    }
+  ]
+}

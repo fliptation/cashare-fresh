@@ -1,0 +1,40 @@
+{
+  "url": "https://www.cashare.ch/en/about-us/statistics/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Statistics - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Our Impact in Numbers",
+    "h1": "A Story of Financial Independence",
+    "description": "Discover the milestones that have shaped Cashare's journey as Switzerland's first crowdlending platform – and how we empower borrowers and investors."
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "The Power of Crowdlending: A Smarter Financing Solution",
+      "content": [
+        "In 2008, Cashare launched a new lending model – simple, secure, and without banks. Our goal: fair financing under the best possible conditions for everyone involved.",
+        "As a pioneer in crowdlending, we now have the largest active 'crowd' in Switzerland and have financed more P2P loans than any other provider – with numbers continuing to grow!",
+        "Crowdlending has long since established itself as a real alternative for individuals and businesses. While banks often neglect smaller loans and offer less attractive interest rates, the FinTech sector – and Cashare with it – stands out with fair and flexible solutions. The opportunities offered by crowdlending are enormous – and they continue to expand.",
+        "Take a look at our latest key figures and see for yourself why more and more investors and borrowers are turning to crowdlending."
+      ]
+    },
+    {
+      "id": "key-figures",
+      "heading": "Key Figures",
+      "description": "At Cashare, we are proud to showcase the impact of our crowdlending platform in Switzerland. Since our inception, we have connected thousands of borrowers with dedicated investors, creating a positive financial effect in the community. Here is a look at the figures that define our success."
+    },
+    {
+      "id": "charts",
+      "charts": [
+        {"heading": "Loan projects by intended use"},
+        {"heading": "Number of members and loan projects financed"},
+        {"heading": "Distribution by rating"},
+        {"heading": "Total volume of loans requested"}
+      ]
+    }
+  ]
+}

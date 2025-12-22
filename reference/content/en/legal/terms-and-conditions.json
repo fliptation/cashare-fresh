@@ -1,0 +1,32 @@
+{
+  "url": "https://www.cashare.ch/en/terms-and-conditions/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "General Terms and Conditions (GTC) - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "h1": "GENERAL TERMS AND CONDITIONS",
+    "description": "The rules that keep everything simple and secure. Our General Terms and Conditions ensure transparency and clarity in all your interactions with Cashare. By continuing, you agree to these terms."
+  },
+  "document": {
+    "company": "Cashare AG, Hünenberg",
+    "version": "1.7 / February 1, 2025",
+    "note": "Full legal document - 186 sections. Mix of EN/DE content on live site. Reference German AGB for complete structure.",
+    "sections": [
+      "I. GENERAL PROVISIONS",
+      "A. Registration",
+      "B. Identification",
+      "C. User Account (My Cashare)",
+      "D. Termination of membership",
+      "B. Data protection",
+      "C. Sanctions",
+      "II. CREDIT PLATFORM",
+      "A. Important Notice – Risks",
+      "B. Loan application",
+      "C. Creditworthiness and credit assessment",
+      "D. No advice, recommendation"
+    ]
+  }
+}

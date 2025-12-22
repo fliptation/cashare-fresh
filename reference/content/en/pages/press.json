@@ -1,0 +1,34 @@
+{
+  "url": "https://www.cashare.ch/en/presse/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Press - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Press releases",
+    "h1": "What the press says",
+    "description": "Crowdlending and fintech are topics of national and international interest.Take a look and be inspired.",
+    "cta": "Contact us"
+  },
+  "sections": [
+    {
+      "id": "press-articles",
+      "articles": [
+        {"title": "Lend to your neighbor"},
+        {"title": "Free banking: Will traditional banks soon be obsolete?"},
+        {"title": "Peer-to-Peer Lending"},
+        {"title": "The investor swarm is forming"},
+        {"title": "First study on the Swiss crowdfunding market"},
+        {"title": "From niche to mass"},
+        {"title": "New competition for banks"},
+        {"title": "Review of the conference \"Innovative Offers in Retail Banking\""},
+        {"title": "Crowdlending phenomenon"},
+        {"title": "Play bank and earn money"},
+        {"title": "Recording CDs, printing books, organizing concerts: Creatives flirt with crowdfunding"},
+        {"title": "Investors discover social lending"}
+      ]
+    }
+  ]
+}

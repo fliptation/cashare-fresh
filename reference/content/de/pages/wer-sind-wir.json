@@ -1,0 +1,90 @@
+{
+  "url": "https://www.cashare.ch/ueber-uns/wer-sind-wir/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Wer Sind Wir - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "h1": "Geschichte und Kompetenzen",
+    "description": "Das Unternehmen Cashare stellt sich vor"
+  },
+  "sections": [
+    {
+      "id": "history",
+      "heading": "17 Jahre Cashare",
+      "description": "Eine Reise voller Innovation, Vertrauen und Wachstum im Marketplace-Lending."
+    },
+    {
+      "id": "about",
+      "heading": "Über uns",
+      "subsections": [
+        {
+          "heading": "Was wir machen",
+          "content": [
+            "Wir sind ein unabhängiger Finanzdienstleister und bringen Menschen und Unternehmen zusammen – als Anleger oder Kreditnehmer. Bei uns finden Sie moderne Finanzierungsmöglichkeiten, unabhängig von traditionellen Banken.",
+            "Unsere Plattform ist vollautomatisiert, einfach zu bedienen und sorgt für schnelle, sichere und transparente Abläufe. So profitieren Sie von effizienter Abwicklung und attraktiven Konditionen.",
+            "Als lizenziertes Finanzinstitut legen wir grossen Wert auf höchste Standards in Sachen Compliance und Integrität. Jährliche Prüfungen durch unabhängige Revisoren sichern zusätzlich Ihr Vertrauen in unsere Arbeit."
+          ]
+        },
+        {
+          "heading": "Wer wir sind",
+          "content": [
+            "Seit unserer Gründung im Jahr 2008 prägen wir als erstes Crowdlending-FinTech der Schweiz die Zukunft der Finanzwelt. Mit Pioniergeist und Innovationskraft haben wir neue Massstäbe gesetzt und bieten Anlegern sowie Kreditnehmern verantwortungsvolle und transparente Finanzlösungen.",
+            "Getrieben von starken Werten und echter Unabhängigkeit, durften wir bereits über 60'000 Kunden begleiten und ein Kreditantragsvolumen von mehr als CHF 2,5 Milliarden erfolgreich verarbeiten – eine Erfolgsgeschichte, die Vertrauen schafft."
+          ]
+        },
+        {
+          "heading": "Wieso mit Cashare",
+          "content": [
+            "Bei Cashare verbinden wir modernste Finanztechnologie mit bewährter SchweizerZuverlässigkeit – und bieten eine intelligentere, transparentere Möglichkeit zum Leihen und Investieren.",
+            "Wir nutzen moderne Technologien und datenbasierte Analysen, um verschiedene finanzielle Bedürfnisse abzudecken. Durch eine breite Auswahl an Produkten bieten wir massgeschneiderte Lösungen für jeden Anleger und Kreditnehmer."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "team",
+      "heading": "Cashare Team",
+      "description": "Lernen Sie unser Team kennen",
+      "cta": "Kontaktieren Sie uns"
+    },
+    {
+      "id": "board",
+      "heading": "Vorstand & Beirat"
+    },
+    {
+      "id": "benefits",
+      "tagline": "Unsere Vorteile",
+      "heading": "Erfahrung- Sicherheit Effizienz- Technologie",
+      "description": "Mit Innovation und Verantwortung zu kosteneffizienten Lösungen für Kreditnehmer und Anleger.",
+      "cards": [
+        {
+          "title": "Was Sie über uns wissen sollten",
+          "description": "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet und hat sich als führender Anbieter für innovative Finanzierungslösungen etabliert. Mit über 60`000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge bietet Cashare bewährte und sichere Finanzlösungen."
+        },
+        {
+          "title": "Transparente & effiziente Prozesse",
+          "description": "Cashare steht für klare, faire und transparente Abläufe. Ob für Kreditnehmer oder Investoren – alle Schritte sind strukturiert, ohne versteckte Gebühren oder Überraschungen. Dank Echtzeit-Updates und detaillierten Analysen können Nutzer fundierte Finanzentscheidungen treffen."
+        },
+        {
+          "title": "Flexible Finanzlösungen für alle",
+          "description": "Cashare verbindet Kreditnehmer mit Investoren und bietet eine faire Alternative zu Banken. Kreditnehmer profitieren von flexiblen Laufzeiten, attraktiven Zinssätzen und schneller Abwicklung, während Investoren Zugang zu attraktiven Renditen und einer diversifizierten Anlagestrategie erhalten."
+        },
+        {
+          "title": "Attraktive Renditen für Anleger",
+          "description": "Anleger profitieren von attraktiven Renditen, die traditionelle Anlageformen in einem Portfolio optimal ergänzen, speziell als Erweiterung im Fixed Income Bereich."
+        },
+        {
+          "title": "Sicherheit durch intelligentes Risikomanagement",
+          "description": "Optimieren Sie Ihr Portfolio mit unseren massgeschneiderten Investitionslösungen für institutionelle Anleger. Profitieren Sie von einem starken Risikomanagement und einer professionellen Abwicklung in jeder Phase Ihrer Investition."
+        },
+        {
+          "title": "Nachhaltige Finanzlösungen",
+          "description": "Cashare verbindet Kreditnehmer und Investoren zu einer starken Finanzgemeinschaft. Durch Crowdlending wird nicht nur finanzielle Unabhängigkeit gefördert, sondern auch kleine Unternehmen unterstützt, die sonst keinen Zugang zu fairen Finanzierungsmöglichkeiten haben."
+        }
+      ]
+    }
+  ]
+}

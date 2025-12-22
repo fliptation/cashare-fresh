@@ -1,0 +1,64 @@
+{
+  "url": "https://www.cashare.ch/kredit-beantragen/privatkredit/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Privatkredit - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "h1": "Ein persönlicher Kredit, so individuell wie Sie",
+    "cta": "Kredit beantragen"
+  },
+  "sections": [
+    {
+      "id": "products",
+      "heading": "Unsere Produkte"
+    },
+    {
+      "id": "features",
+      "heading": "Flexible und sichere Privatkredite  für Ihre individuellen Bedürfnisse"
+    },
+    {
+      "id": "steps",
+      "heading": "3 Schritte zum Wunschkredit",
+      "cta": "Privatkredit beantragen"
+    },
+    {
+      "id": "requirements",
+      "heading": "Welche Voraussetzungen müssen Sie für einen Kreditantrag erfüllen?",
+      "cta": "Loslegen"
+    },
+    {
+      "id": "benefits",
+      "tagline": "Unsere Vorteile",
+      "heading": "Erfahrung- Sicherheit Effizienz- Technologie",
+      "cards": [
+        {
+          "title": "Was Sie über uns wissen sollten",
+          "description": "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet und hat sich als führender Anbieter für innovative Finanzierungslösungen etabliert. Mit über 60`000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge bietet Cashare bewährte und sichere Finanzlösungen."
+        },
+        {
+          "title": "Transparente & effiziente Prozesse",
+          "description": "Cashare steht für klare, faire und transparente Abläufe. Ob für Kreditnehmer oder Investoren – alle Schritte sind strukturiert, ohne versteckte Gebühren oder Überraschungen. Dank Echtzeit-Updates und detaillierten Analysen können Nutzer fundierte Finanzentscheidungen treffen."
+        },
+        {
+          "title": "Flexible Finanzlösungen für alle",
+          "description": "Cashare verbindet Kreditnehmer mit Investoren und bietet eine faire Alternative zu Banken. Kreditnehmer profitieren von flexiblen Laufzeiten, attraktiven Zinssätzen und schneller Abwicklung, während Investoren Zugang zu attraktiven Renditen und einer diversifizierten Anlagestrategie erhalten."
+        },
+        {
+          "title": "Attraktive Renditen für Anleger",
+          "description": "Anleger profitieren von attraktiven Renditen, die traditionelle Anlageformen in einem Portfolio optimal ergänzen, speziell als Erweiterung im Fixed Income Bereich."
+        },
+        {
+          "title": "Sicherheit durch intelligentes Risikomanagement",
+          "description": "Optimieren Sie Ihr Portfolio mit unseren massgeschneiderten Investitionslösungen für institutionelle Anleger. Profitieren Sie von einem starken Risikomanagement und einer professionellen Abwicklung in jeder Phase Ihrer Investition."
+        },
+        {
+          "title": "Nachhaltige Finanzlösungen",
+          "description": "Cashare verbindet Kreditnehmer und Investoren zu einer starken Finanzgemeinschaft. Durch Crowdlending wird nicht nur finanzielle Unabhängigkeit gefördert, sondern auch kleine Unternehmen unterstützt, die sonst keinen Zugang zu fairen Finanzierungsmöglichkeiten haben."
+        }
+      ]
+    }
+  ]
+}

@@ -1551,7 +1551,7 @@ html:has(.styleguide-layout) {
    Timeline Preview
    ========================================================================== */
 
-.styleguide__demo--dark {
+.styleguide__timeline-demo {
   background: var(--color-bg-light);
   padding: var(--space-8);
   border-radius: var(--radius-lg);

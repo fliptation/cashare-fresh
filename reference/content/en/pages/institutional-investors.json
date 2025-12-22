@@ -1,0 +1,68 @@
+{
+  "url": "https://www.cashare.ch/en/invest/institutional-investors/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Institutional investors - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Institutional Investor",
+    "h1": "Successfully and Professionally Invest in Loans!",
+    "description": "Investing in loans as an ideal addition to your investment portfolio.",
+    "cta": "Invest now"
+  },
+  "sections": [
+    {
+      "id": "steps",
+      "heading": "Become an Investor in 3 Steps",
+      "subheading": "How It Works",
+      "description": "Take advantage of lucrative interest and long-term passive income."
+    },
+    {
+      "id": "opportunities",
+      "heading": "Our Investment Opportunities",
+      "subheading": "Secure and Diversified Returns",
+      "description": "Invest directly or through structured products and funds directly in private loans, SME loans, or real estate loans"
+    },
+    {
+      "id": "requirements",
+      "heading": "When Can I Start Investing?",
+      "cta": "Get started"
+    },
+    {
+      "id": "rating",
+      "heading": "Our Rating",
+      "content": [
+        "Each loan is rated from A (low risk, low return) to F (higher risk, higher return). Loans can be used as an investment starting from a C rating.",
+        "Overall Return: 6.48%",
+        "Cashare brings people together: borrowers who need money and investors who want to invest. Investors choose themselves which loan projects they want to invest in and can diversify their money across many borrowers. This way, the risk is spread widely. There are no hidden fees, but attractive returns. A careful assessment of borrowers provides additional security."
+      ]
+    },
+    {
+      "id": "projects",
+      "heading": "Current Projects",
+      "description": "Create your personal portfolio by specifically investing in individual loans and building a diversified portfolio that meets your criteria.",
+      "cta": "View Credit Projects"
+    },
+    {
+      "id": "calculator",
+      "heading": "Yield Calculator",
+      "description": "Create your personal portfolio by specifically investing in individual loans and building a diversified portfolio that meets your criteria.With attractive investment options, you maximize your return."
+    },
+    {
+      "id": "benefits",
+      "tagline": "Our Advantages",
+      "heading": "Experience - Security Efficiency - Technology",
+      "description": "With innovation and responsibility, we provide cost-effective solutions for borrowers and investors. Borrower and Investors.",
+      "cards": [
+        {"title": "What you should know about us", "description": "Founded in 2008 as the first Swiss crowdlending platform, Cashare has established itself as a leading provider of innovative financing solutions. With over 60,000 customers and CHF 2.5 billion in verified loan applications, Cashare offers proven and secure financial solutions."},
+        {"title": "Transparent & Efficient Processes", "description": "Cashare stands for clear, fair, and transparent processes. Whether for borrowers or investors, all steps are structured without hidden fees or surprises.Users can make informed financial decisions thanks to real-time updates and detailed analyses."},
+        {"title": "Flexible financial solutions for everyone", "description": "Cashare connects borrowers with investors, offering a fair alternative to banks.Borrowers benefit from flexible terms, attractive interest rates, and quick processing, while investors gain access to appealing returns and a diversified investment strategy."},
+        {"title": "Attractive Returns for Investors", "description": "Investors benefit from attractive returns that optimally complement traditional investment forms in a portfolio, especially as an extension in the fixed-income sector."},
+        {"title": "Security Through Intelligent Risk Management", "description": "Optimize your portfolio with our customized investment solutions for institutional investors. Benefit from strong risk management and professional handling at every stage."},
+        {"title": "Sustainable Financial Solutions", "description": "Cashare connects borrowers and investors to form a strong financial community. Through crowdlending, financial independence is promoted, and small businesses that otherwise would not have access to fair financing opportunities are supported."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.cashare.ch/en/apply-for-credit/personal-loan/",
+  "locale": "en",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Personal loan - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Private Borrower",
+    "h1": "A personal loan as individual as you",
+    "description": "Finance your plans in just a few steps. Realize your plans quickly and easily with Cashare.",
+    "cta": "Apply for a Loan"
+  },
+  "sections": [
+    {
+      "id": "products",
+      "heading": "Our Products",
+      "subheading": "Flexible and secure personal loans for your individual needs",
+      "description": "Fast, transparent and fair - financial solutions for every situation such as:"
+    },
+    {
+      "id": "steps",
+      "heading": "3 Steps to Your Desired Loan",
+      "subheading": "How the Loan Application Works",
+      "description": "Our investors finance a variety of loan applications – achieve your goals now with crowdlending.",
+      "cta": "Apply for a Personal Loan"
+    },
+    {
+      "id": "requirements",
+      "heading": "What Requirements Must You Meet to Apply for a Loan?"
+    },
+    {
+      "id": "benefits",
+      "tagline": "Our Advantages",
+      "heading": "Experience - Security Efficiency - Technology",
+      "description": "With innovation and responsibility, we provide cost-effective solutions for borrowers and investors. Borrower and Investors.",
+      "cards": [
+        {
+          "title": "What you should know about us",
+          "description": "Founded in 2008 as the first Swiss crowdlending platform, Cashare has established itself as a leading provider of innovative financing solutions. With over 60,000 customers and CHF 2.5 billion in verified loan applications, Cashare offers proven and secure financial solutions."
+        },
+        {
+          "title": "Transparent & Efficient Processes",
+          "description": "Cashare stands for clear, fair, and transparent processes. Whether for borrowers or investors, all steps are structured without hidden fees or surprises.Users can make informed financial decisions thanks to real-time updates and detailed analyses."
+        },
+        {
+          "title": "Flexible financial solutions for everyone",
+          "description": "Cashare connects borrowers with investors, offering a fair alternative to banks.Borrowers benefit from flexible terms, attractive interest rates, and quick processing, while investors gain access to appealing returns and a diversified investment strategy."
+        },
+        {
+          "title": "Attractive Returns for Investors",
+          "description": "Investors benefit from attractive returns that optimally complement traditional investment forms in a portfolio, especially as an extension in the fixed-income sector."
+        },
+        {
+          "title": "Security Through Intelligent Risk Management",
+          "description": "Optimize your portfolio with our customized investment solutions for institutional investors. Benefit from strong risk management and professional handling at every stage."
+        },
+        {
+          "title": "Sustainable Financial Solutions",
+          "description": "Cashare connects borrowers and investors to form a strong financial community. Through crowdlending, financial independence is promoted, and small businesses that otherwise would not have access to fair financing opportunities are supported."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. All rights reserved.",
+    "legal_note": "The Cashare database is registered with the Federal Data Protection and Information Commissioner (FDPIC)."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "url": "https://www.cashare.ch/investieren/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Investieren - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Entfalten Sie Ihr finanzielles Potenzial",
+    "h1": "Clever in Private Debt investieren",
+    "description": "Bei Cashare bieten wir Ihnen massgeschneiderte Möglichkeiten, um in Kredite (Private Debt) investieren zu können. Mit unseren Ansätzen ermöglichen wir eine hohe Diversifikation im Portfolio und Maximierung Ihrer Rendite.",
+    "cta": "Jetzt investieren"
+  },
+  "sections": [
+    {
+      "id": "investment-way",
+      "heading": "Ihre Investition, Ihr Weg",
+      "description": "Übernehmen Sie die Kontrolle über Ihre finanzielle Zukunft mit flexiblen, auf Ihre Ziele zugeschnittenen Anlageoptionen.",
+      "features": [
+        "Attraktive Rendite",
+        "Diversifizierte Portfolios",
+        "Experten Team",
+        "Sichere Investitionen"
+      ]
+    },
+    {
+      "id": "investment-options",
+      "heading": "Unsere Investitionsmöglichkeiten"
+    },
+    {
+      "id": "diversification",
+      "heading": "Sicher und breit diversifiziert zu attraktiven Renditen",
+      "description": "Egal ob Sie eine Privatperson oder ein institutioneller Anleger sind.",
+      "cards": [
+        {"title": "Plattform"}
+      ]
+    },
+    {
+      "id": "steps",
+      "heading": "Werden Sie Investor in 3 Schritten",
+      "subheading": "So funktioniert es",
+      "description": "Profitieren Sie von lukrativen Zinsen und einem langfristigen passiven Einkommen.",
+      "cta": "Investieren Sie jetzt"
+    },
+    {
+      "id": "projects",
+      "heading": "Aktuelle Projekte",
+      "description": "Erstellen Sie Ihr individuelles Portfolio, indem Sie gezielt in einzelne Kredite investieren und ein diversifiziertes Portfolio aufbauen, die Ihren Kriterien entsprechen.",
+      "cta": "Zu den Projekten"
+    },
+    {
+      "id": "calculator",
+      "heading": "Renditerechner",
+      "description": "Erstellen Sie Ihr individuelles Portfolio, indem Sie gezielt in einzelne Kredite investieren und ein diversifiziertes Portfolio aufbauen, die Ihren Kriterien entsprechen.Mit attraktiven Anlagemöglichkeiten maximieren Sie Ihre Rendite."
+    },
+    {
+      "id": "benefits",
+      "tagline": "Unsere Vorteile",
+      "heading": "Erfahrung- Sicherheit Effizienz- Technologie",
+      "description": "Mit Innovation und Verantwortung zu kosteneffizienten Lösungen für Kreditnehmer und Anleger.",
+      "cards": [
+        {
+          "title": "Was Sie über uns wissen sollten",
+          "description": "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet und hat sich als führender Anbieter für innovative Finanzierungslösungen etabliert. Mit über 60`000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge bietet Cashare bewährte und sichere Finanzlösungen."
+        },
+        {
+          "title": "Transparente & effiziente Prozesse",
+          "description": "Cashare steht für klare, faire und transparente Abläufe. Ob für Kreditnehmer oder Investoren – alle Schritte sind strukturiert, ohne versteckte Gebühren oder Überraschungen. Dank Echtzeit-Updates und detaillierten Analysen können Nutzer fundierte Finanzentscheidungen treffen."
+        },
+        {
+          "title": "Flexible Finanzlösungen für alle",
+          "description": "Cashare verbindet Kreditnehmer mit Investoren und bietet eine faire Alternative zu Banken. Kreditnehmer profitieren von flexiblen Laufzeiten, attraktiven Zinssätzen und schneller Abwicklung, während Investoren Zugang zu attraktiven Renditen und einer diversifizierten Anlagestrategie erhalten."
+        },
+        {
+          "title": "Attraktive Renditen für Anleger",
+          "description": "Anleger profitieren von attraktiven Renditen, die traditionelle Anlageformen in einem Portfolio optimal ergänzen, speziell als Erweiterung im Fixed Income Bereich."
+        },
+        {
+          "title": "Sicherheit durch intelligentes Risikomanagement",
+          "description": "Optimieren Sie Ihr Portfolio mit unseren massgeschneiderten Investitionslösungen für institutionelle Anleger. Profitieren Sie von einem starken Risikomanagement und einer professionellen Abwicklung in jeder Phase Ihrer Investition."
+        },
+        {
+          "title": "Nachhaltige Finanzlösungen",
+          "description": "Cashare verbindet Kreditnehmer und Investoren zu einer starken Finanzgemeinschaft. Durch Crowdlending wird nicht nur finanzielle Unabhängigkeit gefördert, sondern auch kleine Unternehmen unterstützt, die sonst keinen Zugang zu fairen Finanzierungsmöglichkeiten haben."
+        }
+      ]
+    }
+  ]
+}

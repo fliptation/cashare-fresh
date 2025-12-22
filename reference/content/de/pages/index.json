@@ -1,0 +1,131 @@
+{
+  "url": "https://www.cashare.ch/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Home - Cashare",
+    "description": ""
+  },
+    "tagline": "LOSLEGEN",
+    "h1": "Unkompliziert zur cleveren Finanzierung",
+    "description": "Mit Cashare zum individuellen Kredit. Einfach, transparent und sicher – ganz ohne Bank. Der faire Kredit auf Knopfdruck",
+    "cta": "Loslegen"
+  },
+  "sections": [
+    {
+      "id": "borrowers",
+      "tagline": "Für Kreditnehmer",
+      "heading": "Die clevere Lösung!",
+      "description": "Schnelle, einfache und sichere Kredite für Privatpersonen und kleine Unternehmen",
+      "cta": "Mehr Informationen",
+      "cards": [
+        {
+          "title": "Privatkredit",
+          "description": "Mit unserem flexiblen Privatkredit erreichen Sie Ihre Ziele, zu fairen Konditionen und mit unkomplizierter Online-Abwicklung."
+        },
+        {
+          "title": "KMU-Kredit",
+          "description": "Frisches Kapital für Ihr KMU, flexibel, fair und genau auf Ihre Pläne zugeschnitten."
+        },
+        {
+          "title": "Immobilienkredit",
+          "description": "Ob Eigenheim oder Renditeobjekt, mit unseren Hypotheken und Nachrangdarlehen profitieren Sie von Top-Zinsen, flexibler Rückzahlung und schneller Abwicklung."
+        }
+      ]
+    },
+    {
+      "id": "investors",
+      "tagline": "Für Anleger",
+      "heading": "Investieren Sie in Private Debt",
+      "description": "Dank unserer langjährigen Erfahrung seit 2008 ermöglichen wir einfache Anlagelösungen in Kredite in einem sicheren Umfeld",
+      "cards": [
+        {
+          "title": "Private Anleger",
+          "description": "Optimieren Sie Ihre Anlagestrategie mit geprüften Kreditprojekten. Als privater Anleger profitieren Sie von attraktiven Renditen, einer breiten Diversifikation und der Möglichkeit, bedeutungsvolle Projekte zu unterstützen."
+        },
+        {
+          "title": "Institutionelle Anleger",
+          "description": "Optimieren Sie Ihr Portfolio mit unseren massgeschneiderten Investitionslösungen für institutionelle Anleger. Profitieren Sie von einem starken Risikomanagement und einer professionellen Abwicklung in jeder Phase Ihrer Investition."
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "heading": "Aktuelle Projekte",
+      "description": "Erstellen Sie Ihr individuelles Portfolio, indem Sie gezielt in einzelne Kredite investieren und ein diversifiziertes Portfolio aufbauen, die Ihren Kriterien entsprechen.",
+      "cta": "Zu den Projekten"
+    },
+    {
+      "id": "calculator",
+      "heading": "Renditerechner"
+    },
+    {
+      "id": "benefits",
+      "tagline": "Unsere Vorteile",
+      "heading": "Erfahrung- Sicherheit Effizienz- Technologie",
+      "description": "Mit Innovation und Verantwortung zu kosteneffizienten Lösungen für Kreditnehmer und Anleger.",
+      "cards": [
+        {
+          "title": "Was Sie über uns wissen sollten",
+          "description": "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet und hat sich als führender Anbieter für innovative Finanzierungslösungen etabliert. Mit über 60`000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge bietet Cashare bewährte und sichere Finanzlösungen."
+        },
+        {
+          "title": "Transparente & effiziente Prozesse",
+          "description": "Cashare steht für klare, faire und transparente Abläufe. Ob für Kreditnehmer oder Investoren – alle Schritte sind strukturiert, ohne versteckte Gebühren oder Überraschungen. Dank Echtzeit-Updates und detaillierten Analysen können Nutzer fundierte Finanzentscheidungen treffen."
+        },
+        {
+          "title": "Flexible Finanzlösungen für alle",
+          "description": "Cashare verbindet Kreditnehmer mit Investoren und bietet eine faire Alternative zu Banken. Kreditnehmer profitieren von flexiblen Laufzeiten, attraktiven Zinssätzen und schneller Abwicklung, während Investoren Zugang zu attraktiven Renditen und einer diversifizierten Anlagestrategie erhalten."
+        },
+        {
+          "title": "Attraktive Renditen für Anleger",
+          "description": "Anleger profitieren von attraktiven Renditen, die traditionelle Anlageformen in einem Portfolio optimal ergänzen, speziell als Erweiterung im Fixed Income Bereich."
+        },
+        {
+          "title": "Sicherheit durch intelligentes Risikomanagement",
+          "description": ""
+        },
+        {
+          "title": "Nachhaltige Finanzlösungen",
+          "description": "Cashare verbindet Kreditnehmer und Investoren zu einer starken Finanzgemeinschaft. Durch Crowdlending wird nicht nur finanzielle Unabhängigkeit gefördert, sondern auch kleine Unternehmen unterstützt, die sonst keinen Zugang zu fairen Finanzierungsmöglichkeiten haben."
+        }
+      ]
+    },
+    {
+      "id": "requirements-borrower",
+      "heading": "Welche Voraussetzungen müssen Sie für einen Kreditantrag erfüllen?",
+      "items": [
+        "Sie sind mindestens 18 Jahre",
+        "Sie sind CH/LI-Bürger oder besitzen eine gültige Aufenthaltsbewilligung für die Schweiz (CH) oder Liechtenstein (LI)",
+        "Sie haben ein Schweizer Bankkonto",
+        "Sie haben eine unbefristete Anstellung oder ein regelmässiges Einkommen",
+        "Sie haben keine offenen Betreibungen und/oder Verlustscheine"
+      ]
+    },
+    {
+      "id": "requirements-investor",
+      "heading": "Wann kann ich mit dem Investieren beginnen?",
+      "items": [
+        "Sie haben ein Schweizer Bankkonto und haben den Registrierungsprozess durchgelaufen."
+      ]
+    },
+    {
+      "id": "testimonials",
+      "heading": "Was die Leute über uns sagen"
+    },
+    {
+      "id": "faq",
+      "heading": "Noch Fragen?",
+      "description": "Hier einige Fragen und Antworten. Gerne stehen wir Ihnen für weitere Informationen zur Seite."
+    },
+    {
+      "id": "newsletter",
+      "heading": "Bleiben Sie mit Cashare auf dem Laufenden",
+      "description": "Abonnieren Sie unseren Newsletter und verpassen Sie keine Updates, Neuigkeiten und exklusiven Angebote.",
+      "disclaimer": "Mit der Anmeldung stimmen Sie den Servicebedingungen zu"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. Alle Rechte vorbehalten."
+  }
+}
