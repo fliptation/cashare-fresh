@@ -1,0 +1,16 @@
+{
+  "url": "https://www.cashare.ch/datenschutzerklaerung/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Datenschutzerklärung - Cashare",
+    "description": ""
+  },
+  "h1": "Datenschutzerklärung",
+  "subtitle": "Vertraulichkeit und Privatsphäre",
+  "version": "1.2 / 1. August 2018",
+  "company": "Der Cashare AG, Hünenberg",
+  "paragraphCount": 215,
+  "rawContentFile": "datenschutz-raw.txt",
+  "note": "Full verbatim content in datenschutz-raw.txt - 215 paragraphs extracted from live site"
+}

@@ -1,0 +1,28 @@
+{
+  "url": "https://www.cashare.ch/impressum/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Impressum - Cashare",
+    "description": ""
+  },
+  "h1": "Impressum",
+  "subtitle": "Wer und was steckt hinter Cashare?",
+  "data": {
+    "firma": "Cashare AG",
+    "domizil": "Bösch 73\nCH – 6331 Hünenberg",
+    "sitz": "Hünenberg (ZG)",
+    "konto": "Postkonto lautend auf Cashare AG\nIBAN: CH06 0900 0000 6076 2123 0\nBIC: POFICHBEXXX",
+    "rechtsform": "Aktiengesellschaft nach schweizerischem Recht",
+    "email": "info@cashare.ch",
+    "internet": "www.cashare.ch",
+    "vertretungsberechtigte_geschaeftsfuehrer": [
+      "Michael Borter",
+      "Roger Müller",
+      "Delia Aellen"
+    ],
+    "registergericht": "Kantonsgericht Zug (ZG)",
+    "registernummer": "CH-170.3.031.740-7",
+    "handelsregister_link": "Handelsregister"
+  }
+}

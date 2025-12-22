@@ -1,0 +1,32 @@
+{
+  "url": "https://www.cashare.ch/sicherheit/",
+  "locale": "de",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Sicherheit - Cashare",
+    "description": ""
+  },
+  "h1": "Sicherheit",
+  "subtitle": "Ihre Sicherheit ist unsere höchste Priorität!",
+  "intro": "Jeder Kreditnehmer und jeder Investor ist persönlich identifiziert, so dass ein Missbrauch verhindert werden kann",
+  "sections": [
+    {
+      "heading": "Sicherheit für Investoren",
+      "content": []
+    },
+    {
+      "heading": "Sicherheit für Kreditnehmer",
+      "content": []
+    },
+    {
+      "heading": "Datenschutz",
+      "content": []
+    },
+    {
+      "heading": "Plattformsicherheit",
+      "content": []
+    }
+  ],
+  "footer_note": "Die Datenbank von Cashare ist bei beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) registriert.",
+  "note": "Page appears to have minimal text content - mostly visual/icon-based layout. Section content may be in accordions or need manual review."
+}

@@ -71,28 +71,12 @@
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    padding: 6rem 0;
-  }
-
-  .hero__title {
-    font-size: 2.5rem;
-  }
-
-  .hero__actions {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 /* Mobile portrait */
 @media (max-width: 575px) {
   .container {
     padding: 0 var(--space-4);
-  }
-
-  .section {
-    padding: 3rem 0;
   }
 
   .calculator__header {
@@ -162,10 +146,6 @@
   .btn,
   .modal {
     display: none !important;
-  }
-
-  .section {
-    padding: 1rem 0;
   }
 
   body {

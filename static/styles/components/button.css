@@ -157,36 +157,25 @@
   margin-left: 0.5rem;
 }
 
-/* Micro-interaction utility classes */
-.hover-lift {
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+/* Button-specific utility overrides (base classes in animations.css) */
 @media (prefers-reduced-motion: no-preference) {
-  .hover-lift:hover:not(:disabled):not(.btn--disabled) {
+  .btn.hover-lift:hover:not(:disabled):not(.btn--disabled) {
     transform: translateY(-2px);
   }
 
-  .hover-lift:active:not(:disabled):not(.btn--disabled) {
+  .btn.hover-lift:active:not(:disabled):not(.btn--disabled) {
     transform: translateY(0);
   }
-}
 
-.hover-press:active:not(:disabled):not(.btn--disabled) {
-  transform: scale(0.98);
-}
+  .btn.hover-press:active:not(:disabled):not(.btn--disabled) {
+    transform: scale(0.98);
+  }
 
-/* Shadow utilities */
-.shadow-primary {
-  box-shadow: 0 4px 14px 0 rgba(0, 115, 153, 0.25);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .shadow-primary:hover:not(:disabled):not(.btn--disabled) {
+  .btn.shadow-primary:hover:not(:disabled):not(.btn--disabled) {
     box-shadow: 0 6px 20px 0 rgba(0, 115, 153, 0.35);
   }
 
-  .shadow-primary:active:not(:disabled):not(.btn--disabled) {
+  .btn.shadow-primary:active:not(:disabled):not(.btn--disabled) {
     box-shadow: 0 2px 8px 0 rgba(0, 115, 153, 0.3);
   }
 }

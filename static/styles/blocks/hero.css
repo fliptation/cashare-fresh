@@ -12,8 +12,8 @@
   display: flex;
   align-items: center;
   overflow: visible;
-  padding: 120px 80px 180px;
   isolation: isolate;
+  padding: 6rem 1.5rem;
 }
 
 /* ==========================================================================
@@ -359,10 +359,6 @@
 
 /* Large tablets / small laptops */
 @media (max-width: 1200px) {
-  .hero {
-    padding: 100px 40px 160px;
-  }
-
   .hero__container {
     gap: 40px;
   }
@@ -376,7 +372,6 @@
 @media (max-width: 1024px) {
   .hero {
     min-height: auto;
-    padding: 80px 30px 120px;
   }
 
   .hero__container {
@@ -442,10 +437,6 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .hero {
-    padding: 60px 20px 100px;
-  }
-
   .hero__title {
     font-size: 2rem;
   }
@@ -509,44 +500,12 @@
 
 /* Small mobile */
 @media (max-width: 480px) {
-  .hero {
-    padding: 40px 16px 80px;
-  }
-
   .hero__title {
     font-size: 1.75rem;
   }
 
   .hero__subtitle {
     font-size: 1rem;
-  }
-}
-
-/* ==========================================================================
-   Print Styles
-   ========================================================================== */
-
-@media print {
-  .hero {
-    min-height: auto;
-    padding: var(--spacing-lg);
-    background: none !important;
-    animation: none !important;
-  }
-
-  .hero__shapes,
-  .hero__grid-lines,
-  .hero__shine {
-    display: none;
-  }
-
-  .hero__title,
-  .hero__subtitle {
-    color: var(--color-text) !important;
-  }
-
-  .hero__actions {
-    display: none;
   }
 }
 
