@@ -681,12 +681,6 @@
    Press Grid
    ========================================================================== */
 
-.press-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
 .press-card {
   padding: 24px;
   background: var(--color-white);

@@ -1,0 +1,45 @@
+{
+  "url": "https://www.cashare.ch/fr/a-propos-de-nous/statistiques/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Statistiques - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Notre impact en chiffres",
+    "h1": "Une histoire d'indépendance financière",
+    "description": "Découvrez les étapes clés qui ont marqué le parcours de Cashare en tant que première plateforme de crowdlending en Suisse – et comment nous renforçons la position des emprunteurs et des investisseurs.",
+    "ctas": ["Commencer", "Se lancer"]
+  },
+  "sections": [
+    {
+      "id": "power-of-crowdlending",
+      "heading": "La puissance du crowdlending: Une solution de financement plus intelligente",
+      "paragraphs": [
+        "En 2008, Cashare a lancé un nouveau modèle de crédit – simple, sécurisé et sans banques. Notre objectif : des financements équitables aux meilleures conditions pour toutes les parties prenantes.",
+        "En tant que pionnier du crowdlending, nous disposons aujourd'hui de la plus grande 'crowd' active de Suisse et avons financé plus de prêts P2P que tout autre prestataire – et la tendance est à la hausse !",
+        "Le crowdlending s'est depuis longtemps imposé comme une véritable alternative pour les particuliers et les entreprises. Tandis que les banques délaissent souvent les petits crédits et proposent des taux peu compétitifs, le secteur FinTech – et Cashare en particulier – séduit par des solutions équitables et flexibles.",
+        "Découvrez nos chiffres actuels et voyez par vous-même pourquoi de plus en plus d'investisseurs et d'emprunteurs optent pour le crowdlending."
+      ]
+    },
+    {
+      "id": "key-figures",
+      "heading": "Chiffres Clés",
+      "description": "Chez Cashare, nous sommes fiers de présenter les impacts de notre plateforme de crowdlending en Suisse. Depuis notre fondation, nous avons connecté des milliers d'emprunteurs avec des investisseurs engagés, créant ainsi un effet financier positif dans la communauté. Voici un aperçu des chiffres qui définissent notre succès."
+    },
+    {
+      "id": "charts",
+      "charts": [
+        {"heading": "Projets de crédit par destination"},
+        {"heading": "Nombre de membres et de projets de crédit financés"},
+        {"heading": "Répartition par notation"},
+        {"heading": "Volume total des crédits demandés"}
+      ]
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés.",
+    "legal_note": "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "url": "https://www.cashare.ch/fr/impressum/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Impressum - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "h1": "Qui se cache derrière Cashare?",
+    "paragraphs": [
+      "Chez Cashare, nous nous engageons à renforcer les particuliers et les entreprises grâce à des solutions financières innovantes. Notre équipe est composée d'experts en finance, en technologie et en service client.",
+      "Avec notre siège principal en Suisse, nous opérons sous des réglementations strictes afin de garantir la transparence, la sécurité et l'équité dans chaque transaction. Notre objectif est de connecter les emprunteurs et les investisseurs."
+    ]
+  },
+  "sections": [
+    {
+      "id": "legal-info",
+      "heading": "Mentions légales",
+      "details": {
+        "company": "Cashare AG",
+        "address": "Bösch 73, CH – 6331 Hünenberg",
+        "registered_office": "Hünenberg (ZG)",
+        "bank_account": {
+          "name": "Compte postal au nom de Cashare AG",
+          "iban": "CH06 0900 0000 6076 2123 0",
+          "bic": "POFICHBEXXX"
+        },
+        "legal_form": "Société anonyme de droit suisse",
+        "email": "info@cashare.ch",
+        "website": "www.cashare.ch",
+        "directors": ["Michael Borter", "Roger Müller", "Delia Aellen"],
+        "registry": {
+          "court": "Tribunal cantonal de Zoug (ZG)",
+          "registration_number": "CH-170.3.031.740-7"
+        }
+      }
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés."
+  }
+}

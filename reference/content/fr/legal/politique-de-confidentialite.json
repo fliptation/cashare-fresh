@@ -1,0 +1,32 @@
+{
+  "url": "https://www.cashare.ch/fr/politique-de-confidentialite/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Politique de confidentialité - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Confidentialité et protection des données",
+    "description": "Nous traitons vos données de manière responsable et les utilisons uniquement aux fins pour lesquelles vous avez donné votre consentement. Votre confiance est importante pour nous et nous nous engageons à protéger votre vie privée à tout moment."
+  },
+  "document": {
+    "company": "Cashare AG, Hünenberg",
+    "version": "1.2 / 1er août 2018",
+    "contact": {
+      "address": "Bösch 73, 6331 Hünenberg, Suisse",
+      "phone": "+41 41 558 53 95",
+      "email": "info@cashare.ch",
+      "website": "www.cashare.ch"
+    },
+    "note": "Full legal document - 236 sections. Reference German Datenschutz for complete structure.",
+    "sections": [
+      "1. Stockage et sécurité des données",
+      "1.1 De qui Cashare stocke-t-il les données personnelles ?",
+      "1.2 Les données seront-elles transmises à des tiers ?",
+      "1.3 Sécurité",
+      "2. Définitions",
+      "3. Nom et adresse du responsable du traitement"
+    ]
+  }
+}

@@ -10,7 +10,7 @@ export default function PresseDE() {
     <Layout locale={locale}>
       <SeoHead
         title="Presse"
-        description="Cashare in den Medien: Pressemitteilungen, Medienkontakt und Pressematerial. Aktuelle News zur Schweizer Crowdlending-Plattform."
+        description="Crowdlending und Fintech sind Themen von nationalem und internationalem Interesse. Schauen Sie rein und lassen Sie sich inspirieren."
         canonicalPath="/ueber-uns/presse"
         locale={locale}
       />

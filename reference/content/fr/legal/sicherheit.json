@@ -1,0 +1,19 @@
+{
+  "url": "https://www.cashare.ch/fr/sicherheit/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Sicherheit - Cashare",
+    "description": "",
+    "note": "Page title still in German on live site"
+  },
+  "hero": {
+    "tagline": "Sécurité",
+    "h1": "Votre sécurité est notre priorité absolue",
+    "description": "Chaque emprunteur et chaque investisseur est personnellement identifié afin d'éviter les abus"
+  },
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés.",
+    "legal_note": "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+  }
+}

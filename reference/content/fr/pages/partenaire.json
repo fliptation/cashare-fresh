@@ -1,0 +1,19 @@
+{
+  "url": "https://www.cashare.ch/fr/a-propos-de-nous/partenaire/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Partenaires - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Partenariats de confiance",
+    "h1": "Partenariats avec Cashare pour le succès",
+    "description": "Vous souhaitez devenir partenaire de Cashare? Nous attendons votre e-mail avec impatience à partner@cashare.ch.",
+    "ctas": ["Commencer", "Se lancer", "Devenez partenaire", "Vers le site web"]
+  },
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés.",
+    "legal_note": "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+  }
+}

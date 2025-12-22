@@ -1,0 +1,55 @@
+{
+  "url": "https://www.cashare.ch/fr/a-propos-de-nous/rating/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Rating - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Rating",
+    "h1": "Le Rating Cashare",
+    "description": "Découvrez comment fonctionne notre système de notation",
+    "ctas": ["Commencer", "Se lancer"]
+  },
+  "sections": [
+    {
+      "id": "rating-explanation",
+      "heading": "Découvrez ce que notre notation détaillée révèle sur les risques de crédit",
+      "paragraphs": [
+        "Cashare a développé une technologie propriétaire de scoring de crédit, utilisant le big data, l'intelligence artificielle et des algorithmes d'apprentissage automatique, afin de proposer des solutions de crédit rapides et efficaces à ses clients.",
+        "Chaque demande de prêt passe par notre système rigoureux d'évaluation des risques et est évaluée par rapport à des centaines de points de données, basés sur la base de données historique de Cashare.",
+        "Nous utilisons des connexions API directes à plusieurs bases de données externes de paiement et gouvernementales pour enrichir notre évaluation globale du crédit. Cela nous permet d'évaluer les demandes de crédit plus rapidement et de déterminer les risques de crédit avec une plus grande précision qu'avec les systèmes traditionnels."
+      ]
+    },
+    {
+      "id": "what-rating-says",
+      "heading": "Que dit notre notation?",
+      "subheading": "Notre Évaluation apporte de la clarté",
+      "description": "Chaque prêt reçoit une évaluation du risque de A (risque faible/rendement faible) à F (risque élevé/rendement élevé). Les prêts avec une note de C sont admis pour l'investissement.",
+      "stats": {
+        "total_return": "6.48%"
+      },
+      "note": "Le rôle de Cashare en tant que fournisseur de plateforme de prêt P2P est de rassembler les gens. Il facilite la médiation entre les emprunteurs et les investisseurs et met la plateforme à disposition comme canal de communication. En tant qu'investisseur, vous pouvez sélectionner librement vos projets de prêt et investir une partie du montant du prêt recherché. Ainsi, l'investissement peut être diversifié."
+    },
+    {
+      "id": "guarantees",
+      "heading": "Garanties",
+      "description": "Sur Cashare, les prêts peuvent également être garantis par l'emprunteur au moyen de garanties supplémentaires. Celles-ci incluent:",
+      "types": [
+        {"title": "Garantie hypothécaire"},
+        {"title": "Cautionnement"}
+      ],
+      "note": "Les garanties supplémentaires sont indiquées spécifiquement dans les projets de crédit. En cas de défaut de paiement, les garanties sont réalisées afin d'assurer un remboursement rapide des fonds. Les garanties sont déjà prises en compte dans la notation."
+    },
+    {
+      "id": "interest-rate",
+      "heading": "Taux d'intérêt minimum (taux d'intérêt plancher)",
+      "description": "Cashare garantit un taux d'intérêt équitable en permanence, incluant toujours le rendement des capitaux propres, les frais de refinancement, la prime d'inflation et la prime de risque.Évalué en fonction de la cote et de la durée, l'intérêt total variera en conséquence.Le plancher détermine le taux d'intérêt minimum, tandis que des taux d'intérêt plus élevés permettent un rendement supplémentaire."
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés.",
+    "legal_note": "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+  }
+}

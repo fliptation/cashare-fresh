@@ -1,0 +1,38 @@
+{
+  "url": "https://www.cashare.ch/fr/presse/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Presse - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Communiqués de presse",
+    "h1": "Ce que dit la presse",
+    "description": "Le crowdlending et la fintech sont des sujets d'intérêt national et international.Jetez un oeil et laissez-vous inspirer.",
+    "ctas": ["Commencer", "Se lancer", "Nous contacter"]
+  },
+  "sections": [
+    {
+      "id": "press-articles",
+      "articles": [
+        {"title": "Prêtez à votre voisin"},
+        {"title": "Banque gratuite : les banques traditionnelles bientôt obsolètes ?"},
+        {"title": "Prêts entre particuliers"},
+        {"title": "L'essaim d'investisseurs se forme"},
+        {"title": "Première étude sur le marché suisse du crowdfunding"},
+        {"title": "De la niche à la masse"},
+        {"title": "Nouvelle concurrence pour les banques"},
+        {"title": "Compte-rendu de la conférence « Offres innovantes dans la banque de détail »"},
+        {"title": "Phénomène du crowdlending"},
+        {"title": "Jouez à la banque et gagnez de l'argent"},
+        {"title": "Enregistrement de CD, impression de livres, organisation de concerts : les créatifs flirtent avec le financement participatif"},
+        {"title": "Les investisseurs découvrent le prêt social"}
+      ]
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés.",
+    "legal_note": "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+  }
+}

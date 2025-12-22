@@ -1,0 +1,60 @@
+{
+  "url": "https://www.cashare.ch/fr/a-propos-de-nous/crowdlending/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Crowdlending - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Crowdlending",
+    "h1": "L'Avenir des Crédits et des Investissements",
+    "description": "Connecter les emprunteurs et les investisseurs – pour un avenir financier intelligent.",
+    "ctas": ["Commencer", "Se lancer"]
+  },
+  "sections": [
+    {
+      "id": "how-it-works",
+      "heading": "Comment fonctionne le crowdlending"
+    },
+    {
+      "id": "what-is-crowdlending",
+      "heading": "Qu'est-ce que le Crowdlending?",
+      "subheading": "Les prêts entre particuliers simplifiés",
+      "description": "Nous facilitons le prêt entre particuliers, aussi appelé prêt sur place. Le crowdlending est une solution de financement innovante et sécurisée qui met en relation directe les emprunteurs et les investisseurs via des plateformes en ligne. En éliminant les banques traditionnelles, le processus est simplifié et les coûts sont réduits pour tous."
+    },
+    {
+      "id": "how-it-works-detail",
+      "heading": "Comment ça fonctionne?",
+      "subheading": "Prêts Directs des Investisseurs",
+      "description": "Sur des plateformes de Crowdlending comme Cashare, les emprunteurs demandent des prêts qui sont directement financés par les investisseurs. Pour les emprunteurs, c'est aussi simple qu'un prêt bancaire.La plateforme sert de marché, gère toute la documentation et le traitement, et assure le respect des normes strictes de sécurité et d'intégrité."
+    },
+    {
+      "id": "why-crowdlending",
+      "heading": "Pourquoi choisir le crowdlending?",
+      "subheading": "Financement Rapide, Flexible et Transparent",
+      "paragraphs": [
+        "Chez Cashare, nous sommes convaincus qu'il existe une meilleure manière de faire. En éliminant les banques en tant qu'intermédiaires, nous créons une connexion directe entre les emprunteurs et les investisseurs, au bénéfice de chacun.Cela conduit à des taux d'intérêt plus bas pour les emprunteurs et des rendements plus élevés pour les investisseurs.",
+        "Fondée en 2008, nous sommes l'entreprise de FinTech la plus expérimentée de Suisse et le premier fournisseur de crowdlending du pays.",
+        "Dès le début, nous avons établi la norme pour l'innovation dans l'industrie, assurant que les investisseurs comme les emprunteurs bénéficient de solutions financières responsables et transparentes.",
+        "Guidés par des valeurs fortes et l'indépendance, nous avons servi plus de 60,000 clients et traité des demandes de crédit pour un total de plus de CHF 2.5 milliards."
+      ]
+    },
+    {
+      "id": "borrower-benefits",
+      "heading": "Avantages pour les emprunteurs",
+      "description": "Grâce à des plans de remboursement flexibles et des décisions rapides, notre plateforme permet aux emprunteurs de reprendre le contrôle de leurs objectifs financiers – sans obstacles inutiles ni frais cachés.",
+      "cta": "Postuler maintenant"
+    },
+    {
+      "id": "investor-benefits",
+      "heading": "Avantages pour les investisseurs",
+      "description": "Développez votre portefeuille grâce à un accès direct aux emprunteurs suisses. Cashare offre aux investisseurs transparence, rendements stables et contrôle total – sans intermédiaire bancaire.",
+      "cta": "Investissez dès maintenant"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés.",
+    "legal_note": "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+  }
+}

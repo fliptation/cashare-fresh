@@ -1,0 +1,72 @@
+{
+  "url": "https://www.cashare.ch/fr/investir/investisseurs-institutionnels/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Investisseurs institutionnels - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Investisseur institutionnel",
+    "h1": "Investissez avec succès et professionnalisme dans les prêts!",
+    "description": "Investir dans des prêts comme complément idéal à votre portefeuille d'investissement.",
+    "ctas": ["Commencer", "Se lancer", "Investissez maintenant"]
+  },
+  "sections": [
+    {
+      "id": "steps",
+      "heading": "Devenez investisseur en 3 étapes",
+      "subheading": "Comment ça marche",
+      "description": "Bénéficiez d'intérêts lucratifs et de revenus passifs à long terme.",
+      "cta": "Investissez dès maintenant"
+    },
+    {
+      "id": "opportunities",
+      "heading": "Nos opportunités d'investissement",
+      "subheading": "Rendements sécurisés et diversifiés",
+      "description": "Investissez directement ou via des produits structurés et des fonds directement dans des prêts privés, des prêts aux PME ou des prêts immobiliers"
+    },
+    {
+      "id": "requirements",
+      "heading": "Quand puis-je commencer à investir?"
+    },
+    {
+      "id": "rating",
+      "heading": "Notre Évaluation",
+      "description": "Chaque prêt est évalué de A (faible risque, faible rendement) à F (risque élevé, rendement plus important). Dès une note de C, les prêts peuvent être utilisés comme opportunité d'investissement.",
+      "stats": {
+        "total_return": "6.48%"
+      },
+      "note": "Cashare rapproche les personnes : des emprunteurs à la recherche de financement et des investisseurs souhaitant faire fructifier leur capital. Les investisseurs sélectionnent eux-mêmes les projets auxquels ils souhaitent participer et peuvent diversifier leur investissement sur de nombreux emprunteurs, réduisant ainsi les risques. Un examen rigoureux des emprunteurs garantit une sécurité supplémentaire."
+    },
+    {
+      "id": "projects",
+      "heading": "Projets actuels",
+      "description": "Créez votre portefeuille personnel en investissant spécifiquement dans des prêts individuels et en construisant un portefeuille diversifié qui répond à vos critères.",
+      "cta": "Voir les projets de crédit"
+    },
+    {
+      "id": "calculator",
+      "heading": "Le Calcul du Rendement",
+      "description": "Créez votre portefeuille personnel en investissant spécifiquement dans des prêts individuels et en construisant un portefeuille diversifié qui répond à vos critères.Avec des options d'investissement attrayantes, vous maximisez votre rendement."
+    },
+    {
+      "id": "benefits",
+      "tagline": "Nos avantages",
+      "heading": "Expérience - Sécurité Efficacité - Technologie",
+      "description": "Avec innovation et responsabilité, nous offrons des solutions rentables pour les emprunteurs et les investisseurs. Emprunteur et Investisseurs.",
+      "cards": [
+        {"title": "Ce que vous devez savoir sur nous", "description": "Fondée en 2008 en tant que première plateforme de crowdlending en Suisse, Cashare s'est imposée comme un leader des solutions de financement innovantes. Avec plus de 60 000 clients et 2,5 milliards de CHF de demandes de prêts vérifiées, Cashare offre des solutions financières éprouvées et sécurisées."},
+        {"title": "Processus Transparents & Efficaces", "description": "Cashare est synonyme de processus clairs, équitables et transparents. Que ce soit pour les emprunteurs ou les investisseurs, toutes les étapes sont structurées sans frais cachés ni surprises.Grâce aux mises à jour en temps réel et aux analyses détaillées, les utilisateurs peuvent prendre des décisions financières éclairées."},
+        {"title": "Des solutions financières flexibles pour tous", "description": "Cashare relie les emprunteurs aux investisseurs, offrant une alternative équitable aux banquesLes emprunteurs bénéficient de conditions flexibles, de taux d'intérêt attractifs et d'un traitement rapide, tandis que les investisseurs ont accès à des rendements attrayants et à une stratégie d'investissement diversifiée."},
+        {"title": "Rendements Attrayants pour les Investisseurs", "description": "Les investisseurs bénéficient de rendements attractifs qui complètent idéalement les formes d'investissement traditionnelles dans un portefeuille, notamment en tant qu'extension dans le secteur des revenus fixes."},
+        {"title": "Sécurité par la Gestion Intelligente des Risques", "description": "Optimisez votre portefeuille avec nos solutions d'investissement sur mesure pour les investisseurs institutionnels. Bénéficiez d'une gestion des risques solide et d'un traitement professionnel à chaque étape."},
+        {"title": "Solutions financières durables", "description": "Cashare relie les emprunteurs et les investisseurs pour former une communauté financière solide. Par le biais du crowdlending, non seulement l'indépendance financière est encouragée, mais aussi le soutien des petites entreprises qui n'auraient autrement pasaccès à des opportunités de financement équitables."}
+      ]
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés.",
+    "legal_note": "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+  }
+}

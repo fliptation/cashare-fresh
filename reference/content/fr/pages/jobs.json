@@ -1,0 +1,36 @@
+{
+  "url": "https://www.cashare.ch/fr/a-propos-de-nous/jobs/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Emplois - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "tagline": "Emplois",
+    "h1": "Découvrez des opportunités de carrière passionnantes avec nous",
+    "description": "Façonnez l'avenir du monde financier avec Cashare.",
+    "ctas": ["Commencer", "Se lancer"]
+  },
+  "sections": [
+    {
+      "id": "why-cashare",
+      "heading": "Pourquoi choisir Cashare?",
+      "subheading": "Changez l'industrie financière avec nous",
+      "paragraphs": [
+        "Nous recherchons constamment des esprits passionnés et créatifs désirant avoir un impact dans le monde des médias numériques ou du secteur du crédit. Si vous êtes enthousiaste à l'idée de faire partie d'une équipe qui redéfinit le monde financier, nous aimerions vous avoir avec nous!",
+        "Voulez-vous jeter un coup d'œil derrière les coulisses d'une entreprise FinTech innovante et vous impliquer activement dans un défi varié?Êtes-vous un joueur d'équipe fiable et innovant qui aime les nouvelles idées?Êtes-vous adaptable, flexible et prêt à accompagner notre équipe sur la voie d'un avenir réussi?",
+        "Alors rejoignez notre mission et aidez-nous à façonner l'avenir de l'industrie financière!"
+      ]
+    },
+    {
+      "id": "apply",
+      "heading": "Apportez vos connaissances",
+      "description": "Nous acceptons également les candidatures spontanées et attendons avec impatience vos dossiers de candidature complets à l'adresse jobs@cashare.ch."
+    }
+  ],
+  "footer": {
+    "copyright": "© 2025 – Cashare. Tous droits réservés.",
+    "legal_note": "La base de données de Cashare est enregistrée auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT)."
+  }
+}

@@ -37,6 +37,7 @@ import * as $en_invest from "./routes/en/invest.tsx";
 import * as $en_invest_institutional from "./routes/en/invest/institutional.tsx";
 import * as $en_invest_private_investors from "./routes/en/invest/private-investors.tsx";
 import * as $en_login from "./routes/en/login.tsx";
+import * as $en_press from "./routes/en/press.tsx";
 import * as $en_privacy from "./routes/en/privacy.tsx";
 import * as $en_reset_password from "./routes/en/reset-password.tsx";
 import * as $en_security from "./routes/en/security.tsx";
@@ -69,6 +70,7 @@ import * as $fr_investir_institutionnels from "./routes/fr/investir/institutionn
 import * as $fr_investir_investisseurs_prives from "./routes/fr/investir/investisseurs-prives.tsx";
 import * as $fr_login from "./routes/fr/login.tsx";
 import * as $fr_mentions_legales from "./routes/fr/mentions-legales.tsx";
+import * as $fr_presse from "./routes/fr/presse.tsx";
 import * as $fr_reinitialiser_mot_de_passe from "./routes/fr/reinitialiser-mot-de-passe.tsx";
 import * as $fr_securite from "./routes/fr/securite.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
@@ -86,6 +88,7 @@ import * as $kredit_beantragen_privatkredit from "./routes/kredit-beantragen/pri
 import * as $login from "./routes/login.tsx";
 import * as $migration from "./routes/migration.tsx";
 import * as $passwort_zuruecksetzen from "./routes/passwort-zuruecksetzen.tsx";
+import * as $presse from "./routes/presse.tsx";
 import * as $privatdarlehen_beantragen from "./routes/privatdarlehen-beantragen.tsx";
 import * as $robots_txt from "./routes/robots.txt.ts";
 import * as $sicherheit from "./routes/sicherheit.tsx";
@@ -176,6 +179,7 @@ const manifest = {
     "./routes/en/invest/institutional.tsx": $en_invest_institutional,
     "./routes/en/invest/private-investors.tsx": $en_invest_private_investors,
     "./routes/en/login.tsx": $en_login,
+    "./routes/en/press.tsx": $en_press,
     "./routes/en/privacy.tsx": $en_privacy,
     "./routes/en/reset-password.tsx": $en_reset_password,
     "./routes/en/security.tsx": $en_security,
@@ -214,6 +218,7 @@ const manifest = {
       $fr_investir_investisseurs_prives,
     "./routes/fr/login.tsx": $fr_login,
     "./routes/fr/mentions-legales.tsx": $fr_mentions_legales,
+    "./routes/fr/presse.tsx": $fr_presse,
     "./routes/fr/reinitialiser-mot-de-passe.tsx":
       $fr_reinitialiser_mot_de_passe,
     "./routes/fr/securite.tsx": $fr_securite,
@@ -233,6 +238,7 @@ const manifest = {
     "./routes/login.tsx": $login,
     "./routes/migration.tsx": $migration,
     "./routes/passwort-zuruecksetzen.tsx": $passwort_zuruecksetzen,
+    "./routes/presse.tsx": $presse,
     "./routes/privatdarlehen-beantragen.tsx": $privatdarlehen_beantragen,
     "./routes/robots.txt.ts": $robots_txt,
     "./routes/sicherheit.tsx": $sicherheit,

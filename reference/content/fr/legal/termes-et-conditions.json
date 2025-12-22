@@ -1,0 +1,32 @@
+{
+  "url": "https://www.cashare.ch/fr/termes-et-conditions/",
+  "locale": "fr",
+  "crawledAt": "2025-12-22",
+  "meta": {
+    "title": "Conditions générales de vente (CGV) - Cashare",
+    "description": ""
+  },
+  "hero": {
+    "h1": "LES CONDITIONS GÉNÉRALES D'UTILISATION",
+    "description": "Les règles qui garantissent simplicité et sécurité. Nos conditions générales assurent transparence et clarté dans toutes vos interactions avec Cashare. En poursuivant, vous acceptez ces conditions."
+  },
+  "document": {
+    "company": "Cashare AG, Hünenberg",
+    "version": "1.7 / 1er février 2025",
+    "note": "Full legal document - 202 sections. Reference German AGB for complete structure.",
+    "sections": [
+      "I. LES CONDITIONS GÉNÉRALES",
+      "A. Inscription",
+      "B. Identification",
+      "C. Compte utilisateur (My Cashare)",
+      "D. Résiliation de l'adhésion",
+      "B. Protection des données",
+      "C. Sanctions",
+      "II. PLATEFORME DE CRÉDIT",
+      "A. Avis important – Risques",
+      "B. Demande de prêt",
+      "C. Solvabilité et évaluation du crédit",
+      "D. Pas de conseil, pas de recommandation"
+    ]
+  }
+}
