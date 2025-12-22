@@ -1657,7 +1657,7 @@
 }
 
 /* Additional Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .solution-grid {
     grid-template-columns: 1fr;
   }

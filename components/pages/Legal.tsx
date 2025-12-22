@@ -11,70 +11,215 @@ const content = {
   de: {
     agb: {
       title: "Allgemeine Geschäftsbedingungen (AGB)",
-      subtitle: "Version 1.7 / Stand: 1. Februar 2025",
+      subtitle: "der Cashare AG, Hünenberg – Version 1.7 / 1. Februar 2025",
       sections: [
         {
           title: "I. Allgemeine Bestimmungen",
           content: `
-            <h4>1. Geltungsbereich</h4>
-            <p>Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung der Crowdlending-Plattform der Cashare AG. Mit der Registrierung akzeptieren Sie diese Bedingungen vollumfänglich.</p>
+            <h4>Einleitung</h4>
+            <p>1. Diese Allgemeinen Geschäftsbedingungen der Cashare AG, Hünenberg (nachfolgend Cashare) regeln die Teilnahmevoraussetzungen, sowie die Rechte und Pflichten der Mitglieder (Darlehensnehmer, Finanzgeber/Anleger) in Zusammenhang mit den von Cashare angebotenen Dienstleistungen.</p>
+            <p>2. Cashare vergibt auf ihrer Kreditplattform www.cashare.ch Darlehensnehmern Kredite unter der Bedingung, dass diese anschliessend an Dritte Finanzgeber/Anleger weiterverkauft und abgetreten werden können. Diese Kreditplattform ermöglicht den einfachen und unkomplizierten Abschluss und die rasche Abwicklung von Darlehensverträgen. Die Dienstleistungen von Cashare beinhalten insbesondere das Zurverfügungstellen der Plattform für die Darlehensnehmer und Dritte Finanzgeber/Anleger sowie die Prüfung und Gewährung der Darlehen und Hypotheken.</p>
+            <p>Die Cashare fungiert jeweils selbst als Darlehensgeberin, wobei sie die Forderungen und Leistungen in der Regel nach Vertragsabschluss an andere Finanzgeber/Anleger abtritt. Cashare behält sich diesbezüglich ausdrücklich das Recht vor, das Darlehen oder Teile davon an Dritte (an andere Mitglieder als Finanzgeber/Anleger oder auf dem Sekundärmarkt) zu verkaufen und die Forderungen entsprechend abzutreten.</p>
+            <p>3. Mitglieder können die Kreditplattform www.cashare.ch entweder als Darlehensnehmer oder als Finanzgeber/Anleger nutzen oder Gebote auf aufgeschaltete Kreditprojekte abgeben.</p>
 
-            <h4>2. Registrierung</h4>
-            <p>Die Plattform steht natürlichen Personen mit Wohnsitz in der Schweiz oder Liechtenstein sowie Unternehmen mit Sitz in diesen Ländern offen. Eine gültige Schweizer Bankverbindung ist erforderlich.</p>
+            <h4>A. Dienstleistungs-Nutzung, Mitgliedschaft und Auflösung der Mitgliedschaft</h4>
 
-            <h4>3. Kontoverwaltung</h4>
-            <p>Jedes Konto ist persönlich und nicht übertragbar. Sie sind verpflichtet, Ihre Angaben aktuell zu halten. Cashare behält sich das Recht vor, Registrierungen abzulehnen oder Konten zu sperren.</p>
+            <h5>aa) Registrierung</h5>
+            <p>1. Die Nutzung der Dienstleistungen von Cashare setzt die Registrierung als Mitglied voraus. Die Registrierung erfolgt kostenlos durch Eröffnung eines Nutzerkontos, unter Zustimmung zu diesen Allgemeinen Geschäftsbedingungen (AGB).</p>
+            <p>2. Ein Anspruch auf Registrierung oder Nutzung der Dienstleistungen von Cashare besteht nicht; Cashare behält sich das Recht vor, eine Registrierung ohne Grundangabe abzulehnen, Mitglieder auszuschliessen oder eine Dienstleistung nicht mehr anzubieten.</p>
+            <p>Ausgeschlossenen Mitgliedern ist es untersagt, sich ohne vorgängiges schriftliches Einverständnis von Cashare nochmals zu registrieren. Missachtung dieser Vorschriften kann (straf-) rechtliche Schritte nach sich ziehen.</p>
+            <p>3. Die Registrierung als Mitglied steht nur Unternehmen mit Handelsregistereintrag und Geschäftssitz in der Schweiz oder Liechtenstein sowie unbeschränkt handlungsfähigen natürlichen Personen mit Wohnsitz in der Schweiz oder Liechtenstein offen, welche zudem eine Bankverbindung in der Schweiz oder Liechtenstein haben. Pro Mitglied kann nur ein Nutzerkonto geführt werden; das Nutzerkonto ist persönlich und nicht übertragbar.</p>
+            <p>4. Bei der Registrierung sind die nachstehenden Angaben vollständig und wahrheitsgetreu anzugeben:</p>
+            <ol>
+              <li>Firma, Name, Vorname;</li>
+              <li>Adresse (kein Postfach), Wohnort;</li>
+              <li>Geburtsdatum oder Gründungsdatum</li>
+              <li>Telefonnummer; und</li>
+              <li>gültige persönliche E-Mail-Adresse; und</li>
+            </ol>
+            <p>5. Das Mitglied ist verpflichtet, ein sicheres Passwort zu wählen und dieses geheim zu halten. Cashare versendet niemals E-Mails oder ruft an, in welchen Sie um die Bekanntgabe Ihres Passwortes gebeten werden.</p>
 
-            <h4>4. Identifikation</h4>
-            <p>Die Identifikation erfolgt online via Videoanruf (Gebühr CHF 5) oder durch Einreichung notariell beglaubigter Dokumente.</p>
+            <h5>bb) Identifikation</h5>
+            <p>1. Das Mitglied hat sich mittels Videoanruf und entsprechender Überprüfung seines gültigen Identitätsdokuments (Ausweis oder Pass) zu identifizieren. Für die Identifikation fällt eine Bearbeitungsgebühr von CHF 5.00 an, welche mittels Banküberweisung vom Eigenkonto auf das Konto von Cashare zu leisten ist.</p>
+            <p>2. Alternativ zur Online-Identifikation kann das Mitglied das gültige Identitätsdokument mittels gelben Identitätskartenverfahren der Schweizerischen Post (vormals PostIdent) oder einer amtlichen bzw. notariellen Beglaubigung bei Cashare einreichen.</p>
+
+            <h5>cc) Benutzerkonto</h5>
+            <p>1. Mitglieder erhalten nach erfolgreicher Registrierung Zugang zum persönlichen Nutzerkonto, in welchem die Darlehensgesuche sowie die abgegebenen Gebote und abgeschlossenen Verträge angezeigt werden.</p>
+            <p>2. Darlehensnehmer haben während der Finanzierungsphase sowie während der ersten 10 Tage nach Abschluss der Finanzierungsphase täglich, während der Laufzeit des Darlehens mindestens wöchentlich Einsicht in das eigene Konto auf der Kreditplattform zu nehmen.</p>
+            <p>3. Es liegt in der Verantwortung des Mitglieds, seine hinterlegten Angaben aktuell zu halten.</p>
+            <p>4. Handlungen, welche unter dem Nutzerkonto eines Mitglieds vorgenommen werden, werden diesem Mitglied zugerechnet.</p>
+            <p>5. Der Zugang zum persönlichen Nutzerkonto kann von Cashare aus Sicherheitsgründen oder für Wartungsarbeiten ohne Vorankündigung temporär eingeschränkt werden. Cashare haftet nicht für Schäden aus solchen Einschränkungen.</p>
+
+            <h5>dd) Beendigung der Mitgliedschaft</h5>
+            <p>1. Cashare kann die Mitgliedschaft mit sofortiger Wirkung und ohne Vorankündigung beenden, wenn das Mitglied unrichtige Angaben zur Person gemacht hat oder gegen Bestimmungen dieser AGB verstossen hat.</p>
+            <p>2. Ein Mitglied kann seine Mitgliedschaft jederzeit mittels E-Mail an support@cashare.ch mit sofortiger Wirkung beenden, sofern sein Nutzerkonto ausgeglichen ist, alle Darlehen vollständig zurückbezahlt wurden und keine offenen Darlehensgesuche bestehen.</p>
+
+            <h4>B. Datenschutz</h4>
+            <p>1. Die eigenen Personendaten werden anderen Mitgliedern nur insoweit bekannt gegeben, als deren Kenntnis zur Erbringung der Dienstleistungen von Cashare oder zur Ausführung abgeschlossener Verträge erforderlich ist.</p>
+            <p>2. Für sämtliche Informationen betreffend Erhebung, Verwendung und Weitergabe von Personendaten, die im Rahmen der Nutzung der Dienstleistungen von Cashare bekannt gegeben oder erhoben werden, gelten die Bestimmungen der Datenschutzerklärung von Cashare.</p>
+            <p>3. Cashare ist berechtigt, die Mitgliederdaten zu Marketingzwecken innerhalb der Gruppe zu verwenden. Das Mitglied kann seine Einwilligung jederzeit widerrufen.</p>
+            <p>4. Das Mitglied sichert zu, dass allfällige Inhalte, die es hochlädt, nicht gegen Rechte Dritter verstossen.</p>
+            <p>5. Das Mitglied unterlässt jegliche Verwendung der Dienstleistungen von Cashare, welche die Nutzung durch andere Mitglieder beeinträchtigen könnte. Insbesondere ist der Versand von Massen-E-Mails (Spam), das Hacking in fremde Computer und die Einschleusung von Viren und anderer Malware, das automatisierte Herunterladen von Inhalten von der Kreditplattform sowie das Extrahieren und Wiederverwenden von Daten untersagt.</p>
+            <p>6. Kontaktdaten anderer Mitglieder dürfen nur für den Abschluss und die Abwicklung von Darlehens- bzw. Abtretungsverträgen verwendet werden.</p>
+
+            <h4>C. Sanktionen</h4>
+            <p>Cashare kann bei Verstössen gegen diese AGB:</p>
+            <ul>
+              <li>Verwarnungen aussprechen;</li>
+              <li>Darlehensgesuche löschen;</li>
+              <li>Benutzerkonten vorübergehend oder dauerhaft sperren.</li>
+            </ul>
+            <p>Weitergehende rechtliche Schritte bleiben vorbehalten.</p>
           `,
         },
         {
           title: "II. Kreditplattform",
           content: `
-            <h4>1. Risikohinweise</h4>
-            <p><strong>Wichtig:</strong> Die Kreditvergabe birgt Risiken, einschliesslich des möglichen Totalverlusts des gesamten Kreditbetrags. Investieren Sie nur Geld, dessen Verlust Sie verkraften können.</p>
+            <h4>A. Risikohinweis</h4>
+            <p><strong>Die Finanzgeber/Anleger werden darauf hingewiesen, dass die Übernahme von Darlehensforderungen mit Risiken verbunden sein kann, welche den Verlust des gesamten Darlehensbetrags umfassen können.</strong></p>
 
-            <h4>2. Kreditantrag</h4>
-            <p>Kreditnehmer reichen detaillierte Finanzinformationen ein. Cashare führt eine Bonitätsprüfung durch. Bei positiver Bewertung wird der Kreditantrag auf der Plattform publiziert.</p>
+            <h4>B. Darlehensgesuch</h4>
+            <p>1. Zur Stellung eines Darlehensgesuchs muss das Mitglied über ein Nutzerkonto verfügen und sich identifiziert haben.</p>
+            <p>2. Das Darlehensgesuch ist mittels Gesuchformular zu stellen, welches alle für die Beurteilung erforderlichen Angaben enthält (Einnahmen/Ausgaben, Geschäftszahlen bei Unternehmen, gewünschter Kreditbetrag, Laufzeit, Verwendungszweck).</p>
+            <p>3. Der Zinssatz wird von Cashare festgelegt.</p>
+            <p>4. Das Darlehensgesuch stellt ein verbindliches Angebot zum Abschluss eines Darlehensvertrags mit Cashare dar.</p>
 
-            <h4>3. Bonitätsprüfung</h4>
-            <p>Cashare bezieht Daten von Drittanbietern (ZEK, IKO, Bisnode, CRIF). Die Ratings sind rein indikativ und stellen keine verbindliche Empfehlung dar.</p>
+            <h4>C. Kreditfähigkeits- und Bonitätsprüfung</h4>
+            <p>1. Erforderliche Unterlagen sind einzureichen: Lohnabrechnungen (3 Monate), Mietvertrag, Krankenkassenpolice, bei Unternehmen Bilanzen und Erfolgsrechnungen.</p>
+            <p>2. Der Gesuchsteller ermächtigt Cashare, bei Dritten Auskünfte einzuholen, insbesondere bei der IKO und ZEK.</p>
+            <p>3. Cashare veröffentlicht anonymisierte Bewertungen auf der Plattform.</p>
+            <p>4. Der Gesuchsteller erklärt sich mit der Veröffentlichung der Bewertung einverstanden.</p>
 
-            <h4>4. Finanzierungsphase</h4>
-            <p>Investoren geben verbindliche Gebote zu festen Zinssätzen ab. Es gilt das Prinzip "first come, first served". Bei vollständiger Finanzierung wird der Vertrag automatisch abgeschlossen.</p>
+            <h4>D. Keine Beratung</h4>
+            <p>1. Die von Cashare selbst oder mit Hilfe Dritter erstellte Bewertung ist rein indikativer Natur.</p>
+            <p>2. Cashare gibt keine Anlageempfehlungen ab.</p>
+            <p>3. Finanzgeber/Anleger treffen ihre Entscheide selbständig.</p>
+            <p>4. Die Auto-Invest-Funktion generiert automatisierte Gebote gemäss benutzerdefinierten Parametern. Diese Gebote sind verbindlich und unwiderruflich.</p>
 
-            <h4>5. Widerrufsrecht</h4>
-            <p>Private Kreditnehmer haben ein 14-tägiges Widerrufsrecht. Geschäftskunden haben ein 10-tägiges Widerrufsrecht.</p>
+            <h4>E. Aufschalten des Darlehensgesuchs</h4>
+            <p>1. Nach positiver Prüfung wird das Darlehensgesuch mit Rating auf der Plattform aufgeschaltet.</p>
+            <p>2. Ein Anspruch auf Aufschaltung besteht nicht; Cashare kann ein Gesuch ohne Angabe von Gründen ablehnen.</p>
+            <p>3. Mit der Aufschaltung des Darlehensgesuchs wird der Darlehensvertrag zwischen dem Darlehensnehmer und Cashare automatisch abgeschlossen.</p>
 
-            <h4>6. Zahlungsabwicklung</h4>
-            <p>Monatliche Zahlungen werden an das Konto von Cashare geleistet. Bei Zahlungsverzug werden automatisch Inkassoverfahren eingeleitet.</p>
+            <h4>F. Finanzierungsphase</h4>
+            <p>1. Finanzgeber/Anleger können auf aufgeschaltete Darlehensgesuche verbindliche Gebote abgeben.</p>
+            <p>2. Der Bieter hat den Betrag und den von Cashare festgelegten Zinssatz anzugeben.</p>
+            <p>3. Die Abgabe eines Gebots stellt die verbindliche Bereitschaft zur Annahme des Angebots dar.</p>
+            <p>4. Gebote können nicht widerrufen werden.</p>
+            <p>5. Es gilt das Prinzip "first come, first served"; die Finanzierungsphase endet bei 100% Finanzierung oder Ablauf der Finanzierungsfrist.</p>
+
+            <h4>G. Abschluss der Finanzierungsphase</h4>
+            <p>1. Der Darlehensnehmer erhält den Darlehensvertrag als PDF, muss diesen ausdrucken, unterschreiben und das Original an Cashare senden.</p>
+            <p>2. Mit dem Abschluss der Finanzierungsphase werden automatisch die Abtretungsverträge abgeschlossen.</p>
+            <p>3. Die Abtretungsverträge stehen unter der aufschiebenden Bedingung, dass der Darlehensnehmer sein KKG-Widerrufsrecht nicht ausübt.</p>
+            <p>4. Finanzgeber/Anleger erhalten individuelle Abtretungsverträge für ihre finanzierten Beträge.</p>
+            <p>5. Der Darlehensnehmer erhält die Finanzierungsergebnisse inklusive Rückzahlungskonditionen.</p>
+
+            <h4>H. Abwicklung</h4>
+            <p>1. Finanzgeber/Anleger haben 5 Tage Zeit, die Gelder auf das Cashare-Konto zu überweisen.</p>
+            <p>2. Lastschriftverfahren ist optional verfügbar.</p>
+            <p>3. Die Gelder werden nicht investiert/verzinst bis zur Überweisung an den Darlehensnehmer.</p>
+            <p>4. Nach Erhalt des unterschriebenen Vertrags und ohne KKG-Widerruf überweist Cashare den Darlehensbetrag.</p>
+            <p>5. Bei Widerruf oder fehlendem unterschriebenem Vertrag gibt Cashare die Anlegergelder ohne Zinsen zurück.</p>
+
+            <h4>I. Widerrufsrecht</h4>
+            <p>1. Private Darlehensnehmer: 14-tägige Widerrufsfrist ab Vertragserhalt.</p>
+            <p>2. Juristische Personen: 10-tägige Widerrufsfrist.</p>
+            <p>3. Widerrufsadresse: Cashare AG, Bösch 73, 6331 Hünenberg oder support@cashare.ch</p>
+
+            <h4>J. Rückzahlung</h4>
+            <p>1. Monatliche Raten oder endfällige Zahlung sind zu den festgelegten Terminen auf das Cashare-Konto zu leisten.</p>
+            <p>2. Zahlungen per Banküberweisung oder E-Banking; Schalterzahlungen werden nicht akzeptiert.</p>
+            <p>3. Cashare leitet die Zahlungen an die Finanzgeber/Anleger weiter.</p>
+            <p>4. Cashare kann Lastschriftverfahren (LSV+, Debit Direct) anordnen.</p>
+
+            <h4>K. Verzug</h4>
+            <p>1. Versäumte Zahlungen lösen automatisch Verzug aus, ohne dass eine Mahnung erforderlich ist.</p>
+            <p>2. Cashare sendet eine schriftliche Mahnung und setzt eine Zahlungsfrist.</p>
+            <p>3. Unbezahlte Beträge werden nach Fristablauf sofort fällig.</p>
+            <p>4. Inkassoverfahren werden eingeleitet, wenn keine Zahlung eingeht.</p>
+            <p>5. Der Darlehensnehmer trägt Verzugszinsen und Inkassogebühren gemäss Gebührenordnung.</p>
           `,
         },
         {
           title: "III. Haftungsbeschränkung",
           content: `
-            <p>Cashare haftet nicht für:</p>
+            <p><strong>Cashare haftet nur für von Cashare absichtlich oder grobfahrlässig herbeigeführte direkte Schäden.</strong></p>
+            <p>Keine Haftung besteht für:</p>
             <ul>
-              <li>Die Richtigkeit der Bonitätsprüfung</li>
-              <li>Die Zahlungsfähigkeit der Kreditnehmer</li>
-              <li>Verluste der Investoren</li>
-              <li>Handlungen Dritter</li>
-              <li>Technische Ausfälle oder Übertragungsfehler</li>
+              <li>Indirekte Schäden oder Folgeschäden</li>
+              <li>Leistungen Dritter</li>
+              <li>Verhalten von Mitgliedern gegenüber anderen</li>
+              <li>Richtigkeit der Bonitätsprüfung</li>
+              <li>Überprüfung der Zahlungsfähigkeit</li>
+              <li>Verluste der Finanzgeber/Anleger durch Zahlungsausfälle</li>
+              <li>Inkassounternehmen</li>
+              <li>Gefälschte Unterlagen</li>
+              <li>Technische Ausfälle, Netzwerkprobleme, Übertragungsfehler, Systeminkompatibilität, Malware, unerlaubter Zugriff</li>
             </ul>
-            <p>Die Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt.</p>
           `,
         },
         {
-          title: "IV. Datenschutz",
+          title: "IV. Schadloshaltung",
           content: `
-            <p>Die Verarbeitung personenbezogener Daten erfolgt gemäss unserer <a href="/datenschutzerklaerung">Datenschutzerklärung</a>.</p>
+            <p>Das Mitglied hält Cashare von Ansprüchen Dritter schadlos, die aus dem Verhalten des Mitglieds entstehen, einschliesslich Kosten der Rechtsverteidigung.</p>
           `,
         },
         {
-          title: "V. Anwendbares Recht",
+          title: "V. Teilungültigkeit",
           content: `
-            <p>Es gilt Schweizer Recht. Ausschliesslicher Gerichtsstand ist Zug, Schweiz.</p>
+            <p>Ungültige Bestimmungen werden durch wirtschaftlich gleichwertige Alternativen ersetzt; der Rest bleibt unberührt.</p>
+          `,
+        },
+        {
+          title: "VI. Übertragbarkeit",
+          content: `
+            <p>1. Cashare kann Rechte und Pflichten an Dritte übertragen.</p>
+            <p>2. Mitglieder können ihre Mitgliedschaft oder damit verbundene Rechte und Pflichten nicht übertragen.</p>
+          `,
+        },
+        {
+          title: "VII. Änderungen dieser AGB",
+          content: `
+            <p>1. Cashare kann diese AGB jederzeit ändern.</p>
+            <p>2. Geänderte AGB werden 15 Tage vor Inkrafttreten zugestellt.</p>
+            <p>3. Kein Widerspruch innerhalb von 10 Tagen gilt als Zustimmung.</p>
+          `,
+        },
+        {
+          title: "VIII. Verknüpfte Websites",
+          content: `
+            <p>Cashare kontrolliert keine externen Websites, übernimmt keine Garantie für deren Inhalte/Produkte und benötigt vorgängige schriftliche Zustimmung für externe Verlinkungen.</p>
+          `,
+        },
+        {
+          title: "IX. Vertraulichkeit und Verschlüsselung",
+          content: `
+            <p>Daten werden über unkontrollierte öffentliche Netzwerke ausgetauscht; Verschlüsselung garantiert keinen vollständigen Schutz; Daten können abgefangen werden.</p>
+          `,
+        },
+        {
+          title: "X. Aufzeichnungen",
+          content: `
+            <p>Cashare zeichnet Website-Aktivitäten für Sicherheit, Systemverwaltung und Marketinganalyse gemäss Datenschutzerklärung auf.</p>
+          `,
+        },
+        {
+          title: "XI. Immaterialgüterrechte",
+          content: `
+            <p>1. Inhalte sind urheberrechtlich geschützt; persönliche/private Nutzung mit Quellenangabe erlaubt.</p>
+            <p>2. Öffentliche/kommerzielle Nutzung ohne schriftliche Zustimmung verboten.</p>
+            <p>3. Cashare, Cashare Platform, Logo sind eingetragene Marken.</p>
+            <p>4. Vervielfältigung/Nutzung der Marken ohne Zustimmung verboten.</p>
+          `,
+        },
+        {
+          title: "XII. Anwendbares Recht, Gerichtsstand",
+          content: `
+            <p>1. Es gilt Schweizer Recht; UN-Kaufrecht ist ausgeschlossen.</p>
+            <p>2. Gilt auch für Einwohner Liechtensteins.</p>
+            <p>3. <strong>Der ausschliessliche Gerichtsstand für alle Rechtsstreitigkeiten ist Zug.</strong></p>
+            <p>4. Die Bestimmungen des Konsumkreditgesetzes (KKG) gelten, wo anwendbar.</p>
           `,
         },
       ],
