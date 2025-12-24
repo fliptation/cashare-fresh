@@ -262,7 +262,7 @@ export function Projects({ locale }: ProjectsProps) {
         </div>
 
         <div class="projects__footer">
-          <a href={t.ctaHref} class="btn btn--primary btn--lg">
+          <a href={t.ctaHref} class="btn btn--primary">
             {t.cta}
           </a>
         </div>

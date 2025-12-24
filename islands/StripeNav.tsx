@@ -550,145 +550,151 @@ export default function StripeNav(
       }`}
     >
       <div class="stripe-nav__container">
-        {/* Logo */}
-        <a href={localePath || "/"} class="stripe-nav__logo">
-          <img src="/images/cashare-black-logo.svg" alt="Cashare" />
-        </a>
+        {/* Left: Logo + Navigation */}
+        <div class="stripe-nav__left">
+          <a href={localePath || "/"} class="stripe-nav__logo">
+            <img src="/images/cashare-black-logo.svg" alt="Cashare" />
+          </a>
 
-        {/* Desktop Navigation */}
-        <div
-          class="stripe-nav__wrapper"
-          ref={navRef}
-          onMouseLeave={handleNavMouseLeave}
-        >
-          <nav class="stripe-nav__items">
-            {nav.sections.map((section) => (
-              <div
-                key={section.id}
-                ref={(el) => el && itemRefs.current.set(section.id, el)}
-                class={`stripe-nav__item ${
-                  activeSection.value === section.id
-                    ? "stripe-nav__item--active"
-                    : ""
-                }`}
-                onMouseEnter={() =>
-                  section.items && handleMouseEnter(section.id)}
-              >
-                <a
-                  href={section.href}
-                  class={`stripe-nav__link ${
-                    isActive(section.href) ? "stripe-nav__link--current" : ""
-                  }`}
-                >
-                  {section.label}
-                  {section.items && (
-                    <svg
-                      class={`stripe-nav__chevron ${
-                        activeSection.value === section.id
-                          ? "stripe-nav__chevron--open"
-                          : ""
-                      }`}
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                    >
-                      <path
-                        d="M1 3L5 7L9 3"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        fill="none"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  )}
-                </a>
-              </div>
-            ))}
-          </nav>
-
-          {/* Animated Dropdown Backdrop */}
+          {/* Desktop Navigation */}
           <div
-            ref={dropdownRef}
-            class={`stripe-nav__dropdown ${
-              isDropdownVisible.value ? "stripe-nav__dropdown--visible" : ""
-            }`}
-            style={{
-              transform: `translateX(${backdropStyle.value.left}px)`,
-              width: `${backdropStyle.value.width}px`,
-            }}
-            onMouseEnter={handleDropdownMouseEnter}
+            class="stripe-nav__wrapper"
+            ref={navRef}
             onMouseLeave={handleNavMouseLeave}
           >
-            <div class="stripe-nav__dropdown-arrow" />
-
-            {/* Content panels - one for each section */}
-            {nav.sections.map((section) => (
-              <div
-                key={section.id}
-                class={`stripe-nav__panel ${
-                  activeSection.value === section.id
-                    ? "stripe-nav__panel--active"
-                    : ""
-                } ${section.id === "about" ? "stripe-nav__panel--about" : ""}`}
-              >
-                {/* Header with title and subtitle */}
-                {section.title && (
-                  <a href={section.href} class="stripe-nav__panel-header">
-                    <span class="stripe-nav__panel-title">{section.title}</span>
-                    {section.subtitle && (
-                      <span class="stripe-nav__panel-subtitle">
-                        {section.subtitle}
-                      </span>
-                    )}
-                  </a>
-                )}
-                <div class="stripe-nav__panel-inner">
-                  {section.items?.map((item, index) => (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      class={`stripe-nav__dropdown-item ${
-                        isActive(item.href)
-                          ? "stripe-nav__dropdown-item--active"
-                          : ""
-                      }`}
-                      style={{ animationDelay: `${index * 30}ms` }}
-                    >
-                      <span
-                        class="stripe-nav__dropdown-icon"
-                        dangerouslySetInnerHTML={{
-                          __html: icons[item.icon || "info"],
-                        }}
-                      />
-                      <div class="stripe-nav__dropdown-content">
-                        <span class="stripe-nav__dropdown-label">
-                          {item.label}
-                        </span>
-                        {item.description && (
-                          <span class="stripe-nav__dropdown-desc">
-                            {item.description}
-                          </span>
-                        )}
-                      </div>
+            <nav class="stripe-nav__items">
+              {nav.sections.map((section) => (
+                <div
+                  key={section.id}
+                  ref={(el) => el && itemRefs.current.set(section.id, el)}
+                  class={`stripe-nav__item ${
+                    activeSection.value === section.id
+                      ? "stripe-nav__item--active"
+                      : ""
+                  }`}
+                  onMouseEnter={() =>
+                    section.items && handleMouseEnter(section.id)}
+                >
+                  <a
+                    href={section.href}
+                    class={`stripe-nav__link ${
+                      isActive(section.href) ? "stripe-nav__link--current" : ""
+                    }`}
+                  >
+                    {section.label}
+                    {section.items && (
                       <svg
-                        class="stripe-nav__dropdown-arrow-icon"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
+                        class={`stripe-nav__chevron ${
+                          activeSection.value === section.id
+                            ? "stripe-nav__chevron--open"
+                            : ""
+                        }`}
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
                       >
                         <path
-                          d="M6 4L10 8L6 12"
+                          d="M1 3L5 7L9 3"
                           stroke="currentColor"
                           stroke-width="1.5"
+                          fill="none"
                           stroke-linecap="round"
                         />
                       </svg>
-                    </a>
-                  ))}
+                    )}
+                  </a>
                 </div>
-              </div>
-            ))}
+              ))}
+            </nav>
+
+            {/* Animated Dropdown Backdrop */}
+            <div
+              ref={dropdownRef}
+              class={`stripe-nav__dropdown ${
+                isDropdownVisible.value ? "stripe-nav__dropdown--visible" : ""
+              }`}
+              style={{
+                transform: `translateX(${backdropStyle.value.left}px)`,
+                width: `${backdropStyle.value.width}px`,
+              }}
+              onMouseEnter={handleDropdownMouseEnter}
+              onMouseLeave={handleNavMouseLeave}
+            >
+              <div class="stripe-nav__dropdown-arrow" />
+
+              {/* Content panels - one for each section */}
+              {nav.sections.map((section) => (
+                <div
+                  key={section.id}
+                  class={`stripe-nav__panel ${
+                    activeSection.value === section.id
+                      ? "stripe-nav__panel--active"
+                      : ""
+                  } ${
+                    section.id === "about" ? "stripe-nav__panel--about" : ""
+                  }`}
+                >
+                  {/* Header with title and subtitle */}
+                  {section.title && (
+                    <a href={section.href} class="stripe-nav__panel-header">
+                      <span class="stripe-nav__panel-title">
+                        {section.title}
+                      </span>
+                      {section.subtitle && (
+                        <span class="stripe-nav__panel-subtitle">
+                          {section.subtitle}
+                        </span>
+                      )}
+                    </a>
+                  )}
+                  <div class="stripe-nav__panel-inner">
+                    {section.items?.map((item, index) => (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        class={`stripe-nav__dropdown-item ${
+                          isActive(item.href)
+                            ? "stripe-nav__dropdown-item--active"
+                            : ""
+                        }`}
+                        style={{ animationDelay: `${index * 30}ms` }}
+                      >
+                        <span
+                          class="stripe-nav__dropdown-icon"
+                          dangerouslySetInnerHTML={{
+                            __html: icons[item.icon || "info"],
+                          }}
+                        />
+                        <div class="stripe-nav__dropdown-content">
+                          <span class="stripe-nav__dropdown-label">
+                            {item.label}
+                          </span>
+                          {item.description && (
+                            <span class="stripe-nav__dropdown-desc">
+                              {item.description}
+                            </span>
+                          )}
+                        </div>
+                        <svg
+                          class="stripe-nav__dropdown-arrow-icon"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M6 4L10 8L6 12"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -726,7 +732,7 @@ export default function StripeNav(
             {nav.login}
           </a>
 
-          <a href={nav.sections[0].href} class="btn btn--primary btn--sm">
+          <a href={nav.sections[0].href} class="btn btn--dark btn--sm">
             {nav.cta}
           </a>
 

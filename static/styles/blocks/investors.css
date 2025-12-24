@@ -64,11 +64,6 @@
   line-height: 1.6;
 }
 
-.investors__cta {
-  background: #22c55e;
-  color: var(--color-white);
-}
-
 /* Product Cards - 2 columns */
 .investors__products {
   display: grid;
