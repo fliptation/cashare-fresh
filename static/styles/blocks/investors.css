@@ -67,19 +67,6 @@
 .investors__cta {
   background: #22c55e;
   color: var(--color-white);
-  padding: 14px 32px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-
-.investors__cta:hover {
-  background: #16a34a;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
 }
 
 /* Product Cards - 2 columns */

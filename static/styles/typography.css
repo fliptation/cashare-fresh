@@ -64,7 +64,3 @@ small {
 a {
   transition: var(--transition-fast);
 }
-
-a:hover {
-  color: var(--color-primary);
-}

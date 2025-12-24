@@ -8,26 +8,30 @@ const content = {
   de: {
     label: "Für Kreditnehmer",
     title: "Die clevere Lösung!",
-    subtitle: "Schnelle, einfache und sichere Kredite für Privatpersonen und kleine Unternehmen",
+    subtitle:
+      "Schnelle, einfache und sichere Kredite für Privatpersonen und kleine Unternehmen",
     cta: "Mehr Informationen",
     ctaHref: "/kredit-beantragen",
     products: [
       {
         icon: "person",
         title: "Privatkredit",
-        description: "Mit unserem flexiblen Privatkredit erreichen Sie Ihre Ziele, zu fairen Konditionen und transparent.",
+        description:
+          "Mit unserem flexiblen Privatkredit erreichen Sie Ihre Ziele, zu fairen Konditionen und transparent.",
         href: "/privatkredit",
       },
       {
         icon: "building",
         title: "KMU-Kredit",
-        description: "Frisches Kapital für Ihr KMU, flexibel, fair und genau auf Ihre Pläne zugeschnitten.",
+        description:
+          "Frisches Kapital für Ihr KMU, flexibel, fair und genau auf Ihre Pläne zugeschnitten.",
         href: "/kmu-kredit",
       },
       {
         icon: "home",
         title: "Immobilienkredit",
-        description: "Ob Eigenheim oder Renditeobjekt, mit unseren Hypotheken und Immobilienkrediten finanzieren Sie clever.",
+        description:
+          "Ob Eigenheim oder Renditeobjekt, mit unseren Hypotheken und Immobilienkrediten finanzieren Sie clever.",
         href: "/immobilienkredit",
       },
     ],
@@ -35,26 +39,30 @@ const content = {
   en: {
     label: "For Borrowers",
     title: "The Smart Solution!",
-    subtitle: "Fast, simple and secure loans for individuals and small businesses",
+    subtitle:
+      "Fast, simple and secure loans for individuals and small businesses",
     cta: "More Information",
     ctaHref: "/en/apply-for-credit",
     products: [
       {
         icon: "person",
         title: "Personal Loan",
-        description: "Achieve your goals with our flexible personal loans, at fair conditions and fully transparent.",
+        description:
+          "Achieve your goals with our flexible personal loans, at fair conditions and fully transparent.",
         href: "/en/personal-loan",
       },
       {
         icon: "building",
         title: "SME Loan",
-        description: "Fresh capital for your SME, flexible, fair and tailored exactly to your plans.",
+        description:
+          "Fresh capital for your SME, flexible, fair and tailored exactly to your plans.",
         href: "/en/sme-loan",
       },
       {
         icon: "home",
         title: "Mortgage",
-        description: "Whether home or investment property, finance smartly with our mortgages and real estate loans.",
+        description:
+          "Whether home or investment property, finance smartly with our mortgages and real estate loans.",
         href: "/en/mortgage",
       },
     ],
@@ -62,26 +70,30 @@ const content = {
   fr: {
     label: "Pour les emprunteurs",
     title: "La solution intelligente!",
-    subtitle: "Des crédits rapides, simples et sécurisés pour les particuliers et les petites entreprises",
+    subtitle:
+      "Des crédits rapides, simples et sécurisés pour les particuliers et les petites entreprises",
     cta: "Plus d'informations",
     ctaHref: "/fr/demander-un-credit",
     products: [
       {
         icon: "person",
         title: "Crédit privé",
-        description: "Atteignez vos objectifs avec notre crédit privé flexible, à des conditions équitables et transparentes.",
+        description:
+          "Atteignez vos objectifs avec notre crédit privé flexible, à des conditions équitables et transparentes.",
         href: "/fr/credit-prive",
       },
       {
         icon: "building",
         title: "Crédit PME",
-        description: "Du capital frais pour votre PME, flexible, équitable et adapté exactement à vos projets.",
+        description:
+          "Du capital frais pour votre PME, flexible, équitable et adapté exactement à vos projets.",
         href: "/fr/credit-pme",
       },
       {
         icon: "home",
         title: "Crédit immobilier",
-        description: "Que ce soit pour votre maison ou un investissement, financez intelligemment avec nos hypothèques.",
+        description:
+          "Que ce soit pour votre maison ou un investissement, financez intelligemment avec nos hypothèques.",
         href: "/fr/credit-immobilier",
       },
     ],
@@ -129,7 +141,14 @@ const icons = {
       {/* Roof */}
       <path d="M32 8L12 22h40L32 8z" fill="url(#building-fill)" />
       {/* Building body */}
-      <rect x="14" y="22" width="36" height="34" rx="2" fill="url(#building-fill)" />
+      <rect
+        x="14"
+        y="22"
+        width="36"
+        height="34"
+        rx="2"
+        fill="url(#building-fill)"
+      />
       {/* Windows - 3x2 grid, precisely aligned */}
       <rect x="19" y="28" width="7" height="6" rx="1" fill="#fce7f3" />
       <rect x="28.5" y="28" width="7" height="6" rx="1" fill="#fce7f3" />
@@ -182,7 +201,7 @@ export function Borrowers({ locale }: BorrowersProps) {
           <span class="borrowers__label">{t.label}</span>
           <h2 class="borrowers__title">{t.title}</h2>
           <p class="borrowers__subtitle">{t.subtitle}</p>
-          <a href={t.ctaHref} class="borrowers__cta btn btn--primary">
+          <a href={t.ctaHref} class="btn btn--primary">
             {t.cta}
           </a>
         </div>

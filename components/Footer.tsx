@@ -606,7 +606,7 @@ export function Footer({ locale }: FooterProps) {
                   class="footer__newsletter-input"
                   required
                 />
-                <button type="submit" class="footer__newsletter-button">
+                <button type="submit" class="btn btn--primary btn--near-form">
                   {content.newsletter.button}
                   <svg
                     class="footer__newsletter-arrow"

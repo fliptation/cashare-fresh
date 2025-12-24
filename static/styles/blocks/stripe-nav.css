@@ -406,12 +406,12 @@
 
 .stripe-nav__lang-item:hover {
   color: var(--color-text);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .stripe-nav__lang-item--active {
-  color: var(--color-white);
-  background: var(--color-primary);
+  color: var(--color-dark);
+  background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 2px 6px rgba(0, 115, 153, 0.3);
 }
 

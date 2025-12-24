@@ -151,24 +151,6 @@
   margin-top: 48px;
 }
 
-.requirements__cta {
-  display: inline-block;
-  padding: 14px 40px;
-  background: var(--color-secondary);
-  color: var(--color-white);
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.requirements__cta:hover {
-  background: #00a3b8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 181, 206, 0.4);
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .requirements {

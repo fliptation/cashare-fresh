@@ -69,24 +69,6 @@
   line-height: 1.6;
 }
 
-.borrowers__cta {
-  background: var(--color-secondary);
-  color: var(--color-white);
-  padding: 14px 32px;
-  border-radius: 9999px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-
-.borrowers__cta:hover {
-  background: #00a3b8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 181, 206, 0.4);
-}
-
 /* Product Cards */
 .borrowers__products {
   display: grid;

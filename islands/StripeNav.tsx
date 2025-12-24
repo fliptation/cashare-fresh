@@ -726,7 +726,7 @@ export default function StripeNav(
             {nav.login}
           </a>
 
-          <a href={nav.sections[0].href} class="stripe-nav__cta">
+          <a href={nav.sections[0].href} class="btn btn--primary btn--sm">
             {nav.cta}
           </a>
 

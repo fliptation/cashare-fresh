@@ -13,7 +13,8 @@ interface HeroProps {
 const heroContent = {
   de: {
     headline: "Unkompliziert zur cleveren Finanzierung",
-    subline: "Mit Cashare zum individuellen Kredit. Einfach, transparent und sicher – ganz ohne Bank. Der faire Kredit für Privatpersonen und Unternehmen.",
+    subline:
+      "Mit Cashare zum individuellen Kredit. Einfach, transparent und sicher – ganz ohne Bank. Der faire Kredit für Privatpersonen und Unternehmen.",
     ctaLoan: "Kredit beantragen",
     ctaInvest: "Jetzt investieren",
     loanHref: "/kredit-beantragen",
@@ -21,7 +22,8 @@ const heroContent = {
   },
   en: {
     headline: "Smart Financing Made Simple",
-    subline: "Switzerland's first crowdlending platform connects borrowers directly with investors. Transparent, fair, and without traditional banks.",
+    subline:
+      "Switzerland's first crowdlending platform connects borrowers directly with investors. Transparent, fair, and without traditional banks.",
     ctaLoan: "Apply for Loan",
     ctaInvest: "Start Investing",
     loanHref: "/en/apply-for-loan",
@@ -29,7 +31,8 @@ const heroContent = {
   },
   fr: {
     headline: "Financement intelligent simplifié",
-    subline: "La première plateforme de crowdlending en Suisse connecte directement emprunteurs et investisseurs. Transparente, équitable et sans banque.",
+    subline:
+      "La première plateforme de crowdlending en Suisse connecte directement emprunteurs et investisseurs. Transparente, équitable et sans banque.",
     ctaLoan: "Demander un crédit",
     ctaInvest: "Investir maintenant",
     loanHref: "/fr/demander-credit",
@@ -49,8 +52,10 @@ export function Hero({
 
   const heroTitle = title || content.headline;
   const heroSubtitle = subtitle || content.subline;
-  const primaryButton = primaryCTA || { text: content.ctaLoan, href: content.loanHref };
-  const secondaryButton = secondaryCTA || { text: content.ctaInvest, href: content.investHref };
+  const primaryButton = primaryCTA ||
+    { text: content.ctaLoan, href: content.loanHref };
+  const secondaryButton = secondaryCTA ||
+    { text: content.ctaInvest, href: content.investHref };
 
   return (
     <section class="hero gradient-hero">
@@ -79,14 +84,14 @@ export function Hero({
           <div class="hero__actions text-reveal text-reveal-delay-3">
             <a
               href={primaryButton.href}
-              class="btn btn--primary hover-lift hover-press shadow-primary"
+              class="btn btn--white"
             >
               {primaryButton.text}
             </a>
 
             <a
               href={secondaryButton.href}
-              class="btn btn--secondary hover-lift hover-press"
+              class="btn btn--dark"
             >
               {secondaryButton.text}
             </a>

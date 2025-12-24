@@ -7,7 +7,8 @@ interface RequirementsProps {
 const content = {
   de: {
     borrower: {
-      title: "Welche Voraussetzungen müssen Sie für einen Kreditantrag erfüllen?",
+      title:
+        "Welche Voraussetzungen müssen Sie für einen Kreditantrag erfüllen?",
       cta: "Loslegen",
       ctaHref: "/kredit-beantragen",
       items: [
@@ -17,7 +18,8 @@ const content = {
         },
         {
           icon: "residence",
-          text: "Sie sind CH/LI-Bürger oder besitzen eine gültige Aufenthaltsbewilligung für die Schweiz (CH) oder Liechtenstein (LI)",
+          text:
+            "Sie sind CH/LI-Bürger oder besitzen eine gültige Aufenthaltsbewilligung für die Schweiz (CH) oder Liechtenstein (LI)",
         },
         {
           icon: "bank",
@@ -25,7 +27,8 @@ const content = {
         },
         {
           icon: "income",
-          text: "Sie haben eine unbefristete Anstellung oder ein regelmässiges Einkommen",
+          text:
+            "Sie haben eine unbefristete Anstellung oder ein regelmässiges Einkommen",
         },
         {
           icon: "debt",
@@ -44,11 +47,13 @@ const content = {
         },
         {
           icon: "residence",
-          text: "Sie sind CH/LI-Bürger oder besitzen eine gültige Aufenthaltsbewilligung für die Schweiz (CH) oder Liechtenstein (LI)",
+          text:
+            "Sie sind CH/LI-Bürger oder besitzen eine gültige Aufenthaltsbewilligung für die Schweiz (CH) oder Liechtenstein (LI)",
         },
         {
           icon: "registration",
-          text: "Sie haben ein Schweizer Bankkonto und haben den Registrierungsprozess durchgelaufen.",
+          text:
+            "Sie haben ein Schweizer Bankkonto und haben den Registrierungsprozess durchgelaufen.",
         },
       ],
     },
@@ -65,7 +70,8 @@ const content = {
         },
         {
           icon: "residence",
-          text: "You are a CH/LI citizen or have a valid residence permit for Switzerland (CH) or Liechtenstein (LI)",
+          text:
+            "You are a CH/LI citizen or have a valid residence permit for Switzerland (CH) or Liechtenstein (LI)",
         },
         {
           icon: "bank",
@@ -77,7 +83,8 @@ const content = {
         },
         {
           icon: "debt",
-          text: "You have no outstanding debt collection proceedings and/or loss certificates",
+          text:
+            "You have no outstanding debt collection proceedings and/or loss certificates",
         },
       ],
     },
@@ -92,18 +99,21 @@ const content = {
         },
         {
           icon: "residence",
-          text: "You are a CH/LI citizen or have a valid residence permit for Switzerland (CH) or Liechtenstein (LI)",
+          text:
+            "You are a CH/LI citizen or have a valid residence permit for Switzerland (CH) or Liechtenstein (LI)",
         },
         {
           icon: "registration",
-          text: "You have a Swiss bank account and have completed the registration process.",
+          text:
+            "You have a Swiss bank account and have completed the registration process.",
         },
       ],
     },
   },
   fr: {
     borrower: {
-      title: "Quelles conditions devez-vous remplir pour une demande de crédit?",
+      title:
+        "Quelles conditions devez-vous remplir pour une demande de crédit?",
       cta: "Commencer",
       ctaHref: "/fr/demander-credit",
       items: [
@@ -113,7 +123,8 @@ const content = {
         },
         {
           icon: "residence",
-          text: "Vous êtes citoyen CH/LI ou possédez un permis de séjour valide pour la Suisse (CH) ou le Liechtenstein (LI)",
+          text:
+            "Vous êtes citoyen CH/LI ou possédez un permis de séjour valide pour la Suisse (CH) ou le Liechtenstein (LI)",
         },
         {
           icon: "bank",
@@ -125,7 +136,8 @@ const content = {
         },
         {
           icon: "debt",
-          text: "Vous n'avez pas de poursuites en cours et/ou d'actes de défaut de biens",
+          text:
+            "Vous n'avez pas de poursuites en cours et/ou d'actes de défaut de biens",
         },
       ],
     },
@@ -140,11 +152,13 @@ const content = {
         },
         {
           icon: "residence",
-          text: "Vous êtes citoyen CH/LI ou possédez un permis de séjour valide pour la Suisse (CH) ou le Liechtenstein (LI)",
+          text:
+            "Vous êtes citoyen CH/LI ou possédez un permis de séjour valide pour la Suisse (CH) ou le Liechtenstein (LI)",
         },
         {
           icon: "registration",
-          text: "Vous avez un compte bancaire suisse et avez terminé le processus d'inscription.",
+          text:
+            "Vous avez un compte bancaire suisse et avez terminé le processus d'inscription.",
         },
       ],
     },
@@ -165,7 +179,10 @@ const icons = {
         </linearGradient>
       </defs>
       <circle cx="20" cy="13" r="7" fill="url(#age-head)" />
-      <path d="M9 34c0-6.075 4.925-11 11-11s11 4.925 11 11" fill="url(#age-body)" />
+      <path
+        d="M9 34c0-6.075 4.925-11 11-11s11 4.925 11 11"
+        fill="url(#age-body)"
+      />
       <circle cx="17" cy="11" r="1.5" fill="#fbbf24" opacity="0.4" />
     </svg>
   ),
@@ -220,8 +237,18 @@ const icons = {
       </defs>
       <rect x="8" y="8" width="24" height="24" rx="5" fill="url(#income-bg)" />
       {/* Plus icon - centered */}
-      <path d="M14 20h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
-      <path d="M20 14v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+      <path
+        d="M14 20h12"
+        stroke="#fff"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M20 14v12"
+        stroke="#fff"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
     </svg>
   ),
   debt: (
@@ -261,7 +288,12 @@ const icons = {
   ),
 };
 
-function RequirementsList({ section, type }: { section: typeof content.de.borrower; type: "borrower" | "investor" }) {
+function RequirementsList(
+  { section, type }: {
+    section: typeof content.de.borrower;
+    type: "borrower" | "investor";
+  },
+) {
   return (
     <div class={`requirements__section requirements__section--${type}`}>
       <h2 class="requirements__title">{section.title}</h2>
@@ -269,7 +301,9 @@ function RequirementsList({ section, type }: { section: typeof content.de.borrow
       <div class="requirements__timeline">
         {section.items.map((item, index) => (
           <div
-            class={`requirements__item ${index % 2 === 1 ? "requirements__item--right" : ""}`}
+            class={`requirements__item ${
+              index % 2 === 1 ? "requirements__item--right" : ""
+            }`}
             key={index}
           >
             <div class="requirements__item-content">
@@ -281,7 +315,7 @@ function RequirementsList({ section, type }: { section: typeof content.de.borrow
       </div>
 
       <div class="requirements__cta-wrapper">
-        <a href={section.ctaHref} class="requirements__cta">
+        <a href={section.ctaHref} class="btn btn--primary">
           {section.cta}
         </a>
       </div>
