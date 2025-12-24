@@ -459,6 +459,10 @@
   color: #64748b;
 }
 
+.footer__address {
+  white-space: pre-line;
+}
+
 .footer__icon {
   width: 20px;
   height: 20px;

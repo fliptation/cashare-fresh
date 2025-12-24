@@ -17,7 +17,7 @@ const content = {
         icon: "person",
         title: "Privatkredit",
         description:
-          "Mit unserem flexiblen Privatkredit erreichen Sie Ihre Ziele, zu fairen Konditionen und transparent.",
+          "Mit unserem flexiblen Privatkredit erreichen Sie Ihre Ziele, zu fairen Konditionen und mit unkomplizierter Online-Abwicklung.",
         href: "/privatkredit",
       },
       {
@@ -31,7 +31,7 @@ const content = {
         icon: "home",
         title: "Immobilienkredit",
         description:
-          "Ob Eigenheim oder Renditeobjekt, mit unseren Hypotheken und Immobilienkrediten finanzieren Sie clever.",
+          "Ob Eigenheim oder Renditeobjekt, mit unseren Hypotheken und Nachrangdarlehen profitieren Sie von Top-Zinsen, flexibler Rückzahlung und schneller Abwicklung.",
         href: "/immobilienkredit",
       },
     ],

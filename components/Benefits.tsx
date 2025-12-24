@@ -6,6 +6,7 @@ interface BenefitsProps {
 
 const content = {
   de: {
+    label: "Unsere Vorteile",
     title: "Erfahrung – Sicherheit\nEffizienz – Technologie",
     subtitle: "Mit Innovation und Verantwortung zu kosteneffizienten Lösungen für <strong>Kreditnehmer</strong> und <strong>Anleger</strong>.",
     benefits: [
@@ -42,6 +43,7 @@ const content = {
     ],
   },
   en: {
+    label: "Our Benefits",
     title: "Experience – Security\nEfficiency – Technology",
     subtitle: "With innovation and responsibility towards cost-efficient solutions for <strong>borrowers</strong> and <strong>investors</strong>.",
     benefits: [
@@ -78,6 +80,7 @@ const content = {
     ],
   },
   fr: {
+    label: "Nos avantages",
     title: "Expérience – Sécurité\nEfficacité – Technologie",
     subtitle: "Avec innovation et responsabilité vers des solutions rentables pour les <strong>emprunteurs</strong> et les <strong>investisseurs</strong>.",
     benefits: [
@@ -250,6 +253,7 @@ export function Benefits({ locale }: BenefitsProps) {
     <section class="benefits">
       <div class="benefits__container">
         <div class="benefits__header">
+          <span class="benefits__label">{t.label}</span>
           <h2 class="benefits__title">{t.title}</h2>
           <p
             class="benefits__subtitle"

@@ -7,9 +7,7 @@ interface FooterProps {
 const footerContent = {
   de: {
     company: "Cashare AG",
-    tagline: "Die führende P2P-Kreditplattform der Schweiz",
-    address: "Bösch 73, 6331 Hünenberg",
-    country: "Schweiz",
+    address: "Cashare AG\nBösch 73\n6331 Hünenberg\nSchweiz",
     phone: "+41 41 558 48 88",
     email: "support@cashare.ch",
     newsletter: {
@@ -95,9 +93,7 @@ const footerContent = {
   },
   en: {
     company: "Cashare AG",
-    tagline: "Switzerland's Leading P2P Lending Platform",
-    address: "Bösch 73, 6331 Hünenberg",
-    country: "Switzerland",
+    address: "Cashare AG\nBösch 73\n6331 Hünenberg\nSwitzerland",
     phone: "+41 41 558 48 88",
     email: "support@cashare.ch",
     newsletter: {
@@ -184,9 +180,7 @@ const footerContent = {
   },
   fr: {
     company: "Cashare AG",
-    tagline: "La plateforme de prêt P2P leader en Suisse",
-    address: "Bösch 73, 6331 Hünenberg",
-    country: "Suisse",
+    address: "Cashare AG\nBösch 73\n6331 Hünenberg\nSuisse",
     phone: "+41 41 558 48 88",
     email: "support@cashare.ch",
     newsletter: {
@@ -535,8 +529,6 @@ export function Footer({ locale }: FooterProps) {
               />
             </a>
 
-            <p class="footer__tagline">{content.tagline}</p>
-
             {/* Contact Info */}
             <div class="footer__contact">
               <div class="footer__contact-item">
@@ -550,10 +542,7 @@ export function Footer({ locale }: FooterProps) {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <div>
-                  <div>{content.address}</div>
-                  <div>{content.country}</div>
-                </div>
+                <div class="footer__address">{content.address}</div>
               </div>
 
               <div class="footer__contact-item">
