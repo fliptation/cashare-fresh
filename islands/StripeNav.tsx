@@ -866,7 +866,7 @@ export default function StripeNav(
             {nav.cta}
           </a>
 
-          <a href={`${localePath}/login`} class="btn btn--outline">
+          <a href={`${localePath}/login`} class="btn btn--white">
             {nav.login}
           </a>
         </nav>

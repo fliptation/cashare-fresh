@@ -44,6 +44,9 @@
 .btn--dark {
   background-color: var(--color-text);
   color: var(--color-white);
+  &:hover {
+    background-color: var(--color-gray-dark);
+  }
 }
 
 .btn--outline {

@@ -529,7 +529,7 @@
 
 .loan-calculator__tab {
   flex: 1;
-  padding: var(--space-5) var(--space-4);
+  padding: var(--space-2) var(--space-1);
   font-size: var(--text-sm);
   font-weight: 600;
   text-align: center;
@@ -861,7 +861,6 @@
   }
 
   .loan-calculator__tab {
-    text-align: left;
     padding: var(--space-3) var(--space-2);
     font-size: var(--text-xs);
   }
@@ -895,8 +894,25 @@
 
 /* Frosty tabs - transparent background */
 .hero__right .loan-calculator .loan-calculator__tabs {
-  background: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.03);
+  border-bottom: none;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Frosty tab items */
+.hero__right .loan-calculator .loan-calculator__tab {
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+
+/* Frosty active tab - glassy pill style */
+.hero__right .loan-calculator .loan-calculator__tab--active {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 /* Hide tab indicator on frosty glass - cleaner look */
