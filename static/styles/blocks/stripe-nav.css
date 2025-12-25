@@ -419,7 +419,6 @@
 .stripe-nav__lang-item--active {
   color: var(--color-dark);
   background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 2px 6px rgba(0, 115, 153, 0.3);
 }
 
 /* Login */
@@ -780,11 +779,11 @@
   }
 }
 
-.stripe-nav__link:focus,
-.stripe-nav__dropdown-item:focus,
-.stripe-nav__lang-item:focus,
-.stripe-nav__login:focus,
-.stripe-nav__cta:focus {
+.stripe-nav__link:focus-visible,
+.stripe-nav__dropdown-item:focus-visible,
+.stripe-nav__lang-item:focus-visible,
+.stripe-nav__login:focus-visible,
+.stripe-nav__cta:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }

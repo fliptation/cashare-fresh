@@ -7,7 +7,7 @@ export default function PersonalLoanEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} theme="borrowing">
       <SeoHead
         title="Apply for Personal Loan"
         description="Personal loan from CHF 1,000 to CHF 500,000 at fair interest rates. Flexible terms, fast payout. Apply now at Cashare."

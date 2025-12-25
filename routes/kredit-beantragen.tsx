@@ -7,7 +7,7 @@ export default function KreditBeanttragenDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} theme="borrowing">
       <SeoHead
         title="Kredit beantragen"
         description="Beantragen Sie Ihren Kredit bei Cashare. Privatkredite, KMU-Kredite und Hypotheken zu fairen Konditionen. Schnelle Bearbeitung, transparente Prozesse."

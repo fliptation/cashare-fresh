@@ -481,21 +481,12 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
           <div class="subpage-section__header">
             <h2 class="subpage-section__title">{t.howItWorks}</h2>
           </div>
-          <div class="stats-grid">
+          <div class="process-steps">
             {t.steps.map((step, index) => (
-              <div key={index} class="stats-grid__item">
-                <div class="stats-grid__icon">
-                  <span style="font-size: 1.25rem; font-weight: 800;">
-                    {index + 1}
-                  </span>
-                </div>
-                <div
-                  class="stats-grid__value"
-                  style="font-size: 1.25rem; color: var(--color-text);"
-                >
-                  {step.title}
-                </div>
-                <div class="stats-grid__label">{step.description}</div>
+              <div key={index} class="process-step">
+                <div class="process-step__number">{index + 1}</div>
+                <h3 class="process-step__title">{step.title}</h3>
+                <p class="process-step__desc">{step.description}</p>
               </div>
             ))}
           </div>

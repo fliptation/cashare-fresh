@@ -355,7 +355,6 @@
   padding: 32px 24px;
   background: var(--color-bg-section);
   border-radius: var(--radius-xl);
-  border-top: 3px solid var(--color-primary);
 }
 
 .about-values__icon {

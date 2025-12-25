@@ -904,6 +904,7 @@
     var(--color-primary),
     var(--color-secondary)
   );
+  color: var(--color-white);
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -1761,7 +1762,6 @@
   color: var(--color-text);
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--color-primary);
 }
 
 .requirements-card__list {

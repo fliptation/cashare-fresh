@@ -7,7 +7,7 @@ export default function HypothequeFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} theme="borrowing">
       <SeoHead
         title="Demander une hypothèque"
         description="Hypothèque pour l'immobilier en Suisse. Financement pour maisons, immeubles ou propriétés commerciales. Demandez une hypothèque maintenant."

@@ -589,7 +589,7 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
           <div class="cta-block">
             <h2 class="cta-block__title">{t.cta.title}</h2>
             <p class="cta-block__subtitle">{t.cta.subtitle}</p>
-            <a href="/privatdarlehen-beantragen" class="btn btn--white btn--lg">
+            <a href="/privatdarlehen-beantragen" class="btn btn--dark btn--lg">
               {t.cta.button}
             </a>
           </div>
