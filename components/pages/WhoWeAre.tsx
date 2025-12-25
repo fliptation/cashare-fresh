@@ -762,6 +762,10 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
                     src={credentialIcons[cred.icon]}
                     alt={cred.title}
                     class="wwa-credentials__img"
+                    width={64}
+                    height={64}
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <h3 class="wwa-credentials__title">{cred.title}</h3>
@@ -837,6 +841,10 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
                       src={imageMap[member.image]}
                       alt={member.name}
                       class="wwa-team__avatar wwa-team__avatar--photo"
+                      width={120}
+                      height={120}
+                      loading="lazy"
+                      decoding="async"
                     />
                   )
                   : (
@@ -873,6 +881,10 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
                       src={imageMap[member.image]}
                       alt={member.name}
                       class="wwa-board__avatar wwa-board__avatar--photo"
+                      width={120}
+                      height={120}
+                      loading="lazy"
+                      decoding="async"
                     />
                   )
                   : (

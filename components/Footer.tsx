@@ -27,6 +27,37 @@ const footerContent = {
           { label: "Investieren", href: "/investieren" },
         ],
       },
+      rates: {
+        title: "Raten & Gebühren",
+        links: [
+          { label: "Kreditnehmer", isLabel: true },
+          {
+            label: "Privatkredit",
+            href: "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
+          },
+          {
+            label: "KMU-Kredit",
+            href: "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
+          },
+          {
+            label: "Immobilien-Darlehen",
+            href: "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
+          },
+          {
+            label: "Mezzanine",
+            href: "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
+          },
+          { label: "Anleger", isLabel: true },
+          {
+            label: "Privat Anleger",
+            href: "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+          {
+            label: "Institutionelle Anleger",
+            href: "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+        ],
+      },
       company: {
         title: "Unternehmen",
         links: [
@@ -39,23 +70,20 @@ const footerContent = {
           { label: "Presse", href: "/ueber-uns/presse" },
         ],
       },
-      support: {
-        title: "Support",
+      supportLegal: {
+        title: "",
         links: [
+          { label: "Support", isLabel: true },
           { label: "FAQ/Hilfe", href: "https://support.cashare.ch/hc/de" },
           {
             label: "Kontakt",
             href: "https://support.cashare.ch/hc/de/requests/new",
           },
-        ],
-      },
-      legal: {
-        title: "Rechtliches",
-        links: [
+          { label: "Rechtliches", isLabel: true },
           { label: "AGB", href: "/agb" },
-          { label: "Datenschutz", href: "/datenschutzerklaerung" },
+          { label: "Datenschutzerklärung", href: "/datenschutzerklaerung" },
+          { label: "Sicherheit", href: "/sicherheit" },
           { label: "Impressum", href: "/impressum" },
-          { label: "Cookie-Richtlinien", href: "/cookies" },
         ],
       },
     },
@@ -112,6 +140,37 @@ const footerContent = {
           { label: "Invest", href: "/en/invest" },
         ],
       },
+      rates: {
+        title: "Rates & Fees",
+        links: [
+          { label: "Borrowers", isLabel: true },
+          {
+            label: "Personal Loan",
+            href: "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
+          },
+          {
+            label: "SME Loan",
+            href: "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
+          },
+          {
+            label: "Real Estate Loan",
+            href: "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
+          },
+          {
+            label: "Mezzanine",
+            href: "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
+          },
+          { label: "Investors", isLabel: true },
+          {
+            label: "Private Investors",
+            href: "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+          {
+            label: "Institutional Investors",
+            href: "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+        ],
+      },
       company: {
         title: "Company",
         links: [
@@ -124,23 +183,20 @@ const footerContent = {
           { label: "Press", href: "/en/about/press" },
         ],
       },
-      support: {
-        title: "Support",
+      supportLegal: {
+        title: "",
         links: [
+          { label: "Support", isLabel: true },
           { label: "FAQ/Help", href: "https://support.cashare.ch/hc/en-us" },
           {
             label: "Contact",
             href: "https://support.cashare.ch/hc/en-us/requests/new",
           },
-        ],
-      },
-      legal: {
-        title: "Legal",
-        links: [
+          { label: "Legal", isLabel: true },
           { label: "Terms", href: "/en/terms" },
-          { label: "Privacy", href: "/en/privacy" },
+          { label: "Privacy Policy", href: "/en/privacy" },
+          { label: "Security", href: "/en/security" },
           { label: "Imprint", href: "/en/imprint" },
-          { label: "Cookie Policy", href: "/en/cookies" },
         ],
       },
     },
@@ -196,6 +252,37 @@ const footerContent = {
           { label: "Investir", href: "/fr/investir" },
         ],
       },
+      rates: {
+        title: "Taux & Frais",
+        links: [
+          { label: "Emprunteurs", isLabel: true },
+          {
+            label: "Crédit privé",
+            href: "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
+          },
+          {
+            label: "Crédit PME",
+            href: "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
+          },
+          {
+            label: "Prêt immobilier",
+            href: "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
+          },
+          {
+            label: "Mezzanine",
+            href: "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
+          },
+          { label: "Investisseurs", isLabel: true },
+          {
+            label: "Investisseurs privés",
+            href: "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+          {
+            label: "Investisseurs institutionnels",
+            href: "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+        ],
+      },
       company: {
         title: "Entreprise",
         links: [
@@ -208,23 +295,20 @@ const footerContent = {
           { label: "Presse", href: "/fr/a-propos/presse" },
         ],
       },
-      support: {
-        title: "Support",
+      supportLegal: {
+        title: "",
         links: [
+          { label: "Support", isLabel: true },
           { label: "FAQ/Aide", href: "https://support.cashare.ch/hc/fr" },
           {
             label: "Contact",
             href: "https://support.cashare.ch/hc/fr/requests/new",
           },
-        ],
-      },
-      legal: {
-        title: "Légal",
-        links: [
+          { label: "Légal", isLabel: true },
           { label: "CGV", href: "/fr/cgv" },
           { label: "Confidentialité", href: "/fr/confidentialite" },
+          { label: "Sécurité", href: "/fr/securite" },
           { label: "Mentions légales", href: "/fr/mentions-legales" },
-          { label: "Politique de cookies", href: "/fr/cookies" },
         ],
       },
     },
@@ -390,22 +474,33 @@ export function Footer({ locale }: FooterProps) {
 
         {/* Partner Logos */}
         <div class="footer__partners-wrapper">
-          <span class="footer__partners-label">Member of</span>
           <div class="footer__partners">
             <img
               src="/images/members/deutsche-boerse.png"
               alt="Deutsche Börse Venture Network"
               class="footer__partner-logo footer__partner-logo--lg"
+              width={180}
+              height={60}
+              loading="lazy"
+              decoding="async"
             />
             <img
               src="/images/members/Swiss-Finance-Logo.png"
               alt="Swiss Finance Startups"
               class="footer__partner-logo"
+              width={120}
+              height={40}
+              loading="lazy"
+              decoding="async"
             />
             <img
               src="/images/members/Swiss-Made-Software-Logo.png"
               alt="Swiss Made Software"
               class="footer__partner-logo"
+              width={120}
+              height={40}
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -517,6 +612,10 @@ export function Footer({ locale }: FooterProps) {
                 src="/images/cashare-black-logo.svg"
                 alt="Cashare"
                 class="footer__logo-img"
+                width={140}
+                height={32}
+                loading="lazy"
+                decoding="async"
               />
             </a>
 
@@ -606,26 +705,24 @@ export function Footer({ locale }: FooterProps) {
           {/* Link Columns */}
           <div class="footer__links">
             {Object.values(content.sections).map((section) => (
-              <div key={section.title} class="footer__column">
-                <h3 class="footer__column-title">{section.title}</h3>
+              <div key={section.title || "support-legal"} class="footer__column">
+                {section.title && (
+                  <h3 class="footer__column-title">{section.title}</h3>
+                )}
                 <ul class="footer__column-list">
-                  {section.links.map((link) => (
-                    <li key={link.href}>
-                      <a href={link.href} class="footer__link">
+                  {section.links.map((link) =>
+                    "isLabel" in link && link.isLabel ? (
+                      <li key={link.label} class="footer__sublabel">
                         {link.label}
-                        <svg
-                          class="footer__link-arrow"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                        >
-                          <line x1="5" y1="12" x2="19" y2="12" />
-                          <polyline points="12 5 19 12 12 19" />
-                        </svg>
-                      </a>
-                    </li>
-                  ))}
+                      </li>
+                    ) : (
+                      <li key={link.href}>
+                        <a href={link.href} class="footer__link">
+                          {link.label}
+                        </a>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             ))}

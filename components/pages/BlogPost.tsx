@@ -1,5 +1,7 @@
 import type { Locale } from "../../lib/i18n/index.ts";
 import { getBlogPost, getBlogPosts, type BlogPost as BlogPostType } from "../../lib/blog/posts.ts";
+import { JsonLd } from "../JsonLd.tsx";
+import { generateArticleSchema } from "../../lib/seo/schema.ts";
 
 interface BlogPostProps {
   locale: Locale;
@@ -144,8 +146,26 @@ export function BlogPostPage({ locale, slug }: BlogPostProps) {
     .filter((p) => p.slug !== slug)
     .slice(0, 3);
 
+  const blogUrl = locale === "de"
+    ? `/ueber-uns/blog/${slug}`
+    : locale === "en"
+    ? `/en/about/blog/${slug}`
+    : `/fr/a-propos/blog/${slug}`;
+
   return (
     <>
+      {/* Article structured data for rich snippets */}
+      <JsonLd
+        data={generateArticleSchema({
+          headline: post.title[locale],
+          description: post.excerpt[locale],
+          image: post.image,
+          datePublished: post.date,
+          author: post.author,
+          url: blogUrl,
+        })}
+      />
+
       {/* Hero Section */}
       <section class="article-hero">
         <div class="article-hero__container">
@@ -186,6 +206,9 @@ export function BlogPostPage({ locale, slug }: BlogPostProps) {
             src={post.image}
             alt={post.title[locale]}
             class="article-image__img"
+            width={1200}
+            height={630}
+            decoding="async"
           />
         </div>
       </div>
@@ -240,6 +263,10 @@ export function BlogPostPage({ locale, slug }: BlogPostProps) {
                         src={relatedPost.image}
                         alt={relatedPost.title[locale]}
                         class="article-related__card-img"
+                        width={400}
+                        height={210}
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div class="article-related__card-content">

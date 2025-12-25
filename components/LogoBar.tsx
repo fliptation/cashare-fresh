@@ -19,7 +19,10 @@ export function LogoBar({ class: className }: LogoBarProps) {
             <img
               src={logo.src}
               alt={logo.name}
+              width={120}
+              height={40}
               loading="lazy"
+              decoding="async"
               class="logo-bar__image"
             />
           </div>

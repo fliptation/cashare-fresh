@@ -131,7 +131,10 @@ export function Press({ locale }: PressProps) {
                     <img
                       src={item.image}
                       alt={item.media}
+                      width={400}
+                      height={225}
                       loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div class="press-card__placeholder">

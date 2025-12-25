@@ -1,4 +1,6 @@
 import type { Locale } from "../lib/i18n/index.ts";
+import { JsonLd } from "./JsonLd.tsx";
+import { generateFAQSchema } from "../lib/seo/schema.ts";
 
 interface FAQProps {
   locale: Locale;
@@ -101,7 +103,11 @@ export function FAQ({ locale }: FAQProps) {
   const t = content[locale];
 
   return (
-    <section class="faq">
+    <>
+      {/* FAQ structured data for rich snippets */}
+      <JsonLd data={generateFAQSchema(t.faqs)} />
+
+      <section class="faq">
       <div class="faq__container">
         <div class="faq__header">
           <h2 class="faq__title">{t.title}</h2>
@@ -125,5 +131,6 @@ export function FAQ({ locale }: FAQProps) {
         </div>
       </div>
     </section>
+    </>
   );
 }
