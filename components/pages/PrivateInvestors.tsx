@@ -287,13 +287,14 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
 
   return (
     <>
-      <section class="subpage-hero">
+      <section class="subpage-hero subpage-hero--investing">
         <div class="subpage-hero__container">
+          <span class="subpage-hero__label">{t.badge}</span>
           <h1 class="subpage-hero__title">{t.title}</h1>
           <p class="subpage-hero__subtitle">{t.subtitle}</p>
           <a
             href={t.cta.href}
-            class="subpage-cta__button"
+            class="btn btn--dark"
             style="margin-top: 32px;"
           >
             {t.cta.label}

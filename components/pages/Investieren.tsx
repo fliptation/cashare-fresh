@@ -6,6 +6,7 @@ interface InvestierenProps {
 
 const content = {
   de: {
+    label: "Für Anleger",
     title: "Clever in Private Debt investieren",
     subtitle: "Entfalten Sie Ihr finanzielles Potenzial",
     heroText:
@@ -89,6 +90,7 @@ const content = {
     },
   },
   en: {
+    label: "For Investors",
     title: "Invest",
     subtitle: "Unlock your financial potential",
     heroText:
@@ -166,6 +168,7 @@ const content = {
     },
   },
   fr: {
+    label: "Pour les investisseurs",
     title: "Investir",
     subtitle: "Liberez votre potentiel financier",
     heroText:
@@ -254,8 +257,9 @@ export function Investieren({ locale }: InvestierenProps) {
 
   return (
     <>
-      <section class="subpage-hero">
+      <section class="subpage-hero subpage-hero--investing">
         <div class="subpage-hero__container">
+          <span class="subpage-hero__label">{t.label}</span>
           <h1 class="subpage-hero__title">{t.title}</h1>
           <p class="subpage-hero__subtitle">{t.subtitle}</p>
           <p
@@ -266,7 +270,7 @@ export function Investieren({ locale }: InvestierenProps) {
           </p>
           <a
             href={t.ctaHref}
-            class="subpage-cta__button"
+            class="btn btn--dark"
             style="margin-top: 32px;"
           >
             {t.cta}

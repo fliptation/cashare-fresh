@@ -7,8 +7,40 @@
    ========================================================================== */
 
 .subpage-hero {
+  position: relative;
   padding: 120px 40px 60px;
   background: linear-gradient(135deg, #f0fdfa 0%, #ecfeff 50%, #e0f2fe 100%);
+  overflow: hidden;
+}
+
+/* Investing theme - Green */
+.subpage-hero--investing {
+  background: #fafafa;
+}
+
+.subpage-hero--investing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at 80% 50%,
+    rgba(34, 197, 94, 0.12) 0%,
+    transparent 60%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.subpage-hero--investing .subpage-hero__container {
+  position: relative;
+  z-index: 1;
+}
+
+.subpage-hero--investing .subpage-hero__label {
+  color: #22c55e;
 }
 
 .subpage-hero__container {
@@ -23,6 +55,16 @@
   margin-bottom: 16px;
   letter-spacing: -0.03em;
   line-height: 1.1;
+}
+
+.subpage-hero__label {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .subpage-hero__subtitle {
@@ -56,6 +98,34 @@
 .subpage-section--dark {
   background: var(--color-gray-dark);
   color: var(--color-white);
+}
+
+/* Investing theme section with green fade */
+.subpage-section--investing {
+  position: relative;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.subpage-section--investing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at 70% 50%,
+    rgba(34, 197, 94, 0.1) 0%,
+    transparent 60%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.subpage-section--investing .subpage-section__container {
+  position: relative;
+  z-index: 1;
 }
 
 .subpage-section__container {
