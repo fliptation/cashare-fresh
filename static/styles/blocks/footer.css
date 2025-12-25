@@ -912,17 +912,14 @@
 .footer__regulatory-edob {
   font-size: var(--text-sm);
   color: #64748b;
-  text-align: center;
   margin: 0 0 var(--space-6) 0;
 }
 
 .footer__confederation {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: var(--space-6);
-  padding: var(--space-6) var(--space-8);
-  border-radius: var(--radius-lg);
+  padding: var(--space-6) 0;
   margin-bottom: var(--space-6);
 }
 
@@ -969,10 +966,6 @@
   color: #64748b;
   line-height: var(--leading-relaxed);
   margin: 0 0 var(--space-4) 0;
-  text-align: center;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer__regulatory-link {
@@ -990,7 +983,6 @@
   font-size: var(--text-2xs);
   color: #94a3b8;
   margin: 0;
-  text-align: center;
 }
 
 /* ==========================================================================
@@ -1017,22 +1009,23 @@
 
   .footer__confederation {
     flex-direction: column;
+    align-items: flex-start;
     gap: var(--space-4);
-    padding: var(--space-4);
-    text-align: center;
+    padding: var(--space-4) 0;
   }
 
   .footer__confederation-left {
     flex-direction: column;
+    align-items: flex-start;
     gap: var(--space-3);
   }
 
   .footer__confederation-names {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .footer__confederation-divider {
-    width: 80%;
+    width: 100%;
     height: 1px;
   }
 
