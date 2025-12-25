@@ -1,4 +1,5 @@
 import type { Locale } from "../../lib/i18n/index.ts";
+import { Projects } from "../Projects.tsx";
 
 interface InstitutionalInvestorsProps {
   locale: Locale;
@@ -104,19 +105,23 @@ const content = {
       items: [
         {
           title: "FINMA-reguliert",
-          desc: "Als lizenzierter Finanzintermediär unterliegen wir der Aufsicht der Eidgenössischen Finanzmarktaufsicht.",
+          desc:
+            "Als lizenzierter Finanzintermediär unterliegen wir der Aufsicht der Eidgenössischen Finanzmarktaufsicht.",
         },
         {
           title: "Datenschutz",
-          desc: "Ihre Daten werden nach Schweizer Standards geschützt und in der Schweiz gehostet.",
+          desc:
+            "Ihre Daten werden nach Schweizer Standards geschützt und in der Schweiz gehostet.",
         },
         {
           title: "Jährliche Audits",
-          desc: "Unabhängige Prüfung durch PricewaterhouseCoopers garantiert Transparenz.",
+          desc:
+            "Unabhängige Prüfung durch PricewaterhouseCoopers garantiert Transparenz.",
         },
         {
           title: "AML/KYC-konform",
-          desc: "Strenge Identitätsprüfung und Geldwäschereibekämpfung nach GwG.",
+          desc:
+            "Strenge Identitätsprüfung und Geldwäschereibekämpfung nach GwG.",
         },
       ],
     },
@@ -224,19 +229,23 @@ const content = {
       items: [
         {
           title: "FINMA-regulated",
-          desc: "As a licensed financial intermediary, we are supervised by the Swiss Financial Market Supervisory Authority.",
+          desc:
+            "As a licensed financial intermediary, we are supervised by the Swiss Financial Market Supervisory Authority.",
         },
         {
           title: "Data Protection",
-          desc: "Your data is protected according to Swiss standards and hosted in Switzerland.",
+          desc:
+            "Your data is protected according to Swiss standards and hosted in Switzerland.",
         },
         {
           title: "Annual Audits",
-          desc: "Independent audits by PricewaterhouseCoopers guarantee transparency.",
+          desc:
+            "Independent audits by PricewaterhouseCoopers guarantee transparency.",
         },
         {
           title: "AML/KYC Compliant",
-          desc: "Strict identity verification and anti-money laundering according to AMLA.",
+          desc:
+            "Strict identity verification and anti-money laundering according to AMLA.",
         },
       ],
     },
@@ -343,19 +352,23 @@ const content = {
       items: [
         {
           title: "Régulé FINMA",
-          desc: "En tant qu'intermédiaire financier agréé, nous sommes supervisés par l'Autorité fédérale de surveillance des marchés financiers.",
+          desc:
+            "En tant qu'intermédiaire financier agréé, nous sommes supervisés par l'Autorité fédérale de surveillance des marchés financiers.",
         },
         {
           title: "Protection des données",
-          desc: "Vos données sont protégées selon les standards suisses et hébergées en Suisse.",
+          desc:
+            "Vos données sont protégées selon les standards suisses et hébergées en Suisse.",
         },
         {
           title: "Audits annuels",
-          desc: "Des audits indépendants par PricewaterhouseCoopers garantissent la transparence.",
+          desc:
+            "Des audits indépendants par PricewaterhouseCoopers garantissent la transparence.",
         },
         {
           title: "Conforme AML/KYC",
-          desc: "Vérification d'identité stricte et lutte contre le blanchiment selon la LBA.",
+          desc:
+            "Vérification d'identité stricte et lutte contre le blanchiment selon la LBA.",
         },
       ],
     },
@@ -411,7 +424,13 @@ export function InstitutionalInvestors(
               <a href={t.cta.href} class="btn btn--dark btn--with-arrow">
                 {t.cta.label}
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path
+                    d="M4 10h12m0 0l-4-4m4 4l-4 4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
                 </svg>
               </a>
             </div>
@@ -436,14 +455,39 @@ export function InstitutionalInvestors(
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
             {t.solutions.items.map((solution, i) => (
               <div key={i} class="invest-type-card" style="padding: 36px;">
-                <div class="invest-type-card__icon invest-type-card__icon--private" style="width: 56px; height: 56px; margin-bottom: 20px;" dangerouslySetInnerHTML={{ __html: solutionIcons[i] }} />
-                <h3 class="invest-type-card__title" style="font-size: 1.25rem; margin-bottom: 12px;">{solution.title}</h3>
-                <p class="invest-type-card__desc" style="margin-bottom: 20px;">{solution.desc}</p>
+                <div
+                  class="invest-type-card__icon invest-type-card__icon--private"
+                  style="width: 56px; height: 56px; margin-bottom: 20px;"
+                  dangerouslySetInnerHTML={{ __html: solutionIcons[i] }}
+                />
+                <h3
+                  class="invest-type-card__title"
+                  style="font-size: 1.25rem; margin-bottom: 12px;"
+                >
+                  {solution.title}
+                </h3>
+                <p class="invest-type-card__desc" style="margin-bottom: 20px;">
+                  {solution.desc}
+                </p>
                 <div style="display: flex; flex-direction: column; gap: 8px;">
                   {solution.features.map((feature, j) => (
-                    <div key={j} style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; color: var(--color-gray);">
-                      <svg width="16" height="16" fill="none" stroke="#22c55e" viewBox="0 0 24 24" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    <div
+                      key={j}
+                      style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; color: var(--color-gray);"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        fill="none"
+                        stroke="#22c55e"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                       {feature}
                     </div>
@@ -464,7 +508,10 @@ export function InstitutionalInvestors(
           <div class="invest-benefits__grid">
             {t.benefits.items.map((benefit, i) => (
               <div key={i} class="invest-benefit">
-                <div class="invest-benefit__icon" dangerouslySetInnerHTML={{ __html: benefitIcons[i] }} />
+                <div
+                  class="invest-benefit__icon"
+                  dangerouslySetInnerHTML={{ __html: benefitIcons[i] }}
+                />
                 <h3 class="invest-benefit__title">{benefit.title}</h3>
                 <p class="invest-benefit__desc">{benefit.desc}</p>
               </div>
@@ -472,6 +519,9 @@ export function InstitutionalInvestors(
           </div>
         </div>
       </section>
+
+      {/* Current Projects */}
+      <Projects locale={locale} />
 
       {/* Process Steps */}
       <section class="invest-steps">
@@ -501,35 +551,14 @@ export function InstitutionalInvestors(
           <div class="inst-compliance__grid">
             {t.compliance.items.map((item, i) => (
               <div key={i} class="inst-compliance__card">
-                <div class="inst-compliance__icon" dangerouslySetInnerHTML={{ __html: complianceIcons[i] }} />
+                <div
+                  class="inst-compliance__icon"
+                  dangerouslySetInnerHTML={{ __html: complianceIcons[i] }}
+                />
                 <h3 class="inst-compliance__card-title">{item.title}</h3>
                 <p class="inst-compliance__card-desc">{item.desc}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact CTA */}
-      <section class="invest-types" style="padding: 80px 40px;">
-        <div class="invest-types__container">
-          <div class="invest-type-card" style="max-width: 700px; margin: 0 auto; text-align: center; padding: 56px;">
-            <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-text); margin-bottom: 16px;">{t.contact.title}</h2>
-            <p style="color: var(--color-gray); line-height: 1.7; margin-bottom: 32px;">{t.contact.text}</p>
-            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-              <a href={`mailto:${t.contact.email}`} class="btn btn--dark btn--with-arrow">
-                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                {t.contact.email}
-              </a>
-              <a href={`tel:${t.contact.phone}`} class="btn btn--outline">
-                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                {t.contact.phone}
-              </a>
-            </div>
           </div>
         </div>
       </section>

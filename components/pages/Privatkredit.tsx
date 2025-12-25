@@ -1,4 +1,5 @@
 import type { Locale } from "../../lib/i18n/index.ts";
+import type { JSX } from "preact";
 
 interface PrivatkreditProps {
   locale: Locale;
@@ -78,11 +79,11 @@ const content = {
     requirements: {
       title: "Welche Voraussetzungen müssen Sie für einen Kreditantrag erfüllen?",
       items: [
-        "Volljährig (mindestens 18 Jahre alt)",
-        "CH/LI-Staatsbürger oder gültige Aufenthaltsbewilligung",
-        "Schweizer Bankkonto",
-        "Feste Anstellung oder regelmässiges, nachweisbares Einkommen",
-        "Keine offenen Betreibungsverfahren und/oder Verlustscheine",
+        { icon: "age", text: "Sie sind mindestens 18 Jahre" },
+        { icon: "residence", text: "Sie sind CH/LI-Bürger oder besitzen eine gültige Aufenthaltsbewilligung für die Schweiz (CH) oder Liechtenstein (LI)" },
+        { icon: "bank", text: "Sie haben ein Schweizer Bankkonto" },
+        { icon: "income", text: "Sie haben eine unbefristete Anstellung oder ein regelmässiges Einkommen" },
+        { icon: "debt", text: "Sie haben keine offenen Betreibungen und/oder Verlustscheine" },
       ],
     },
     trust: {
@@ -192,13 +193,13 @@ const content = {
       ],
     },
     requirements: {
-      title: "Requirements",
+      title: "What requirements do you need to meet for a loan application?",
       items: [
-        "Minimum age: 18 years",
-        "Residence in Switzerland or Liechtenstein",
-        "Valid Swiss bank account",
-        "Permanent employment or regular income",
-        "No active enforcement proceedings or loss certificates",
+        { icon: "age", text: "You are at least 18 years old" },
+        { icon: "residence", text: "You are a CH/LI citizen or have a valid residence permit for Switzerland (CH) or Liechtenstein (LI)" },
+        { icon: "bank", text: "You have a Swiss bank account" },
+        { icon: "income", text: "You have a permanent position or regular income" },
+        { icon: "debt", text: "You have no outstanding debt collection proceedings and/or loss certificates" },
       ],
     },
     trust: {
@@ -308,13 +309,13 @@ const content = {
       ],
     },
     requirements: {
-      title: "Conditions requises",
+      title: "Quelles conditions devez-vous remplir pour une demande de crédit?",
       items: [
-        "Age minimum: 18 ans",
-        "Residence en Suisse ou au Liechtenstein",
-        "Compte bancaire suisse valide",
-        "Emploi fixe ou revenu regulier",
-        "Pas de poursuites en cours ou d'actes de defaut de biens",
+        { icon: "age", text: "Vous avez au moins 18 ans" },
+        { icon: "residence", text: "Vous êtes citoyen CH/LI ou possédez un permis de séjour valide pour la Suisse (CH) ou le Liechtenstein (LI)" },
+        { icon: "bank", text: "Vous avez un compte bancaire suisse" },
+        { icon: "income", text: "Vous avez un emploi permanent ou un revenu régulier" },
+        { icon: "debt", text: "Vous n'avez pas de poursuites en cours et/ou d'actes de défaut de biens" },
       ],
     },
     trust: {
@@ -371,6 +372,88 @@ function getIcon(type: string) {
   };
   return icons[type] || icons.refinance;
 }
+
+const requirementIcons: Record<string, JSX.Element> = {
+  age: (
+    <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
+      <defs>
+        <linearGradient id="age-head" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fef08a" />
+          <stop offset="100%" stop-color="#fde047" />
+        </linearGradient>
+        <linearGradient id="age-body" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#67e8f9" />
+          <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+      </defs>
+      <circle cx="20" cy="13" r="7" fill="url(#age-head)" />
+      <path d="M9 34c0-6.075 4.925-11 11-11s11 4.925 11 11" fill="url(#age-body)" />
+      <circle cx="17" cy="11" r="1.5" fill="#fbbf24" opacity="0.4" />
+    </svg>
+  ),
+  residence: (
+    <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
+      <defs>
+        <linearGradient id="res-bg-pk" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#67e8f9" />
+          <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+      </defs>
+      <rect x="8" y="12" width="24" height="20" rx="3" fill="url(#res-bg-pk)" />
+      <rect x="11" y="16" width="9" height="8" rx="1" fill="#fde047" />
+      <rect x="23" y="16" width="6" height="2" rx="1" fill="#cffafe" />
+      <rect x="23" y="20" width="6" height="2" rx="1" fill="#cffafe" />
+      <rect x="23" y="24" width="4" height="2" rx="1" fill="#cffafe" />
+    </svg>
+  ),
+  bank: (
+    <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
+      <defs>
+        <linearGradient id="bank-main-pk" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#67e8f9" />
+          <stop offset="100%" stop-color="#22d3ee" />
+        </linearGradient>
+        <linearGradient id="bank-top-pk" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#22d3ee" />
+          <stop offset="100%" stop-color="#0891b2" />
+        </linearGradient>
+      </defs>
+      <path d="M20 6L4 16h32L20 6z" fill="url(#bank-top-pk)" />
+      <rect x="6" y="16" width="28" height="18" rx="1" fill="url(#bank-main-pk)" />
+      <rect x="10" y="20" width="3" height="10" rx="1" fill="#cffafe" />
+      <rect x="18.5" y="20" width="3" height="10" rx="1" fill="#cffafe" />
+      <rect x="27" y="20" width="3" height="10" rx="1" fill="#cffafe" />
+      <rect x="6" y="32" width="28" height="2" fill="url(#bank-top-pk)" />
+    </svg>
+  ),
+  income: (
+    <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
+      <defs>
+        <linearGradient id="income-bg-pk" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#c4b5fd" />
+          <stop offset="100%" stop-color="#a78bfa" />
+        </linearGradient>
+      </defs>
+      <rect x="8" y="8" width="24" height="24" rx="5" fill="url(#income-bg-pk)" />
+      <path d="M14 20h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M20 14v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+    </svg>
+  ),
+  debt: (
+    <svg viewBox="0 0 40 40" fill="none" class="requirements__icon">
+      <defs>
+        <linearGradient id="debt-bg-pk" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fef08a" />
+          <stop offset="100%" stop-color="#fde047" />
+        </linearGradient>
+      </defs>
+      <rect x="8" y="8" width="24" height="24" rx="3" fill="url(#debt-bg-pk)" />
+      <rect x="13" y="14" width="14" height="2.5" rx="1" fill="#fbbf24" />
+      <rect x="13" y="20" width="10" height="2.5" rx="1" fill="#fbbf24" />
+      <rect x="13" y="26" width="6" height="2.5" rx="1" fill="#fbbf24" />
+    </svg>
+  ),
+};
 
 export function Privatkredit({ locale }: PrivatkreditProps) {
   const t = content[locale];
@@ -451,28 +534,19 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
       </section>
 
       {/* Requirements */}
-      <section class="section section--light">
-        <div class="container container--sm">
-          <div class="section__header">
-            <h2 class="section__title">{t.requirements.title}</h2>
-          </div>
-          <div class="requirements-list">
+      <section class="requirements">
+        <div class="requirements__container">
+          <h2 class="requirements__title">{t.requirements.title}</h2>
+          <div class="requirements__timeline">
             {t.requirements.items.map((item, index) => (
-              <div key={index} class="requirements-list__item">
-                <svg
-                  class="requirements-list__icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>{item}</span>
+              <div
+                class={`requirements__item ${index % 2 === 1 ? "requirements__item--right" : ""}`}
+                key={index}
+              >
+                <div class="requirements__item-content">
+                  {requirementIcons[item.icon]}
+                  <span class="requirements__item-text">{item.text}</span>
+                </div>
               </div>
             ))}
           </div>
