@@ -132,6 +132,39 @@ const serviceColors = [
   },
 ];
 
+const heroOrbColors = [
+  {
+    name: "Orb Violet",
+    variable: "--color-orb-violet",
+    hex: "#9333EA",
+    class: "styleguide__color--orb-violet",
+  },
+  {
+    name: "Orb Cyan",
+    variable: "--color-orb-cyan",
+    hex: "#06B6D4",
+    class: "styleguide__color--orb-cyan",
+  },
+  {
+    name: "Orb Orange",
+    variable: "--color-orb-orange",
+    hex: "#FB923C",
+    class: "styleguide__color--orb-orange",
+  },
+  {
+    name: "Orb Pink",
+    variable: "--color-orb-pink",
+    hex: "#EC4899",
+    class: "styleguide__color--orb-pink",
+  },
+  {
+    name: "Orb Blue",
+    variable: "--color-orb-blue",
+    hex: "#3B82F6",
+    class: "styleguide__color--orb-blue",
+  },
+];
+
 // Typography data
 const fontWeights = [
   { name: "Regular", weight: 400, class: "styleguide__font--regular" },
@@ -356,7 +389,7 @@ export default function Styleguide() {
             </a>
             <div class="styleguide-nav__header-row">
               <span class="styleguide-nav__badge">Design System</span>
-              <span class="styleguide-nav__version">v1.0</span>
+              <span class="styleguide-nav__version">v1.1</span>
             </div>
           </div>
 
@@ -365,22 +398,46 @@ export default function Styleguide() {
 
         {/* Main Content */}
         <main class="styleguide">
-          <div class="styleguide__container">
-            {/* Header */}
-            <header class="styleguide__header">
+          {/* Hero Header with Orbs */}
+          <header class="styleguide__hero gradient-hero">
+            {/* Animated background orbs */}
+            <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+            <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+            <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+            <div class="hero__orb hero__orb--4" aria-hidden="true"></div>
+
+            {/* Animated background effects */}
+            <div class="hero__grid-lines" aria-hidden="true"></div>
+            <div class="hero__shine" aria-hidden="true"></div>
+            <div class="hero__shine hero__shine--2" aria-hidden="true"></div>
+
+            <div class="styleguide__hero-content">
               <span class="styleguide__label">Design System</span>
-              <h1 class="styleguide__title">Cashare Styleguide</h1>
-              <p class="styleguide__subtitle">
+              <h1 class="styleguide__title text-reveal">Cashare Styleguide</h1>
+              <p class="styleguide__subtitle text-reveal text-reveal-delay-2">
                 Alli Komponentä, Farbä und Schriftä wo mir z'Zug so bruuchid.
                 Eifach schön, oder?
               </p>
-            </header>
+            </div>
+          </header>
 
+          <div class="styleguide__container">
             {/* 1. Changelog Section */}
             <section id="changelog" class="styleguide__section">
               <h2 class="styleguide__section-title">Was isch neu?</h2>
               <CollapsibleSection title="Versione-Gschicht" defaultOpen={true}>
                 <div class="styleguide__changelog">
+                  <div class="styleguide__changelog-entry">
+                    <span class="styleguide__changelog-version">v1.1</span>
+                    <span class="styleguide__changelog-date">
+                      25. Dezämber 2024
+                    </span>
+                    <p>
+                      Hero mit animierte Orbs! D'Styleguide het jetzt en
+                      farbige Header mit de gliche Gradient-Orbs wie d'Homepage.
+                      Plus neui Hero Orb Farbä i de Farbpalette. 🌈
+                    </p>
+                  </div>
                   <div class="styleguide__changelog-entry">
                     <span class="styleguide__changelog-version">v1.0</span>
                     <span class="styleguide__changelog-date">
@@ -497,7 +554,7 @@ export default function Styleguide() {
                 <div class="styleguide__demo">
                   <div class="styleguide__og-image-wrapper">
                     <img
-                      src="/images/og-image.svg"
+                      src="/images/og-image.png"
                       alt="Cashare OG Image"
                       class="styleguide__og-image"
                     />
@@ -506,22 +563,19 @@ export default function Styleguide() {
               </div>
 
               <div class="styleguide__group">
-                <h3 class="styleguide__group-title">Export Aleitig</h3>
-                <div class="alert alert--info">
+                <h3 class="styleguide__group-title">Dateien</h3>
+                <div class="alert alert--success">
                   <span
                     class="alert__icon"
-                    dangerouslySetInnerHTML={{ __html: icons.info }}
+                    dangerouslySetInnerHTML={{ __html: icons.check }}
                   />
                   <div class="alert__content">
-                    <p class="alert__title">PNG Export bruucht's! 🖼️</p>
+                    <p class="alert__title">PNG isch parat! 🎉</p>
                     <p class="alert__message">
-                      Social Media checkt SVG nöd. So gaht's:
-                      <br />1. Mach <code>/images/og-image.svg</code>{" "}
-                      im Browser uf
-                      <br />2. Screenshot mache (1200x630px)
-                      <br />3. Als <code>og-image.png</code> i{" "}
-                      <code>/static/images/</code> speichere
-                      <br />Eifach, gäll? 👍
+                      OG Image isch scho als PNG gspeicheret:
+                      <br />• <code>/images/og-image.png</code> (1200x630)
+                      <br />• <code>/images/og-image-logo.svg</code> (Source)
+                      <br />Wird automatisch i SeoHead verwendet.
                     </p>
                   </div>
                 </div>
@@ -626,6 +680,29 @@ export default function Styleguide() {
                 <h3 class="styleguide__group-title">Service-Farbä</h3>
                 <div class="styleguide__color-grid">
                   {serviceColors.map((color) => (
+                    <div class="styleguide__color-card" key={color.variable}>
+                      <div class={`styleguide__color-preview ${color.class}`}>
+                      </div>
+                      <div class="styleguide__color-info">
+                        <span class="styleguide__color-name">{color.name}</span>
+                        <CopyToClipboard value={color.variable}>
+                          {color.variable}
+                        </CopyToClipboard>
+                        <span class="styleguide__color-hex">{color.hex}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Hero Orb Farbä</h3>
+                <p class="styleguide__description">
+                  D'Farbä vo de animierte Orbs im Hero - wie es Nordliecht überm
+                  Zugersee!
+                </p>
+                <div class="styleguide__color-grid">
+                  {heroOrbColors.map((color) => (
                     <div class="styleguide__color-card" key={color.variable}>
                       <div class={`styleguide__color-preview ${color.class}`}>
                       </div>
@@ -838,10 +915,9 @@ export default function Styleguide() {
                 <div class="styleguide__demo">
                   <div class="styleguide__button-row">
                     <button class="btn btn--primary">Primary</button>
-                    <button class="btn btn--secondary">Secondary</button>
                     <button class="btn btn--dark">Dark</button>
                     <button class="btn btn--outline">Outline</button>
-                    <button class="btn btn--ghost">Ghost</button>
+                    <button class="btn btn--white">White</button>
                   </div>
                 </div>
               </div>
@@ -861,15 +937,22 @@ export default function Styleguide() {
                 <h3 class="styleguide__group-title">Rundi Chnöpf</h3>
                 <div class="styleguide__demo">
                   <div class="styleguide__button-row">
-                    <button class="btn btn--primary btn--round">Primary Round</button>
-                    <button class="btn btn--secondary btn--round">Secondary Round</button>
+                    <button class="btn btn--primary btn--round">
+                      Primary Round
+                    </button>
                     <button class="btn btn--dark btn--round">Dark Round</button>
-                    <button class="btn btn--outline btn--round">Outline Round</button>
+                    <button class="btn btn--outline btn--round">
+                      Outline Round
+                    </button>
                   </div>
                   <div class="styleguide__button-row" style="margin-top: 1rem;">
-                    <button class="btn btn--primary btn--round btn--sm">Chli</button>
+                    <button class="btn btn--primary btn--round btn--sm">
+                      Chli
+                    </button>
                     <button class="btn btn--primary btn--round">Normal</button>
-                    <button class="btn btn--primary btn--round btn--lg">Gross</button>
+                    <button class="btn btn--primary btn--round btn--lg">
+                      Gross
+                    </button>
                   </div>
                 </div>
               </div>
@@ -934,28 +1017,45 @@ export default function Styleguide() {
               <div class="styleguide__group">
                 <h3 class="styleguide__group-title">Card Links (Light)</h3>
                 <p class="styleguide__description">
-                  Liechti Links für Chärtli - dezent aber klickbar! Verwendig: Borrowers & Investors Sections.
+                  Liechti Links für Chärtli - dezent aber klickbar! Verwendig:
+                  Borrowers & Investors Sections.
                 </p>
                 <div class="styleguide__demo">
                   <div class="styleguide__links-demo">
                     <a href="#" class="styleguide__card-link-demo">
                       Mehr erfahren
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M6 3L11 8L6 13"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
                       </svg>
                     </a>
                   </div>
                 </div>
                 <div class="styleguide__demo">
                   <div class="styleguide__code-block">
-                    <code>.borrowers__card-link</code> - Link in Borrowers Cards<br/>
-                    <code>.investors__card-link</code> - Link in Investors Cards<br/>
-                    <br/>
-                    CSS Properties:<br/>
-                    <code>color: var(--color-gray)</code> - Default<br/>
-                    <code>color: var(--color-primary)</code> - Hover<br/>
-                    <code>font-size: 0.9375rem</code><br/>
-                    <code>font-weight: 500</code><br/>
+                    <code>.borrowers__card-link</code>{" "}
+                    - Link in Borrowers Cards<br />
+                    <code>.investors__card-link</code>{" "}
+                    - Link in Investors Cards<br />
+                    <br />
+                    CSS Properties:<br />
+                    <code>color: var(--color-gray)</code> - Default<br />
+                    <code>color: var(--color-primary)</code> - Hover<br />
+                    <code>font-size: 0.9375rem</code>
+                    <br />
+                    <code>font-weight: 500</code>
+                    <br />
                     <code>align-self: end</code> - Bei Subgrid am Bode
                   </div>
                 </div>
@@ -965,8 +1065,9 @@ export default function Styleguide() {
                 <h3 class="styleguide__group-title">Standard Text Links</h3>
                 <div class="styleguide__demo">
                   <p style="color: var(--color-gray);">
-                    Das isch en <a href="#" class="link">Standard Link</a> im Text.
-                    Und das isch en <a href="#" class="link link--primary">Primary Link</a>.
+                    Das isch en <a href="#" class="link">Standard Link</a>{" "}
+                    im Text. Und das isch en{" "}
+                    <a href="#" class="link link--primary">Primary Link</a>.
                   </p>
                 </div>
               </div>
@@ -975,8 +1076,15 @@ export default function Styleguide() {
                 <h3 class="styleguide__group-title">Footer Links</h3>
                 <div class="styleguide__demo styleguide__demo--dark">
                   <div class="styleguide__footer-links-demo">
-                    <a href="#" class="styleguide__footer-link-demo">Footer Link</a>
-                    <a href="#" class="styleguide__footer-link-demo styleguide__footer-link-demo--hover">Footer Link (Hover)</a>
+                    <a href="#" class="styleguide__footer-link-demo">
+                      Footer Link
+                    </a>
+                    <a
+                      href="#"
+                      class="styleguide__footer-link-demo styleguide__footer-link-demo--hover"
+                    >
+                      Footer Link (Hover)
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1191,7 +1299,7 @@ export default function Styleguide() {
                       </p>
                     </div>
                     <div class="styleguide__modal-footer">
-                      <button class="btn btn--ghost">Abbrechen</button>
+                      <button class="btn btn--outline">Abbrechen</button>
                       <button class="btn btn--primary">Bestätigen</button>
                     </div>
                   </div>
@@ -1965,7 +2073,7 @@ export default function Styleguide() {
             {/* Footer */}
             <footer class="styleguide__footer">
               <p>
-                Cashare Design System &bull; Version 1.0 &bull; Made with ❤️
+                Cashare Design System &bull; Version 1.1 &bull; Made with ❤️
                 z'Züri
               </p>
               <a href="/" class="styleguide__footer-link">

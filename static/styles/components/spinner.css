@@ -200,8 +200,7 @@
   animation: spinner-rotate 0.8s linear infinite;
 }
 
-.btn--outline.btn--loading::after,
-.btn--ghost.btn--loading::after {
+.btn--outline.btn--loading::after {
   border-color: rgba(0, 115, 153, 0.2);
   border-top-color: var(--color-primary);
 }

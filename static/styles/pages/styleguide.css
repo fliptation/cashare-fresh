@@ -254,6 +254,10 @@ html:has(.styleguide-layout) {
     margin-left: 0;
     padding: 100px 40px 120px;
   }
+
+  .styleguide__hero {
+    margin: -100px -40px 60px -40px;
+  }
 }
 
 .styleguide__container {
@@ -261,7 +265,44 @@ html:has(.styleguide-layout) {
   margin: 0 auto;
 }
 
-/* Header */
+/* Hero Header with Orbs */
+.styleguide__hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  padding: 80px 40px;
+  margin: -60px -40px 60px -40px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.styleguide__hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 700px;
+}
+
+.styleguide__hero .styleguide__title {
+  color: var(--color-text);
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.styleguide__hero .styleguide__subtitle {
+  color: var(--color-text-light);
+  margin-bottom: 0;
+}
+
+.styleguide__hero .styleguide__label {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Header (fallback) */
 .styleguide__header {
   text-align: center;
   margin-bottom: 80px;
@@ -673,6 +714,16 @@ html:has(.styleguide-layout) {
     margin-bottom: 48px;
   }
 
+  .styleguide__hero {
+    min-height: 240px;
+    padding: 60px 24px;
+    margin: -60px -16px 40px -16px;
+  }
+
+  .styleguide__hero .styleguide__title {
+    font-size: 2rem;
+  }
+
   .styleguide__title {
     font-size: 1.75rem;
     word-break: break-word;
@@ -995,6 +1046,23 @@ html:has(.styleguide-layout) {
 }
 .styleguide__color--investing {
   background: var(--color-investing);
+}
+
+/* Hero Orb Colors */
+.styleguide__color--orb-violet {
+  background: #9333EA;
+}
+.styleguide__color--orb-cyan {
+  background: #06B6D4;
+}
+.styleguide__color--orb-orange {
+  background: #FB923C;
+}
+.styleguide__color--orb-pink {
+  background: #EC4899;
+}
+.styleguide__color--orb-blue {
+  background: #3B82F6;
 }
 
 /* Light colors need border */
