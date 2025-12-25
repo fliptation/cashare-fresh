@@ -26,6 +26,7 @@ import * as $en_apply_for_credit_mortgage from "./routes/en/apply-for-credit/mor
 import * as $en_apply_for_credit_personal_loan from "./routes/en/apply-for-credit/personal-loan.tsx";
 import * as $en_apply_for_credit_sme_loan from "./routes/en/apply-for-credit/sme-loan.tsx";
 import * as $en_apply_for_personal_loan from "./routes/en/apply-for-personal-loan.tsx";
+import * as $en_become_investor from "./routes/en/become-investor.tsx";
 import * as $en_cookies from "./routes/en/cookies.tsx";
 import * as $en_how_it_works from "./routes/en/how-it-works.tsx";
 import * as $en_how_it_works_mortgage from "./routes/en/how-it-works/mortgage.tsx";
@@ -64,6 +65,7 @@ import * as $fr_demander_un_credit from "./routes/fr/demander-un-credit.tsx";
 import * as $fr_demander_un_credit_credit_pme from "./routes/fr/demander-un-credit/credit-pme.tsx";
 import * as $fr_demander_un_credit_credit_prive from "./routes/fr/demander-un-credit/credit-prive.tsx";
 import * as $fr_demander_un_credit_hypotheque from "./routes/fr/demander-un-credit/hypotheque.tsx";
+import * as $fr_devenir_investisseur from "./routes/fr/devenir-investisseur.tsx";
 import * as $fr_index from "./routes/fr/index.tsx";
 import * as $fr_investir from "./routes/fr/investir.tsx";
 import * as $fr_investir_institutionnels from "./routes/fr/investir/institutionnels.tsx";
@@ -105,11 +107,13 @@ import * as $ueber_uns_presse from "./routes/ueber-uns/presse.tsx";
 import * as $ueber_uns_rating from "./routes/ueber-uns/rating.tsx";
 import * as $ueber_uns_statistik from "./routes/ueber-uns/statistik.tsx";
 import * as $ueber_uns_wer_sind_wir from "./routes/ueber-uns/wer-sind-wir.tsx";
+import * as $werde_anleger from "./routes/werde-anleger.tsx";
 import * as $AnimatedCounter from "./islands/AnimatedCounter.tsx";
 import * as $BlogIsland from "./islands/BlogIsland.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $CountingStats from "./islands/CountingStats.tsx";
 import * as $Header from "./islands/Header.tsx";
+import * as $InvestorOnboarding from "./islands/InvestorOnboarding.tsx";
 import * as $LoanApplicationForm from "./islands/LoanApplicationForm.tsx";
 import * as $LoanApplyForm from "./islands/LoanApplyForm.tsx";
 import * as $LoanCalculator from "./islands/LoanCalculator.tsx";
@@ -164,6 +168,7 @@ const manifest = {
       $en_apply_for_credit_personal_loan,
     "./routes/en/apply-for-credit/sme-loan.tsx": $en_apply_for_credit_sme_loan,
     "./routes/en/apply-for-personal-loan.tsx": $en_apply_for_personal_loan,
+    "./routes/en/become-investor.tsx": $en_become_investor,
     "./routes/en/cookies.tsx": $en_cookies,
     "./routes/en/how-it-works.tsx": $en_how_it_works,
     "./routes/en/how-it-works/mortgage.tsx": $en_how_it_works_mortgage,
@@ -208,6 +213,7 @@ const manifest = {
       $fr_demander_un_credit_credit_prive,
     "./routes/fr/demander-un-credit/hypotheque.tsx":
       $fr_demander_un_credit_hypotheque,
+    "./routes/fr/devenir-investisseur.tsx": $fr_devenir_investisseur,
     "./routes/fr/index.tsx": $fr_index,
     "./routes/fr/investir.tsx": $fr_investir,
     "./routes/fr/investir/institutionnels.tsx": $fr_investir_institutionnels,
@@ -252,6 +258,7 @@ const manifest = {
     "./routes/ueber-uns/rating.tsx": $ueber_uns_rating,
     "./routes/ueber-uns/statistik.tsx": $ueber_uns_statistik,
     "./routes/ueber-uns/wer-sind-wir.tsx": $ueber_uns_wer_sind_wir,
+    "./routes/werde-anleger.tsx": $werde_anleger,
   },
   islands: {
     "./islands/AnimatedCounter.tsx": $AnimatedCounter,
@@ -259,6 +266,7 @@ const manifest = {
     "./islands/Counter.tsx": $Counter,
     "./islands/CountingStats.tsx": $CountingStats,
     "./islands/Header.tsx": $Header,
+    "./islands/InvestorOnboarding.tsx": $InvestorOnboarding,
     "./islands/LoanApplicationForm.tsx": $LoanApplicationForm,
     "./islands/LoanApplyForm.tsx": $LoanApplyForm,
     "./islands/LoanCalculator.tsx": $LoanCalculator,

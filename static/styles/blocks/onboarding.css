@@ -1,0 +1,369 @@
+/* ==========================================================================
+   Investor Onboarding Page Styles
+   ========================================================================== */
+
+.onboarding-page {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ==========================================================================
+   Left Panel - Form
+   ========================================================================== */
+
+.onboarding-form-panel {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px;
+  background: var(--color-bg-section);
+}
+
+.onboarding-form-panel__inner {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.onboarding-form-panel__logo {
+  display: block;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.onboarding-form-panel__logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.onboarding-form-panel__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.onboarding-form-panel__title {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.onboarding-form-panel__subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+}
+
+/* ==========================================================================
+   Investor Type Cards
+   ========================================================================== */
+
+.onboarding-types {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.onboarding-type-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: var(--color-white);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.onboarding-type-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.onboarding-type-card--selected {
+  border-color: var(--color-primary);
+  background: rgba(0, 115, 153, 0.03);
+  box-shadow: 0 0 0 3px rgba(0, 115, 153, 0.1);
+}
+
+.onboarding-type-card__icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.onboarding-type-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.onboarding-type-card__icon--institutional {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.onboarding-type-card__content {
+  flex: 1;
+}
+
+.onboarding-type-card__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.onboarding-type-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.onboarding-type-card__check {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  color: var(--color-border);
+  transition: color 0.2s ease;
+}
+
+.onboarding-type-card__check svg {
+  width: 24px;
+  height: 24px;
+}
+
+.onboarding-type-card--selected .onboarding-type-card__check {
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Registration Form
+   ========================================================================== */
+
+.onboarding-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.onboarding-form__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.onboarding-form__checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.onboarding-form__checkbox-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+/* ==========================================================================
+   Note and Footer
+   ========================================================================== */
+
+.onboarding-note {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.onboarding-terms {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: 24px;
+}
+
+.onboarding-terms a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.onboarding-terms a:hover {
+  text-decoration: underline;
+}
+
+.onboarding-login {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: 16px;
+}
+
+.onboarding-login a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.onboarding-login a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Right Panel - Info
+   ========================================================================== */
+
+.onboarding-info-panel {
+  flex: 5;
+  display: none;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ede9fe 0%, #e0f7fa 40%, #fce7f3 100%);
+}
+
+/* Hero-style gradient animation background */
+.onboarding-info-panel::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 130%;
+  height: 160%;
+  background:
+    radial-gradient(ellipse 70% 60% at 10% 15%, rgba(147, 51, 234, 0.9) 0%, rgba(139, 92, 246, 0.5) 30%, transparent 60%),
+    radial-gradient(ellipse 55% 50% at 85% 10%, rgba(251, 146, 60, 0.95) 0%, rgba(249, 115, 22, 0.4) 35%, transparent 55%),
+    radial-gradient(ellipse 60% 55% at 55% 35%, rgba(236, 72, 153, 0.75) 0%, rgba(219, 39, 119, 0.3) 40%, transparent 60%),
+    radial-gradient(ellipse 65% 55% at 80% 70%, rgba(6, 182, 212, 0.9) 0%, rgba(34, 211, 238, 0.4) 35%, transparent 60%),
+    radial-gradient(ellipse 55% 50% at 15% 75%, rgba(59, 130, 246, 0.8) 0%, rgba(96, 165, 250, 0.3) 40%, transparent 55%),
+    radial-gradient(ellipse 40% 45% at 95% 45%, rgba(251, 146, 60, 0.7) 0%, transparent 50%);
+  transform: rotate(-5deg);
+  animation: heroGradientMove 25s ease-in-out infinite;
+  z-index: 0;
+  filter: blur(50px);
+}
+
+.onboarding-info-panel__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.onboarding-info-panel__orb--1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.6) 0%, rgba(139, 92, 246, 0.3) 35%, transparent 65%);
+  top: -100px;
+  right: -100px;
+  animation: heroOrbFloat1 30s ease-in-out infinite;
+}
+
+.onboarding-info-panel__orb--2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.6) 0%, rgba(34, 211, 238, 0.3) 40%, transparent 65%);
+  bottom: -100px;
+  left: -100px;
+  animation: heroOrbFloat2 35s ease-in-out infinite;
+}
+
+.onboarding-info-panel__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 48px;
+  z-index: 1;
+}
+
+.onboarding-info-panel__title {
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.onboarding-info-panel__subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-text-light);
+  margin-bottom: 48px;
+}
+
+/* Support Section */
+.onboarding-support {
+  padding-top: 32px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.onboarding-support__text {
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
+.onboarding-support__text a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.onboarding-support__text a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+  .onboarding-info-panel {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .onboarding-form-panel {
+    padding: 24px;
+  }
+
+  .onboarding-form-panel__title {
+    font-size: var(--text-xl);
+  }
+
+  .onboarding-type-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .onboarding-type-card__icon {
+    margin: 0 auto;
+  }
+
+  .onboarding-type-card__check {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+
+  .onboarding-type-card {
+    position: relative;
+  }
+}

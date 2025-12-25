@@ -433,9 +433,9 @@ export default function Styleguide() {
                       25. Dezämber 2024
                     </span>
                     <p>
-                      Hero mit animierte Orbs! D'Styleguide het jetzt en
-                      farbige Header mit de gliche Gradient-Orbs wie d'Homepage.
-                      Plus neui Hero Orb Farbä i de Farbpalette. 🌈
+                      Hero mit animierte Orbs! D'Styleguide het jetzt en farbige
+                      Header mit de gliche Gradient-Orbs wie d'Homepage. Plus
+                      neui Hero Orb Farbä i de Farbpalette. 🌈
                     </p>
                   </div>
                   <div class="styleguide__changelog-entry">
@@ -1952,7 +1952,7 @@ export default function Styleguide() {
                           Ups! Diese Seite ist uns leider entwischt.
                         </p>
                         <div class="error-page__actions">
-                          <button class="btn btn--primary btn--sm">
+                          <button class="btn btn--dark btn--sm">
                             Zur Startseite
                           </button>
                           <button class="btn btn--outline btn--sm">

@@ -75,7 +75,7 @@ export default function Error404(props: PageProps) {
                 {t(locale, "error", "description")}
               </p>
               <div class="error-page__actions">
-                <a href={localePath || "/"} class="btn btn--primary">
+                <a href={localePath || "/"} class="btn btn--dark">
                   {t(locale, "error", "backHome")}
                 </a>
                 <a href={`${localePath}/kontakt`} class="btn btn--outline">
