@@ -860,7 +860,7 @@ export function WhoWeAre({ locale }: WhoWeAreProps) {
           <div class="wwa-team__cta">
             <a
               href="https://support.cashare.ch/hc/de/requests/new"
-              class="wwa-team__btn"
+              class="btn btn--dark"
             >
               {t.team.contactBtn}
             </a>

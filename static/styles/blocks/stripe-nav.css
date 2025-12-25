@@ -154,6 +154,9 @@
   font-size: 15px;
   border-radius: 6px;
   transition: color 0.15s ease, background 0.15s ease;
+  /* Improve touch target - prevent accidental taps */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .stripe-nav__link:hover {
@@ -301,6 +304,9 @@
   transition: all 0.15s ease;
   animation: stripeNavFadeIn 0.3s ease forwards;
   opacity: 0;
+  /* Touch improvements */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 @keyframes stripeNavFadeIn {
@@ -805,4 +811,33 @@
 .stripe-nav__cta:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Touch Device Enhancements
+   ========================================================================== */
+
+/* Touch feedback on dropdown items */
+.stripe-nav__dropdown-item:active {
+  background: rgba(0, 181, 206, 0.12);
+  transform: scale(0.98);
+}
+
+/* Ensure dropdown is accessible on touch by giving it proper padding */
+@media (pointer: coarse) {
+  .stripe-nav__dropdown {
+    /* Add slightly more padding on touch devices */
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .stripe-nav__dropdown-item {
+    /* Larger touch target */
+    padding: 14px 12px;
+  }
+
+  .stripe-nav__link {
+    /* Larger touch target */
+    padding: 10px 16px;
+  }
 }

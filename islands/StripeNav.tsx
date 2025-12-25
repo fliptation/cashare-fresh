@@ -357,6 +357,9 @@ const isScrolled = signal(false);
 const isMobileMenuOpen = signal(false);
 const mobileActiveSection = signal<string | null>(null);
 
+// Use module-level variable for touch detection (signals can have race conditions)
+let isTouchDeviceDetected = false;
+
 // Nav link highlight state (sliding pill effect)
 const navHighlight = signal<{ left: number; width: number; opacity: number }>({
   left: 0,
@@ -463,6 +466,12 @@ export default function StripeNav(
   const leaveTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
+    // Detect touch device synchronously
+    const detectTouch = () => {
+      isTouchDeviceDetected = true;
+    };
+    window.addEventListener("touchstart", detectTouch, { passive: true });
+
     const handleScroll = () => {
       isScrolled.value = window.scrollY > 20;
     };
@@ -475,12 +484,18 @@ export default function StripeNav(
       }
     };
 
-    const handleClickOutside = (e: MouseEvent) => {
+    const handleClickOutside = (e: MouseEvent | TouchEvent) => {
       const target = e.target as HTMLElement;
-      if (!target.closest(".stripe-nav__wrapper")) {
-        activeSection.value = null;
-        isNavHovered.value = false;
+      // Don't close if clicking inside nav wrapper or dropdown
+      if (
+        target.closest(".stripe-nav__wrapper") ||
+        target.closest(".stripe-nav__dropdown") ||
+        target.closest(".stripe-nav__item")
+      ) {
+        return;
       }
+      activeSection.value = null;
+      isNavHovered.value = false;
     };
 
     if (isMobileMenuOpen.value) {
@@ -495,6 +510,7 @@ export default function StripeNav(
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("touchstart", detectTouch);
       document.removeEventListener("keydown", handleEscape);
       document.removeEventListener("click", handleClickOutside);
       document.body.style.overflow = "";
@@ -521,6 +537,11 @@ export default function StripeNav(
   };
 
   const handleMouseEnter = (sectionId: string) => {
+    // Skip hover behavior on touch devices - use click instead
+    if (isTouchDeviceDetected || window.matchMedia("(pointer: coarse)").matches) {
+      return;
+    }
+
     if (leaveTimeoutRef.current) {
       clearTimeout(leaveTimeoutRef.current);
       leaveTimeoutRef.current = null;
@@ -532,6 +553,11 @@ export default function StripeNav(
   };
 
   const handleNavMouseLeave = () => {
+    // Skip hover behavior on touch devices
+    if (isTouchDeviceDetected || window.matchMedia("(pointer: coarse)").matches) {
+      return;
+    }
+
     leaveTimeoutRef.current = window.setTimeout(() => {
       isNavHovered.value = false;
       activeSection.value = null;
@@ -539,9 +565,40 @@ export default function StripeNav(
   };
 
   const handleDropdownMouseEnter = () => {
+    // On touch devices, dropdown stays open until user taps outside
+    if (isTouchDeviceDetected || window.matchMedia("(pointer: coarse)").matches) {
+      return;
+    }
+
     if (leaveTimeoutRef.current) {
       clearTimeout(leaveTimeoutRef.current);
       leaveTimeoutRef.current = null;
+    }
+  };
+
+  // Handle touch/click on nav items with dropdowns
+  const handleNavClick = (e: MouseEvent, sectionId: string, hasItems: boolean) => {
+    // Only intercept if it has dropdown items
+    if (!hasItems) return;
+
+    // Check if this is a touch/coarse pointer device
+    const isTouch = isTouchDeviceDetected ||
+      (e as unknown as PointerEvent).pointerType === "touch" ||
+      window.matchMedia("(pointer: coarse)").matches;
+
+    if (isTouch) {
+      // If dropdown is already open for this section, allow navigation
+      if (activeSection.value === sectionId && isNavHovered.value) {
+        return; // Let the link navigate
+      }
+
+      // First tap: prevent navigation, open dropdown
+      e.preventDefault();
+      e.stopPropagation();
+
+      activeSection.value = sectionId;
+      isNavHovered.value = true;
+      updateBackdropPosition(sectionId);
     }
   };
 
@@ -588,6 +645,8 @@ export default function StripeNav(
                     class={`stripe-nav__link ${
                       isActive(section.href) ? "stripe-nav__link--current" : ""
                     }`}
+                    onClick={(e) =>
+                      handleNavClick(e, section.id, !!section.items)}
                   >
                     {section.label}
                     {section.items && (
