@@ -93,10 +93,6 @@ import * as $privatdarlehen_beantragen from "./routes/privatdarlehen-beantragen.
 import * as $robots_txt from "./routes/robots.txt.ts";
 import * as $sicherheit from "./routes/sicherheit.tsx";
 import * as $sitemap_xml from "./routes/sitemap.xml.ts";
-import * as $so_funktionierts from "./routes/so-funktionierts.tsx";
-import * as $so_funktionierts_hypothek from "./routes/so-funktionierts/hypothek.tsx";
-import * as $so_funktionierts_kmu from "./routes/so-funktionierts/kmu.tsx";
-import * as $so_funktionierts_privatkredit from "./routes/so-funktionierts/privatkredit.tsx";
 import * as $styleguide from "./routes/styleguide.tsx";
 import * as $styleguide_buttons from "./routes/styleguide/buttons.tsx";
 import * as $ueber_uns from "./routes/ueber-uns.tsx";
@@ -244,11 +240,6 @@ const manifest = {
     "./routes/robots.txt.ts": $robots_txt,
     "./routes/sicherheit.tsx": $sicherheit,
     "./routes/sitemap.xml.ts": $sitemap_xml,
-    "./routes/so-funktionierts.tsx": $so_funktionierts,
-    "./routes/so-funktionierts/hypothek.tsx": $so_funktionierts_hypothek,
-    "./routes/so-funktionierts/kmu.tsx": $so_funktionierts_kmu,
-    "./routes/so-funktionierts/privatkredit.tsx":
-      $so_funktionierts_privatkredit,
     "./routes/styleguide.tsx": $styleguide,
     "./routes/styleguide/buttons.tsx": $styleguide_buttons,
     "./routes/ueber-uns.tsx": $ueber_uns,

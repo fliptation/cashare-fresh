@@ -19,21 +19,21 @@ const content = {
         title: "Privatkredit",
         description:
           "Mit unserem flexiblen Privatkredit erreichen Sie Ihre Ziele, zu fairen Konditionen und mit unkomplizierter Online-Abwicklung.",
-        href: "/so-funktionierts/privatkredit",
+        href: "/kredit-beantragen/privatkredit",
       },
       {
         icon: "building",
         title: "KMU-Kredit",
         description:
           "Frisches Kapital für Ihr KMU, flexibel, fair und genau auf Ihre Pläne zugeschnitten.",
-        href: "/so-funktionierts/kmu",
+        href: "/kredit-beantragen/kmu-kredit",
       },
       {
         icon: "home",
         title: "Immobilienkredit",
         description:
           "Ob Eigenheim oder Renditeobjekt, mit unseren Hypotheken und Nachrangdarlehen profitieren Sie von Top-Zinsen, flexibler Rückzahlung und schneller Abwicklung.",
-        href: "/so-funktionierts/hypothek",
+        href: "/kredit-beantragen/hypotheken",
       },
     ],
   },
@@ -50,21 +50,21 @@ const content = {
         title: "Personal Loan",
         description:
           "Achieve your goals with our flexible personal loans, at fair conditions and fully transparent.",
-        href: "/en/how-it-works/private-loans",
+        href: "/en/apply-for-credit/personal-loan",
       },
       {
         icon: "building",
         title: "SME Loan",
         description:
           "Fresh capital for your SME, flexible, fair and tailored exactly to your plans.",
-        href: "/en/how-it-works/sme",
+        href: "/en/apply-for-credit/sme-loan",
       },
       {
         icon: "home",
         title: "Mortgage",
         description:
           "Whether home or investment property, finance smartly with our mortgages and real estate loans.",
-        href: "/en/how-it-works/mortgage",
+        href: "/en/apply-for-credit/mortgage",
       },
     ],
   },
@@ -81,21 +81,21 @@ const content = {
         title: "Crédit privé",
         description:
           "Atteignez vos objectifs avec notre crédit privé flexible, à des conditions équitables et transparentes.",
-        href: "/fr/comment-ca-marche/credit-prive",
+        href: "/fr/demander-un-credit/credit-prive",
       },
       {
         icon: "building",
         title: "Crédit PME",
         description:
           "Du capital frais pour votre PME, flexible, équitable et adapté exactement à vos projets.",
-        href: "/fr/comment-ca-marche/pme",
+        href: "/fr/demander-un-credit/credit-pme",
       },
       {
         icon: "home",
         title: "Crédit immobilier",
         description:
           "Que ce soit pour votre maison ou un investissement, financez intelligemment avec nos hypothèques.",
-        href: "/fr/comment-ca-marche/hypotheque",
+        href: "/fr/demander-un-credit/hypotheque",
       },
     ],
   },

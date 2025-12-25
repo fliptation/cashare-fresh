@@ -17,9 +17,9 @@ const content = {
     products: {
       title: "Unsere Finanzierungslösungen",
       items: [
-        { title: "Privatkredit", description: "Personliche Kredite für Privatpersonen bis CHF 250'000", href: "/so-funktionierts/privatkredit", icon: "user" },
-        { title: "KMU-Kredit", description: "Geschaftskredite für kleine und mittlere Unternehmen", href: "/so-funktionierts/kmu", icon: "building" },
-        { title: "Hypothek", description: "Immobilienfinanzierung zu attraktiven Konditionen", href: "/so-funktionierts/hypothek", icon: "home" },
+        { title: "Privatkredit", description: "Personliche Kredite für Privatpersonen bis CHF 250'000", href: "/kredit-beantragen/privatkredit", icon: "user" },
+        { title: "KMU-Kredit", description: "Geschaftskredite für kleine und mittlere Unternehmen", href: "/kredit-beantragen/kmu-kredit", icon: "building" },
+        { title: "Hypothek", description: "Immobilienfinanzierung zu attraktiven Konditionen", href: "/kredit-beantragen/hypotheken", icon: "home" },
       ],
     },
     process: {

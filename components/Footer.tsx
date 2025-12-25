@@ -651,7 +651,14 @@ export function Footer({ locale }: FooterProps) {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <div class="footer__address">{content.address}</div>
+                <a
+                  href="https://www.google.ch/maps/place/Cashare+AG/@47.1616496,8.4385011,17z/data=!4m16!1m9!3m8!1s0x47900049370d80ab:0x35d376a660690fda!2sCashare+AG!8m2!3d47.161646!4d8.441076!9m1!1b1!16s%2Fg%2F11ggzmvlgk!3m5!1s0x47900049370d80ab:0x35d376a660690fda!8m2!3d47.161646!4d8.441076!16s%2Fg%2F11ggzmvlgk?hl=de&entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__address footer__contact-link"
+                >
+                  {content.address}
+                </a>
               </div>
 
               <div class="footer__contact-item">

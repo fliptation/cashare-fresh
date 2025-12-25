@@ -35,12 +35,6 @@ const staticPages: SitemapEntry[] = [
   ["/ueber-uns/rating", "/en/about/rating", "/fr/a-propos/rating", "0.7", "monthly"],
   ["/ueber-uns/blog", "/en/about/blog", "/fr/a-propos/blog", "0.8", "daily"],
 
-  // How it works
-  ["/so-funktionierts", "/en/how-it-works", "/fr/comment-ca-marche", "0.7", "monthly"],
-  ["/so-funktionierts/privatkredit", "/en/how-it-works/private-loans", "/fr/comment-ca-marche/credit-prive", "0.7", "monthly"],
-  ["/so-funktionierts/kmu", "/en/how-it-works/sme", "/fr/comment-ca-marche/pme", "0.7", "monthly"],
-  ["/so-funktionierts/hypothek", "/en/how-it-works/mortgage", "/fr/comment-ca-marche/hypotheque", "0.7", "monthly"],
-
   // Security
   ["/sicherheit", "/en/security", "/fr/securite", "0.6", "monthly"],
 

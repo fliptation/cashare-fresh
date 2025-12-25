@@ -100,26 +100,6 @@ const routeMap: Record<string, Record<Locale, string>> = {
     en: "/en/security",
     fr: "/fr/securite",
   },
-  "/so-funktionierts": {
-    de: "/so-funktionierts",
-    en: "/en/how-it-works",
-    fr: "/fr/comment-ca-marche",
-  },
-  "/so-funktionierts/privatkredit": {
-    de: "/so-funktionierts/privatkredit",
-    en: "/en/how-it-works/private-loans",
-    fr: "/fr/comment-ca-marche/credit-prive",
-  },
-  "/so-funktionierts/kmu": {
-    de: "/so-funktionierts/kmu",
-    en: "/en/how-it-works/sme",
-    fr: "/fr/comment-ca-marche/pme",
-  },
-  "/so-funktionierts/hypothek": {
-    de: "/so-funktionierts/hypothek",
-    en: "/en/how-it-works/mortgage",
-    fr: "/fr/comment-ca-marche/hypotheque",
-  },
   "/ueber-uns/rating": {
     de: "/ueber-uns/rating",
     en: "/en/about/rating",
