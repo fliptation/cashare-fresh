@@ -121,6 +121,9 @@ const content = {
         },
       ],
     },
+    ctaSection: {
+      title: "Bereit zu investieren?",
+    },
   },
   en: {
     backLink: { label: "Back to overview", href: "/en/invest" },
@@ -228,6 +231,9 @@ const content = {
           a: "Every loan application undergoes comprehensive crédit assessment with scoring and manual review.",
         },
       ],
+    },
+    ctaSection: {
+      title: "Ready to invest?",
     },
   },
   fr: {
@@ -341,6 +347,9 @@ const content = {
         },
       ],
     },
+    ctaSection: {
+      title: "Prêt à investir?",
+    },
   },
 };
 
@@ -354,10 +363,27 @@ const benefitIcons = [
 // Rating data for the table
 const ratingData = [
   { grade: "A", color: "#3b82f6", interest: "3.9 – 5.4%", returnRate: "4.65%" },
-  { grade: "B", superscript: "+", color: "#22c55e", interest: "4.0 – 5.9%", returnRate: "4.95%" },
+  {
+    grade: "B",
+    superscript: "+",
+    color: "#22c55e",
+    interest: "4.0 – 5.9%",
+    returnRate: "4.95%",
+  },
   { grade: "B", color: "#22c55e", interest: "4.6 – 7.3%", returnRate: "5.95%" },
-  { grade: "C", superscript: "+", color: "#84cc16", interest: "5.6 – 9.7%", returnRate: "7.65%" },
-  { grade: "C", color: "#eab308", interest: "7.0 – 11.4%", returnRate: "9.20%" },
+  {
+    grade: "C",
+    superscript: "+",
+    color: "#84cc16",
+    interest: "5.6 – 9.7%",
+    returnRate: "7.65%",
+  },
+  {
+    grade: "C",
+    color: "#eab308",
+    interest: "7.0 – 11.4%",
+    returnRate: "9.20%",
+  },
   { grade: "D", color: "#f97316", interest: null, returnRate: null },
   { grade: "E", color: "#ef4444", interest: null, returnRate: null },
   { grade: "F", color: "#dc2626", interest: null, returnRate: null },
@@ -417,7 +443,10 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
           <div class="invest-benefits__grid">
             {t.benefits.items.map((benefit, i) => (
               <div key={i} class="invest-benefit">
-                <div class="invest-benefit__icon" dangerouslySetInnerHTML={{ __html: benefitIcons[i] }} />
+                <div
+                  class="invest-benefit__icon"
+                  dangerouslySetInnerHTML={{ __html: benefitIcons[i] }}
+                />
                 <h3 class="invest-benefit__title">{benefit.title}</h3>
                 <p class="invest-benefit__desc">{benefit.desc}</p>
               </div>
@@ -438,21 +467,30 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
             <div class="rating-table__card">
               {/* Table Header Row - Labels */}
               <div class="rating-table__row rating-table__row--header">
-                <div class="rating-table__cell rating-table__cell--label">{t.rating.riskLabel}</div>
+                <div class="rating-table__cell rating-table__cell--label">
+                  {t.rating.riskLabel}
+                </div>
                 {ratingData.map((rating, i) => (
                   <div key={i} class="rating-table__cell">
-                    <div class="rating-badge" style={{ backgroundColor: rating.color }}>
+                    <div
+                      class="rating-badge"
+                      style={{ backgroundColor: rating.color }}
+                    >
                       {rating.grade}
                       {rating.superscript && <sup>{rating.superscript}</sup>}
                     </div>
                   </div>
                 ))}
-                <div class="rating-table__cell rating-table__cell--total">{t.rating.totalLabel}</div>
+                <div class="rating-table__cell rating-table__cell--total">
+                  {t.rating.totalLabel}
+                </div>
               </div>
 
               {/* Interest Rate Row */}
               <div class="rating-table__row">
-                <div class="rating-table__cell rating-table__cell--label">{t.rating.interestLabel}</div>
+                <div class="rating-table__cell rating-table__cell--label">
+                  {t.rating.interestLabel}
+                </div>
                 {ratingData.map((rating, i) => (
                   <div key={i} class="rating-table__cell">
                     <span class="rating-table__value">
@@ -465,7 +503,9 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
 
               {/* Estimated Return Row */}
               <div class="rating-table__row">
-                <div class="rating-table__cell rating-table__cell--label">{t.rating.returnLabel}</div>
+                <div class="rating-table__cell rating-table__cell--label">
+                  {t.rating.returnLabel}
+                </div>
                 {ratingData.map((rating, i) => (
                   <div key={i} class="rating-table__cell">
                     <span class="rating-table__value">
@@ -474,7 +514,9 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
                   </div>
                 ))}
                 <div class="rating-table__cell rating-table__cell--total">
-                  <span class="rating-table__total-value">{t.rating.totalReturn}</span>
+                  <span class="rating-table__total-value">
+                    {t.rating.totalReturn}
+                  </span>
                 </div>
               </div>
             </div>
@@ -524,12 +566,30 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
           <div class="invest-stats__grid">
             {t.autoInvest.features.map((feature, i) => (
               <div key={i} class="invest-stat-card">
-                <div class="invest-stat-card__value" style="font-size: 1.25rem;">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 12px; display: block;">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                <div
+                  class="invest-stat-card__value"
+                  style="font-size: 1.25rem;"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="margin: 0 auto 12px; display: block;"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </div>
-                <div class="invest-stat-card__label" style="font-size: 1rem; color: rgba(255,255,255,0.9);">
+                <div
+                  class="invest-stat-card__label"
+                  style="font-size: 1rem; color: rgba(255,255,255,0.9);"
+                >
                   {feature}
                 </div>
               </div>
@@ -541,16 +601,34 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
       {/* Risk Notice */}
       <section class="invest-types" style="padding: 60px 40px;">
         <div class="invest-types__container">
-          <div class="invest-type-card" style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);">
+          <div
+            class="invest-type-card"
+            style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);"
+          >
             <div style="display: flex; gap: 20px; align-items: flex-start;">
               <div style="flex-shrink: 0; width: 48px; height: 48px; background: #f59e0b; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white;">
-                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                  />
                 </svg>
               </div>
               <div>
-                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text); margin-bottom: 8px;">{t.risks.title}</h3>
-                <p style="color: var(--color-gray); line-height: 1.7;">{t.risks.text}</p>
+                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text); margin-bottom: 8px;">
+                  {t.risks.title}
+                </h3>
+                <p style="color: var(--color-gray); line-height: 1.7;">
+                  {t.risks.text}
+                </p>
               </div>
             </div>
           </div>
@@ -565,9 +643,17 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
           </div>
           <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; margin: 0 auto;">
             {t.faq.items.map((item, i) => (
-              <div key={i} class="invest-benefit" style="text-align: left; padding: 32px;">
-                <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 12px;">{item.q}</h3>
-                <p style="font-size: 0.9375rem; color: var(--color-gray); line-height: 1.6;">{item.a}</p>
+              <div
+                key={i}
+                class="invest-benefit"
+                style="text-align: left; padding: 32px;"
+              >
+                <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text); margin-bottom: 12px;">
+                  {item.q}
+                </h3>
+                <p style="font-size: 0.9375rem; color: var(--color-gray); line-height: 1.6;">
+                  {item.a}
+                </p>
               </div>
             ))}
           </div>
@@ -575,10 +661,10 @@ export function PrivateInvestors({ locale }: PrivateInvestorsProps) {
       </section>
 
       {/* CTA */}
-      <section class="invest-stats" style="padding: 80px 40px;">
-        <div class="invest-stats__container" style="text-align: center;">
-          <h2 class="invest-stats__title" style="margin-bottom: 32px;">Bereit zu investieren?</h2>
-          <a href={t.cta.href} class="btn btn--white btn--lg btn--with-arrow">
+      <section class="invest-cta">
+        <div class="invest-cta__container">
+          <h2 class="invest-cta__title">{t.ctaSection.title}</h2>
+          <a href={t.cta.href} class="btn btn--dark btn--with-arrow">
             {t.cta.label}
             <ButtonArrow />
           </a>

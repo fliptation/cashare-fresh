@@ -133,6 +133,11 @@ const content = {
       email: "institutional@cashare.ch",
       phone: "+41 41 544 61 70",
     },
+    ctaSection: {
+      title: "Bereit zu investieren?",
+      buttonLabel: "Jetzt Anleger werden",
+      href: "/werde-anleger/",
+    },
   },
   en: {
     backLink: { label: "Back to overview", href: "/en/invest" },
@@ -257,6 +262,11 @@ const content = {
       email: "institutional@cashare.ch",
       phone: "+41 41 544 61 70",
     },
+    ctaSection: {
+      title: "Ready to invest?",
+      buttonLabel: "Become an investor",
+      href: "/en/become-investor/",
+    },
   },
   fr: {
     backLink: { label: "Retour a l'apercu", href: "/fr/investir" },
@@ -379,6 +389,11 @@ const content = {
         "Notre equipe de ventes institutionnelles est disponible pour une consultation personnelle.",
       email: "institutional@cashare.ch",
       phone: "+41 41 544 61 70",
+    },
+    ctaSection: {
+      title: "Prêt à investir?",
+      buttonLabel: "Devenir investisseur",
+      href: "/fr/devenir-investisseur/",
     },
   },
 };
@@ -553,6 +568,20 @@ export function InstitutionalInvestors(
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section class="invest-cta">
+        <div class="invest-cta__container">
+          <h2 class="invest-cta__title">{t.ctaSection.title}</h2>
+          <a
+            href={t.ctaSection.href}
+            class="btn btn--dark btn--with-arrow"
+          >
+            {t.ctaSection.buttonLabel}
+            <ButtonArrow />
+          </a>
         </div>
       </section>
     </>
