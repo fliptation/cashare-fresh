@@ -2,6 +2,7 @@ import type { Locale } from "../../lib/i18n/index.ts";
 import { Projects } from "../Projects.tsx";
 import YieldCalculator from "../../islands/calculator/YieldCalculator.tsx";
 import CountingStats from "../../islands/CountingStats.tsx";
+import { ButtonArrow } from "../ButtonArrow.tsx";
 
 interface InvestierenProps {
   locale: Locale;
@@ -309,9 +310,7 @@ export function Investieren({ locale }: InvestierenProps) {
             <div class="invest-hero__actions">
               <a href={t.ctaHref} class="btn btn--dark btn--with-arrow">
                 {t.cta}
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <ButtonArrow />
               </a>
             </div>
           </div>

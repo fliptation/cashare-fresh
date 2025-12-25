@@ -1795,3 +1795,48 @@
     gap: 20px;
   }
 }
+
+/* ==========================================================================
+   Regulation Item (Security page)
+   ========================================================================== */
+
+.regulation-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 24px;
+  border-radius: var(--radius-lg);
+}
+
+.regulation-item__label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.regulation-item__value {
+  font-size: var(--text-base);
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+/* Benefits Grid 3 columns */
+.benefits-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .benefits-grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* How It Works Timeline */
+.hiw-timeline {
+  text-align: center;
+  margin-top: 48px;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-primary);
+}

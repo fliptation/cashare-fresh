@@ -60,8 +60,7 @@ const content = {
         {
           icon: "inventory",
           title: "Warenbestand",
-          description:
-            "Finanzieren Sie Lagerbestände und saisonale Einkäufe.",
+          description: "Finanzieren Sie Lagerbestände und saisonale Einkäufe.",
         },
       ],
     },
@@ -80,8 +79,7 @@ const content = {
         },
         {
           title: "Kreditauszahlung",
-          description:
-            "Die Mittel werden nach Dokumentation ausgezahlt.",
+          description: "Die Mittel werden nach Dokumentation ausgezahlt.",
         },
       ],
     },
@@ -134,7 +132,8 @@ const content = {
     hero: {
       badge: "SME Loan",
       title: "Flexible Financing Solutions for Your Business",
-      subtitle: "Find the right SME loan with us for growth, investments and liquidity.",
+      subtitle:
+        "Find the right SME loan with us for growth, investments and liquidity.",
       cta: "Apply for Loan",
     },
     loanTypes: {
@@ -179,14 +178,12 @@ const content = {
         {
           icon: "liquidity",
           title: "Liquidity",
-          description:
-            "Short-term cash flow solutions for operational needs.",
+          description: "Short-term cash flow solutions for operational needs.",
         },
         {
           icon: "inventory",
           title: "Inventory",
-          description:
-            "Finance stock and seasonal purchases.",
+          description: "Finance stock and seasonal purchases.",
         },
       ],
     },
@@ -205,8 +202,7 @@ const content = {
         },
         {
           title: "Loan Disbursement",
-          description:
-            "Funds are disbursed after documentation is complete.",
+          description: "Funds are disbursed after documentation is complete.",
         },
       ],
     },
@@ -259,7 +255,8 @@ const content = {
     hero: {
       badge: "Crédit PME",
       title: "Solutions de financement flexibles pour votre entreprise",
-      subtitle: "Trouvez le bon crédit PME chez nous pour la croissance, les investissements et la liquidité.",
+      subtitle:
+        "Trouvez le bon crédit PME chez nous pour la croissance, les investissements et la liquidité.",
       cta: "Demander un credit",
     },
     loanTypes: {
@@ -310,8 +307,7 @@ const content = {
         {
           icon: "inventory",
           title: "Stock",
-          description:
-            "Financez les stocks et les achats saisonniers.",
+          description: "Financez les stocks et les achats saisonniers.",
         },
       ],
     },
@@ -386,8 +382,7 @@ function getIcon(type: string) {
   const icons: Record<string, string> = {
     equipment:
       "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z",
-    growth:
-      "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
+    growth: "M13 7h8m0 0v8m0-8l-8 8-4-4-6 6",
     refinance:
       "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15",
     liquidity:
@@ -410,7 +405,7 @@ export function KmuKredit({ locale }: KmuKreditProps) {
             <span class="product-hero__badge">{t.hero.badge}</span>
             <h1 class="product-hero__title">{t.hero.title}</h1>
             <p class="product-hero__text">{t.hero.subtitle}</p>
-            <a href="/kredit-beantragen" class="btn btn--outline">
+            <a href="/kredit-beantragen" class="btn btn--white">
               {t.hero.cta}
             </a>
           </div>
@@ -529,7 +524,9 @@ export function KmuKredit({ locale }: KmuKreditProps) {
                 {t.advantages.items.map((item, index) => (
                   <div key={index} class="advantage-card">
                     <h3 class="advantage-card__title">{item.title}</h3>
-                    <p class="advantage-card__description">{item.description}</p>
+                    <p class="advantage-card__description">
+                      {item.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -558,7 +555,10 @@ export function KmuKredit({ locale }: KmuKreditProps) {
           <div class="cta-block">
             <h2 class="cta-block__title">{t.cta.title}</h2>
             <p class="cta-block__subtitle">{t.cta.subtitle}</p>
-            <a href="/kredit-beantragen/kmu-kredit/" class="btn btn--dark btn--lg">
+            <a
+              href="/kredit-beantragen/kmu-kredit/"
+              class="btn btn--dark btn--lg"
+            >
               {t.cta.button}
             </a>
           </div>

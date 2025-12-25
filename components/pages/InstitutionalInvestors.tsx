@@ -1,5 +1,6 @@
 import type { Locale } from "../../lib/i18n/index.ts";
 import { Projects } from "../Projects.tsx";
+import { ButtonArrow } from "../ButtonArrow.tsx";
 
 interface InstitutionalInvestorsProps {
   locale: Locale;
@@ -423,15 +424,7 @@ export function InstitutionalInvestors(
             <div class="invest-hero__actions">
               <a href={t.cta.href} class="btn btn--dark btn--with-arrow">
                 {t.cta.label}
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M4 10h12m0 0l-4-4m4 4l-4 4"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <ButtonArrow />
               </a>
             </div>
           </div>

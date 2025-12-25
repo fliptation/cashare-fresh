@@ -10,13 +10,16 @@ const content = {
     hero: {
       title: "Privatkredit",
       subtitle: "Ein persönlicher Kredit, so individuell wie Sie",
-      text: "In wenigen Schritten zur Finanzierung. Realisieren Sie Ihre Pläne schnell und unkompliziert mit Cashare.",
+      text:
+        "In wenigen Schritten zur Finanzierung. Realisieren Sie Ihre Pläne schnell und unkompliziert mit Cashare.",
       cta: "Kredit beantragen",
     },
     creditTypes: {
       title: "Unsere Produkte",
-      subtitle: "Flexible und sichere Privatkredite für Ihre individuellen Bedürfnisse",
-      description: "Schnell, transparent und fair – Finanzielle Lösungen für jede Lebenslage",
+      subtitle:
+        "Flexible und sichere Privatkredite für Ihre individuellen Bedürfnisse",
+      description:
+        "Schnell, transparent und fair – Finanzielle Lösungen für jede Lebenslage",
       items: [
         {
           icon: "refinance",
@@ -27,14 +30,12 @@ const content = {
         {
           icon: "education",
           title: "Ausbildungskredit",
-          description:
-            "Bildungsfinanzierung ohne finanzielle Barrieren.",
+          description: "Bildungsfinanzierung ohne finanzielle Barrieren.",
         },
         {
           icon: "renovation",
           title: "Kredit für Renovierung",
-          description:
-            "Kredite für Heimwerker- und Renovierungsprojekte.",
+          description: "Kredite für Heimwerker- und Renovierungsprojekte.",
         },
         {
           icon: "car",
@@ -77,18 +78,31 @@ const content = {
       ],
     },
     requirements: {
-      title: "Welche Voraussetzungen müssen Sie für einen Kreditantrag erfüllen?",
+      title:
+        "Welche Voraussetzungen müssen Sie für einen Kreditantrag erfüllen?",
       items: [
         { icon: "age", text: "Sie sind mindestens 18 Jahre" },
-        { icon: "residence", text: "Sie sind CH/LI-Bürger oder besitzen eine gültige Aufenthaltsbewilligung für die Schweiz (CH) oder Liechtenstein (LI)" },
+        {
+          icon: "residence",
+          text:
+            "Sie sind CH/LI-Bürger oder besitzen eine gültige Aufenthaltsbewilligung für die Schweiz (CH) oder Liechtenstein (LI)",
+        },
         { icon: "bank", text: "Sie haben ein Schweizer Bankkonto" },
-        { icon: "income", text: "Sie haben eine unbefristete Anstellung oder ein regelmässiges Einkommen" },
-        { icon: "debt", text: "Sie haben keine offenen Betreibungen und/oder Verlustscheine" },
+        {
+          icon: "income",
+          text:
+            "Sie haben eine unbefristete Anstellung oder ein regelmässiges Einkommen",
+        },
+        {
+          icon: "debt",
+          text: "Sie haben keine offenen Betreibungen und/oder Verlustscheine",
+        },
       ],
     },
     trust: {
       title: "Warum Cashare?",
-      subtitle: "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet. Mit über 60'000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge haben wir uns das Vertrauen tausender Kunden erarbeitet.",
+      subtitle:
+        "Cashare wurde 2008 als erste Crowdlending-Plattform der Schweiz gegründet. Mit über 60'000 Kunden und CHF 2,5 Milliarden geprüfter Kreditanträge haben wir uns das Vertrauen tausender Kunden erarbeitet.",
       stats: [
         { value: "2008", label: "Gegründet" },
         { value: "60'000+", label: "Kunden" },
@@ -107,8 +121,7 @@ const content = {
         },
         {
           title: "Attraktive Renditen",
-          description:
-            "Investoren profitieren von attraktiven Renditen.",
+          description: "Investoren profitieren von attraktiven Renditen.",
         },
         {
           title: "Risikomanagement",
@@ -118,7 +131,8 @@ const content = {
     },
     cta: {
       title: "Bereit für Ihren persönlichen Kredit?",
-      subtitle: "Starten Sie jetzt Ihren Antrag - schnell, einfach und transparent.",
+      subtitle:
+        "Starten Sie jetzt Ihren Antrag - schnell, einfach und transparent.",
       button: "Jetzt Kredit beantragen",
     },
   },
@@ -126,13 +140,15 @@ const content = {
     hero: {
       title: "Personal Loan",
       subtitle: "A Personal Loan as Individual as You",
-      text: "Get financing in just a few steps. Realize your plans quickly and easily with Cashare.",
+      text:
+        "Get financing in just a few steps. Realize your plans quickly and easily with Cashare.",
       cta: "Apply for Loan",
     },
     creditTypes: {
       title: "Our Products",
       subtitle: "Flexible and secure personal loans for your individual needs",
-      description: "Fast, transparent and fair – Financial solutions for every situation",
+      description:
+        "Fast, transparent and fair – Financial solutions for every situation",
       items: [
         {
           icon: "refinance",
@@ -149,14 +165,12 @@ const content = {
         {
           icon: "renovation",
           title: "Renovation",
-          description:
-            "Finance kitchens, living spaces, and home renovations.",
+          description: "Finance kitchens, living spaces, and home renovations.",
         },
         {
           icon: "car",
           title: "Car Loan",
-          description:
-            "Flexible terms for purchasing a new or used vehicle.",
+          description: "Flexible terms for purchasing a new or used vehicle.",
         },
         {
           icon: "celebration",
@@ -167,8 +181,7 @@ const content = {
         {
           icon: "health",
           title: "Health Loan",
-          description:
-            "Finance dental treatments and medical procedures.",
+          description: "Finance dental treatments and medical procedures.",
         },
       ],
     },
@@ -196,15 +209,27 @@ const content = {
       title: "What requirements do you need to meet for a loan application?",
       items: [
         { icon: "age", text: "You are at least 18 years old" },
-        { icon: "residence", text: "You are a CH/LI citizen or have a valid residence permit for Switzerland (CH) or Liechtenstein (LI)" },
+        {
+          icon: "residence",
+          text:
+            "You are a CH/LI citizen or have a valid residence permit for Switzerland (CH) or Liechtenstein (LI)",
+        },
         { icon: "bank", text: "You have a Swiss bank account" },
-        { icon: "income", text: "You have a permanent position or regular income" },
-        { icon: "debt", text: "You have no outstanding debt collection proceedings and/or loss certificates" },
+        {
+          icon: "income",
+          text: "You have a permanent position or regular income",
+        },
+        {
+          icon: "debt",
+          text:
+            "You have no outstanding debt collection proceedings and/or loss certificates",
+        },
       ],
     },
     trust: {
       title: "Why Cashare?",
-      subtitle: "Cashare was founded in 2008 as Switzerland's first crowdlending platform. With over 60,000 customers and CHF 2.5 billion in reviewed loan applications, we have earned the trust of thousands of customers.",
+      subtitle:
+        "Cashare was founded in 2008 as Switzerland's first crowdlending platform. With over 60,000 customers and CHF 2.5 billion in reviewed loan applications, we have earned the trust of thousands of customers.",
       stats: [
         { value: "2008", label: "Founded" },
         { value: "60,000+", label: "Customers" },
@@ -223,8 +248,7 @@ const content = {
         },
         {
           title: "Attractive Returns",
-          description:
-            "Investors benefit from attractive returns.",
+          description: "Investors benefit from attractive returns.",
         },
         {
           title: "Risk Management",
@@ -242,13 +266,16 @@ const content = {
     hero: {
       title: "Crédit privé",
       subtitle: "Un crédit personnel aussi unique que vous",
-      text: "Obtenez un financement en quelques étapes. Réalisez vos projets rapidement et simplement avec Cashare.",
+      text:
+        "Obtenez un financement en quelques étapes. Réalisez vos projets rapidement et simplement avec Cashare.",
       cta: "Demander un crédit",
     },
     creditTypes: {
       title: "Nos produits",
-      subtitle: "Des crédits privés flexibles et sécurisés pour vos besoins individuels",
-      description: "Rapide, transparent et équitable – Des solutions financières pour chaque situation",
+      subtitle:
+        "Des crédits privés flexibles et sécurisés pour vos besoins individuels",
+      description:
+        "Rapide, transparent et équitable – Des solutions financières pour chaque situation",
       items: [
         {
           icon: "refinance",
@@ -283,8 +310,7 @@ const content = {
         {
           icon: "health",
           title: "Crédit sante",
-          description:
-            "Financez soins dentaires et interventions medicales.",
+          description: "Financez soins dentaires et interventions medicales.",
         },
       ],
     },
@@ -309,18 +335,31 @@ const content = {
       ],
     },
     requirements: {
-      title: "Quelles conditions devez-vous remplir pour une demande de crédit?",
+      title:
+        "Quelles conditions devez-vous remplir pour une demande de crédit?",
       items: [
         { icon: "age", text: "Vous avez au moins 18 ans" },
-        { icon: "residence", text: "Vous êtes citoyen CH/LI ou possédez un permis de séjour valide pour la Suisse (CH) ou le Liechtenstein (LI)" },
+        {
+          icon: "residence",
+          text:
+            "Vous êtes citoyen CH/LI ou possédez un permis de séjour valide pour la Suisse (CH) ou le Liechtenstein (LI)",
+        },
         { icon: "bank", text: "Vous avez un compte bancaire suisse" },
-        { icon: "income", text: "Vous avez un emploi permanent ou un revenu régulier" },
-        { icon: "debt", text: "Vous n'avez pas de poursuites en cours et/ou d'actes de défaut de biens" },
+        {
+          icon: "income",
+          text: "Vous avez un emploi permanent ou un revenu régulier",
+        },
+        {
+          icon: "debt",
+          text:
+            "Vous n'avez pas de poursuites en cours et/ou d'actes de défaut de biens",
+        },
       ],
     },
     trust: {
       title: "Pourquoi Cashare?",
-      subtitle: "Cashare a été fondée en 2008 en tant que première plateforme de crowdlending de Suisse. Avec plus de 60'000 clients et CHF 2,5 milliards de demandes de crédit examinées, nous avons gagné la confiance de milliers de clients.",
+      subtitle:
+        "Cashare a été fondée en 2008 en tant que première plateforme de crowdlending de Suisse. Avec plus de 60'000 clients et CHF 2,5 milliards de demandes de crédit examinées, nous avons gagné la confiance de milliers de clients.",
       stats: [
         { value: "2008", label: "Fondée" },
         { value: "60'000+", label: "Clients" },
@@ -344,13 +383,15 @@ const content = {
         },
         {
           title: "Gestion des risques",
-          description: "Gestion robuste des risques pour toutes les parties concernées.",
+          description:
+            "Gestion robuste des risques pour toutes les parties concernées.",
         },
       ],
     },
     cta: {
       title: "Pret pour votre crédit personnel?",
-      subtitle: "Commencez votre demande maintenant - rapide, simple et transparent.",
+      subtitle:
+        "Commencez votre demande maintenant - rapide, simple et transparent.",
       button: "Demander un crédit maintenant",
     },
   },
@@ -364,7 +405,8 @@ function getIcon(type: string) {
       "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222",
     renovation:
       "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
-    car: "M8 17a2 2 0 100-4 2 2 0 000 4zm8 0a2 2 0 100-4 2 2 0 000 4zM5 11l1.5-4.5a2 2 0 011.9-1.5h7.2a2 2 0 011.9 1.5L19 11M5 11h14M5 11v6h14v-6",
+    car:
+      "M8 17a2 2 0 100-4 2 2 0 000 4zm8 0a2 2 0 100-4 2 2 0 000 4zM5 11l1.5-4.5a2 2 0 011.9-1.5h7.2a2 2 0 011.9 1.5L19 11M5 11h14M5 11v6h14v-6",
     celebration:
       "M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18z",
     health:
@@ -387,7 +429,10 @@ const requirementIcons: Record<string, JSX.Element> = {
         </linearGradient>
       </defs>
       <circle cx="20" cy="13" r="7" fill="url(#age-head)" />
-      <path d="M9 34c0-6.075 4.925-11 11-11s11 4.925 11 11" fill="url(#age-body)" />
+      <path
+        d="M9 34c0-6.075 4.925-11 11-11s11 4.925 11 11"
+        fill="url(#age-body)"
+      />
       <circle cx="17" cy="11" r="1.5" fill="#fbbf24" opacity="0.4" />
     </svg>
   ),
@@ -419,7 +464,14 @@ const requirementIcons: Record<string, JSX.Element> = {
         </linearGradient>
       </defs>
       <path d="M20 6L4 16h32L20 6z" fill="url(#bank-top-pk)" />
-      <rect x="6" y="16" width="28" height="18" rx="1" fill="url(#bank-main-pk)" />
+      <rect
+        x="6"
+        y="16"
+        width="28"
+        height="18"
+        rx="1"
+        fill="url(#bank-main-pk)"
+      />
       <rect x="10" y="20" width="3" height="10" rx="1" fill="#cffafe" />
       <rect x="18.5" y="20" width="3" height="10" rx="1" fill="#cffafe" />
       <rect x="27" y="20" width="3" height="10" rx="1" fill="#cffafe" />
@@ -434,9 +486,26 @@ const requirementIcons: Record<string, JSX.Element> = {
           <stop offset="100%" stop-color="#a78bfa" />
         </linearGradient>
       </defs>
-      <rect x="8" y="8" width="24" height="24" rx="5" fill="url(#income-bg-pk)" />
-      <path d="M14 20h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
-      <path d="M20 14v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+      <rect
+        x="8"
+        y="8"
+        width="24"
+        height="24"
+        rx="5"
+        fill="url(#income-bg-pk)"
+      />
+      <path
+        d="M14 20h12"
+        stroke="#fff"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
+      <path
+        d="M20 14v12"
+        stroke="#fff"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
     </svg>
   ),
   debt: (
@@ -467,7 +536,7 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
             <span class="product-hero__badge">{t.hero.title}</span>
             <h1 class="product-hero__title">{t.hero.subtitle}</h1>
             <p class="product-hero__text">{t.hero.text}</p>
-            <a href="/privatdarlehen-beantragen" class="btn btn--outline">
+            <a href="/privatdarlehen-beantragen" class="btn btn--white">
               {t.hero.cta}
             </a>
           </div>
@@ -540,7 +609,9 @@ export function Privatkredit({ locale }: PrivatkreditProps) {
           <div class="requirements__timeline">
             {t.requirements.items.map((item, index) => (
               <div
-                class={`requirements__item ${index % 2 === 1 ? "requirements__item--right" : ""}`}
+                class={`requirements__item ${
+                  index % 2 === 1 ? "requirements__item--right" : ""
+                }`}
                 key={index}
               >
                 <div class="requirements__item-content">

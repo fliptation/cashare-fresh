@@ -21,14 +21,22 @@ const content = {
           title: "Standard Hypothek",
           description:
             "Klassische Hypothekarfinanzierung bis 80% des Immobilienwerts mit attraktiven Zinsen und flexiblen Laufzeiten.",
-          features: ["Bis 80% Belehnung", "Attraktive Zinsen", "Flexible Laufzeiten"],
+          features: [
+            "Bis 80% Belehnung",
+            "Attraktive Zinsen",
+            "Flexible Laufzeiten",
+          ],
         },
         {
           icon: "layers",
           title: "Mezzanine-Finanzierung",
           description:
             "Für professionelle Investoren und Entwickler; nachrangige Darlehensstrukturen zur Ergänzung von Eigenkapital für grössere Immobilienprojekte.",
-          features: ["Für Profis", "Erhöhte Eigenkapitalrendite", "Grossprojekte"],
+          features: [
+            "Für Profis",
+            "Erhöhte Eigenkapitalrendite",
+            "Grossprojekte",
+          ],
         },
         {
           icon: "renovation",
@@ -42,7 +50,11 @@ const content = {
           title: "Hypothek für KMU",
           description:
             "Massgeschneiderte Lösungen für KMU beim Erwerb oder Umbau von Gewerbeimmobilien; erfordert angemessene Eigenkapitalquote.",
-          features: ["Für Unternehmen", "Gewerbeimmobilien", "Massgeschneidert"],
+          features: [
+            "Für Unternehmen",
+            "Gewerbeimmobilien",
+            "Massgeschneidert",
+          ],
         },
       ],
     },
@@ -88,19 +100,23 @@ const content = {
       items: [
         {
           title: "Kompetitive Zinsen",
-          description: "Attraktive Konditionen dank direkter Vermittlung zwischen Kreditnehmern und Investoren.",
+          description:
+            "Attraktive Konditionen dank direkter Vermittlung zwischen Kreditnehmern und Investoren.",
         },
         {
           title: "Individuelle Beratung",
-          description: "Persönliche Betreuung durch erfahrene Immobilienfinanzierungs-Experten.",
+          description:
+            "Persönliche Betreuung durch erfahrene Immobilienfinanzierungs-Experten.",
         },
         {
           title: "Schnelle Abwicklung",
-          description: "Effiziente digitale Prozesse für kurze Bearbeitungszeiten.",
+          description:
+            "Effiziente digitale Prozesse für kurze Bearbeitungszeiten.",
         },
         {
           title: "Vielfältige Lösungen",
-          description: "Massgeschneiderte Finanzierungen für verschiedene Immobilientypen und Bedürfnisse.",
+          description:
+            "Massgeschneiderte Finanzierungen für verschiedene Immobilientypen und Bedürfnisse.",
         },
       ],
     },
@@ -115,7 +131,8 @@ const content = {
         {
           icon: "investor",
           title: "Immobilieninvestoren",
-          description: "Für den Erwerb und die Entwicklung von Renditeobjekten.",
+          description:
+            "Für den Erwerb und die Entwicklung von Renditeobjekten.",
         },
         {
           icon: "business",
@@ -221,19 +238,23 @@ const content = {
       items: [
         {
           title: "Competitive Rates",
-          description: "Attractive conditions through direct matching between borrowers and investors.",
+          description:
+            "Attractive conditions through direct matching between borrowers and investors.",
         },
         {
           title: "Individual Advice",
-          description: "Personal support from experienced real estate financing experts.",
+          description:
+            "Personal support from experienced real estate financing experts.",
         },
         {
           title: "Fast Processing",
-          description: "Efficient digital processes for short processing times.",
+          description:
+            "Efficient digital processes for short processing times.",
         },
         {
           title: "Diverse Solutions",
-          description: "Tailored financing for various property types and needs.",
+          description:
+            "Tailored financing for various property types and needs.",
         },
       ],
     },
@@ -354,11 +375,13 @@ const content = {
       items: [
         {
           title: "Taux competitifs",
-          description: "Conditions attractives grace a la mise en relation directe entre emprunteurs et investisseurs.",
+          description:
+            "Conditions attractives grace a la mise en relation directe entre emprunteurs et investisseurs.",
         },
         {
           title: "Conseil individuel",
-          description: "Accompagnement personnel par des experts en financement immobilier.",
+          description:
+            "Accompagnement personnel par des experts en financement immobilier.",
         },
         {
           title: "Traitement rapide",
@@ -366,7 +389,8 @@ const content = {
         },
         {
           title: "Solutions variees",
-          description: "Financements sur mesure pour differents types de biens et besoins.",
+          description:
+            "Financements sur mesure pour differents types de biens et besoins.",
         },
       ],
     },
@@ -381,7 +405,8 @@ const content = {
         {
           icon: "investor",
           title: "Investisseurs immobiliers",
-          description: "Pour l'acquisition et le developpement d'immeubles de rapport.",
+          description:
+            "Pour l'acquisition et le developpement d'immeubles de rapport.",
         },
         {
           icon: "business",
@@ -408,7 +433,8 @@ const content = {
 
 function getIcon(type: string) {
   const icons: Record<string, string> = {
-    home: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+    home:
+      "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
     layers:
       "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
     renovation:
@@ -436,7 +462,7 @@ export function Hypothek({ locale }: HypothekProps) {
             <span class="product-hero__badge">{t.hero.badge}</span>
             <h1 class="product-hero__title">{t.hero.title}</h1>
             <p class="product-hero__text">{t.hero.subtitle}</p>
-            <a href="/kredit-beantragen" class="btn btn--outline">
+            <a href="/kredit-beantragen" class="btn btn--white">
               {t.hero.cta}
             </a>
           </div>

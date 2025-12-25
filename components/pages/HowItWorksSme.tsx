@@ -9,7 +9,6 @@ const content = {
     title: "KMU-Kredit",
     subtitle: "So funktioniert Ihre Unternehmensfinanzierung",
     heroText: "Massgeschneiderte P2P-Geschaftskredite für Unternehmer und KMU - Entscheidung in 48 Stunden.",
-    backLink: { label: "Zurück zu So funktioniert's", href: "/so-funktionierts" },
     advantages: [
       { title: "Schnell", description: "Schnelle Antragsprufung mit raschem Geldtransfer nach Finanzierung" },
       { title: "Tiefe Zinsen", description: "Ab 3.9% - wettbewerbsfahige Crowdlending-Konditionen ohne Bank" },
@@ -51,7 +50,6 @@ const content = {
     title: "SME Loan",
     subtitle: "How your business financing works",
     heroText: "Tailored P2P business loans for entrepreneurs and SMEs - decision within 48 hours.",
-    backLink: { label: "Back to How It Works", href: "/en/how-it-works" },
     advantages: [
       { title: "Fast", description: "Quick application review with rapid fund transfer after financing" },
       { title: "Low Interest", description: "From 3.9% - competitive crowdlending rates without traditional banking" },
@@ -93,7 +91,6 @@ const content = {
     title: "Crédit PME",
     subtitle: "Comment fonctionne votre financement d'entreprise",
     heroText: "Credits P2P sur mesure pour entrepreneurs et PME - decision en 48 heures.",
-    backLink: { label: "Retour a Comment ca marche", href: "/fr/comment-ca-marche" },
     advantages: [
       { title: "Rapide", description: "Examen rapide de la demande avec transfert de fonds rapide apres financement" },
       { title: "Taux bas", description: "A partir de 3.9% - taux crowdlending competitifs sans banque traditionnelle" },
@@ -139,34 +136,22 @@ export function HowItWorksSme({ locale }: HowItWorksSmeProps) {
   return (
     <>
       {/* Hero Section */}
-      <section class="py-20 md:py-32 bg-gradient-to-br from-amber-900 via-amber-800 to-orange-900 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-          <div class="absolute -top-40 -right-40 w-80 h-80 bg-amber-400 rounded-full blur-3xl"></div>
-          <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-400 rounded-full blur-3xl"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <a href={t.backLink.href} class="inline-flex items-center text-amber-200 hover:text-white mb-8 transition-colors">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-            {t.backLink.label}
-          </a>
-          <div class="text-center">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">{t.title}</h1>
-            <p class="text-xl md:text-2xl text-amber-100 mb-4 max-w-3xl mx-auto">{t.subtitle}</p>
-            <p class="text-lg text-amber-100 max-w-2xl mx-auto">{t.heroText}</p>
-          </div>
+      <section class="subpage-hero">
+        <div class="subpage-hero__container">
+          <h1 class="subpage-hero__title">{t.title}</h1>
+          <p class="subpage-hero__subtitle">{t.subtitle}</p>
+          <p class="subpage-hero__subtitle">{t.heroText}</p>
         </div>
       </section>
 
       {/* Advantages */}
-      <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid md:grid-cols-3 gap-8">
+      <section class="subpage-section subpage-section--white">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="benefits-grid benefits-grid--3">
             {t.advantages.map((item, index) => (
-              <div key={index} class="bg-amber-50 rounded-2xl p-8 text-center">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p class="text-gray-600">{item.description}</p>
+              <div key={index} class="benefits-grid__item">
+                <h3 class="benefits-grid__title">{item.title}</h3>
+                <p class="benefits-grid__desc">{item.description}</p>
               </div>
             ))}
           </div>
@@ -174,14 +159,16 @@ export function HowItWorksSme({ locale }: HowItWorksSmeProps) {
       </section>
 
       {/* Loan Types */}
-      <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">{t.loanTypes.title}</h2>
-          <div class="grid md:grid-cols-3 gap-8">
+      <section class="subpage-section subpage-section--gray">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.loanTypes.title}</h2>
+          </div>
+          <div class="solution-grid">
             {t.loanTypes.items.map((item, index) => (
-              <div key={index} class="bg-white rounded-xl p-6 shadow-sm">
-                <h3 class="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p class="text-gray-600">{item.description}</p>
+              <div key={index} class="solution-card">
+                <h3 class="solution-card__title">{item.title}</h3>
+                <p class="solution-card__desc">{item.description}</p>
               </div>
             ))}
           </div>
@@ -189,40 +176,40 @@ export function HowItWorksSme({ locale }: HowItWorksSmeProps) {
       </section>
 
       {/* Process Steps */}
-      <section class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">{t.process.title}</h2>
-          <div class="space-y-8">
+      <section class="subpage-section subpage-section--white">
+        <div class="subpage-section__container">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.process.title}</h2>
+          </div>
+          <div class="steps-list">
             {t.process.steps.map((step, index) => (
-              <div key={index} class="flex gap-6 items-start">
-                <div class="flex-shrink-0 w-12 h-12 bg-amber-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
-                  {step.step}
-                </div>
-                <div class="flex-1 pt-2">
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-                  <p class="text-gray-600">{step.description}</p>
+              <div key={index} class="steps-list__item">
+                <div class="steps-list__number">{step.step}</div>
+                <div class="steps-list__content">
+                  <div class="steps-list__title">{step.title}</div>
+                  <div class="steps-list__desc">{step.description}</div>
                 </div>
               </div>
             ))}
           </div>
-          <div class="mt-12 text-center">
-            <p class="text-lg text-amber-600 font-medium">{t.process.timeline}</p>
-          </div>
+          <p class="hiw-timeline">{t.process.timeline}</p>
         </div>
       </section>
 
       {/* Requirements */}
-      <section class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">{t.requirements.title}</h2>
-          <div class="bg-white rounded-2xl p-8">
-            <ul class="grid md:grid-cols-2 gap-4">
+      <section class="subpage-section subpage-section--gray">
+        <div class="subpage-section__container">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.requirements.title}</h2>
+          </div>
+          <div class="two-col__item">
+            <ul class="check-list">
               {t.requirements.items.map((item, index) => (
-                <li key={index} class="flex items-center gap-3">
-                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <li key={index} class="check-list__item">
+                  <svg class="check-list__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span class="text-gray-700">{item}</span>
+                  <span class="check-list__text">{item}</span>
                 </li>
               ))}
             </ul>
@@ -231,14 +218,11 @@ export function HowItWorksSme({ locale }: HowItWorksSmeProps) {
       </section>
 
       {/* CTA */}
-      <section class="py-20 bg-gradient-to-r from-amber-600 to-orange-600">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p class="text-xl text-amber-100 mb-4">{t.stats}</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">{t.cta.title}</h2>
-          <a
-            href={t.cta.button.href}
-            class="inline-flex items-center px-8 py-4 bg-white text-amber-900 font-semibold rounded-lg hover:bg-amber-50 transition-colors"
-          >
+      <section class="subpage-cta">
+        <div class="subpage-cta__container">
+          <p class="subpage-cta__text">{t.stats}</p>
+          <h2 class="subpage-cta__title">{t.cta.title}</h2>
+          <a href={t.cta.button.href} class="subpage-cta__button">
             {t.cta.button.label}
           </a>
         </div>

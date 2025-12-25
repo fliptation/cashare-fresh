@@ -7,50 +7,49 @@ interface SecurityProps {
 const content = {
   de: {
     title: "Sicherheit",
-    subtitle: "Ihre Sicherheit ist unsere hochste Prioritat!",
-    heroText: "Jeder Kreditnehmer und Anleger wird personlich identifiziert, um Missbrauch zu verhindern.",
-    backLink: { label: "Zur Startseite", href: "/" },
+    subtitle: "Ihre Sicherheit ist unsere höchste Priorität!",
+    heroText: "Jeder Kreditnehmer und jeder Investor ist persönlich identifiziert, so dass ein Missbrauch verhindert werden kann",
     sections: [
       {
-        title: "Anlegerschutz",
+        title: "Sicherheit für Investoren",
         icon: "shield",
         items: [
-          "Personliche Identifikation aller Parteien",
-          "Bonitatsprufung der Kreditnehmer",
-          "Kreditwurdigkeitsprufung über renommierte Datenbanken",
-          "Nur Kredite mit Rating bis 'C' werden gelistet",
-          "Portfolio-Diversifikation über mehrere Kreditnehmer",
-          "Zahlungsabwicklung und Inkasso durch die Plattform",
+          "Persönliche Identifikation aller Parteien",
+          "Kreditfähigkeitsprüfung der Darlehensnehmer",
+          "Bonitätsprüfung mit Daten von renommierten Datenbanken",
+          'Aufschaltung nur bis Rating „C"',
+          "Diversifikation über verschiedene Darlehensnehmer",
+          "Abwicklung aller Zahlungen und notwendigen Inkassomassnahmen",
         ],
       },
       {
-        title: "Kreditnehmerschutz",
+        title: "Sicherheit für Kreditnehmer",
         icon: "user-shield",
         items: [
-          "Personliche Identifikationsanforderungen",
-          "Anonymitat wahrend des Auktionsprozesses",
-          "Kreditnehmer legen ihren Maximalzins selbst fest",
-          "Bonitatsprufungen verhindern Uberschuldung",
-          "Zahlungsabwicklung durch Cashare",
+          "Persönliche Identifikation aller Parteien",
+          "Anonymität",
+          "Maximalen Zinssatz selber festlegen",
+          "Kreditfähigkeitsprüfung schützt vor Überschuldung",
+          "Abwicklung der Zahlungen",
         ],
       },
       {
         title: "Datenschutz",
         icon: "lock",
         items: [
-          "Anonymitat wahrend Auktionen für alle Parteien",
-          "Personliche Daten werden nicht an Dritte weitergegeben",
-          "Passworter sind Cashare-Mitarbeitern unbekannt",
-          "Daten sind vor unbefugtem Zugriff geschutzt",
+          "Alle Parteien bleiben während der Auktion Anonym",
+          "Cashare gibt Ihre personenbezogenen Daten nicht an Dritte weiter",
+          "Ihr Passwort ist den Mitarbeitern von Cashare nicht bekannt. Cashare wird nie nach Ihrem Passwort fragen.",
+          "Cashare versichert Ihnen, dass Ihre Daten gegen unbefugten Zugriff durch Dritte geschützt sind.",
         ],
       },
       {
-        title: "Plattform-Sicherheit",
+        title: "Plattformsicherheit",
         icon: "server",
         items: [
-          "256-Bit SSL-Verschlusselung",
-          "Obligatorische personliche Registrierung und Identifikation",
-          "Server mit Firewalls, Anti-Phishing und Antivirus geschutzt",
+          'Die Cashare-Plattform wird mit einer starken „256bit SSL" (Secure Sockets Layer) Verschlüsselung verschlüsselt',
+          "Um eine sichere und faire Abwicklung zwischen den Parteien zu gewährleisten, müssen sich alle Benutzer persönlich registrieren und identifizieren",
+          "Die Server sind mit den neuesten Firewalls, Anti-Phishing- und Virenschutzprogrammen geschützt",
         ],
       },
     ],
@@ -60,7 +59,7 @@ const content = {
         { label: "Datenschutz", value: "Registriert beim EDOB (Eidg. Datenschutzbeauftragter)" },
         { label: "Selbstregulierung", value: "Mitglied der SRO Polyreg" },
         { label: "Konsumkredit", value: "Lizenzierter Konsumkreditanbieter" },
-        { label: "Geldwaschegesetz", value: "Lizenziert nach Schweizer Geldwaschereigesetz" },
+        { label: "Geldwäschegesetz", value: "Lizenziert nach Schweizer Geldwäschereigesetz" },
         { label: "Kantonale Lizenz", value: "Lizenziert durch Volkswirtschaftsdirektion Kanton Zug" },
       ],
     },
@@ -69,7 +68,6 @@ const content = {
     title: "Security",
     subtitle: "Your security is our highest priority!",
     heroText: "Every borrower and investor is personally identified to prevent misuse.",
-    backLink: { label: "To Homepage", href: "/en" },
     sections: [
       {
         title: "Investor Protection",
@@ -77,7 +75,7 @@ const content = {
         items: [
           "Personal identification of all parties",
           "Creditworthiness assessment of borrowers",
-          "Crédit rating checks using reputable databases",
+          "Credit rating checks using reputable databases",
           "Only loans rated up to 'C' are listed",
           "Portfolio diversification across multiple borrowers",
           "Payment processing and collection handled by platform",
@@ -115,11 +113,11 @@ const content = {
       },
     ],
     regulation: {
-      title: "Régulation & Compliance",
+      title: "Regulation & Compliance",
       items: [
         { label: "Data Protection", value: "Registered with Swiss Federal Data Protection Commissioner" },
-        { label: "Self-Régulation", value: "Member of SRO Polyreg" },
-        { label: "Consumer Credit", value: "Licensed consumer crédit provider" },
+        { label: "Self-Regulation", value: "Member of SRO Polyreg" },
+        { label: "Consumer Credit", value: "Licensed consumer credit provider" },
         { label: "Anti-Money Laundering", value: "Licensed under Swiss Money Laundering Act" },
         { label: "Cantonal License", value: "Licensed by Canton Zug's Economic Affairs Directorate" },
       ],
@@ -127,18 +125,17 @@ const content = {
   },
   fr: {
     title: "Sécurité",
-    subtitle: "Votre sécurité est notre priorite absolue!",
-    heroText: "Chaque emprunteur et investisseur est personnellement identifie pour prevenir les abus.",
-    backLink: { label: "Vers l'accueil", href: "/fr" },
+    subtitle: "Votre sécurité est notre priorité absolue!",
+    heroText: "Chaque emprunteur et investisseur est personnellement identifié pour prévenir les abus.",
     sections: [
       {
         title: "Protection des investisseurs",
         icon: "shield",
         items: [
           "Identification personnelle de toutes les parties",
-          "Evaluation de la solvabilite des emprunteurs",
-          "Verification du crédit via des bases de donnees reputees",
-          "Seuls les prets notes jusqu'a 'C' sont listes",
+          "Évaluation de la solvabilité des emprunteurs",
+          "Vérification du crédit via des bases de données réputées",
+          "Seuls les prêts notés jusqu'à 'C' sont listés",
           "Diversification du portefeuille sur plusieurs emprunteurs",
           "Traitement des paiements et recouvrement par la plateforme",
         ],
@@ -148,20 +145,20 @@ const content = {
         icon: "user-shield",
         items: [
           "Exigences d'identification personnelle",
-          "Anonymat maintenu pendant le processus d'enchere",
-          "Les emprunteurs fixent leur taux d'interet maximum",
-          "Les verifications de solvabilite empechent le surendettement",
-          "Traitement des paiements gere par Cashare",
+          "Anonymat maintenu pendant le processus d'enchère",
+          "Les emprunteurs fixent leur taux d'intérêt maximum",
+          "Les vérifications de solvabilité empêchent le surendettement",
+          "Traitement des paiements géré par Cashare",
         ],
       },
       {
-        title: "Protection des donnees",
+        title: "Protection des données",
         icon: "lock",
         items: [
-          "Anonymat maintenu pendant les encheres pour toutes les parties",
-          "Donnees personnelles non partagees avec des tiers",
+          "Anonymat maintenu pendant les enchères pour toutes les parties",
+          "Données personnelles non partagées avec des tiers",
           "Mots de passe inconnus du personnel Cashare",
-          "Donnees protegees contre l'acces non autorise",
+          "Données protégées contre l'accès non autorisé",
         ],
       },
       {
@@ -170,16 +167,16 @@ const content = {
         items: [
           "Cryptage SSL 256 bits",
           "Inscription et identification personnelles obligatoires",
-          "Serveurs proteges par pare-feu, anti-phishing et antivirus",
+          "Serveurs protégés par pare-feu, anti-phishing et antivirus",
         ],
       },
     ],
     regulation: {
-      title: "Régulation & Conformite",
+      title: "Régulation & Conformité",
       items: [
-        { label: "Protection des donnees", value: "Enregistre aupres du PFPDT" },
-        { label: "Autoregulation", value: "Membre de SRO Polyreg" },
-        { label: "Crédit a la consommation", value: "Fournisseur agree de crédit a la consommation" },
+        { label: "Protection des données", value: "Enregistré auprès du PFPDT" },
+        { label: "Autorégulation", value: "Membre de SRO Polyreg" },
+        { label: "Crédit à la consommation", value: "Fournisseur agréé de crédit à la consommation" },
         { label: "Anti-blanchiment", value: "Licence selon la loi suisse sur le blanchiment" },
         { label: "Licence cantonale", value: "Licence du canton de Zoug" },
       ],
@@ -190,61 +187,31 @@ const content = {
 export function Security({ locale }: SecurityProps) {
   const t = content[locale];
 
-  const icons: Record<string, string> = {
-    shield: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>`,
-    "user-shield": `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>`,
-    lock: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>`,
-    server: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>`,
-  };
-
   return (
     <>
       {/* Hero Section */}
-      <section class="py-20 md:py-32 bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-          <div class="absolute -top-40 -right-40 w-80 h-80 bg-green-400 rounded-full blur-3xl"></div>
-          <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-emerald-400 rounded-full blur-3xl"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <a href={t.backLink.href} class="inline-flex items-center text-green-200 hover:text-white mb-8 transition-colors">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-            {t.backLink.label}
-          </a>
-          <div class="text-center">
-            <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-8">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-            </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">{t.title}</h1>
-            <p class="text-xl md:text-2xl text-green-100 mb-4 max-w-3xl mx-auto">{t.subtitle}</p>
-            <p class="text-lg text-green-100 max-w-2xl mx-auto">{t.heroText}</p>
-          </div>
+      <section class="subpage-hero">
+        <div class="subpage-hero__container">
+          <h1 class="subpage-hero__title">{t.title}</h1>
+          <p class="subpage-hero__subtitle">{t.subtitle}</p>
+          <p class="subpage-hero__subtitle">{t.heroText}</p>
         </div>
       </section>
 
       {/* Security Sections */}
-      <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid md:grid-cols-2 gap-8">
+      <section class="subpage-section subpage-section--white">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="two-col">
             {t.sections.map((section, index) => (
-              <div key={index} class="bg-gray-50 rounded-2xl p-8">
-                <div class="flex items-center gap-4 mb-6">
-                  <div
-                    class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center text-green-600"
-                    dangerouslySetInnerHTML={{ __html: icons[section.icon] }}
-                  />
-                  <h2 class="text-xl font-bold text-gray-900">{section.title}</h2>
-                </div>
-                <ul class="space-y-3">
+              <div key={index} class="two-col__item">
+                <h2 class="two-col__title">{section.title}</h2>
+                <ul class="check-list">
                   {section.items.map((item, itemIndex) => (
-                    <li key={itemIndex} class="flex items-start gap-3">
-                      <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <li key={itemIndex} class="check-list__item">
+                      <svg class="check-list__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      <span class="text-gray-700">{item}</span>
+                      <span class="check-list__text">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -254,15 +221,17 @@ export function Security({ locale }: SecurityProps) {
         </div>
       </section>
 
-      {/* Régulation Section */}
-      <section class="py-20 bg-green-900">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">{t.regulation.title}</h2>
-          <div class="grid md:grid-cols-2 gap-6">
+      {/* Regulation Section */}
+      <section class="subpage-section subpage-section--primary">
+        <div class="subpage-section__container">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.regulation.title}</h2>
+          </div>
+          <div class="two-col">
             {t.regulation.items.map((item, index) => (
-              <div key={index} class="bg-white/10 rounded-xl p-6">
-                <div class="text-green-300 text-sm font-medium mb-2">{item.label}</div>
-                <div class="text-white font-medium">{item.value}</div>
+              <div key={index} class="regulation-item">
+                <span class="regulation-item__label">{item.label}</span>
+                <span class="regulation-item__value">{item.value}</span>
               </div>
             ))}
           </div>

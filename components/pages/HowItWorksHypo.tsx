@@ -9,7 +9,6 @@ const content = {
     title: "Hypothek",
     subtitle: "So funktioniert Ihre Immobilienfinanzierung",
     heroText: "Optimale Hypothekenlösungen für Ihren Immobilienkauf - über Crowdlending statt traditioneller Bank.",
-    backLink: { label: "Zurück zu So funktioniert's", href: "/so-funktionierts" },
     advantages: [
       { title: "Kosteneffizient", description: "Als Vermittler reduzieren wir Bankkosten und geben Einsparungen weiter" },
       { title: "Attraktive Zinsen", description: "Ab 2.1% dank unserer modernen Plattform" },
@@ -49,7 +48,6 @@ const content = {
     title: "Mortgage",
     subtitle: "How your real estate financing works",
     heroText: "Optimal mortgage solutions for your property purchase - through crowdlending instead of traditional banking.",
-    backLink: { label: "Back to How It Works", href: "/en/how-it-works" },
     advantages: [
       { title: "Cost Efficient", description: "As intermediary, we reduce bank costs and pass savings to you" },
       { title: "Competitive Rates", description: "From 2.1% thanks to our modern platform" },
@@ -89,7 +87,6 @@ const content = {
     title: "Hypotheque",
     subtitle: "Comment fonctionne votre financement immobilier",
     heroText: "Solutions hypothecaires optimales pour votre achat immobilier - via crowdlending au lieu de la banque traditionnelle.",
-    backLink: { label: "Retour a Comment ca marche", href: "/fr/comment-ca-marche" },
     advantages: [
       { title: "Rentable", description: "En tant qu'intermediaire, nous reduisons les couts bancaires et vous faisons beneficier des economies" },
       { title: "Taux competitifs", description: "A partir de 2.1% grace a notre plateforme moderne" },
@@ -133,34 +130,22 @@ export function HowItWorksHypo({ locale }: HowItWorksHypoProps) {
   return (
     <>
       {/* Hero Section */}
-      <section class="py-20 md:py-32 bg-gradient-to-br from-emerald-900 via-emerald-800 to-green-900 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-          <div class="absolute -top-40 -right-40 w-80 h-80 bg-emerald-400 rounded-full blur-3xl"></div>
-          <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-green-400 rounded-full blur-3xl"></div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <a href={t.backLink.href} class="inline-flex items-center text-emerald-200 hover:text-white mb-8 transition-colors">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-            {t.backLink.label}
-          </a>
-          <div class="text-center">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">{t.title}</h1>
-            <p class="text-xl md:text-2xl text-emerald-100 mb-4 max-w-3xl mx-auto">{t.subtitle}</p>
-            <p class="text-lg text-emerald-100 max-w-2xl mx-auto">{t.heroText}</p>
-          </div>
+      <section class="subpage-hero">
+        <div class="subpage-hero__container">
+          <h1 class="subpage-hero__title">{t.title}</h1>
+          <p class="subpage-hero__subtitle">{t.subtitle}</p>
+          <p class="subpage-hero__subtitle">{t.heroText}</p>
         </div>
       </section>
 
       {/* Advantages */}
-      <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid md:grid-cols-3 gap-8">
+      <section class="subpage-section subpage-section--white">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="benefits-grid benefits-grid--3">
             {t.advantages.map((item, index) => (
-              <div key={index} class="bg-emerald-50 rounded-2xl p-8 text-center">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p class="text-gray-600">{item.description}</p>
+              <div key={index} class="benefits-grid__item">
+                <h3 class="benefits-grid__title">{item.title}</h3>
+                <p class="benefits-grid__desc">{item.description}</p>
               </div>
             ))}
           </div>
@@ -168,19 +153,21 @@ export function HowItWorksHypo({ locale }: HowItWorksHypoProps) {
       </section>
 
       {/* Products */}
-      <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">{t.products.title}</h2>
-          <div class="grid md:grid-cols-3 gap-8">
+      <section class="subpage-section subpage-section--gray">
+        <div class="subpage-section__container subpage-section__container--wide">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.products.title}</h2>
+          </div>
+          <div class="solution-grid">
             {t.products.items.map((item, index) => (
-              <div key={index} class="bg-white rounded-xl p-6 shadow-sm">
-                <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div key={index} class="solution-card">
+                <div class="solution-card__icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                   </svg>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p class="text-gray-600">{item.description}</p>
+                <h3 class="solution-card__title">{item.title}</h3>
+                <p class="solution-card__desc">{item.description}</p>
               </div>
             ))}
           </div>
@@ -188,37 +175,37 @@ export function HowItWorksHypo({ locale }: HowItWorksHypoProps) {
       </section>
 
       {/* Process Steps */}
-      <section class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">{t.process.title}</h2>
-          <div class="space-y-8">
+      <section class="subpage-section subpage-section--white">
+        <div class="subpage-section__container">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.process.title}</h2>
+          </div>
+          <div class="steps-list">
             {t.process.steps.map((step, index) => (
-              <div key={index} class="flex gap-6 items-start">
-                <div class="flex-shrink-0 w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
-                  {step.step}
-                </div>
-                <div class="flex-1 pt-2">
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-                  <p class="text-gray-600">{step.description}</p>
+              <div key={index} class="steps-list__item">
+                <div class="steps-list__number">{step.step}</div>
+                <div class="steps-list__content">
+                  <div class="steps-list__title">{step.title}</div>
+                  <div class="steps-list__desc">{step.description}</div>
                 </div>
               </div>
             ))}
           </div>
-          <div class="mt-12 text-center">
-            <p class="text-lg text-emerald-600 font-medium">{t.process.timeline}</p>
-          </div>
+          <p class="hiw-timeline">{t.process.timeline}</p>
         </div>
       </section>
 
       {/* Requirements */}
-      <section class="py-20 bg-emerald-900">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">{t.requirements.title}</h2>
-          <div class="grid md:grid-cols-3 gap-6">
+      <section class="subpage-section subpage-section--primary">
+        <div class="subpage-section__container">
+          <div class="subpage-section__header">
+            <h2 class="subpage-section__title">{t.requirements.title}</h2>
+          </div>
+          <div class="two-col">
             {t.requirements.items.map((item, index) => (
-              <div key={index} class="bg-white/10 rounded-xl p-6 text-center">
-                <div class="text-emerald-300 text-sm font-medium mb-2">{item.label}</div>
-                <div class="text-white text-xl font-bold">{item.value}</div>
+              <div key={index} class="regulation-item">
+                <span class="regulation-item__label">{item.label}</span>
+                <span class="regulation-item__value">{item.value}</span>
               </div>
             ))}
           </div>
@@ -226,13 +213,10 @@ export function HowItWorksHypo({ locale }: HowItWorksHypoProps) {
       </section>
 
       {/* CTA */}
-      <section class="py-20 bg-gradient-to-r from-emerald-600 to-green-600">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">{t.cta.title}</h2>
-          <a
-            href={t.cta.button.href}
-            class="inline-flex items-center px-8 py-4 bg-white text-emerald-900 font-semibold rounded-lg hover:bg-emerald-50 transition-colors"
-          >
+      <section class="subpage-cta">
+        <div class="subpage-cta__container">
+          <h2 class="subpage-cta__title">{t.cta.title}</h2>
+          <a href={t.cta.button.href} class="subpage-cta__button">
             {t.cta.button.label}
           </a>
         </div>

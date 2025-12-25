@@ -1,4 +1,5 @@
 import type { Locale } from "../lib/i18n/index.ts";
+import { ButtonArrow } from "./ButtonArrow.tsx";
 
 interface FooterProps {
   locale: Locale;
@@ -703,18 +704,9 @@ export function Footer({ locale }: FooterProps) {
                   class="footer__newsletter-input"
                   required
                 />
-                <button type="submit" class="btn btn--primary btn--near-form">
+                <button type="submit" class="btn btn--primary btn--near-form btn--with-arrow">
                   {content.newsletter.button}
-                  <svg
-                    class="footer__newsletter-arrow"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
+                  <ButtonArrow />
                 </button>
               </form>
             </div>
