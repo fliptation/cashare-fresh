@@ -68,12 +68,16 @@
 .investors__products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  grid-template-rows: auto auto auto auto; /* icon, title, description, link */
+  gap: 0.5rem;
   max-width: 900px;
   margin: 0 auto;
 }
 
 .investors__card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
   background: transparent;
   padding: 40px 32px;
   text-align: left;
@@ -127,6 +131,29 @@
   font-weight: 600;
 }
 
+.investors__card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: end;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray);
+  transition: color 0.2s ease;
+}
+
+.investors__card-link svg {
+  transition: transform 0.2s ease;
+}
+
+.investors__card:hover .investors__card-link {
+  color: var(--color-primary);
+}
+
+.investors__card:hover .investors__card-link svg {
+  transform: translateX(3px);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .investors {
@@ -165,6 +192,7 @@
 
   .investors__products {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
     gap: 40px;
   }
 
@@ -173,7 +201,13 @@
   }
 
   .investors__card {
+    display: block;
+    grid-row: auto;
     padding: 32px 24px;
+  }
+
+  .investors__card-link {
+    margin-top: 16px;
   }
 
   .investors__icon {

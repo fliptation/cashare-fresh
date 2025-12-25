@@ -105,8 +105,8 @@
 
 .faq__answer p {
   font-size: 1rem;
-  color: var(--color-gray);
   line-height: 1.7;
+  font-weight: 600;
   margin: 0;
 }
 

@@ -79,12 +79,6 @@
   padding: 32px 24px;
   border-radius: var(--radius-xl);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.wwa-credentials__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .wwa-credentials__icon {
@@ -273,12 +267,6 @@
   padding: 32px;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.wwa-why__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .wwa-why__card-title {
@@ -338,12 +326,6 @@
   padding: 28px 20px;
   background: var(--color-bg-section);
   border-radius: var(--radius-xl);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.wwa-team__card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card);
 }
 
 .wwa-team__avatar {
@@ -438,12 +420,6 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-xl);
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.wwa-board__card:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-4px);
 }
 
 .wwa-board__avatar {
@@ -538,13 +514,6 @@
   padding: 32px;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.wwa-benefits__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08),
-    0 12px 40px rgba(0, 181, 206, 0.08), 0 16px 56px rgba(0, 115, 153, 0.06);
 }
 
 .wwa-benefits__icon {

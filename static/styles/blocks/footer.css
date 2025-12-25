@@ -168,6 +168,10 @@
   width: auto;
 }
 
+.footer__partner-logo--lg {
+  height: 80px;
+}
+
 /* ==========================================================================
    Trust Badges Section - Horizontal flow layout
    ========================================================================== */
@@ -320,6 +324,10 @@
   .footer__partner-logo {
     height: 36px;
   }
+
+  .footer__partner-logo--lg {
+    height: 44px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -341,6 +349,10 @@
 
   .footer__partner-logo {
     height: 36px;
+  }
+
+  .footer__partner-logo--lg {
+    height: 44px;
   }
 
   .footer__social-top {

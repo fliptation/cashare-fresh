@@ -73,10 +73,14 @@
 .borrowers__products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto; /* icon, title, description, link */
   gap: 24px;
 }
 
 .borrowers__card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
   background: var(--color-white);
   border-radius: 16px;
   padding: 40px 32px;
@@ -136,6 +140,29 @@
   margin: 0;
 }
 
+.borrowers__card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: end;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray);
+  transition: color 0.2s ease;
+}
+
+.borrowers__card-link svg {
+  transition: transform 0.2s ease;
+}
+
+.borrowers__card:hover .borrowers__card-link {
+  color: var(--color-primary);
+}
+
+.borrowers__card:hover .borrowers__card-link svg {
+  transform: translateX(3px);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .borrowers {
@@ -178,11 +205,18 @@
 
   .borrowers__products {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
     gap: 16px;
   }
 
   .borrowers__card {
+    display: block;
+    grid-row: auto;
     padding: 32px 24px;
+  }
+
+  .borrowers__card-link {
+    margin-top: 16px;
   }
 
   .borrowers__icon {

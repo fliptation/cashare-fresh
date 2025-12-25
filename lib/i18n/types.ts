@@ -138,6 +138,7 @@ export interface CommonTranslations {
   CHF: string;
   Continue: string;
   Register: string;
+  learnMore: string;
   month: string;
   months: string;
   or: string;

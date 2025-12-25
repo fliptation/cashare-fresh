@@ -15,6 +15,7 @@ const sections = [
   { id: "shadows", label: "Schatten", icon: "shadow" },
   { id: "icons", label: "Icons", icon: "icons" },
   { id: "buttons", label: "Buttons", icon: "button" },
+  { id: "links", label: "Links", icon: "link" },
   { id: "alerts", label: "Alerts", icon: "alert" },
   { id: "loading", label: "Loading", icon: "loader" },
   { id: "modals", label: "Modals", icon: "modal" },
@@ -304,6 +305,8 @@ const icons = {
     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
   money:
     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>`,
+  link:
+    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>`,
 };
 
 // Breakpoints data
@@ -836,6 +839,7 @@ export default function Styleguide() {
                   <div class="styleguide__button-row">
                     <button class="btn btn--primary">Primary</button>
                     <button class="btn btn--secondary">Secondary</button>
+                    <button class="btn btn--dark">Dark</button>
                     <button class="btn btn--outline">Outline</button>
                     <button class="btn btn--ghost">Ghost</button>
                   </div>
@@ -859,6 +863,7 @@ export default function Styleguide() {
                   <div class="styleguide__button-row">
                     <button class="btn btn--primary btn--round">Primary Round</button>
                     <button class="btn btn--secondary btn--round">Secondary Round</button>
+                    <button class="btn btn--dark btn--round">Dark Round</button>
                     <button class="btn btn--outline btn--round">Outline Round</button>
                   </div>
                   <div class="styleguide__button-row" style="margin-top: 1rem;">
@@ -922,7 +927,62 @@ export default function Styleguide() {
               </div>
             </section>
 
-            {/* 10. Alerts Section */}
+            {/* 10. Links Section */}
+            <section id="links" class="styleguide__section">
+              <h2 class="styleguide__section-title">Links 🔗</h2>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Card Links (Light)</h3>
+                <p class="styleguide__description">
+                  Liechti Links für Chärtli - dezent aber klickbar! Verwendig: Borrowers & Investors Sections.
+                </p>
+                <div class="styleguide__demo">
+                  <div class="styleguide__links-demo">
+                    <a href="#" class="styleguide__card-link-demo">
+                      Mehr erfahren
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="styleguide__demo">
+                  <div class="styleguide__code-block">
+                    <code>.borrowers__card-link</code> - Link in Borrowers Cards<br/>
+                    <code>.investors__card-link</code> - Link in Investors Cards<br/>
+                    <br/>
+                    CSS Properties:<br/>
+                    <code>color: var(--color-gray)</code> - Default<br/>
+                    <code>color: var(--color-primary)</code> - Hover<br/>
+                    <code>font-size: 0.9375rem</code><br/>
+                    <code>font-weight: 500</code><br/>
+                    <code>align-self: end</code> - Bei Subgrid am Bode
+                  </div>
+                </div>
+              </div>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Standard Text Links</h3>
+                <div class="styleguide__demo">
+                  <p style="color: var(--color-gray);">
+                    Das isch en <a href="#" class="link">Standard Link</a> im Text.
+                    Und das isch en <a href="#" class="link link--primary">Primary Link</a>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="styleguide__group">
+                <h3 class="styleguide__group-title">Footer Links</h3>
+                <div class="styleguide__demo styleguide__demo--dark">
+                  <div class="styleguide__footer-links-demo">
+                    <a href="#" class="styleguide__footer-link-demo">Footer Link</a>
+                    <a href="#" class="styleguide__footer-link-demo styleguide__footer-link-demo--hover">Footer Link (Hover)</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* 11. Alerts Section */}
             <section id="alerts" class="styleguide__section">
               <h2 class="styleguide__section-title">Mäldigä & Notifications</h2>
 

@@ -1,4 +1,4 @@
-import type { Locale } from "../lib/i18n/index.ts";
+import { t, type Locale } from "../lib/i18n/index.ts";
 import { ButtonArrow } from "./ButtonArrow.tsx";
 
 interface InvestorsProps {
@@ -173,24 +173,25 @@ const icons = {
 };
 
 export function Investors({ locale }: InvestorsProps) {
-  const t = content[locale];
+  const c = content[locale];
+  const learnMore = t(locale, "common", "learnMore");
 
   return (
     <section class="investors">
       <div class="investors__background" />
       <div class="investors__container">
         <div class="investors__header">
-          <span class="investors__label">{t.label}</span>
-          <h2 class="investors__title">{t.title}</h2>
-          <p class="investors__subtitle">{t.subtitle}</p>
-          <a href={t.ctaHref} class="btn btn--dark btn--with-arrow">
-            {t.cta}
+          <span class="investors__label">{c.label}</span>
+          <h2 class="investors__title">{c.title}</h2>
+          <p class="investors__subtitle">{c.subtitle}</p>
+          <a href={c.ctaHref} class="btn btn--dark btn--with-arrow">
+            {c.cta}
             <ButtonArrow />
           </a>
         </div>
 
         <div class="investors__products">
-          {t.products.map((product) => (
+          {c.products.map((product) => (
             <a href={product.href} class="investors__card" key={product.title}>
               {icons[product.icon as keyof typeof icons]}
               <h3 class="investors__card-title">{product.title}</h3>
@@ -198,6 +199,12 @@ export function Investors({ locale }: InvestorsProps) {
                 class="investors__card-description"
                 dangerouslySetInnerHTML={{ __html: product.description }}
               />
+              <span class="investors__card-link">
+                {learnMore}
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
             </a>
           ))}
         </div>

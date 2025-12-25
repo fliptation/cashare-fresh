@@ -1,4 +1,4 @@
-import type { Locale } from "../lib/i18n/index.ts";
+import { t, type Locale } from "../lib/i18n/index.ts";
 import { ButtonArrow } from "./ButtonArrow.tsx";
 
 interface BorrowersProps {
@@ -192,28 +192,35 @@ const icons = {
 };
 
 export function Borrowers({ locale }: BorrowersProps) {
-  const t = content[locale];
+  const c = content[locale];
+  const learnMore = t(locale, "common", "learnMore");
 
   return (
     <section class="borrowers">
       <div class="borrowers__background" />
       <div class="borrowers__container">
         <div class="borrowers__header">
-          <span class="borrowers__label">{t.label}</span>
-          <h2 class="borrowers__title">{t.title}</h2>
-          <p class="borrowers__subtitle">{t.subtitle}</p>
-          <a href={t.ctaHref} class="btn btn--primary btn--with-arrow">
-            {t.cta}
+          <span class="borrowers__label">{c.label}</span>
+          <h2 class="borrowers__title">{c.title}</h2>
+          <p class="borrowers__subtitle">{c.subtitle}</p>
+          <a href={c.ctaHref} class="btn btn--primary btn--with-arrow">
+            {c.cta}
             <ButtonArrow />
           </a>
         </div>
 
         <div class="borrowers__products">
-          {t.products.map((product) => (
+          {c.products.map((product) => (
             <a href={product.href} class="borrowers__card" key={product.title}>
               {icons[product.icon as keyof typeof icons]}
               <h3 class="borrowers__card-title">{product.title}</h3>
               <p class="borrowers__card-description">{product.description}</p>
+              <span class="borrowers__card-link">
+                {learnMore}
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
             </a>
           ))}
         </div>

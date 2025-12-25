@@ -356,12 +356,6 @@
   background: var(--color-bg-section);
   border-radius: var(--radius-xl);
   border-top: 3px solid var(--color-primary);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.about-values__card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card);
 }
 
 .about-values__icon {

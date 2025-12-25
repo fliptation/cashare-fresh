@@ -498,7 +498,7 @@ export function Footer({ locale }: FooterProps) {
             <img
               src="/images/members/deutsche-boerse.png"
               alt="Deutsche Börse Venture Network"
-              class="footer__partner-logo"
+              class="footer__partner-logo footer__partner-logo--lg"
             />
             <img
               src="/images/members/Swiss-Finance-Logo.png"

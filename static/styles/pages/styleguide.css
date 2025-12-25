@@ -1259,6 +1259,57 @@ html:has(.styleguide-layout) {
 }
 
 /* ==========================================================================
+   Links Section
+   ========================================================================== */
+
+.styleguide__links-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  padding: var(--space-4);
+}
+
+.styleguide__card-link-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.styleguide__card-link-demo svg {
+  transition: transform 0.2s ease;
+}
+
+.styleguide__card-link-demo:hover {
+  color: var(--color-primary);
+}
+
+.styleguide__card-link-demo:hover svg {
+  transform: translateX(3px);
+}
+
+.styleguide__footer-links-demo {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.styleguide__footer-link-demo {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color 0.2s ease;
+}
+
+.styleguide__footer-link-demo:hover,
+.styleguide__footer-link-demo--hover {
+  color: var(--color-white);
+}
+
+/* ==========================================================================
    Animations Section
    ========================================================================== */
 
