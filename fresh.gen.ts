@@ -112,6 +112,7 @@ import * as $ueber_uns_wer_sind_wir from "./routes/ueber-uns/wer-sind-wir.tsx";
 import * as $AnimatedCounter from "./islands/AnimatedCounter.tsx";
 import * as $BlogIsland from "./islands/BlogIsland.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $CountingStats from "./islands/CountingStats.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $LoanApplicationForm from "./islands/LoanApplicationForm.tsx";
 import * as $LoanApplyForm from "./islands/LoanApplyForm.tsx";
@@ -265,6 +266,7 @@ const manifest = {
     "./islands/AnimatedCounter.tsx": $AnimatedCounter,
     "./islands/BlogIsland.tsx": $BlogIsland,
     "./islands/Counter.tsx": $Counter,
+    "./islands/CountingStats.tsx": $CountingStats,
     "./islands/Header.tsx": $Header,
     "./islands/LoanApplicationForm.tsx": $LoanApplicationForm,
     "./islands/LoanApplyForm.tsx": $LoanApplyForm,

@@ -334,14 +334,19 @@ export function KreditBeantragen({ locale }: KreditBeanttragenProps) {
   return (
     <>
       {/* Hero Section */}
-      <section class="subpage-hero">
-        <div class="subpage-hero__container">
-          <h1 class="subpage-hero__title">{t.title}</h1>
-          <p class="subpage-hero__subtitle">
-            {t.subtitle}
-            <br />
-            {t.heroText}
-          </p>
+      <section class="product-hero">
+        <div class="container">
+          <div class="product-hero__content">
+            <span class="product-hero__badge">
+              {locale === "de"
+                ? "Kredit beantragen"
+                : locale === "en"
+                ? "Apply for Credit"
+                : "Demander un crédit"}
+            </span>
+            <h1 class="product-hero__title">{t.title}</h1>
+            <p class="product-hero__text">{t.heroText}</p>
+          </div>
         </div>
       </section>
 

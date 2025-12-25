@@ -35,6 +35,7 @@
 @import url("components/skeleton.css");
 @import url("components/progress.css");
 @import url("components/top-bar.css");
+@import url("components/rating-table.css");
 
 /* Pages */
 @import url("pages/styleguide.css");
@@ -43,6 +44,7 @@
 @import url("pages/legal.css");
 @import url("pages/who-we-are.css");
 @import url("pages/press.css");
+@import url("pages/investieren.css");
 
 /* Blocks */
 @import url("blocks/hero.css");

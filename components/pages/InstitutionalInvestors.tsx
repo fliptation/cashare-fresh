@@ -100,11 +100,24 @@ const content = {
     },
     compliance: {
       title: "Regulierung & Compliance",
+      subtitle: "Höchste Sicherheitsstandards für Ihre Investitionen",
       items: [
-        "FINMA-regulierte Plattform",
-        "Schweizer Datenschutzstandards",
-        "Jahrliche Audits",
-        "AML/KYC-konform",
+        {
+          title: "FINMA-reguliert",
+          desc: "Als lizenzierter Finanzintermediär unterliegen wir der Aufsicht der Eidgenössischen Finanzmarktaufsicht.",
+        },
+        {
+          title: "Datenschutz",
+          desc: "Ihre Daten werden nach Schweizer Standards geschützt und in der Schweiz gehostet.",
+        },
+        {
+          title: "Jährliche Audits",
+          desc: "Unabhängige Prüfung durch PricewaterhouseCoopers garantiert Transparenz.",
+        },
+        {
+          title: "AML/KYC-konform",
+          desc: "Strenge Identitätsprüfung und Geldwäschereibekämpfung nach GwG.",
+        },
       ],
     },
     contact: {
@@ -117,7 +130,8 @@ const content = {
   },
   en: {
     backLink: { label: "Back to overview", href: "/en/invest" },
-    title: "Institutional Investors",
+    badge: "Institutional Investors",
+    title: "Invest successfully and professionally in loans!",
     subtitle:
       "Professional Private Debt solutions for banks, pension funds, and asset managers.",
     cta: { label: "Contact us", href: "mailto:institutional@cashare.ch" },
@@ -205,12 +219,25 @@ const content = {
       ],
     },
     compliance: {
-      title: "Régulation & Compliance",
+      title: "Regulation & Compliance",
+      subtitle: "Highest security standards for your investments",
       items: [
-        "FINMA-regulated platform",
-        "Swiss data protection standards",
-        "Annual audits",
-        "AML/KYC compliant",
+        {
+          title: "FINMA-regulated",
+          desc: "As a licensed financial intermediary, we are supervised by the Swiss Financial Market Supervisory Authority.",
+        },
+        {
+          title: "Data Protection",
+          desc: "Your data is protected according to Swiss standards and hosted in Switzerland.",
+        },
+        {
+          title: "Annual Audits",
+          desc: "Independent audits by PricewaterhouseCoopers guarantee transparency.",
+        },
+        {
+          title: "AML/KYC Compliant",
+          desc: "Strict identity verification and anti-money laundering according to AMLA.",
+        },
       ],
     },
     contact: {
@@ -223,7 +250,8 @@ const content = {
   },
   fr: {
     backLink: { label: "Retour a l'apercu", href: "/fr/investir" },
-    title: "Investisseurs Institutionnels",
+    badge: "Investisseurs Institutionnels",
+    title: "Investissez avec succès et professionnellement dans les crédits!",
     subtitle:
       "Solutions professionnelles de Private Debt pour les banques, caisses de pension et gestionnaires de fortune.",
     cta: { label: "Nous contacter", href: "mailto:institutional@cashare.ch" },
@@ -310,12 +338,25 @@ const content = {
       ],
     },
     compliance: {
-      title: "Régulation & Conformite",
+      title: "Régulation & Conformité",
+      subtitle: "Les plus hauts standards de sécurité pour vos investissements",
       items: [
-        "Plateforme regulee par la FINMA",
-        "Standards suisses de protection des donnees",
-        "Audits annuels",
-        "Conforme AML/KYC",
+        {
+          title: "Régulé FINMA",
+          desc: "En tant qu'intermédiaire financier agréé, nous sommes supervisés par l'Autorité fédérale de surveillance des marchés financiers.",
+        },
+        {
+          title: "Protection des données",
+          desc: "Vos données sont protégées selon les standards suisses et hébergées en Suisse.",
+        },
+        {
+          title: "Audits annuels",
+          desc: "Des audits indépendants par PricewaterhouseCoopers garantissent la transparence.",
+        },
+        {
+          title: "Conforme AML/KYC",
+          desc: "Vérification d'identité stricte et lutte contre le blanchiment selon la LBA.",
+        },
       ],
     },
     contact: {
@@ -328,6 +369,30 @@ const content = {
   },
 };
 
+const solutionIcons = [
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" /></svg>`,
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>`,
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" /></svg>`,
+];
+
+const benefitIcons = [
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>`,
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>`,
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
+];
+
+const complianceIcons = [
+  // FINMA - Shield with checkmark
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>`,
+  // Data Protection - Lock
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" /></svg>`,
+  // Audits - Clipboard check
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
+  // AML/KYC - User verification
+  `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" /></svg>`,
+];
+
 export function InstitutionalInvestors(
   { locale }: InstitutionalInvestorsProps,
 ) {
@@ -335,64 +400,52 @@ export function InstitutionalInvestors(
 
   return (
     <>
-      <section class="subpage-hero subpage-hero--investing">
-        <div class="subpage-hero__container">
-          <span class="subpage-hero__label">{t.badge}</span>
-          <h1 class="subpage-hero__title">{t.title}</h1>
-          <p class="subpage-hero__subtitle">{t.subtitle}</p>
-          <a
-            href={t.cta.href}
-            class="btn btn--dark"
-            style="margin-top: 32px;"
-          >
-            {t.cta.label}
-          </a>
-        </div>
-      </section>
-
-      <section class="subpage-section subpage-section--white">
-        <div class="subpage-section__container">
-          <div class="content-block" style="text-align: center;">
-            <h2 class="content-block__title" style="font-size: 2rem;">
-              {t.intro.title}
-            </h2>
-            <p
-              class="content-block__text"
-              style="max-width: 800px; margin: 0 auto;"
-            >
-              {t.intro.text}
-            </p>
+      {/* Hero */}
+      <section class="invest-hero">
+        <div class="invest-hero__container">
+          <div class="invest-hero__content">
+            <span class="invest-hero__label">{t.badge}</span>
+            <h1 class="invest-hero__title">{t.title}</h1>
+            <p class="invest-hero__subtitle">{t.subtitle}</p>
+            <div class="invest-hero__actions">
+              <a href={t.cta.href} class="btn btn--dark btn--with-arrow">
+                {t.cta.label}
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="invest-hero__visual">
+            <div class="invest-hero__stats-card">
+              <div class="invest-hero__stats-title">{t.intro.title}</div>
+              <p style="color: var(--color-gray); line-height: 1.7; font-size: 0.9375rem;">
+                {t.intro.text}
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="subpage-section subpage-section--gray">
-        <div class="subpage-section__container subpage-section__container--wide">
-          <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.solutions.title}</h2>
+      {/* Solutions */}
+      <section class="invest-types">
+        <div class="invest-types__container">
+          <div class="invest-benefits__header" style="margin-bottom: 48px;">
+            <h2 class="invest-benefits__title">{t.solutions.title}</h2>
           </div>
-          <div class="solution-grid">
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
             {t.solutions.items.map((solution, i) => (
-              <div key={i} class="solution-card">
-                <h3 class="solution-card__title">{solution.title}</h3>
-                <p class="solution-card__desc">{solution.desc}</p>
-                <div class="check-list">
+              <div key={i} class="invest-type-card" style="padding: 36px;">
+                <div class="invest-type-card__icon invest-type-card__icon--private" style="width: 56px; height: 56px; margin-bottom: 20px;" dangerouslySetInnerHTML={{ __html: solutionIcons[i] }} />
+                <h3 class="invest-type-card__title" style="font-size: 1.25rem; margin-bottom: 12px;">{solution.title}</h3>
+                <p class="invest-type-card__desc" style="margin-bottom: 20px;">{solution.desc}</p>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
                   {solution.features.map((feature, j) => (
-                    <div key={j} class="check-list__item">
-                      <svg
-                        class="check-list__icon"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
+                    <div key={j} style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; color: var(--color-gray);">
+                      <svg width="16" height="16" fill="none" stroke="#22c55e" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
-                      <span class="check-list__text">{feature}</span>
+                      {feature}
                     </div>
                   ))}
                 </div>
@@ -402,121 +455,77 @@ export function InstitutionalInvestors(
         </div>
       </section>
 
-      <section class="subpage-section subpage-section--white">
-        <div class="subpage-section__container subpage-section__container--wide">
-          <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.benefits.title}</h2>
+      {/* Benefits */}
+      <section class="invest-benefits">
+        <div class="invest-benefits__container">
+          <div class="invest-benefits__header">
+            <h2 class="invest-benefits__title">{t.benefits.title}</h2>
           </div>
-          <div class="benefit-row">
+          <div class="invest-benefits__grid">
             {t.benefits.items.map((benefit, i) => (
-              <div key={i} class="benefit-row__item">
-                <div class="benefit-row__icon">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                    />
-                  </svg>
-                </div>
-                <div class="benefit-row__content">
-                  <h3 class="benefit-row__title">{benefit.title}</h3>
-                  <p class="benefit-row__desc">{benefit.desc}</p>
-                </div>
+              <div key={i} class="invest-benefit">
+                <div class="invest-benefit__icon" dangerouslySetInnerHTML={{ __html: benefitIcons[i] }} />
+                <h3 class="invest-benefit__title">{benefit.title}</h3>
+                <p class="invest-benefit__desc">{benefit.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section class="subpage-section subpage-section--dark">
-        <div class="subpage-section__container subpage-section__container--wide">
-          <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.process.title}</h2>
+      {/* Process Steps */}
+      <section class="invest-steps">
+        <div class="invest-steps__container">
+          <div class="invest-steps__header">
+            <h2 class="invest-steps__title">{t.process.title}</h2>
           </div>
-          <div class="benefits-grid">
+          <div class="invest-steps__grid">
             {t.process.steps.map((step, i) => (
-              <div key={i} class="benefits-grid__item">
-                <div class="benefits-grid__icon">
-                  <span style="font-size: 1.5rem; font-weight: 800;">
-                    {i + 1}
-                  </span>
-                </div>
-                <h3 class="benefits-grid__title" style="color: white;">
-                  {step.title}
-                </h3>
-                <p
-                  class="benefits-grid__desc"
-                  style="color: rgba(255,255,255,0.8);"
-                >
-                  {step.desc}
-                </p>
+              <div key={i} class="invest-step">
+                <div class="invest-step__number">{i + 1}</div>
+                <h3 class="invest-step__title">{step.title}</h3>
+                <p class="invest-step__desc">{step.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section class="subpage-section subpage-section--gray">
-        <div class="subpage-section__container">
-          <div class="subpage-section__header">
-            <h2 class="subpage-section__title">{t.compliance.title}</h2>
+      {/* Compliance */}
+      <section class="inst-compliance">
+        <div class="inst-compliance__container">
+          <div class="inst-compliance__header">
+            <h2 class="inst-compliance__title">{t.compliance.title}</h2>
+            <p class="inst-compliance__subtitle">{t.compliance.subtitle}</p>
           </div>
-          <div class="compliance-list">
+          <div class="inst-compliance__grid">
             {t.compliance.items.map((item, i) => (
-              <div key={i} class="compliance-list__item">
-                <svg
-                  class="compliance-list__icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-                <span>{item}</span>
+              <div key={i} class="inst-compliance__card">
+                <div class="inst-compliance__icon" dangerouslySetInnerHTML={{ __html: complianceIcons[i] }} />
+                <h3 class="inst-compliance__card-title">{item.title}</h3>
+                <p class="inst-compliance__card-desc">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section class="subpage-section subpage-section--white">
-        <div class="subpage-section__container">
-          <div class="contact-section">
-            <h2 class="contact-section__title">{t.contact.title}</h2>
-            <p class="contact-section__text">{t.contact.text}</p>
-            <div class="contact-section__buttons">
-              <a
-                href={`mailto:${t.contact.email}`}
-                class="contact-section__btn contact-section__btn--primary"
-              >
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
+      {/* Contact CTA */}
+      <section class="invest-types" style="padding: 80px 40px;">
+        <div class="invest-types__container">
+          <div class="invest-type-card" style="max-width: 700px; margin: 0 auto; text-align: center; padding: 56px;">
+            <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-text); margin-bottom: 16px;">{t.contact.title}</h2>
+            <p style="color: var(--color-gray); line-height: 1.7; margin-bottom: 32px;">{t.contact.text}</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+              <a href={`mailto:${t.contact.email}`} class="btn btn--dark btn--with-arrow">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 {t.contact.email}
               </a>
-              <a
-                href={`tel:${t.contact.phone}`}
-                class="contact-section__btn contact-section__btn--secondary"
-              >
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
+              <a href={`tel:${t.contact.phone}`} class="btn btn--outline">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 {t.contact.phone}
               </a>
