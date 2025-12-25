@@ -103,7 +103,6 @@
   position: relative;
   display: none;
   height: 100%;
-  padding: 0 8px;
 }
 
 @media (min-width: 900px) {
@@ -790,8 +789,7 @@
   .stripe-nav__dropdown,
   .stripe-nav__panel,
   .stripe-nav__mobile,
-  .stripe-nav__backdrop,
-  .stripe-nav__highlight {
+  .stripe-nav__backdrop {
     transition: none;
   }
 
