@@ -38,10 +38,10 @@ export function generateOrganizationSchema() {
       "availableLanguage": ["German", "English", "French"],
     },
     "sameAs": [
-      "https://www.facebook.com/cashare.ch",
-      "https://www.linkedin.com/company/cashare",
-      "https://twitter.com/cashare_ch",
-      "https://www.instagram.com/cashare_ch",
+      "https://www.facebook.com/cashare",
+      "https://www.linkedin.com/company/cashare-ag",
+      "https://twitter.com/cashare",
+      "https://www.instagram.com/cashare.ch",
       "https://www.youtube.com/@cashare",
     ],
   };

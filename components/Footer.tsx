@@ -526,7 +526,7 @@ export function Footer({ locale }: FooterProps) {
         {/* Social Media Section - Top */}
         <div class="footer__social-top">
           <a
-            href="https://www.facebook.com/cashare.ch"
+            href="https://www.facebook.com/cashare"
             target="_blank"
             rel="noopener noreferrer"
             class="footer__social-icon"
@@ -543,7 +543,7 @@ export function Footer({ locale }: FooterProps) {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/company/cashare"
+            href="https://www.linkedin.com/company/cashare-ag"
             target="_blank"
             rel="noopener noreferrer"
             class="footer__social-icon"
@@ -560,7 +560,7 @@ export function Footer({ locale }: FooterProps) {
             </svg>
           </a>
           <a
-            href="https://twitter.com/cashare_ch"
+            href="https://twitter.com/cashare"
             target="_blank"
             rel="noopener noreferrer"
             class="footer__social-icon"
@@ -571,7 +571,7 @@ export function Footer({ locale }: FooterProps) {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/cashare_ch"
+            href="https://www.instagram.com/cashare.ch"
             target="_blank"
             rel="noopener noreferrer"
             class="footer__social-icon"
