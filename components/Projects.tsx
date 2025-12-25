@@ -1,4 +1,5 @@
 import type { Locale } from "../lib/i18n/index.ts";
+import { ButtonArrow } from "./ButtonArrow.tsx";
 
 interface ProjectsProps {
   locale: Locale;
@@ -262,8 +263,9 @@ export function Projects({ locale }: ProjectsProps) {
         </div>
 
         <div class="projects__footer">
-          <a href={t.ctaHref} class="btn btn--primary">
+          <a href={t.ctaHref} class="btn btn--primary btn--with-arrow">
             {t.cta}
+            <ButtonArrow />
           </a>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { computed, signal } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
 import type { Locale } from "../lib/i18n/index.ts";
 import { getAlternateUrls } from "../lib/i18n/routes.ts";
+import { ButtonArrow } from "../components/ButtonArrow.tsx";
 
 interface NavItem {
   label: string;
@@ -728,12 +729,14 @@ export default function StripeNav(
             </a>
           </div>
 
-          <a href={`${localePath}/login`} class="stripe-nav__login">
+          <a href={`${localePath}/login`} class="stripe-nav__login btn--with-arrow">
             {nav.login}
+            <ButtonArrow />
           </a>
 
-          <a href={nav.sections[0].href} class="btn btn--dark btn--sm">
+          <a href={nav.sections[0].href} class="btn btn--dark btn--sm btn--with-arrow">
             {nav.cta}
+            <ButtonArrow />
           </a>
 
           {/* Mobile Menu Toggle */}
@@ -861,10 +864,6 @@ export default function StripeNav(
               </div>
             </div>
           ))}
-
-          <a href={nav.sections[0].href} class="btn btn--primary">
-            {nav.cta}
-          </a>
 
           <a href={`${localePath}/login`} class="btn btn--white">
             {nav.login}

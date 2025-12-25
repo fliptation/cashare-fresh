@@ -1,4 +1,5 @@
 import type { Locale } from "../lib/i18n/index.ts";
+import { ButtonArrow } from "./ButtonArrow.tsx";
 
 interface InvestorsProps {
   locale: Locale;
@@ -182,8 +183,9 @@ export function Investors({ locale }: InvestorsProps) {
           <span class="investors__label">{t.label}</span>
           <h2 class="investors__title">{t.title}</h2>
           <p class="investors__subtitle">{t.subtitle}</p>
-          <a href={t.ctaHref} class="btn btn--dark">
+          <a href={t.ctaHref} class="btn btn--dark btn--with-arrow">
             {t.cta}
+            <ButtonArrow />
           </a>
         </div>
 

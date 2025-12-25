@@ -140,15 +140,15 @@
 }
 
 .stripe-nav__link:hover {
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .stripe-nav__link--current {
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .stripe-nav__item--active .stripe-nav__link {
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 /* Chevron */
@@ -425,6 +425,8 @@
 /* Login */
 .stripe-nav__login {
   display: none;
+  align-items: center;
+  gap: 4px;
   padding: 8px 16px;
   color: var(--color-text);
   text-decoration: none;
@@ -435,12 +437,12 @@
 
 @media (min-width: 900px) {
   .stripe-nav__login {
-    display: block;
+    display: flex;
   }
 }
 
 .stripe-nav__login:hover {
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 /* CTA Button */

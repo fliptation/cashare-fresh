@@ -1,4 +1,5 @@
 import type { Locale } from "../lib/i18n/index.ts";
+import { ButtonArrow } from "./ButtonArrow.tsx";
 
 interface BorrowersProps {
   locale: Locale;
@@ -201,8 +202,9 @@ export function Borrowers({ locale }: BorrowersProps) {
           <span class="borrowers__label">{t.label}</span>
           <h2 class="borrowers__title">{t.title}</h2>
           <p class="borrowers__subtitle">{t.subtitle}</p>
-          <a href={t.ctaHref} class="btn btn--primary">
+          <a href={t.ctaHref} class="btn btn--primary btn--with-arrow">
             {t.cta}
+            <ButtonArrow />
           </a>
         </div>
 

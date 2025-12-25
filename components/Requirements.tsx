@@ -1,4 +1,5 @@
 import type { Locale } from "../lib/i18n/index.ts";
+import { ButtonArrow } from "./ButtonArrow.tsx";
 
 interface RequirementsProps {
   locale: Locale;
@@ -315,8 +316,9 @@ function RequirementsList(
       </div>
 
       <div class="requirements__cta-wrapper">
-        <a href={section.ctaHref} class="btn btn--primary">
+        <a href={section.ctaHref} class="btn btn--primary btn--with-arrow">
           {section.cta}
+          <ButtonArrow />
         </a>
       </div>
     </div>

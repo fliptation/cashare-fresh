@@ -7,6 +7,7 @@ import {
 } from "../../lib/calculator/mod.ts";
 import { formatMoney, parseSwissNumber } from "../../lib/utils/format.ts";
 import { type Locale, t } from "../../lib/i18n/index.ts";
+import { ButtonArrow } from "../../components/ButtonArrow.tsx";
 
 type LoanType = "private" | "sme";
 
@@ -440,11 +441,12 @@ export default function LoanCalculator({
           <div class="loan-calculator__action">
             <a
               href={applicationUrl.value}
-              class={`btn btn--primary hover-lift shadow-primary ${
+              class={`btn btn--primary btn--with-arrow ${
                 amountError.value || lifetimeError.value ? "btn--disabled" : ""
               }`}
             >
               {tc("applyLoan")}
+              <ButtonArrow />
             </a>
           </div>
         </div>

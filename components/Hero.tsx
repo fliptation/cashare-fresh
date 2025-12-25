@@ -1,5 +1,6 @@
 import type { Locale } from "../lib/i18n/index.ts";
 import type { ComponentChildren } from "preact";
+import { ButtonArrow } from "./ButtonArrow.tsx";
 
 interface HeroProps {
   locale: Locale;
@@ -84,16 +85,18 @@ export function Hero({
           <div class="hero__actions text-reveal text-reveal-delay-3">
             <a
               href={primaryButton.href}
-              class="btn btn--white"
+              class="btn btn--white btn--with-arrow"
             >
               {primaryButton.text}
+              <ButtonArrow />
             </a>
 
             <a
               href={secondaryButton.href}
-              class="btn btn--dark"
+              class="btn btn--dark btn--with-arrow"
             >
               {secondaryButton.text}
+              <ButtonArrow />
             </a>
           </div>
         </div>
