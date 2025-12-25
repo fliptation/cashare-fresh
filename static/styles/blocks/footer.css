@@ -600,12 +600,23 @@
 
 @media (min-width: 640px) {
   .footer__links {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-6);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  .footer__links {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 880px) {
+  .footer__links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1180px) {
   .footer__links {
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-8);

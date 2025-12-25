@@ -27,37 +27,6 @@ const footerContent = {
           { label: "Investieren", href: "/investieren" },
         ],
       },
-      rates: {
-        title: "Raten & Gebühren",
-        links: [
-          { label: "Kreditnehmer", isLabel: true },
-          {
-            label: "Privatkredit",
-            href: "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
-          },
-          {
-            label: "KMU-Kredit",
-            href: "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
-          },
-          {
-            label: "Immobilien-Darlehen",
-            href: "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
-          },
-          {
-            label: "Mezzanine",
-            href: "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
-          },
-          { label: "Anleger", isLabel: true },
-          {
-            label: "Privat Anleger",
-            href: "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
-          },
-          {
-            label: "Institutionelle Anleger",
-            href: "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
-          },
-        ],
-      },
       company: {
         title: "Unternehmen",
         links: [
@@ -68,6 +37,43 @@ const footerContent = {
           { label: "Partner", href: "/ueber-uns/partner" },
           { label: "Blog", href: "/ueber-uns/blog" },
           { label: "Presse", href: "/ueber-uns/presse" },
+        ],
+      },
+      rates: {
+        title: "Raten & Gebühren",
+        links: [
+          { label: "Kreditnehmer", isLabel: true },
+          {
+            label: "Privatkredit",
+            href:
+              "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
+          },
+          {
+            label: "KMU-Kredit",
+            href:
+              "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
+          },
+          {
+            label: "Immobilien-Darlehen",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
+          },
+          {
+            label: "Mezzanine",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
+          },
+          { label: "Anleger", isLabel: true },
+          {
+            label: "Privat Anleger",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+          {
+            label: "Institutionelle Anleger",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
         ],
       },
       supportLegal: {
@@ -140,37 +146,6 @@ const footerContent = {
           { label: "Invest", href: "/en/invest" },
         ],
       },
-      rates: {
-        title: "Rates & Fees",
-        links: [
-          { label: "Borrowers", isLabel: true },
-          {
-            label: "Personal Loan",
-            href: "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
-          },
-          {
-            label: "SME Loan",
-            href: "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
-          },
-          {
-            label: "Real Estate Loan",
-            href: "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
-          },
-          {
-            label: "Mezzanine",
-            href: "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
-          },
-          { label: "Investors", isLabel: true },
-          {
-            label: "Private Investors",
-            href: "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
-          },
-          {
-            label: "Institutional Investors",
-            href: "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
-          },
-        ],
-      },
       company: {
         title: "Company",
         links: [
@@ -181,6 +156,43 @@ const footerContent = {
           { label: "Partners", href: "/en/about/partners" },
           { label: "Blog", href: "/en/about/blog" },
           { label: "Press", href: "/en/about/press" },
+        ],
+      },
+      rates: {
+        title: "Rates & Fees",
+        links: [
+          { label: "Borrowers", isLabel: true },
+          {
+            label: "Personal Loan",
+            href:
+              "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
+          },
+          {
+            label: "SME Loan",
+            href:
+              "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
+          },
+          {
+            label: "Real Estate Loan",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
+          },
+          {
+            label: "Mezzanine",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
+          },
+          { label: "Investors", isLabel: true },
+          {
+            label: "Private Investors",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+          {
+            label: "Institutional Investors",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
         ],
       },
       supportLegal: {
@@ -252,37 +264,6 @@ const footerContent = {
           { label: "Investir", href: "/fr/investir" },
         ],
       },
-      rates: {
-        title: "Taux & Frais",
-        links: [
-          { label: "Emprunteurs", isLabel: true },
-          {
-            label: "Crédit privé",
-            href: "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
-          },
-          {
-            label: "Crédit PME",
-            href: "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
-          },
-          {
-            label: "Prêt immobilier",
-            href: "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
-          },
-          {
-            label: "Mezzanine",
-            href: "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
-          },
-          { label: "Investisseurs", isLabel: true },
-          {
-            label: "Investisseurs privés",
-            href: "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
-          },
-          {
-            label: "Investisseurs institutionnels",
-            href: "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
-          },
-        ],
-      },
       company: {
         title: "Entreprise",
         links: [
@@ -293,6 +274,43 @@ const footerContent = {
           { label: "Partenaires", href: "/fr/a-propos/partenaires" },
           { label: "Blog", href: "/fr/a-propos/blog" },
           { label: "Presse", href: "/fr/a-propos/presse" },
+        ],
+      },
+      rates: {
+        title: "Taux & Frais",
+        links: [
+          { label: "Emprunteurs", isLabel: true },
+          {
+            label: "Crédit privé",
+            href:
+              "https://support.cashare.ch/hc/de/sections/360003965960-Geb%C3%BChren",
+          },
+          {
+            label: "Crédit PME",
+            href:
+              "https://support.cashare.ch/hc/de/sections/360004042840-Geb%C3%BChren",
+          },
+          {
+            label: "Prêt immobilier",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013844700-Wie-hoch-sind-die-Geb%C3%BChren-bei-einem-Cashare-Immobiliendarlehen",
+          },
+          {
+            label: "Mezzanine",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013908899-Wie-hoch-sind-die-Geb%C3%BChren-bei-Mezzanine-Finanzierung-mit-Cashare",
+          },
+          { label: "Investisseurs", isLabel: true },
+          {
+            label: "Investisseurs privés",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360013859920-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
+          {
+            label: "Investisseurs institutionnels",
+            href:
+              "https://support.cashare.ch/hc/de/articles/360014302880-Wie-hoch-ist-die-Plattformgeb%C3%BChr",
+          },
         ],
       },
       supportLegal: {
@@ -705,23 +723,28 @@ export function Footer({ locale }: FooterProps) {
           {/* Link Columns */}
           <div class="footer__links">
             {Object.values(content.sections).map((section) => (
-              <div key={section.title || "support-legal"} class="footer__column">
+              <div
+                key={section.title || "support-legal"}
+                class="footer__column"
+              >
                 {section.title && (
                   <h3 class="footer__column-title">{section.title}</h3>
                 )}
                 <ul class="footer__column-list">
                   {section.links.map((link) =>
-                    "isLabel" in link && link.isLabel ? (
-                      <li key={link.label} class="footer__sublabel">
-                        {link.label}
-                      </li>
-                    ) : (
-                      <li key={link.href}>
-                        <a href={link.href} class="footer__link">
+                    "isLabel" in link && link.isLabel
+                      ? (
+                        <li key={link.label} class="footer__sublabel">
                           {link.label}
-                        </a>
-                      </li>
-                    )
+                        </li>
+                      )
+                      : (
+                        <li key={link.href}>
+                          <a href={link.href} class="footer__link">
+                            {link.label}
+                          </a>
+                        </li>
+                      )
                   )}
                 </ul>
               </div>

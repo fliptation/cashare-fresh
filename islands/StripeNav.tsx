@@ -357,6 +357,13 @@ const isScrolled = signal(false);
 const isMobileMenuOpen = signal(false);
 const mobileActiveSection = signal<string | null>(null);
 
+// Nav link highlight state (sliding pill effect)
+const navHighlight = signal<{ left: number; width: number; opacity: number }>({
+  left: 0,
+  width: 0,
+  opacity: 0,
+});
+
 // Computed: is dropdown visible
 const isDropdownVisible = computed(() =>
   isNavHovered.value && activeSection.value !== null
@@ -524,6 +531,27 @@ export default function StripeNav(
     updateBackdropPosition(sectionId);
   };
 
+  // Handle nav link hover for sliding highlight
+  const handleNavLinkEnter = (sectionId: string) => {
+    const itemEl = itemRefs.current.get(sectionId);
+    const navEl = navRef.current;
+
+    if (itemEl && navEl) {
+      const navRect = navEl.getBoundingClientRect();
+      const itemRect = itemEl.getBoundingClientRect();
+
+      navHighlight.value = {
+        left: itemRect.left - navRect.left,
+        width: itemRect.width,
+        opacity: 1,
+      };
+    }
+  };
+
+  const handleNavAreaLeave = () => {
+    navHighlight.value = { ...navHighlight.value, opacity: 0 };
+  };
+
   const handleNavMouseLeave = () => {
     leaveTimeoutRef.current = window.setTimeout(() => {
       isNavHovered.value = false;
@@ -561,8 +589,21 @@ export default function StripeNav(
           <div
             class="stripe-nav__wrapper"
             ref={navRef}
-            onMouseLeave={handleNavMouseLeave}
+            onMouseLeave={() => {
+              handleNavMouseLeave();
+              handleNavAreaLeave();
+            }}
           >
+            {/* Sliding highlight pill */}
+            <div
+              class="stripe-nav__highlight"
+              style={{
+                transform: `translateX(${navHighlight.value.left}px)`,
+                width: `${navHighlight.value.width}px`,
+                opacity: navHighlight.value.opacity,
+              }}
+            />
+
             <nav class="stripe-nav__items">
               {nav.sections.map((section) => (
                 <div
@@ -573,8 +614,10 @@ export default function StripeNav(
                       ? "stripe-nav__item--active"
                       : ""
                   }`}
-                  onMouseEnter={() =>
-                    section.items && handleMouseEnter(section.id)}
+                  onMouseEnter={() => {
+                    handleNavLinkEnter(section.id);
+                    if (section.items) handleMouseEnter(section.id);
+                  }}
                 >
                   <a
                     href={section.href}

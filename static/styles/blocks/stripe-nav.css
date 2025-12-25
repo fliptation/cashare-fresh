@@ -103,6 +103,7 @@
   position: relative;
   display: none;
   height: 100%;
+  padding: 0 8px;
 }
 
 @media (min-width: 900px) {
@@ -112,11 +113,29 @@
   }
 }
 
+/* Sliding highlight pill */
+.stripe-nav__highlight {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 36px;
+  transform: translateY(-50%);
+  background: rgba(0, 181, 206, 0.08);
+  border-radius: 8px;
+  pointer-events: none;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.2s ease;
+  z-index: 0;
+}
+
 .stripe-nav__items {
   display: flex;
   align-items: center;
   gap: 4px;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .stripe-nav__item {
@@ -771,7 +790,8 @@
   .stripe-nav__dropdown,
   .stripe-nav__panel,
   .stripe-nav__mobile,
-  .stripe-nav__backdrop {
+  .stripe-nav__backdrop,
+  .stripe-nav__highlight {
     transition: none;
   }
 
