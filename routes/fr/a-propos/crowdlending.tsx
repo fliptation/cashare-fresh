@@ -7,7 +7,7 @@ export default function CrowdlendingFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/a-propos/crowdlending">
       <SeoHead
         title="Crowdlending"
         description="Qu'est-ce que le crowdlending? Découvrez le prêt participatif et comment Cashare met en relation investisseurs et emprunteurs en Suisse."

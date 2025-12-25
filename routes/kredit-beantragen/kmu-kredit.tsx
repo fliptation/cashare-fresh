@@ -7,7 +7,7 @@ export default function KmuKreditDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/kredit-beantragen/kmu-kredit" theme="borrowing">
       <SeoHead
         title="KMU-Kredit beantragen"
         description="Firmenkredit für Schweizer KMU von CHF 50'000 bis CHF 5 Mio. Flexible Finanzierung für Ihr Unternehmen. Schnelle Bearbeitung bei Cashare."

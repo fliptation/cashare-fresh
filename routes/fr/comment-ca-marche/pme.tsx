@@ -7,7 +7,7 @@ export default function PmeHowItWorksFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/comment-ca-marche/pme">
       <SeoHead
         title="Crédit PME - Comment ça marche"
         description="Comment fonctionne un crédit PME chez Cashare. Financement rapide d'entreprise via crowdlending pour petites et moyennes entreprises."

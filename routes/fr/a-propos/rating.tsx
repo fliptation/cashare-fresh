@@ -7,7 +7,7 @@ export default function RatingFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/a-propos/rating">
       <SeoHead
         title="Rating"
         description="Notation de crédit Cashare: Évaluation transparente de la solvabilité des emprunteurs. Découvrez comment fonctionne notre système de notation."

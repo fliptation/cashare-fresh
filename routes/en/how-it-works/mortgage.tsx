@@ -7,7 +7,7 @@ export default function MortgageHowItWorksEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/how-it-works/mortgage">
       <SeoHead
         title="Mortgage - How It Works"
         description="How mortgages work at Cashare. Alternative real estate financing through crowdlending in Switzerland."

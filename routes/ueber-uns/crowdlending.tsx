@@ -7,7 +7,7 @@ export default function CrowdlendingDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/ueber-uns/crowdlending">
       <SeoHead
         title="Was ist Crowdlending?"
         description="Crowdlending erklärt: Wie funktioniert Peer-to-Peer-Kredit in der Schweiz? Erfahren Sie alles über die alternative Finanzierungsform bei Cashare."

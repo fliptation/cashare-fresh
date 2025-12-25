@@ -7,7 +7,7 @@ export default function SecuriteFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/securite">
       <SeoHead
         title="Sécurité"
         description="Sécurité chez Cashare: Comment nous protégeons vos données et investissements. En savoir plus sur nos mesures de sécurité."

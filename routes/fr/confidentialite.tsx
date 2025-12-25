@@ -7,7 +7,7 @@ export default function ConfidentialiteFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/confidentialite">
       <SeoHead
         title="Politique de confidentialité"
         description="Politique de confidentialité de Cashare. Comment nous protégeons et traitons vos données sur la plateforme suisse de crowdlending."

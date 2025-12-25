@@ -7,7 +7,7 @@ export default function DemanderCreditPriveFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/demander-credit-prive">
       <SeoHead
         title="Demander un crédit privé"
         description="Demandez votre crédit privé chez Cashare maintenant. Demande de crédit rapide en ligne sur la plateforme suisse de crowdlending."

@@ -7,7 +7,7 @@ export default function StatisticsEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/about/statistics">
       <SeoHead
         title="Statistics"
         description="Cashare statistics: Funded loans, default rates, average returns. Transparent figures about our crowdlending platform."

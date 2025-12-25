@@ -7,7 +7,7 @@ export default function PrivateInvestorsEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/invest/private-investors">
       <SeoHead
         title="For Private Investors"
         description="Invest as a private individual in Swiss loans. From CHF 100 per loan. Attractive returns, transparent and secure."

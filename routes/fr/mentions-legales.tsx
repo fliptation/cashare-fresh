@@ -7,7 +7,7 @@ export default function MentionsLegalesFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/mentions-legales">
       <SeoHead
         title="Mentions légales"
         description="Mentions légales de Cashare AG. Coordonnées et informations juridiques sur la plateforme suisse de crowdlending."

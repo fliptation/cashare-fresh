@@ -7,7 +7,7 @@ export default function AProposFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/a-propos">
       <SeoHead
         title="À propos"
         description="Cashare est la première plateforme de crowdlending en Suisse. Depuis 2008, nous connectons emprunteurs et investisseurs. En savoir plus sur notre entreprise."

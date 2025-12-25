@@ -7,7 +7,7 @@ export default function PrivatkreditDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/kredit-beantragen/privatkredit" theme="borrowing">
       <SeoHead
         title="Privatkredit beantragen"
         description="Privatkredit von CHF 1'000 bis CHF 500'000 zu fairen Zinsen. Flexible Laufzeiten, schnelle Auszahlung. Jetzt unverbindlich anfragen bei Cashare."

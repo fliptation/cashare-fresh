@@ -7,7 +7,7 @@ export default function InstitutionelleDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/investieren/institutionelle">
       <SeoHead
         title="Für institutionelle Investoren"
         description="Institutionelle Anlagemöglichkeiten in Schweizer Kredite. Massgeschneiderte Lösungen für Pensionskassen, Family Offices und Vermögensverwalter."

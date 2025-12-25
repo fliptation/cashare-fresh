@@ -7,7 +7,7 @@ export default function HypothekenDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/kredit-beantragen/hypotheken" theme="borrowing">
       <SeoHead
         title="Hypothek beantragen"
         description="Hypothekarkredit für Immobilien in der Schweiz. Finanzierung für Eigenheim, Mehrfamilienhaus oder Gewerbeliegenschaften. Jetzt Hypothek anfragen."

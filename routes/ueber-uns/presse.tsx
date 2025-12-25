@@ -7,7 +7,7 @@ export default function PresseDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/ueber-uns/presse">
       <SeoHead
         title="Presse"
         description="Crowdlending und Fintech sind Themen von nationalem und internationalem Interesse. Schauen Sie rein und lassen Sie sich inspirieren."

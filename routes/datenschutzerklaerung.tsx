@@ -7,7 +7,7 @@ export default function DatenschutzDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/datenschutzerklaerung">
       <SeoHead
         title="Datenschutzerklärung"
         description="Datenschutzerklärung von Cashare. Wie wir Ihre Daten auf der Schweizer Crowdlending-Plattform schützen und verarbeiten."

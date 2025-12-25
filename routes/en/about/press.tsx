@@ -7,7 +7,7 @@ export default function PressEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/about/press">
       <SeoHead
         title="Press"
         description="Cashare in the media: Press releases, media contact and press material. Latest news about the Swiss crowdlending platform."

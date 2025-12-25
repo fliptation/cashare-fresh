@@ -7,7 +7,7 @@ export default function QuiSommesNousFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/a-propos/qui-sommes-nous">
       <SeoHead
         title="Qui sommes-nous"
         description="L'équipe Cashare: Rencontrez les personnes derrière la plateforme suisse de crowdlending. Expérience, vision et valeurs."

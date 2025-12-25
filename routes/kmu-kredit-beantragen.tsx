@@ -7,7 +7,7 @@ export default function KmuKreditBeantragenDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/kmu-kredit-beantragen">
       <SeoHead
         title="KMU-Kredit beantragen"
         description="Beantragen Sie jetzt Ihren KMU-Kredit bei Cashare. Schnelle Unternehmensfinanzierung auf der Schweizer Crowdlending-Plattform."

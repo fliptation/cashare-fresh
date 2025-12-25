@@ -7,7 +7,7 @@ export default function PrivatkreditHowItWorksDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/so-funktionierts/privatkredit">
       <SeoHead
         title="Privatkredit - So funktioniert's"
         description="So funktioniert ein Privatkredit bei Cashare. Einfacher Ablauf vom Antrag bis zur Auszahlung auf der Schweizer Crowdlending-Plattform."

@@ -7,7 +7,7 @@ export default function JobsEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/about/jobs">
       <SeoHead
         title="Jobs"
         description="Careers at Cashare: Open positions and career opportunities at the Swiss crowdlending platform. Join our team."

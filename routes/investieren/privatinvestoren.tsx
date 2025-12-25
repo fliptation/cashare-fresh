@@ -7,7 +7,7 @@ export default function PrivatinvestorenDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/investieren/privatinvestoren">
       <SeoHead
         title="Für Privatinvestoren"
         description="Investieren Sie als Privatperson in Schweizer Kredite. Ab CHF 100 pro Kredit. Attraktive Renditen, transparent und sicher."

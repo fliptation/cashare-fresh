@@ -7,7 +7,7 @@ export default function CookiesEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/cookies">
       <SeoHead
         title="Cookie Policy"
         description="Cashare cookie policy. Information about the use of cookies on the Swiss crowdlending platform."

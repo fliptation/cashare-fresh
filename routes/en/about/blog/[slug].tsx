@@ -11,7 +11,7 @@ export default function BlogPostEN(props: PageProps) {
   const post = getBlogPost(slug);
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath={`/en/about/blog/${slug}`}>
       {post ? (
         <SeoHead
           title={post.title[locale]}

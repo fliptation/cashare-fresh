@@ -123,8 +123,7 @@
   border-radius: 8px;
   pointer-events: none;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    width 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.2s ease;
+    width 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
   z-index: 0;
 }
 
@@ -247,7 +246,7 @@
 /* Panel header with title and subtitle */
 .stripe-nav__panel-header {
   display: block;
-  padding: 24px 24px 12px;
+  padding: 20px 20px 12px;
   text-decoration: none;
   transition: opacity 0.15s ease;
 }
@@ -273,14 +272,14 @@
 }
 
 .stripe-nav__panel-inner {
-  padding: 8px 24px 24px;
+  padding: 8px 16px 16px;
 }
 
 /* Two-column grid for "about" section */
 .stripe-nav__panel--about .stripe-nav__panel-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px 24px;
+  gap: 2px 20px;
 }
 
 /* Last item spans full width if odd number */
@@ -296,7 +295,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 12px 12px;
+  padding: 12px;
   text-decoration: none;
   border-radius: 10px;
   transition: all 0.15s ease;

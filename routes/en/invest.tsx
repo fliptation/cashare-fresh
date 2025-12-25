@@ -7,7 +7,7 @@ export default function InvestEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/invest">
       <SeoHead
         title="Invest in Loans"
         description="Invest directly in Swiss loans. Attractive returns, diversified portfolio. For private and institutional investors."

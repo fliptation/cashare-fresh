@@ -7,7 +7,7 @@ export default function AgbDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/agb">
       <SeoHead
         title="AGB"
         description="Allgemeine Geschäftsbedingungen von Cashare. Nutzungsbedingungen für die Schweizer Crowdlending-Plattform."

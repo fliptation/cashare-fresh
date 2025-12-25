@@ -7,7 +7,7 @@ export default function KmuHowItWorksDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/so-funktionierts/kmu">
       <SeoHead
         title="KMU-Kredit - So funktioniert's"
         description="So funktioniert ein KMU-Kredit bei Cashare. Schnelle Unternehmensfinanzierung über Crowdlending für kleine und mittlere Unternehmen."

@@ -7,7 +7,7 @@ export default function PrivatdarlehenBeantragenDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/privatdarlehen-beantragen">
       <SeoHead
         title="Privatdarlehen beantragen"
         description="Beantragen Sie jetzt Ihr Privatdarlehen bei Cashare. Schnelle Online-Kreditanfrage auf der Schweizer Crowdlending-Plattform."

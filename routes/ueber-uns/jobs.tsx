@@ -7,7 +7,7 @@ export default function JobsDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/ueber-uns/jobs">
       <SeoHead
         title="Jobs"
         description="Karriere bei Cashare: Offene Stellen und Karrieremöglichkeiten bei der Schweizer Crowdlending-Plattform. Werde Teil unseres Teams."

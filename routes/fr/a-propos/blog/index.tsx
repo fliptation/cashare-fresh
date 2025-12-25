@@ -7,7 +7,7 @@ export default function BlogFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/a-propos/blog">
       <SeoHead
         title="Blog"
         description="Blog Cashare: Articles actuels sur le crowdlending, le financement et les investissements. En savoir plus sur la fintech et les crédits alternatifs en Suisse."

@@ -7,7 +7,7 @@ export default function PartenairesFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/a-propos/partenaires">
       <SeoHead
         title="Partenaires"
         description="Partenaires Cashare: Nos partenariats stratégiques et coopérations. Ensemble pour de meilleures solutions financières en Suisse."

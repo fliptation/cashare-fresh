@@ -7,7 +7,7 @@ export default function PrivacyEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/privacy">
       <SeoHead
         title="Privacy Policy"
         description="Cashare privacy policy. How we protect and process your data on the Swiss crowdlending platform."

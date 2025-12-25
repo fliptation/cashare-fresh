@@ -7,7 +7,7 @@ export default function PartnersEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/about/partners">
       <SeoHead
         title="Partners"
         description="Cashare partners: Our strategic partnerships and cooperations. Together for better financial solutions in Switzerland."

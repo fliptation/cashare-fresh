@@ -7,7 +7,7 @@ export default function SoFunktioniertsDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/so-funktionierts">
       <SeoHead
         title="So funktioniert's"
         description="Erfahren Sie, wie Crowdlending bei Cashare funktioniert. Einfacher Prozess für Kreditnehmer und Anleger auf der Schweizer Plattform."

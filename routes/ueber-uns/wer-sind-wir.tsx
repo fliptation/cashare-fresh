@@ -7,7 +7,7 @@ export default function WerSindWirDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/ueber-uns/wer-sind-wir">
       <SeoHead
         title="Wer sind wir"
         description="Das Cashare Team: Lernen Sie die Menschen hinter der Schweizer Crowdlending-Plattform kennen. Erfahrung, Vision und Werte."

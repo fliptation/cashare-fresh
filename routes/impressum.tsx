@@ -7,7 +7,7 @@ export default function ImpressumDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/impressum">
       <SeoHead
         title="Impressum"
         description="Impressum von Cashare AG. Kontaktdaten und rechtliche Informationen zur Schweizer Crowdlending-Plattform."

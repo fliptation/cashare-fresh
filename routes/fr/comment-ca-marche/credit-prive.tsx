@@ -7,7 +7,7 @@ export default function CreditPriveHowItWorksFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/comment-ca-marche/credit-prive">
       <SeoHead
         title="Crédit privé - Comment ça marche"
         description="Comment fonctionne un crédit privé chez Cashare. Processus simple de la demande au versement sur la plateforme suisse de crowdlending."

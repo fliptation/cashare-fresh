@@ -7,7 +7,7 @@ export default function TermsEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/terms">
       <SeoHead
         title="Terms and Conditions"
         description="Cashare terms and conditions. Terms of use for the Swiss crowdlending platform."

@@ -7,7 +7,7 @@ export default function RatingEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/about/rating">
       <SeoHead
         title="Rating"
         description="Cashare credit rating: Transparent creditworthiness assessment for borrowers. Learn how our rating system works."

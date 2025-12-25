@@ -7,7 +7,7 @@ export default function ImprintEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/imprint">
       <SeoHead
         title="Imprint"
         description="Cashare AG imprint. Contact details and legal information about the Swiss crowdlending platform."

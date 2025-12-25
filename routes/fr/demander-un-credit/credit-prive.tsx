@@ -7,7 +7,7 @@ export default function CreditPriveFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/fr/demander-un-credit/credit-prive" theme="borrowing">
       <SeoHead
         title="Demander un crédit privé"
         description="Crédit privé de CHF 1'000 à CHF 500'000 à des taux d'intérêt équitables. Durées flexibles, versement rapide. Demandez maintenant chez Cashare."

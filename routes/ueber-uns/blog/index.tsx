@@ -7,7 +7,7 @@ export default function BlogDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/ueber-uns/blog">
       <SeoHead
         title="Blog"
         description="Cashare Blog: Aktuelle Artikel zu Crowdlending, Finanzierung und Investitionen. Erfahren Sie mehr über Fintech und alternative Kredite in der Schweiz."

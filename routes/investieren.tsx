@@ -7,7 +7,7 @@ export default function InvestierenDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/investieren">
       <SeoHead
         title="In Kredite investieren"
         description="Investieren Sie direkt in Schweizer Kredite. Attraktive Renditen, diversifiziertes Portfolio. Für Privatanleger und institutionelle Investoren."

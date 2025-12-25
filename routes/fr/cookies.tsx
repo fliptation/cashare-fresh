@@ -7,7 +7,7 @@ export default function CookiesFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/cookies">
       <SeoHead
         title="Politique des cookies"
         description="Politique des cookies de Cashare. Informations sur l'utilisation des cookies sur la plateforme suisse de crowdlending."

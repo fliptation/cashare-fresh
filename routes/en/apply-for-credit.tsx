@@ -7,7 +7,7 @@ export default function ApplyForCreditEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/en/apply-for-credit" theme="borrowing">
       <SeoHead
         title="Apply for Credit"
         description="Apply for your loan with Cashare. Personal loans, SME loans and mortgages at fair conditions. Fast processing, transparent processes."

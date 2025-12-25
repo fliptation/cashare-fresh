@@ -7,7 +7,7 @@ export default function StatistiquesFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/a-propos/statistiques">
       <SeoHead
         title="Statistiques"
         description="Statistiques Cashare: Chiffres actuels sur les crédits, rendements et évolution de la plateforme suisse de crowdlending."

@@ -7,7 +7,7 @@ export default function PresseFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/a-propos/presse">
       <SeoHead
         title="Presse"
         description="Cashare dans les médias: Communiqués de presse, contact média et matériel de presse. Dernières actualités sur la plateforme suisse de crowdlending."

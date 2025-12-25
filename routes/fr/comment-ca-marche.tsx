@@ -7,7 +7,7 @@ export default function CommentCaMarcheFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/comment-ca-marche">
       <SeoHead
         title="Comment ça marche"
         description="Découvrez comment fonctionne le crowdlending chez Cashare. Processus simple pour emprunteurs et investisseurs sur la plateforme suisse."

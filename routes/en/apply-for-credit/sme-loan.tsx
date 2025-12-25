@@ -7,7 +7,7 @@ export default function SmeLoanEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/en/apply-for-credit/sme-loan" theme="borrowing">
       <SeoHead
         title="Apply for SME Loan"
         description="Business loan for Swiss SMEs from CHF 50,000 to CHF 5 million. Flexible financing for your company. Fast processing at Cashare."

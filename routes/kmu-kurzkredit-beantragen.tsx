@@ -7,7 +7,7 @@ export default function KmuKurzkreditBeantragenDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/kmu-kurzkredit-beantragen">
       <SeoHead
         title="KMU-Kurzkredit beantragen"
         description="Beantragen Sie jetzt Ihren KMU-Kurzkredit bei Cashare. Schnelle kurzfristige Finanzierung für Unternehmen."

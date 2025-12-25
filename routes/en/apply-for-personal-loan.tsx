@@ -7,7 +7,7 @@ export default function ApplyForPersonalLoanEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/apply-for-personal-loan">
       <SeoHead
         title="Apply for Personal Loan"
         description="Apply for your personal loan at Cashare now. Quick online loan application on the Swiss crowdlending platform."

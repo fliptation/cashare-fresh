@@ -7,7 +7,7 @@ export default function StatistikDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/ueber-uns/statistik">
       <SeoHead
         title="Statistik"
         description="Cashare Statistiken: Finanzierte Kredite, Ausfallraten, durchschnittliche Renditen. Transparente Zahlen zu unserer Crowdlending-Plattform."

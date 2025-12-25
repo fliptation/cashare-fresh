@@ -7,7 +7,7 @@ export default function SmeHowItWorksEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/how-it-works/sme">
       <SeoHead
         title="SME Loans - How It Works"
         description="How SME loans work at Cashare. Fast business financing through crowdlending for small and medium enterprises."

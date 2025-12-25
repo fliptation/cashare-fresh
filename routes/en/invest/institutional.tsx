@@ -7,7 +7,7 @@ export default function InstitutionalEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/invest/institutional">
       <SeoHead
         title="For Institutional Investors"
         description="Institutional investment opportunities in Swiss loans. Tailored solutions for pension funds, family offices and asset managers."

@@ -7,7 +7,7 @@ export default function CgvFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/cgv">
       <SeoHead
         title="CGV"
         description="Conditions générales de vente de Cashare. Conditions d'utilisation de la plateforme suisse de crowdlending."

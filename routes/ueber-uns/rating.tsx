@@ -7,7 +7,7 @@ export default function RatingDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/ueber-uns/rating">
       <SeoHead
         title="Rating"
         description="Cashare Kredit-Rating: Transparente Bonitätsbewertung für Kreditnehmer. Erfahren Sie, wie unser Rating-System funktioniert."

@@ -7,7 +7,7 @@ export default function AboutEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/about">
       <SeoHead
         title="About Us"
         description="Cashare is Switzerland's first crowdlending platform. Since 2008, we connect borrowers and investors. Learn more about our company."

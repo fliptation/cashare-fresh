@@ -7,7 +7,7 @@ export default function InstitutionnelsFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/investir/institutionnels">
       <SeoHead
         title="Pour les investisseurs institutionnels"
         description="Opportunités d'investissement institutionnel dans les crédits suisses. Solutions sur mesure pour caisses de pension, family offices et gestionnaires d'actifs."

@@ -7,7 +7,7 @@ export default function DemanderCreditFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/fr/demander-un-credit" theme="borrowing">
       <SeoHead
         title="Demander un crédit"
         description="Demandez votre crédit chez Cashare. Crédits privés, crédits PME et hypothèques à des conditions équitables. Traitement rapide, processus transparents."

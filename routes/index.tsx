@@ -18,7 +18,7 @@ export default function Home() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/">
       <SeoHead
         title="Schweizer Crowdlending Plattform"
         description="Cashare ist die erste Crowdlending-Plattform der Schweiz. Privatkredite, KMU-Kredite und Hypotheken zu fairen Konditionen. Investieren Sie direkt in Schweizer Kredite."

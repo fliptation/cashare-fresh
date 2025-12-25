@@ -7,7 +7,7 @@ export default function HypothekHowItWorksDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/so-funktionierts/hypothek">
       <SeoHead
         title="Hypothek - So funktioniert's"
         description="So funktioniert eine Hypothek bei Cashare. Alternative Immobilienfinanzierung über Crowdlending in der Schweiz."

@@ -7,7 +7,7 @@ export default function CreditPmeFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/fr/demander-un-credit/credit-pme" theme="borrowing">
       <SeoHead
         title="Demander un crédit PME"
         description="Crédit d'entreprise pour les PME suisses de CHF 50'000 à CHF 5 millions. Financement flexible pour votre entreprise. Traitement rapide chez Cashare."

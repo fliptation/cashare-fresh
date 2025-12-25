@@ -7,7 +7,7 @@ export default function UeberUnsDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/ueber-uns">
       <SeoHead
         title="Über uns"
         description="Cashare ist die erste Crowdlending-Plattform der Schweiz. Seit 2008 verbinden wir Kreditnehmer und Investoren. Erfahren Sie mehr über unser Unternehmen."

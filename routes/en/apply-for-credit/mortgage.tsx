@@ -7,7 +7,7 @@ export default function MortgageEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale} theme="borrowing">
+    <Layout locale={locale} currentPath="/en/apply-for-credit/mortgage" theme="borrowing">
       <SeoHead
         title="Apply for Mortgage"
         description="Mortgage for real estate in Switzerland. Financing for homes, apartment buildings or commercial properties. Apply for a mortgage now."

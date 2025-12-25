@@ -7,7 +7,7 @@ export default function HowItWorksEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/how-it-works">
       <SeoHead
         title="How It Works"
         description="Learn how crowdlending works at Cashare. Simple process for borrowers and investors on the Swiss platform."

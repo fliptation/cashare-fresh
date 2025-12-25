@@ -7,7 +7,7 @@ export default function InvestirFR() {
   const locale: Locale = "fr";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/fr/investir">
       <SeoHead
         title="Investir dans les crédits"
         description="Investissez directement dans des crédits suisses. Rendements attractifs, portefeuille diversifié. Pour investisseurs privés et institutionnels."

@@ -7,7 +7,7 @@ export default function CookiesDE() {
   const locale: Locale = "de";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/cookies">
       <SeoHead
         title="Cookie-Richtlinie"
         description="Cookie-Richtlinie von Cashare. Informationen zur Verwendung von Cookies auf der Schweizer Crowdlending-Plattform."

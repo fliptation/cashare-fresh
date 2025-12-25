@@ -7,7 +7,7 @@ export default function WhoWeAreEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/about/who-we-are">
       <SeoHead
         title="Who We Are"
         description="The Cashare team: Meet the people behind the Swiss crowdlending platform. Experience, vision and values."

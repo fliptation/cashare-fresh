@@ -7,7 +7,7 @@ export default function SecurityEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/security">
       <SeoHead
         title="Security"
         description="Security at Cashare: How we protect your data and investments. Learn more about our security measures."

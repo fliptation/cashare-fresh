@@ -7,7 +7,7 @@ export default function PrivateLoansHowItWorksEN() {
   const locale: Locale = "en";
 
   return (
-    <Layout locale={locale}>
+    <Layout locale={locale} currentPath="/en/how-it-works/private-loans">
       <SeoHead
         title="Private Loans - How It Works"
         description="How personal loans work at Cashare. Simple process from application to payout on the Swiss crowdlending platform."
