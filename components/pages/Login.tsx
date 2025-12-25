@@ -17,7 +17,6 @@ const content = {
     login: "Anmelden",
     noAccount: "Noch kein Konto?",
     register: "Jetzt registrieren",
-    orContinueWith: "Oder anmelden mit",
     borrowerLogin: {
       title: "Kreditnehmer",
       description: "Verwalten Sie Ihren Kredit und Zahlungen",
@@ -56,7 +55,6 @@ const content = {
     login: "Log In",
     noAccount: "Don't have an account?",
     register: "Register now",
-    orContinueWith: "Or continue with",
     borrowerLogin: {
       title: "Borrower",
       description: "Manage your loan and payments",
@@ -95,7 +93,6 @@ const content = {
     login: "Se connecter",
     noAccount: "Pas encore de compte?",
     register: "S'inscrire maintenant",
-    orContinueWith: "Ou continuer avec",
     borrowerLogin: {
       title: "Emprunteur",
       description: "Gerez votre crédit et vos paiements",
@@ -142,47 +139,6 @@ export function Login({ locale }: LoginProps) {
             <p class="login-form-panel__subtitle">{t.subtitle}</p>
           </div>
 
-          {/* Login Type Selection */}
-          <div class="login-types">
-            <a href={t.borrowerLogin.href} class="login-type-card">
-              <div class="login-type-card__icon login-type-card__icon--borrower">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
-              </div>
-              <h3 class="login-type-card__title">{t.borrowerLogin.title}</h3>
-              <p class="login-type-card__desc">{t.borrowerLogin.description}</p>
-            </a>
-            <a
-              href={t.investorLogin.href}
-              class="login-type-card login-type-card--investor"
-            >
-              <div class="login-type-card__icon login-type-card__icon--investor">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                  />
-                </svg>
-              </div>
-              <h3 class="login-type-card__title">{t.investorLogin.title}</h3>
-              <p class="login-type-card__desc">{t.investorLogin.description}</p>
-            </a>
-          </div>
-
-          {/* Divider */}
-          <div class="login-divider">
-            <div class="login-divider__line"></div>
-            <span class="login-divider__text">{t.orContinueWith}</span>
-          </div>
-
           {/* Quick Login Form */}
           <form class="login-form" action={t.investorLogin.href} method="GET">
             <div class="form-group">
@@ -217,13 +173,11 @@ export function Login({ locale }: LoginProps) {
                 <span class="login-form__checkbox-label">{t.rememberMe}</span>
               </label>
               <a
-                href={
-                  locale === "de"
-                    ? "/passwort-zuruecksetzen"
-                    : locale === "en"
-                    ? "/en/reset-password"
-                    : "/fr/reinitialiser-mot-de-passe"
-                }
+                href={locale === "de"
+                  ? "/passwort-zuruecksetzen"
+                  : locale === "en"
+                  ? "/en/reset-password"
+                  : "/fr/reinitialiser-mot-de-passe"}
                 class="login-form__link"
               >
                 {t.forgotPassword}

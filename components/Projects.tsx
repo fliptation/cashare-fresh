@@ -12,7 +12,7 @@ const content = {
     subtitle:
       "Erstellen Sie Ihr individuelles Portfolio, indem Sie gezielt in einzelne Kredite investieren und ein diversifiziertes Portfolio aufbauen, die Ihren Kriterien entsprechen.",
     cta: "Zu den Projekten",
-    ctaHref: "/projekte",
+    ctaHref: "/login",
     interest: "Zins",
     rating: "Rating",
     loanType: "Darlehens Art",
@@ -27,7 +27,7 @@ const content = {
     subtitle:
       "Build your individual portfolio by investing in selected loans and creating a diversified portfolio that meets your criteria.",
     cta: "View Projects",
-    ctaHref: "/en/projects",
+    ctaHref: "/login",
     interest: "Interest",
     rating: "Rating",
     loanType: "Loan Type",
@@ -42,7 +42,7 @@ const content = {
     subtitle:
       "Construisez votre portefeuille individuel en investissant dans des prêts sélectionnés et en créant un portefeuille diversifié qui répond à vos critères.",
     cta: "Voir les projets",
-    ctaHref: "/fr/projets",
+    ctaHref: "/login",
     interest: "Intérêt",
     rating: "Rating",
     loanType: "Type de prêt",

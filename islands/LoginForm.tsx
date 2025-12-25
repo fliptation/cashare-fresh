@@ -4,7 +4,11 @@
  */
 
 import { useSignal } from "@preact/signals";
-import { login, getBorrowerDashboardUrl, getInvestorDashboardUrl } from "../lib/api/cashare.ts";
+import {
+  getBorrowerDashboardUrl,
+  getInvestorDashboardUrl,
+  login,
+} from "../lib/api/cashare.ts";
 import { storeTokens, storeUserDetails } from "../lib/auth/storage.ts";
 import TwoFactorModal from "./modals/TwoFactorModal.tsx";
 import ErrorModal from "./modals/ErrorModal.tsx";
@@ -24,7 +28,6 @@ const content = {
     loggingIn: "Anmelden...",
     noAccount: "Noch kein Konto?",
     register: "Jetzt registrieren",
-    orContinueWith: "Oder anmelden als",
     borrowerLogin: {
       title: "Kreditnehmer",
       description: "Verwalten Sie Ihren Kredit und Zahlungen",
@@ -67,7 +70,6 @@ const content = {
     loggingIn: "Logging in...",
     noAccount: "Don't have an account?",
     register: "Register now",
-    orContinueWith: "Or log in as",
     borrowerLogin: {
       title: "Borrower",
       description: "Manage your loan and payments",
@@ -110,7 +112,6 @@ const content = {
     loggingIn: "Connexion...",
     noAccount: "Pas encore de compte?",
     register: "S'inscrire maintenant",
-    orContinueWith: "Ou se connecter en tant que",
     borrowerLogin: {
       title: "Emprunteur",
       description: "Gérez votre crédit et vos paiements",
@@ -266,58 +267,12 @@ export default function LoginForm({ locale }: LoginFormProps) {
         <div class="login-form-panel">
           <div class="login-form-panel__inner">
             <a href={localePath || "/"} class="login-form-panel__logo">
-              <span class="login-form-panel__logo-text">cashare</span>
+              <img src="/images/cashare-black-logo.svg" alt="Cashare" class="login-form-panel__logo-img" />
             </a>
 
             <div class="login-form-panel__header">
               <h1 class="login-form-panel__title">{t.title}</h1>
               <p class="login-form-panel__subtitle">{t.subtitle}</p>
-            </div>
-
-            {/* Login Type Selection */}
-            <div class="login-types">
-              <button
-                type="button"
-                class={`login-type-card ${selectedType.value === "borrower" ? "login-type-card--selected" : ""}`}
-                onClick={() => handleTypeSelect("borrower")}
-              >
-                <div class="login-type-card__icon login-type-card__icon--borrower">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                    />
-                  </svg>
-                </div>
-                <h3 class="login-type-card__title">{t.borrowerLogin.title}</h3>
-                <p class="login-type-card__desc">{t.borrowerLogin.description}</p>
-              </button>
-              <button
-                type="button"
-                class={`login-type-card login-type-card--investor ${selectedType.value === "investor" ? "login-type-card--selected" : ""}`}
-                onClick={() => handleTypeSelect("investor")}
-              >
-                <div class="login-type-card__icon login-type-card__icon--investor">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                    />
-                  </svg>
-                </div>
-                <h3 class="login-type-card__title">{t.investorLogin.title}</h3>
-                <p class="login-type-card__desc">{t.investorLogin.description}</p>
-              </button>
-            </div>
-
-            {/* Divider */}
-            <div class="login-divider">
-              <div class="login-divider__line"></div>
-              <span class="login-divider__text">{t.orContinueWith}</span>
             </div>
 
             {/* Login Form */}
@@ -331,7 +286,9 @@ export default function LoginForm({ locale }: LoginFormProps) {
                   id="email"
                   name="email"
                   placeholder={t.emailPlaceholder}
-                  class={`form-input ${fieldErrors.value.email ? "form-input--error" : ""}`}
+                  class={`form-input ${
+                    fieldErrors.value.email ? "form-input--error" : ""
+                  }`}
                   value={email.value}
                   onInput={(e) => {
                     email.value = (e.target as HTMLInputElement).value;
@@ -355,7 +312,9 @@ export default function LoginForm({ locale }: LoginFormProps) {
                   id="password"
                   name="password"
                   placeholder={t.passwordPlaceholder}
-                  class={`form-input ${fieldErrors.value.password ? "form-input--error" : ""}`}
+                  class={`form-input ${
+                    fieldErrors.value.password ? "form-input--error" : ""
+                  }`}
                   value={password.value}
                   onInput={(e) => {
                     password.value = (e.target as HTMLInputElement).value;
@@ -376,13 +335,11 @@ export default function LoginForm({ locale }: LoginFormProps) {
                   <span class="login-form__checkbox-label">{t.rememberMe}</span>
                 </label>
                 <a
-                  href={
-                    locale === "de"
-                      ? "/passwort-zuruecksetzen"
-                      : locale === "en"
-                      ? "/en/reset-password"
-                      : "/fr/reinitialiser-mot-de-passe"
-                  }
+                  href={locale === "de"
+                    ? "/passwort-zuruecksetzen"
+                    : locale === "en"
+                    ? "/en/reset-password"
+                    : "/fr/reinitialiser-mot-de-passe"}
                   class="login-form__link"
                 >
                   {t.forgotPassword}
@@ -391,7 +348,7 @@ export default function LoginForm({ locale }: LoginFormProps) {
 
               <button
                 type="submit"
-                class="btn btn--primary btn--full btn--lg"
+                class="btn btn--dark btn--full"
                 disabled={isLoading.value}
               >
                 {isLoading.value ? t.loggingIn : t.login}
@@ -438,7 +395,10 @@ export default function LoginForm({ locale }: LoginFormProps) {
               <h3 class="login-support__title">{t.support.title}</h3>
               <p class="login-support__text">{t.support.text}</p>
               <div class="login-support__links">
-                <a href={`mailto:${t.support.email}`} class="login-support__link">
+                <a
+                  href={`mailto:${t.support.email}`}
+                  class="login-support__link"
+                >
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       stroke-linecap="round"

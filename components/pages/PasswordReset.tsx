@@ -97,7 +97,7 @@ export function PasswordReset({ locale }: PasswordResetProps) {
       <div class="login-form-panel">
         <div class="login-form-panel__inner">
           <a href={localePath || "/"} class="login-form-panel__logo">
-            <span class="login-form-panel__logo-text">cashare</span>
+            <img src="/images/cashare-black-logo.svg" alt="Cashare" class="login-form-panel__logo-img" />
           </a>
 
           <div class="login-form-panel__header">
@@ -121,7 +121,7 @@ export function PasswordReset({ locale }: PasswordResetProps) {
               />
             </div>
 
-            <button type="submit" class="btn btn--primary btn--full btn--lg">
+            <button type="submit" class="btn btn--dark btn--full">
               {t.submit}
             </button>
           </form>
